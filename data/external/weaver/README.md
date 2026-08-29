@@ -46,9 +46,19 @@ to receive them:
 | --- | --- | ---: | --- |
 | `nw_election10.dta.gz` | 2024-04 | 48,293 | **exactly the 2010 wave of `weaver_data.dta.gz`** — 100.00% key match on `gp_code_jj11`, zero disagreements on any shared column |
 | `nw_elections_analysis.dta.gz` | 2024-04 | 116,335 | an **earlier vintage** of the 2015/2020 waves of `weaver_data.dta.gz`, which supersedes it |
-| `nw_up_nregs.dta.gz` | 2024-04 | 465,870 | **distinct** — MGNREGA outcomes, sharing only 3 of 33 column names with the panel |
+| `nw_up_nregs.dta.gz` | 2024-04 | 465,870 | **distinct** — the MGNREGA outcome table, 2016--2020, sharing only `gp_code_jj11`, `gp_code_lgd21` and `blockcode_lgd21` with the panel |
 | `weaver_data.dta.gz` | 2025-03-02 | 161,871 | 2010/2015/2020, with the electoral-competition measures |
 | `weaver_data_2.dta.gz` | 2025-03-17 | 176,736 | adds the SHRUG/PC11 crosswalk, drops the competition measures |
+
+`nw_up_nregs` looks at first like a stray MGNREGA file rather than Weaver's.
+It is his: it shares the other two files' Stata timestamp to the minute
+(5 Apr 2024 11:48, so one do-file wrote all three); it is keyed on
+`gp_code_jj11`, his own identifier rather than a standard LGD or SHRUG code;
+and its constructed variables — `solo_gp95`, `solo_gp15`, `closestpop_1000`,
+`noncompliant_district_2015`, `performance_z` — are the polity-size design of
+Narasimhan and Weaver (2024), for which MGNREGA performance is the outcome. It
+is entirely Uttar Pradesh (SHRUG prefix 11-09) and shares **no** columns with
+the separate MGNREGA collection in `quota/data/mnrega/`.
 
 So `nw_election10` is fully redundant and kept only as the received artefact;
 `nw_elections_analysis` is what a 2024 analysis would have used, and is what
