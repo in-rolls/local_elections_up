@@ -35,6 +35,26 @@ adds 14,865 rows and the SHRUG linkage, and it **drops** the competition measure
 Pick by which of those you need. Both retain `gp_code_jj11`, `gp_code_lgd21` and
 `election`.
 
+## Five files, three vintages
+
+`nw_*` are the earlier files that came with the Narasimhan--Weaver working
+material; `weaver_data*` are the later panel. They overlap heavily, and the
+overlap is the reason they sit together rather than in whichever repo happened
+to receive them:
+
+| file | received | rows | relationship |
+| --- | --- | ---: | --- |
+| `nw_election10.dta.gz` | 2024-04 | 48,293 | **exactly the 2010 wave of `weaver_data.dta.gz`** — 100.00% key match on `gp_code_jj11`, zero disagreements on any shared column |
+| `nw_elections_analysis.dta.gz` | 2024-04 | 116,335 | an **earlier vintage** of the 2015/2020 waves of `weaver_data.dta.gz`, which supersedes it |
+| `nw_up_nregs.dta.gz` | 2024-04 | 465,870 | **distinct** — MGNREGA outcomes, sharing only 3 of 33 column names with the panel |
+| `weaver_data.dta.gz` | 2025-03-02 | 161,871 | 2010/2015/2020, with the electoral-competition measures |
+| `weaver_data_2.dta.gz` | 2025-03-17 | 176,736 | adds the SHRUG/PC11 crosswalk, drops the competition measures |
+
+So `nw_election10` is fully redundant and kept only as the received artefact;
+`nw_elections_analysis` is what a 2024 analysis would have used, and is what
+`quota/scripts/99_narasimhan_weaver.R` reads, which is why it must not be
+silently swapped for the later panel.
+
 ## Identifiers — notes from Jeff
 
 > The variable `gp_code_jj11` should be the unique identifier for the 2010
