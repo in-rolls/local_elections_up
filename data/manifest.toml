@@ -1,0 +1,8 @@
+[quota_raj]
+repo = "in-rolls/quota_raj"
+ref = "50c7fc919ff0f99e02da1a9c232fe3e56fb15823"
+sibling = "../quota_raj"
+
+[quota_raj.files]
+"data/lgd/processed/lgd_up_block_gp.csv" = "fb4ba2dc7eeb7f905acb6437585df164372c3754e829d103da7c0a48f32fa314"
+

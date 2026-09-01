@@ -1,0 +1,101 @@
+election_gp_key,pai_row_key,raw_district,raw_block,raw_gp_name,pai_gp_name,score,score_bin,manual_label,reviewer,reviewed_at,notes
+up2021__145056,72502,Kanpur Nagar,Sarasaul,Sunhela,sundhaila,0.85,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__629491,50195,Baliya,Nawanagar,Raampur Katrai,ranpur katrai,0.8525030525030524,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__879542,88929,Sitapur,Ailiya,Hathia Malhpur,hathiya,0.8571428571428571,"(0.849, 0.9]",uncertain,manual-clerical-review,2026-09-01,Name or suffix difference is not decisive from the clerical fields alone
+up2021__551179,80776,Muradabad,Mudhaa Pandey,Khabadia Bhud,khabariya bhur mustahkam,0.860897435897436,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__686776,81935,Pilibhit,Bilsanda,Marorikhas,marauri khas,0.8664814814814815,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__697970,82312,Pilibhit,Purnanpur,Madhautaanda,madho tanda,0.8691919191919192,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__98441,84114,Rae bareli,Sareni,Kodra,kondara,0.8704761904761905,"(0.849, 0.9]",uncertain,manual-clerical-review,2026-09-01,Name or suffix difference is not decisive from the clerical fields alone
+up2021__490993,58243,Chitrakoot,Karvi(Chitrakoot),Bihaara,bihara pal dav,0.8714285714285714,"(0.849, 0.9]",uncertain,manual-clerical-review,2026-09-01,Name or suffix difference is not decisive from the clerical fields alone
+up2021__63020,44766,Prayagraj,Karachna,Rokdi,rokari,0.8755555555555556,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__730248,266380,Aligarh,Khair,Tehrah,tehara,0.8755555555555556,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__929201,64285,Ghazipur,Manihari,Basewa,basawa,0.8755555555555556,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__531719,67234,Hamirpur,Kurara,Sheikhupur,shekhoopur,0.8775000000000001,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__481847,58742,Devaria,Bhagalpur,Adila,arila,0.88,"(0.849, 0.9]",uncertain,manual-clerical-review,2026-09-01,Name or suffix difference is not decisive from the clerical fields alone
+up2021__559964,88513,Siddharth Nagar,Khuniyav,Balwa,belwa,0.88,"(0.849, 0.9]",uncertain,manual-clerical-review,2026-09-01,Name or suffix difference is not decisive from the clerical fields alone
+up2021__75858,53264,Bareilly,Faridpur,Shivburi,shivpuree,0.8833333333333333,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__356526,47565,Azamgarh,Martinganj,Chittepur,chhettepur,0.8837037037037038,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__337635,71366,Kannauj,Talgram,Brahhimpur Nizampur,birahimpur nizampur,0.8850877192982456,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__494469,84502,Rampur,Chamaraua,Kakrabbawa,kakrawwa,0.8864285714285713,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__590114,267888,Pilibhit,Marauri,Diyuni Bahadurganj,diyoni bhadurganj,0.887431917211329,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__417636,82409,Pratapgarh,Baabaa Belkharnath Dhaam,Ganidih,ganaideeh,0.888888888888889,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__678097,88000,Siddharth Nagar,Badhni,Dhakhari Burjag,dhekahari buzurg,0.8939316239316238,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__281944,73635,Lakhimpur Khiri,Mohammadi,Guloli,gulauli,0.8944444444444445,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__493564,44212,Prayagraj,Bahadurpur,Devaria,dewariya,0.8952380952380953,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__46587,43067,Agra,Fatehpur Seekri,Rasulpur,rasulpur kiraoli,0.9,"(0.849, 0.9]",uncertain,manual-clerical-review,2026-09-01,Name or suffix difference is not decisive from the clerical fields alone
+up2021__781370,90365,Sonbhadra,Chopan,Shilpi,silapi,0.9,"(0.849, 0.9]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__843804,43713,Aligarh,Gangeeri,Dorei,dorai,0.9066666666666668,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__1102923,76325,Maharajganj,Brajamangnaj,Sonchiraiaya,sonchreaya,0.9077777777777776,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__520017,91919,Amethi,Sangrampur,Sonariknau,sonari kanoo,0.9077777777777776,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__84701,85362,Saharanpur,Nakud,Sirsaka,sirseka,0.9095238095238096,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__659922,82247,Pilibhit,Purnanpur,Mardakurd Kala,marha khurd kalan,0.9104826546003016,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__717401,53774,Basti,Bahadurpur,Sarraiya Burjug,sarrya buzurg,0.9112820512820512,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__154597,66317,Gorakhpur,Kaimpiyarganj,Sanag,sangad,0.9144444444444444,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__698372,89816,Sitapur,Parsendi,Vadagaon,badagaon,0.9166666666666666,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__944426,266628,Bahraich,Tajwapur,Vilaspur,bilaspur,0.9166666666666666,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__416488,82482,Pratapgarh,Baabaganj,Gujvar,gujwar,0.9222222222222224,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__943368,57698,Chandauli,Chahniya,Khauruddinpur,kharuddinpur,0.9237179487179488,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__30093,72345,Kanpur Nagar,Kakwan,Gadhewa,garhewa,0.923809523809524,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__698148,64662,Ghazipur,Saidpur,Madhiya,mathiya,0.923809523809524,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__358235,65859,Gonda,Tarabganj,Bishunpur,vishunpur,0.925925925925926,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__953108,61912,Farrukhabad,Shamshabaad,Kuakheda Khas,kunwakhera khas,0.926153846153846,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__352874,47716,Azamgarh,Mirzapur,Kharewaan,kharevan,0.9305555555555556,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__60301,67494,Hardoi,Ahirorhi,Gondarav,gonda rao,0.9305555555555556,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__31070,85292,Saharanpur,Nagal,Sunheti Mohiddinpur,sunhati mohidin,0.9340350877192982,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__125042,45001,Prayagraj,Koraon,Majhigawaa,majhigava,0.9377777777777778,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__563511,81791,Pilibhit,Amariya,Saraiada Patti,sarainda patti,0.9406593406593406,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__134107,42800,Agra,Akolaa,Mania,maniyan,0.9428571428571428,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__469296,81257,Shamli,Kairana,Barnavi,barnabi,0.9428571428571428,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__356927,238662,Amroha,Dhanaura,Berkheda,berkhera,0.95,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__6075,66656,Gorakhpur,Kauriram,Ucher,uncher,0.95,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__663198,50353,Baliya,Sier,Ahirauli,ahirouli,0.95,"(0.9, 0.95]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__425343,76792,Maharajganj,Paniyara,Beltikara,beltikra,0.9527777777777776,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__225603,73421,Lakhimpur Khiri,Lakhimpur,Adhachaat,adha chat,0.9555555555555556,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__268544,82855,Pratapgarh,Lalganj,Dhaduan Gajan,dhadhuwa gajan,0.956043956043956,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__92970,265980,Hathras,Sikandra Rao,Bhainsimai,bhainsmai,0.9577777777777776,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__7075,67041,Gorakhpur,Sardarnagar,Chhapra Mansur,chhapra mansoor,0.959047619047619,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__356672,60571,Itawah,Bharathana,Palikhurda,pali khurd,0.96,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__268800,90808,Sultanpur,Akhandnagar,Tikri,tikari,0.9611111111111112,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__596075,59215,Devaria,Lar,Dumri,dumari,0.9611111111111112,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__922583,90363,Sonbhadra,Kon,Rorvaa,rorava,0.9611111111111112,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__41754,85639,Saharanpur,Sarsawa,Ibrahimra,ibrahimpura,0.9636363636363636,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__478555,92683,Unnao,Purwa,Nathi Kheda,nathi khera,0.9636363636363636,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__243377,47575,Azamgarh,Martinganj,Karui,karuie,0.9666666666666668,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__791795,89104,Sitapur,Biswan,Katia,katiya,0.9666666666666668,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__345765,55728,Budaun,Ambiyapur,Sateti Inccha,sateti inchha,0.9692307692307692,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__35121,67607,Hardoi,Benhadar,Asahi AzamPur,asahi ajampur,0.9692307692307692,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__460045,270884,Jaunpur,Madiyahu,Unchnikhurd,unchani khurd,0.9692307692307692,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__307177,93263,Varanasi,Cholapur,Magarhua,magrahua,0.9708333333333332,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__17501,267249,Bareilly,Damkhoda,Atariya,ataria,0.9714285714285714,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__944071,90080,Sitapur,Reusaa,Parsia,parsiya,0.9714285714285714,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__514038,91020,Amethi,Bhaddar,Vaasdevpur,vasdevpur,0.9733333333333334,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__16564,86274,Sant Kabir Nagar,Semriyawa,Jagdishpur Urf Lahuradeva,jagdishpur urf lahura dewa,0.9766153846153848,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__408712,60238,Eta,Sheetalpur,Marthara Devkishan,marthara dewkishan,0.9777777777777776,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__591497,270433,Devaria,Gauribazar,Ramlakshan,ram lakshan,0.9787878787878788,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__268136,265896,Varanasi,Harhua,Ghamaapur,ghamahapur,0.98,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__723948,49595,Bahraich,Visheshwarganj,Gendharia,gendhariya,0.98,"(0.95, 0.98]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__1116978,47204,Azamgarh,Hareya,Chandpatti,chand patti,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__21681,43327,Agra,Shamshabaad,Naglapatam,nagla patam,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__240750,75509,Lucknow,Gosaiganj,Mahura Kala,mahurakala,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__29394,66826,Gorakhpur,Pali,Rithuakhor,rithuakhore,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__367928,265338,Lucknow,Malihabaad,Hariharpur,harihar pur,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__48505,83613,Rae bareli,Dalmau,Narendrapur,narendrpur,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__517040,92766,Unnao,Sikandarpur Karan,Bahurajmau,bahuraj mau,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__728232,89395,Sitapur,Khairbad,Jawahar pur,jawaharpur,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__793670,90492,Sonbhadra,Karma,Pandepokar,pandepokhar,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__902749,266555,Ghazipur,Sadar,Kaithwaliya,kaithwalia,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__956508,57941,Chandauli,Dhanapur,Mishrapura,mishra pura,0.9818181818181818,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__257317,48082,Azamgarh,Phoolpur,Sadruddinpur,sadaruddinpur,0.982051282051282,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__540532,58847,Devaria,Bhaluani,Padri Mishra,padari mishra,0.982051282051282,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__143405,69762,Jaunpur,Khutahan,Udaipurdipi,udaipur dipi,0.9833333333333332,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__155114,85436,Saharanpur,Puranka,Ghanakhandi,ghana khandi,0.9833333333333332,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__161264,66883,Gorakhpur,Pipraich,Rakshawapar,rakshhawapar,0.9833333333333332,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__271021,82356,Pratapgarh,Aspur Devsara,Harraipatti,harrai patti,0.9833333333333332,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__1465546,54321,Basti,Parsrampur,Chheria Para,chheriya para,0.9846153846153848,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__215634,48085,Azamgarh,Phoolpur,Salahuddinpur,salauddinpur,0.9846153846153848,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__669365,79598,Mirzapur,Kon (Cheelha),Chandel Dadiya,chandel dadia,0.9857142857142858,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__604706,243883,Siddharth Nagar,Bhanwaapur,Virpur Ahtmaali,virpur ahatmali,0.9866666666666668,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__198783,59587,Eta,Aligunj,Partapur Katara,partappur katara,0.9875,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__696928,79683,Mirzapur,Lalganj,Usari Khamhariya,usari khamharia,0.9875,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__690415,268471,Pilibhit,Bilsanda,Pipariyasanjarpur,pipariya sanjarpur,0.9888888888888888,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block
+up2021__740066,74199,Kushinagar,Hata,Baidauli Mahuadih,baidauli mahua dih,0.9888888888888888,"(0.98, 0.995]",match,manual-clerical-review,2026-09-01,Names judged to denote the same GP within the reviewed block

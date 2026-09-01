@@ -5,8 +5,9 @@ Data for 2005, 2010, 2015, and 2021 Sarpanch Elections and 2012 ULB.
 ## Published data: `data/fin/`
 
 `data/fin/` is what other repositories consume. Everything else in `data/` is
-raw input or an intermediate. Four files, one per election cycle, each already
-carrying the transliterated English columns:
+raw input or an intermediate. Four source files, one per election cycle, carry
+the transliterated English columns. A fifth file is the canonical cross-wave
+election table:
 
 | file | rows | distinct panchayats | grain |
 | --- | ---: | ---: | --- |
@@ -14,6 +15,7 @@ carrying the transliterated English columns:
 | `up_gp_sarpanch_2010_fixed_with_transliteration.parquet` | 51,861 | 51,773 | one row per seat |
 | `up_gp_sarpanch_2015_fixed_with_transliteration.parquet` | 59,019 | 58,994 | one row per seat |
 | `up_gp_sarpanch_2021_fixed_with_transliteration.parquet` | 373,096 | 49,750 | one row per **candidate** |
+| `up_gp_elections_standardized.parquet` | 212,525 | — | one row per seat/winner across all four waves |
 
 Panchayat counts are distinct `(district_name, block_name, gp_name)` — see the
 identifier warning below.
@@ -32,9 +34,24 @@ it is `विजेता` / `उपविजेता` / blank — winner, runn
 candidates. Filtering 2021 to `विजेता` gives 49,773 winners; applying the same
 filter to 2015 gives nothing.
 
-*2021 carries three junk columns*, `Unnamed: 15`, `Unnamed: 16` and `Unnamed: 17`,
-left over from the source spreadsheet. They are kept so the file matches what was
-parsed, not because they mean anything.
+*2021 carries three columns whose headers were lost*, `Unnamed: 15`,
+`Unnamed: 16` and `Unnamed: 17`. They contain populated numeric and categorical
+values and therefore are not junk, but their meanings have not been recovered
+reliably enough to label or analyze. They remain unchanged in the source file
+and are excluded from the standardized release.
+
+### Canonical election table
+
+`data/fin/up_gp_elections_standardized.parquet` standardizes identifiers,
+reservation status, and winner sex without dropping ambiguous rows. The active
+manual corrections and complete collision/missing-name queue live under
+`data/crosswalks/`. See [`data/fin/STANDARDIZED.md`](data/fin/STANDARDIZED.md) for
+the column contract.
+
+```bash
+make data
+make check
+```
 
 ### How it is produced
 
@@ -45,8 +62,8 @@ data/up_gp_sarpanch_{2005,2010}.csv          scripts/01a, 01b (parsed from data/
   -> data/fin/*.parquet                              scripts/04
 ```
 
-`scripts/05_up_elex_join.R` reads `data/fin/` in-repo, the same way downstream
-repositories do.
+`scripts/05_standardize_elections.R` reads the four source files and publishes
+the canonical table, audit files, schema entry, and checksums.
 
 ### Verifying a copy
 

@@ -1,0 +1,27 @@
+[project]
+name = "local-elections-up-linkage"
+version = "0.1.0"
+description = "Audited record linkage for the UP local-election data release"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.0",
+    "pyarrow>=15",
+    "preclink==1.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.14",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

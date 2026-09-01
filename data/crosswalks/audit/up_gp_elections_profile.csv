@@ -1,0 +1,5 @@
+election_year,rows,districts,district_blocks,women_reserved,unknown_reservation,unknown_winner_sex,manual_name_overrides,district_alias_rows,block_alias_rows,lgd_block_mapped_rows,lgd_blocks,lgd_gp_linked_rows,lgd_gps,missing_normalized_component,normalized_collision_rows,link_eligible_rows
+2005,51872,70,846,23517,1300,510,0,10788,0,0,0,0,0,176,278,51418
+2010,51861,72,844,17173,33,17,0,12164,0,0,0,0,0,109,167,51585
+2015,59019,75,823,19926,0,0,0,9779,0,0,0,0,0,24,69,58926
+2021,49773,67,728,16774,0,0,17,8381,23801,49773,728,38397,38397,0,56,49717
