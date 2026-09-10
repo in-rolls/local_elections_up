@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "status": "research evidence; unresolved source contradictions retained",
+  "observations": 2897,
+  "tier_printings": {
+    "gp_head": 1329,
+    "block_member": 1506,
+    "district_member": 62
+  },
+  "source_pdf_count": 3,
+  "source_pages": 90,
+  "distinct_block_member_source_number_keys": 1496,
+  "verified_ward_count": null,
+  "duplicate_number_rows": 19,
+  "duplicate_number_groups": 9,
+  "source_pages_visually_reviewed_for_duplicates": 7,
+  "source_category_conflict_groups": 8,
+  "numbering_policy": "Preserve source printings; no renumbering, category selection, deduplication, or identity inference.",
+  "additional_api_cost_usd": 0,
+  "files": [
+    {
+      "path": "data/catalogs/sitapur_2010_duplicate_number_source_review_v1.json",
+      "bytes": 2771,
+      "sha256": "a714d1335bae0fdb2c01499e286e23d18ebfde9c0854d984f40afecbd29db22b"
+    },
+    {
+      "path": "data/catalogs/sitapur_2010_readme.md",
+      "bytes": 3479,
+      "sha256": "6286d166d328761ce92055129dfba16e4789b31f4c70402b5dc49a21ee969924"
+    },
+    {
+      "path": "data/catalogs/sitapur_2010_source_numbering_reviews.json",
+      "bytes": 1567,
+      "sha256": "df524be1908a49df8be67321dc26d588f96da74d4ebd13bb1a14c10dc652d74d"
+    },
+    {
+      "path": "data/catalogs/sitapur_bdc_2010_font_profile_v3.json",
+      "bytes": 2875,
+      "sha256": "e10a62507b7296ca4221a18fd2db42d5a6d8a66ead973b0d8bb4419a4c120021"
+    },
+    {
+      "path": "data/discovery/2026-09-10/archived_reservations/raw/0df2ed118dc874203c5c_ae79974344f0.pdf",
+      "bytes": 246794,
+      "sha256": "ae79974344f059ac5a19580bcbb05daeefbdf2c329e923ad149c2d7cf607a03d"
+    },
+    {
+      "path": "data/discovery/2026-09-10/archived_reservations/raw/38befc8ce7dced591445_a0b46de2ebe2.pdf",
+      "bytes": 28158,
+      "sha256": "a0b46de2ebe2ee41523b2694391833fe1d712a88f91ed9c732b2fa60f8da18be"
+    },
+    {
+      "path": "data/discovery/2026-09-10/archived_reservations/raw/50a5ab7fd0620118953a_1082e4316551.pdf",
+      "bytes": 141749,
+      "sha256": "1082e4316551207ef4c358b1a18604513128cc8dc4cc5f8767aa9c98abdb2822"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/review_queue.json",
+      "bytes": 11324,
+      "sha256": "c3b709fea1c1d28f7be2178de41b518c401998ca909ffe7e7b9099bab899b340"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/source_page_0006.png",
+      "bytes": 6745,
+      "sha256": "fafa27e5a795844dac9638525e4efe7301cd3d0c424a846ecca4d7263cbc8f98"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/source_page_0010.png",
+      "bytes": 5883,
+      "sha256": "205c19cfb2b80518ec1d42fc02fab91c40eb8725f7a1e2283aa385f100dc8245"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/source_page_0020.png",
+      "bytes": 38104,
+      "sha256": "364d6288a12f1d8de357a721d337286a15ab0e946aa2bd39f08b28f253e9a39b"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/source_page_0023.png",
+      "bytes": 6071,
+      "sha256": "e6d4825f0aeab1e9aea2f32494974ad8a0f738cd20e83dfcbdf5a7029188a4be"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/source_page_0030.png",
+      "bytes": 6001,
+      "sha256": "12aabc7df81f1fe997d7bd440db56b5cd44a6ad6a21df5c0842947e843ad2b7c"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/source_page_0031.png",
+      "bytes": 5508,
+      "sha256": "50a4271ac54ce48d1e39f0b2cf966d6ccb51bf441f0bcf5a95546405746f10c2"
+    },
+    {
+      "path": "data/interim/sitapur_2010_duplicate_number_review_v1/source_page_0035.png",
+      "bytes": 6171,
+      "sha256": "92ce9ed3401730fa7d17323c63e9278e9951a6e521b8ab7c5a4a414ee3b93aec"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/extraction_issues.csv",
+      "bytes": 338,
+      "sha256": "f140241782ec46008aacf590338c172410e262d82c5052a65feb8971f2eab02c"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/extraction_manifest.json",
+      "bytes": 122214,
+      "sha256": "c8c4f7f85945ab45ebe6ff820c7aee4eb1eff6de32732ca611c040788fbb4c2c"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/native_text/block_member.xhtml.gz",
+      "bytes": 177047,
+      "sha256": "0ca42b46be278663275783cb42027a5b706e6dd63b4e3bd06e962978b8dba3ae"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/native_text/district_member.xhtml.gz",
+      "bytes": 25307,
+      "sha256": "e5e2bf2a21f13da9761cf436c9f5c5c40e821e7b0410aba55fe52bd03bbc0727"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/native_text/gp_head.xhtml.gz",
+      "bytes": 157430,
+      "sha256": "e0360b12b0987198053e7f1a008f5c2ac09771c016cd67edc29c8ae4506c1a88"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/printed_total_checks.csv",
+      "bytes": 4169,
+      "sha256": "aba4e9f88acde83c48b3cde6af9779d637672fdf530eefda9aa2289f82c94dbe"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/reservation_observations.csv",
+      "bytes": 1702508,
+      "sha256": "beac8ca28baccc6bce00aea369ed4bef873dc3c6fa7e8353111021513388a4cb"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/serial_sequence_checks.csv",
+      "bytes": 1104,
+      "sha256": "53a17aea279149d0faee601a79542408e42d44ddb38aec0f71f1d479a945fe27"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_grid_v3/source_number_issues.csv",
+      "bytes": 13925,
+      "sha256": "b3cb58d5f899b222ad716d31d38ac69af84fbea1a08d36603f08bafa72cea255"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_unicode_v5/reservation_observations.manifest.json",
+      "bytes": 5358,
+      "sha256": "04a87cbae97aea62522c2c0038055ca309f1f458b4b22a04ddcac789012026c3"
+    },
+    {
+      "path": "data/interim/sitapur_reservations_2010_unicode_v5/reservation_observations.parquet",
+      "bytes": 159137,
+      "sha256": "3ed9d8a91d4ad0a5d72a76e3c4720ca1673271dff547e6d5a1ad4534d26ba5de"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 648,
+      "sha256": "4221c46528833c3ec3f3804fbc8e4b8b5f1aa0dcf2388a02f5acefa033a1e3ed"
+    },
+    {
+      "path": "scripts/decode_legacy_labels.py",
+      "bytes": 6441,
+      "sha256": "331f1eacb4151c6bce11be1022ee53604dbe279ddda81547425ec2cebd3121b8"
+    },
+    {
+      "path": "scripts/extract_sitapur_reservations_2010.py",
+      "bytes": 18543,
+      "sha256": "164909cbeba5e9fd396a3fb41fa5605cd173b5a7a84fd544d3594fd8e18bb711"
+    },
+    {
+      "path": "tests/test_sitapur_research.py",
+      "bytes": 4384,
+      "sha256": "68db323ad042c5be3cb16d22012a23cc8f633fa9360bf45b48acb8f060709399"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 219717,
+      "sha256": "2688ddcdde3cf050ef3dd99d0e577c11038a0123b818441d27248d9d371311a4"
+    }
+  ],
+  "archive_name": "sitapur-2010-research-2026-09-10.tar.gz",
+  "archive_sha256": "ee2206d455acd4cbc40ace7cc43775c4af5d73c6597056ac1568e87bc2ee9918",
+  "archive_bytes": 1085709,
+  "payload_bytes": 3142557,
+  "archive_members": 33,
+  "archive_verification": "Exact member set and every member byte compared with the local payload.",
+  "intended_release": "https://github.com/in-rolls/local_elections_up/releases/tag/source-evidence-2026-09-10",
+  "publication_status": "prepared locally; remote upload not yet verified"
+}

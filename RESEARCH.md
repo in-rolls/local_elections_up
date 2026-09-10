@@ -25,3 +25,15 @@ shasum -a 256 -c data/source_archives/etah-2010-research-2026-09-10.CHECKSUMS.sh
 The font repair is not whole-name or identity validation. Conflicting allocation
 printings, unknown zero codes, and unvalidated compound-code meanings remain
 explicit; no research assignment has been promoted into the final data.
+# Sitapur 2010 reservation lists
+
+The [Sitapur research notes](data/catalogs/sitapur_2010_readme.md) describe 2,897
+source observations, including 1,506 samiti-member printings. All printed totals
+reconcile, but 19 rows have source-confirmed duplicate-number diagnostics.
+These printings must not be reported as a verified ward count.
+
+The [bundle catalog](data/catalogs/sitapur_2010_research_bundle.json) records hashes
+and source-evidence paths. The
+[source-cell review](data/catalogs/sitapur_2010_duplicate_number_source_review_v1.json)
+documents the nine unresolved duplicate-number groups. This material remains
+separate from the standardized final datasets.

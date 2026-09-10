@@ -1,0 +1,75 @@
+{
+  "profile_id": "sitapur_bdc_2010_krutidev010_v3",
+  "source_sha256": "ae79974344f059ac5a19580bcbb05daeefbdf2c329e923ad149c2d7cf607a03d",
+  "source_path": "data/discovery/2026-09-10/archived_reservations/raw/0df2ed118dc874203c5c_ae79974344f0.pdf",
+  "columns": [
+    "unit_name_raw"
+  ],
+  "part_marker_unicode": "।",
+  "colon_prefix_unicode": "रू",
+  "source_review_page": 6,
+  "additional_source_review_page": 4,
+  "observed_font": "KrutiDev010",
+  "reviewer": "Codex visual source inspection and PDF character/font inspection",
+  "evidence": [
+    {
+      "raw": "jkedksVAAAA",
+      "finding": "Page 4, printed number 37, shows Ramkot followed by four vertical strokes. The source does not require a separating space or limit the marker run to three strokes."
+    },
+    {
+      "raw": "ioZriqj A",
+      "finding": "The trailing A glyph renders as a single vertical part-marker stroke, not an Om symbol."
+    },
+    {
+      "raw": "ioZriqj AA",
+      "finding": "The two trailing A glyphs render as two vertical part-marker strokes."
+    },
+    {
+      "raw": ":dukiqj",
+      "finding": "The initial colon-encoded glyph renders as the Hindi ru syllable with the long-u vowel, not punctuation."
+    }
+  ],
+  "pdf_character_evidence": [
+    {
+      "raw_character": "A",
+      "fontname": "KrutiDev010",
+      "x0": 237.384229858004,
+      "top": 218.03807999999992
+    },
+    {
+      "raw_character": ":",
+      "fontname": "KrutiDev010",
+      "x0": 186.0,
+      "top": 670.43808
+    }
+  ],
+  "scope": "Only unit-name labels from this hash-pinned PDF. Do not apply to Etah, other Sitapur offices, or the shared decoder globally.",
+  "limitation": "The part strokes are retained as danda characters. No equivalence to a Roman numeral, ward identifier, or another place name is asserted. Whole-name spellings still need source review.",
+  "additional_source_reviews": [
+    {
+      "source_page": 20,
+      "source_row_on_page": 2,
+      "printed_number": "104",
+      "raw_label": "tgkxhjkckn AA1",
+      "reviewed_scope": "suffix only",
+      "finding": "Two vertical strokes followed by a printed digit 1. Preserve the digit; do not reinterpret as ordinal III."
+    },
+    {
+      "source_page": 33,
+      "source_row_on_page": 22,
+      "printed_number": "49",
+      "raw_label": "dljSyk A A",
+      "reviewed_scope": "suffix only",
+      "finding": "Two vertical strokes separated by whitespace; preserve both strokes and the separating whitespace."
+    },
+    {
+      "source_page": 34,
+      "source_row_on_page": 21,
+      "printed_number": "81",
+      "raw_label": "pkWniqj A A",
+      "reviewed_scope": "suffix only",
+      "finding": "Two vertical strokes separated by whitespace; preserve both strokes and the separating whitespace."
+    }
+  ],
+  "review_status": "Source-specific suffix diagnosis; not independent full-name or identity validation"
+}
