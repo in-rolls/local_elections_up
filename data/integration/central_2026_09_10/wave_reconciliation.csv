@@ -1,0 +1,5 @@
+year,state_published_rows,central_rows,difference,state_canonical_district_names,state_canonical_district_block_pairs,unknown_reservation_rows,link_ineligible_rows,interpretation
+2005,51872,51872,0,70,846,1300,454,row_counts_agree_not_a_value_equivalence_claim
+2010,51861,51861,0,72,844,33,276,row_counts_agree_not_a_value_equivalence_claim
+2015,59019,0,59019,75,823,0,93,wave_absent_from_central
+2021,49773,49772,1,67,728,0,56,two_winner_marked_source_rows_share_one_candidate_seat_key

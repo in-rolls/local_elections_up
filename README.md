@@ -84,3 +84,19 @@ and hoping they stay in step.
 - [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Candidate Info. + Valid Votes Won by Cands. in the 2016 Bihar Panchayat Elections
 - [in-rolls/parse_unsearchable_rolls](https://github.com/in-rolls/parse_unsearchable_rolls) — Parse Unsearchable Electoral Rolls
 - [in-rolls/mnrega_social](https://github.com/in-rolls/mnrega_social) — MNREGA Social Audit Data
+
+## Repository organization and discovery ownership
+
+New UP source discovery is owned here under `data/discovery/2026-09-10/`.
+The `parallel_search/` and `archive_coverage/` collections were transferred
+from the central repository without copying or rewriting raw evidence.
+The central handoff ledger records original paths and pre-move hashes.
+
+The shared organization contract is maintained in the central repository at
+`state_repositories.md`. Published files remain under `data/fin/` until the
+state release and central adapter are migrated together; new discovery is
+not an implicit release input.
+
+## Compact discovery evidence
+
+[Source storage and restoration](data/source_archives/README.md) explains the checksummed archive. [Compact catalogs](data/catalogs/up_discovery_2026-09-10/catalog_manifest.json) remain in Git; raw evidence is a release asset. Discovery coverage is not equivalent to validated election data.

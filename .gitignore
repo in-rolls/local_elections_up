@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 .DS_Store
 data/up_gram_panchayat_pradhan_2021.csv
+
+/data/source_archives/*.tar.gz
+/data/discovery/
+/data/interim/

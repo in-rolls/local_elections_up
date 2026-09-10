@@ -1,0 +1,50 @@
+{
+  "status": "discovery_not_complete_document_coverage",
+  "entries": [
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/README.md",
+      "archive_member": "data/discovery/2026-09-10/README.md",
+      "sha256": "2958b730f2477bf0f042b2ae913641b6a204b82c92f9ca50420811649ffa2907"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/archive_coverage/district_search_frame.csv",
+      "archive_member": "data/discovery/2026-09-10/archive_coverage/district_search_frame.csv",
+      "sha256": "2f9e60b8816ebdccd7bcd576eee3427996d4b780494d64530979c3d1b166e9da"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/archive_coverage/block_search_frame.csv",
+      "archive_member": "data/discovery/2026-09-10/archive_coverage/block_search_frame.csv",
+      "sha256": "d53f97dcb5bcff63fbb5b75d6c112c346961529769387038fa41a26507992245"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/archive_coverage/district_archive_ledger.csv",
+      "archive_member": "data/discovery/2026-09-10/archive_coverage/district_archive_ledger.csv",
+      "sha256": "c0188801dc0403363b7a6ebd0a5caa884bdbb096c43e6c86cf206abf1ec51aa3"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/archive_coverage/district_sweep_summary.json",
+      "archive_member": "data/discovery/2026-09-10/archive_coverage/district_sweep_summary.json",
+      "sha256": "72c376978476765c8eef033c719fdd7ba1abd6b918c9b72e64de6b65a3368db5"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/archive_coverage/panchayat_queue_summary.json",
+      "archive_member": "data/discovery/2026-09-10/archive_coverage/panchayat_queue_summary.json",
+      "sha256": "9ba5b2397f1436165a60926ffd9f1c9835145eb5c9db84fc011ecd0b242c62a3"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/archived_reservations/source_inventory.csv",
+      "archive_member": "data/discovery/2026-09-10/archived_reservations/source_inventory.csv",
+      "sha256": "32f055eba2018b8c2cab2f6bcc4c0500c257f8df6a63fc186b89b8d427882c61"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/archived_reservations/acquisition_summary.json",
+      "archive_member": "data/discovery/2026-09-10/archived_reservations/acquisition_summary.json",
+      "sha256": "d0945b9fc5dd97aee8c91da12df323ad87be9a238cae89ecb36c43d39864126f"
+    },
+    {
+      "catalog_path": "data/catalogs/up_discovery_2026-09-10/sec_results/format_profiles.json",
+      "archive_member": "data/discovery/2026-09-10/sec_results/format_profiles.json",
+      "sha256": "e64352126546c95fa2e92b0096d4fe1659241ddf307882046f3832349588e708"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "districts_queried": 75,
+  "inventory_statuses": {
+    "complete_query_with_entries": 75
+  },
+  "archived_capture_entries": 361301,
+  "pdf_candidates": 77930,
+  "prioritized_http_200_election_url_candidates": 7207,
+  "block_names_enumerated": 826,
+  "district_block_pages": 75,
+  "block_pages_with_count_discrepancy": [],
+  "continuations_required": 0,
+  "historical_alias_coverage_complete": false,
+  "election_document_coverage_complete": false,
+  "content_reviewed": 0,
+  "metered_inference_usd": 0
+}

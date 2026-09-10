@@ -1,0 +1,26 @@
+{
+  "state_published_rows": 212525,
+  "central_rows": 153505,
+  "difference": 59020,
+  "missing_2015_wave_rows": 59019,
+  "2021_difference_is_not_an_established_extra_seat": true,
+  "conflicting_source_candidate_ids": [
+    202725,
+    219438
+  ],
+  "central_conflict_rows_found": 1,
+  "canonical_declared_sha256": "986893d620e3d1d0d46e3d306909cc7acf3ccbae383346e4f47b39de9f62fe76",
+  "canonical_path": "/Users/soodoku/Documents/GitHub/local_elections_up/data/fin/up_gp_elections_standardized.parquet",
+  "central_path": "/Users/soodoku/Documents/GitHub/local_elections/data/master/master_uttar_pradesh.parquet",
+  "central_recorded_source_commits": [
+    "3e19684df019"
+  ],
+  "current_state_checkout_commit": "not_inspected",
+  "hash_validation_run": false,
+  "published_data_modified": false,
+  "adapter_modified": true,
+  "status": "bounded_adapter_changes_implemented; targeted_checks_and_rebuild_pending_approval",
+  "adapter_2015_implemented": true,
+  "winner_conflict_flag_implemented": true,
+  "code_checks_run": false
+}

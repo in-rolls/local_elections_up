@@ -1,0 +1,3 @@
+id,district_name,block_name,gp_name,gp_num,candidate,elected_sarpanch_name,result,gp_reservation_status,source_file,issue
+202725,मैनपुरी,कुरावली,सोनई,22,देवेंद्र कुमार,देवेंद्र कुमार,विजेता,अनुसूचित जाति,up_gp_sarpanch_2021_fixed_with_transliteration.parquet,multiple_winner_markers_under_same_source_seat_key
+219438,मैनपुरी,कुरावली,सोनई,22,सुधाकर यादव,देवेंद्र कुमार,विजेता,अनुसूचित जाति,up_gp_sarpanch_2021_fixed_with_transliteration.parquet,multiple_winner_markers_under_same_source_seat_key
