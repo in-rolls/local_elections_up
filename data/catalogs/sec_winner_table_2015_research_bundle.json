@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "phone-free research evidence; not a final standardized release",
+  "state": "UP",
+  "tier": "block_head",
+  "election_cycle_label": "2015-16",
+  "winner_printings": 816,
+  "printed_district_labels": 74,
+  "contested": 431,
+  "unopposed": 385,
+  "statewide_completeness_verified": false,
+  "exact_poll_dates_known": false,
+  "original_winner_html_included": false,
+  "original_winner_html_sha256": "7557fcb33f3175d919a3e7bdbb5591bc62f894c1f12a27d6cad2af1ae5cd82af",
+  "omission_reason": "The original winner HTML contains a mobile-number column. It is retained locally, not included in this new public bundle.",
+  "files": [
+    {
+      "path": "data/catalogs/sec_winner_table_2015_dictionary.md",
+      "bytes": 3871,
+      "sha256": "a01435603c82612f177ecc3139ab8048eb15acabb6991efcf4bd9d6f70aea6e8"
+    },
+    {
+      "path": "data/catalogs/sec_winner_table_2015_readme.md",
+      "bytes": 3040,
+      "sha256": "214c25388de94a34037abcff2c7339994001c5dcdad5e423206a150f9b7762a5"
+    },
+    {
+      "path": "data/catalogs/sec_winner_table_2015_validation.json",
+      "bytes": 1760,
+      "sha256": "c19412f4191b5831797b349f9dff507f5dc9259aadc2e53ae347957231f0fa47"
+    },
+    {
+      "path": "data/catalogs/sec_winner_table_scope.json",
+      "bytes": 2152,
+      "sha256": "33f10fa368978ef2641cc0ba23a00140a70cb68c3305bc227db357ed66179e39"
+    },
+    {
+      "path": "data/discovery/2026-09-10/sec_scope/raw/0d44208a98eda76ed8853c1d40914c2a2c63e396c4f9237488bbe7e985065360.html.gz",
+      "bytes": 4086,
+      "sha256": "aaa9d225c8bac2abd78d05ccfea6a18a698f85d96d26a0c3cff7285b69d148bf"
+    },
+    {
+      "path": "data/discovery/2026-09-10/sec_scope/raw/a52515cf1379cfbc963b78b27d76cfe232ca8db764f065a9fb649d8f8a29d2ba.html.gz",
+      "bytes": 4907,
+      "sha256": "07c50ef0b3e206956a6fcdb7302e18e16aa535c604ea2c5ff500bb03c041ff5f"
+    },
+    {
+      "path": "data/interim/sec_winner_table_2015_v3/SCHEMA.json",
+      "bytes": 3488,
+      "sha256": "a2364cb440732da66b6cdbd40d7c0a3be581b35589bf2f8f1f16578ddb5cca9f"
+    },
+    {
+      "path": "data/interim/sec_winner_table_2015_v3/extraction_manifest.json",
+      "bytes": 4861,
+      "sha256": "b88aad0c79fd0f0aebbeaf1214b89b5b4e748da752ec6442982b6e71a4f62723"
+    },
+    {
+      "path": "data/interim/sec_winner_table_2015_v3/winner_printings.parquet",
+      "bytes": 145648,
+      "sha256": "a3ab7a7afa714732ac3d434782f488a8b3f78f5b3cad237cb173e420410adc8c"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 667,
+      "sha256": "e3e34fb3586212aeb59a4c7ac715fbe667819851d2f3be982b8d0984fb18a3df"
+    },
+    {
+      "path": "scripts/extract_sec_winner_table.py",
+      "bytes": 14377,
+      "sha256": "111779d7c2b57f5090c0481e80b00e07cdd59a91cb26e99fb1ddce17a5701896"
+    },
+    {
+      "path": "tests/test_sec_winner_table.py",
+      "bytes": 6615,
+      "sha256": "8b41648c3ce09a472c9ecfdeb11a1eff52d5220c14a27d8e748202d45b673f70"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 252605,
+      "sha256": "e43b1b061fa6f40c85036fec4ade4d4f62e84bc2fcc76e4e95f3c0fd0558aa16"
+    }
+  ],
+  "additional_api_cost_usd": 0,
+  "archive_name": "sec-block-head-winners-2015-16-research-2026-09-10.tar.gz",
+  "archive_sha256": "dfccf9e062f006900aa13774798456b8e5b341f00bab45785fb5c197681cf27a",
+  "archive_bytes": 196803,
+  "payload_bytes": 452822,
+  "archive_members": 15,
+  "archive_verification": "Exact member set and bytes verified against local payload.",
+  "intended_release": "https://github.com/in-rolls/local_elections_up/releases/tag/source-evidence-2026-09-10",
+  "publication_status": "prepared locally; remote upload not yet verified"
+}

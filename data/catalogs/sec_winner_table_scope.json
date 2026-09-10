@@ -1,0 +1,44 @@
+{
+  "target_source_sha256": "7557fcb33f3175d919a3e7bdbb5591bc62f894c1f12a27d6cad2af1ae5cd82af",
+  "target_source_url": "https://sec.up.nic.in/ElecLive/WinnerList.aspx",
+  "election_cycle_year": 2015,
+  "election_cycle_label": "2015-16",
+  "election_date": null,
+  "office_label": "Kshetra Panchayat Pramukh",
+  "tier": "block_head",
+  "evidence": [
+    {
+      "source_url": "https://sec.up.nic.in/site/electionresult.aspx",
+      "section_label": "Panchayat General Election - 2015",
+      "link_label": "Winner List",
+      "link_target": "https://sec.up.nic.in/ElecLive/WinnerList.aspx"
+    },
+    {
+      "source_url": "https://sec.up.nic.in/ElecLive/Default.aspx",
+      "finding": "Cycle overview explicitly labels the panchayat general election as 2015-16."
+    }
+  ],
+  "artifacts": [
+    {
+      "source_url": "https://sec.up.nic.in/site/electionresult.aspx",
+      "source_sha256": "a52515cf1379cfbc963b78b27d76cfe232ca8db764f065a9fb649d8f8a29d2ba",
+      "source_bytes": 26149,
+      "retrieved_no_later_than_utc": "2026-09-10T16:33:21.697183+00:00",
+      "path": "data/discovery/2026-09-10/sec_scope/raw/a52515cf1379cfbc963b78b27d76cfe232ca8db764f065a9fb649d8f8a29d2ba.html.gz",
+      "compression": "gzip",
+      "compressed_sha256": "07c50ef0b3e206956a6fcdb7302e18e16aa535c604ea2c5ff500bb03c041ff5f"
+    },
+    {
+      "source_url": "https://sec.up.nic.in/ElecLive/Default.aspx",
+      "source_sha256": "0d44208a98eda76ed8853c1d40914c2a2c63e396c4f9237488bbe7e985065360",
+      "source_bytes": 20282,
+      "retrieved_no_later_than_utc": "2026-09-10T16:33:21.697862+00:00",
+      "path": "data/discovery/2026-09-10/sec_scope/raw/0d44208a98eda76ed8853c1d40914c2a2c63e396c4f9237488bbe7e985065360.html.gz",
+      "compression": "gzip",
+      "compressed_sha256": "aaa9d225c8bac2abd78d05ccfea6a18a698f85d96d26a0c3cff7285b69d148bf"
+    }
+  ],
+  "review_method": "Official SEC navigation and cycle heading inspected by Codex",
+  "scope": "Election-cycle attribution, not exact poll date or statewide completeness certification.",
+  "integration_status": "Source-scope evidence for the next derived export; existing v1 rows remain unchanged."
+}

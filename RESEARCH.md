@@ -37,3 +37,14 @@ and source-evidence paths. The
 [source-cell review](data/catalogs/sitapur_2010_duplicate_number_source_review_v1.json)
 documents the nine unresolved duplicate-number groups. This material remains
 separate from the standardized final datasets.
+
+## SEC block-head winners, 2015-16
+
+The [SEC winner-table notes](data/catalogs/sec_winner_table_2015_readme.md) document
+816 block-head winner printings and their cycle attribution. A second HTML parser
+matched all 9,792 retained source cells. These are not samiti ward-member records,
+and statewide completeness remains unverified.
+
+The [bundle catalog](data/catalogs/sec_winner_table_2015_research_bundle.json)
+records the phone-free artifacts, provenance, and checksums. The original winner
+HTML, which contains mobile numbers, is excluded from this new public bundle.
