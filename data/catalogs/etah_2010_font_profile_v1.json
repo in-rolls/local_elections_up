@@ -1,0 +1,34 @@
+{
+  "profile_id": "etah_2010_colon_glyph_v1",
+  "source_sha256": "53bfc78b35fb351dcf8f6fed54c3f07c0e51b51ea244266ed174e9ef3295fe29",
+  "source_path": "data/discovery/2026-09-10/archived_reservations/raw/4ef7c2223a1030b9a888_53bfc78b35fb.pdf",
+  "columns": ["gp_name_raw"],
+  "colon_prefix_unicode": "\u0930\u0942",
+  "observed_font": "WRTXTL+TT545Fo00",
+  "reviewer": "Codex visual source inspection and PDF character/font inspection; single reviewer",
+  "evidence": [
+    {
+      "source_page": 34,
+      "printed_gp_number": "48",
+      "raw_label": ":Lrex<+",
+      "raw_character": ":",
+      "fontname": "WRTXTL+TT545Fo00",
+      "x0": 263.28011744591083,
+      "top": 155.642457742992,
+      "finding": "The leading colon-encoded glyph prints the Hindi ru syllable with a long-u vowel, not punctuation."
+    },
+    {
+      "source_page": 104,
+      "printed_gp_number": "52",
+      "raw_label": ":i/kuh",
+      "raw_character": ":",
+      "fontname": "WRTXTL+TT545Fo00",
+      "x0": 267.11433612872196,
+      "top": 440.5223437909922,
+      "finding": "The second affected place label uses the same leading colon-encoded long-u ru glyph."
+    }
+  ],
+  "scope": "Only the leading colon in GP-name labels from this hash-pinned Etah PDF. Raw fields, reservation codes, row counts, and source identities must be preserved.",
+  "unsupported_glyph_policy": "No trailing-A mapping is supplied. If a label requires one, the decoder must stop rather than borrow Sitapur's part-marker interpretation.",
+  "limitation": "Prefix-glyph review only; not certification of whole-name spellings, place identities, historical boundaries, or reservation assignments."
+}

@@ -14,6 +14,9 @@ dev = [
     "pytest>=8",
     "ruff>=0.14",
 ]
+research = [
+    "local-reservations @ git+https://github.com/in-rolls/local_reservations.git@bf536affd015aba5820379ad99f0b6d24780e19b",
+]
 
 [tool.ruff]
 line-length = 88

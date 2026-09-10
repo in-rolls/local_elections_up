@@ -1,0 +1,35 @@
+{
+  "codebook_id": "etah_2010_reservation_codes_v1",
+  "source_sha256": "53bfc78b35fb351dcf8f6fed54c3f07c0e51b51ea244266ed174e9ef3295fe29",
+  "source_path": "data/discovery/2026-09-10/archived_reservations/raw/4ef7c2223a1030b9a888_53bfc78b35fb.pdf",
+  "source_url": "http://etah.nic.in:80/ZP-reservation2010/PRADHAN-RESERVATION-2010.pdf",
+  "archive_capture": "20101207092710",
+  "years": [1995, 2000, 2005, 2010],
+  "tier": "gp_head",
+  "conflict_column": "conflicting_nonblank_readings",
+  "conflict_flag": "conflicting_nonblank_reservation_cells",
+  "scope": "This PDF only. Earlier years are retrospective reports in a 2010 geography, not contemporary historical notifications.",
+  "reviewer": "Codex visual inspection of source pages",
+  "codes": {
+    "UR": {"caste_reservation": "NONE", "woman_reserved": false, "review_status": "source_allocation_section_supported"},
+    "L": {"caste_reservation": "NONE", "woman_reserved": true, "review_status": "source_allocation_section_supported"},
+    "SC": {"caste_reservation": "SC", "woman_reserved": false, "review_status": "compound_code_interpretation_inferred"},
+    "SCL": {"caste_reservation": "SC", "woman_reserved": true, "review_status": "compound_code_interpretation_inferred"},
+    "BC": {"caste_reservation": "BC", "woman_reserved": false, "review_status": "compound_code_interpretation_inferred"},
+    "BCL": {"caste_reservation": "BC", "woman_reserved": true, "review_status": "compound_code_interpretation_inferred"},
+    "0": {"caste_reservation": null, "woman_reserved": null, "review_status": "zero_code_meaning_unresolved"},
+    "": {"caste_reservation": null, "woman_reserved": null, "review_status": "blank_or_no_agreed_source_code"}
+  },
+  "evidence": [
+    {"source_pages": [1, 2], "finding": "The heading names Scheduled Caste allocations. Page 2 printed serials 24-27 have SCL in the 2010 column and serials 28-34 have SC."},
+    {"source_pages": [5], "finding": "The allocation heading names the backward class. Compound-code gender semantics are inferred from the document's code system, not a literal printed legend."},
+    {"source_pages": [9, 10], "finding": "The heading names allocations reserved for women. Page 10 printed serial 19, Sheetalpur GP 11, has L in the 2010 column."},
+    {"source_pages": [13, 118], "finding": "The headings identify unreserved allocations. Page 13 printed serial 1 and page 118 printed serial 2 have UR in the 2010 column."}
+  ],
+  "limitations": [
+    "A literal legend spelling out SC/SCL and BC/BCL was not located. Their gender interpretations remain explicit research inferences.",
+    "Applying the same alphabet to 1995, 2000, and 2005 uses the source's common table code system; it does not validate historical identities or source accuracy.",
+    "Blank and zero codes are unknown, never unreserved. Conflicting source assignments receive no normalized candidate.",
+    "No observation becomes a validated central-dataset assignment through code normalization alone."
+  ]
+}
