@@ -163,4 +163,5 @@ data/up_gram_panchayat_pradhan_2021.csv
 
 /data/source_archives/*.tar.gz
 /data/discovery/
-/data/interim/
+/data/interim/*
+!/data/interim/winner_lists_2015/

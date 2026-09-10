@@ -14,6 +14,7 @@ dev = [
     "lxml>=6.1.3",
     "pytest>=8",
     "ruff>=0.14",
+    "pre-commit>=4",
 ]
 research = [
     "local-reservations @ git+https://github.com/in-rolls/local_reservations.git@bf536affd015aba5820379ad99f0b6d24780e19b",

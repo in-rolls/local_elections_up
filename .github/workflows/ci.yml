@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.14"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          python-version: ${{ matrix.python }}
+      - run: uv sync --frozen --all-groups
+      - run: uv run --all-groups ruff check .
+      - run: uv run --all-groups ruff format --check .
+      - run: uv run --all-groups pytest -q
+      - run: make verify-2015
+
+  r:
+    runs-on: ubuntu-latest
+    container: rocker/r2u:24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: Rscript -e 'install.packages(c("arrow", "digest", "dplyr", "jsonlite", "lintr", "stringi"))'
+      - run: Rscript -e 'l <- lintr::lint_dir("scripts"); print(l); quit(status = as.integer(length(l) > 0L))'
+      - run: Rscript tests/test_standardized_release.R
+      - run: cd data/fin && sha256sum -c CHECKSUMS.sha256
