@@ -102,3 +102,9 @@ not an implicit release input.
 [Source storage and restoration](data/source_archives/README.md) explains the checksummed archive. [Compact catalogs](data/catalogs/up_discovery_2026-09-10/catalog_manifest.json) remain in Git; raw evidence is a release asset. Discovery coverage is not equivalent to validated election data.
 
 [Current UP status and remaining parsing work](STATUS.md) distinguishes usable tables from discovery evidence and unresolved extraction.
+
+## Historical reservation research
+
+Source-linked research artifacts, their uncertainty limits, and reproducible
+build instructions are indexed in [RESEARCH.md](RESEARCH.md). These are separate
+from the standardized final datasets.
