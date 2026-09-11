@@ -1,8 +1,12 @@
-## UP Local Elections Repository
+# Uttar Pradesh local-election data
 
-Data for 2005, 2010, 2015, and 2021 Sarpanch Elections and 2012 ULB.
+[![CI](https://github.com/in-rolls/local_elections_up/actions/workflows/ci.yml/badge.svg)](https://github.com/in-rolls/local_elections_up/actions/workflows/ci.yml)
 
-## Published data: `data/fin/`
+Source materials, collection and parsing tools, and standardized Uttar Pradesh local-election data. Holdings include Gram Panchayat records for 2005, 2010, 2015, and 2021, five-office winner lists from the collection labeled 2015, and 2012 urban local-body materials.
+
+## Data
+
+### Standardized outputs: `data/fin/`
 
 `data/fin/` is what other repositories consume. Everything else in `data/` is
 raw input or an intermediate. Four source files, one per election cycle, carry
@@ -20,7 +24,35 @@ election table:
 Panchayat counts are distinct `(district_name, block_name, gp_name)` — see the
 identifier warning below.
 
-**Three things that will bite you if you assume otherwise.**
+### Five-office winner-list collection
+
+The [2015 collection](data/raw/2015/winner_lists/README.md) is now maintained here,
+including all 226 original CSVs from `local_elections_up_2015`, its verified
+converter, and its citation. The [source manifest](data/raw/2015/winner_lists/SOURCE_MANIFEST.json)
+pins the original repository commit, file paths, and hashes. The source CSVs are
+unchanged; derived tables omit mobile numbers.
+
+| Derived file under `data/interim/winner_lists_2015/` | Records |
+| --- | ---: |
+| `gp_heads_2015.parquet` | 59,019 |
+| `block_members_2015.parquet` | 77,743 |
+| `district_members_2015.parquet` | 3,057 |
+| `block_heads_2015.parquet` | 816 |
+| `district_heads_2015.parquet` | 74 |
+
+These are winner-list records with original file and row provenance. The source
+label is recorded as `collection_year`; exact polling dates are not supplied by
+the CSVs and may differ across offices. The source's contested/unopposed label
+is preserved. [The dictionary](data/raw/2015/winner_lists/README.md#columns)
+and [export manifest](data/interim/winner_lists_2015/MANIFEST.json) document the
+schema and every omitted field. The separate newer SEC research collection in
+[RESEARCH.md](RESEARCH.md) remains a distinct acquisition.
+
+These intermediates are not appended to the multi-year release. In particular,
+the 59,019 Gram Panchayat records do not represent an additional 2015 wave.
+Existing standardized tables and consumer contracts are unchanged.
+
+## Coverage and interpretation
 
 *`gp_code` is not a panchayat identifier.* It is a serial within its block: 2005
 has 51,872 rows but only 247 distinct `gp_code` values. A panchayat is identified
@@ -53,7 +85,7 @@ make data
 make check
 ```
 
-### How it is produced
+## How collected
 
 ```
 data/up_gp_sarpanch_{2005,2010}.csv          scripts/01a, 01b (parsed from data/2005/, data/2010/ PDFs)
@@ -76,6 +108,40 @@ shasum -a 256 -c CHECKSUMS.sha256
 
 Consumers should pin a tag and check against these rather than copying the files
 and hoping they stay in step.
+
+## Usage and development
+
+```bash
+uv sync --frozen --all-groups
+make winner-lists-2015
+make check
+```
+
+`make winner-lists-2015` converts the imported CSV collection offline;
+`make verify-2015` verifies all retained values and schemas against the CSVs.
+`make data` continues to build the existing multi-year R release. Neither build
+collects new data or admits research outputs automatically.
+
+`make check` runs Python and R lint, tests, pre-commit, source/output checks,
+and published-release checksums. R checks require `arrow`, `digest`, `dplyr`,
+`jsonlite`, `lintr`, and `stringi`. `make ci-docker` runs the Python checks in
+standard Python 3.12/3.14 containers and R checks in the Rocker r2u container.
+The declared research dependencies are included for the existing source tests.
+
+## Citation
+
+For the imported 2015 winner lists: Suriyan Laohaprapanon and Gaurav Sood,
+*Uttar Pradesh local-election winners, 2015*. Identify the repository commit
+and files used. [Collection citation metadata](data/raw/2015/winner_lists/CITATION.cff)
+retains this author order. Other source collections have their own provenance;
+the 2015 citation does not attribute every dataset in this repository.
+
+## License
+
+The imported 2015 converter and tests retain their
+[MIT license](data/raw/2015/winner_lists/CODE_LICENSE).
+Their election records originate with the Uttar Pradesh State Election
+Commission; no separate source-data license is asserted by this import.
 
 ## 🔗 Adjacent Repositories
 
