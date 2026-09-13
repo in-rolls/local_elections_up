@@ -17,6 +17,13 @@ reference matching universe: **2005–2010 linked election records with known
 reservation in both waves**. This is an explicitly retained reference vintage,
 not a full-2010 geographic directory. Later-panel projections likewise retain
 the reference's known-reservation eligibility and ambiguous-name exclusions.
+Its record key is `panel` plus `anchor_key`; `lgd_gp_code` is not unique. In the
+retained map, ten LGD GP codes have two 2005–2010 anchors because the reviewed
+historical labels `Seekhar` and `Seeti` both map to LGD block 1993 (`Shikhar`).
+Collision resolution remains scoped to a historical election district/block
+label, as in the attributed reference method. Treating those cross-label links
+as one competition would change the later linked-panel coverage and is a separate
+linkage decision.
 
 The producer also measures sensitivity to using all records in the linked
 panels. Adding records changes which GPs compete for the same LGD destination

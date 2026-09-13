@@ -80,7 +80,8 @@ panels containing 2010, and `key_2015` for `2015_2021`. The source `key_YEAR`
 columns and `source_panel_row` are also retained. `mapping_anchor_key` identifies
 the 2010 record supplying a matched LGD assignment. Geographic propagation
 follows the reference's English district/block/GP names; ambiguous names remain
-unmatched, and an unmatched GP carries missing block and GP match fields.
+unmatched, and an unmatched GP carries missing block and GP match fields. The
+bridge is unique on `panel` and `anchor_key`, not on `lgd_gp_code`.
 
 | Panel | Rows | Matched to LGD |
 |---|---:|---:|
@@ -91,10 +92,16 @@ unmatched, and an unmatched GP carries missing block and GP match fields.
 
 The matcher restricts GP candidates to reviewed LGD blocks, excludes urban
 labels, and uses exact matches followed by unique Jaro matches at distance
-at most 0.20. It rejects tied best candidates and tied destination collisions.
-Numbers present on both sides must agree, including Devanagari digits; Hindi
-vowel marks remain intact. Missing numeral information retains the reference
-behavior and does not itself reject a match.
+at most 0.20. It rejects tied best candidates and resolves destination collisions
+within each historical election district/block label. A `unique` value in
+`match_confidence` describes that candidate comparison; it does not assert that
+an LGD code appears once in the bridge. The retained reference map has ten LGD GP
+codes assigned to two 2005–2010 anchors each, all where the reviewed `Seekhar` and
+`Seeti` historical labels map to LGD block 1993 (`Shikhar`). Later panels can
+retain only one of those historical anchors. Numbers present on both sides must
+agree, including Devanagari digits; Hindi vowel marks remain intact. Missing
+numeral information retains the reference behavior and does not itself reject a
+match.
 
 `Rscript scripts/10_link_historical_lgd.R` verifies the pinned inputs and rebuilds
 the bridge, release metadata and sensitivity tables. `make data-lgd` also
