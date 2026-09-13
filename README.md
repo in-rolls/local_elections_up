@@ -24,25 +24,26 @@ election table:
 Panchayat counts are distinct `(district_name, block_name, gp_name)` — see the
 identifier warning below.
 
-The older `data/2015/` collection stores its statewide block-head and district-head
-exports once, as `up_block_heads.csv` and `up_district_heads.csv`. Each replaces
-75 byte-identical district-labelled files. All original table values and the
-transliteration input vocabulary are retained. The 2021 LGD linker reads the
-verified hierarchy in `data/external/lgd/` directly.
+The 2015 source CSVs are stored once under `data/raw/2015/winner_lists/` and
+supply both the verified five-office exports and the historical transliteration
+notebooks. The 2021 LGD linker reads the verified hierarchy in
+`data/external/lgd/` directly.
 
 ### Five-office winner-list collection
 
 The [2015 collection](data/raw/2015/winner_lists/README.md) is now maintained here,
-including all 226 original CSVs from `local_elections_up_2015`, its verified
-converter, and its citation. The [source manifest](data/raw/2015/winner_lists/SOURCE_MANIFEST.json)
-pins the original repository commit, file paths, and hashes. The source CSVs are
-unchanged; derived tables omit mobile numbers.
+including 226 original CSVs from `local_elections_up_2015` and one Bahraich
+district-member CSV retained from this repository's earlier collection. Its
+verified converter and [source manifest](data/raw/2015/winner_lists/SOURCE_MANIFEST.json)
+record each file's repository, commit, path, and hash without assigning the
+additional file to the external collection. The source CSVs are unchanged;
+derived tables omit mobile numbers.
 
 | Derived file under `data/interim/winner_lists_2015/` | Records |
 | --- | ---: |
 | `gp_heads_2015.parquet` | 59,019 |
 | `block_members_2015.parquet` | 77,743 |
-| `district_members_2015.parquet` | 3,057 |
+| `district_members_2015.parquet` | 3,121 |
 | `block_heads_2015.parquet` | 816 |
 | `district_heads_2015.parquet` | 74 |
 

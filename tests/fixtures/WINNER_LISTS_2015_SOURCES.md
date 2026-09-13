@@ -6,9 +6,11 @@ missing names, and contested/unopposed semantics. Phone numbers are omitted
 from derived tables. All other source fields are retained, with empty cells
 represented as null.
 
-The complete-data test checks all 226 files in
+The complete-data test checks all 227 files in
 `data/raw/2015/winner_lists/SOURCE_MANIFEST.json` against their original byte
 hashes and verifies every retained field in the five derived Parquet files.
 Source: <http://sec.up.nic.in/ElecLive/WinnerList.aspx>.
-Original capture times are unknown; the manifest pins the source repository
-and original collection commit. Tests make no source-site requests.
+Original capture times are unknown; the manifest pins the default external
+repository and collection commit and separately attributes the additional
+Bahraich file to its retained UP repository path. Tests make no source-site
+requests.

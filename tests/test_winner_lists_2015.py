@@ -133,13 +133,21 @@ def test_imported_sources_and_exports_match_manifest():
     assert {item["file"] for item in manifest["files"]} == {
         item["file"] for item in converter.CONTRACT["sources"]
     }
-    assert len(manifest["files"]) == 226
+    assert len(manifest["files"]) == 227
+    bahraich = next(
+        item
+        for item in manifest["files"]
+        if item["file"] == "बहराइच-जिला पंचायत सदस्य.csv"
+    )
+    assert bahraich["original_path"] == "data/2015/बहराइच-जिला पंचायत सदस्य.csv"
+    assert bahraich["source_repository"].endswith("/local_elections_up")
+    assert bahraich["source_commit"] == "3fc072217508cd6e29e5db801da98b839250470a"
     for item in manifest["files"]:
         source = converter.DATA / item["file"]
         assert source.stat().st_size == item["bytes"]
         assert hashlib.sha256(source.read_bytes()).hexdigest() == item["sha256"]
     result = converter.export(converter.DATA, converter.OUTPUT, check=True)
-    assert sum(item["rows"] for item in result["files"]) == 140709
+    assert sum(item["rows"] for item in result["files"]) == 140773
     assert sum(item["unopposed"] for item in result["files"]) == 2659
     for item in result["files"]:
         table = pq.read_table(converter.OUTPUT / item["file"])

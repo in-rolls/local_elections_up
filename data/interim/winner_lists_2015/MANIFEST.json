@@ -3,7 +3,7 @@
   "omitted_source_fields": [
     "मोबाइल नं०"
   ],
-  "contract_sha256": "42f63b5877bb17cce74b542c85915c95e267d86610ad04965978c19dc65937eb",
+  "contract_sha256": "47b48752c395bec7a5bdb47cb3f251321dd582453f003ba475edb92c3dd604af",
   "files": [
     {
       "file": "block_members_2015.parquet",
@@ -819,8 +819,8 @@
     },
     {
       "file": "district_members_2015.parquet",
-      "sha256": "36568c2acc451cd1069a28a20cc135a0ef0bf87a9ae036604cd5556cf9e694b0",
-      "rows": 3057,
+      "sha256": "6a1be76a80cc86259b652f288ec209147c2a4a00fbedd20a422564072c7fea72",
+      "rows": 3121,
       "unopposed": 18,
       "missing_winners": 0,
       "sources": [
@@ -979,6 +979,10 @@
         {
           "file": "बस्ती-जिला पंचायत सदस्य.csv",
           "sha256": "7acf90400689e4d2fb2840110b0cb739699e77be4b3f12e6788d0067dc541b58"
+        },
+        {
+          "file": "बहराइच-जिला पंचायत सदस्य.csv",
+          "sha256": "6f1d988d86ca30719062adff91df7b5df5e602b9bbdc3ec78d694709ada531ba"
         },
         {
           "file": "बांदा-जिला पंचायत सदस्य.csv",

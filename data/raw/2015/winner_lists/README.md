@@ -2,7 +2,7 @@
 
 This collection is maintained within the [UP local-election repository](../../../../README.md).
 
-Winner lists for five Uttar Pradesh offices, saved from the State Election Commission under the original 2015 collection label. This collection contains 226 original CSVs and five Parquet files with 140,709 records. Each Parquet row retains its source filename and row number.
+Winner lists for five Uttar Pradesh offices, saved from the State Election Commission under the original 2015 collection label. This collection contains 227 source CSVs and five Parquet files with 140,773 records. Each Parquet row retains its source filename and row number.
 
 ## Data
 
@@ -10,11 +10,17 @@ Winner lists for five Uttar Pradesh offices, saved from the State Election Commi
 | --- | --- | ---: | ---: | ---: |
 | [gp_heads_2015.parquet](../../../interim/winner_lists_2015/gp_heads_2015.parquet) | Gram Panchayat Pradhan | 59,019 | 75 | 201 |
 | [block_members_2015.parquet](../../../interim/winner_lists_2015/block_members_2015.parquet) | Kshetra Panchayat member | 77,743 | 75 | 2,017 |
-| [district_members_2015.parquet](../../../interim/winner_lists_2015/district_members_2015.parquet) | Zila Panchayat member | 3,057 | 74 | 18 |
+| [district_members_2015.parquet](../../../interim/winner_lists_2015/district_members_2015.parquet) | Zila Panchayat member | 3,121 | 75 | 18 |
 | [block_heads_2015.parquet](../../../interim/winner_lists_2015/block_heads_2015.parquet) | Kshetra Panchayat Pramukh | 816 | 1 | 385 |
 | [district_heads_2015.parquet](../../../interim/winner_lists_2015/district_heads_2015.parquet) | Zila Panchayat Adhyaksh | 74 | 1 | 38 |
 
-The first three offices have district-specific CSVs. The last two have one statewide CSV each, with district or district-panchayat labels in their columns. [MANIFEST.json](../../../interim/winner_lists_2015/MANIFEST.json) records file hashes, source hashes, schemas, and counts. [columns.json](columns.json) maps every original filename and Hindi column heading to its export.
+The first three offices have district-specific CSVs. The last two have one statewide CSV each, with district or district-panchayat labels in their columns. [MANIFEST.json](../../../interim/winner_lists_2015/MANIFEST.json) records file hashes, source hashes, schemas, and counts. [columns.json](columns.json) maps every source filename and Hindi column heading to its export.
+
+The external `local_elections_up_2015` collection supplies 226 files. The
+Bahraich district-member CSV was retained from `data/2015/` at UP repository
+commit `3fc072217508cd6e29e5db801da98b839250470a`; it is recorded as a separate
+per-file source in [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json). This preserves
+the historical input without attributing it to the external collection.
 
 The broader [UP local-election dataset](https://github.com/in-rolls/local_elections_up) provides standardized Gram Panchayat records across election years. This directory preserves the five-office source collection.
 
@@ -46,19 +52,22 @@ Geographic columns vary by office. The exact column set and Arrow types for each
 
 ## Coverage and known gaps
 
-The files cover five offices, with 75 district files for Pradhans and block members and 74 for district members. These are counts of saved files, not a verified completeness assessment against the electoral roll or all seats. The collection does not include losing candidates.
+The files cover five offices, with 75 district files each for Pradhans, block
+members, and district members. These are counts of saved files, not a verified
+completeness assessment against the electoral roll or all seats. The collection
+does not include losing candidates.
 
-The original collector did not save page responses, acquisition logs, or capture timestamps. Its notebook visited district and office selections on the commission's winner-list page. The exports preserve every saved row, including repeated records, and do not repair source spellings or infer missing administrative identifiers. The 138,050 contested and 2,659 unopposed records describe these files; they should not be treated as validated statewide totals.
+The original collectors did not save page responses, acquisition logs, or capture timestamps. The external collection's notebook visited district and office selections on the commission's winner-list page. The exports preserve every saved row, including repeated records, and do not repair source spellings or infer missing administrative identifiers. The 138,114 contested and 2,659 unopposed records describe these files; they should not be treated as validated statewide totals.
 
 ## How collected
 
 | Stage | Source and method | Output |
 | --- | --- | --- |
-| Collection | District and office selections at the [UP State Election Commission winner-list page](http://sec.up.nic.in/ElecLive/WinnerList.aspx), using the original notebook | 226 CSVs in this directory |
+| Collection | District and office selections at the [UP State Election Commission winner-list page](http://sec.up.nic.in/ElecLive/WinnerList.aspx), using the external collection notebook plus the separately attributed Bahraich file | 227 CSVs in this directory |
 | Conversion | Offline header checks, explicit field mapping, and source provenance | Five Parquet files and a manifest under `data/interim/winner_lists_2015/` |
 | Verification | Compare every retained Parquet field and schema with its CSV inputs, then check source and output hashes | `make verify-2015` |
 
-The original collection notebook is available at [commit 7894623](https://github.com/in-rolls/local_elections_up_2015/tree/789462339f5661aa31dd4c05c56bce5f46b5bb94/scripts). The current tools operate on saved files.
+The external collection notebook is available at [commit 7894623](https://github.com/in-rolls/local_elections_up_2015/tree/789462339f5661aa31dd4c05c56bce5f46b5bb94/scripts). Its provenance applies to the 226 files identified in the source manifest; the Bahraich override records its separate history. The current tools operate on saved files.
 
 ## Usage
 
