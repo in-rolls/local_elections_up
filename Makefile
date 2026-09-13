@@ -1,10 +1,18 @@
-.PHONY: sync data link-gp lint test check
+.PHONY: sync data data-gp data-panels data-weaver link-gp lint test check
 
 sync:
 	uv sync --all-groups
 
-data:
+data: data-panels data-weaver
+
+data-gp:
 	Rscript scripts/05_standardize_elections.R
+
+data-panels: data-gp
+	Rscript scripts/08_link_elections.R
+
+data-weaver:
+	Rscript scripts/09_prepare_weaver.R
 
 link-gp:
 	uv run python scripts/06_link_2021_lgd.py
@@ -17,6 +25,8 @@ lint:
 
 test:
 	Rscript tests/test_standardized_release.R
+	Rscript tests/test_election_panels.R
+	Rscript tests/test_weaver_preparation.R
 	.venv/bin/pytest -q
 
 check: lint test

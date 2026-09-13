@@ -49,3 +49,23 @@ standardize_winner_woman <- function(x) {
     TRUE ~ NA_integer_
   )
 }
+
+# Keep the existing release inventory synchronized with regenerated products.
+write_release_metadata <- function(paths) {
+  directory <- unique(dirname(paths))
+  stopifnot(length(directory) == 1L)
+  schema_path <- file.path(directory, "SCHEMA.json")
+  schema <- jsonlite::read_json(schema_path, simplifyVector = FALSE)
+  for (path in paths) {
+    data <- arrow::read_parquet(path)
+    schema[[basename(path)]] <- list(
+      sha256 = digest::digest(path, algo = "sha256", file = TRUE),
+      rows = nrow(data), cols = ncol(data), bytes = unname(file.info(path)$size),
+      columns = as.list(names(data))
+    )
+  }
+  jsonlite::write_json(schema, schema_path, auto_unbox = TRUE, pretty = TRUE)
+  files <- sort(list.files(directory, pattern = "[.]parquet$", full.names = TRUE))
+  checksums <- vapply(files, digest::digest, character(1), algo = "sha256", file = TRUE)
+  writeLines(paste0(checksums, "  ", basename(files)), file.path(directory, "CHECKSUMS.sha256"))
+}
