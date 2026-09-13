@@ -860,6 +860,15 @@
       "office": "gp_heads"
     },
     {
+      "file": "बहराइच-जिला पंचायत सदस्य.csv",
+      "original_path": "data/2015/बहराइच-जिला पंचायत सदस्य.csv",
+      "sha256": "6f1d988d86ca30719062adff91df7b5df5e602b9bbdc3ec78d694709ada531ba",
+      "bytes": 17479,
+      "office": "district_members",
+      "source_repository": "https://github.com/in-rolls/local_elections_up",
+      "source_commit": "3fc072217508cd6e29e5db801da98b839250470a"
+    },
+    {
       "file": "बांदा-क्षेत्र पंचायत सदस्य.csv",
       "original_path": "data/बांदा-क्षेत्र पंचायत सदस्य.csv",
       "sha256": "b004e9a94888ddfc22f990b31f65203a0becbc85f95fa9d4ae70e50da7dc3ab0",
@@ -1594,5 +1603,6 @@
       "bytes": 5211,
       "office": "district_members"
     }
-  ]
+  ],
+  "file_provenance_rule": "Top-level source repository and commits apply unless a file entry overrides them."
 }

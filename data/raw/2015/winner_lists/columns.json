@@ -701,6 +701,11 @@
       "district_from_filename": "बहराइच"
     },
     {
+      "file": "बहराइच-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बहराइच"
+    },
+    {
       "file": "बांदा-क्षेत्र पंचायत सदस्य.csv",
       "kind": "block_members",
       "district_from_filename": "बांदा"
