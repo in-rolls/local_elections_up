@@ -90,5 +90,21 @@ decompress byte-identically to the originals they were made from.
 ## Consumers
 
 `quota` and `quota_raj` both read these. They previously held their own copies
-under `data/up/`; those are being replaced by a pinned fetch from this repository
-so the two cannot drift apart.
+under `data/up/`; they now use checksum-verified inputs from this repository.
+The shared wide preparation is `scripts/09_prepare_weaver.R`; analysis-specific
+regressions stay in the study repositories.
+
+
+The March 2 file has no `gp_id` overlap between 2010 and later elections:
+`weaver_20250302_wide.parquet` is a transpose by supplied ID, not a linked
+three-wave panel. It contains 105,527 IDs, including 56,344 observed in both
+2015 and the source-labeled 2020 wave. The March 17 product contains 61,338 IDs,
+of which 55,551 span all three waves. Never merge the vintages by treating their
+identifiers or missing fields as interchangeable.
+
+The March 17 preparation keeps each wave's Census identifiers. Its
+`anchor_pc11_district_id` and `anchor_pc11_cdblock_id` use the earliest observed
+wave, preserving the existing study's clustering convention without filling
+missing codes from later elections. Conflicting observed codes have explicit flags.
+The earlier `nw_up_nregs` file repeats LGD–year keys; no one-GP-per-year aggregation
+is supplied without resolving its observational unit.

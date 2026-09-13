@@ -299,29 +299,7 @@ if (nrow(roundtrip) != nrow(elections) || !identical(names(roundtrip), names(ele
   stop("The standardized Parquet file failed its round-trip check", call. = FALSE)
 }
 
-schema_path <- file.path("data", "fin", "SCHEMA.json")
-schema <- read_json(schema_path, simplifyVector = FALSE)
-schema[[basename(output)]] <- list(
-  sha256 = digest(output, algo = "sha256", file = TRUE),
-  rows = nrow(elections),
-  cols = ncol(elections),
-  bytes = unname(file.info(output)$size),
-  columns = as.list(names(elections))
-)
-write_json(schema, schema_path, auto_unbox = TRUE, pretty = TRUE)
-
-parquet_files <- sort(list.files(file.path("data", "fin"), pattern = "[.]parquet$"))
-checksums <- vapply(
-  file.path("data", "fin", parquet_files),
-  digest,
-  character(1),
-  algo = "sha256",
-  file = TRUE
-)
-writeLines(
-  paste0(checksums, "  ", parquet_files),
-  file.path("data", "fin", "CHECKSUMS.sha256")
-)
+write_release_metadata(output)
 
 print(profile)
 message("Created: ", output)

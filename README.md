@@ -151,6 +151,52 @@ Commission; no separate source-data license is asserted by this import.
 - [in-rolls/parse_unsearchable_rolls](https://github.com/in-rolls/parse_unsearchable_rolls) — Parse Unsearchable Electoral Rolls
 - [in-rolls/mnrega_social](https://github.com/in-rolls/mnrega_social) — MNREGA Social Audit Data
 
+## Shared cross-election panels
+
+Run `make data-panels` to rebuild independent 2005–2010, 2010–2015 and
+2015–2021 links and their four-election intersection. `scripts/08_link_elections.R`
+uses the standardized source records, including records with unknown reservation.
+The study repositories apply outcome and treatment exclusions after linkage.
+
+Names use NFC, Latin accent folding, lowercase, Unicode punctuation replaced by
+spaces, and collapsed Unicode whitespace. Hindi vowel marks, digits and word
+boundaries survive normalization. Different numeric sequences are ineligible:
+GP 45 cannot match GP 44, including when numbers use Devanagari digits.
+Blocks must have a mutually unique exact Hindi or English name correspondence
+within a canonical district. Within each matched block, GPs must be uniquely
+nearest in both directions, with Jaro distance below 0.1 in Hindi or English.
+Ties and competing close Hindi/English identities are withheld. Reservation and
+winner information never determine links. These are geographic linkage rules,
+not proof of unchanged administrative boundaries.
+
+`up_gp_adjacent_links.parquet` contains accepted pairs and distances;
+`up_gp_four_election_links.parquet` joins those pairs through the same intermediate
+source IDs. `up_gp_link_candidates.parquet` records nearest candidates below the
+cutoff and their decisions; records without such a candidate are absent.
+The four `up_gp_panel_*.parquet` files attach the original source fields, suffixed
+by year. `key_YEAR` is the immutable source-election ID, also present as
+`election_gp_key_YEAR`; `source_row_number_YEAR` locates the original record.
+`women_reserved_YEAR` and `winner_woman_YEAR` are 0/1 with unknown values missing;
+`reservation_class_YEAR` is general, obc, sc, st or unknown. Original geographic
+labels are retained; the standardized table supplies the labels used for matching.
+
+Both `quota` and `quota_raj` consume these same panels by commit and SHA-256.
+Study variables, outcome joins and regressions remain in those repositories.
+`make test` checks Hindi distinctions, numeric conflicts, ties, full-source
+row-order invariance and consistency between adjacent and four-election links.
+
+## Weaver preparation
+
+Run `make data-weaver` for `weaver_20250302_wide.parquet` and
+`weaver_20250317_wide.parquet`, produced by `scripts/09_prepare_weaver.R`.
+The files preserve all source fields by wave and retain separate vintages.
+The first vintage's `gp_id` does not connect 2010 to later waves. The second has
+55,551 IDs observed in all three waves and supplies the panel used by `quota_raj`.
+The source's 2020 suffix denotes the 2021 election. Census administrative anchors
+use the earliest observed source wave, including its missing values; wave-specific
+codes and conflict flags remain available. See the existing
+[Weaver source documentation](data/external/weaver/README.md) for provenance and attribution.
+
 ## Repository organization and discovery ownership
 
 New UP source discovery is owned here under `data/discovery/2026-09-10/`.

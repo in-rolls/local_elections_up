@@ -1,10 +1,18 @@
-.PHONY: sync data link-gp lint test check winner-lists-2015 verify-2015 ci-docker ci-python ci-r
+.PHONY: sync data data-gp data-panels data-weaver link-gp lint test check winner-lists-2015 verify-2015 ci-docker ci-python ci-r
 
 sync:
 	uv sync --frozen --all-groups
 
-data:
+data: data-panels data-weaver
+
+data-gp:
 	Rscript scripts/05_standardize_elections.R
+
+data-panels: data-gp
+	Rscript scripts/08_link_elections.R
+
+data-weaver:
+	Rscript scripts/09_prepare_weaver.R
 
 link-gp:
 	uv run python scripts/06_link_2021_lgd.py
@@ -17,6 +25,8 @@ lint:
 
 test:
 	Rscript tests/test_standardized_release.R
+	Rscript tests/test_election_panels.R
+	Rscript tests/test_weaver_preparation.R
 	uv run --all-groups pytest -q
 
 check: lint test verify-2015
@@ -39,4 +49,4 @@ ci-python:
 
 ci-r:
 	COPYFILE_DISABLE=1 tar --no-xattrs --exclude=._* --exclude=.git --exclude=.venv --exclude=__pycache__ --exclude=.pytest_cache --exclude=.ruff_cache --exclude=.DS_Store -cf - . | \
-	  docker run --rm -i rocker/r2u:24.04 sh -ec 'mkdir /work; tar -xf - -C /work; cd /work; Rscript -e "install.packages(c(\"arrow\", \"digest\", \"dplyr\", \"jsonlite\", \"lintr\", \"stringi\"))"; Rscript -e "l <- lintr::lint_dir(\"scripts\"); print(l); quit(status = as.integer(length(l) > 0L))"; Rscript tests/test_standardized_release.R; cd data/fin; sha256sum -c CHECKSUMS.sha256'
+	  docker run --rm -i rocker/r2u:24.04 sh -ec 'mkdir /work; tar -xf - -C /work; cd /work; Rscript -e "install.packages(c(\"arrow\", \"digest\", \"dplyr\", \"jsonlite\", \"lintr\", \"stringi\", \"purrr\", \"readr\", \"stringr\", \"tidyr\", \"stringdist\", \"haven\", \"testthat\"))"; Rscript -e "l <- lintr::lint_dir(\"scripts\"); print(l); quit(status = as.integer(length(l) > 0L))"; Rscript tests/test_standardized_release.R; Rscript tests/test_election_panels.R; Rscript tests/test_weaver_preparation.R; cd data/fin; sha256sum -c CHECKSUMS.sha256'
