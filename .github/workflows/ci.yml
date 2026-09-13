@@ -43,4 +43,5 @@ jobs:
       - run: Rscript tests/test_standardized_release.R
       - run: Rscript tests/test_election_panels.R
       - run: Rscript tests/test_weaver_preparation.R
+      - run: Rscript tests/test_historical_lgd.R
       - run: cd data/fin && sha256sum -c CHECKSUMS.sha256

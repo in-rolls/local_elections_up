@@ -4,9 +4,9 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import os
 import re
-import tomllib
 import unicodedata
 from pathlib import Path
 
@@ -42,22 +42,17 @@ def sha256(path: Path) -> str:
 
 def resolve_lgd_file() -> Path:
     """Resolve and verify the pinned LGD GP hierarchy."""
-    manifest = tomllib.loads((PROJECT_ROOT / "data/manifest.toml").read_text())
-    spec = manifest["quota_raj"]
-    relative = "data/lgd/processed/lgd_up_block_gp.csv"
+    relative = "data/external/lgd/lgd_up_block_gp.csv"
+    manifest = json.loads((PROJECT_ROOT / "data/external/lgd/SOURCES.json").read_text())
     explicit = os.environ.get("UP_LGD_GP_FILE")
-    path = (
-        Path(explicit).expanduser()
-        if explicit
-        else PROJECT_ROOT / spec["sibling"] / relative
-    )
+    path = Path(explicit).expanduser() if explicit else PROJECT_ROOT / relative
     path = path.resolve()
     if not path.is_file():
         raise FileNotFoundError(
             f"Missing LGD GP hierarchy at {path}. "
             "Set UP_LGD_GP_FILE to the pinned file."
         )
-    expected = spec["files"][relative]
+    expected = manifest["files"][relative]["sha256"]
     actual = sha256(path)
     if actual != expected:
         raise ValueError(

@@ -1,0 +1,53 @@
+{
+  "provider": "in-rolls/quota_raj",
+  "ref": "50fbe05662a8f2a84c66e5b262df4c6c0051503d",
+  "election_ref": "9f051cd607b9a42aa3afc498e57737200ef22024",
+  "geographic_bridge_universe": "2005-2010 linked records with known reservation in both waves; propagated to eligible linked panels by unambiguous English anchor names",
+  "files": {
+    "data/external/lgd/lgd_up_block_gp.csv": {
+      "source_path": "data/lgd/processed/lgd_up_block_gp.csv",
+      "sha256": "fb4ba2dc7eeb7f905acb6437585df164372c3754e829d103da7c0a48f32fa314",
+      "bytes": 2566849
+    },
+    "data/external/lgd/up_village_gp_mapping_2024.csv": {
+      "source_path": "data/lgd/up_village_gp_mapping_2024.csv",
+      "sha256": "01ce35bbaed75b94dc4b8272e31ad986eb1527dd30f7cc7ce0114f462acbb344",
+      "bytes": 10847924
+    },
+    "data/crosswalks/active/up_block_xwalk.csv": {
+      "source_path": "data/crosswalks/active/up_block_xwalk.csv",
+      "sha256": "0cc6f3dd84118402e10e3f1d5a98a96d1d4aa4e3d21419eb41cd04fcf8ca0e8c",
+      "bytes": 34086
+    }
+  },
+  "method_sources": {
+    "scripts/03b_up_shrug_match.R": "d7c83fe6a22c8464bacdec30a2d93c0be1c0c0c29844222d00db673a7641c33f",
+    "scripts/00_utils.R": "29eff4abc0ecd08b8aa06fa42b3fc3c3bebcf6296fee0e1627d0ed3f8b9f85cd",
+    "scripts/02b_up_recode.R": "493254ce27042ea1a422195ef027beda88d37d946a0ccfc96ad07c6cbdd99f6f"
+  },
+  "election_files": {
+    "data/fin/up_gp_panel_2005_2010.parquet": {
+      "sha256": "95b7578b6165206fdf3e8adfa1cdd201443ad424f5399fa907774521dbdf9af0",
+      "bytes": 8457028
+    },
+    "data/fin/up_gp_panel_2010_2015.parquet": {
+      "sha256": "ddf624786ead6f20480abe442be6fa52528f2e486648bb5bda151d91a9337a15",
+      "bytes": 8752767
+    },
+    "data/fin/up_gp_panel_2015_2021.parquet": {
+      "sha256": "da125f69f71a24993843b5400ffea4f8239fd418ac96e0b0bf8e382659c25444",
+      "bytes": 9295756
+    },
+    "data/fin/up_gp_panel_2005_2010_2015_2021.parquet": {
+      "sha256": "a056c15ae9d56d88e5f2ef5a26a8681cfd4df8cc7c981dd7e0e14e431d2acb97",
+      "bytes": 12046902
+    }
+  },
+  "review_files": {
+    "data/crosswalks/active/up_historical_lgd_reviewed.csv": {
+      "sha256": "0ab4b426b869a801247de9f54df1fe737864cf2f7c7465b0b40f7412a7877ee9",
+      "bytes": 1077,
+      "provenance": "Source-native names in both election years, reviewed block geography, LGD/village directory and all within-block alternatives; two inherited identity decisions confirmed 2026-09-13."
+    }
+  }
+}
