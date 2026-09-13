@@ -1208,5 +1208,38 @@
       "pc11_district_id_conflict",
       "pc11_cdblock_id_conflict"
     ]
+  },
+  "up_gp_lgd_bridge.parquet": {
+    "sha256": "e92f0e42bf23497691dbb96c5496ec06e4c061ae8affa699d24996cbbcf37eeb",
+    "rows": 157186,
+    "cols": 25,
+    "bytes": 9017672,
+    "columns": [
+      "panel",
+      "anchor_year",
+      "anchor_key",
+      "key_2005",
+      "key_2010",
+      "source_panel_row",
+      "district",
+      "block",
+      "gp",
+      "gp_native",
+      "match_key",
+      "english_key_records",
+      "english_key_ambiguous",
+      "mapping_anchor_key",
+      "lgd_gp_code",
+      "lgd_gp_name",
+      "lgd_block_code",
+      "lgd_block_name",
+      "block_match_type",
+      "gp_match_type",
+      "match_distance",
+      "match_confidence",
+      "mapping_review_id",
+      "key_2015",
+      "key_2021"
+    ]
   }
 }
