@@ -24,6 +24,12 @@ election table:
 Panchayat counts are distinct `(district_name, block_name, gp_name)` — see the
 identifier warning below.
 
+The older `data/2015/` collection stores its statewide block-head and district-head
+exports once, as `up_block_heads.csv` and `up_district_heads.csv`. Each replaces
+75 byte-identical district-labelled files. All original table values and the
+transliteration input vocabulary are retained. The 2021 LGD linker reads the
+verified hierarchy in `data/external/lgd/` directly.
+
 ### Five-office winner-list collection
 
 The [2015 collection](data/raw/2015/winner_lists/README.md) is now maintained here,
