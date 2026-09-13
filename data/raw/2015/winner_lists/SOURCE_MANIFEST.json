@@ -1,0 +1,1598 @@
+{
+  "format_version": 1,
+  "source_repository": "https://github.com/in-rolls/local_elections_up_2015",
+  "source_commit": "8e82e36788c5543e8fc756b24ca9aadd8fa461a0",
+  "original_collection_commit": "789462339f5661aa31dd4c05c56bce5f46b5bb94",
+  "collection_label": "2015 Uttar Pradesh panchayat winner lists",
+  "publisher": "Uttar Pradesh State Election Commission",
+  "source_url": "http://sec.up.nic.in/ElecLive/WinnerList.aspx",
+  "retrieved_utc": null,
+  "authors": [
+    "Suriyan Laohaprapanon",
+    "Gaurav Sood"
+  ],
+  "files": [
+    {
+      "file": "अमरोहा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/अमरोहा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "a11add8b3256c878a6135c1ce93441bb08d6621904134395cf351caf7d204daf",
+      "bytes": 187700,
+      "office": "block_members"
+    },
+    {
+      "file": "अमरोहा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/अमरोहा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "68ed3b86cbcb34bd826dbd016ca570134b26d59f0e4f8278b7ee965951cf1c05",
+      "bytes": 155771,
+      "office": "gp_heads"
+    },
+    {
+      "file": "अमरोहा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/अमरोहा-जिला पंचायत सदस्य.csv",
+      "sha256": "6a99f7a1b5a4ac0d572f8cb76e15080ddd002a746af0272011d5d10870253832",
+      "bytes": 7674,
+      "office": "district_members"
+    },
+    {
+      "file": "अमेठी-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/अमेठी-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "a741e7e1e4e8e3fd348900608720479b6855075940729e59b28db2e77cc5fba1",
+      "bytes": 251027,
+      "office": "block_members"
+    },
+    {
+      "file": "अमेठी-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/अमेठी-ग्राम पंचायत प्रधान.csv",
+      "sha256": "c3c536e31b79bdc32406ab230039d156b4f555889d355913276897df4811031a",
+      "bytes": 177445,
+      "office": "gp_heads"
+    },
+    {
+      "file": "अमेठी-जिला पंचायत सदस्य.csv",
+      "original_path": "data/अमेठी-जिला पंचायत सदस्य.csv",
+      "sha256": "c9c26fdb2599e15f4cb6a6edb5f2e3303f3d28f3221bb53ef4dc80bd0766557d",
+      "bytes": 10170,
+      "office": "district_members"
+    },
+    {
+      "file": "अम्बेडकर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/अम्बेडकर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "7b4fc7ad9b1a5bec7041b0a1ea7912599df2af00f635d1c3e8fa1b48bd32a17e",
+      "bytes": 290069,
+      "office": "block_members"
+    },
+    {
+      "file": "अम्बेडकर नगर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/अम्बेडकर नगर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "1635c4152fca2eea2d1b31fa92eca277fae4d88b240c5af5359553d2d1a45ddd",
+      "bytes": 245113,
+      "office": "gp_heads"
+    },
+    {
+      "file": "अम्बेडकर नगर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/अम्बेडकर नगर-जिला पंचायत सदस्य.csv",
+      "sha256": "f8636b2e933a1e365343ce9a702673c8080974ca902f591bc35a74481f1dc57b",
+      "bytes": 11693,
+      "office": "district_members"
+    },
+    {
+      "file": "अयोध्या-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/अयोध्या-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "46aa5ce20995f2710da4d9f77cfe359e84a596c130f668d00f5f5a3fdc8b60ab",
+      "bytes": 294608,
+      "office": "block_members"
+    },
+    {
+      "file": "अयोध्या-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/अयोध्या-ग्राम पंचायत प्रधान.csv",
+      "sha256": "bfc5f7d6e5ea2d7ccb192a6d2229c3878fa67861240ff2c339b2fd47dfd5c6b2",
+      "bytes": 220285,
+      "office": "gp_heads"
+    },
+    {
+      "file": "अयोध्या-जिला पंचायत सदस्य.csv",
+      "original_path": "data/अयोध्या-जिला पंचायत सदस्य.csv",
+      "sha256": "f923f27bf8815664366691d625f3297562dca185a24087e51d75f0771e436a5c",
+      "bytes": 11696,
+      "office": "district_members"
+    },
+    {
+      "file": "अलीगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/अलीगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "6a85d9238f8167f18f5594f09965a9cb031923557d5248e6e98312bd70f17522",
+      "bytes": 366204,
+      "office": "block_members"
+    },
+    {
+      "file": "अलीगढ़-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/अलीगढ़-ग्राम पंचायत प्रधान.csv",
+      "sha256": "3e9c4fca9086e269a991996e17f5ac2c9ab58fbe83652e508f8db53ef2de4882",
+      "bytes": 234059,
+      "office": "gp_heads"
+    },
+    {
+      "file": "अलीगढ़-जिला पंचायत सदस्य.csv",
+      "original_path": "data/अलीगढ़-जिला पंचायत सदस्य.csv",
+      "sha256": "b34b8e96b1a21a6aa3197032bfc5aeea32c67c170b7f8939e763d25172b54798",
+      "bytes": 13850,
+      "office": "district_members"
+    },
+    {
+      "file": "आगरा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/आगरा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "6a0e386536b01ae5d4ceccec74b7ec7a3bcdcd92d5b4f8a7e973af88770182b9",
+      "bytes": 373069,
+      "office": "block_members"
+    },
+    {
+      "file": "आगरा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/आगरा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "5ecf525a2766494c853b0abc931537256d45c3bcfa068754df7acb436240b7da",
+      "bytes": 182561,
+      "office": "gp_heads"
+    },
+    {
+      "file": "आगरा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/आगरा-जिला पंचायत सदस्य.csv",
+      "sha256": "6497b333226496bf625aa10d3a23d163fcc71521ca1262c8f99edea27a813c69",
+      "bytes": 13567,
+      "office": "district_members"
+    },
+    {
+      "file": "आजमगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/आजमगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "9b12e09d39902b78aa4a91216e285155dc2d7e130975cc5e5c11cea90dfeb356",
+      "bytes": 571025,
+      "office": "block_members"
+    },
+    {
+      "file": "आजमगढ़-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/आजमगढ़-ग्राम पंचायत प्रधान.csv",
+      "sha256": "933e29e3e20bb3b06385909a8aa7c45f8cee9c97c8878f29f3ee93e2218d40c7",
+      "bytes": 482876,
+      "office": "gp_heads"
+    },
+    {
+      "file": "आजमगढ़-जिला पंचायत सदस्य.csv",
+      "original_path": "data/आजमगढ़-जिला पंचायत सदस्य.csv",
+      "sha256": "1566a1ab580622ed7c35b54fb8c8f02f9bd1278a7d9a3b2b176f38dbbf79480e",
+      "bytes": 21466,
+      "office": "district_members"
+    },
+    {
+      "file": "इटावा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/इटावा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "73238d580b8732786511005cd6014e9a061906db42a751277c5a875f61a10290",
+      "bytes": 166176,
+      "office": "block_members"
+    },
+    {
+      "file": "इटावा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/इटावा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "cfbbd7beef4b11b0220784816f01857ba41586d41a7c63be60a20ee5cff292e6",
+      "bytes": 124850,
+      "office": "gp_heads"
+    },
+    {
+      "file": "इटावा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/इटावा-जिला पंचायत सदस्य.csv",
+      "sha256": "936267af57f0c0100fcf5e7ff44b7235a58e5aa03aaff55a2e43ae524697c44f",
+      "bytes": 6707,
+      "office": "district_members"
+    },
+    {
+      "file": "उन्नाव-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/उन्नाव-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "5a295bd8d8b10d11765ed2ffe63264e45ddef9aa79dce1f25703813846ea0aa3",
+      "bytes": 360901,
+      "office": "block_members"
+    },
+    {
+      "file": "उन्नाव-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/उन्नाव-ग्राम पंचायत प्रधान.csv",
+      "sha256": "df6b9f5d9eb9dc5f5b67ca7d4bb7ef148398e95059e8a3e2192884e14057399f",
+      "bytes": 282580,
+      "office": "gp_heads"
+    },
+    {
+      "file": "उन्नाव-जिला पंचायत सदस्य.csv",
+      "original_path": "data/उन्नाव-जिला पंचायत सदस्य.csv",
+      "sha256": "1a9dc983276f31baa586d3c7d05e5c7ff0f54cde96ef415af6dfb99dc14e2f7a",
+      "bytes": 14449,
+      "office": "district_members"
+    },
+    {
+      "file": "एटा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/एटा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "30a72b3a12bdeeae47a58e7ce3273ec3c8a48afe4450c765a4990a184c877507",
+      "bytes": 214146,
+      "office": "block_members"
+    },
+    {
+      "file": "एटा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/एटा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "c1bc203388286929aa4ad730608093c03e5c6502bc3e4a940f8060876567acb1",
+      "bytes": 156231,
+      "office": "gp_heads"
+    },
+    {
+      "file": "एटा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/एटा-जिला पंचायत सदस्य.csv",
+      "sha256": "67eec4123c66bcad35bc34a7f0544e087ccca1b393da996f0410a52babf73a62",
+      "bytes": 8467,
+      "office": "district_members"
+    },
+    {
+      "file": "औरैया-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/औरैया-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "ef1163c354014568c007a5174ad2c0ce571ecc906c42833b007fd06269782d8b",
+      "bytes": 166039,
+      "office": "block_members"
+    },
+    {
+      "file": "औरैया-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/औरैया-ग्राम पंचायत प्रधान.csv",
+      "sha256": "8dc3af27ce7f1475346a51987fa9697f768d456683f97c528ea2e487d98e7f55",
+      "bytes": 129752,
+      "office": "gp_heads"
+    },
+    {
+      "file": "औरैया-जिला पंचायत सदस्य.csv",
+      "original_path": "data/औरैया-जिला पंचायत सदस्य.csv",
+      "sha256": "ef68a9a5f8b3d34521ec9076c677d8b0dd6e2a5baf4fc4c9d392907135bdee7b",
+      "bytes": 6544,
+      "office": "district_members"
+    },
+    {
+      "file": "कन्नौज-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/कन्नौज-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "0a6ccba5c31f673e80be962ecd2f46141f4b55888c1fc2d7bff0f7ec8be7c481",
+      "bytes": 190715,
+      "office": "block_members"
+    },
+    {
+      "file": "कन्नौज-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/कन्नौज-ग्राम पंचायत प्रधान.csv",
+      "sha256": "efc1864066d9591215fe70b83d2087b40f62b77db6662c1b0e66aa6b997024eb",
+      "bytes": 134185,
+      "office": "gp_heads"
+    },
+    {
+      "file": "कन्नौज-जिला पंचायत सदस्य.csv",
+      "original_path": "data/कन्नौज-जिला पंचायत सदस्य.csv",
+      "sha256": "0435f5edb78b88b76c9ef9dc67d832cef5d50137c7c5ba41b28e1d56713b554c",
+      "bytes": 7791,
+      "office": "district_members"
+    },
+    {
+      "file": "कानपुर देहात-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/कानपुर देहात-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "b4b9f17b90e0b6ce1b07eda8668daf05c5bb03d558e95125058d9eeb23a4de48",
+      "bytes": 225111,
+      "office": "block_members"
+    },
+    {
+      "file": "कानपुर देहात-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/कानपुर देहात-ग्राम पंचायत प्रधान.csv",
+      "sha256": "69b220b388c0329dfa24c47456ac49655baa5706ee11d733834909860ee30431",
+      "bytes": 171327,
+      "office": "gp_heads"
+    },
+    {
+      "file": "कानपुर देहात-जिला पंचायत सदस्य.csv",
+      "original_path": "data/कानपुर देहात-जिला पंचायत सदस्य.csv",
+      "sha256": "771b0876626c7bafae880f10ca520206aea92aca1097c166ffcfd3d70dda69cf",
+      "bytes": 8666,
+      "office": "district_members"
+    },
+    {
+      "file": "कानपुर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/कानपुर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "a38e3d8aa9f3855ce564d220e5cab39501b3e083f13dd69f8e5fe65eec1a140e",
+      "bytes": 214826,
+      "office": "block_members"
+    },
+    {
+      "file": "कानपुर नगर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/कानपुर नगर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "1dbdbc1bc04a8e61a3c59a5e079debe2fddb3058143342f0e5dc444971f4e930",
+      "bytes": 159770,
+      "office": "gp_heads"
+    },
+    {
+      "file": "कानपुर नगर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/कानपुर नगर-जिला पंचायत सदस्य.csv",
+      "sha256": "4c95e4b27a73dbba2bf2e4a71535f001df735edd51114d5e7e8d93ab0d259f78",
+      "bytes": 8126,
+      "office": "district_members"
+    },
+    {
+      "file": "कासगंज-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/कासगंज-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "b715dc265ccc17ff1cfea2929eb64dda52510d836196a810cdb1120fde2f7ff4",
+      "bytes": 162782,
+      "office": "block_members"
+    },
+    {
+      "file": "कासगंज-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/कासगंज-ग्राम पंचायत प्रधान.csv",
+      "sha256": "7ae9be0b74775bfba735d4b48362c52c5ef560717ac2988c3e24de1f1f7a01b7",
+      "bytes": 112382,
+      "office": "gp_heads"
+    },
+    {
+      "file": "कासगंज-जिला पंचायत सदस्य.csv",
+      "original_path": "data/कासगंज-जिला पंचायत सदस्य.csv",
+      "sha256": "e4ac3d770a809883ee74cb430e3506be30a6498824dc8f308e3b2f39d6939260",
+      "bytes": 6149,
+      "office": "district_members"
+    },
+    {
+      "file": "कुशीनगर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/कुशीनगर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4de810beb75e7a46d639362c0d645da79e53c4ef56ad060513f09276d6102056",
+      "bytes": 453752,
+      "office": "block_members"
+    },
+    {
+      "file": "कुशीनगर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/कुशीनगर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "cc639c10e87789299a449b35e0c2f5dc76f40ecb23fd08457e8ef131d97d3fe5",
+      "bytes": 281801,
+      "office": "gp_heads"
+    },
+    {
+      "file": "कुशीनगर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/कुशीनगर-जिला पंचायत सदस्य.csv",
+      "sha256": "a023a253314da94677c8ca38f999f2600d608dc46d375cd124421b08a8284f88",
+      "bytes": 17139,
+      "office": "district_members"
+    },
+    {
+      "file": "कौशाम्बी-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/कौशाम्बी-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4af00a3dc28348c68f8b6c8cc27f446ca933ccb6718b93792ea7513bc691b86d",
+      "bytes": 213530,
+      "office": "block_members"
+    },
+    {
+      "file": "कौशाम्बी-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/कौशाम्बी-ग्राम पंचायत प्रधान.csv",
+      "sha256": "a4a45bf238274d5060815b4fd1f81be3005d3431427a04c44100ffcac48bce22",
+      "bytes": 131611,
+      "office": "gp_heads"
+    },
+    {
+      "file": "कौशाम्बी-जिला पंचायत सदस्य.csv",
+      "original_path": "data/कौशाम्बी-जिला पंचायत सदस्य.csv",
+      "sha256": "d37be709ab709005ec3dbb50250df68037b775b41fd5974d46f5a662c7aa6801",
+      "bytes": 8283,
+      "office": "district_members"
+    },
+    {
+      "file": "क्षेत्र पंचायत प्रमुख.csv",
+      "original_path": "data/क्षेत्र पंचायत प्रमुख.csv",
+      "sha256": "62b3e671f29d98749e1f9cdc22beb4e2489d99c18db741bb07880499afaa7aa8",
+      "bytes": 212476,
+      "office": "block_heads"
+    },
+    {
+      "file": "गाजियाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/गाजियाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "45af53a3ff93e328628a1e52176e21246e07f194a12cc7a5a01cb68bf49aae9d",
+      "bytes": 95448,
+      "office": "block_members"
+    },
+    {
+      "file": "गाजियाबाद-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/गाजियाबाद-ग्राम पंचायत प्रधान.csv",
+      "sha256": "ca317acc537f60171ce1bde28bf58b0b17ec076bbf17782fb6ba486587926c83",
+      "bytes": 42701,
+      "office": "gp_heads"
+    },
+    {
+      "file": "गाजियाबाद-जिला पंचायत सदस्य.csv",
+      "original_path": "data/गाजियाबाद-जिला पंचायत सदस्य.csv",
+      "sha256": "5ec3b6708ffca812b3f22dc0d72969284fd194dea8d90f1a6ea048cc72e3fc6f",
+      "bytes": 4778,
+      "office": "district_members"
+    },
+    {
+      "file": "गाज़ीपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/गाज़ीपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "425b4b0b7a865e6ab3970c9c1a439e719ac00656937dea0cd77b1978c4e7b8cc",
+      "bytes": 446498,
+      "office": "block_members"
+    },
+    {
+      "file": "गाज़ीपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/गाज़ीपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "9f35bbd34f31f96fba5d819ed7a33903f525bc74d1a787066e951eece93f4137",
+      "bytes": 316956,
+      "office": "gp_heads"
+    },
+    {
+      "file": "गाज़ीपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/गाज़ीपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "aa1c69af0661449e765b894f77154b51070a3e084af482252b9bf813673a616d",
+      "bytes": 17449,
+      "office": "district_members"
+    },
+    {
+      "file": "गोंडा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/गोंडा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4985313494419eb43cf14814aa42871ad114e982607d1cfab89c8c208e3c9754",
+      "bytes": 333606,
+      "office": "block_members"
+    },
+    {
+      "file": "गोंडा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/गोंडा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "0af9d9caa42e5f0c3e10a6149c5826c976d83ac489948d843ee3cfc6796cf6f2",
+      "bytes": 267730,
+      "office": "gp_heads"
+    },
+    {
+      "file": "गोंडा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/गोंडा-जिला पंचायत सदस्य.csv",
+      "sha256": "59b0aba960391666a5d7b81e71f080e6c1e15ff204a1c628a3ed4634ccb212a5",
+      "bytes": 12938,
+      "office": "district_members"
+    },
+    {
+      "file": "गोरखपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/गोरखपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "e8218be20b33eceb134ae4361eb0b63694e5fbb6c9d79e1d4b99e03b03c239ec",
+      "bytes": 612435,
+      "office": "block_members"
+    },
+    {
+      "file": "गोरखपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/गोरखपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "2cb3434f3fd0d82f202ec2683b0c7f109c9a39611da107a59c12530c24266957",
+      "bytes": 345405,
+      "office": "gp_heads"
+    },
+    {
+      "file": "गोरखपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/गोरखपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "df57476165881598e9ee58a90daf8f6dee86c85e2f057fb8b6a053f3cef1b7ba",
+      "bytes": 19184,
+      "office": "district_members"
+    },
+    {
+      "file": "गौतमबुद्ध नगर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/गौतमबुद्ध नगर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "7b16e108627b438245f5394b7ff71ea99ca19d315491e0692a19b97fd7dc12cd",
+      "bytes": 52952,
+      "office": "block_members"
+    },
+    {
+      "file": "गौतमबुद्ध नगर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/गौतमबुद्ध नगर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "bed7a3d1f509929e3d688414bb771c44ee4bd8e0326cc92e6273ea6633a9c4d4",
+      "bytes": 37842,
+      "office": "gp_heads"
+    },
+    {
+      "file": "गौतमबुद्ध नगर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/गौतमबुद्ध नगर-जिला पंचायत सदस्य.csv",
+      "sha256": "8c3ada20d0e39b76876135863f08f8c2a3fa0e4cbbf3cded104cd5fc8368ff13",
+      "bytes": 2502,
+      "office": "district_members"
+    },
+    {
+      "file": "चन्दौली-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/चन्दौली-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4047b589dc44430401edd916873ec40d72c6dfc0ee01a7bb84a1503a01f96e2d",
+      "bytes": 227387,
+      "office": "block_members"
+    },
+    {
+      "file": "चन्दौली-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/चन्दौली-ग्राम पंचायत प्रधान.csv",
+      "sha256": "7a576274135d28088f4cfd0215a9c4c383787f8b915c782dbde681600d9e2473",
+      "bytes": 181057,
+      "office": "gp_heads"
+    },
+    {
+      "file": "चन्दौली-जिला पंचायत सदस्य.csv",
+      "original_path": "data/चन्दौली-जिला पंचायत सदस्य.csv",
+      "sha256": "813fba639f035357f088d7fdf774e7410c073a912b406b88715ac2c8a38acbe9",
+      "bytes": 9209,
+      "office": "district_members"
+    },
+    {
+      "file": "चित्रकूट-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/चित्रकूट-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "877b51866fc166aee1612a9ed1c849d5ff0b062889c1f46a03af2221da84ee8f",
+      "bytes": 124935,
+      "office": "block_members"
+    },
+    {
+      "file": "चित्रकूट-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/चित्रकूट-ग्राम पंचायत प्रधान.csv",
+      "sha256": "c1466b3292093c9a4728317c2d253538915cafd34513b00293efa9193c01486a",
+      "bytes": 88759,
+      "office": "gp_heads"
+    },
+    {
+      "file": "चित्रकूट-जिला पंचायत सदस्य.csv",
+      "original_path": "data/चित्रकूट-जिला पंचायत सदस्य.csv",
+      "sha256": "a0a8887aef0ff2dfa78e6fa3213a5a2f5d71bc005160020bbc118c13a0f22f4f",
+      "bytes": 4695,
+      "office": "district_members"
+    },
+    {
+      "file": "जालौन-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/जालौन-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "82ef1beeb2aff59c5315c8733e6837a1b8d5864bcbf596d3f74e6c97ef9ceaf1",
+      "bytes": 176893,
+      "office": "block_members"
+    },
+    {
+      "file": "जालौन-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/जालौन-ग्राम पंचायत प्रधान.csv",
+      "sha256": "135e04d197d97591e61c9f245bc18d8e17935cbdca02e2ed4a2f7e9780bb926b",
+      "bytes": 151816,
+      "office": "gp_heads"
+    },
+    {
+      "file": "जालौन-जिला पंचायत सदस्य.csv",
+      "original_path": "data/जालौन-जिला पंचायत सदस्य.csv",
+      "sha256": "83621124e59ad7e84543336cf6399096c382956abb29c7d7113ed0389ec47b2d",
+      "bytes": 6259,
+      "office": "district_members"
+    },
+    {
+      "file": "जिला पंचायत अध्यक्ष.csv",
+      "original_path": "data/जिला पंचायत अध्यक्ष.csv",
+      "sha256": "55212c31750799b684b9de0c8dffdfb3bc16fb0b6607479286efacb2307971d8",
+      "bytes": 18336,
+      "office": "district_heads"
+    },
+    {
+      "file": "जौनपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/जौनपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "41c0e26d96e5ea77d8fd84b3b40912b661e910710c294770f962204c31843a43",
+      "bytes": 577489,
+      "office": "block_members"
+    },
+    {
+      "file": "जौनपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/जौनपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "f09c36c94a6359e5f0478bd7ff1ec87fe57e6ee5045c14b6dad0b8489d00e6aa",
+      "bytes": 457632,
+      "office": "gp_heads"
+    },
+    {
+      "file": "जौनपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/जौनपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "b4b2c3a397740b724740f11d7965b78bb0e3b744efdc466bb2e9dce91bf0edbd",
+      "bytes": 21988,
+      "office": "district_members"
+    },
+    {
+      "file": "झांसी-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/झांसी-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "ca7510253c90d2b81436e48a209fc0458f23f34d9e1d219015371cac8c40e6db",
+      "bytes": 166265,
+      "office": "block_members"
+    },
+    {
+      "file": "झांसी-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/झांसी-ग्राम पंचायत प्रधान.csv",
+      "sha256": "9bbc740a73628b59528ab6d9e71ed6bf3f25af88f36636f49c5d34d7ae2d9bc8",
+      "bytes": 126892,
+      "office": "gp_heads"
+    },
+    {
+      "file": "झांसी-जिला पंचायत सदस्य.csv",
+      "original_path": "data/झांसी-जिला पंचायत सदस्य.csv",
+      "sha256": "2d26e4a37114a1ee15a45a42c5c7b64f1ba34dad89c4d071e7a570973e4e33b8",
+      "bytes": 6300,
+      "office": "district_members"
+    },
+    {
+      "file": "देवरिया-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/देवरिया-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "2d2159f8e33972b988cc4c2125013818a6fd9c47567012a0efa05d0d9f41a274",
+      "bytes": 393751,
+      "office": "block_members"
+    },
+    {
+      "file": "देवरिया-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/देवरिया-ग्राम पंचायत प्रधान.csv",
+      "sha256": "9e41cdba448f0516b1c44d78e2bce6da625911fef743cd6259b8fb854fc7539c",
+      "bytes": 315558,
+      "office": "gp_heads"
+    },
+    {
+      "file": "देवरिया-जिला पंचायत सदस्य.csv",
+      "original_path": "data/देवरिया-जिला पंचायत सदस्य.csv",
+      "sha256": "2aa0c9831deba8841f3ef87643b3fdeda4646842f64e93b837c7167ddfa715e6",
+      "bytes": 15554,
+      "office": "district_members"
+    },
+    {
+      "file": "पीलीभीत-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/पीलीभीत-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "769392fb178ad19b2e943082b54f5a754ddb619ac7b0f7be5483ac3585afbdf4",
+      "bytes": 242152,
+      "office": "block_members"
+    },
+    {
+      "file": "पीलीभीत-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/पीलीभीत-ग्राम पंचायत प्रधान.csv",
+      "sha256": "338f37038f96e54361ff846bb60eef7081666e8cec55757224c6730dd4b71c4f",
+      "bytes": 195308,
+      "office": "gp_heads"
+    },
+    {
+      "file": "पीलीभीत-जिला पंचायत सदस्य.csv",
+      "original_path": "data/पीलीभीत-जिला पंचायत सदस्य.csv",
+      "sha256": "653952b12376a43da70a8aa1c6fd4ffbd89a4218be730ca750ea011678942063",
+      "bytes": 9189,
+      "office": "district_members"
+    },
+    {
+      "file": "प्रतापगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/प्रतापगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "7e30d898c9e61e825cda82d74425e9489eb6970f98f729330e3fe28a81a43e76",
+      "bytes": 432102,
+      "office": "block_members"
+    },
+    {
+      "file": "प्रतापगढ़-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/प्रतापगढ़-ग्राम पंचायत प्रधान.csv",
+      "sha256": "bf77ce4bb5c2a4417d602edd36abc179c927c90a833ece8ab0f174724ca27167",
+      "bytes": 327328,
+      "office": "gp_heads"
+    },
+    {
+      "file": "प्रतापगढ़-जिला पंचायत सदस्य.csv",
+      "original_path": "data/प्रतापगढ़-जिला पंचायत सदस्य.csv",
+      "sha256": "bfa6b003431eecf9281e7607d62bb7d9aa782bcf5178e51d4f78a5be71999a5e",
+      "bytes": 16092,
+      "office": "district_members"
+    },
+    {
+      "file": "प्रयागराज-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/प्रयागराज-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "e3fc6acfaadaf44877a32595ba4bb6e633e83ff6510b2725e57d1431901fea21",
+      "bytes": 617565,
+      "office": "block_members"
+    },
+    {
+      "file": "प्रयागराज-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/प्रयागराज-ग्राम पंचायत प्रधान.csv",
+      "sha256": "b35c8bc82c4b657a9a7cb50281c8def81e6087ed2e9b808c0fb585918ca62dc3",
+      "bytes": 431514,
+      "office": "gp_heads"
+    },
+    {
+      "file": "प्रयागराज-जिला पंचायत सदस्य.csv",
+      "original_path": "data/प्रयागराज-जिला पंचायत सदस्य.csv",
+      "sha256": "6527e61d07c5d95c46d0b8ca87daef9ee82a8ffb126518fead109cfdf0ca6436",
+      "bytes": 26936,
+      "office": "district_members"
+    },
+    {
+      "file": "फतेहपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/फतेहपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "525badb25b0fc3e7513c948b5bb632b4425abe4cad56666365677e461e8c49b0",
+      "bytes": 308453,
+      "office": "block_members"
+    },
+    {
+      "file": "फतेहपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/फतेहपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "d53f680cdc2fe4dcab213f0acde1bbe45013f8701ca159444c19af6ab5fee2ab",
+      "bytes": 217442,
+      "office": "gp_heads"
+    },
+    {
+      "file": "फतेहपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/फतेहपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "60f2da3bb7233d1c92014e67653c71b8366bb496d1d608d7fe04eb049ea14745",
+      "bytes": 11838,
+      "office": "district_members"
+    },
+    {
+      "file": "फ़र्रुखाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/फ़र्रुखाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4d5740c3bb5a33cb6908ca633d1e4baa350799f3e6232de533e50257385be295",
+      "bytes": 207956,
+      "office": "block_members"
+    },
+    {
+      "file": "फ़र्रुखाबाद-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/फ़र्रुखाबाद-ग्राम पंचायत प्रधान.csv",
+      "sha256": "575b9184737327a5ae77a72897c0a49f3d049d4a8f560820ce315df31dcb700b",
+      "bytes": 162564,
+      "office": "gp_heads"
+    },
+    {
+      "file": "फ़र्रुखाबाद-जिला पंचायत सदस्य.csv",
+      "original_path": "data/फ़र्रुखाबाद-जिला पंचायत सदस्य.csv",
+      "sha256": "43356d71440937d234123af9fd48316288b120a8b7e79213b9a8527e4a94f385",
+      "bytes": 8232,
+      "office": "district_members"
+    },
+    {
+      "file": "फिरोज़ाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/फिरोज़ाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "56e79d129edb7fa23bc8e1243794f233eff7a0ae2a6c8297a14019338315d36e",
+      "bytes": 239943,
+      "office": "block_members"
+    },
+    {
+      "file": "फिरोज़ाबाद-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/फिरोज़ाबाद-ग्राम पंचायत प्रधान.csv",
+      "sha256": "dcfa0b7cc6678d66a6463a5e2bea106329ca507ac467da58762ecaf9fb59fd14",
+      "bytes": 153246,
+      "office": "gp_heads"
+    },
+    {
+      "file": "फिरोज़ाबाद-जिला पंचायत सदस्य.csv",
+      "original_path": "data/फिरोज़ाबाद-जिला पंचायत सदस्य.csv",
+      "sha256": "d491a40f38aee931726620ebefa2fdb7c183eda5bbc737528ae70ea1e3c8938b",
+      "bytes": 9105,
+      "office": "district_members"
+    },
+    {
+      "file": "बदायूं-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बदायूं-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "2246ed7a1324ad496c8193b9986dc77f2d13f12f9208dcaff0d1b991617c0bf1",
+      "bytes": 347399,
+      "office": "block_members"
+    },
+    {
+      "file": "बदायूं-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बदायूं-ग्राम पंचायत प्रधान.csv",
+      "sha256": "bcdc23bed5aaa289d9c87502e48cf4b4f822b1b21a17847bfe1c4354991b5b0c",
+      "bytes": 274387,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बदायूं-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बदायूं-जिला पंचायत सदस्य.csv",
+      "sha256": "b35e616640f55ecebc2e4477d0ce0ba72eabed73f6f96c62080a8d7fbf20f9a8",
+      "bytes": 13267,
+      "office": "district_members"
+    },
+    {
+      "file": "बरेली-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बरेली-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "d9d9d54ef19ef5087bab9a0efbe9c47a6e5f4e55c15b0853fbfd3e2174fdcda8",
+      "bytes": 399887,
+      "office": "block_members"
+    },
+    {
+      "file": "बरेली-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बरेली-ग्राम पंचायत प्रधान.csv",
+      "sha256": "eaa12f2703f56225c9c75d4aa1f7fd2dc9d281c7a1b7d2243b4aadb9d1a8ec8b",
+      "bytes": 315723,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बरेली-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बरेली-जिला पंचायत सदस्य.csv",
+      "sha256": "c883f988a2feb5a0b963faa055ac4f680640b4f73fdcc36cf731447134422578",
+      "bytes": 16955,
+      "office": "district_members"
+    },
+    {
+      "file": "बलरामपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बलरामपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "1fd5bd5b3f86831edfc1fb1ef6c01252bbcb630a1cdc329edca3ea08092ebbb8",
+      "bytes": 286665,
+      "office": "block_members"
+    },
+    {
+      "file": "बलरामपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बलरामपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "081f11975787fc821d36798989d684737751ee09c79e53756ccb6031c0a28427",
+      "bytes": 208111,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बलरामपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बलरामपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "4f66ce66ea3e771263724af8ce57155310ae59abc696bd2d951cfaed19de74f7",
+      "bytes": 10301,
+      "office": "district_members"
+    },
+    {
+      "file": "बलिया-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बलिया-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "8ac08412c35af83fcaebd13017234a1936c29e2a5341c030ec22c0b06355d347",
+      "bytes": 384294,
+      "office": "block_members"
+    },
+    {
+      "file": "बलिया-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बलिया-ग्राम पंचायत प्रधान.csv",
+      "sha256": "cb46d2ee403724954f24fb7642fb750fa3f3a7f52a6af855f39be65ad3b4c335",
+      "bytes": 241025,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बलिया-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बलिया-जिला पंचायत सदस्य.csv",
+      "sha256": "e545268735e75d0d02932332b6e6cab9b38cc683439b2cf15dd6742a224b6ffc",
+      "bytes": 14807,
+      "office": "district_members"
+    },
+    {
+      "file": "बस्ती-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बस्ती-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "9e0223833db0c6f9fbeb6174560bc14a395ece20ec193c95de1be788cf644f4b",
+      "bytes": 310176,
+      "office": "block_members"
+    },
+    {
+      "file": "बस्ती-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बस्ती-ग्राम पंचायत प्रधान.csv",
+      "sha256": "01777897c39eaa3f7a23df3623103e14d6b9e7509044d07dde79ce3b799a6011",
+      "bytes": 327630,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बस्ती-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बस्ती-जिला पंचायत सदस्य.csv",
+      "sha256": "7acf90400689e4d2fb2840110b0cb739699e77be4b3f12e6788d0067dc541b58",
+      "bytes": 11937,
+      "office": "district_members"
+    },
+    {
+      "file": "बहराइच-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बहराइच-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "197701d6927b57a544169a89256f86141c3f68fd6aa9a652af0ea6226d215350",
+      "bytes": 448821,
+      "office": "block_members"
+    },
+    {
+      "file": "बहराइच-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बहराइच-ग्राम पंचायत प्रधान.csv",
+      "sha256": "e7aa1db9380bfc7cf1805737c47b11f01caed8b6c0e87c13ebb3a9b4fd7f9068",
+      "bytes": 273176,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बांदा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बांदा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "b004e9a94888ddfc22f990b31f65203a0becbc85f95fa9d4ae70e50da7dc3ab0",
+      "bytes": 206664,
+      "office": "block_members"
+    },
+    {
+      "file": "बांदा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बांदा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "660028f9d746c506296e7be9c2083faf27630fd7e440b7d670cd3ea862097d45",
+      "bytes": 121189,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बांदा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बांदा-जिला पंचायत सदस्य.csv",
+      "sha256": "5f6b0448a9fbfe844defd1019e929653ca981ca85c8ee97ec490f7456107bb33",
+      "bytes": 8142,
+      "office": "district_members"
+    },
+    {
+      "file": "बागपत-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बागपत-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "e136b2e0b8db2bd642e4225d911a73c77c44590154dce133afcc7eb9990aab40",
+      "bytes": 139286,
+      "office": "block_members"
+    },
+    {
+      "file": "बागपत-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बागपत-ग्राम पंचायत प्रधान.csv",
+      "sha256": "d2fff28c78bb64a6e2d3218efde0a98925d7b383940b40e3d827d4f2c6641656",
+      "bytes": 61629,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बागपत-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बागपत-जिला पंचायत सदस्य.csv",
+      "sha256": "648fc3fda4081ab84a001a5605d54398deaaa70715584aa87205e64d9540b875",
+      "bytes": 5823,
+      "office": "district_members"
+    },
+    {
+      "file": "बाराबंकी-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बाराबंकी-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "6e3d3e4529eb858799f1963b80f680ba47b0662255a7bca0c646dce9eeae6400",
+      "bytes": 408258,
+      "office": "block_members"
+    },
+    {
+      "file": "बाराबंकी-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बाराबंकी-ग्राम पंचायत प्रधान.csv",
+      "sha256": "a0b4ef9cb7572fd79362c669525a0eebd9415e926ea3d6d2ce105fa9bcc3c711",
+      "bytes": 312418,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बाराबंकी-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बाराबंकी-जिला पंचायत सदस्य.csv",
+      "sha256": "a0a1f873f5dbf605a2fbff3bc135c775bad5ddf002d37dcea8539ea32256a0f8",
+      "bytes": 16107,
+      "office": "district_members"
+    },
+    {
+      "file": "बिजनौर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बिजनौर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4664854614999ebb55f71954912fbc5c4c3d1af5c9f1b1f07d8744524e3951f0",
+      "bytes": 409036,
+      "office": "block_members"
+    },
+    {
+      "file": "बिजनौर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बिजनौर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "41f7634a05e59ae44490c55747a41134e99ed5fe31493092fae48cce0c9e22f3",
+      "bytes": 306002,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बिजनौर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बिजनौर-जिला पंचायत सदस्य.csv",
+      "sha256": "18df049e8b5604f08c4aed6bf46a7144c7c050b022de6a31358a2787e3c3f5f3",
+      "bytes": 15312,
+      "office": "district_members"
+    },
+    {
+      "file": "बुलंदशहर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/बुलंदशहर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "45a0896e0269ea9008816c8ea5c511066f4297b28d977003fe075d9659c4def5",
+      "bytes": 380794,
+      "office": "block_members"
+    },
+    {
+      "file": "बुलंदशहर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/बुलंदशहर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "c694021de75ef770db75f200ad5c14f7d979ec7be293acc2e164318f31cab328",
+      "bytes": 251162,
+      "office": "gp_heads"
+    },
+    {
+      "file": "बुलंदशहर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/बुलंदशहर-जिला पंचायत सदस्य.csv",
+      "sha256": "3479576d52d27d2edb7557a80b242b7808e9ef85250f98aff8b87502ff095450",
+      "bytes": 14301,
+      "office": "district_members"
+    },
+    {
+      "file": "भदोही-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/भदोही-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "797b80c5b9d1b9eb85177069f1a37598a36eb019672d6a8280d829c88bed37d5",
+      "bytes": 204869,
+      "office": "block_members"
+    },
+    {
+      "file": "भदोही-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/भदोही-ग्राम पंचायत प्रधान.csv",
+      "sha256": "9c6e042249fcd248481b6d4c88f1281e325b3dd810d2cd512bd8d422f6d929dc",
+      "bytes": 143250,
+      "office": "gp_heads"
+    },
+    {
+      "file": "भदोही-जिला पंचायत सदस्य.csv",
+      "original_path": "data/भदोही-जिला पंचायत सदस्य.csv",
+      "sha256": "72b11654b36fcf664e77ecbb0947a46e7daebc59cb8e7e079a1785d99cf335f3",
+      "bytes": 7326,
+      "office": "district_members"
+    },
+    {
+      "file": "मऊ-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/मऊ-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "93076d577c55e4fd8623ba1227afd29bbbbd34b6b9d6c2b9513914b0792be48a",
+      "bytes": 241062,
+      "office": "block_members"
+    },
+    {
+      "file": "मऊ-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/मऊ-ग्राम पंचायत प्रधान.csv",
+      "sha256": "442bc3432d3dc36ad14b9a9a1109b3e7ae0b6ebb2929faf83a9857eb2cfab12b",
+      "bytes": 180411,
+      "office": "gp_heads"
+    },
+    {
+      "file": "मऊ-जिला पंचायत सदस्य.csv",
+      "original_path": "data/मऊ-जिला पंचायत सदस्य.csv",
+      "sha256": "2d7d00eebaa4f9418e8e3d7a337aa0c82b6d3fa5d9c4e106891bbdbf41a9707e",
+      "bytes": 8277,
+      "office": "district_members"
+    },
+    {
+      "file": "मथुरा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/मथुरा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "2a4ed8d04c7f16f4ef11d1277471372df443489735935a5d7ea65f945bff093e",
+      "bytes": 258496,
+      "office": "block_members"
+    },
+    {
+      "file": "मथुरा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/मथुरा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "a881dc2ad4e125d85d51b9523841f2cb28c74da1d1c8a985a970be70e5988bef",
+      "bytes": 135188,
+      "office": "gp_heads"
+    },
+    {
+      "file": "मथुरा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/मथुरा-जिला पंचायत सदस्य.csv",
+      "sha256": "d1030b7ba0123e48e8a152fed7046c68de9133eb7db2b7c1cb47d0c09d748daa",
+      "bytes": 9698,
+      "office": "district_members"
+    },
+    {
+      "file": "महराजगंज-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/महराजगंज-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "a3b7b0862cec6d3cc80cdefba8ff04b61ef89fc49b033c8c3c4962fd3cfefa64",
+      "bytes": 294446,
+      "office": "block_members"
+    },
+    {
+      "file": "महराजगंज-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/महराजगंज-ग्राम पंचायत प्रधान.csv",
+      "sha256": "e327ec35e77f81fa03d08d6ed54322c8827cd2eb65fb3b7314d402ba4e307c4e",
+      "bytes": 238003,
+      "office": "gp_heads"
+    },
+    {
+      "file": "महराजगंज-जिला पंचायत सदस्य.csv",
+      "original_path": "data/महराजगंज-जिला पंचायत सदस्य.csv",
+      "sha256": "a1f95c8e3a300ae9882ce8fbb9d6e9c8fa363ddba979b04b4837daa9e9758108",
+      "bytes": 12784,
+      "office": "district_members"
+    },
+    {
+      "file": "महोबा-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/महोबा-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "2130215bdeaf17ab0088752de1ea45ea64fac368282717e71968744fd1215ead",
+      "bytes": 94192,
+      "office": "block_members"
+    },
+    {
+      "file": "महोबा-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/महोबा-ग्राम पंचायत प्रधान.csv",
+      "sha256": "7e958d68485f6895f66b22c831fb3a84c566699e1d1dfd33c72b6b0a4058b993",
+      "bytes": 71790,
+      "office": "gp_heads"
+    },
+    {
+      "file": "महोबा-जिला पंचायत सदस्य.csv",
+      "original_path": "data/महोबा-जिला पंचायत सदस्य.csv",
+      "sha256": "7a6bde1a233d8e31ae479a9fac898bff579fcd2b90d0f7ef801c8053ef7a8a87",
+      "bytes": 4137,
+      "office": "district_members"
+    },
+    {
+      "file": "मीरजापुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/मीरजापुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "f2d5c5a0a10f956866773dc0bbc78f06c4c3cf0d01c21c74c1a1baa7b3113dba",
+      "bytes": 312296,
+      "office": "block_members"
+    },
+    {
+      "file": "मीरजापुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/मीरजापुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "c9433bc6de8cee4f1918dad54e09b8932badbb07a8791dae03273cbac7c0080a",
+      "bytes": 212129,
+      "office": "gp_heads"
+    },
+    {
+      "file": "मीरजापुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/मीरजापुर-जिला पंचायत सदस्य.csv",
+      "sha256": "90e32b94d98a4642fb67d7798ba35b07f01fa216db0cc4813ec1094d9062c1be",
+      "bytes": 11452,
+      "office": "district_members"
+    },
+    {
+      "file": "मुज़फ्फरनगर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/मुज़फ्फरनगर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "b7c544ba637248d21258ae3fcc9b4599bce74d929d48a720e0bd7b6bc7e44b24",
+      "bytes": 280640,
+      "office": "block_members"
+    },
+    {
+      "file": "मुज़फ्फरनगर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/मुज़फ्फरनगर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "92c96047891ee64ddfd4e28cc825d41007ed6b91dc7c86ddfb167088e65aa1e8",
+      "bytes": 126847,
+      "office": "gp_heads"
+    },
+    {
+      "file": "मुज़फ्फरनगर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/मुज़फ्फरनगर-जिला पंचायत सदस्य.csv",
+      "sha256": "1f86cff275a97d09759cc38da6527e30c281396ad763fa6e4d88f7a5492f4ab3",
+      "bytes": 11425,
+      "office": "district_members"
+    },
+    {
+      "file": "मुरादाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/मुरादाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "91741f2ca42eb62c28c7d15a087a6ea53444b59ef7a38614f286c1767787949e",
+      "bytes": 231054,
+      "office": "block_members"
+    },
+    {
+      "file": "मुरादाबाद-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/मुरादाबाद-ग्राम पंचायत प्रधान.csv",
+      "sha256": "1ba8fa390c9b34d63971e8798b2f8a6cca3909792be6b9ee0b7bce0e9d0d0fa1",
+      "bytes": 160848,
+      "office": "gp_heads"
+    },
+    {
+      "file": "मुरादाबाद-जिला पंचायत सदस्य.csv",
+      "original_path": "data/मुरादाबाद-जिला पंचायत सदस्य.csv",
+      "sha256": "9453779a95850c1a6a46ff15125d119e7363d693472bb46d48dd99afd867a101",
+      "bytes": 9224,
+      "office": "district_members"
+    },
+    {
+      "file": "मेरठ-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/मेरठ-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "f18ba0dad42fe279589119aefcaa99fdd6b3ca84836bcee02a36be57f7596246",
+      "bytes": 225464,
+      "office": "block_members"
+    },
+    {
+      "file": "मेरठ-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/मेरठ-ग्राम पंचायत प्रधान.csv",
+      "sha256": "a2d6b5f7c7bf63945f6fe6258ca51005b8257414f23e7c8dd5175ea3e7b07783",
+      "bytes": 123617,
+      "office": "gp_heads"
+    },
+    {
+      "file": "मेरठ-जिला पंचायत सदस्य.csv",
+      "original_path": "data/मेरठ-जिला पंचायत सदस्य.csv",
+      "sha256": "66fa120e1ed7623c92899a96520b2dcc527b5cf7d08207a5ec95e3714863af98",
+      "bytes": 8759,
+      "office": "district_members"
+    },
+    {
+      "file": "मैनपुरी-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/मैनपुरी-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "c6ade9b13d97cb4eb625d553c5b58cc38c8cf26ccc6e4065d5a8acde82b0530c",
+      "bytes": 225322,
+      "office": "block_members"
+    },
+    {
+      "file": "मैनपुरी-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/मैनपुरी-ग्राम पंचायत प्रधान.csv",
+      "sha256": "0c507f7de6d56282ad22374e38232c0b979340ab42f4b25668463d6aa91fe869",
+      "bytes": 146906,
+      "office": "gp_heads"
+    },
+    {
+      "file": "मैनपुरी-जिला पंचायत सदस्य.csv",
+      "original_path": "data/मैनपुरी-जिला पंचायत सदस्य.csv",
+      "sha256": "4139f628af66d157f8da495fef502c3ead7406a36c6c40307a34114cbdb4a9eb",
+      "bytes": 8383,
+      "office": "district_members"
+    },
+    {
+      "file": "रामपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/रामपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "8abdf9facbdb1686f950938248f52eb64a7cee7cf4a05a60be9ecc7d55d550bb",
+      "bytes": 252708,
+      "office": "block_members"
+    },
+    {
+      "file": "रामपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/रामपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "936df46dde488105b6aa1d4ab1f1f38bbefe6f2494a74af472a3dba9d070dd73",
+      "bytes": 175534,
+      "office": "gp_heads"
+    },
+    {
+      "file": "रामपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/रामपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "b3c7d07e3949ac603ff0776232aee6208504fff9d77c260b3bd289296d4ce9b3",
+      "bytes": 9379,
+      "office": "district_members"
+    },
+    {
+      "file": "रायबरेली-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/रायबरेली-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "3f2b7cc29fc0a6be033d72cdf38ca6b34e88a3f7ffbf93c8d6331f1aefc20127",
+      "bytes": 364231,
+      "office": "block_members"
+    },
+    {
+      "file": "रायबरेली-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/रायबरेली-ग्राम पंचायत प्रधान.csv",
+      "sha256": "7c05bbc85979642596a6c555441323316222a1d1cbb2380adb1d916bcca97d48",
+      "bytes": 258054,
+      "office": "gp_heads"
+    },
+    {
+      "file": "रायबरेली-जिला पंचायत सदस्य.csv",
+      "original_path": "data/रायबरेली-जिला पंचायत सदस्य.csv",
+      "sha256": "726e1e05a0822641e96e5dd600c57a4e11e1283e185869d0826c5ba3feef9762",
+      "bytes": 14176,
+      "office": "district_members"
+    },
+    {
+      "file": "लखनऊ-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/लखनऊ-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "36d7689e907fff756867fbd72c5ffe6424e206e30c5f9e4f15b579531d95dccf",
+      "bytes": 224446,
+      "office": "block_members"
+    },
+    {
+      "file": "लखनऊ-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/लखनऊ-ग्राम पंचायत प्रधान.csv",
+      "sha256": "5c2b3c71bdaf0774899fc952dac0795186dd7af07bf7e876e083c403423850f9",
+      "bytes": 156779,
+      "office": "gp_heads"
+    },
+    {
+      "file": "लखनऊ-जिला पंचायत सदस्य.csv",
+      "original_path": "data/लखनऊ-जिला पंचायत सदस्य.csv",
+      "sha256": "f0a46b7d19be2bb744b90400bc8f0246f4d0b9b806075f542575d0d99b622f6a",
+      "bytes": 8728,
+      "office": "district_members"
+    },
+    {
+      "file": "लखीमपुर खीरी-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/लखीमपुर खीरी-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "c3b0617d493dda25e7f63affeb8f4aa2e27f19de9143409db4fde0d96bfcf1c4",
+      "bytes": 523842,
+      "office": "block_members"
+    },
+    {
+      "file": "लखीमपुर खीरी-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/लखीमपुर खीरी-ग्राम पंचायत प्रधान.csv",
+      "sha256": "8f0cac5c3696040e95cd45e11f177c51a999056325f6e76113ab1d51a4f1a95b",
+      "bytes": 310604,
+      "office": "gp_heads"
+    },
+    {
+      "file": "लखीमपुर खीरी-जिला पंचायत सदस्य.csv",
+      "original_path": "data/लखीमपुर खीरी-जिला पंचायत सदस्य.csv",
+      "sha256": "488e5b21ec0e70d0b685d8c69c25ade0f9bf9c55276d64bc6db784ec4cd83001",
+      "bytes": 19332,
+      "office": "district_members"
+    },
+    {
+      "file": "ललितपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/ललितपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "8876fcc251b604b461d7c882fa7993599fdb03f67fffe11f18f43166333b3723",
+      "bytes": 139079,
+      "office": "block_members"
+    },
+    {
+      "file": "ललितपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/ललितपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "01aaf439455dae739ca61ec44f99a01da69281fa150e3b69927fc4e90136911b",
+      "bytes": 105255,
+      "office": "gp_heads"
+    },
+    {
+      "file": "ललितपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/ललितपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "2f8c8a8b63416aea03154fe8b5803873f5ad9946bbad533fa1ff2d6649f1ec83",
+      "bytes": 5564,
+      "office": "district_members"
+    },
+    {
+      "file": "वाराणसी-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/वाराणसी-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "62e12b3d3eafe41f94a56f2402d930f683d91bd1535eb52e53eaf33e57455764",
+      "bytes": 334072,
+      "office": "block_members"
+    },
+    {
+      "file": "वाराणसी-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/वाराणसी-ग्राम पंचायत प्रधान.csv",
+      "sha256": "cd13581d98721233e3af3ffcf4404b54227c861ac8a997e7b83da64774432fcf",
+      "bytes": 198155,
+      "office": "gp_heads"
+    },
+    {
+      "file": "वाराणसी-जिला पंचायत सदस्य.csv",
+      "original_path": "data/वाराणसी-जिला पंचायत सदस्य.csv",
+      "sha256": "a821f532aa6db185d651be536037938c8d6348a0ddd834c02a0f06f8d5f084e3",
+      "bytes": 13334,
+      "office": "district_members"
+    },
+    {
+      "file": "शामली-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/शामली-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "dbe6bff52a9453566336e708955a749548fec52918c3e9a8f258c4d5f3b01bfc",
+      "bytes": 123504,
+      "office": "block_members"
+    },
+    {
+      "file": "शामली-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/शामली-ग्राम पंचायत प्रधान.csv",
+      "sha256": "e993e415f0b63b12f203fa191c3e9a53626449a03709e76fe1e1d5743e2e5a2e",
+      "bytes": 57550,
+      "office": "gp_heads"
+    },
+    {
+      "file": "शामली-जिला पंचायत सदस्य.csv",
+      "original_path": "data/शामली-जिला पंचायत सदस्य.csv",
+      "sha256": "ac1ceb43dc3bd038db5c1bb1ca56b7735ae001c687b60e99ddf0c09b5ee1c0e9",
+      "bytes": 5191,
+      "office": "district_members"
+    },
+    {
+      "file": "शाहजहांपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/शाहजहांपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "580bcca7ab856d0ff366a7271ddc4b449cd4b156904a341dcf7f9f19fbdcde6f",
+      "bytes": 330982,
+      "office": "block_members"
+    },
+    {
+      "file": "शाहजहांपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/शाहजहांपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "6661ff9f52c42bcda3b8c72130a46ad39ebdea072212fc3168af493ccb2c8ea0",
+      "bytes": 285510,
+      "office": "gp_heads"
+    },
+    {
+      "file": "शाहजहांपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/शाहजहांपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "a2e21204f5be93c08690d855f6f8ec94e9587368e02e7f43634a61d5c403e0fd",
+      "bytes": 13257,
+      "office": "district_members"
+    },
+    {
+      "file": "श्रावस्ती-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/श्रावस्ती-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4f6c50903c35423633de2bd88ddb7318ed40ae41ffdb0fb9d6f104dc8f80e45b",
+      "bytes": 150391,
+      "office": "block_members"
+    },
+    {
+      "file": "श्रावस्ती-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/श्रावस्ती-ग्राम पंचायत प्रधान.csv",
+      "sha256": "b230ff96e8176fd1528cb1825e775ba4c6a9364d0b79d662cdf546f331197be6",
+      "bytes": 105119,
+      "office": "gp_heads"
+    },
+    {
+      "file": "श्रावस्ती-जिला पंचायत सदस्य.csv",
+      "original_path": "data/श्रावस्ती-जिला पंचायत सदस्य.csv",
+      "sha256": "3da0af71671242fca4383471f7de2087b356b16f13b2b114cc6b4b5cc35af2f5",
+      "bytes": 6228,
+      "office": "district_members"
+    },
+    {
+      "file": "सन्त कबीर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/सन्त कबीर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "ed0aa23fd5dc8a1394ba4a6f61fc282ca62acb60f450bc466f1bc3287cf49e4b",
+      "bytes": 217064,
+      "office": "block_members"
+    },
+    {
+      "file": "सन्त कबीर नगर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/सन्त कबीर नगर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "033424b3b0a093b56810cbffd53b59d03cec76430d741351dca33b8304d57e1d",
+      "bytes": 204042,
+      "office": "gp_heads"
+    },
+    {
+      "file": "सन्त कबीर नगर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/सन्त कबीर नगर-जिला पंचायत सदस्य.csv",
+      "sha256": "ed777d042551252ce6e571a4624ad589cf3967ceeef3de02fc6a6a450c9b9938",
+      "bytes": 8645,
+      "office": "district_members"
+    },
+    {
+      "file": "सम्भल-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/सम्भल-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "2a7a185623357d30843df983f924b269b7137b9779a8bac5d80e3d5956c54f33",
+      "bytes": 178838,
+      "office": "block_members"
+    },
+    {
+      "file": "सम्भल-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/सम्भल-ग्राम पंचायत प्रधान.csv",
+      "sha256": "762e2782e48ce68bbfe5c0de3f53c8e506e55b7af634e768739126d9c5a227c0",
+      "bytes": 147139,
+      "office": "gp_heads"
+    },
+    {
+      "file": "सम्भल-जिला पंचायत सदस्य.csv",
+      "original_path": "data/सम्भल-जिला पंचायत सदस्य.csv",
+      "sha256": "a498331921b40923ca2d3c4c134b9eae6d53c8eaccf0e07625597dbfd05ed052",
+      "bytes": 7421,
+      "office": "district_members"
+    },
+    {
+      "file": "सहारनपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/सहारनपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "6a5f55c65564732665a46d52c14b77bda814f965e3bafd53750222e52723544d",
+      "bytes": 316506,
+      "office": "block_members"
+    },
+    {
+      "file": "सहारनपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/सहारनपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "b07414b56e89a676c2cc7dcee11774565bf23896daaadbccd4c6e931b1c50a6d",
+      "bytes": 225131,
+      "office": "gp_heads"
+    },
+    {
+      "file": "सहारनपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/सहारनपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "36619eee0433a7cb685350f141dfe276b97e8fff94185a854d28eb33eac354b3",
+      "bytes": 13180,
+      "office": "district_members"
+    },
+    {
+      "file": "सिद्धार्थ नगर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/सिद्धार्थ नगर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "14779ea23ca8fe7bf4af7475368dfe05fefa9ec8cd04b4c9fde7423eb908bdb4",
+      "bytes": 342468,
+      "office": "block_members"
+    },
+    {
+      "file": "सिद्धार्थ नगर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/सिद्धार्थ नगर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "c7876f0c26293142a7e368ef307a859ba6255dd17e251ff72d6676428f9b71dc",
+      "bytes": 302568,
+      "office": "gp_heads"
+    },
+    {
+      "file": "सिद्धार्थ नगर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/सिद्धार्थ नगर-जिला पंचायत सदस्य.csv",
+      "sha256": "6e67474b088fd67378fec3ef7021d8ba5c497786348ad920f2613f4e85564ce7",
+      "bytes": 12740,
+      "office": "district_members"
+    },
+    {
+      "file": "सीतापुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/सीतापुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "9fc03214f234e67efaee0a668513ffd17273ac85891a0012f52c51cbe52cc56c",
+      "bytes": 563098,
+      "office": "block_members"
+    },
+    {
+      "file": "सीतापुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/सीतापुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "4a1e24b4a0a77a23a93f3a80e9653a9dc92c994163929eb00d699cbf8524fa12",
+      "bytes": 423960,
+      "office": "gp_heads"
+    },
+    {
+      "file": "सीतापुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/सीतापुर-जिला पंचायत सदस्य.csv",
+      "sha256": "dfff6c973114d4b794a1ad632ce1b7249b6abe7006dd707766adbd72a3ae3d09",
+      "bytes": 21634,
+      "office": "district_members"
+    },
+    {
+      "file": "सुलतानपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/सुलतानपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "f1eb1b569368540a656aaa73d16842c80eccb165b25c4bec0a9b5155bcba4107",
+      "bytes": 331626,
+      "office": "block_members"
+    },
+    {
+      "file": "सुलतानपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/सुलतानपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "939ac2b4c6eedc64740975d2abcb333bbdd64319ad3c1477295a1756b3e47457",
+      "bytes": 261190,
+      "office": "gp_heads"
+    },
+    {
+      "file": "सुलतानपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/सुलतानपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "57682e95e49940dcf5f4dca2fcb49bf97559761801064c711a6367759b3082bd",
+      "bytes": 12517,
+      "office": "district_members"
+    },
+    {
+      "file": "सोनभद्र-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/सोनभद्र-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "9115872703def214ee9964aecdf72991830b1b323c940af120acda91d47f456f",
+      "bytes": 231049,
+      "office": "block_members"
+    },
+    {
+      "file": "सोनभद्र-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/सोनभद्र-ग्राम पंचायत प्रधान.csv",
+      "sha256": "ef1861be00e9d62bf29252638211b19ae31326f903918eec058c93df0afbc17e",
+      "bytes": 162718,
+      "office": "gp_heads"
+    },
+    {
+      "file": "सोनभद्र-जिला पंचायत सदस्य.csv",
+      "original_path": "data/सोनभद्र-जिला पंचायत सदस्य.csv",
+      "sha256": "3f6d443a5b41849bc9922bc6dea29922f61099ae72733e36f99241b25256f1aa",
+      "bytes": 8641,
+      "office": "district_members"
+    },
+    {
+      "file": "हमीरपुर-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/हमीरपुर-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "d418a0c5f0ef0ca43e36be247905a2a5b3fa63637751eb4726e32d98eb07bc6b",
+      "bytes": 126241,
+      "office": "block_members"
+    },
+    {
+      "file": "हमीरपुर-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/हमीरपुर-ग्राम पंचायत प्रधान.csv",
+      "sha256": "6885e465d710c8a4e2c3092294d27b90c29d9936d3406bf8cb6c4945d9f3d315",
+      "bytes": 87286,
+      "office": "gp_heads"
+    },
+    {
+      "file": "हमीरपुर-जिला पंचायत सदस्य.csv",
+      "original_path": "data/हमीरपुर-जिला पंचायत सदस्य.csv",
+      "sha256": "de551fedb8ba2fe9aaeed0558f11ea95cd31c0e3ea8daf8a322ab3cd8be11cac",
+      "bytes": 4746,
+      "office": "district_members"
+    },
+    {
+      "file": "हरदोई-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/हरदोई-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "c2a8fd2ad6265f61d438f978626fbe2a385dbba193a41bb584e98fa7ebef44ce",
+      "bytes": 500255,
+      "office": "block_members"
+    },
+    {
+      "file": "हरदोई-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/हरदोई-ग्राम पंचायत प्रधान.csv",
+      "sha256": "955803f4b8f221d74d05e0584e14b1e031e8b9a11801ec0f4d1b3a10eaac3c99",
+      "bytes": 345684,
+      "office": "gp_heads"
+    },
+    {
+      "file": "हरदोई-जिला पंचायत सदस्य.csv",
+      "original_path": "data/हरदोई-जिला पंचायत सदस्य.csv",
+      "sha256": "fc16242592c2d963d927873e7b0330674530588d713172a12e5f1ecdb3f618f5",
+      "bytes": 19239,
+      "office": "district_members"
+    },
+    {
+      "file": "हाथरस-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/हाथरस-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "051a58c05ef7fe22283ddc9c7d8806addf9689bdc69bfeff724b85424b787929",
+      "bytes": 190739,
+      "office": "block_members"
+    },
+    {
+      "file": "हाथरस-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/हाथरस-ग्राम पंचायत प्रधान.csv",
+      "sha256": "96fb24581fa69abf04919060ca22ac42ee217e8475b05361460be097a3d8bc2c",
+      "bytes": 126445,
+      "office": "gp_heads"
+    },
+    {
+      "file": "हाथरस-जिला पंचायत सदस्य.csv",
+      "original_path": "data/हाथरस-जिला पंचायत सदस्य.csv",
+      "sha256": "3a564fec2ac1a1d188a5cd7d56b0540f2b724743d03859bf5979b0258a24a42c",
+      "bytes": 6982,
+      "office": "district_members"
+    },
+    {
+      "file": "हापुड़-क्षेत्र पंचायत सदस्य.csv",
+      "original_path": "data/हापुड़-क्षेत्र पंचायत सदस्य.csv",
+      "sha256": "4be18eb1e2f54c405d94cb30632fe2b23664fb9a4b2a422358fbc02133441a0d",
+      "bytes": 138916,
+      "office": "block_members"
+    },
+    {
+      "file": "हापुड़-ग्राम पंचायत प्रधान.csv",
+      "original_path": "data/हापुड़-ग्राम पंचायत प्रधान.csv",
+      "sha256": "c31b103ffe25a6500141abf93f92dab7113c20822a5beb3d6442c264b45d4e37",
+      "bytes": 72419,
+      "office": "gp_heads"
+    },
+    {
+      "file": "हापुड़-जिला पंचायत सदस्य.csv",
+      "original_path": "data/हापुड़-जिला पंचायत सदस्य.csv",
+      "sha256": "bc184d7fe7412ac0f9cfedd8988c0a7423089575a1007be64a3a0023da3d5692",
+      "bytes": 5211,
+      "office": "district_members"
+    }
+  ]
+}

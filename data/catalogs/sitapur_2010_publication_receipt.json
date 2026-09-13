@@ -1,0 +1,27 @@
+{
+  "status": "research-evidence upload downloaded and byte-verified",
+  "source_commit": "4e887758315692bdf1a6293167b20a66f052d0a0",
+  "release_url": "https://github.com/in-rolls/local_elections_up/releases/tag/source-evidence-2026-09-10",
+  "archive_name": "sitapur-2010-research-2026-09-10.tar.gz",
+  "archive_sha256": "ee2206d455acd4cbc40ace7cc43775c4af5d73c6597056ac1568e87bc2ee9918",
+  "archive_bytes": 1085709,
+  "assets_compared_byte_for_byte": [
+    "sitapur-2010-research-2026-09-10.tar.gz",
+    "sitapur-2010-research-2026-09-10.CHECKSUMS.sha256",
+    "sitapur_2010_research_bundle.json"
+  ],
+  "local_checks": {
+    "command": "make check",
+    "python_tests_passed": 20,
+    "r_lint": "passed",
+    "python_lint": "passed",
+    "formatting": "passed",
+    "standardized_release_tests": "passed",
+    "final_dataset_checksums_passed": 5
+  },
+  "independent_review": false,
+  "final_data_changed": false,
+  "software_release_created": false,
+  "additional_api_cost_usd": 0,
+  "unresolved": "Source numbering/category conflicts and ward identities remain unresolved; this is not a final standardized data release."
+}

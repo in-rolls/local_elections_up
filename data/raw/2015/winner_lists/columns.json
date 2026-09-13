@@ -1,0 +1,1229 @@
+{
+  "contracts": {
+    "block_members": {
+      "post": "क्षेत्र पंचायत सदस्य",
+      "output": "block_members_2015.parquet",
+      "columns": {
+        "ब्लॉक": "block_raw",
+        "क्षेत्र पंचायत वार्ड": "block_ward_raw",
+        "पद का आरक्षण": "seat_reservation_raw",
+        "उम्मीदवार": "winner_name_raw",
+        "पिता/पति": "relation_name_raw",
+        "प्रत्याशी का आरक्षण": "candidate_reservation_raw",
+        "शैक्षिक योग्यता": "education_raw",
+        "लिंग": "gender_raw",
+        "मोबाइल नं०": "mobile_raw",
+        "प्राप्त वैध मत": "valid_votes_raw",
+        "प्राप्त मत %": "vote_percent_raw",
+        "मतदान %": "turnout_percent_raw",
+        "परिणाम": "contest_status_raw"
+      }
+    },
+    "gp_heads": {
+      "post": "ग्राम पंचायत प्रधान",
+      "output": "gp_heads_2015.parquet",
+      "columns": {
+        "ब्लॉक": "block_raw",
+        "ग्राम पंचायत": "gram_panchayat_raw",
+        "पद का आरक्षण": "seat_reservation_raw",
+        "उम्मीदवार": "winner_name_raw",
+        "पिता/पति": "relation_name_raw",
+        "प्रत्याशी का आरक्षण": "candidate_reservation_raw",
+        "शैक्षिक योग्यता": "education_raw",
+        "लिंग": "gender_raw",
+        "मोबाइल नं०": "mobile_raw",
+        "प्राप्त वैध मत": "valid_votes_raw",
+        "प्राप्त मत %": "vote_percent_raw",
+        "मतदान %": "turnout_percent_raw",
+        "परिणाम": "contest_status_raw"
+      }
+    },
+    "district_members": {
+      "post": "जिला पंचायत सदस्य",
+      "output": "district_members_2015.parquet",
+      "columns": {
+        "जिला पंचायत वार्ड": "district_ward_raw",
+        "पद का आरक्षण": "seat_reservation_raw",
+        "उम्मीदवार": "winner_name_raw",
+        "पिता/पति": "relation_name_raw",
+        "प्रत्याशी का आरक्षण": "candidate_reservation_raw",
+        "शैक्षिक योग्यता": "education_raw",
+        "लिंग": "gender_raw",
+        "मोबाइल नं०": "mobile_raw",
+        "प्राप्त वैध मत": "valid_votes_raw",
+        "प्राप्त मत %": "vote_percent_raw",
+        "मतदान %": "turnout_percent_raw",
+        "परिणाम": "contest_status_raw"
+      }
+    },
+    "block_heads": {
+      "post": "क्षेत्र पंचायत प्रमुख",
+      "output": "block_heads_2015.parquet",
+      "columns": {
+        "जिला": "district_raw",
+        "क्षेत्र पंचायत": "block_body_raw",
+        "पद का आरक्षण": "seat_reservation_raw",
+        "उम्मीदवार": "winner_name_raw",
+        "पिता/पति": "relation_name_raw",
+        "प्रत्याशी का आरक्षण": "candidate_reservation_raw",
+        "शैक्षिक योग्यता": "education_raw",
+        "लिंग": "gender_raw",
+        "मोबाइल नं०": "mobile_raw",
+        "प्राप्त वैध मत": "valid_votes_raw",
+        "प्राप्त मत %": "vote_percent_raw",
+        "मतदान %": "turnout_percent_raw",
+        "परिणाम": "contest_status_raw"
+      }
+    },
+    "district_heads": {
+      "post": "जिला पंचायत अध्यक्ष",
+      "output": "district_heads_2015.parquet",
+      "columns": {
+        "जिला पंचायत": "district_body_raw",
+        "पद का आरक्षण": "seat_reservation_raw",
+        "उम्मीदवार": "winner_name_raw",
+        "पिता/पति": "relation_name_raw",
+        "प्रत्याशी का आरक्षण": "candidate_reservation_raw",
+        "शैक्षिक योग्यता": "education_raw",
+        "लिंग": "gender_raw",
+        "मोबाइल नं०": "mobile_raw",
+        "प्राप्त वैध मत": "valid_votes_raw",
+        "प्राप्त मत %": "vote_percent_raw",
+        "मतदान %": "turnout_percent_raw",
+        "परिणाम": "contest_status_raw"
+      }
+    }
+  },
+  "sources": [
+    {
+      "file": "अमरोहा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "अमरोहा"
+    },
+    {
+      "file": "अमरोहा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "अमरोहा"
+    },
+    {
+      "file": "अमरोहा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "अमरोहा"
+    },
+    {
+      "file": "अमेठी-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "अमेठी"
+    },
+    {
+      "file": "अमेठी-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "अमेठी"
+    },
+    {
+      "file": "अमेठी-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "अमेठी"
+    },
+    {
+      "file": "अम्बेडकर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "अम्बेडकर नगर"
+    },
+    {
+      "file": "अम्बेडकर नगर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "अम्बेडकर नगर"
+    },
+    {
+      "file": "अम्बेडकर नगर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "अम्बेडकर नगर"
+    },
+    {
+      "file": "अयोध्या-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "अयोध्या"
+    },
+    {
+      "file": "अयोध्या-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "अयोध्या"
+    },
+    {
+      "file": "अयोध्या-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "अयोध्या"
+    },
+    {
+      "file": "अलीगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "अलीगढ़"
+    },
+    {
+      "file": "अलीगढ़-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "अलीगढ़"
+    },
+    {
+      "file": "अलीगढ़-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "अलीगढ़"
+    },
+    {
+      "file": "आगरा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "आगरा"
+    },
+    {
+      "file": "आगरा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "आगरा"
+    },
+    {
+      "file": "आगरा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "आगरा"
+    },
+    {
+      "file": "आजमगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "आजमगढ़"
+    },
+    {
+      "file": "आजमगढ़-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "आजमगढ़"
+    },
+    {
+      "file": "आजमगढ़-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "आजमगढ़"
+    },
+    {
+      "file": "इटावा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "इटावा"
+    },
+    {
+      "file": "इटावा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "इटावा"
+    },
+    {
+      "file": "इटावा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "इटावा"
+    },
+    {
+      "file": "उन्नाव-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "उन्नाव"
+    },
+    {
+      "file": "उन्नाव-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "उन्नाव"
+    },
+    {
+      "file": "उन्नाव-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "उन्नाव"
+    },
+    {
+      "file": "एटा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "एटा"
+    },
+    {
+      "file": "एटा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "एटा"
+    },
+    {
+      "file": "एटा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "एटा"
+    },
+    {
+      "file": "औरैया-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "औरैया"
+    },
+    {
+      "file": "औरैया-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "औरैया"
+    },
+    {
+      "file": "औरैया-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "औरैया"
+    },
+    {
+      "file": "कन्नौज-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "कन्नौज"
+    },
+    {
+      "file": "कन्नौज-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "कन्नौज"
+    },
+    {
+      "file": "कन्नौज-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "कन्नौज"
+    },
+    {
+      "file": "कानपुर देहात-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "कानपुर देहात"
+    },
+    {
+      "file": "कानपुर देहात-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "कानपुर देहात"
+    },
+    {
+      "file": "कानपुर देहात-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "कानपुर देहात"
+    },
+    {
+      "file": "कानपुर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "कानपुर नगर"
+    },
+    {
+      "file": "कानपुर नगर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "कानपुर नगर"
+    },
+    {
+      "file": "कानपुर नगर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "कानपुर नगर"
+    },
+    {
+      "file": "कासगंज-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "कासगंज"
+    },
+    {
+      "file": "कासगंज-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "कासगंज"
+    },
+    {
+      "file": "कासगंज-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "कासगंज"
+    },
+    {
+      "file": "कुशीनगर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "कुशीनगर"
+    },
+    {
+      "file": "कुशीनगर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "कुशीनगर"
+    },
+    {
+      "file": "कुशीनगर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "कुशीनगर"
+    },
+    {
+      "file": "कौशाम्बी-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "कौशाम्बी"
+    },
+    {
+      "file": "कौशाम्बी-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "कौशाम्बी"
+    },
+    {
+      "file": "कौशाम्बी-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "कौशाम्बी"
+    },
+    {
+      "file": "क्षेत्र पंचायत प्रमुख.csv",
+      "kind": "block_heads",
+      "district_from_filename": null
+    },
+    {
+      "file": "गाजियाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "गाजियाबाद"
+    },
+    {
+      "file": "गाजियाबाद-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "गाजियाबाद"
+    },
+    {
+      "file": "गाजियाबाद-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "गाजियाबाद"
+    },
+    {
+      "file": "गाज़ीपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "गाज़ीपुर"
+    },
+    {
+      "file": "गाज़ीपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "गाज़ीपुर"
+    },
+    {
+      "file": "गाज़ीपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "गाज़ीपुर"
+    },
+    {
+      "file": "गोंडा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "गोंडा"
+    },
+    {
+      "file": "गोंडा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "गोंडा"
+    },
+    {
+      "file": "गोंडा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "गोंडा"
+    },
+    {
+      "file": "गोरखपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "गोरखपुर"
+    },
+    {
+      "file": "गोरखपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "गोरखपुर"
+    },
+    {
+      "file": "गोरखपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "गोरखपुर"
+    },
+    {
+      "file": "गौतमबुद्ध नगर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "गौतमबुद्ध नगर"
+    },
+    {
+      "file": "गौतमबुद्ध नगर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "गौतमबुद्ध नगर"
+    },
+    {
+      "file": "गौतमबुद्ध नगर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "गौतमबुद्ध नगर"
+    },
+    {
+      "file": "चन्दौली-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "चन्दौली"
+    },
+    {
+      "file": "चन्दौली-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "चन्दौली"
+    },
+    {
+      "file": "चन्दौली-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "चन्दौली"
+    },
+    {
+      "file": "चित्रकूट-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "चित्रकूट"
+    },
+    {
+      "file": "चित्रकूट-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "चित्रकूट"
+    },
+    {
+      "file": "चित्रकूट-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "चित्रकूट"
+    },
+    {
+      "file": "जालौन-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "जालौन"
+    },
+    {
+      "file": "जालौन-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "जालौन"
+    },
+    {
+      "file": "जालौन-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "जालौन"
+    },
+    {
+      "file": "जिला पंचायत अध्यक्ष.csv",
+      "kind": "district_heads",
+      "district_from_filename": null
+    },
+    {
+      "file": "जौनपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "जौनपुर"
+    },
+    {
+      "file": "जौनपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "जौनपुर"
+    },
+    {
+      "file": "जौनपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "जौनपुर"
+    },
+    {
+      "file": "झांसी-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "झांसी"
+    },
+    {
+      "file": "झांसी-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "झांसी"
+    },
+    {
+      "file": "झांसी-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "झांसी"
+    },
+    {
+      "file": "देवरिया-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "देवरिया"
+    },
+    {
+      "file": "देवरिया-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "देवरिया"
+    },
+    {
+      "file": "देवरिया-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "देवरिया"
+    },
+    {
+      "file": "पीलीभीत-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "पीलीभीत"
+    },
+    {
+      "file": "पीलीभीत-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "पीलीभीत"
+    },
+    {
+      "file": "पीलीभीत-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "पीलीभीत"
+    },
+    {
+      "file": "प्रतापगढ़-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "प्रतापगढ़"
+    },
+    {
+      "file": "प्रतापगढ़-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "प्रतापगढ़"
+    },
+    {
+      "file": "प्रतापगढ़-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "प्रतापगढ़"
+    },
+    {
+      "file": "प्रयागराज-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "प्रयागराज"
+    },
+    {
+      "file": "प्रयागराज-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "प्रयागराज"
+    },
+    {
+      "file": "प्रयागराज-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "प्रयागराज"
+    },
+    {
+      "file": "फतेहपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "फतेहपुर"
+    },
+    {
+      "file": "फतेहपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "फतेहपुर"
+    },
+    {
+      "file": "फतेहपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "फतेहपुर"
+    },
+    {
+      "file": "फ़र्रुखाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "फ़र्रुखाबाद"
+    },
+    {
+      "file": "फ़र्रुखाबाद-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "फ़र्रुखाबाद"
+    },
+    {
+      "file": "फ़र्रुखाबाद-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "फ़र्रुखाबाद"
+    },
+    {
+      "file": "फिरोज़ाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "फिरोज़ाबाद"
+    },
+    {
+      "file": "फिरोज़ाबाद-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "फिरोज़ाबाद"
+    },
+    {
+      "file": "फिरोज़ाबाद-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "फिरोज़ाबाद"
+    },
+    {
+      "file": "बदायूं-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बदायूं"
+    },
+    {
+      "file": "बदायूं-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बदायूं"
+    },
+    {
+      "file": "बदायूं-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बदायूं"
+    },
+    {
+      "file": "बरेली-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बरेली"
+    },
+    {
+      "file": "बरेली-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बरेली"
+    },
+    {
+      "file": "बरेली-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बरेली"
+    },
+    {
+      "file": "बलरामपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बलरामपुर"
+    },
+    {
+      "file": "बलरामपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बलरामपुर"
+    },
+    {
+      "file": "बलरामपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बलरामपुर"
+    },
+    {
+      "file": "बलिया-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बलिया"
+    },
+    {
+      "file": "बलिया-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बलिया"
+    },
+    {
+      "file": "बलिया-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बलिया"
+    },
+    {
+      "file": "बस्ती-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बस्ती"
+    },
+    {
+      "file": "बस्ती-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बस्ती"
+    },
+    {
+      "file": "बस्ती-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बस्ती"
+    },
+    {
+      "file": "बहराइच-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बहराइच"
+    },
+    {
+      "file": "बहराइच-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बहराइच"
+    },
+    {
+      "file": "बांदा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बांदा"
+    },
+    {
+      "file": "बांदा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बांदा"
+    },
+    {
+      "file": "बांदा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बांदा"
+    },
+    {
+      "file": "बागपत-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बागपत"
+    },
+    {
+      "file": "बागपत-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बागपत"
+    },
+    {
+      "file": "बागपत-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बागपत"
+    },
+    {
+      "file": "बाराबंकी-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बाराबंकी"
+    },
+    {
+      "file": "बाराबंकी-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बाराबंकी"
+    },
+    {
+      "file": "बाराबंकी-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बाराबंकी"
+    },
+    {
+      "file": "बिजनौर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बिजनौर"
+    },
+    {
+      "file": "बिजनौर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बिजनौर"
+    },
+    {
+      "file": "बिजनौर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बिजनौर"
+    },
+    {
+      "file": "बुलंदशहर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "बुलंदशहर"
+    },
+    {
+      "file": "बुलंदशहर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "बुलंदशहर"
+    },
+    {
+      "file": "बुलंदशहर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "बुलंदशहर"
+    },
+    {
+      "file": "भदोही-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "भदोही"
+    },
+    {
+      "file": "भदोही-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "भदोही"
+    },
+    {
+      "file": "भदोही-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "भदोही"
+    },
+    {
+      "file": "मऊ-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "मऊ"
+    },
+    {
+      "file": "मऊ-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "मऊ"
+    },
+    {
+      "file": "मऊ-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "मऊ"
+    },
+    {
+      "file": "मथुरा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "मथुरा"
+    },
+    {
+      "file": "मथुरा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "मथुरा"
+    },
+    {
+      "file": "मथुरा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "मथुरा"
+    },
+    {
+      "file": "महराजगंज-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "महराजगंज"
+    },
+    {
+      "file": "महराजगंज-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "महराजगंज"
+    },
+    {
+      "file": "महराजगंज-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "महराजगंज"
+    },
+    {
+      "file": "महोबा-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "महोबा"
+    },
+    {
+      "file": "महोबा-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "महोबा"
+    },
+    {
+      "file": "महोबा-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "महोबा"
+    },
+    {
+      "file": "मीरजापुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "मीरजापुर"
+    },
+    {
+      "file": "मीरजापुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "मीरजापुर"
+    },
+    {
+      "file": "मीरजापुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "मीरजापुर"
+    },
+    {
+      "file": "मुज़फ्फरनगर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "मुज़फ्फरनगर"
+    },
+    {
+      "file": "मुज़फ्फरनगर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "मुज़फ्फरनगर"
+    },
+    {
+      "file": "मुज़फ्फरनगर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "मुज़फ्फरनगर"
+    },
+    {
+      "file": "मुरादाबाद-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "मुरादाबाद"
+    },
+    {
+      "file": "मुरादाबाद-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "मुरादाबाद"
+    },
+    {
+      "file": "मुरादाबाद-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "मुरादाबाद"
+    },
+    {
+      "file": "मेरठ-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "मेरठ"
+    },
+    {
+      "file": "मेरठ-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "मेरठ"
+    },
+    {
+      "file": "मेरठ-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "मेरठ"
+    },
+    {
+      "file": "मैनपुरी-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "मैनपुरी"
+    },
+    {
+      "file": "मैनपुरी-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "मैनपुरी"
+    },
+    {
+      "file": "मैनपुरी-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "मैनपुरी"
+    },
+    {
+      "file": "रामपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "रामपुर"
+    },
+    {
+      "file": "रामपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "रामपुर"
+    },
+    {
+      "file": "रामपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "रामपुर"
+    },
+    {
+      "file": "रायबरेली-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "रायबरेली"
+    },
+    {
+      "file": "रायबरेली-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "रायबरेली"
+    },
+    {
+      "file": "रायबरेली-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "रायबरेली"
+    },
+    {
+      "file": "लखनऊ-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "लखनऊ"
+    },
+    {
+      "file": "लखनऊ-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "लखनऊ"
+    },
+    {
+      "file": "लखनऊ-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "लखनऊ"
+    },
+    {
+      "file": "लखीमपुर खीरी-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "लखीमपुर खीरी"
+    },
+    {
+      "file": "लखीमपुर खीरी-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "लखीमपुर खीरी"
+    },
+    {
+      "file": "लखीमपुर खीरी-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "लखीमपुर खीरी"
+    },
+    {
+      "file": "ललितपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "ललितपुर"
+    },
+    {
+      "file": "ललितपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "ललितपुर"
+    },
+    {
+      "file": "ललितपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "ललितपुर"
+    },
+    {
+      "file": "वाराणसी-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "वाराणसी"
+    },
+    {
+      "file": "वाराणसी-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "वाराणसी"
+    },
+    {
+      "file": "वाराणसी-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "वाराणसी"
+    },
+    {
+      "file": "शामली-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "शामली"
+    },
+    {
+      "file": "शामली-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "शामली"
+    },
+    {
+      "file": "शामली-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "शामली"
+    },
+    {
+      "file": "शाहजहांपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "शाहजहांपुर"
+    },
+    {
+      "file": "शाहजहांपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "शाहजहांपुर"
+    },
+    {
+      "file": "शाहजहांपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "शाहजहांपुर"
+    },
+    {
+      "file": "श्रावस्ती-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "श्रावस्ती"
+    },
+    {
+      "file": "श्रावस्ती-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "श्रावस्ती"
+    },
+    {
+      "file": "श्रावस्ती-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "श्रावस्ती"
+    },
+    {
+      "file": "सन्त कबीर नगर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "सन्त कबीर नगर"
+    },
+    {
+      "file": "सन्त कबीर नगर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "सन्त कबीर नगर"
+    },
+    {
+      "file": "सन्त कबीर नगर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "सन्त कबीर नगर"
+    },
+    {
+      "file": "सम्भल-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "सम्भल"
+    },
+    {
+      "file": "सम्भल-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "सम्भल"
+    },
+    {
+      "file": "सम्भल-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "सम्भल"
+    },
+    {
+      "file": "सहारनपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "सहारनपुर"
+    },
+    {
+      "file": "सहारनपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "सहारनपुर"
+    },
+    {
+      "file": "सहारनपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "सहारनपुर"
+    },
+    {
+      "file": "सिद्धार्थ नगर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "सिद्धार्थ नगर"
+    },
+    {
+      "file": "सिद्धार्थ नगर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "सिद्धार्थ नगर"
+    },
+    {
+      "file": "सिद्धार्थ नगर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "सिद्धार्थ नगर"
+    },
+    {
+      "file": "सीतापुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "सीतापुर"
+    },
+    {
+      "file": "सीतापुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "सीतापुर"
+    },
+    {
+      "file": "सीतापुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "सीतापुर"
+    },
+    {
+      "file": "सुलतानपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "सुलतानपुर"
+    },
+    {
+      "file": "सुलतानपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "सुलतानपुर"
+    },
+    {
+      "file": "सुलतानपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "सुलतानपुर"
+    },
+    {
+      "file": "सोनभद्र-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "सोनभद्र"
+    },
+    {
+      "file": "सोनभद्र-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "सोनभद्र"
+    },
+    {
+      "file": "सोनभद्र-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "सोनभद्र"
+    },
+    {
+      "file": "हमीरपुर-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "हमीरपुर"
+    },
+    {
+      "file": "हमीरपुर-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "हमीरपुर"
+    },
+    {
+      "file": "हमीरपुर-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "हमीरपुर"
+    },
+    {
+      "file": "हरदोई-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "हरदोई"
+    },
+    {
+      "file": "हरदोई-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "हरदोई"
+    },
+    {
+      "file": "हरदोई-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "हरदोई"
+    },
+    {
+      "file": "हाथरस-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "हाथरस"
+    },
+    {
+      "file": "हाथरस-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "हाथरस"
+    },
+    {
+      "file": "हाथरस-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "हाथरस"
+    },
+    {
+      "file": "हापुड़-क्षेत्र पंचायत सदस्य.csv",
+      "kind": "block_members",
+      "district_from_filename": "हापुड़"
+    },
+    {
+      "file": "हापुड़-ग्राम पंचायत प्रधान.csv",
+      "kind": "gp_heads",
+      "district_from_filename": "हापुड़"
+    },
+    {
+      "file": "हापुड़-जिला पंचायत सदस्य.csv",
+      "kind": "district_members",
+      "district_from_filename": "हापुड़"
+    }
+  ]
+}
