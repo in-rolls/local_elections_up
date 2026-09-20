@@ -1,0 +1,222 @@
+[
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=agra.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSUwvStTUT81JTS7JzM_TT8vMSS3WN7A01M-r1CtISVMwMjA0MTA3MjawNLAwNQQA4rMQIw",
+    "retrieved_utc": "2026-09-10T09:58:13.306646+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=agra.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSUwvStTUT81JTS7JzM_TT8vMSS3WN7A01M-r1CtISVMwMjA0MTA3MjawNLAwNQQA4rMQIw",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/1a72c137760cd7c7cdff_e0d321271fe1.json",
+    "bytes": 770785,
+    "sha256": "e0d321271fe1de339ed69c7fc56010e91172d4d12603e03f448a33249abb997b",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=aligarh.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwFwVEKgCAMANCr9BtILplSH9FZhlEtdJNm9-89FiecHRW-6L1Hf9SHpHIh8dapf8Zy6kTW9qy1iW4YUxoCwAo4QwCMsPxTeRZm",
+    "retrieved_utc": "2026-09-10T09:58:15.166112+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=aligarh.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwFwVEKgCAMANCr9BtILplSH9FZhlEtdJNm9-89FiecHRW-6L1Hf9SHpHIh8dapf8Zy6kTW9qy1iW4YUxoCwAo4QwCMsPxTeRZm",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/c8e635b9d4abef248e0b_aba37280ad0c.json",
+    "bytes": 1302955,
+    "sha256": "aba37280ad0cf3f58010ce7d0dbdbbc44471ecb9f0901ed4712f51c35ae06de8",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=ghaziabad.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc9IrMpMTEpM0dQvL9DNKs7P089PzU1KTdE31DPQB7PsS4tybDNKSgqKrfT14er1gLr1MvP0U_P001JTU5ISk7P1FYwMjAwMTAyMDI0MLA0NAcyHIK8",
+    "retrieved_utc": "2026-09-10T09:58:16.529280+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=ghaziabad.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc9IrMpMTEpM0dQvL9DNKs7P089PzU1KTdE31DPQB7PsS4tybDNKSgqKrfT14er1gLr1MvP0U_P001JTU5ISk7P1FYwMjAwMTAyMDI0MLA0NAcyHIK8",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/a31de42250bb84baa038_2ca0e042b4e6.json",
+    "bytes": 16177,
+    "sha256": "2ca0e042b4e692fabbf17d43011148a1adbbcb7a033249adae443d71b6ca5742",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=ghazipur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc9IrMosKC3S1M_Jzy5LzMvULy4p0M9PS8tMTi0qzyxONYpPSS1JzMzRSywusAeKJ-enpNoaWpgoGBkYWBqYGBoYGhpamJoCAJBNGrU",
+    "retrieved_utc": "2026-09-10T09:58:20.725582+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=ghazipur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc9IrMosKC3S1M_Jzy5LzMvULy4p0M9PS8tMTi0qzyxONYpPSS1JzMzRSywusAeKJ-enpNoaWpgoGBkYWBqYGBoYGhpamJoCAJBNGrU",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/cccb8e3e7d45b8af0600_6230d04c6d46.json",
+    "bytes": 299566,
+    "sha256": "6230d04c6d4607032f1b9ec4136ee81ecaf150b331837aebb022a7bc0fb05e37",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=gonda.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc_PS0nU1M_Jzy5LzMvULy5JLCktzsxLy9dLLC6wT87PLcjLtzUyNjBVMDIwsDQwMTQ0MDM2NjECANPFFGU",
+    "retrieved_utc": "2026-09-10T09:58:23.485849+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=gonda.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc_PS0nU1M_Jzy5LzMvULy5JLCktzsxLy9dLLC6wT87PLcjLtzUyNjBVMDIwsDQwMTQ0MDM2NjECANPFFGU",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/75f3b6883790218eed5d_c249b3e290af.json",
+    "bytes": 954881,
+    "sha256": "c249b3e290afbe1566996105c8bbf8dda1c36d5014c594fc7846145370b826d8",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=gorakhpur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc8vSszOKCgt0tQvyy9JLcrJLC7RNzQz1s8tApIGRqZmegUpaQpGBgbmhkaGpobGRgZGRgBuTxID",
+    "retrieved_utc": "2026-09-10T09:58:26.963859+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=gorakhpur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWSc8vSszOKCgt0tQvyy9JLcrJLC7RNzQz1s8tApIGRqZmegUpaQpGBgbmhkaGpobGRgZGRgBuTxID",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/7068b1c9574310356627_6af95445c4b8.json",
+    "bytes": 493888,
+    "sha256": "6af95445c4b8d7f71debe72898ea435398051b28ea901dab1058cc7142f0f413",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=hardoi.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyUgsSsnP1NTPyc8uS8zL1C8uSSwpLc7MS8vXSywusE_Ozy3Iy7c1szQ1sVAwMjAwNzQyMjYEEibGAATgFRQ",
+    "retrieved_utc": "2026-09-10T09:58:29.462630+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=hardoi.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyUgsSsnP1NTPyc8uS8zL1C8uSSwpLc7MS8vXSywusE_Ozy3Iy7c1szQ1sVAwMjAwNzQyMjYEEibGAATgFRQ",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/3480e4aecea081034826_5b740f67bcfb.json",
+    "bytes": 421098,
+    "sha256": "5b740f67bcfba69d66ae5b21c5f1e3eaeccf81213a83d9bec76b043347ad483c",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=jhansi.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWycpIzCvO1NQvKE3KyUzWLS3JzMksqdQvSszLLCgtUjAyMDIwsDSyBNIWxmYA8F0RHA",
+    "retrieved_utc": "2026-09-10T09:58:40.264245+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=jhansi.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWycpIzCvO1NQvKE3KyUzWLS3JzMksqdQvSszLLCgtUjAyMDIwsDSyBNIWxmYA8F0RHA",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/e50dfe4eef2a4e6bf70a_fa74929baa35.json",
+    "bytes": 132079,
+    "sha256": "fa74929baa35956c8a924daa27f5b5feebade605ec8e1ba6f2ffb7fbb59409c7",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=kannauj.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU7My0sszdLULy_QzcxLzilNSS3WzwKiwtLUokoopZdVbF-WWmRrqGdopGeiYGRgaGFgZmhiYAxEpgDHphec",
+    "retrieved_utc": "2026-09-10T09:58:41.118427+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=kannauj.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU7My0sszdLULy_QzcxLzilNSS3WzwKiwtLUokoopZdVbF-WWmRrqGdopGeiYGRgaGFgZmhiYAxEpgDHphec",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/df751ef199b9a04250d3_0fa8f186c51c.json",
+    "bytes": 4538,
+    "sha256": "0fa8f186c51c8f3a26ca15efe6f6faabe2b32321a7fe4a3961b9f0017f29b358",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=kanpurdehat.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU7MKygtSknNSCzR1M8rLtZPSizOTC5IrNQvTs1JTS6JT80t0EssLrAH0vHJ-SmptkYGhgpGBgaWBiaGBobGRuYG5gAW7xkZ",
+    "retrieved_utc": "2026-09-10T09:58:42.352063+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=kanpurdehat.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU7MKygtSknNSCzR1M8rLtZPSizOTC5IrNQvTs1JTS6JT80t0EssLrAH0vHJ-SmptkYGhgpGBgaWBiaGBobGRuYG5gAW7xkZ",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/fed32c0583e8f9232a03_3fb2fbf078e7.json",
+    "bytes": 1555312,
+    "sha256": "3fb2fbf078e723deec21516f5c85e8f40cd2b441575f820f04572a8a2491c68d",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=kanpurnagar.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU7MKygtyktMTyzS1C_KT0xJLi3RNzI3NDIyMDSBCYD4hibxBsbx-WnxBuZ6WQXpCkB5UwMTAyNDU0NDE0MA_JYXaA",
+    "retrieved_utc": "2026-09-10T09:58:45.120619+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=kanpurnagar.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU7MKygtyktMTyzS1C_KT0xJLi3RNzI3NDIyMDSBCYD4hibxBsbx-WnxBuZ6WQXpCkB5UwMTAyNDU0NDE0MA_JYXaA",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/050d5b0ad7e1892b5c64_7251402125b1.json",
+    "bytes": 1021078,
+    "sha256": "7251402125b1cce32bd186df4492a0a721163b3db639272cb96f6c43c4fd17bf",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=kheri.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyc5ILcrU1M_Jzy5LzMvULy5JLCktzsxLy9dLLC6wT87PLcjLtzUxNLVUMDIwsDQwMTQwtDAyMjEEANZcFHc",
+    "retrieved_utc": "2026-09-10T09:58:47.644406+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=kheri.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyc5ILcrU1M_Jzy5LzMvULy5JLCktzsxLy9dLLC6wT87PLcjLtzUxNLVUMDIwsDQwMTQwtDAyMjEEANZcFHc",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/04f971924540c17f2bd4_cea22e6a097c.json",
+    "bytes": 668635,
+    "sha256": "cea22e6a097c9bb98729b1219671691d84ac304f7369a4ea4ab64aa5a0169290",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=lucknow.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWySlNzs7LL9fUhzL0c7LzcxML9DJKcnMUjAwMjQwNDc0NDI3NTAwBy7IQPA",
+    "retrieved_utc": "2026-09-10T09:58:56.873610+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=lucknow.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWySlNzs7LL9fUhzL0c7LzcxML9DJKcnMUjAwMjQwNDc0NDI3NTAwBy7IQPA",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/47e485a2ca4440f3df45_c29e79df47e6.json",
+    "bytes": 252982,
+    "sha256": "c29e79df47e61731d57160a8b35133ddb934005e9ef2495cc713a34aed9f6648",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=maharajganj.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwFwVEKgCAMANCr9BtIzhSi04xlOmdqUvjR7XtPmmriVaVED2Wmlmc9zu_mFRMe5K_RMUoJr_ZFOkolDgB2YYnTCrAZgN0465z5AfQhGLI",
+    "retrieved_utc": "2026-09-10T09:59:00.035651+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=maharajganj.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwFwVEKgCAMANCr9BtIzhSi04xlOmdqUvjR7XtPmmriVaVED2Wmlmc9zu_mFRMe5K_RMUoJr_ZFOkolDgB2YYnTCrAZgN0465z5AfQhGLI",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/59791a35d9e4918efaa0_61ec2841362b.json",
+    "bytes": 118010,
+    "sha256": "61ec2841362b1e0e75168a602cb459d02a71ae8c38838f964c7a90a00019d52d",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=meerut.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU1NLSot0dRPzUlNLsnMz9MvSi3OTClNzNFPNDAxAxMGRpYGegUpaQpGBgaWBiaGBkaGxuampgDYrBOd",
+    "retrieved_utc": "2026-09-10T09:59:10.708721+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=meerut.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyU1NLSot0dRPzUlNLsnMz9MvSi3OTClNzNFPNDAxAxMGRpYGegUpaQpGBgaWBiaGBkaGxuampgDYrBOd",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/07669b75b617c3497ead_d85663292522.json",
+    "bytes": 1809268,
+    "sha256": "d8566329252209e94fabce7de263a7ec08fe869620cd7e944b5fa159745150d7",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=moradabad.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyc0vSkxJTEpM0dTPyc8uS8zL1C8uSSwpLc7MS8vXSywusE_Ozy3Iy7c1sTSzUDAyMLA0MDE0MDIyNTA1BQA68hYI",
+    "retrieved_utc": "2026-09-10T09:59:13.483396+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=moradabad.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWyc0vSkxJTEpM0dTPyc8uS8zL1C8uSSwpLc7MS8vXSywusE_Ozy3Iy7c1sTSzUDAyMLA0MDE0MDIyNTA1BQA68hYI",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/5d92213e7c62c3cdb85b_0cc53c6f6be7.json",
+    "bytes": 803142,
+    "sha256": "0cc53c6f6be79bef4228eb1316729103c48d3b745e3c9093169116bff59953dc",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=muzaffarnagar.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwFwVsKgCAQBdCt9BtIzkRJfkRruQjGBI7ig6DVd46oUQkmjQ8xoipu1Nk-0BcqtnX00URj5gWtXCGnovl0h59WIk8bE-_kmH6u5Be9",
+    "retrieved_utc": "2026-09-10T09:59:14.714722+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=muzaffarnagar.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwFwVsKgCAQBdCt9BtIzkRJfkRruQjGBI7ig6DVd46oUQkmjQ8xoipu1Nk-0BcqtnX00URj5gWtXCGnovl0h59WIk8bE-_kmH6u5Be9",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/377bcf291df5047ff159_f8fe8c00703c.json",
+    "bytes": 1128089,
+    "sha256": "f8fe8c00703c4a00fdc5342920b4e0be3d9611c3c216a674a750e1e1ac66a88c",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=raebareli.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwNyEEKgCAQAMCvdA0kd0WwDtFTYtMVlkRFpb5fcxzJKotXjfiixklmncr9UBbdR9UlRvHcXumMZ-BBkhbq9fjfl8D76iYD4NCgQwtgtw-KVRrE",
+    "retrieved_utc": "2026-09-10T09:59:16.250914+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=raebareli.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJwNyEEKgCAQAMCvdA0kd0WwDtFTYtMVlkRFpb5fcxzJKotXjfiixklmncr9UBbdR9UlRvHcXumMZ-BBkhbq9fjfl8D76iYD4NCgQwtgtw-KVRrE",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/d5bf6212a9f3b8cec6de_fdbee48a1516.json",
+    "bytes": 301479,
+    "sha256": "fdbee48a15169b0cb80e5bf599cf39ff3db77a59138f213ecab155c020ba4d98",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=shahjahanpur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWKc5IzMhKzEjMKygt0tQvT02Kz8xNTE8t1s9LLU_Pz9TLKkhXMDIwNDE0MjIyNDc2MDACAFq6EtQ",
+    "retrieved_utc": "2026-09-10T09:59:23.809283+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=shahjahanpur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWKc5IzMhKzEjMKygt0tQvT02Kz8xNTE8t1s9LLU_Pz9TLKkhXMDIwNDE0MjIyNDc2MDACAFq6EtQ",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/913c004322e60b9f75a1_15f9388371c9.json",
+    "bytes": 68637,
+    "sha256": "15f9388371c9d3cabde00168181fd690998d1441a8b1f15ee50e46f9a3ffbe11",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=sultanpur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWKS7NKUnMKygt0tQvLssvSS0q1i8AEvGGJgZG8QaG8QYGpnpVmQUKRgYGlgYmhkDS0NLIDACWQhL1",
+    "retrieved_utc": "2026-09-10T09:59:26.470479+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=sultanpur.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=50000&showResumeKey=true&resumeKey=eJzLzNPJy0zWKS7NKUnMKygt0tQvLssvSS0q1i8AEvGGJgZG8QaG8QYGpnpVmQUKRgYGlgYmhkDS0NLIDACWQhL1",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/373e2946be8d5876074e_d01c2cda9d05.json",
+    "bytes": 540898,
+    "sha256": "d01c2cda9d05ee13258bb336d1ad4c1963a0de45b5b59ac0170cfc4cb7b7cce9",
+    "status": "ok_json"
+  }
+]

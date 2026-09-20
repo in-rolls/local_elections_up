@@ -1,47 +1,25 @@
-name: CI
-
+name: Release checks
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
-
 permissions:
   contents: read
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
-  python:
+  check:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-    strategy:
-      fail-fast: false
-      matrix:
-        python: ["3.12", "3.14"]
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
         with:
-          python-version: ${{ matrix.python }}
+          python-version: "3.12"
+      - uses: r-lib/actions/setup-r@465b7d8e732ca3921382b1674c59bada9cbf3399 # v2
+        with:
+          r-version: "4.6.0"
+          use-public-rspm: true
       - run: uv sync --frozen --all-groups
-      - run: uv run --all-groups ruff check .
-      - run: uv run --all-groups ruff format --check .
-      - run: uv run --all-groups pytest -q
-      - run: make verify-2015
-
-  r:
-    runs-on: ubuntu-latest
-    container: rocker/r2u:24.04
-    timeout-minutes: 20
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - run: Rscript -e 'install.packages(c("arrow", "digest", "dplyr", "jsonlite", "lintr", "stringi", "purrr", "readr", "stringr", "tidyr", "stringdist", "haven", "testthat"))'
-      - run: Rscript -e 'l <- lintr::lint_dir("scripts"); print(l); quit(status = as.integer(length(l) > 0L))'
-      - run: Rscript tests/test_standardized_release.R
-      - run: Rscript tests/test_election_panels.R
-      - run: Rscript tests/test_weaver_preparation.R
-      - run: Rscript tests/test_historical_lgd.R
-      - run: cd data/fin && sha256sum -c CHECKSUMS.sha256
+      - run: sudo apt-get update && sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev libuv1-dev cmake pkg-config zlib1g-dev libicu-dev
+      - run: make restore-r
+      - run: make check

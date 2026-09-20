@@ -10,7 +10,7 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "scripts" / "extract_sitapur_reservations_2010.py"
+SCRIPT = ROOT / "src" / "local_elections_up" / "extract_sitapur_reservations_2010.py"
 
 
 @pytest.fixture(scope="module")
@@ -130,9 +130,9 @@ def test_native_extractor_refuses_existing_output(tmp_path):
     ],
 )
 def test_source_reviewed_part_markers(raw, suffix):
-    decoder = runpy.run_path(str(ROOT / "scripts" / "decode_legacy_labels.py"))[
-        "decode"
-    ]
+    decoder = runpy.run_path(
+        str(ROOT / "src" / "local_elections_up" / "decode_legacy_labels.py")
+    )["decode"]
     profile = json.loads(
         (
             ROOT / "data" / "catalogs" / "sitapur_bdc_2010_font_profile_v3.json"

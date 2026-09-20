@@ -1,0 +1,3624 @@
+{
+  "archive": "up_superseded_snapshots.tar.zst",
+  "sha256": "aee11acd1b7b13cffaaa8ede5c097819b5585a51c31757cc002d6327f7b35ecb",
+  "members": [
+    {
+      "path": "data/interim/release_snapshots/gp_checksums_v1.sha256",
+      "bytes": 1462,
+      "sha256": "9e8f035b20ff518a60a7993914ff6d42e66f46d50bb56db0f8eeb37f0e40aa57"
+    },
+    {
+      "path": "data/interim/release_snapshots/gp_schema_v1.json",
+      "bytes": 36099,
+      "sha256": "82d9ff78bc5d1054fc566ca38d5858af72d71d9e88ba298e220e34e0f0f81435"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/latest",
+      "bytes": 23,
+      "sha256": "72b879e98dce410d7ce4e88f1842c3d81c9adc17a1bb78535d0f50351a297bfc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 66100,
+      "sha256": "bebc09a8d67d0b65bac686db0f580aceb27dadadf33590d19b62f1f4d088bf1d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7236589,
+      "sha256": "d8b12dbda8e2fe3ecb1fd091ae4c3aa5bc5d92e41e75c8f077c1cd3d118e5ebd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 91430,
+      "sha256": "629f66bf7a7b25e26980964380b9c173a5a51661baff92ef2962f316775d9c3e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 421714,
+      "sha256": "1c0b8dd58962170c4b6b9b89022ca0b779902487f02355340f163fcbb595c51d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 259690,
+      "sha256": "73b6a7657a87dd7128f714bf6106577435259b3802e59171fe7133abb0b6c4da"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1320351,
+      "sha256": "4429597c1e928b85b6a5688d080614b8bb0329fe773a7cae1e7c9c5e50d6d8ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 331797,
+      "sha256": "179d8b98d20f13febe94e45adc85942b317a21e2365ef24a62183b929b237200"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 130370,
+      "sha256": "c638c3f58bc8288e141aaaf5c9221764667f5c741ef05b90027206e99896dc78"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1035338,
+      "sha256": "792691eb98603972a027d02c60011289ac451a845e2b7c584ae59ea7edb33840"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 508442,
+      "sha256": "fbaedaeea6b92375c9aef2a74da0a51b4af0034647a1c0ea677ad33e1de77ba2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 39744,
+      "sha256": "365124106cc84e335a89123d44f0e065fc06e246d6f88aaf98a423084d162d6e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 119304,
+      "sha256": "6f6071f9b03963c571e83adb8356a9a3da1c1749b479f5e2cd2cdc5d186e5286"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5464023,
+      "sha256": "3462d37cad3890b3de0ce6690014c0dd823bdec03396c6961e0a2ecf39fe2b80"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 36363,
+      "sha256": "baebbc39df6f1eedfe37f97e690be483ad361b0d3058d3b79bcf4b7d390c4ebf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1329185,
+      "sha256": "fed4380f8418a5dd93d64a846787aee7f06e2a2e4fcd7c79a13fb1f116e33ddd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4609457,
+      "sha256": "f544be6d22fe781a24c2ac8541b380ff8b21d3f03166c25eb3604407c329d04d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16368254,
+      "sha256": "65947cac0eab5f481f7414a723c1187679a1195c1f33c481c531a6ecf0eeed29"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/export_recovery_validation.json",
+      "bytes": 17098,
+      "sha256": "b405dbcbad2e0f7597c593d3475b7b9d11d963bda9712bc77fe56f2ebeeef503"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 115078,
+      "sha256": "aaad2fe7e0f88bbc64fb62dfa873c14357258401ef89e11c9b1e13bb374ee183"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 38286,
+      "sha256": "51edc09340c785491b82e1eeac3018e73472b3e33031b52dc7e868cc2378c947"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 43226,
+      "sha256": "fd832e16c8ab62db7c39f7b4dc6e3357a970736b926239f8a632986c74d82a49"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 69470276,
+      "sha256": "e799e4c4e0a51587eb170e534dd087f3512ae7c8aeaa18882ff6a913d685aca5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 114604,
+      "sha256": "70a73dcba07422ce68d5f6a01753494b8e466670c8a873c386ee611fa1503bf6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 132837,
+      "sha256": "bf6481f7a6e2cc9cb571209db7ce1d1f3a7c1b75cb50b8a5636fc50037ae26d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 81928,
+      "sha256": "e45626c0a8d670e7c2412806e42e1811577c64bbd55c1a112f1bf4adf1a31224"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1255625,
+      "sha256": "b44fe04f54731719b53ecfca5cabf9626112a0d1f46ba3da402930edf9d6e7c9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 114929,
+      "sha256": "d950e9e537dfa7a35f91dde0c2a37c7224c22a46f4e710b7209b4db47af7130d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7453421,
+      "sha256": "bca5d2d0f6cf8bb0f11e45f0016a061459ac645e7488531f8bad8f443897adb0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 91636,
+      "sha256": "9334eeebc2a1b0b9c906f8b5228a0f058f298cf5e42506cd24704ee226ce39f5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "6325db71c22e553d1b98f596fa73bde0022629258b7b999ef48a0a7382b6812c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/manifest.json",
+      "bytes": 79774,
+      "sha256": "ac03a837418c628edf27afdfdd01d01654647f995c6578de4c33ce29f1cfeb55"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10149072,
+      "sha256": "c5f15def4866e86710aa7f99f3f9835003cc7e5ef3e850925d579de5aeb36785"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6161977,
+      "sha256": "18fbb9cc68338acc6ad04fee96afe1b03eb646e7c2a7e8d8aa70d29eb161a3f6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 42216,
+      "sha256": "e301c5b85e354df466af69f2e9586ca92160a4b8a8a42a8b382969bede1d5ef5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 874567,
+      "sha256": "abab10991e2bb0b115ffe5b265dd511107b56b5bc22d047dc84f3edcc647d17d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2337833,
+      "sha256": "3fe679d354fb57f0deecb27b32e793296fd8af5b388c62b52869559009b1608b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 313625,
+      "sha256": "2c34dc79706a75228acdd0f7aee5ffbb4cb184c53e09b59a3de7a8956b43417a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1379109,
+      "sha256": "63693181b147dd877300977b0a053e76b63930b35d01e61d7828e70b68cd17ba"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 540731,
+      "sha256": "85d742c312e8eac5a17339ccf3a7aee9e0f7db9a91cfc0cb94a48aa098024b42"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 40717,
+      "sha256": "cda4ffaf0e9b8ab6cb3a9b6ade94fe05437f1a24c001468a8a0627b7eb9afd5e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 253103,
+      "sha256": "4d7350ba6874b60118e477964d03eb383c67e4b5a981e71733a99ed0cc4f766d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9786387,
+      "sha256": "f4b3a5b2abde6414400e495cc336d82e7cb8b3a294495a087b5b7e766a16ab5e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T031434762598Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 145413,
+      "sha256": "a73ddb6be930e7ea0dec869f7d72ee593fd0bfe8f554f6c42cbd86cc29462e53"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 66100,
+      "sha256": "bebc09a8d67d0b65bac686db0f580aceb27dadadf33590d19b62f1f4d088bf1d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7236589,
+      "sha256": "d8b12dbda8e2fe3ecb1fd091ae4c3aa5bc5d92e41e75c8f077c1cd3d118e5ebd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 91430,
+      "sha256": "629f66bf7a7b25e26980964380b9c173a5a51661baff92ef2962f316775d9c3e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 421714,
+      "sha256": "1c0b8dd58962170c4b6b9b89022ca0b779902487f02355340f163fcbb595c51d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 259690,
+      "sha256": "73b6a7657a87dd7128f714bf6106577435259b3802e59171fe7133abb0b6c4da"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1320351,
+      "sha256": "4429597c1e928b85b6a5688d080614b8bb0329fe773a7cae1e7c9c5e50d6d8ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 331797,
+      "sha256": "179d8b98d20f13febe94e45adc85942b317a21e2365ef24a62183b929b237200"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 130370,
+      "sha256": "c638c3f58bc8288e141aaaf5c9221764667f5c741ef05b90027206e99896dc78"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1035338,
+      "sha256": "792691eb98603972a027d02c60011289ac451a845e2b7c584ae59ea7edb33840"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 508442,
+      "sha256": "fbaedaeea6b92375c9aef2a74da0a51b4af0034647a1c0ea677ad33e1de77ba2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 39744,
+      "sha256": "365124106cc84e335a89123d44f0e065fc06e246d6f88aaf98a423084d162d6e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 119304,
+      "sha256": "6f6071f9b03963c571e83adb8356a9a3da1c1749b479f5e2cd2cdc5d186e5286"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5464023,
+      "sha256": "3462d37cad3890b3de0ce6690014c0dd823bdec03396c6961e0a2ecf39fe2b80"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 36363,
+      "sha256": "baebbc39df6f1eedfe37f97e690be483ad361b0d3058d3b79bcf4b7d390c4ebf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1329185,
+      "sha256": "fed4380f8418a5dd93d64a846787aee7f06e2a2e4fcd7c79a13fb1f116e33ddd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4609457,
+      "sha256": "f544be6d22fe781a24c2ac8541b380ff8b21d3f03166c25eb3604407c329d04d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16368254,
+      "sha256": "65947cac0eab5f481f7414a723c1187679a1195c1f33c481c531a6ecf0eeed29"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/export_reconciliation_validation.json",
+      "bytes": 46479,
+      "sha256": "c98a6f7c115363acd6f907c7ce8e5846998a132d7f90b256d2d44c1f98bfbc32"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 115078,
+      "sha256": "aaad2fe7e0f88bbc64fb62dfa873c14357258401ef89e11c9b1e13bb374ee183"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 38286,
+      "sha256": "51edc09340c785491b82e1eeac3018e73472b3e33031b52dc7e868cc2378c947"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 43226,
+      "sha256": "fd832e16c8ab62db7c39f7b4dc6e3357a970736b926239f8a632986c74d82a49"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 57490759,
+      "sha256": "107c3261dab6100740b0fd73b0bbf2f3d787ca0b9dbe540ce2282b31e517cdb8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 114604,
+      "sha256": "70a73dcba07422ce68d5f6a01753494b8e466670c8a873c386ee611fa1503bf6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 132837,
+      "sha256": "bf6481f7a6e2cc9cb571209db7ce1d1f3a7c1b75cb50b8a5636fc50037ae26d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 81928,
+      "sha256": "e45626c0a8d670e7c2412806e42e1811577c64bbd55c1a112f1bf4adf1a31224"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1255625,
+      "sha256": "b44fe04f54731719b53ecfca5cabf9626112a0d1f46ba3da402930edf9d6e7c9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 114929,
+      "sha256": "d950e9e537dfa7a35f91dde0c2a37c7224c22a46f4e710b7209b4db47af7130d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7453421,
+      "sha256": "bca5d2d0f6cf8bb0f11e45f0016a061459ac645e7488531f8bad8f443897adb0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 91636,
+      "sha256": "9334eeebc2a1b0b9c906f8b5228a0f058f298cf5e42506cd24704ee226ce39f5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "ba7797930c07b0c3e183869d31cfb996903de28ed2177d9ab07f285cbb5df998"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/manifest.json",
+      "bytes": 79687,
+      "sha256": "56556fd1d6549fdf5e37bdb5ccce0deeea497adb06f23812bfea7f0fb9991c6c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10149072,
+      "sha256": "c5f15def4866e86710aa7f99f3f9835003cc7e5ef3e850925d579de5aeb36785"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6161977,
+      "sha256": "18fbb9cc68338acc6ad04fee96afe1b03eb646e7c2a7e8d8aa70d29eb161a3f6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 42216,
+      "sha256": "e301c5b85e354df466af69f2e9586ca92160a4b8a8a42a8b382969bede1d5ef5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 874567,
+      "sha256": "abab10991e2bb0b115ffe5b265dd511107b56b5bc22d047dc84f3edcc647d17d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2337833,
+      "sha256": "3fe679d354fb57f0deecb27b32e793296fd8af5b388c62b52869559009b1608b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 313625,
+      "sha256": "2c34dc79706a75228acdd0f7aee5ffbb4cb184c53e09b59a3de7a8956b43417a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1379109,
+      "sha256": "fb5a0f86d2cd659d7dd05524f80f9bf379e5e0e3b5ef8a6f6668bfef95c93a79"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 540731,
+      "sha256": "07677eb4a0cc73803ed84bec2ae7b9b27b4e1219d1edf60059f7713c347a1564"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 40717,
+      "sha256": "cda4ffaf0e9b8ab6cb3a9b6ade94fe05437f1a24c001468a8a0627b7eb9afd5e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 253103,
+      "sha256": "4d7350ba6874b60118e477964d03eb383c67e4b5a981e71733a99ed0cc4f766d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9786387,
+      "sha256": "f4b3a5b2abde6414400e495cc336d82e7cb8b3a294495a087b5b7e766a16ab5e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T221920389820Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 145413,
+      "sha256": "a73ddb6be930e7ea0dec869f7d72ee593fd0bfe8f554f6c42cbd86cc29462e53"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034449187825Z/INCOMPLETE.json",
+      "bytes": 41746,
+      "sha256": "d1903c6b2a2f630f91ba09c52a3d913a1992e3aa44198d3d778c80ed44a65fa8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034449187825Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 3929965,
+      "sha256": "cb02da451ac08f7ede9c65d116267dbd7b66543a71180ce18082453f2050dc91"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034449187825Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 38174545,
+      "sha256": "4b42f6d7da19dbc2b69067d9f948ae726696fc8e4b977b31254cd477ced0a103"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034449187825Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10025579,
+      "sha256": "c9db1667c8c82e50fb858a3a45c58042c03549c3e98eda8fd126b0fd1014876f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034449187825Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 5384812,
+      "sha256": "8d69a05d92bb15118bf0f951a05ecb026c68c62e8206b73d59a7afb639329243"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034449187825Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 1452526,
+      "sha256": "9f122eb4e9979b935dac5d3143b562f0f62f3bc62a27986d5a8955b3893cf540"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 6994345,
+      "sha256": "b8e157dff4dd9edeb7206e30201b2663fcfaa64029ea2e7beb01bd714b72dd55"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 73933,
+      "sha256": "241aed16d8d885d27f07fd5f6cc2ea89af8bc2fcff04d55aaf186d90014781b9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 405031,
+      "sha256": "ffc82635365b05e9e797b5b3808b96fbfc4873dbc5aa597df54c26e3397f7931"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 240551,
+      "sha256": "f209b09b0058f90406769bed7a470d0384b2ad587c04d9ee1a8126518ef80edb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1266105,
+      "sha256": "c2f2b73fb9a7e153cf44ecb2766462934bb81e8d452405a15d89039c159ee984"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 311690,
+      "sha256": "5e8427e21a28932bf3755bc0efb811217c61279694981139aafa7d18a29fff54"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 109103,
+      "sha256": "ba2a81a3bf722e55d25dd83eff3fde6048b4d02d563c61779d9adcbb5acd3803"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 969196,
+      "sha256": "579279f71839f1c07c98ea6d9ec4670bf6c425a24fe3989ff7f230ca11ffb464"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 26571,
+      "sha256": "b079f60acd3249b0e54b2c918ef78fcd2588d9e44a0fa54cf4c2e0152ff34fdf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 93026,
+      "sha256": "5614bdf99ebbb65ce665ffa1ab68ce61d643558c2c5a8f5ba653ec79a5ade1c0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5263262,
+      "sha256": "077e890b2ebc8340293d185b94f4bd97870ca0700ca442140b9a6bb77de666fd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 22483,
+      "sha256": "fe5e2f9d5360daf305ddc04c3189ec20eee7b159639603af3fa3bd788527f80b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1273631,
+      "sha256": "4c187e057f3eb8d37031df2cf7ae1a1a632482ac7c641c9ce033a8e8a82003d2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 101935,
+      "sha256": "1d0eed90eda1bd137bdcecc80f83d3fe1d9fe7acfab2d42a1c8c2e68344a6d31"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 25177,
+      "sha256": "9568af4afd66b637690e6839c3fa171c0080e4461398ac9d0e34783b208ab8bf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 30226,
+      "sha256": "40cab9009ea52d02a7246f700ee42c429cc0f5fccfdabda3ca0986820ce5cdd0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 4848899,
+      "sha256": "b7a01b47d7d8a30b82841ae3afd2af04bfb1ba56b51cde38ca28e33216b51508"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 101461,
+      "sha256": "f57adfce158b640a39aa6a66e822d732cf6f6c942343d209afabe493b46abf13"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 119710,
+      "sha256": "3ab56a125af56199af8e8ff71f3c54f898555072307c778ac096defd7c84c378"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 61094,
+      "sha256": "fa17b07f0f4c6fd8f43d9d9714a82c22972541e1568021d81d77628a4494073c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1163976,
+      "sha256": "fb040c5bc8362dd4e56ab59cdbabf24f71a025cb1f2f677a689017907e75592b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 101786,
+      "sha256": "14c49130c70bcf1968c81ba07b0ab9dd11be3ce91bd66f43de0f9784a95dd2c5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7348827,
+      "sha256": "2db931b7a67d3c377253d5deeaa440cb2fc3b84c2c007bd9a26e6708af6d38d9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/CHECKSUMS.sha256",
+      "bytes": 3435,
+      "sha256": "2b5a3365364a542f2e0b4b564c8cc6312900d59697547ae19f415e90347e10d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/manifest.json",
+      "bytes": 52159,
+      "sha256": "c4b2a96128be6043f7915b9b058ff6749a93808d3f25376cce9b36fdbc931de8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 9903333,
+      "sha256": "ae4fc85984b2388772bc851278679fd4cc576a3f40d4e36cc25b38feeb8baa5b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 285886,
+      "sha256": "7c358f544a8415aa828661027e1b5c24e6db5b709c08cc20b46225d5111950cb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 26376,
+      "sha256": "c0dcc94cbbe8346476a80427c2ada2d403d5561afae8bfb8be43779f8ca27b10"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 239953,
+      "sha256": "929bca9c2b32b163c4b3cc2c17410304eaec173d752b4eecb9929ecbe49646ef"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9649226,
+      "sha256": "f1fa382339951d20087044ab41a4142248df9480c140ca4982aa5138d8aa615e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T222220514006Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 127068,
+      "sha256": "ed4a7ec36937e1b81dec90f63038d2d985fcbdbbb42f0873575be6a5a4204aaa"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 73054,
+      "sha256": "ea36d8c6610b6900c11f6b654eb43c4052932a5949089b4cb6609b6cd9e01c14"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 8641602,
+      "sha256": "7967a85a5fab253c99d3e9cb132216dbfa3f49278fc8574eaa1fa4a80d42c94e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 98383,
+      "sha256": "6a597f9629b50bcf387e7b507b2555827f283b704136078554612f785aebc00b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 428667,
+      "sha256": "e17d94b528e6085a77c79b81f7e6e6ebecc768c6e6c22199ab017560d257ee2c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 266657,
+      "sha256": "e4d9a43aa7a2253328a7fda81eaa722ff7c86b64bfcae75bcdb4ad41d03bb3f2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/ballia_adoption_receipt.json",
+      "bytes": 1668,
+      "sha256": "162f1e68565e9b9a94174c6bfb56418cb520af19d22568aab6546eb846ec7ded"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1334848,
+      "sha256": "5a7afa1be08743911900d98505fe31bd84549d89f1f5404db037b3779972bad4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 338751,
+      "sha256": "7b755939af2b0dbec1352828a5ad3b8bd8731a69ed67857ba64e07df446df9f6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 137323,
+      "sha256": "8e1285601b1b356503d40486cf063bf4e97930eceaa5b01ed50bc40ad118bb93"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1049787,
+      "sha256": "713c052bf11bccdc873d285f4bf8f63018979d21e3470fcf74ac3aa5de512161"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 515395,
+      "sha256": "2c5a5e10c2889ed201f85c81daf64a22910060133c5beb32ba2f96567f4ae1a4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 46700,
+      "sha256": "915d7b23d7f94a5fd99693cadcbd374a2d9b7c74f2e292f4e80615b9f78cdafb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 126268,
+      "sha256": "ebede0f901c8a9b33b77349d7f1c4d7630baacb4fe3282c0416e7a7855c374f4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5512657,
+      "sha256": "856bfb5931a7a85897adfdde489e6d73db3172467e5a01d3ed96ae54c4b01251"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 43180,
+      "sha256": "b568eb696797a1a9cbf75cb1e26b196f96badb76270ac377b4efd5a8c9c1a749"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1343682,
+      "sha256": "3de8d4f29ee913278c8db99db9b92f21c4f5f63e8ddacbe0c192dd4e1417f148"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4627798,
+      "sha256": "ed12d927ab46af6db037c9808ba55c93c0765311cd4934d6990041aca7f0012a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 38874670,
+      "sha256": "184e6cd17a474127ed9da6017e90df3a4efd918f766df46c943d379a79631d6f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 122031,
+      "sha256": "f0a8061f03d000e1b5d9cddef092abb9245c3ad8236a063ac746a99939185cfd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 45239,
+      "sha256": "e7f84cf02de11b53bb5e6247c424de9f0db43260790eac44e74706cfe7034193"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 50179,
+      "sha256": "87d40998f2dbe0bf2ffe407ae8f68c36ae1dbf30e13135b045e36756129efc6b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 70038941,
+      "sha256": "aacf65101338ea5ad172bf14bdb3f5ccec2def5854796edbf964e8b5475f9407"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 121557,
+      "sha256": "8b9ed6ca2b065dabea0ff21e09f1223b411f637ce0aa5872822efecde68ae4c3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 139790,
+      "sha256": "795e7800804c781a4a8acb756d7c3f14f5a78ecca88f8266e4850f2a39932baa"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/ballia_reconciliation.json",
+      "bytes": 14943,
+      "sha256": "e6808b36c285d293ef5a13da961b994e8dfc5b4c94395c538bd39aaa15c9fc7d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 88881,
+      "sha256": "f959d9b38e9378bfcc86248673931a5d249ed1e9af90a4a2a952607fb420cd59"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1270074,
+      "sha256": "e009615e4dc531ab3d01ffe5eff1102411b5defd8e989d75908ce3d9765d1778"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 121882,
+      "sha256": "71f42637947246e525c887f1cc71250ab640e76c98bd4de5b638f1a14b39934a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7502082,
+      "sha256": "af52304d1269fa8a031f1567e45855d7cf90b34b188105d278fd45e02d451437"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 98590,
+      "sha256": "e6e7fb33d1bd043e3985d3dca6146cb17bf79ae31dc343d06b9313bb35657158"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "7ba19867b4e92d509f637d0ab7e77bb0550e6eb11bdd90032e9bc92b26b36298"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/manifest.json",
+      "bytes": 98633,
+      "sha256": "504b02eab144b23003c6787db8d7f7d5ab11b5a15422031449cebe0e55cb358a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10269761,
+      "sha256": "3d7acbc1cb3032914bf3f15559a9af5da595fc71b3b1ba223bde2bbc7814ccf2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6184114,
+      "sha256": "995f5bc4b87f69abbf3cd1380319a7cbd46385f9e49d2ae54ce0ec38fc361173"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 49065,
+      "sha256": "1fc7ee477d47912c754c1b191663fbe2cb4880f6f73eb8fb52bb334a7cd6319c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 881520,
+      "sha256": "8db8625024412aa9819e68c44d849bff0b6bdd1b1b034cd58ab3ec908709385c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2348582,
+      "sha256": "8f49544ee8916b09e236f5a217cdb127aafe018d1f1608741f4c50918808657b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 320597,
+      "sha256": "ad9d3cc289f1ea17f05fd4f988801979ae3f9f827ee87b2c64eec07197a852d8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1386061,
+      "sha256": "f2bbd4ac6ab1d218b989c9f219fb31f9faf274f61a76473349458f25ceadbeb0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 547683,
+      "sha256": "d339dbe185da31f70ba16af76028e2b99ca1b54951c577aef9a79e870c615f5e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/central_sources.before_adoption.json.gz",
+      "bytes": 588,
+      "sha256": "6844c15ee5d3a201e1ac362bcce301446dde7029165f3c6fb4c5999fef60d680"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 47531,
+      "sha256": "0844bf36281f49a6829da1029994d56cb36bb1dee98167044e7a739c970a091c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 260056,
+      "sha256": "169ae1fa1ad130ebfdc4daa5890b1a0472423969ccb82538f2ab483d1a1acc6b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9850232,
+      "sha256": "c5b932dd6bfc77743018f47ef77d819270d31e4c4a964309f8d8958893b4cfab"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T185650291799Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 152385,
+      "sha256": "f59f8a7177cccdf6ff4eebc52def9edc683abfbe375b672ba0ae73200bd4fb11"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7069749,
+      "sha256": "8ed86fa45eb952c7e62c181461f0274c68716202f57f9429d3105b746c6b3892"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 76884,
+      "sha256": "d6915a5e9ae002c37ec83d0de72dbae6fe5ba1e5fbc7493a8fdfea36ad85bbf0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 407983,
+      "sha256": "471bd5e34f0c7d99b28a4e6ee368bcf683a8e64d4223869c51ac10f41f32522b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 243503,
+      "sha256": "be038804268561ad02bcfc7eb8e594b9b369c629dfdf5fa72800bff9c3c9c480"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1272402,
+      "sha256": "e5cb6304b2d9751f6bf1c0867bcc2642957c210fb3e910235ba08178b09f7a70"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 314642,
+      "sha256": "69e3e950baaf8fb5e0806d354796a37240136aef7caa8972132ccdc454a55eb3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 112054,
+      "sha256": "5ab8b9cf3973f9fcf59cb3838c04e8db6803c368fae3e819ffa087c1ddb46d1c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 975451,
+      "sha256": "4c0c3bbfcab086a6387a3728882c5684c13c8ef9b1f01417a99c06cd504d0038"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 29522,
+      "sha256": "2ffa0c31c6bc6f90e2da06440976b4559637ef967b61e6f548fdd1da7bd7e4a2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 102780,
+      "sha256": "da9536a1153a22ffc942a877d4693ec981fddf4b4dce66f286bcb1d9106a23f4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5323142,
+      "sha256": "a3fc794f60ab69a7ed300432d5440d6c8895425b50f405c6ee55f3b86950e00e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 25369,
+      "sha256": "b136882f482f23f34a0f4060fff7ddd7718e8cf42ae92ee3156901cd71f45f2b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1279929,
+      "sha256": "821e878cd5d7832af93e1d94ed53b338052430715c8cfd8b2a6c267b670eb618"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 104886,
+      "sha256": "c07cc5ebc3678aa5b5abe33c24389476688b6828d53f69e334a67c4745f536f0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 28128,
+      "sha256": "e30906adeeee90df84d4fe7e57319566d34ae0fff0fd4cf6dcca597aed21d09b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 33177,
+      "sha256": "3746f47910e6aa58b3612a3628562c04cc819093a9d7c57e0f830646a76c31a0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 4870233,
+      "sha256": "3cb84fb60505e60a05af8924124e58d6d35b671896e9bf6a46e2e5ae29f491ce"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 104412,
+      "sha256": "4a7cab861032c194ad1a660661e46e6772e5f02dd80ab89a6ec673c40d7d5a65"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 122661,
+      "sha256": "be75e4f46cb82ffa35ad99722305e8873e39af1493a70bcc25cd68818b5b824f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 64045,
+      "sha256": "a65b05f58cb40edfc15b5c84c2a587784f10cc2b4efb890e8a687383d421d389"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1170253,
+      "sha256": "47d37a4cc804a6f98553cb316a0857a79f9a55e432eb17f0f5b3eb458f3026b4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 104737,
+      "sha256": "dd73eedf54daf007d3538ef298b72ac4b08804e4fa03b1433feec34bf236a363"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7370182,
+      "sha256": "f20ad1e4c31f8c8b42cf78e2de0f45e6e82b3951c455697e5e7225ca1f5ae60f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/CHECKSUMS.sha256",
+      "bytes": 3435,
+      "sha256": "be0cfc5a2ae74efb4af72414400755f8c25a82251bd1cde01235086fd804b261"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/manifest.json",
+      "bytes": 55398,
+      "sha256": "3dd11236fc114eb5571904fd740cf4b1e614265085d7972a6c19db0ccdf0f043"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 9956433,
+      "sha256": "40e2de3908193756a388526f6fdb151d99c09246531261c35b98735ac485aeff"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 297388,
+      "sha256": "495267c80aef07df0dd342a8fd97a3227a616fe565df744c71ae76613a17cc43"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 29262,
+      "sha256": "af6537780c0c027866099529fcbed7ba9f7d546b2d749a715ce07a0c1c3b50d6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 242905,
+      "sha256": "303dcd72177b8b33b376d87195023af09a46f72e1344cac3e141d93fb54437f0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9677273,
+      "sha256": "7c68ab49983b4a51c9a647cf3b05524eff7afdd80f1b89d44d0843a55bc03b72"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260911T223313542265Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 130019,
+      "sha256": "f56c82853093cfcd7eb7dd5835048c9e5fa4f4546bf6130ddee54af5580795af"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 64586,
+      "sha256": "03c0f1b7c7f70e59650f8c41e46947fd91f3ef18b2db3b0949cefd0a55f3a4f7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7222944,
+      "sha256": "a272917c69e4047078e3c58d99efd89d2bd8a4caaf2ef561b11569b4c369a3e1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 89915,
+      "sha256": "bf9637a926fdf2d2a6b553e5534e22fac6dcc09d04b55f9bd27e1872c38db524"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/gp_ward_checkpoint_integration_validation.json",
+      "bytes": 794,
+      "sha256": "879d6a1ab0aa3d1a30b24620e8df137c04177fa8791283ef241b9181fa3a6129"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 420199,
+      "sha256": "df0ce69cea88751bb3ed2eb68a608480aab8cae6db68bf3bd0bccae8c288628e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 258167,
+      "sha256": "a70226cd476d28ab05f46444e384aa516f555e92bebfc2023f12c86e1315e2b1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1317226,
+      "sha256": "bb11583eed74b77532d7522e27aff0bf7cebc0d55cce2caf4ac9532d8285fed9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 330278,
+      "sha256": "3f3c6638c8fd358c4ef4452b03438b6c692a795a91d5ae524afd77755237ee80"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 128855,
+      "sha256": "979e3c80acfe77133369250adf071232214d6789177a95e88f2268deb84a3fb9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1032223,
+      "sha256": "04e2f332c3cc028910367eaa42553f2b66373c3efe5d4fa4138bee388ed48c81"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 506927,
+      "sha256": "f9eb48edddaa608fb5adb6b8142d14974ae66cda97bdba4b9ea1eba74f73202d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 38227,
+      "sha256": "ae5cc91f49a5d23aa287895ee6f0fe4cc4328bfcac731ef480c86a9dd093a7b1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 117779,
+      "sha256": "6bc39db29e41619be419181c9605ee42e0dc29bda38c6d20f2956f75f5055f6c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5453618,
+      "sha256": "fb572ff417dc386de0ca5cc116cf926314543f3cd4382d46d4d3867211bf84b2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 34878,
+      "sha256": "995242aed8c6a0f6f30fe5cebf51458cfe411dcea3e3489ac474b75228cbe1ad"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1326060,
+      "sha256": "d078f9b0e415d6c63d99dcdcbbf4960a4654984d740b5ff6578d8ecc8804838f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4605512,
+      "sha256": "7d5f1a68f6ce5c692bcc6f3538f9fc48cff0e9022922ddede69eee10a61cd1ea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16357019,
+      "sha256": "9c63b653cc7f78c49fc33f6eb9633700a8e01ddd2073da2f76a198217ecc9fb5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 113563,
+      "sha256": "13b4d5eb997d5293651e42bf0cb32a9c143c06ed87b5a7ccd796cad075f3ac27"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 36770,
+      "sha256": "24247c4140d72365f62645554264ee83a5017d2b871ed178084d2f424b60d9ba"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 41709,
+      "sha256": "58b58cdd5fe237cea0c95bd051dab1471d804e463db8d31b2afabfe277e0b86a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 30200896,
+      "sha256": "8397698e51a3cb58050dcbcd012e25eb6c69cad7a0865eb2be28ae4a5ed3bddf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 113089,
+      "sha256": "bfd4d21284002a4176d4342e548bb1b0bc078605aa5f760634ed042a7bf352ae"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 131322,
+      "sha256": "4deb26a37382e81235bd053b95128a0a92d4839a8ef1985d057fce12b5c96aa7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 80413,
+      "sha256": "ec7bf3f437efaa02eaf141f8f08e88b22e24404380e488589d24596df6bda4db"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1252510,
+      "sha256": "6dce60058ba569cbf7ef5926393be6dde06c45573af0e424b7425917cd0ba5a5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 113414,
+      "sha256": "4d5782db365f24f37ab829f56b444b369295ded8fbb7cef1842b272daa365ff7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7443006,
+      "sha256": "af8aa3953a695b4e1b8c963ff9656eb061861339ebf11752a9eab259e63f3d97"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 90121,
+      "sha256": "cfc37a75db0d5153769d9a3523183e678c245d442f1940d84e7a5ccde4d07454"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "b2d798b46ffc4e33313248efc6eeb7d948bb4dd614e96624436a912e05c00271"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/manifest.json",
+      "bytes": 78651,
+      "sha256": "47059008390ca36d6f502ddb0850465f8ab07b51ffe611bea8d15c5faf70b362"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10123287,
+      "sha256": "4872ad96eab2fa75be99cf3ad1b693f148e7818a9095c42850e629e5f6ff3baf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6157222,
+      "sha256": "c966c16c7a13d9674768098b3e95e24cda8b5a76de4c24d7a7b4e5a2f5abb103"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 40728,
+      "sha256": "ce5ac1a1f9ae96dfa2e6fd5bfa3e739b56b73a56724570fdddc93f4f4399ad47"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 873052,
+      "sha256": "f2e47b16341ee8f07257227a5a027f37afdac7c18d8631b45b3750eec04c0c28"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2335508,
+      "sha256": "1ac44335472504493a9edb4500c8d35b60f06a768ed5d6ed530221b797e7c56e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 312107,
+      "sha256": "f935ca48bc7287b3b6578d3c2337bfc761e4058fcef387d44179e265086179a0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1371548,
+      "sha256": "0896e707f5f26bfeffbca25809f9d38e6cec2580ab8e0b8a360f2674c2a49ad1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 536074,
+      "sha256": "0a4c0c15a639c3b68d2ed4b74c8db1ea1c9e61c728ceca136fca30e93be9a297"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 39231,
+      "sha256": "6dae10152f0ad12c0be9d7bb1def0f0eefe49b320396eb9075a60737ff48a8c5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 251588,
+      "sha256": "c066cd118a220a02da5cb0b23582efac2ea0bbba4e8b27a4b830ba6dbde04090"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9772732,
+      "sha256": "6c4200710548c8580ace35ea447de423c00f5e4c8c7648b7d1e6887c9c285013"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T094233257912Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 143898,
+      "sha256": "141be5543f7ec4bb50849a88730ef2aa5ff15d43066f2cded17c90a5f237a559"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7121858,
+      "sha256": "0f437a0e8819dec422fee4e8817e38be16cd6a4fd80b40e5b9bfc267fcdd7f51"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 82388,
+      "sha256": "041c3b63b030e2f53266e058090168ab89d32e4116a35ae876e2435d9a16b408"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/samiti_integration_validation.json",
+      "bytes": 1253,
+      "sha256": "3a668417ace6e0c19940c9df863d41cff6a43968ae4a0393baa6d91c415fb08e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 413487,
+      "sha256": "937385ac566b18590700131a91aeb54a739e437103450fe74554ccbfed56c2d6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 249007,
+      "sha256": "296bfd34d6dd65beb0fbaf7289491b955816591ca514928e1e5c88fd1ac88ef2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1284096,
+      "sha256": "748d1b1fc9f1f031866fb3cebfb3de89ac12116dbe499560d426ffaf222f49c3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 320146,
+      "sha256": "b58b2aa8a3b2761edfc713979931c2ce7579b7382fe50da18da5dfb1a0a1849b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 117558,
+      "sha256": "a84c3d9544797505f31372fdab245e04213775859e7a4489529e017f59b8f46e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 987097,
+      "sha256": "e8d041910051abc537ae45e7c3ccca7bfdd008911f33ba6d31420e8ad5fa9a78"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 501508,
+      "sha256": "508d0157ced1c34183ebbaa0c4c922e7d063123354c54609e9992be810393272"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 35040,
+      "sha256": "27823408162f434be1648d0b7d65949d164783e666aac29a253b8dbecda9a3b1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 108284,
+      "sha256": "f34b7d5538d04ff76bcbd0cccc3c7fd01e4ce9dd13bbe3db75c05a0e59d80d29"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5362803,
+      "sha256": "be6609467fe970c2f17638826939a7ba43c76481cecf17954be726d62ffb309a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 30776,
+      "sha256": "e3b360d9742f1b01d31ec0aabfedf57384401e2bd5da1306740539677d8dcde4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1291627,
+      "sha256": "d42152f500a8585b3481da7b1fd7bf4bd8e827f6b94c20e7368cd396229be9eb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4594058,
+      "sha256": "b7d1c76b369d0eb6473498cc64acd7a22cd2daf6e62b002737ff22bf5a43c15f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16327918,
+      "sha256": "fbaa7a425b43f7ba88cd7390a34159f1880e375c9768f022d8ee4f78afb05880"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 110390,
+      "sha256": "4ec99562097ada544e36de4306d0878d3aa591f5103fe296b9220f96ac4039be"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 33639,
+      "sha256": "fc653b25537966efc1bb9c1fe74d1e8d4394bb47f0386de05ef436385c7070c8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 38690,
+      "sha256": "e92c9cc0a8b7e6549e3ae3cde06b1987eb7e53c7ecd68764e2bf806d532c3ecd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 4909894,
+      "sha256": "cc306edd765df23bf58743e9b16ed7f88adc40b88aa35c838779371efa98e0dc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 109916,
+      "sha256": "0d2df475ef84d137a9740ad8a84911f62ac725c359afa87b819dbf211b9f6a1b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 128165,
+      "sha256": "576b3996c8a8df95720140165010c21ed109130466864c5e359da2714c2f90e4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 69549,
+      "sha256": "7f674627636b90fb4556396b16d25ff24419edb475e1cb995e6ac84c1164a457"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1181906,
+      "sha256": "4d8be33e2b79df479f0224a4adcad1258d3cfda893b747163b5c70d8009986d1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 110241,
+      "sha256": "048e92089ff5f2030329aa208af0a11a62b4c306162b24caae345ca0c243ad6e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7409884,
+      "sha256": "dd452a626fe22c60c9ae9402fd30fdda6d9744aa73f5e68455aa54847bd41289"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 86905,
+      "sha256": "f00927d88a77db0307dd59c425c0cc4ea9e105b93e633a69ee26d412836c9ecd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/CHECKSUMS.sha256",
+      "bytes": 4406,
+      "sha256": "e980c630895bfff93a75df3111c9530feebdcd4216677d9303bf0f006b9fddcb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/manifest.json",
+      "bytes": 64572,
+      "sha256": "4cd48b905f36eea80a6b613238850eb9f1d36cdee95452b4f9420be94d4e0226"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10055181,
+      "sha256": "7b5e311a8e09183b9794b6980e4e1590f3613640a1cec59d8532c6c14a190e1f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6144084,
+      "sha256": "0978b29731c11ed6641303e4f73be9faacfa3b3ab9df6913c53c3395938b7560"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 37691,
+      "sha256": "4beff9fdafde5185f6391994a9ee10250dc1a221cb5d0db04a3e5b22915c4584"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 867447,
+      "sha256": "7b38f1c30c5c6cb2e6a89541ccc64cf121883b07d5b170d0c57dd1b1cf2a6d76"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2330355,
+      "sha256": "05884ddfdb48f43059fd58addd079fa4c1d25bda4694d42d75e8db0f1686d7a7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 302892,
+      "sha256": "0b93408d371eed5737a79d15b89b3e4b7512e432caa0a6b6d589262ca223f5cf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 34645,
+      "sha256": "dae1f97f321304c380c1a642f2f39f527e7e1febdd9bb15f6832be069ca7ca2e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 248409,
+      "sha256": "80eb09738ecfad1478acfb0d264beef416ee7876ec7619052e8354bb852cc3e1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9729423,
+      "sha256": "edb62d202e94036a6407b1189f715fea2565d216f11134fb38e746c1bdf1dcf9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T020034423658Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 135523,
+      "sha256": "0bcb585926a4a1468696d49c91f877a2f725cbe05ee86a510fee1a1c33615c09"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 6910959,
+      "sha256": "1fa2150ae7a922681e0b344744ec25c9d49ad98b7ac52d7f62b6d57a09c04a67"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 689211,
+      "sha256": "8feb7e2a68f669fbae5ccf5d9d9659d6872fe8a27bc3ad3dd9ce81eba725477b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/INCOMPLETE.json",
+      "bytes": 40260,
+      "sha256": "bcf240774b4a304df2c7e12741b23c635c0d002d14edda174b80ddb92155fcd5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 999391,
+      "sha256": "341d68a0fff09a42793c62a8d4c4046d79c03e0f94d812ef60e5a81dfb26d392"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5035224,
+      "sha256": "1442d8f7f1f0e6dcf4195467c179899f85f59f04d5c48d7b110e82b5fb01ab9c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 672789,
+      "sha256": "abfa5d438b78bdda0f5e99a40e680ec2689a1707eb74c5b38bf3c5007cae0e51"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 3911694,
+      "sha256": "cfb304a8e53960d3cad600a519cfafd421310629454306c466236c65461eb130"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 15481325,
+      "sha256": "b2c3780c76c43ec10d769aaa6f09f9fcec5f9d3bc3f30beb22a3ad56a0eeb7d1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 19539805,
+      "sha256": "ed8f9a084b5a9e21c8a44e62ad64316466d73afa437593fe8a701b206f9b182b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1022283,
+      "sha256": "330c40c7d139e3c228bc70f29f8cb8842fb164f464c78443ffbd618939283891"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 6927618,
+      "sha256": "59a6f9f7dd00e517c516fdb63559c91476c43e3c26060d3814651c9c59b4eaed"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 9878914,
+      "sha256": "810cba330646f86646bfa7c38611b08c9345e4c14977469b0d9d0dff2ad909f5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 5361779,
+      "sha256": "3f3bd25149d89ba47ee479ef80a32b4e1191d9ae092f5794896508d4b91a5ef8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 1443779,
+      "sha256": "b373f4734a693cca3336992edc98e6edcb681a1e6a5ac82e1c70124d770f43cd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T034647709386Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9406924,
+      "sha256": "25c22ef4bab5cd840dcd06f8800b6f2dfb35c1c5e54c2c8b83f91f669fde2284"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7121858,
+      "sha256": "0f437a0e8819dec422fee4e8817e38be16cd6a4fd80b40e5b9bfc267fcdd7f51"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 82388,
+      "sha256": "041c3b63b030e2f53266e058090168ab89d32e4116a35ae876e2435d9a16b408"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/gp_ward_checkpoint_validation.json",
+      "bytes": 437,
+      "sha256": "6bbd75c7123822482a3deafbb047b7c3123063984c5a43ba154c3f70e835307d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 413487,
+      "sha256": "937385ac566b18590700131a91aeb54a739e437103450fe74554ccbfed56c2d6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 249007,
+      "sha256": "296bfd34d6dd65beb0fbaf7289491b955816591ca514928e1e5c88fd1ac88ef2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1284096,
+      "sha256": "748d1b1fc9f1f031866fb3cebfb3de89ac12116dbe499560d426ffaf222f49c3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 320146,
+      "sha256": "b58b2aa8a3b2761edfc713979931c2ce7579b7382fe50da18da5dfb1a0a1849b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 117558,
+      "sha256": "a84c3d9544797505f31372fdab245e04213775859e7a4489529e017f59b8f46e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 987097,
+      "sha256": "e8d041910051abc537ae45e7c3ccca7bfdd008911f33ba6d31420e8ad5fa9a78"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 501508,
+      "sha256": "508d0157ced1c34183ebbaa0c4c922e7d063123354c54609e9992be810393272"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 35040,
+      "sha256": "27823408162f434be1648d0b7d65949d164783e666aac29a253b8dbecda9a3b1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 108284,
+      "sha256": "f34b7d5538d04ff76bcbd0cccc3c7fd01e4ce9dd13bbe3db75c05a0e59d80d29"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5362803,
+      "sha256": "be6609467fe970c2f17638826939a7ba43c76481cecf17954be726d62ffb309a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 30776,
+      "sha256": "e3b360d9742f1b01d31ec0aabfedf57384401e2bd5da1306740539677d8dcde4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1291627,
+      "sha256": "d42152f500a8585b3481da7b1fd7bf4bd8e827f6b94c20e7368cd396229be9eb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4594058,
+      "sha256": "b7d1c76b369d0eb6473498cc64acd7a22cd2daf6e62b002737ff22bf5a43c15f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16327918,
+      "sha256": "fbaa7a425b43f7ba88cd7390a34159f1880e375c9768f022d8ee4f78afb05880"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 110390,
+      "sha256": "4ec99562097ada544e36de4306d0878d3aa591f5103fe296b9220f96ac4039be"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 33639,
+      "sha256": "fc653b25537966efc1bb9c1fe74d1e8d4394bb47f0386de05ef436385c7070c8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 38690,
+      "sha256": "e92c9cc0a8b7e6549e3ae3cde06b1987eb7e53c7ecd68764e2bf806d532c3ecd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 18456204,
+      "sha256": "a4baa45ff8d54aa283d7b19760caba29820d0c9001803e1a96c6dcccd6de315c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 109916,
+      "sha256": "0d2df475ef84d137a9740ad8a84911f62ac725c359afa87b819dbf211b9f6a1b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 128165,
+      "sha256": "576b3996c8a8df95720140165010c21ed109130466864c5e359da2714c2f90e4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 69549,
+      "sha256": "7f674627636b90fb4556396b16d25ff24419edb475e1cb995e6ac84c1164a457"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1181906,
+      "sha256": "4d8be33e2b79df479f0224a4adcad1258d3cfda893b747163b5c70d8009986d1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 110241,
+      "sha256": "048e92089ff5f2030329aa208af0a11a62b4c306162b24caae345ca0c243ad6e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7409884,
+      "sha256": "dd452a626fe22c60c9ae9402fd30fdda6d9744aa73f5e68455aa54847bd41289"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 86905,
+      "sha256": "f00927d88a77db0307dd59c425c0cc4ea9e105b93e633a69ee26d412836c9ecd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/CHECKSUMS.sha256",
+      "bytes": 4406,
+      "sha256": "603838fadc1a2757f537e4d1e72c4b83e94597e50ae761ff558204f2f400fb72"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/manifest.json",
+      "bytes": 64767,
+      "sha256": "7a54683d1513e795c45c5857a087c38cb79bda923941c88d3b93e2c67be115f0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10055181,
+      "sha256": "7b5e311a8e09183b9794b6980e4e1590f3613640a1cec59d8532c6c14a190e1f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6144084,
+      "sha256": "0978b29731c11ed6641303e4f73be9faacfa3b3ab9df6913c53c3395938b7560"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 37691,
+      "sha256": "4beff9fdafde5185f6391994a9ee10250dc1a221cb5d0db04a3e5b22915c4584"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 867447,
+      "sha256": "7b38f1c30c5c6cb2e6a89541ccc64cf121883b07d5b170d0c57dd1b1cf2a6d76"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2330355,
+      "sha256": "05884ddfdb48f43059fd58addd079fa4c1d25bda4694d42d75e8db0f1686d7a7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 302892,
+      "sha256": "0b93408d371eed5737a79d15b89b3e4b7512e432caa0a6b6d589262ca223f5cf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 34645,
+      "sha256": "dae1f97f321304c380c1a642f2f39f527e7e1febdd9bb15f6832be069ca7ca2e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 248409,
+      "sha256": "80eb09738ecfad1478acfb0d264beef416ee7876ec7619052e8354bb852cc3e1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9729423,
+      "sha256": "edb62d202e94036a6407b1189f715fea2565d216f11134fb38e746c1bdf1dcf9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T023643130193Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 135523,
+      "sha256": "0bcb585926a4a1468696d49c91f877a2f725cbe05ee86a510fee1a1c33615c09"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 69218,
+      "sha256": "b619befb52ee7c460740e55c4dfd02fca81b538315da76c55a5caa1a9dd24ae6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7264387,
+      "sha256": "b4e6ca500633503130b26d406682949d50c7225d6631bc0f169d327b895991d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 94548,
+      "sha256": "0ae582370ee9264fb4458ca6ef6673331ae58946e3a85ae53714145c9867e18f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 424832,
+      "sha256": "9e1fd772885eddd6525fe4d1f268143f11ce4184a2eb9a02178824604037dd8b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 262821,
+      "sha256": "723d22eafddbe04a3091c8488f996fe31f75e566c249225d5183014701706fe0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1326745,
+      "sha256": "d1148832932f9e72d69f4ae6a76ec9fe5c424d7c9ac8e1e6bfbd9721c9670314"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 334916,
+      "sha256": "324953a36d22d9f7aa519aff829a5064fa50239b62652acbc3114f6f04c377b6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 133488,
+      "sha256": "a32cc51466d7e903c1dc17c34b3d07c81613042b238fba2c541dde035799eec9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1041712,
+      "sha256": "b84178cdef66fc58bcff5ae08c18b5115089a5b683590453f2a62db9e30f76b4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 511560,
+      "sha256": "f1a9093c341a212a4da53fbf8c51c1c725ccbc7bb801b64f8aa2b0b36afb71b7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 42865,
+      "sha256": "cb737af8e86369c18ccba0f9564fe0de88e1c2b6acec508824311f5ce5c9216b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 122432,
+      "sha256": "8c06e1420d11fd67d1b7eef0d60a8967daebb98ba0662d3427020f033cabca8d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5485232,
+      "sha256": "a267c82c6ab3ff08d3491f89f23c1ff07469600a0a183ea46cf4054b1ec2956a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 39426,
+      "sha256": "659e7d671e15e8a41dc8ef74aed7d1bd0ce9849813a83afa44bcd24649c464ea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1335579,
+      "sha256": "cee86841a3985597a1a1507888efe3d9c07b53d61f809cd4c0699397c9bb1bce"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4617519,
+      "sha256": "a81bcb46d6d38ba801b2921b8b073c3de244192b8329b5a80f764199263b3388"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 38817136,
+      "sha256": "c4d25775f3ab31af16a809910b1b2ea9f8f20722cbf7db17a555365f9903225b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 118196,
+      "sha256": "3f689e429ad2f6b3a292f1608bdfb568af4f519821b63a6243363fd0db56e4ee"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 41404,
+      "sha256": "5c85e6cfca0ffc75f0c7e51821b9a14f953ff5dad5298dbfbca25c0d4ed80e0e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 46344,
+      "sha256": "a031457d0f499d25520151191d5f760114c5b44dfe56ec02b04ddc1ad2df43ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 69717258,
+      "sha256": "8f3f43af95436de8914611816ded7156da4791f007004360d2a2d20243a421ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 117722,
+      "sha256": "e8708663a1fe398ffe2c95b0cb759f68b355addc3a1b23f91ddb5e7807a066bc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 135955,
+      "sha256": "f5390d8507098765b01060f8b88fa107556cc6c04320358be911ae2676150bc2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 85046,
+      "sha256": "f29578f06840ef7149332ef418d92ecd97e76d847d617ab1e8a44d7353f091f7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1261999,
+      "sha256": "b0b19cf4676f71dfa818fd3f07b87155ac37e4b9660abdd63c38026691507ac3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 118047,
+      "sha256": "51e3a856c01ae3671baa9a16af32fc40ff49dd7620023469583beefe74e29d10"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7474647,
+      "sha256": "d6a0e9b3d91bf613b1bbe78204764301d408823ba0c8783ac677f60a4b11edeb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 94754,
+      "sha256": "44455c2ade34aaccbe8f696b42df3900b9ce31bfde80f0780e1bb9c07f72eef3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "686a938939f4d9f5f6ba0fc608ffd771eb9be01436f747531c33d69af48c1823"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/manifest.json",
+      "bytes": 87086,
+      "sha256": "cef58428e75f1ef3cbf01f2377ca9715eac8f5df9b14d111b3a452a16c71f713"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10201570,
+      "sha256": "185d5d509a1c1875c6fa709651c9955732f5e0b2fb939acc9546cd7c4e495868"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6171687,
+      "sha256": "07916db8be13e9672a53ca174eb27f710573585beefa52371a90cb98e706627f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 45288,
+      "sha256": "56108939bc0387a389229410b7bfc1c8dfd47ab197024c1cc113bb1d37d099e3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 877685,
+      "sha256": "48c2425b17e5a77d45b632449f8e1d5d63f0a2bdb78a2b43fd089cc45ffc0df7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2342599,
+      "sha256": "73dcf5f74584f381d121aeedf7dc1522354c059f1a0aec5806133c3595ad811f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 316759,
+      "sha256": "74ca610dd93112c4b937bfde041b578dcb9daa6468e55c824efe00802cad1f15"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1382226,
+      "sha256": "7e0594a772cb0d06ef32769a4278f8bc0a45d2a566ba4a4ca923a52b06f025cc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 543848,
+      "sha256": "0a484f12a9b4f624cb99616c1250a5dc708a1cb505c54dcbee2f900370b7430a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 43776,
+      "sha256": "e31418038b1d0eb71ac3661438bbe884c0611113ecc27332fec40a0d59bba340"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 256221,
+      "sha256": "709cc6a188f1111ea1613c9709529bcd1d14efb820fbf017f9a04784d3248b53"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9814205,
+      "sha256": "1858c7b6534c5f4a7ebc805c323dd4eacb369b01d0cab61934253d910ac93df2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T162921964880Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 148531,
+      "sha256": "0f6f84f792031f259ad8c394e3db7e26f5948818910b881017bfb328f4f15fbf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 64586,
+      "sha256": "03c0f1b7c7f70e59650f8c41e46947fd91f3ef18b2db3b0949cefd0a55f3a4f7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7222944,
+      "sha256": "a272917c69e4047078e3c58d99efd89d2bd8a4caaf2ef561b11569b4c369a3e1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 89915,
+      "sha256": "bf9637a926fdf2d2a6b553e5534e22fac6dcc09d04b55f9bd27e1872c38db524"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 420199,
+      "sha256": "df0ce69cea88751bb3ed2eb68a608480aab8cae6db68bf3bd0bccae8c288628e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 258167,
+      "sha256": "a70226cd476d28ab05f46444e384aa516f555e92bebfc2023f12c86e1315e2b1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1317226,
+      "sha256": "bb11583eed74b77532d7522e27aff0bf7cebc0d55cce2caf4ac9532d8285fed9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 330278,
+      "sha256": "3f3c6638c8fd358c4ef4452b03438b6c692a795a91d5ae524afd77755237ee80"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 128855,
+      "sha256": "979e3c80acfe77133369250adf071232214d6789177a95e88f2268deb84a3fb9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1032223,
+      "sha256": "04e2f332c3cc028910367eaa42553f2b66373c3efe5d4fa4138bee388ed48c81"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 506927,
+      "sha256": "f9eb48edddaa608fb5adb6b8142d14974ae66cda97bdba4b9ea1eba74f73202d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 38227,
+      "sha256": "ae5cc91f49a5d23aa287895ee6f0fe4cc4328bfcac731ef480c86a9dd093a7b1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 117779,
+      "sha256": "6bc39db29e41619be419181c9605ee42e0dc29bda38c6d20f2956f75f5055f6c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5453618,
+      "sha256": "fb572ff417dc386de0ca5cc116cf926314543f3cd4382d46d4d3867211bf84b2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 34878,
+      "sha256": "995242aed8c6a0f6f30fe5cebf51458cfe411dcea3e3489ac474b75228cbe1ad"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1326060,
+      "sha256": "d078f9b0e415d6c63d99dcdcbbf4960a4654984d740b5ff6578d8ecc8804838f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4605512,
+      "sha256": "7d5f1a68f6ce5c692bcc6f3538f9fc48cff0e9022922ddede69eee10a61cd1ea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16357019,
+      "sha256": "9c63b653cc7f78c49fc33f6eb9633700a8e01ddd2073da2f76a198217ecc9fb5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 113563,
+      "sha256": "13b4d5eb997d5293651e42bf0cb32a9c143c06ed87b5a7ccd796cad075f3ac27"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 36770,
+      "sha256": "24247c4140d72365f62645554264ee83a5017d2b871ed178084d2f424b60d9ba"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 41709,
+      "sha256": "58b58cdd5fe237cea0c95bd051dab1471d804e463db8d31b2afabfe277e0b86a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 19783218,
+      "sha256": "709959b99c4a0df311315792847ac14ad9d5ecabd30654fc9684dc626fe959f9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 113089,
+      "sha256": "bfd4d21284002a4176d4342e548bb1b0bc078605aa5f760634ed042a7bf352ae"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 131322,
+      "sha256": "4deb26a37382e81235bd053b95128a0a92d4839a8ef1985d057fce12b5c96aa7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 80413,
+      "sha256": "ec7bf3f437efaa02eaf141f8f08e88b22e24404380e488589d24596df6bda4db"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1252510,
+      "sha256": "6dce60058ba569cbf7ef5926393be6dde06c45573af0e424b7425917cd0ba5a5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 113414,
+      "sha256": "4d5782db365f24f37ab829f56b444b369295ded8fbb7cef1842b272daa365ff7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7443006,
+      "sha256": "af8aa3953a695b4e1b8c963ff9656eb061861339ebf11752a9eab259e63f3d97"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 90121,
+      "sha256": "cfc37a75db0d5153769d9a3523183e678c245d442f1940d84e7a5ccde4d07454"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "9ba2ed8a37e14b747300acd65126548eb19002d30a708645824ada5be743866f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/manifest.json",
+      "bytes": 78511,
+      "sha256": "deae40eb8afdde5ab65cfa4af54d023789da9d523beaf9c6243dc9c38aa97a2e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10123287,
+      "sha256": "4872ad96eab2fa75be99cf3ad1b693f148e7818a9095c42850e629e5f6ff3baf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6157222,
+      "sha256": "c966c16c7a13d9674768098b3e95e24cda8b5a76de4c24d7a7b4e5a2f5abb103"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 40728,
+      "sha256": "ce5ac1a1f9ae96dfa2e6fd5bfa3e739b56b73a56724570fdddc93f4f4399ad47"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 873052,
+      "sha256": "f2e47b16341ee8f07257227a5a027f37afdac7c18d8631b45b3750eec04c0c28"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/pri_2010_integration_validation.json",
+      "bytes": 813,
+      "sha256": "fb463124f69dfc46109e96d3b742742885c9ede73675c95b26218e23931cd0fb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2335508,
+      "sha256": "1ac44335472504493a9edb4500c8d35b60f06a768ed5d6ed530221b797e7c56e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 312107,
+      "sha256": "f935ca48bc7287b3b6578d3c2337bfc761e4058fcef387d44179e265086179a0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1371548,
+      "sha256": "0896e707f5f26bfeffbca25809f9d38e6cec2580ab8e0b8a360f2674c2a49ad1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 536074,
+      "sha256": "0a4c0c15a639c3b68d2ed4b74c8db1ea1c9e61c728ceca136fca30e93be9a297"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 39231,
+      "sha256": "6dae10152f0ad12c0be9d7bb1def0f0eefe49b320396eb9075a60737ff48a8c5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 251588,
+      "sha256": "c066cd118a220a02da5cb0b23582efac2ea0bbba4e8b27a4b830ba6dbde04090"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9772732,
+      "sha256": "6c4200710548c8580ace35ea447de423c00f5e4c8c7648b7d1e6887c9c285013"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T091548753862Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 143898,
+      "sha256": "141be5543f7ec4bb50849a88730ef2aa5ff15d43066f2cded17c90a5f237a559"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 66100,
+      "sha256": "bebc09a8d67d0b65bac686db0f580aceb27dadadf33590d19b62f1f4d088bf1d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7236589,
+      "sha256": "d8b12dbda8e2fe3ecb1fd091ae4c3aa5bc5d92e41e75c8f077c1cd3d118e5ebd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 91430,
+      "sha256": "629f66bf7a7b25e26980964380b9c173a5a51661baff92ef2962f316775d9c3e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/export_reconciliation_validation_approved.json",
+      "bytes": 31065,
+      "sha256": "6011b405b1b52d76a92c8f5e075981a98ab73549cc324bbe67c9d5055062a5f8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 421714,
+      "sha256": "1c0b8dd58962170c4b6b9b89022ca0b779902487f02355340f163fcbb595c51d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 259690,
+      "sha256": "73b6a7657a87dd7128f714bf6106577435259b3802e59171fe7133abb0b6c4da"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1320351,
+      "sha256": "4429597c1e928b85b6a5688d080614b8bb0329fe773a7cae1e7c9c5e50d6d8ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 331797,
+      "sha256": "179d8b98d20f13febe94e45adc85942b317a21e2365ef24a62183b929b237200"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 130370,
+      "sha256": "c638c3f58bc8288e141aaaf5c9221764667f5c741ef05b90027206e99896dc78"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1035338,
+      "sha256": "792691eb98603972a027d02c60011289ac451a845e2b7c584ae59ea7edb33840"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 508442,
+      "sha256": "fbaedaeea6b92375c9aef2a74da0a51b4af0034647a1c0ea677ad33e1de77ba2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 39744,
+      "sha256": "365124106cc84e335a89123d44f0e065fc06e246d6f88aaf98a423084d162d6e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 119304,
+      "sha256": "6f6071f9b03963c571e83adb8356a9a3da1c1749b479f5e2cd2cdc5d186e5286"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5464023,
+      "sha256": "3462d37cad3890b3de0ce6690014c0dd823bdec03396c6961e0a2ecf39fe2b80"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 36363,
+      "sha256": "baebbc39df6f1eedfe37f97e690be483ad361b0d3058d3b79bcf4b7d390c4ebf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1329185,
+      "sha256": "fed4380f8418a5dd93d64a846787aee7f06e2a2e4fcd7c79a13fb1f116e33ddd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4609457,
+      "sha256": "f544be6d22fe781a24c2ac8541b380ff8b21d3f03166c25eb3604407c329d04d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16368254,
+      "sha256": "65947cac0eab5f481f7414a723c1187679a1195c1f33c481c531a6ecf0eeed29"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 115078,
+      "sha256": "aaad2fe7e0f88bbc64fb62dfa873c14357258401ef89e11c9b1e13bb374ee183"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 38286,
+      "sha256": "51edc09340c785491b82e1eeac3018e73472b3e33031b52dc7e868cc2378c947"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 43226,
+      "sha256": "fd832e16c8ab62db7c39f7b4dc6e3357a970736b926239f8a632986c74d82a49"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 57490759,
+      "sha256": "107c3261dab6100740b0fd73b0bbf2f3d787ca0b9dbe540ce2282b31e517cdb8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 114604,
+      "sha256": "70a73dcba07422ce68d5f6a01753494b8e466670c8a873c386ee611fa1503bf6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 132837,
+      "sha256": "bf6481f7a6e2cc9cb571209db7ce1d1f3a7c1b75cb50b8a5636fc50037ae26d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 81928,
+      "sha256": "e45626c0a8d670e7c2412806e42e1811577c64bbd55c1a112f1bf4adf1a31224"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1255625,
+      "sha256": "b44fe04f54731719b53ecfca5cabf9626112a0d1f46ba3da402930edf9d6e7c9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 114929,
+      "sha256": "d950e9e537dfa7a35f91dde0c2a37c7224c22a46f4e710b7209b4db47af7130d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7453421,
+      "sha256": "bca5d2d0f6cf8bb0f11e45f0016a061459ac645e7488531f8bad8f443897adb0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 91636,
+      "sha256": "9334eeebc2a1b0b9c906f8b5228a0f058f298cf5e42506cd24704ee226ce39f5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "e3c21a7a89ef82d4116c8abeaa85a132feddfdd2f117ad443ba5f81232a3228c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/manifest.json",
+      "bytes": 79687,
+      "sha256": "f0bebedf27fb64a6cee73df2a103a2d5c88234e2efa4352b97afc17e76ab26fe"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10149072,
+      "sha256": "c5f15def4866e86710aa7f99f3f9835003cc7e5ef3e850925d579de5aeb36785"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6161977,
+      "sha256": "18fbb9cc68338acc6ad04fee96afe1b03eb646e7c2a7e8d8aa70d29eb161a3f6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 42216,
+      "sha256": "e301c5b85e354df466af69f2e9586ca92160a4b8a8a42a8b382969bede1d5ef5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 874567,
+      "sha256": "abab10991e2bb0b115ffe5b265dd511107b56b5bc22d047dc84f3edcc647d17d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2337833,
+      "sha256": "3fe679d354fb57f0deecb27b32e793296fd8af5b388c62b52869559009b1608b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 313625,
+      "sha256": "2c34dc79706a75228acdd0f7aee5ffbb4cb184c53e09b59a3de7a8956b43417a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1379109,
+      "sha256": "63693181b147dd877300977b0a053e76b63930b35d01e61d7828e70b68cd17ba"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 540731,
+      "sha256": "85d742c312e8eac5a17339ccf3a7aee9e0f7db9a91cfc0cb94a48aa098024b42"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 40717,
+      "sha256": "cda4ffaf0e9b8ab6cb3a9b6ade94fe05437f1a24c001468a8a0627b7eb9afd5e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 253103,
+      "sha256": "4d7350ba6874b60118e477964d03eb383c67e4b5a981e71733a99ed0cc4f766d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9786387,
+      "sha256": "f4b3a5b2abde6414400e495cc336d82e7cb8b3a294495a087b5b7e766a16ab5e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T232954614037Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 145413,
+      "sha256": "a73ddb6be930e7ea0dec869f7d72ee593fd0bfe8f554f6c42cbd86cc29462e53"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 73054,
+      "sha256": "e4d91a43a1f35877b9a06320e7bf14c25e524df9a030b9e21ef7f867331575ea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 8641602,
+      "sha256": "43e48406731d5fa450a46a16d5fd6cf3329203b4dc987330c9b97919d3146540"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 98383,
+      "sha256": "c20faf6447662d12b2f5dd8b5b6ae2bc2a0dda856dbaccb4891b71b1c1f441aa"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 428986,
+      "sha256": "415c3b87cf5527bc99a7ef0c9a4b425f5e6283853dc1da24203f38b13f2a215a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 266657,
+      "sha256": "88af95106e005dfd95d1fc33db621ccef2aeea084b3a5ec7d2aef908c78c46d9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1334848,
+      "sha256": "26cf4951a11091cd966dfebef0fd1e0e9b7d597df6977c594e9bfeae43f78a1c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 338751,
+      "sha256": "95a3338e7b6c6fd08ff609227538eafcad984e9a4e66d98ab509d27eb0066076"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 137323,
+      "sha256": "4de8987abdc3b43c29a387452aa4221f7813470c3c40d2a1af5ff8f65f55349b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1049787,
+      "sha256": "76a09ec67c897c2896cb14f94149036b34b8c9c4c96260954e570308c150da1c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 515395,
+      "sha256": "ed190ab6024ac15cd0554e6fec2118c9b93878293fb5d184403f5b54c7d1beb5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 46700,
+      "sha256": "8ea4d5fd7771893400787b2688316d7b97196b272452520260a38df8885ce6ce"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 154696,
+      "sha256": "94f3f5c43a19ebbcdd62d73b3c51799b1d7729c3a43390619342b85f096cf7c9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5512657,
+      "sha256": "f29ddede9d7c772207d790c62c7cb159a4f81c74d897218781d9f04e0e9c110c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 43180,
+      "sha256": "06b50ffdbb5a94f2fc5739e6a1eccd8134e50f3be291c0e2a59f354ffbbfd399"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1343682,
+      "sha256": "38272edacb790d77ec25bc7021cff227916cd9f7c330506bf9ed6495d0909953"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4627798,
+      "sha256": "7f611e7dd5572daae5f9c3419f73af975e3dac800899faf973399077ff12597c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 38874670,
+      "sha256": "5a3a4788a6fd156e990f515d9a5c06ae8edd170d37c1b37f59304208e0a1b898"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 122031,
+      "sha256": "218e47d14352d2cc1952e424333a241370f2a6f2e5a48bb57d53d524180b78a9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 45239,
+      "sha256": "1d2d8abe6930c9b2e88b622ed3cea143c8265d3407efd730394b6f88df808fd4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 50454,
+      "sha256": "a8d4c0426b5711be750b6f223b7dab1713010172250e09a0d98fb91872afb995"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 70038941,
+      "sha256": "249080e90030c74d15e4083baa77445d6dfa44a9f3adc54ac71c86bab95b2764"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 121557,
+      "sha256": "bf5ac894d929730b5fccad746434620695f26d5955877cba3ce222672b7a16c3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 140059,
+      "sha256": "33abecdd286286f685e6c04e62fdf9828e5fac359608f79ca14f2cf6af438eb8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 88881,
+      "sha256": "b301e7b885122509758ee56972cd01a2aa646dcafea838516dc80c75c8908cac"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1270074,
+      "sha256": "fbca5e1b08048137e1d81bb7f06b039e80e13415abdead6f53a7a83a6d1aaaea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 121882,
+      "sha256": "a6b43753e04722580d989abca89abaa4bff4312446a9b8f06d856fd2b91bb71f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7505469,
+      "sha256": "eb186e8dc6be9a4e5683a54e27459799b4e6ca3469a602dac95ca505797117ad"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 98590,
+      "sha256": "330bbbb84ff1896074e632b8128499e217fb87af9385a2f9256542a5252142f7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "5fcce59ab1af2e26a992e071b1c87c46502b3d4f15a39e177026c1eb218dcfdb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/manifest.json",
+      "bytes": 106883,
+      "sha256": "90209f10e39c855ca2eb1817716e3ccd54c1fd3edf3e695fd437b22236973ca8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10269761,
+      "sha256": "ebb2358c331f1f520b3e79eb9af3b67f7bb2729d2c060b5f7cd92ef9642801eb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6184114,
+      "sha256": "520abdc58b877fb5bb5825df6887e5aa9b852c888165edfaf81d88b4b6cf6eb0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 49065,
+      "sha256": "b412f655bcde5f11dd004a955485f0e30ff919fb8ec191eeb266c22daac41b44"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 881520,
+      "sha256": "1075d422a5dd86ee1577cebbbfe9fef82ef0433ee7adc71f4cd0d7a4ed674534"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2348582,
+      "sha256": "4d6b6b1bf1e1a6e4f57e53bcd368b522aa5773a505197118bb287ae33be9ef69"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 353358,
+      "sha256": "3e5a50baf0262d35df3e0431b0ee2627c46691fbbd65e57a6fd0d3e6af845892"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1386061,
+      "sha256": "51b238f61c802ee034ee8cd6ae147791d98bd1d24638894bb81aa38b19dc8963"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 547683,
+      "sha256": "353a371478ce7609537f04938990dd83054b6e552b19b491cbac9a3d2c977e0f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 47531,
+      "sha256": "2aaad0952e1041a26dbfb037a81b4918d27e631580cca0ce11962b9df0a78407"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 260056,
+      "sha256": "70b5a4b14484deb888594708c2360abbedfd344f8e0f30f726f380bf5feb2463"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9854731,
+      "sha256": "de0f9c50a3438bf2c73a2a85738de185a83319d2a1b6988e77988faebdc675bd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T035507402369Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 152385,
+      "sha256": "b6ec9131d0b3ba6f92e6d06bbdfe77deccf5562f6d1fcd2254c38fb9437f7cdc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 69218,
+      "sha256": "b619befb52ee7c460740e55c4dfd02fca81b538315da76c55a5caa1a9dd24ae6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7264387,
+      "sha256": "b4e6ca500633503130b26d406682949d50c7225d6631bc0f169d327b895991d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 94548,
+      "sha256": "0ae582370ee9264fb4458ca6ef6673331ae58946e3a85ae53714145c9867e18f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 424832,
+      "sha256": "9e1fd772885eddd6525fe4d1f268143f11ce4184a2eb9a02178824604037dd8b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 262821,
+      "sha256": "723d22eafddbe04a3091c8488f996fe31f75e566c249225d5183014701706fe0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1326745,
+      "sha256": "d1148832932f9e72d69f4ae6a76ec9fe5c424d7c9ac8e1e6bfbd9721c9670314"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 334916,
+      "sha256": "324953a36d22d9f7aa519aff829a5064fa50239b62652acbc3114f6f04c377b6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 133488,
+      "sha256": "a32cc51466d7e903c1dc17c34b3d07c81613042b238fba2c541dde035799eec9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1041712,
+      "sha256": "b84178cdef66fc58bcff5ae08c18b5115089a5b683590453f2a62db9e30f76b4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 511560,
+      "sha256": "f1a9093c341a212a4da53fbf8c51c1c725ccbc7bb801b64f8aa2b0b36afb71b7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 42865,
+      "sha256": "cb737af8e86369c18ccba0f9564fe0de88e1c2b6acec508824311f5ce5c9216b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 122432,
+      "sha256": "8c06e1420d11fd67d1b7eef0d60a8967daebb98ba0662d3427020f033cabca8d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5485232,
+      "sha256": "a267c82c6ab3ff08d3491f89f23c1ff07469600a0a183ea46cf4054b1ec2956a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 39426,
+      "sha256": "659e7d671e15e8a41dc8ef74aed7d1bd0ce9849813a83afa44bcd24649c464ea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1335579,
+      "sha256": "cee86841a3985597a1a1507888efe3d9c07b53d61f809cd4c0699397c9bb1bce"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4617519,
+      "sha256": "a81bcb46d6d38ba801b2921b8b073c3de244192b8329b5a80f764199263b3388"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 38806013,
+      "sha256": "12ef774b5ae9736f510a6d47dcb3c814d35048d3cc3d396e652d867d6a1dcf7a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 118196,
+      "sha256": "3f689e429ad2f6b3a292f1608bdfb568af4f519821b63a6243363fd0db56e4ee"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 41404,
+      "sha256": "5c85e6cfca0ffc75f0c7e51821b9a14f953ff5dad5298dbfbca25c0d4ed80e0e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 46344,
+      "sha256": "a031457d0f499d25520151191d5f760114c5b44dfe56ec02b04ddc1ad2df43ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 69717258,
+      "sha256": "8f3f43af95436de8914611816ded7156da4791f007004360d2a2d20243a421ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 117722,
+      "sha256": "e8708663a1fe398ffe2c95b0cb759f68b355addc3a1b23f91ddb5e7807a066bc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 135955,
+      "sha256": "f5390d8507098765b01060f8b88fa107556cc6c04320358be911ae2676150bc2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 85046,
+      "sha256": "f29578f06840ef7149332ef418d92ecd97e76d847d617ab1e8a44d7353f091f7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1261999,
+      "sha256": "b0b19cf4676f71dfa818fd3f07b87155ac37e4b9660abdd63c38026691507ac3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 118047,
+      "sha256": "51e3a856c01ae3671baa9a16af32fc40ff49dd7620023469583beefe74e29d10"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7474647,
+      "sha256": "d6a0e9b3d91bf613b1bbe78204764301d408823ba0c8783ac677f60a4b11edeb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 94754,
+      "sha256": "44455c2ade34aaccbe8f696b42df3900b9ce31bfde80f0780e1bb9c07f72eef3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "d8c2f3a255f0f7d02203b4486e9208e876dfe889b524aeb6245ad04e6988f29b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/manifest.json",
+      "bytes": 86571,
+      "sha256": "db079d1e09625cee764cdc8a8b45df605f8ac472aba0100d1ee13e81d9849bbb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10201570,
+      "sha256": "185d5d509a1c1875c6fa709651c9955732f5e0b2fb939acc9546cd7c4e495868"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6171687,
+      "sha256": "07916db8be13e9672a53ca174eb27f710573585beefa52371a90cb98e706627f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 45288,
+      "sha256": "56108939bc0387a389229410b7bfc1c8dfd47ab197024c1cc113bb1d37d099e3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 877685,
+      "sha256": "48c2425b17e5a77d45b632449f8e1d5d63f0a2bdb78a2b43fd089cc45ffc0df7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2342599,
+      "sha256": "73dcf5f74584f381d121aeedf7dc1522354c059f1a0aec5806133c3595ad811f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 316759,
+      "sha256": "74ca610dd93112c4b937bfde041b578dcb9daa6468e55c824efe00802cad1f15"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1382226,
+      "sha256": "7e0594a772cb0d06ef32769a4278f8bc0a45d2a566ba4a4ca923a52b06f025cc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 543848,
+      "sha256": "0a484f12a9b4f624cb99616c1250a5dc708a1cb505c54dcbee2f900370b7430a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 43776,
+      "sha256": "e31418038b1d0eb71ac3661438bbe884c0611113ecc27332fec40a0d59bba340"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 256221,
+      "sha256": "709cc6a188f1111ea1613c9709529bcd1d14efb820fbf017f9a04784d3248b53"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9814205,
+      "sha256": "1858c7b6534c5f4a7ebc805c323dd4eacb369b01d0cab61934253d910ac93df2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260913T122203558482Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 148531,
+      "sha256": "0f6f84f792031f259ad8c394e3db7e26f5948818910b881017bfb328f4f15fbf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 73054,
+      "sha256": "e4d91a43a1f35877b9a06320e7bf14c25e524df9a030b9e21ef7f867331575ea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 8641602,
+      "sha256": "43e48406731d5fa450a46a16d5fd6cf3329203b4dc987330c9b97919d3146540"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 98383,
+      "sha256": "c20faf6447662d12b2f5dd8b5b6ae2bc2a0dda856dbaccb4891b71b1c1f441aa"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 428986,
+      "sha256": "415c3b87cf5527bc99a7ef0c9a4b425f5e6283853dc1da24203f38b13f2a215a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 266657,
+      "sha256": "88af95106e005dfd95d1fc33db621ccef2aeea084b3a5ec7d2aef908c78c46d9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1334848,
+      "sha256": "26cf4951a11091cd966dfebef0fd1e0e9b7d597df6977c594e9bfeae43f78a1c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 338751,
+      "sha256": "95a3338e7b6c6fd08ff609227538eafcad984e9a4e66d98ab509d27eb0066076"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 137323,
+      "sha256": "4de8987abdc3b43c29a387452aa4221f7813470c3c40d2a1af5ff8f65f55349b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1049787,
+      "sha256": "76a09ec67c897c2896cb14f94149036b34b8c9c4c96260954e570308c150da1c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 515395,
+      "sha256": "ed190ab6024ac15cd0554e6fec2118c9b93878293fb5d184403f5b54c7d1beb5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 46700,
+      "sha256": "8ea4d5fd7771893400787b2688316d7b97196b272452520260a38df8885ce6ce"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 154629,
+      "sha256": "57315f895e4931475d5e171ef86aed5f583686cd8a1b72984598bcbaaa860537"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5512657,
+      "sha256": "f29ddede9d7c772207d790c62c7cb159a4f81c74d897218781d9f04e0e9c110c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 43180,
+      "sha256": "06b50ffdbb5a94f2fc5739e6a1eccd8134e50f3be291c0e2a59f354ffbbfd399"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1343682,
+      "sha256": "38272edacb790d77ec25bc7021cff227916cd9f7c330506bf9ed6495d0909953"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4627798,
+      "sha256": "7f611e7dd5572daae5f9c3419f73af975e3dac800899faf973399077ff12597c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 38874670,
+      "sha256": "5a3a4788a6fd156e990f515d9a5c06ae8edd170d37c1b37f59304208e0a1b898"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 122031,
+      "sha256": "218e47d14352d2cc1952e424333a241370f2a6f2e5a48bb57d53d524180b78a9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 45239,
+      "sha256": "1d2d8abe6930c9b2e88b622ed3cea143c8265d3407efd730394b6f88df808fd4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 50454,
+      "sha256": "a8d4c0426b5711be750b6f223b7dab1713010172250e09a0d98fb91872afb995"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 70038941,
+      "sha256": "249080e90030c74d15e4083baa77445d6dfa44a9f3adc54ac71c86bab95b2764"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 121557,
+      "sha256": "bf5ac894d929730b5fccad746434620695f26d5955877cba3ce222672b7a16c3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 140059,
+      "sha256": "33abecdd286286f685e6c04e62fdf9828e5fac359608f79ca14f2cf6af438eb8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 88881,
+      "sha256": "b301e7b885122509758ee56972cd01a2aa646dcafea838516dc80c75c8908cac"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1270074,
+      "sha256": "fbca5e1b08048137e1d81bb7f06b039e80e13415abdead6f53a7a83a6d1aaaea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 121882,
+      "sha256": "a6b43753e04722580d989abca89abaa4bff4312446a9b8f06d856fd2b91bb71f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7505469,
+      "sha256": "eb186e8dc6be9a4e5683a54e27459799b4e6ca3469a602dac95ca505797117ad"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 98590,
+      "sha256": "330bbbb84ff1896074e632b8128499e217fb87af9385a2f9256542a5252142f7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "24a4508573cebc2f7331fd05172c29419d0455601c01ae1c51cc469be1a816a8"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/manifest.json",
+      "bytes": 106838,
+      "sha256": "0c1cc1d64e2e1fcf387297898ded982bd8623c82877328571f4919886f1614f6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10269761,
+      "sha256": "ebb2358c331f1f520b3e79eb9af3b67f7bb2729d2c060b5f7cd92ef9642801eb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6184114,
+      "sha256": "520abdc58b877fb5bb5825df6887e5aa9b852c888165edfaf81d88b4b6cf6eb0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 49065,
+      "sha256": "b412f655bcde5f11dd004a955485f0e30ff919fb8ec191eeb266c22daac41b44"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 881520,
+      "sha256": "1075d422a5dd86ee1577cebbbfe9fef82ef0433ee7adc71f4cd0d7a4ed674534"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2348582,
+      "sha256": "4d6b6b1bf1e1a6e4f57e53bcd368b522aa5773a505197118bb287ae33be9ef69"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 353358,
+      "sha256": "3e5a50baf0262d35df3e0431b0ee2627c46691fbbd65e57a6fd0d3e6af845892"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1386061,
+      "sha256": "51b238f61c802ee034ee8cd6ae147791d98bd1d24638894bb81aa38b19dc8963"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 547683,
+      "sha256": "353a371478ce7609537f04938990dd83054b6e552b19b491cbac9a3d2c977e0f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 47531,
+      "sha256": "2aaad0952e1041a26dbfb037a81b4918d27e631580cca0ce11962b9df0a78407"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 260056,
+      "sha256": "70b5a4b14484deb888594708c2360abbedfd344f8e0f30f726f380bf5feb2463"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9854731,
+      "sha256": "de0f9c50a3438bf2c73a2a85738de185a83319d2a1b6988e77988faebdc675bd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260914T034753151054Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 152385,
+      "sha256": "b6ec9131d0b3ba6f92e6d06bbdfe77deccf5562f6d1fcd2254c38fb9437f7cdc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7087256,
+      "sha256": "f8c6d716ce9885b5e3f9a875b0ea04e4f337efc4638bf146e6c091b7b1d22798"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 78714,
+      "sha256": "ec2c3b69b44a566f8dd0d9d23f32f83412dcf97702d20f7221ccf45a0b7cac76"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 409813,
+      "sha256": "a2a39efd8ceb36cc69d267bc4113a89fd9970ad2fb15a7d2680aa83911d812b4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 245333,
+      "sha256": "87aa5f29f4ad77a89a9a56543e7f6c937c7ca22a364c2a95cf869668094ac340"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1276312,
+      "sha256": "50a92436e1b93cab9cb69fad4502aea47c86c21fd21633876a4dc9ef46e606a2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 316472,
+      "sha256": "84ee7be9262701f3a0537cb626e18cc532d8d4eee948c2b5b938b4ee67ba5e40"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 113884,
+      "sha256": "02d5f18866ae2fe3316629e202b43cc37be8113b6cce4bf4a2acd1fcfd3a6b76"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 979347,
+      "sha256": "68a66e127bfbef20484f0d9727069b576d2504a25692b2622155c6e0793d0e39"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 497835,
+      "sha256": "bd7bbbcedebc118752a77ff93e5206cf44fbd1cb901084ec28034c0f298c6424"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 31353,
+      "sha256": "0dc54e3f7333bda24010660441674d0b612998e86c249b5f822fe1bd93b9a2c7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 104610,
+      "sha256": "e717d43e87858f8e52ba6e8a67e8fa99ef9a005d96a4ce64a5a0c8528d23f395"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5336461,
+      "sha256": "925fb3599d23b4a4cf9410394782648fce71638b791f69f60bc2bacbb863f22f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 27171,
+      "sha256": "e329cdb2f50d43c95865fb1fed194cd6e8e91fca7b5170841c7d6dc694d2c86a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1283843,
+      "sha256": "173e0529395ab7d4ce37ef0dd602e713a0a852b5f15f754d68dbcdca5a7c2391"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4584183,
+      "sha256": "4e2a93b298401d42dac3ed7c4f68a651d415911188499596d113517d207c7b3b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 106716,
+      "sha256": "e52ee62caf0b44ea83e07b30ed8b1f566377a063504fca2b51c36e090db73821"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 29959,
+      "sha256": "c6c8029d7b0360e79acddaa8b10d697ac150ab86d11a6c1420f5a89d2050b0cf"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 35007,
+      "sha256": "01d60dff18b69785cbfd37dc5a39bd18236d4a72ff4635808853e41a2eb10d10"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 4883552,
+      "sha256": "c083780cf8b0583acd3b232cdd58e9e093a52c0f91e4f0ea0047757ed34e50bd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 106242,
+      "sha256": "8f903d7dc4377de583f9af41f532adbe4e76d0b6417b733ae4075163e9987899"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 124491,
+      "sha256": "3fdb0dcfd1caffd33ebff04b8622c73aea8fb675de1d7640562a555fa5f1cbcd"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 65875,
+      "sha256": "ed733f04c3785c3de52d1bff3a4021814c43a5c58faa4259819c7e165d219ab0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1174149,
+      "sha256": "3bde6e8e0a9dcd154d6112dcdafabc7a9c59f46c67e1bd871e3ed4861f1fc909"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 106567,
+      "sha256": "1a7ac53b098119e8ab98ec28c5c313900e53de08dcafc43593ff186478b56420"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7383515,
+      "sha256": "61fcbbe8c5933a4e8001263b15a706e682aac749d5bb18f721f1b0ba221cf5d1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 83231,
+      "sha256": "97db2f623f4255275d13f999a552699e60fd6912cfa3312f55cc4f10c5bed0ec"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/CHECKSUMS.sha256",
+      "bytes": 4165,
+      "sha256": "8971361c2b5bcf77bf2f7a7ac9e215cb8211dfa2a3b158e80b11ca86bdb7c741"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/manifest.json",
+      "bytes": 60279,
+      "sha256": "829a55d4bba1f5b3d5a82b2af7d8ab64fc7c0cd89893dd54e1c18888c29f6ca1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 9989631,
+      "sha256": "0f52da7343a92c8429941b48390039711cc0872ac593ad8eb22c1d1458566508"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6132144,
+      "sha256": "6ac101e9288fcda9b427810053cf3af05317dac648d5e1aa2d0877f1abcde377"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 863774,
+      "sha256": "2bed805718a27c5c5f6b010f66a63b7abbcfeec8b48e5ee9bba64b667ac2bda2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2324609,
+      "sha256": "361b0502268ab8bc8136637dece11f5531b56f7f6b40201bbedf365ba5521450"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 299218,
+      "sha256": "d6e97ea2e551d4c0501d13a2e840888cd4bf19047e5d188920409280fc6d6c6f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 31053,
+      "sha256": "0ad36615463ad49c66e0a14fdadb3dde6e2ef1cc87fc71952c7dc6c0705d63c6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 244735,
+      "sha256": "b4147903ede76a1c0013a5b5e8a604a6d9bffd6ef41dc6b040b10669f40835af"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9694794,
+      "sha256": "4c1fc784ddc59018235276c0cbd271a06897c76a78058ef939e2a1abb7e7669f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T012330981566Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 131849,
+      "sha256": "a008e5285572f9f1011dade9ede1eb88fe8a44ce34dfdeb764a5eca8a6af82f6"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_head_reported_official.parquet",
+      "bytes": 66100,
+      "sha256": "b92894114a9fd35aca0bf2c530b32eff24a35440e64c761e8885afae1195b6cc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7236589,
+      "sha256": "ae48dda3b7c3797340c483c123be4f08d6c1b09cdcae04f4c88dc3ce0deb392f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 91430,
+      "sha256": "3e52fa710d7153eccbc07d7b7f203a411e38f0892aa1bff6ae4fd804831f486c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 421714,
+      "sha256": "b20f6c06f960d32404398bcc01bbb448f8ac0653a38fd226fb0c87f6842f266d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 259690,
+      "sha256": "7baa3267eea4332c765531486d0c7685a666855670fcf6efa568ba6d9c5561fa"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1320351,
+      "sha256": "ad826aca714abd81c92b77194a8ec7970143d39110b4ed2fa5918d5864179916"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 331797,
+      "sha256": "44fb5deea03b03d3d421f8efce7c8456af7881b03fdd09896b296bea1ee4e3c0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 130370,
+      "sha256": "58279e576f234ec9e270b45b8611ddbdb63a1c14ce4b138458bcf0ee748d0b0a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1035338,
+      "sha256": "22d8a72b417c7f35264733fced44b5895870b5c553082d65229b79a94f6de0f5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 508442,
+      "sha256": "a2b37bf52af51677a501316e74df24a6a759ea5886447e00bafe58fe52ad038c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 39744,
+      "sha256": "6bbaf9ea343f826c7131c6b0dce5d99b8a0e782898ebe11b11a120152525927d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 119304,
+      "sha256": "e199ca515734bebcffa4b9992f2218f41f4aa79773a08e45c3d7be545f999096"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5464023,
+      "sha256": "027a1a0d0deef79040311c49823222193d2b91ce220dd6421bfd80a0f80a3c4a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 36363,
+      "sha256": "efae6e13864556dd064724fb1d6cc8d7d1ff4309d2d0a7d1233028146436b80e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1329185,
+      "sha256": "d0dbf4e29ca17f26a456810504d2d0833d78eb9b4ab2a86bc7e11b11e23642f1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4609457,
+      "sha256": "6a5527bc47fd54a57f9899d28398413bb356d0ece0f637037f18f44b931a0b78"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16368254,
+      "sha256": "6ef92c3150fbaf11ea245e1b03a233d38ee2695462429df48da451368accb76a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 115078,
+      "sha256": "2d1f6ef9a701f54472740fe048b418ff7f7c6d05e2f2a281e647ca43d661d3a3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 38286,
+      "sha256": "155f72d39ac571a7251f3d1a0f27b605ad739571c8a0cbc3a3702ec351e9e228"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 43226,
+      "sha256": "d8fd143ef17616b4076698c07a93388bfa4c8fb6d219481b4eebf4bc0ffc9932"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 30254231,
+      "sha256": "8e64e22976e0d2130d6321e8116770715858940e9041339d28f4c6ab546a26d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 114604,
+      "sha256": "8b33d5ea5b695936641123ed2d1f5425f45a7903be1300fc9da686eb4437ea4b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 132837,
+      "sha256": "5dd0c759cbc31c426e54715a4b5078fe621b22f3a960c0647659455454eb4245"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 81928,
+      "sha256": "0ab0edc3ae1a2712d60ad8ebbb29b43bc73663cadb3f65c13712581427792c59"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1255625,
+      "sha256": "d0c5790eedc403ba9dcafea15eed16041f7d56f2013f4d9524c09a414f88744c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 114929,
+      "sha256": "d9d0a088d063708233fc607e3dfde309efdad012d1ba158216bc46223b078539"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7453421,
+      "sha256": "1f690a1caea60f50d9db6b73dd1ac509aa7128642c08a9d96a9e99ff2e707529"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 91636,
+      "sha256": "7b038c72d73d5e4247caef6ba9d4b9115b77c9cf14a7652262438fc1d11f174f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/CHECKSUMS.sha256",
+      "bytes": 4755,
+      "sha256": "e89b395bac0068d5c5e07de3bb0e0ed0d9c11cb42ed31e0681f79c41b4ddd44b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/manifest.json",
+      "bytes": 79479,
+      "sha256": "deb7fc01aebcb1c57ceb8819714c700b3d89bda5e97cf8086a5b5bc4714ea24d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10149072,
+      "sha256": "c0ee2e223d06ea0ceed27bd92a21ee9b7db0150b1d6d74631250200693af6026"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6161977,
+      "sha256": "7807f8634abc3095b89d16800669077ee86d6c52075e57971c5b779ff9fae5f7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 42216,
+      "sha256": "c86a15388e3aee16002866fe0a327368090fed3971abf347b03883a4bbc74177"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 874567,
+      "sha256": "500e0e4911f805d984f92c9206543ae2ffe5cfbde05d1897f5de12c6356fb563"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2337833,
+      "sha256": "d33bef3cdc192e2969b9ab7314f8c527469729e877b23c5759a8cd2af811fc8e"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 313625,
+      "sha256": "a2f2e3274cb9f3539eac3139b1780cd06720df14bdb732337ebdaf8cc869e4a5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_member_reported_official.parquet",
+      "bytes": 1379109,
+      "sha256": "9e09e18d319e865d7e11f7891b299dd1c71fd8e466db51c42c9ed6313dc4ae6c"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_head_reported_official.parquet",
+      "bytes": 540731,
+      "sha256": "baae158d8c1a0df8057ea004e63871ffce6212b3877e598e5bba0b394a30f073"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 40717,
+      "sha256": "116cf81ae8c34115d66e781e3d6c9aef809a3786a37f26b3439b8c4ac9663816"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 253103,
+      "sha256": "2d8a57ed581fb29614a41d2941bf6682f79403e594b05e65dc04d9f4dc3e3b7a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9786387,
+      "sha256": "3083d738c186b3602b8245f6a9a09e8c162310033288d4df68a35b4b4ec619f5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T095455879601Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 145413,
+      "sha256": "939c55ae44faacd872bd14d35821fed209bd69b157b6f7e6aae1668a3f666b8d"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_member_seat_reservation.parquet",
+      "bytes": 7220329,
+      "sha256": "9a3f15f0499a147b6de1a3cacd7058ada189f1fba2f9f86c8910a61da9343a73"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_council_chair_declared_winner.parquet",
+      "bytes": 89636,
+      "sha256": "8edd3a88d38289d696374bd7221a06c8c29fb2121ecbff375eed2e81634e0d23"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_zilla_parishad_member_candidate_record.parquet",
+      "bytes": 419920,
+      "sha256": "fb78a85e7ca09584af6aac2659c01f38a023d19dc549a2df469065faa62f6e5b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "bytes": 257888,
+      "sha256": "f7db33dd0bae2986b34bfc390b1fdcbb133f52ac6fe2f0d700cd3d62c67c6bc4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_council_ward_member_declared_winner.parquet",
+      "bytes": 1316637,
+      "sha256": "65137c761372c1d6b0d8ead8cd581aee3149023c9532d08eb21507a82bb8fea7"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_corporation_ward_member_declared_winner.parquet",
+      "bytes": 329998,
+      "sha256": "29fa47aa9ecc3d2a4070788c05d49f4c3992683a2cf18911e323c42049f78ac2"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_nagar_panchayat_chair_seat_reservation.parquet",
+      "bytes": 128576,
+      "sha256": "dfe15b63a7d61faae7104aff8ded903d3c6654fb72ad8fef97c4eab0c5c4bcc0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_council_ward_member_seat_reservation.parquet",
+      "bytes": 1031636,
+      "sha256": "5747723c97b5721e0dd5a0984075e8273081bcb7d0221d9c793b4a4e8334b5da"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_council_chair_candidate_record.parquet",
+      "bytes": 506648,
+      "sha256": "65abe609c547018ad01597170324029e231a54e7ea25bd40936cdf351a257fa3"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_zilla_parishad_head_elected_official.parquet",
+      "bytes": 37948,
+      "sha256": "ea9cdfcd7c2646df841a12a38de38656b351daf69f189669ac3a7835d8275cb5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_head_seat_reservation.parquet",
+      "bytes": 117499,
+      "sha256": "09dda0bca31bce6a84cd5ffefba513643fee10f530c7fc31c57106f81481bd74"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_gram_panchayat_head_seat_reservation.parquet",
+      "bytes": 5451627,
+      "sha256": "fc492684dca2631d218785c4493fc4e1c16101e52c2032935867bc4581cac120"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_corporation_mayor_seat_reservation.parquet",
+      "bytes": 34605,
+      "sha256": "82e17a7447a36878997a9cc2e9b326c95d669a333d40d6153ee0df425b28772b"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "bytes": 1325471,
+      "sha256": "5382c924203303ce2fd53ada97cd03568b29db245232a1150a5f34a9472d5ce1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "bytes": 4604765,
+      "sha256": "537a7409258eac9fd5fd2ee71768cb6ba33c327311bddfebc8af2ee1cd201a78"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_member_reported_official.parquet",
+      "bytes": 16354869,
+      "sha256": "fe3e331093b2b66386f66628c51db2eed84352106ff52cbf77e5d9c407c7387a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_head_elected_official.parquet",
+      "bytes": 113284,
+      "sha256": "97a9bf37063273740b87051cab718327718e5426cdccb5847349eb807e1bae90"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_zilla_parishad_head_seat_reservation.parquet",
+      "bytes": 36490,
+      "sha256": "7a29f1ce64a3877719c9dd4ff93cd39af628fd01b5219a34e867b86a8dfaa52a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_zilla_parishad_head_candidate_record.parquet",
+      "bytes": 41430,
+      "sha256": "60733eddd0e85ba22ed309b740ebe553563efa449eb8453a6b39de0042a482a1"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_gram_panchayat_member_seat_reservation.parquet",
+      "bytes": 19776391,
+      "sha256": "127f8bbb58d33e52debc8f57ef5c0f6dcde21d6c8cb4a482c53dfcdab4913f63"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "bytes": 112810,
+      "sha256": "e58a918e0ee12a4f2a9a16abc7ae1fdaecc5a29db8fb735cffdfec482aeab561"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_head_candidate_record.parquet",
+      "bytes": 131043,
+      "sha256": "cf1c8eb1d97734d2608f583d48031e9cddb2aa233381d5fe1b75f4ce284bf1aa"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_council_chair_seat_reservation.parquet",
+      "bytes": 80134,
+      "sha256": "75ba033cf61b352d330ab7a9f6ce4ea6d38d10e74b9eccd606e4e13389147aa0"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "bytes": 1251923,
+      "sha256": "2b97ede2d9aaa943303763499170bf060ede6451f9b5c0711a5ece1904433cfb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "bytes": 113135,
+      "sha256": "fe55798ab86e27e6f39ab56feb8943bd1fb64b5d9188760b89101b17bee30338"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_gram_panchayat_head_candidate_record.parquet",
+      "bytes": 7441013,
+      "sha256": "54bb74c541952317b1ebaeed059f448c58ef71a351d0b9f785750244eaac5e1f"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_corporation_mayor_candidate_record.parquet",
+      "bytes": 89842,
+      "sha256": "5f6cc8ba95db04121340b8b54caab24763233041961ad6fcc87c03820e81eee4"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/source_link_repair_validation.json",
+      "bytes": 716,
+      "sha256": "7b36d0374fba5c8a80de516d8dd997b2b2055a2eeeb404901191814072cae9ea"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/CHECKSUMS.sha256",
+      "bytes": 4406,
+      "sha256": "4607ddf693802ac56df014bd50ea744958c8703d233509d25fbd777a4dac0932"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/manifest.json",
+      "bytes": 72941,
+      "sha256": "e9a86babb6cb81f216a99a74351434673da059d00997638b8301d6a1991bc4fe"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_gram_panchayat_head_declared_winner.parquet",
+      "bytes": 10118334,
+      "sha256": "6810bce6b7dfd5b011ac39cf174735b3e37e327ad02b99f728ec9368359222c9"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_council_ward_member_candidate_record.parquet",
+      "bytes": 6156319,
+      "sha256": "2357af5c1181257f74e48b258a0955e7e24b23960826aad91a8bd429f5df110a"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_member_source_status_notice.parquet",
+      "bytes": 40456,
+      "sha256": "b01d69f495e42617c7012b0f30a5c0dd7ff67e6575668dc63289af06d14c7472"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_nagar_panchayat_chair_candidate_record.parquet",
+      "bytes": 872773,
+      "sha256": "4d44f1b6e47e4f4125705d3432448b42e665a97a05d71d4623880c2897e24962"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_corporation_ward_member_candidate_record.parquet",
+      "bytes": 2335073,
+      "sha256": "713601fc5b3449761846303a0f99b148468bb1500218e9634a4a10fe743b2efc"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_zilla_parishad_member_seat_reservation.parquet",
+      "bytes": 311828,
+      "sha256": "5125ecba5d26d797cbc35fbd3df1e641205cfe5bacfeabd3227975642efe67d5"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_municipal_corporation_mayor_declared_winner.parquet",
+      "bytes": 38958,
+      "sha256": "15b9295a6347d7890245453a676929c1a90d03c2d2b85ec7e2a567a18a3006eb"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_zilla_parishad_member_elected_official.parquet",
+      "bytes": 251309,
+      "sha256": "4ef6d9f58ad9fba2e86c0cc4bff1d1ed52d490798943d2be90e3ee99aa3f0903"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_panchayat_samiti_member_candidate_record.parquet",
+      "bytes": 9770115,
+      "sha256": "561f80293556cd79b266d03f4dbdd876bf9f0249e9c6652f66b6c726582fd307"
+    },
+    {
+      "path": "data/interim/release_snapshots/offices/20260912T074340330096Z/up_nagar_panchayat_chair_declared_winner.parquet",
+      "bytes": 143619,
+      "sha256": "16d8903104a6eee46a9e0f0cc1f747c65a68b2026b0028bfe4526fa9578afe2d"
+    }
+  ],
+  "parts": [
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-000",
+      "sha256": "8b760977aa151b310e947352cc1591d80929fff56df7e9e5e9f79ea2b1111296",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-001",
+      "sha256": "b1ac4dceafdd126393b1c950e3467747750b92f4dd75e95480c4bee4f00d7e44",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-002",
+      "sha256": "dfde8a848214168991a0837146ab59f076027f66f923407d56bd901b03455e2a",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-003",
+      "sha256": "bff9bc38ee70d6aef89045cbd7db5fc4813d836a5bb900fed9e6f4096815d7a8",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-004",
+      "sha256": "97e925a17517f842250c8fe26db7dbd39f3de7a8a5a7c03d6d999d1ed9a59490",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-005",
+      "sha256": "3ca5d97216cd4cf2c021518d3291d4976b43a0fd0caec4b577fcd6e1a1f061bf",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-006",
+      "sha256": "499f6ca3c0c5ecf9c7445f2b6cb9f3d5e4bc15ba90c8aee3edab30c3702175b2",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-007",
+      "sha256": "2910cedb3442ded29b4bc9dd7f41009f303795d7bf00d5e4670b85d8bdf7862b",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-008",
+      "sha256": "157585f5318fbdbd96b1797a494f89f211e4c101786d9e5882fd6ebba71e6e15",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-009",
+      "sha256": "c59f334c10692e44ee2edea3bcbbb760e14516eb5a3d21cea0db77a0ed3a9201",
+      "bytes": 5209906
+    }
+  ],
+  "tar_payload_sha256": "6880213c67518f7f1ad8105ffb488d7a2ab9c481a3912618be68b1e026e388b0"
+}

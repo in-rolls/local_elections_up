@@ -1,12 +1,24 @@
-.PHONY: sync data data-gp data-panels data-weaver data-lgd link-gp lint test check winner-lists-2015 verify-2015 ci-docker ci-python ci-r
+PY = .venv/bin/python
+
+.PHONY: sync restore-r data release-data data-gp data-offices data-panels data-lgd data-weaver catalog lint test check verify winner-lists-2015 verify-2015 ci-docker
 
 sync:
 	uv sync --frozen --all-groups
 
-data: data-panels data-weaver data-lgd
+restore-r:
+	Rscript -e 'if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv", repos="https://cloud.r-project.org"); renv::restore(prompt=FALSE)'
+
+release-data: data
+
+data: data-offices data-lgd data-weaver
+	$(MAKE) catalog
 
 data-gp:
+	$(PY) -m local_elections_up.prepare_gp_sources
 	Rscript scripts/05_standardize_elections.R
+
+data-offices: data-gp
+	$(PY) -m local_elections_up.standardize_offices
 
 data-panels: data-gp
 	Rscript scripts/08_link_elections.R
@@ -17,40 +29,32 @@ data-lgd: data-panels
 data-weaver:
 	Rscript scripts/09_prepare_weaver.R
 
-link-gp:
-	uv run python scripts/06_link_2021_lgd.py
-	Rscript scripts/05_standardize_elections.R
+catalog:
+	$(PY) -m local_elections_up.release build
 
 lint:
-	Rscript -e 'l <- lintr::lint_dir("scripts"); print(l); quit(status = as.integer(length(l) > 0L))'
-	uv run --all-groups ruff check .
-	uv run --all-groups ruff format --check .
+	Rscript -e 'l <- c(lintr::lint_dir("scripts"), lintr::lint_dir("R")); print(l); quit(status=as.integer(length(l)>0L))'
+	.venv/bin/ruff check .
+	.venv/bin/ruff format --check .
 
 test:
 	Rscript tests/test_standardized_release.R
 	Rscript tests/test_election_panels.R
 	Rscript tests/test_weaver_preparation.R
 	Rscript tests/test_historical_lgd.R
-	uv run --all-groups pytest -q
+	.venv/bin/pytest -q
 
-check: lint test verify-2015
-	uv run --all-groups pre-commit run --all-files
-	cd data/fin && shasum -a 256 -c CHECKSUMS.sha256
+verify:
+	$(PY) -m local_elections_up.release verify
+
+check: lint test verify verify-2015
 
 winner-lists-2015:
-	uv run --all-groups python scripts/convert_winner_lists_2015.py
+	$(PY) -m local_elections_up.convert_winner_lists_2015
 
 verify-2015:
-	uv run --all-groups python scripts/convert_winner_lists_2015.py --check
+	$(PY) -m local_elections_up.convert_winner_lists_2015 --check
 
-ci-docker: ci-python ci-r
-
-ci-python:
-	@for version in 3.12 3.14; do \
-	  COPYFILE_DISABLE=1 tar --no-xattrs --exclude=._* --exclude=.git --exclude=.venv --exclude=__pycache__ --exclude=.pytest_cache --exclude=.ruff_cache --exclude=.DS_Store -cf - . | \
-	  docker run --rm -i -v "$$HOME/.cache/uv:/root/.cache/uv" python:$$version-slim sh -ec 'mkdir /work; tar -xf - -C /work; cd /work; apt-get update -qq; apt-get install -y --no-install-recommends git; pip install -q uv; uv sync --frozen --all-groups; uv run --all-groups ruff check .; uv run --all-groups ruff format --check .; uv run --all-groups pytest -q; uv run --all-groups python scripts/convert_winner_lists_2015.py --check' || exit $$?; \
-	done
-
-ci-r:
-	COPYFILE_DISABLE=1 tar --no-xattrs --exclude=._* --exclude=.git --exclude=.venv --exclude=__pycache__ --exclude=.pytest_cache --exclude=.ruff_cache --exclude=.DS_Store -cf - . | \
-	  docker run --rm -i rocker/r2u:24.04 sh -ec 'mkdir /work; tar -xf - -C /work; cd /work; Rscript -e "install.packages(c(\"arrow\", \"digest\", \"dplyr\", \"jsonlite\", \"lintr\", \"stringi\", \"purrr\", \"readr\", \"stringr\", \"tidyr\", \"stringdist\", \"haven\", \"testthat\"))"; Rscript -e "l <- lintr::lint_dir(\"scripts\"); print(l); quit(status = as.integer(length(l) > 0L))"; Rscript tests/test_standardized_release.R; Rscript tests/test_election_panels.R; Rscript tests/test_weaver_preparation.R; Rscript tests/test_historical_lgd.R; cd data/fin; sha256sum -c CHECKSUMS.sha256'
+ci-docker:
+	docker run --rm --mount type=bind,source="$(CURDIR)",target=/workspace --workdir /workspace --env UV_PROJECT_ENVIRONMENT=/tmp/up-venv python:3.12-slim sh -c 'pip install --no-cache-dir uv && uv sync --frozen --all-groups && uv run ruff check . && uv run ruff format --check . && uv run pytest -q && uv run python -m local_elections_up.release verify'
+	docker run --rm --mount type=bind,source="$(CURDIR)",target=/workspace --workdir /workspace --env RENV_PATHS_LIBRARY=/tmp/up-r-library --env NOT_CRAN=true --mount type=volume,source=up-renv-cache,target=/root/.cache/R/renv rocker/r-ver:4.6.0 sh -c 'apt-get update && apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev libuv1-dev cmake pkg-config zlib1g-dev libicu-dev && Rscript -e '\''renv::restore(prompt=FALSE)'\'' && Rscript -e '\''l <- c(lintr::lint_dir("scripts"), lintr::lint_dir("R")); print(l); stopifnot(length(l)==0); source("tests/test_standardized_release.R"); source("tests/test_election_panels.R"); source("tests/test_weaver_preparation.R"); source("tests/test_historical_lgd.R")'\'''

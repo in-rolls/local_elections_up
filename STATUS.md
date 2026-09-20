@@ -1,6 +1,8 @@
 # Uttar Pradesh: status as of 2026-09-10
 
-## Bottom line
+This is a historical audit snapshot. For the current release, paths, and interpretation, use the [README](README.md) and [generated data catalog](data/release/CATALOG.md). Counts and outstanding tasks below describe the September 10 state, before the v2 migration and subsequent research releases.
+
+## Historical scope
 
 The repository supplies a four-wave GP-head dataset with documented gaps and conflicts. It is not a complete census of UP local elections. Historical reservation parsing remains unfinished.
 

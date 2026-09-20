@@ -1,0 +1,1886 @@
+{
+  "status": "standardized_source_observations_pending_validation",
+  "registry_sha256": "579e1ba2d64a393be264d9f8de0788cba4fc6450c1d476f03f5b4dcae391814b",
+  "label_schema_sha256": "beed338d3a09592d9eaa8bd8d0403a8ee5ae86ae09fc0ba0a584d067174d29b4",
+  "parser_sha256": "daafdf09bc06f0117518898903de1a4c5fa635a015165513b2a3ff3bcf0f3b28",
+  "pri_2010_label_dictionary": {
+    "path": "data/catalogs/pri_2010_category_labels.json",
+    "sha256": "4a38745cd96f4607e35803b18f96b7f8b5a6f64b0287066a6eb9ef515301268c"
+  },
+  "pyarrow_version": "23.0.1",
+  "schema": {
+    "source_printed_page_raw": "string",
+    "source_boundary_review_status_raw": "string",
+    "source_fields_json": "string",
+    "source_subject_temporality": "string",
+    "source_boundary_raw": "string",
+    "source_boundary_value": "string",
+    "source_block_name_value": "string",
+    "source_ward_name_value": "string",
+    "source_ward_number_value": "string",
+    "source_family_counts_json": "string",
+    "source_reservation_value": "string",
+    "source_review_evidence_json": "string",
+    "source_unresolved_fields_json": "string",
+    "source_parent_observation_id": "string",
+    "samiti_2005_source_fields_json": "string",
+    "samiti_2005_source_status": "string",
+    "samiti_2005_candidate_text_role": "string",
+    "samiti_2005_source_duplicate_group_id": "string",
+    "samiti_2005_source_duplicate_kind": "string",
+    "samiti_2005_source_key_review_sha256": "string",
+    "samiti_2005_district_name_unicode_candidate": "string",
+    "samiti_2005_block_name_unicode_candidate": "string",
+    "samiti_2005_ward_name_unicode_candidate": "string",
+    "samiti_2005_candidate_name_unicode_candidate": "string",
+    "pri_2010_seat_label_decode_status": "string",
+    "pri_2010_candidate_label_decode_status": "string",
+    "pri_2010_sex_label_decode_status": "string",
+    "pri_2010_label_dictionary_path": "string",
+    "pri_2010_label_dictionary_sha256": "string",
+    "pri_2010_source_fields_json": "string",
+    "district_code_raw": "string",
+    "block_code_raw": "string",
+    "ward_number_raw": "string",
+    "education_encoded_raw": "string",
+    "candidate_category_class": "string",
+    "source_member_cell_encoded_raw": "string",
+    "source_notice_encoded_raw": "string",
+    "source_notice_kind": "string",
+    "source_adjudication_path": "string",
+    "source_adjudication_sha256": "string",
+    "source_local_path_raw": "string",
+    "source_response_path_raw": "string",
+    "source_document_sha256_raw": "string",
+    "source_document_role": "string",
+    "source_document_hash_basis": "string",
+    "source_path_resolution_status": "string",
+    "body_type_encoded_raw": "string",
+    "related_person_encoded_raw": "string",
+    "reported_sex_encoded_raw": "string",
+    "party_encoded_raw": "string",
+    "symbol_encoded_raw": "string",
+    "candidate_age_raw": "string",
+    "nomination_number_raw": "string",
+    "record_id": "string",
+    "office": "string",
+    "record_kind": "string",
+    "source_collection": "string",
+    "source_observation_id": "string",
+    "source_artifact_path": "string",
+    "source_artifact_sha256": "string",
+    "source_document_sha256": "string",
+    "source_local_path": "string",
+    "source_url": "string",
+    "source_response_path": "string",
+    "source_row_field": "string",
+    "source_copy_group": "string",
+    "district_name_raw": "string",
+    "block_name_raw": "string",
+    "body_name_raw": "string",
+    "body_code_raw": "string",
+    "ward_name_raw": "string",
+    "ward_code_raw": "string",
+    "membership_ward_label_raw": "string",
+    "candidate_name_raw": "string",
+    "related_person_raw": "string",
+    "reported_sex_raw": "string",
+    "party_raw": "string",
+    "education_raw": "string",
+    "seat_reservation_raw": "string",
+    "candidate_category_raw": "string",
+    "reservation_class": "string",
+    "result_raw": "string",
+    "valid_votes_raw": "string",
+    "vote_percentage_raw": "string",
+    "poll_percentage_raw": "string",
+    "text_encoding": "string",
+    "district_name_encoded_raw": "string",
+    "block_name_encoded_raw": "string",
+    "ward_name_encoded_raw": "string",
+    "candidate_name_encoded_raw": "string",
+    "candidate_and_related_name_encoded_raw": "string",
+    "seat_reservation_encoded_raw": "string",
+    "candidate_category_encoded_raw": "string",
+    "office_encoded_raw": "string",
+    "reported_category_encoded_raw": "string",
+    "body_name_encoded_raw": "string",
+    "source_artifact_format": "string",
+    "source_finality_raw": "string",
+    "source_review_status_raw": "string",
+    "name_review_status_raw": "string",
+    "source_image_path": "string",
+    "source_image_sha256": "string",
+    "source_printed_serial_raw": "string",
+    "source_cell_bboxes_json": "string",
+    "candidate_age": "int64",
+    "candidate_category_women_label": "bool",
+    "block_context_source_page": "int64",
+    "block_context_source_y": "double",
+    "election_year": "int16",
+    "source_artifact_row": "int64",
+    "source_page": "int64",
+    "source_row": "int64",
+    "source_csv_record": "int64",
+    "source_line_start": "int64",
+    "source_line_end": "int64",
+    "ward_number": "int64",
+    "membership_ward_number": "int64",
+    "valid_votes": "int64",
+    "vote_percentage": "double",
+    "poll_percentage": "double",
+    "women_reserved": "bool",
+    "is_winner": "bool",
+    "assignment_usable": "bool",
+    "quality_flags": "list<item: string>",
+    "name_reading_uncertain": "bool",
+    "source_category_column": "int64"
+  },
+  "sources": [
+    {
+      "adapter": "samiti_2005",
+      "decoder_provenance": {
+        "build_dependency": "local_elections shared decoder, pinned by its source SHA-256",
+        "category_codes_reinterpreted": false,
+        "columns_decoded": {
+          "block_name_encoded_raw": {
+            "decoded_labels_shared_by_different_raw_strings": 0,
+            "distinct_raw_labels": 782,
+            "output_column": "block_name_encoded_unicode_candidate",
+            "rows_in_source_profile_scope": 0,
+            "rows_with_ascii_or_replacement_characters": 0,
+            "rows_with_preserved_or_profiled_part_markers": 0
+          },
+          "candidate_name_encoded_raw": {
+            "decoded_labels_shared_by_different_raw_strings": 12,
+            "distinct_raw_labels": 20074,
+            "output_column": "candidate_name_encoded_unicode_candidate",
+            "rows_in_source_profile_scope": 0,
+            "rows_with_ascii_or_replacement_characters": 213,
+            "rows_with_preserved_or_profiled_part_markers": 0
+          },
+          "district_name_encoded_raw": {
+            "decoded_labels_shared_by_different_raw_strings": 0,
+            "distinct_raw_labels": 70,
+            "output_column": "district_name_encoded_unicode_candidate",
+            "rows_in_source_profile_scope": 0,
+            "rows_with_ascii_or_replacement_characters": 0,
+            "rows_with_preserved_or_profiled_part_markers": 0
+          },
+          "ward_name_encoded_raw": {
+            "decoded_labels_shared_by_different_raw_strings": 2,
+            "distinct_raw_labels": 41517,
+            "output_column": "ward_name_encoded_unicode_candidate",
+            "rows_in_source_profile_scope": 0,
+            "rows_with_ascii_or_replacement_characters": 161,
+            "rows_with_preserved_or_profiled_part_markers": 0
+          }
+        },
+        "csv_input_policy": "All CSV fields read as strings; blank strings and original label text preserved.",
+        "decoder_module": "local_reservations.common.krutidev",
+        "decoder_source_sha256": "6dec8cc15317af6171dec21d4182d97bf1abb0c002d1abd499fa8d07959e529d",
+        "enricher_source_sha256": "e527afdb2a2c4b1877e718c8e5e27138d4d615b3be65c6b23668694f2674ebd0",
+        "identities_merged": false,
+        "input_name": "member_observations.parquet",
+        "input_sha256": "7c1cbc9404140d54b9c17664f774148ffac99a4787d60acb83e9d41a020aac43",
+        "output_name": "member_observations.parquet",
+        "output_sha256": "e740b43e37058c351e4baa3920b9d1921927ee87626f80d1ae121a6b3b3a1d16",
+        "paid_inference_usd": 0,
+        "quality_status": "Legacy-font decoding candidates, not verified place identities. Existing review flags remain.",
+        "raw_columns_preserved": true,
+        "roman_suffix_policy": "Preserve isolated trailing I/II/III labels. A source-specific profile may decode trailing A glyphs as printed part-marker strokes without inferring administrative identities.",
+        "rows": 64277,
+        "rows_deduplicated": false,
+        "source_profile": null,
+        "source_profile_sha256": null
+      },
+      "election_year": 2005,
+      "expected_rows": 64277,
+      "expected_sha256": "e740b43e37058c351e4baa3920b9d1921927ee87626f80d1ae121a6b3b3a1d16",
+      "id": "samiti_member_lists_2005",
+      "office": "panchayat_samiti_member",
+      "path": "data/interim/sec_samiti_members_2005/20260913T121202024971Z/decoded_labels_half_consonants_20260913T131227Z/member_observations.parquet",
+      "record_kind": "reported_official",
+      "review_evidence": [
+        {
+          "path": "data/reference/sec_samiti_members_2005_label_review.json.gz",
+          "sha256": "a1df09f394ef08f9238cef1d025c1a694c516a4d9c21f3767adfa9c4c68ebfae"
+        },
+        {
+          "path": "data/reference/sec_samiti_members_2005_label_images.tar.gz",
+          "sha256": "7258601f6fe63430f061b2656c999f896facdfe835e7ce7ae7550e4f620cc9ff"
+        },
+        {
+          "path": "data/reference/sec_samiti_members_2005_key_review.json.gz",
+          "sha256": "7009c86d594944668eb0ccecddd9dcfde3ef14059eddc1a3f37de374bea1c03c"
+        },
+        {
+          "path": "data/reference/sec_samiti_members_2005_key_images.tar.gz",
+          "sha256": "339f56760bf47531fc8b2eee99d53ca6ae1e222d64b1aa1c3c0f78ad35e01591"
+        },
+        {
+          "path": "data/reference/sec_samiti_members_2005_name_decode_review/20260913T122909656291Z/review.json.gz",
+          "sha256": "81de47144f4e34eb03dfcf355a8293efd1fbc0786181abba025fdcb8a599751a"
+        },
+        {
+          "path": "data/reference/sec_samiti_members_2005_name_decode_review/20260913T122909656291Z/images.tar.gz",
+          "sha256": "78e7fb68500360b7f6f7d006df908f2026fce1578a82265a631d5c85a894e227"
+        }
+      ],
+      "scope": "All 64,277 observations from the 1,585-page 2005 elected samiti-member PDF. Raw cells, source codes, heading context and geometry are preserved in samiti_2005_source_fields_json. Decoded names are separately labelled unreviewed candidates, not canonical identities. Reviewed category mappings preserve the unknown caste axis of woman-only labels. Vacancy and unopposed notices are separate statuses. All 13 repeated seat-key groups remain, including three conflicting pairs; no automatic deduplication or winner inference.",
+      "source_document_sha256": "3adc5b67a9f98c6529ba4bbb17dfd14ba6174527bdf0786df071fb563bfadfb8",
+      "sha256": "e740b43e37058c351e4baa3920b9d1921927ee87626f80d1ae121a6b3b3a1d16",
+      "resolved_path": "data/interim/sec_samiti_members_2005/20260913T121202024971Z/decoded_labels_half_consonants_20260913T131227Z/member_observations.parquet",
+      "input_rows": 64277,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 64277
+    },
+    {
+      "adapter": "samiti_2010",
+      "dispositions_path": "data/catalogs/samiti_2010_dispositions.json",
+      "id": "samiti_member_lists_2010",
+      "path": "data/interim/sec_samiti_members_2010/20260912T015325278056Z/member_observations.parquet",
+      "record_kind": "reported_official",
+      "scope": "All 71 held samiti-member PDFs. Preserve encoded names, separate seat and person categories, block-heading provenance, and source-key collisions. Source-reviewed court and vacancy labels are separate status notices, not people or verified current legal statuses. No winner inference.",
+      "sha256": "a1c1bec556fdddd7aa290cdbeccf33c4ce7eff588baf31af8d7593412d25f49b",
+      "resolved_path": "data/interim/sec_samiti_members_2010/20260912T015325278056Z/member_observations.parquet",
+      "input_rows": 63333,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": {
+        "path": "data/catalogs/samiti_2010_dispositions.json",
+        "sha256": "4a83a2aa64ad71a2dd07b3908323bb9c6eaa29858c92f1fe8c9e7bdd54fd3676",
+        "status": "single_reviewer_source_labels_pending_independent_validation",
+        "receipt_path": "data/interim/sec_samiti_members_2010/20260912T015325278056Z/receipt.json",
+        "receipt_sha256": "f954ef84f156ae3975e575af3e2242c94da093c04b3bd0a19580952409c52823",
+        "input_sha256": "a1c1bec556fdddd7aa290cdbeccf33c4ce7eff588baf31af8d7593412d25f49b"
+      },
+      "exported_rows": 63333
+    },
+    {
+      "adapter": "urban_2006",
+      "id": "urban_candidates_2006",
+      "path": "data/interim/sec_urban_results_2006/20260912T011534530409Z/candidate_observations.parquet",
+      "record_kind": "candidate_record",
+      "scope": "All six urban office types from the 140 held 2006 PDFs. Candidate observations, not explicit winner declarations. Legacy names and categories remain encoded; missing seat-reservation fields are not filled from candidate categories.",
+      "sha256": "beaa94c5050094b404532178c6f27c289eb472165be8d6efe70a0b1f66f3c57a",
+      "resolved_path": "data/interim/sec_urban_results_2006/20260912T011534530409Z/candidate_observations.parquet",
+      "input_rows": 53539,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 53539
+    },
+    {
+      "adapter": "gp",
+      "exclude_years": [
+        2015
+      ],
+      "id": "gp_enriched",
+      "path": "data/release/gp/gp_head_election_records.parquet",
+      "record_kind": "declared_winner",
+      "scope": "GP-specific enriched winners; 2015 is supplied by the local CSV collection in the office exports.",
+      "sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560",
+      "resolved_path": "data/release/gp/gp_head_election_records.parquet",
+      "input_rows": 212525,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/release/gp",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 153506,
+      "excluded_overlapping_year": 59019
+    },
+    {
+      "adapter": "csv",
+      "id": "candidate_csvs_2015",
+      "record_kind": "declared_winner",
+      "scope": "Local CSV observations; only byte-identical statewide head tables are consolidated.",
+      "source_archive": {
+        "member_prefix": "2015",
+        "path": "data/archives/up-historical-sources-2006-2015-20260911.tar.gz",
+        "sha256": "ef99d979de5b385ce750a53db364ed8fab988af625b4130762e6d5c6fad0a931"
+      },
+      "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
+      "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a",
+      "source_root": "data/2015",
+      "resolved_path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
+      "input_rows": 206633,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/2015",
+        "source_root_receipt": {
+          "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/receipt.json",
+          "sha256": "52cc56207d51a3b00fa03ff46bebc95eb74f916c3706e15f58ee98f82c1ee023"
+        },
+        "source_archive": {
+          "path": "data/archives/up-historical-sources-2006-2015-20260911.tar.gz",
+          "sha256": "ef99d979de5b385ce750a53db364ed8fab988af625b4130762e6d5c6fad0a931",
+          "member_prefix": "2015"
+        },
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 140773,
+      "identical_statewide_copy_rows": 65860
+    },
+    {
+      "adapter": "portal",
+      "id": "rural_reservations_2015",
+      "path": "data/recovery/sec_reservation_portals/parsed/20260911T130835483073Z/reservations.parquet",
+      "portals": [
+        "pri2015"
+      ],
+      "record_kind": "seat_reservation",
+      "sha256": "2923ccd3f2c7c26a65773fb6b5948facad59a227b0f82ceb25101473567ff049",
+      "resolved_path": "data/recovery/sec_reservation_portals/parsed/20260911T130835483073Z/reservations.parquet",
+      "input_rows": 140826,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/recovery/sec_reservation_portals",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 140826
+    },
+    {
+      "adapter": "portal",
+      "id": "gp_ward_reservations_2015",
+      "path": "data/recovery/sec_reservation_portals/pri2015_gp_wards/parsed/20260913T025923Z/reservations.parquet",
+      "portals": [
+        "pri2015"
+      ],
+      "record_kind": "seat_reservation",
+      "scope": "Completed enumerated-query snapshot: all 59,021 GP queries have complete pagination and yield 743,685 source reservation observations. The 2,355 TLS-related fetch failures were recovered with certificate verification enabled. All 714,784 observations of the preceding native checkpoint are preserved with no changed values, and every query selection matches the enumerated frame. The first column is labelled GP code despite within-GP ordinal-looking values; ward identity remains unadjudicated. Published totals use different reporting scopes, so complete query-frame coverage does not establish a complete statewide seat denominator. See parsed/20260913T025923Z/recovery_reconciliation.json under the GP-ward source root.",
+      "sha256": "53c33301f660da4f7972da1212b1da8cb70107bd741f12f74b0da419c3a66b75",
+      "resolved_path": "data/recovery/sec_reservation_portals/pri2015_gp_wards/parsed/20260913T025923Z/reservations.parquet",
+      "input_rows": 743685,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/recovery/sec_reservation_portals/pri2015_gp_wards",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 743685
+    },
+    {
+      "adapter": "portal",
+      "id": "urban_reservations_2012_2023",
+      "path": "data/recovery/sec_reservation_portals/parsed/20260911T112901979291Z/reservations.parquet",
+      "portals": [
+        "ulb2012",
+        "ulb2023"
+      ],
+      "record_kind": "seat_reservation",
+      "sha256": "6f391a468713b92158157cd3a95f158833e76180b6e60983204a6bca1957668e",
+      "resolved_path": "data/recovery/sec_reservation_portals/parsed/20260911T112901979291Z/reservations.parquet",
+      "input_rows": 99475,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/recovery/sec_reservation_portals",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 26117,
+      "excluded_other_portal": 73358
+    },
+    {
+      "adapter": "urban",
+      "id": "urban_winners_2017",
+      "path": "data/recovery/sec_historical_results/ulb2017/combined/20260911/winner_reservations.parquet",
+      "record_kind": "declared_winner",
+      "sha256": "24046bbfd60cf2facbdf6e695ebd36924ca796758a4b7a65b892337842f33229",
+      "resolved_path": "data/recovery/sec_historical_results/ulb2017/combined/20260911/winner_reservations.parquet",
+      "input_rows": 12647,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 12647
+    },
+    {
+      "adapter": "urban",
+      "id": "urban_winners_2012",
+      "path": "data/recovery/sec_historical_results/ulb2012/parsed/20260911T113301294231Z/winner_reservations.parquet",
+      "record_kind": "declared_winner",
+      "sha256": "6ad6787d389fa3afdce4b0b5a0fa1a4a4bf2ef40e15618c513955126f39e9edd",
+      "resolved_path": "data/recovery/sec_historical_results/ulb2012/parsed/20260911T113301294231Z/winner_reservations.parquet",
+      "input_rows": 11864,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/recovery/sec_historical_results/ulb2012",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 11864
+    },
+    {
+      "adapter": "zp_archive",
+      "id": "zp_officials_2005",
+      "path": "data/recovery/sec_wayback/20260911_rural_member_sources/parsed_members_2005/20260911T183936804704Z/member_observations.parquet",
+      "record_kind": "elected_official",
+      "scope": "Arjun-encoded names and unresolved category-axis semantics remain explicit.",
+      "sha256": "b0705f67174a7a7abce44c967734e35003d480b09bdbba2dc8589a43b0a8b56b",
+      "resolved_path": "data/recovery/sec_wayback/20260911_rural_member_sources/parsed_members_2005/20260911T183936804704Z/member_observations.parquet",
+      "input_rows": 2631,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/recovery/sec_wayback/20260911_rural_member_sources",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 2631
+    },
+    {
+      "adapter": "block_archive",
+      "id": "block_officials_2006",
+      "path": "data/recovery/sec_wayback/20260911_rural_member_sources/parsed_officials_2006/20260911T185433119499Z/official_observations.parquet",
+      "record_kind": "elected_official",
+      "scope": "Includes chair and both deputy offices; membership wards are not office ward identifiers.",
+      "sha256": "4fe50129bd926769a7ba0cf7fa9e6ed6dbdc0216955808d48c5395a5cd22322c",
+      "resolved_path": "data/recovery/sec_wayback/20260911_rural_member_sources/parsed_officials_2006/20260911T185433119499Z/official_observations.parquet",
+      "input_rows": 2459,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": "data/recovery/sec_wayback/20260911_rural_member_sources",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 2459
+    },
+    {
+      "adapter": "regional",
+      "id": "ghaziabad_reservations_2021",
+      "path": "data/recovery/ghaziabad_media_reservations_2021/parsed_reservations_v2/reservation_rows.parquet",
+      "record_kind": "seat_reservation",
+      "scope": "Media-hosted copies; decoded names and category candidates retain independent-review and source-conflict holds.",
+      "source_base": "data/recovery/ghaziabad_media_reservations_2021",
+      "sha256": "57581b7c10e30196640c2683b9ec8078c84bdbbef0137208967086da1f260715",
+      "resolved_path": "data/recovery/ghaziabad_media_reservations_2021/parsed_reservations_v2/reservation_rows.parquet",
+      "input_rows": 502,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 502
+    },
+    {
+      "adapter": "regional",
+      "id": "baghpat_gp_reservations_2021",
+      "path": "data/recovery/baghpat_official_reservations_2021/gram_pradhan_visual_review/reservations.parquet",
+      "record_kind": "seat_reservation",
+      "scope": "Official final source; single-reviewer name and category readings remain explicitly provisional.",
+      "source_base": "data/recovery/baghpat_official_reservations_2021",
+      "sha256": "a2138b0de439cf8756c5a94b6fdc37e127258720e54a6cbeb7eee1ed27536ac4",
+      "resolved_path": "data/recovery/baghpat_official_reservations_2021/gram_pradhan_visual_review/reservations.parquet",
+      "input_rows": 244,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 244
+    },
+    {
+      "adapter": "regional",
+      "id": "baghpat_block_head_reservations_2021",
+      "path": "data/recovery/baghpat_official_reservations_2021/block_head_reservations.csv",
+      "record_kind": "seat_reservation",
+      "source_base": "data/recovery/baghpat_official_reservations_2021",
+      "sha256": "6959a1b46873b2b22ce1abf13f9b91dc41a1935128567ea9ceb4bc324d6b09eb",
+      "resolved_path": "data/recovery/baghpat_official_reservations_2021/block_head_reservations.csv",
+      "input_rows": 6,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 6
+    },
+    {
+      "adapter": "regional",
+      "id": "baghpat_zp_member_reservations_2021",
+      "path": "data/recovery/baghpat_official_reservations_2021/district_member_reservations.csv",
+      "record_kind": "seat_reservation",
+      "scope": "Member rows only; no ZP-chair assignment inferred from this source.",
+      "source_base": "data/recovery/baghpat_official_reservations_2021",
+      "sha256": "2b3d47ceb452ec4fceeed161368217154f918f1f4118dc092fd2245628d342b9",
+      "resolved_path": "data/recovery/baghpat_official_reservations_2021/district_member_reservations.csv",
+      "input_rows": 20,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 20
+    },
+    {
+      "adapter": "pri_2010",
+      "expected_sha256": "4cabcd75c42460e9888c42720e6f35a22010babd6d7f1431e98b73011aeeb379",
+      "id": "pri_samiti_heads_2010",
+      "office": "panchayat_samiti_head",
+      "path": "data/interim/sec_pri_results_2010/20260912T034643550234Z/panchayat_samiti_head.parquet",
+      "record_kind": "reported_official",
+      "scope": "821 source observations from KPP_result_2010.pdf. Embedded legacy-font strings, separate seat/person categories, district-heading context and original cell geometry are retained. No winner or reservation assignment inference.",
+      "sha256": "4cabcd75c42460e9888c42720e6f35a22010babd6d7f1431e98b73011aeeb379",
+      "resolved_path": "data/interim/sec_pri_results_2010/20260912T034643550234Z/panchayat_samiti_head.parquet",
+      "input_rows": 821,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 821
+    },
+    {
+      "adapter": "pri_2010",
+      "expected_sha256": "449c57f0eb5645807f95a6c65e2506c7a3e412250b1416f94514fd5398ad0e70",
+      "id": "pri_zp_heads_2010",
+      "office": "zilla_parishad_head",
+      "path": "data/interim/sec_pri_results_2010/20260912T034643550234Z/zilla_parishad_head.parquet",
+      "record_kind": "reported_official",
+      "scope": "72 source observations from ZPA_FINALLIST_NEW.pdf after the page-3 footnote-boundary repair. Reported category axis remains unresolved. Two starred election-abeyance cases remain flagged and are not certified winners.",
+      "sha256": "449c57f0eb5645807f95a6c65e2506c7a3e412250b1416f94514fd5398ad0e70",
+      "resolved_path": "data/interim/sec_pri_results_2010/20260912T034643550234Z/zilla_parishad_head.parquet",
+      "input_rows": 72,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 72
+    },
+    {
+      "adapter": "pri_2010",
+      "expected_sha256": "15d816ae62447f6a9f0bbb3dd4baca075748abf33a90458ea5575ec64b04f781",
+      "id": "pri_zp_members_2010",
+      "office": "zilla_parishad_member",
+      "path": "data/interim/sec_pri_results_2010/20260912T034643550234Z/zilla_parishad_member.parquet",
+      "record_kind": "reported_official",
+      "scope": "2624 source observations from zpm_result_2010.pdf. Numeric ward labels, encoded names, separate seat/person categories, page-local district context and cell geometry are retained. No winner or reservation assignment inference.",
+      "sha256": "15d816ae62447f6a9f0bbb3dd4baca075748abf33a90458ea5575ec64b04f781",
+      "resolved_path": "data/interim/sec_pri_results_2010/20260912T034643550234Z/zilla_parishad_member.parquet",
+      "input_rows": 2624,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": null,
+      "source_adjudication": null,
+      "exported_rows": 2624
+    },
+    {
+      "adapter": "ballia",
+      "category_column": 10,
+      "district_name": "\u092c\u0932\u093f\u092f\u093e",
+      "election_year": 2015,
+      "expected_input_rows": 1459,
+      "expected_rows": 1441,
+      "expected_sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
+      "header_review_archive": {
+        "member": "review/review.json",
+        "path": "data/recovery/ballia_media_reservations_2021/source_reviews/independent_20260913T185024767959Z/review_artifacts.tar.gz",
+        "sha256": "9b689e6d8566169330f8f4f3b011f7d90e049bd4bb64b1a3a2cf6bc2aaa94ccb"
+      },
+      "id": "ballia_samiti_reservations_2015_column",
+      "office": "panchayat_samiti_member",
+      "path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/rows.parquet",
+      "reconciliation_receipt_sha256": "cff8ef8d140e9e4091a39b807c7de03fb53b41114704a8dffcdc2a6f19b71a8c",
+      "record_kind": "seat_reservation",
+      "review_evidence": [
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/cell_extraction_v5_header_probe/visual_recovery/source_review.json.gz",
+          "sha256": "e458ce0f7a17a26f1db778884892820a159295c3fa55e10b6a8353af44236cfb"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/cell_extraction_v5_header_probe/visual_recovery/source_images.tar.gz",
+          "sha256": "729bb29ddf984024e9fd02a906f020956474ddebd5d22c203005444e906821e6"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/names_boundaries_20260913T182647347625Z/review.json",
+          "sha256": "60bc34bcf9f55b5caded52569785cafd2601ecadee2c4443683466cd68aa5bb1"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/names_boundaries_20260913T183933791289Z/review.json",
+          "sha256": "6ac0230fb16f5a8f2ecc4f61894d1746b587e92fe3ad5944ae289c47ecadb1bb"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/boundary_only_20260913T185519657570Z/review.json",
+          "sha256": "43adadf3c35a6c6b166680c1724dd677b50ca5cd0fb911492bbb8413db4b78b8"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/independent_20260913T185024767959Z/receipt.json",
+          "sha256": "cab833e59fba40273bb74db0e9814f2a5b06c4b9e8604af8e8dc0308cf74d727"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/independent_20260913T185024767959Z/review_artifacts.tar.gz",
+          "sha256": "9b689e6d8566169330f8f4f3b011f7d90e049bd4bb64b1a3a2cf6bc2aaa94ccb"
+        }
+      ],
+      "scope": "Source observations from a media-hosted provisional 2021 document, not certified allocations. Both year columns share source-row parent IDs. Raw/effective cells, source codes, family counts and review provenance are retained. All 1441 boundaries and 1440 names reviewed; one name and one code literal remain unresolved. No code-class or women-reservation mapping inferred. The archived independent 18-row review is not fully blinded and does not establish overall accuracy.",
+      "source_base": "data/recovery/ballia_media_reservations_2021",
+      "source_document_path": "data/recovery/ballia_media_reservations_2021/acquisition/raw/a7cdcc048fb757b6c9e5_685743d6d929.pdf",
+      "source_document_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
+      "subject_temporality": "retrospective_2015_in_2021_source",
+      "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
+      "resolved_path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/rows.parquet",
+      "input_rows": 1459,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": {
+        "adapter_sha256": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
+        "reconciliation_receipt_path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/reconciliation_receipt.json",
+        "reconciliation_receipt_sha256": "cff8ef8d140e9e4091a39b807c7de03fb53b41114704a8dffcdc2a6f19b71a8c",
+        "source_year": 2021,
+        "subject_year": 2015,
+        "category_column": 10,
+        "code_mapping_applied": false,
+        "raw_cells_and_review_provenance_preserved": true,
+        "non_seat_rows_retained_in_parent_artifact": true
+      },
+      "source_adjudication": null,
+      "exported_rows": 1441,
+      "excluded_non_seat_rows": 18
+    },
+    {
+      "adapter": "ballia",
+      "category_column": 11,
+      "district_name": "\u092c\u0932\u093f\u092f\u093e",
+      "election_year": 2021,
+      "expected_input_rows": 1459,
+      "expected_rows": 1441,
+      "expected_sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
+      "header_review_archive": {
+        "member": "review/review.json",
+        "path": "data/recovery/ballia_media_reservations_2021/source_reviews/independent_20260913T185024767959Z/review_artifacts.tar.gz",
+        "sha256": "9b689e6d8566169330f8f4f3b011f7d90e049bd4bb64b1a3a2cf6bc2aaa94ccb"
+      },
+      "id": "ballia_samiti_reservations_2021_column",
+      "office": "panchayat_samiti_member",
+      "path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/rows.parquet",
+      "reconciliation_receipt_sha256": "cff8ef8d140e9e4091a39b807c7de03fb53b41114704a8dffcdc2a6f19b71a8c",
+      "record_kind": "seat_reservation",
+      "review_evidence": [
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/cell_extraction_v5_header_probe/visual_recovery/source_review.json.gz",
+          "sha256": "e458ce0f7a17a26f1db778884892820a159295c3fa55e10b6a8353af44236cfb"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/cell_extraction_v5_header_probe/visual_recovery/source_images.tar.gz",
+          "sha256": "729bb29ddf984024e9fd02a906f020956474ddebd5d22c203005444e906821e6"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/names_boundaries_20260913T182647347625Z/review.json",
+          "sha256": "60bc34bcf9f55b5caded52569785cafd2601ecadee2c4443683466cd68aa5bb1"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/names_boundaries_20260913T183933791289Z/review.json",
+          "sha256": "6ac0230fb16f5a8f2ecc4f61894d1746b587e92fe3ad5944ae289c47ecadb1bb"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/boundary_only_20260913T185519657570Z/review.json",
+          "sha256": "43adadf3c35a6c6b166680c1724dd677b50ca5cd0fb911492bbb8413db4b78b8"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/independent_20260913T185024767959Z/receipt.json",
+          "sha256": "cab833e59fba40273bb74db0e9814f2a5b06c4b9e8604af8e8dc0308cf74d727"
+        },
+        {
+          "path": "data/recovery/ballia_media_reservations_2021/source_reviews/independent_20260913T185024767959Z/review_artifacts.tar.gz",
+          "sha256": "9b689e6d8566169330f8f4f3b011f7d90e049bd4bb64b1a3a2cf6bc2aaa94ccb"
+        }
+      ],
+      "scope": "Source observations from a media-hosted provisional 2021 document, not certified allocations. Both year columns share source-row parent IDs. Raw/effective cells, source codes, family counts and review provenance are retained. All 1441 boundaries and 1440 names reviewed; one name and one code literal remain unresolved. No code-class or women-reservation mapping inferred. The archived independent 18-row review is not fully blinded and does not establish overall accuracy.",
+      "source_base": "data/recovery/ballia_media_reservations_2021",
+      "source_document_path": "data/recovery/ballia_media_reservations_2021/acquisition/raw/a7cdcc048fb757b6c9e5_685743d6d929.pdf",
+      "source_document_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
+      "subject_temporality": "provisional_2021",
+      "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
+      "resolved_path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/rows.parquet",
+      "input_rows": 1459,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": {
+        "adapter_sha256": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
+        "reconciliation_receipt_path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/reconciliation_receipt.json",
+        "reconciliation_receipt_sha256": "cff8ef8d140e9e4091a39b807c7de03fb53b41114704a8dffcdc2a6f19b71a8c",
+        "source_year": 2021,
+        "subject_year": 2021,
+        "category_column": 11,
+        "code_mapping_applied": false,
+        "raw_cells_and_review_provenance_preserved": true,
+        "non_seat_rows_retained_in_parent_artifact": true
+      },
+      "source_adjudication": null,
+      "exported_rows": 1441,
+      "excluded_non_seat_rows": 18
+    },
+    {
+      "adapter": "ballia_historical",
+      "district_name": "\u092c\u0932\u093f\u092f\u093e",
+      "expected_rows": 102,
+      "expected_rows_by_year": {
+        "1995": 17,
+        "2000": 17,
+        "2005": 17,
+        "2010": 17,
+        "2015": 17,
+        "2021": 17
+      },
+      "expected_sha256": "466a45d3b9ac20e09676d74e3e1e87840e0144d3d7dec4e87d590e11b7f50154",
+      "historical_table": "samiti_head",
+      "id": "ballia_samiti_head_historical_reservations",
+      "office": "panchayat_samiti_head",
+      "path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/historical_reconciled/20260913T201439724976Z/samiti_head_year_observations.parquet",
+      "receipt_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/historical_reconciled/20260913T201439724976Z/receipt.json",
+      "receipt_sha256": "6e448357d30cb87b48283a85188e7bb86001d3558405fce24339abb0789afe24",
+      "record_kind": "seat_reservation",
+      "scope": "All 102 source-reported Ballia samiti-head reservation literals for six election years. One block-name reading remains explicitly held. Codes are preserved without category or women-reservation interpretation; rows are provisional source observations, not certified assignments.",
+      "source_document_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/acquisition/raw/e17ce24335a775b65365_4769b16fc47a.pdf",
+      "source_document_sha256": "4769b16fc47ad32009ecb24129a3c34f73bd809121a6de9c48eeebccbbb7a7cf",
+      "years": [
+        1995,
+        2000,
+        2005,
+        2010,
+        2015,
+        2021
+      ],
+      "sha256": "466a45d3b9ac20e09676d74e3e1e87840e0144d3d7dec4e87d590e11b7f50154",
+      "resolved_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/historical_reconciled/20260913T201439724976Z/samiti_head_year_observations.parquet",
+      "input_rows": 102,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": {
+        "adapter_sha256": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
+        "receipt_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/historical_reconciled/20260913T201439724976Z/receipt.json",
+        "receipt_sha256": "6e448357d30cb87b48283a85188e7bb86001d3558405fce24339abb0789afe24",
+        "historical_table": "samiti_head",
+        "years": [
+          1995,
+          2000,
+          2005,
+          2010,
+          2015,
+          2021
+        ],
+        "literal_code_mapping_applied": false,
+        "geographic_identity_mapping_applied": false,
+        "unresolved_values_quarantined_in_row_flags": true
+      },
+      "source_adjudication": null,
+      "exported_rows": 102
+    },
+    {
+      "adapter": "ballia_historical",
+      "district_name": "\u092c\u0932\u093f\u092f\u093e",
+      "expected_rows": 348,
+      "expected_rows_by_year": {
+        "1995": 58,
+        "2000": 58,
+        "2005": 58,
+        "2010": 58,
+        "2015": 58,
+        "2021": 58
+      },
+      "expected_sha256": "e03a83ff828aa3eb0ac65afd0b4ec62cd575020be1f1b288af7d2e398d19014c",
+      "historical_table": "zp_member",
+      "id": "ballia_zilla_parishad_member_historical_reservations",
+      "office": "zilla_parishad_member",
+      "path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/zp_staging/20260913T234323004881Z/year_observations.parquet",
+      "receipt_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/zp_staging/20260913T234323004881Z/build_receipt.json",
+      "receipt_sha256": "95a4023bb99a127d6c0f3c851746730a68049ef70b8a1c9a109abae9a246346e",
+      "record_kind": "seat_reservation",
+      "scope": "All 348 source-reported Ballia zilla-parishad-member reservation literals for six election years. Three source-name cells remain explicit holds affecting 18 observations. Codes are preserved without category or women-reservation interpretation; rows are provisional source observations, not certified assignments.",
+      "source_document_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/acquisition/raw/e17ce24335a775b65365_4769b16fc47a.pdf",
+      "source_document_sha256": "4769b16fc47ad32009ecb24129a3c34f73bd809121a6de9c48eeebccbbb7a7cf",
+      "years": [
+        1995,
+        2000,
+        2005,
+        2010,
+        2015,
+        2021
+      ],
+      "sha256": "e03a83ff828aa3eb0ac65afd0b4ec62cd575020be1f1b288af7d2e398d19014c",
+      "resolved_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/zp_staging/20260913T234323004881Z/year_observations.parquet",
+      "input_rows": 348,
+      "source_provenance": {
+        "paths_relative_to": "state_repository",
+        "source_base": ".",
+        "source_root_receipt": null,
+        "source_archive": null,
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+        "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
+      },
+      "source_adapter_evidence": {
+        "adapter_sha256": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
+        "receipt_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/zp_staging/20260913T234323004881Z/build_receipt.json",
+        "receipt_sha256": "95a4023bb99a127d6c0f3c851746730a68049ef70b8a1c9a109abae9a246346e",
+        "historical_table": "zp_member",
+        "years": [
+          1995,
+          2000,
+          2005,
+          2010,
+          2015,
+          2021
+        ],
+        "literal_code_mapping_applied": false,
+        "geographic_identity_mapping_applied": false,
+        "unresolved_values_quarantined_in_row_flags": true
+      },
+      "source_adjudication": null,
+      "exported_rows": 348
+    }
+  ],
+  "files": [
+    {
+      "path": "up_gram_panchayat_head_declared_winner.parquet",
+      "sha256": "bd402e5fd4c3d7b325d80814d52e70255a7c6228c7771ecec05e9f4f33d449ea",
+      "office": "gram_panchayat_head",
+      "record_kind": "declared_winner",
+      "rows": 212525,
+      "rows_by_year": {
+        "2005": 51872,
+        "2010": 51861,
+        "2021": 49773,
+        "2015": 59019
+      },
+      "quality_flags": {
+        "independent_office_release_validation_pending": 212525,
+        "original_http_source_provenance_unresolved": 212525,
+        "winner_markers_conflict": 2,
+        "valid_votes:unparsed_numeric_token": 202,
+        "vote_percentage:unparsed_numeric_token": 202,
+        "poll_percentage:unparsed_numeric_token": 202,
+        "poll_percentage:outside_percentage_range": 7
+      }
+    },
+    {
+      "path": "up_gram_panchayat_head_seat_reservation.parquet",
+      "sha256": "94b677e435251efadffa405836cfbcd8206fa4fc0015011316b3ab571d61920e",
+      "office": "gram_panchayat_head",
+      "record_kind": "seat_reservation",
+      "rows": 59426,
+      "rows_by_year": {
+        "2015": 59021,
+        "2021": 405
+      },
+      "quality_flags": {
+        "independent_review_pending": 59021,
+        "independent_office_release_validation_pending": 59426,
+        "independent_row_review_pending": 161,
+        "decoded_name_candidate_not_certified": 161,
+        "name_reading_uncertain": 42
+      }
+    },
+    {
+      "path": "up_gram_panchayat_member_seat_reservation.parquet",
+      "sha256": "e5cbb7943540c23ee376cd560ce0f4fb1de6f7931af342924c10fda710dec743",
+      "office": "gram_panchayat_member",
+      "record_kind": "seat_reservation",
+      "rows": 743685,
+      "rows_by_year": {
+        "2015": 743685
+      },
+      "quality_flags": {
+        "independent_review_pending": 743685,
+        "ward_identifier_unmapped": 743685,
+        "independent_office_release_validation_pending": 743685
+      }
+    },
+    {
+      "path": "up_municipal_corporation_mayor_candidate_record.parquet",
+      "sha256": "f75c0d3ca323e6de29269561e4063576458aabdca2c4e7870473ff6802c17c18",
+      "office": "municipal_corporation_mayor",
+      "record_kind": "candidate_record",
+      "rows": 145,
+      "rows_by_year": {
+        "2006": 145
+      },
+      "quality_flags": {
+        "legacy_font_decode_pending": 145,
+        "independent_source_review_pending": 145,
+        "candidate_record_not_explicit_winner": 145,
+        "independent_office_release_validation_pending": 145
+      }
+    },
+    {
+      "path": "up_municipal_corporation_mayor_declared_winner.parquet",
+      "sha256": "3b1bfdd4ad1e0d62c8a602fb7cb653ee18c300103308368d6f9b500158e260e3",
+      "office": "municipal_corporation_mayor",
+      "record_kind": "declared_winner",
+      "rows": 28,
+      "rows_by_year": {
+        "2017": 16,
+        "2012": 12
+      },
+      "quality_flags": {
+        "geography_unvalidated": 16,
+        "independent_review_pending": 28,
+        "independent_office_release_validation_pending": 28,
+        "geographic_crosswalk_pending": 12
+      }
+    },
+    {
+      "path": "up_municipal_corporation_mayor_seat_reservation.parquet",
+      "sha256": "05fbb128111c9282503ea22c29ca3e456acd4cc4e6ba97aee55b474bafc5ac87",
+      "office": "municipal_corporation_mayor",
+      "record_kind": "seat_reservation",
+      "rows": 30,
+      "rows_by_year": {
+        "2023": 17,
+        "2012": 13
+      },
+      "quality_flags": {
+        "independent_review_pending": 30,
+        "independent_office_release_validation_pending": 30
+      }
+    },
+    {
+      "path": "up_municipal_corporation_ward_member_candidate_record.parquet",
+      "sha256": "5eac19a219faf756a57ec32b4ec2656b752203f1544dd0ee478cc668e9c62c9e",
+      "office": "municipal_corporation_ward_member",
+      "record_kind": "candidate_record",
+      "rows": 8010,
+      "rows_by_year": {
+        "2006": 8010
+      },
+      "quality_flags": {
+        "legacy_font_decode_pending": 8010,
+        "independent_source_review_pending": 8010,
+        "candidate_record_not_explicit_winner": 8010,
+        "seat_reservation_not_read": 8010,
+        "independent_office_release_validation_pending": 8010,
+        "candidate_name_encoded_raw_crosses_column_boundary": 2,
+        "candidate_name_missing": 3
+      }
+    },
+    {
+      "path": "up_municipal_corporation_ward_member_declared_winner.parquet",
+      "sha256": "d397f98bcb712c08177fcd61afcb491eaf0f3120f0c40ffa5bc398d4f70c0fe0",
+      "office": "municipal_corporation_ward_member",
+      "record_kind": "declared_winner",
+      "rows": 2280,
+      "rows_by_year": {
+        "2017": 1300,
+        "2012": 980
+      },
+      "quality_flags": {
+        "geography_unvalidated": 1300,
+        "independent_review_pending": 2280,
+        "independent_office_release_validation_pending": 2280,
+        "candidate_category_unresolved": 1,
+        "valid_votes:unparsed_numeric_token": 1,
+        "vote_percentage:unparsed_numeric_token": 1,
+        "poll_percentage:unparsed_numeric_token": 1,
+        "geographic_crosswalk_pending": 980
+      }
+    },
+    {
+      "path": "up_municipal_corporation_ward_member_seat_reservation.parquet",
+      "sha256": "f5e9a9fd0fd4a0db8c1e89db428275070695d9d109ed9599687ee7b49d22ab15",
+      "office": "municipal_corporation_ward_member",
+      "record_kind": "seat_reservation",
+      "rows": 2460,
+      "rows_by_year": {
+        "2023": 1420,
+        "2012": 1040
+      },
+      "quality_flags": {
+        "independent_review_pending": 2460,
+        "independent_office_release_validation_pending": 2460
+      }
+    },
+    {
+      "path": "up_municipal_council_chair_candidate_record.parquet",
+      "sha256": "48ce4fc4bf7b6c40d9b2150c584fdb96495d613dbfa7f0c85ea5a882ac4e6109",
+      "office": "municipal_council_chair",
+      "record_kind": "candidate_record",
+      "rows": 1619,
+      "rows_by_year": {
+        "2006": 1619
+      },
+      "quality_flags": {
+        "legacy_font_decode_pending": 1619,
+        "independent_source_review_pending": 1619,
+        "candidate_record_not_explicit_winner": 1619,
+        "independent_office_release_validation_pending": 1619
+      }
+    },
+    {
+      "path": "up_municipal_council_chair_declared_winner.parquet",
+      "sha256": "9ef7ed710d0593b437a6867c525a70171ac39f43d80aad39f5b1a5d26dfde180",
+      "office": "municipal_council_chair",
+      "record_kind": "declared_winner",
+      "rows": 392,
+      "rows_by_year": {
+        "2017": 198,
+        "2012": 194
+      },
+      "quality_flags": {
+        "geography_unvalidated": 198,
+        "independent_review_pending": 392,
+        "independent_office_release_validation_pending": 392,
+        "geographic_crosswalk_pending": 194
+      }
+    },
+    {
+      "path": "up_municipal_council_chair_seat_reservation.parquet",
+      "sha256": "4f91184410d3064d03f0d4822e3435347a2ab43a4630e86da15a24293c731788",
+      "office": "municipal_council_chair",
+      "record_kind": "seat_reservation",
+      "rows": 394,
+      "rows_by_year": {
+        "2023": 200,
+        "2012": 194
+      },
+      "quality_flags": {
+        "independent_review_pending": 394,
+        "independent_office_release_validation_pending": 394
+      }
+    },
+    {
+      "path": "up_municipal_council_ward_member_candidate_record.parquet",
+      "sha256": "419e1e7739c7ecf513d6fa5ae42fd39459e3ff800fd09849885b83a519cb5e5a",
+      "office": "municipal_council_ward_member",
+      "record_kind": "candidate_record",
+      "rows": 22952,
+      "rows_by_year": {
+        "2006": 22952
+      },
+      "quality_flags": {
+        "legacy_font_decode_pending": 22952,
+        "independent_source_review_pending": 22952,
+        "candidate_record_not_explicit_winner": 22952,
+        "seat_reservation_not_read": 22952,
+        "independent_office_release_validation_pending": 22952,
+        "candidate_name_missing": 3,
+        "candidate_name_encoded_raw_crosses_column_boundary": 1
+      }
+    },
+    {
+      "path": "up_municipal_council_ward_member_declared_winner.parquet",
+      "sha256": "d4cfa91cdd2025270507aa0bc28bdb321db81525a1ff92862813b9420f69a91d",
+      "office": "municipal_council_ward_member",
+      "record_kind": "declared_winner",
+      "rows": 10358,
+      "rows_by_year": {
+        "2017": 5261,
+        "2012": 5097
+      },
+      "quality_flags": {
+        "geography_unvalidated": 5261,
+        "independent_review_pending": 10358,
+        "independent_office_release_validation_pending": 10358,
+        "valid_votes:unparsed_numeric_token": 29,
+        "vote_percentage:unparsed_numeric_token": 29,
+        "poll_percentage:unparsed_numeric_token": 29,
+        "candidate_category_unresolved": 3,
+        "geographic_crosswalk_pending": 5097
+      }
+    },
+    {
+      "path": "up_municipal_council_ward_member_seat_reservation.parquet",
+      "sha256": "49e5a9845a012999459a44b22ad978e09a1b4e721107bc36add38997271acaff",
+      "office": "municipal_council_ward_member",
+      "record_kind": "seat_reservation",
+      "rows": 10131,
+      "rows_by_year": {
+        "2023": 5352,
+        "2012": 4779
+      },
+      "quality_flags": {
+        "independent_review_pending": 10131,
+        "independent_office_release_validation_pending": 10131
+      }
+    },
+    {
+      "path": "up_nagar_panchayat_chair_candidate_record.parquet",
+      "sha256": "c63289d267796c1a50010db449c7001b69b8051ce0431c8f12497ad2fd080e9c",
+      "office": "nagar_panchayat_chair",
+      "record_kind": "candidate_record",
+      "rows": 3099,
+      "rows_by_year": {
+        "2006": 3099
+      },
+      "quality_flags": {
+        "legacy_font_decode_pending": 3099,
+        "independent_source_review_pending": 3099,
+        "candidate_record_not_explicit_winner": 3099,
+        "independent_office_release_validation_pending": 3099,
+        "candidate_name_encoded_raw_crosses_column_boundary": 2,
+        "nomination_number_raw_crosses_column_boundary": 1,
+        "candidate_name_missing": 1
+      }
+    },
+    {
+      "path": "up_nagar_panchayat_chair_declared_winner.parquet",
+      "sha256": "35530e56f765884c109f1a1f88a1852d6f53e49cbd8ad7bc8f2fec14f5ae672a",
+      "office": "nagar_panchayat_chair",
+      "record_kind": "declared_winner",
+      "rows": 861,
+      "rows_by_year": {
+        "2017": 438,
+        "2012": 423
+      },
+      "quality_flags": {
+        "geography_unvalidated": 438,
+        "independent_review_pending": 861,
+        "independent_office_release_validation_pending": 861,
+        "valid_votes:unparsed_numeric_token": 1,
+        "vote_percentage:unparsed_numeric_token": 1,
+        "poll_percentage:unparsed_numeric_token": 1,
+        "candidate_category_unresolved": 1,
+        "geographic_crosswalk_pending": 423,
+        "seat_category_unrecognized": 2
+      }
+    },
+    {
+      "path": "up_nagar_panchayat_chair_seat_reservation.parquet",
+      "sha256": "d81c8fdacb58d86e6619012d04d01a4b01177fdf1ced2c57e3029e3c6d76f0b2",
+      "office": "nagar_panchayat_chair",
+      "record_kind": "seat_reservation",
+      "rows": 967,
+      "rows_by_year": {
+        "2023": 544,
+        "2012": 423
+      },
+      "quality_flags": {
+        "independent_review_pending": 967,
+        "independent_office_release_validation_pending": 967
+      }
+    },
+    {
+      "path": "up_nagar_panchayat_ward_member_candidate_record.parquet",
+      "sha256": "9ee2f1772da86430a090a19538dae4b108c92d13a142c23d6a443d08632f4137",
+      "office": "nagar_panchayat_ward_member",
+      "record_kind": "candidate_record",
+      "rows": 17714,
+      "rows_by_year": {
+        "2006": 17714
+      },
+      "quality_flags": {
+        "legacy_font_decode_pending": 17714,
+        "independent_source_review_pending": 17714,
+        "candidate_record_not_explicit_winner": 17714,
+        "seat_reservation_not_read": 17714,
+        "independent_office_release_validation_pending": 17714,
+        "candidate_name_missing": 5,
+        "nomination_number_raw_crosses_column_boundary": 2
+      }
+    },
+    {
+      "path": "up_nagar_panchayat_ward_member_declared_winner.parquet",
+      "sha256": "01cab5faa1adf8b2f2d5af9dff7f20265e8c6b9ef2c81a201840e40c188f1b74",
+      "office": "nagar_panchayat_ward_member",
+      "record_kind": "declared_winner",
+      "rows": 10592,
+      "rows_by_year": {
+        "2017": 5434,
+        "2012": 5158
+      },
+      "quality_flags": {
+        "geography_unvalidated": 5434,
+        "independent_review_pending": 10592,
+        "independent_office_release_validation_pending": 10592,
+        "valid_votes:unparsed_numeric_token": 42,
+        "vote_percentage:unparsed_numeric_token": 42,
+        "poll_percentage:unparsed_numeric_token": 42,
+        "candidate_category_unresolved": 7,
+        "geographic_crosswalk_pending": 5158
+      }
+    },
+    {
+      "path": "up_nagar_panchayat_ward_member_seat_reservation.parquet",
+      "sha256": "bc26608b54a0b6a096b99f91d00166ba8338fa24b7b44cb126b6812c640b40a8",
+      "office": "nagar_panchayat_ward_member",
+      "record_kind": "seat_reservation",
+      "rows": 12135,
+      "rows_by_year": {
+        "2023": 7177,
+        "2012": 4958
+      },
+      "quality_flags": {
+        "independent_review_pending": 12135,
+        "independent_office_release_validation_pending": 12135
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_head_declared_winner.parquet",
+      "sha256": "eb0aaf7ed8c0abe01828bf03273589f38005785c45411b6f6f5e2affd8ee8c95",
+      "office": "panchayat_samiti_head",
+      "record_kind": "declared_winner",
+      "rows": 816,
+      "rows_by_year": {
+        "2015": 816
+      },
+      "quality_flags": {
+        "valid_votes:unparsed_numeric_token": 385,
+        "vote_percentage:unparsed_numeric_token": 385,
+        "poll_percentage:unparsed_numeric_token": 385,
+        "independent_office_release_validation_pending": 816,
+        "original_http_source_provenance_unresolved": 816
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_head_elected_official.parquet",
+      "sha256": "7bf2d4d021707115df1969e93c2e957cd783f80543998c4b23f84a30883c4a8c",
+      "office": "panchayat_samiti_head",
+      "record_kind": "elected_official",
+      "rows": 820,
+      "rows_by_year": {
+        "2006": 820
+      },
+      "quality_flags": {
+        "mixed_legacy_encodings_undecoded": 820,
+        "overprinted_glyphs_unreviewed": 820,
+        "independent_review_pending": 820,
+        "historical_geography_unmapped": 820,
+        "reservation_assignment_unadjudicated": 820,
+        "independent_office_release_validation_pending": 820,
+        "candidate_category_unmapped": 2,
+        "post_category_unmapped": 1,
+        "missing_sex": 2,
+        "missing_candidate_and_related_name": 1
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_head_reported_official.parquet",
+      "sha256": "93db8624d89bc2cd7710d5f6052ba55e65b8e4a67047f1207243a7d7f416a958",
+      "office": "panchayat_samiti_head",
+      "record_kind": "reported_official",
+      "rows": 821,
+      "rows_by_year": {
+        "2010": 821
+      },
+      "quality_flags": {
+        "independent_row_review_pending": 821,
+        "legacy_font_decoding_pending": 821,
+        "source_reviewed_label_dictionary_applied": 821,
+        "original_http_source_provenance_unresolved": 821,
+        "independent_office_release_validation_pending": 821,
+        "seat_caste_axis_not_explicit": 118,
+        "pri_2010_candidate_label_unresolved": 3,
+        "cell_text_crosses_column_boundary": 2,
+        "pri_2010_seat_label_unresolved": 1
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_head_seat_reservation.parquet",
+      "sha256": "9a267184931cc4b1c1e07a8fa8a7a53f2fcad8edabf302a45cff12c175e9ee2b",
+      "office": "panchayat_samiti_head",
+      "record_kind": "seat_reservation",
+      "rows": 933,
+      "rows_by_year": {
+        "2015": 838,
+        "2021": 27,
+        "1995": 17,
+        "2000": 17,
+        "2005": 17,
+        "2010": 17
+      },
+      "quality_flags": {
+        "independent_review_pending": 821,
+        "independent_office_release_validation_pending": 831,
+        "independent_row_review_pending": 4,
+        "decoded_name_candidate_not_certified": 4,
+        "reservation_codes_unmapped": 102,
+        "longitudinal_identity_unestablished": 102,
+        "provisional_source": 102,
+        "provisional_publication": 102,
+        "not_canonical_allocations": 102,
+        "source_block_name_unresolved": 6,
+        "name_source_reading_unresolved": 6
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_junior_deputy_elected_official.parquet",
+      "sha256": "b2196264c85fe9d41a944731b1b3df122ed150d7d04fb4e1060521c79f22bb23",
+      "office": "panchayat_samiti_junior_deputy",
+      "record_kind": "elected_official",
+      "rows": 819,
+      "rows_by_year": {
+        "2006": 819
+      },
+      "quality_flags": {
+        "mixed_legacy_encodings_undecoded": 819,
+        "overprinted_glyphs_unreviewed": 819,
+        "independent_review_pending": 819,
+        "historical_geography_unmapped": 819,
+        "reservation_assignment_unadjudicated": 819,
+        "independent_office_release_validation_pending": 819,
+        "candidate_category_unmapped": 12,
+        "missing_candidate_and_related_name": 3,
+        "missing_sex": 3
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_member_declared_winner.parquet",
+      "sha256": "8923b25334d9f7951124bc0accc22ee65cc0829991817e939c484f15ecc2dac4",
+      "office": "panchayat_samiti_member",
+      "record_kind": "declared_winner",
+      "rows": 77743,
+      "rows_by_year": {
+        "2015": 77743
+      },
+      "quality_flags": {
+        "independent_office_release_validation_pending": 77743,
+        "original_http_source_provenance_unresolved": 77743,
+        "valid_votes:unparsed_numeric_token": 2017,
+        "vote_percentage:unparsed_numeric_token": 2017,
+        "poll_percentage:unparsed_numeric_token": 2017,
+        "poll_percentage:outside_percentage_range": 37
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_member_reported_official.parquet",
+      "sha256": "48b07340022dbbd81749f57cfe20b9a85150550f3a424ff792be2420f5aaa981",
+      "office": "panchayat_samiti_member",
+      "record_kind": "reported_official",
+      "rows": 127598,
+      "rows_by_year": {
+        "2005": 64277,
+        "2010": 63321
+      },
+      "quality_flags": {
+        "legacy_name_decode_pending": 127598,
+        "independent_source_review_pending": 127598,
+        "decoded_name_candidate_not_certified": 64277,
+        "independent_office_release_validation_pending": 127598,
+        "block_context_carried_from_source_heading_page": 99565,
+        "reservation_class_not_explicit_in_source": 9985,
+        "seat_reservation_cell_empty": 53,
+        "noncategory_status_in_reservation_cell": 8,
+        "source_repeated_key_reviewed": 26,
+        "duplicate_source_ward_name_variant": 2,
+        "conflicting_source_seat_key": 6,
+        "candidate_cell_contains_vacancy_notice": 1,
+        "ward_name_encoded_raw_crosses_column_boundary": 1,
+        "duplicate_source_row": 18,
+        "reported_sex_label_unmapped": 2,
+        "candidate_name_missing": 9,
+        "source_seat_key_collision": 15,
+        "ward_number_unresolved": 3,
+        "source_ward_number_nonpositive": 3,
+        "source_candidate_age_nonpositive": 109,
+        "candidate_category_encoded_raw_unmapped": 28,
+        "related_person_encoded_raw_crosses_column_boundary": 7,
+        "seat_reservation_encoded_raw_unmapped": 11,
+        "source_seat_category_blank": 1,
+        "candidate_name_encoded_raw_crosses_column_boundary": 2,
+        "reported_sex_unmapped": 1
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_member_seat_reservation.parquet",
+      "sha256": "cba75476c9e852c8bab0d69aed292cca4a673e8594f708f79464e31ee6f5d407",
+      "office": "panchayat_samiti_member",
+      "record_kind": "seat_reservation",
+      "rows": 80993,
+      "rows_by_year": {
+        "2015": 79229,
+        "2021": 1764
+      },
+      "quality_flags": {
+        "independent_review_pending": 80670,
+        "independent_office_release_validation_pending": 78111,
+        "independent_row_review_pending": 323,
+        "decoded_name_candidate_not_certified": 323,
+        "category_text_column_disagreement": 1,
+        "provisional_publication": 2882,
+        "reservation_code_semantics_unmapped": 2882,
+        "not_canonical_allocations": 2882,
+        "raw_quality_flags_preserved_in_source_fields": 2882,
+        "retrospective_2015_not_independent_source": 1441,
+        "name_source_reading_unresolved": 2,
+        "source_numeric_code_issue_retained": 2
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_member_source_status_notice.parquet",
+      "sha256": "0c4361ead38609805e0674792d52229c14f76f80bc4f7a542854307dd5076916",
+      "office": "panchayat_samiti_member",
+      "record_kind": "source_status_notice",
+      "rows": 12,
+      "rows_by_year": {
+        "2010": 12
+      },
+      "quality_flags": {
+        "legacy_name_decode_pending": 12,
+        "independent_source_review_pending": 12,
+        "block_context_carried_from_source_heading_page": 10,
+        "seat_reservation_encoded_raw_unmapped": 4,
+        "candidate_category_encoded_raw_unmapped": 12,
+        "source_seat_key_collision": 1,
+        "source_candidate_age_nonpositive": 12,
+        "non_person_source_row": 12,
+        "source_status_label_pending_independent_review": 12,
+        "independent_office_release_validation_pending": 12
+      }
+    },
+    {
+      "path": "up_panchayat_samiti_senior_deputy_elected_official.parquet",
+      "sha256": "3147e0daceaedd6f0ef7126362f79e01da4f7c1429dd31dcfece152301fca6bb",
+      "office": "panchayat_samiti_senior_deputy",
+      "record_kind": "elected_official",
+      "rows": 820,
+      "rows_by_year": {
+        "2006": 820
+      },
+      "quality_flags": {
+        "mixed_legacy_encodings_undecoded": 820,
+        "overprinted_glyphs_unreviewed": 820,
+        "independent_review_pending": 820,
+        "historical_geography_unmapped": 820,
+        "reservation_assignment_unadjudicated": 820,
+        "independent_office_release_validation_pending": 820,
+        "candidate_category_unmapped": 12,
+        "missing_candidate_and_related_name": 2,
+        "missing_sex": 2
+      }
+    },
+    {
+      "path": "up_zilla_parishad_head_declared_winner.parquet",
+      "sha256": "6aecbea6fd5b8f4a31bd90dad963e41ea014e80f5c5cc1ebecdafc61c7260d13",
+      "office": "zilla_parishad_head",
+      "record_kind": "declared_winner",
+      "rows": 74,
+      "rows_by_year": {
+        "2015": 74
+      },
+      "quality_flags": {
+        "independent_office_release_validation_pending": 74,
+        "original_http_source_provenance_unresolved": 74,
+        "valid_votes:unparsed_numeric_token": 38,
+        "vote_percentage:unparsed_numeric_token": 38,
+        "poll_percentage:unparsed_numeric_token": 38
+      }
+    },
+    {
+      "path": "up_zilla_parishad_head_elected_official.parquet",
+      "sha256": "4ec6b7a22a25a2c99f34f95532d96d2a649219e0018efe7cef340bc2b6a49a23",
+      "office": "zilla_parishad_head",
+      "record_kind": "elected_official",
+      "rows": 70,
+      "rows_by_year": {
+        "2005": 70
+      },
+      "quality_flags": {
+        "legacy_text_names_undecoded": 70,
+        "independent_review_pending": 70,
+        "reservation_assignment_unadjudicated": 70,
+        "historical_geography_unmapped": 70,
+        "independent_office_release_validation_pending": 70,
+        "missing_ward_name": 7
+      }
+    },
+    {
+      "path": "up_zilla_parishad_head_reported_official.parquet",
+      "sha256": "7ed9427f5fe618d31ecf9e84258d89993eca159d773eb8d23d4915559fb720b5",
+      "office": "zilla_parishad_head",
+      "record_kind": "reported_official",
+      "rows": 72,
+      "rows_by_year": {
+        "2010": 72
+      },
+      "quality_flags": {
+        "independent_row_review_pending": 72,
+        "legacy_font_decoding_pending": 72,
+        "reported_category_axis_unresolved": 72,
+        "original_http_source_provenance_unresolved": 72,
+        "independent_office_release_validation_pending": 72,
+        "district_election_abeyance_footnote": 2
+      }
+    },
+    {
+      "path": "up_zilla_parishad_head_seat_reservation.parquet",
+      "sha256": "3a75d8a049a50653c70664f9663b528e7e7309332b506cfc70bdcdbf9ff47219",
+      "office": "zilla_parishad_head",
+      "record_kind": "seat_reservation",
+      "rows": 75,
+      "rows_by_year": {
+        "2015": 75
+      },
+      "quality_flags": {
+        "independent_review_pending": 75,
+        "independent_office_release_validation_pending": 75
+      }
+    },
+    {
+      "path": "up_zilla_parishad_member_declared_winner.parquet",
+      "sha256": "a03bc9aa23f6ad2eb2dee17b62c2181afb58af6995da121e4c8f8ca28b224ac8",
+      "office": "zilla_parishad_member",
+      "record_kind": "declared_winner",
+      "rows": 3121,
+      "rows_by_year": {
+        "2015": 3121
+      },
+      "quality_flags": {
+        "independent_office_release_validation_pending": 3121,
+        "original_http_source_provenance_unresolved": 3121,
+        "valid_votes:unparsed_numeric_token": 18,
+        "vote_percentage:unparsed_numeric_token": 18,
+        "poll_percentage:unparsed_numeric_token": 18,
+        "poll_percentage:outside_percentage_range": 1
+      }
+    },
+    {
+      "path": "up_zilla_parishad_member_elected_official.parquet",
+      "sha256": "5666f60aba35755741f8275e64e44ff3ea40965a89c43cfe36af2967025838d7",
+      "office": "zilla_parishad_member",
+      "record_kind": "elected_official",
+      "rows": 2561,
+      "rows_by_year": {
+        "2005": 2561
+      },
+      "quality_flags": {
+        "legacy_text_names_undecoded": 2561,
+        "independent_review_pending": 2561,
+        "reservation_assignment_unadjudicated": 2561,
+        "historical_geography_unmapped": 2561,
+        "independent_office_release_validation_pending": 2561,
+        "missing_ward_name": 229,
+        "missing_candidate_name": 3,
+        "missing_category": 3,
+        "unmapped_category": 5,
+        "column_overflow_ward_name": 12
+      }
+    },
+    {
+      "path": "up_zilla_parishad_member_reported_official.parquet",
+      "sha256": "d3119f89a54bb28b0e380e6b7766e4f080772c548d9f7f88f54695d0372e564e",
+      "office": "zilla_parishad_member",
+      "record_kind": "reported_official",
+      "rows": 2624,
+      "rows_by_year": {
+        "2010": 2624
+      },
+      "quality_flags": {
+        "independent_row_review_pending": 2624,
+        "legacy_font_decoding_pending": 2624,
+        "source_reviewed_label_dictionary_applied": 2624,
+        "original_http_source_provenance_unresolved": 2624,
+        "independent_office_release_validation_pending": 2624,
+        "seat_caste_axis_not_explicit": 378,
+        "cell_text_crosses_column_boundary": 3,
+        "pri_2010_candidate_label_unresolved": 6,
+        "pri_2010_seat_label_unresolved": 2
+      }
+    },
+    {
+      "path": "up_zilla_parishad_member_seat_reservation.parquet",
+      "sha256": "527d2e112acce00931a2999308ea3fde2b02a793e74d8e531e972848afd99c64",
+      "office": "zilla_parishad_member",
+      "record_kind": "seat_reservation",
+      "rows": 3503,
+      "rows_by_year": {
+        "2015": 3179,
+        "2021": 92,
+        "1995": 58,
+        "2000": 58,
+        "2005": 58,
+        "2010": 58
+      },
+      "quality_flags": {
+        "independent_review_pending": 3121,
+        "independent_office_release_validation_pending": 3155,
+        "independent_row_review_pending": 14,
+        "decoded_name_candidate_not_certified": 14,
+        "provisional_publication": 348,
+        "reservation_codes_unmapped": 348,
+        "not_canonical_allocations": 348,
+        "name_source_reading_unresolved": 18
+      }
+    }
+  ],
+  "identical_head_source_copies": {
+    "62b3e671f29d98749e1f9cdc22beb4e2489d99c18db741bb07880499afaa7aa8": [
+      "\u0905\u092e\u0930\u094b\u0939\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0905\u092e\u0947\u0920\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0905\u092e\u094d\u092c\u0947\u0921\u0915\u0930 \u0928\u0917\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0905\u092f\u094b\u0927\u094d\u092f\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0905\u0932\u0940\u0917\u0922\u093c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0906\u0917\u0930\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0906\u091c\u092e\u0917\u0922\u093c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0907\u091f\u093e\u0935\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0909\u0928\u094d\u0928\u093e\u0935-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u090f\u091f\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0914\u0930\u0948\u092f\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0915\u0928\u094d\u0928\u094c\u091c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0915\u093e\u0928\u092a\u0941\u0930 \u0926\u0947\u0939\u093e\u0924-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0915\u093e\u0928\u092a\u0941\u0930 \u0928\u0917\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0915\u093e\u0938\u0917\u0902\u091c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0915\u0941\u0936\u0940\u0928\u0917\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0915\u094c\u0936\u093e\u092e\u094d\u092c\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0917\u093e\u091c\u093c\u0940\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0917\u093e\u091c\u093f\u092f\u093e\u092c\u093e\u0926-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0917\u094b\u0902\u0921\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0917\u094b\u0930\u0916\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0917\u094c\u0924\u092e\u092c\u0941\u0926\u094d\u0927 \u0928\u0917\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u091a\u0928\u094d\u0926\u094c\u0932\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u091a\u093f\u0924\u094d\u0930\u0915\u0942\u091f-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u091c\u093e\u0932\u094c\u0928-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u091c\u094c\u0928\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u091d\u093e\u0902\u0938\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0926\u0947\u0935\u0930\u093f\u092f\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092a\u0940\u0932\u0940\u092d\u0940\u0924-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092a\u094d\u0930\u0924\u093e\u092a\u0917\u0922\u093c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092a\u094d\u0930\u092f\u093e\u0917\u0930\u093e\u091c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092b\u0924\u0947\u0939\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092b\u093c\u0930\u094d\u0930\u0941\u0916\u093e\u092c\u093e\u0926-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092b\u093f\u0930\u094b\u091c\u093c\u093e\u092c\u093e\u0926-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u0926\u093e\u092f\u0942\u0902-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u0930\u0947\u0932\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u0932\u0930\u093e\u092e\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u0932\u093f\u092f\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u0938\u094d\u0924\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u0939\u0930\u093e\u0907\u091a-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u093e\u0902\u0926\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u093e\u0917\u092a\u0924-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u093e\u0930\u093e\u092c\u0902\u0915\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u093f\u091c\u0928\u094c\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092c\u0941\u0932\u0902\u0926\u0936\u0939\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092d\u0926\u094b\u0939\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u090a-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0925\u0941\u0930\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0939\u0930\u093e\u091c\u0917\u0902\u091c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0939\u094b\u092c\u093e-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0940\u0930\u091c\u093e\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0941\u091c\u093c\u092b\u094d\u092b\u0930\u0928\u0917\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0941\u0930\u093e\u0926\u093e\u092c\u093e\u0926-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0947\u0930\u0920-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u092e\u0948\u0928\u092a\u0941\u0930\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0930\u093e\u092e\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0930\u093e\u092f\u092c\u0930\u0947\u0932\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0932\u0916\u0928\u090a-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0932\u0916\u0940\u092e\u092a\u0941\u0930 \u0916\u0940\u0930\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0932\u0932\u093f\u0924\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0935\u093e\u0930\u093e\u0923\u0938\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0936\u093e\u092e\u0932\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0936\u093e\u0939\u091c\u0939\u093e\u0902\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0936\u094d\u0930\u093e\u0935\u0938\u094d\u0924\u0940-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0938\u0928\u094d\u0924 \u0915\u092c\u0940\u0930 \u0928\u0917\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0938\u092e\u094d\u092d\u0932-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0938\u0939\u093e\u0930\u0928\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0938\u093f\u0926\u094d\u0927\u093e\u0930\u094d\u0925 \u0928\u0917\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0938\u0940\u0924\u093e\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0938\u0941\u0932\u0924\u093e\u0928\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0938\u094b\u0928\u092d\u0926\u094d\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0939\u092e\u0940\u0930\u092a\u0941\u0930-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0939\u0930\u0926\u094b\u0908-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0939\u093e\u0925\u0930\u0938-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv",
+      "\u0939\u093e\u092a\u0941\u0921\u093c-\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916.csv"
+    ],
+    "55212c31750799b684b9de0c8dffdfb3bc16fb0b6607479286efacb2307971d8": [
+      "\u0905\u092e\u0930\u094b\u0939\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0905\u092e\u0947\u0920\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0905\u092e\u094d\u092c\u0947\u0921\u0915\u0930 \u0928\u0917\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0905\u092f\u094b\u0927\u094d\u092f\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0905\u0932\u0940\u0917\u0922\u093c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0906\u0917\u0930\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0906\u091c\u092e\u0917\u0922\u093c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0907\u091f\u093e\u0935\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0909\u0928\u094d\u0928\u093e\u0935-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u090f\u091f\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0914\u0930\u0948\u092f\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0915\u0928\u094d\u0928\u094c\u091c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0915\u093e\u0928\u092a\u0941\u0930 \u0926\u0947\u0939\u093e\u0924-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0915\u093e\u0928\u092a\u0941\u0930 \u0928\u0917\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0915\u093e\u0938\u0917\u0902\u091c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0915\u0941\u0936\u0940\u0928\u0917\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0915\u094c\u0936\u093e\u092e\u094d\u092c\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0917\u093e\u091c\u093c\u0940\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0917\u093e\u091c\u093f\u092f\u093e\u092c\u093e\u0926-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0917\u094b\u0902\u0921\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0917\u094b\u0930\u0916\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0917\u094c\u0924\u092e\u092c\u0941\u0926\u094d\u0927 \u0928\u0917\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u091a\u0928\u094d\u0926\u094c\u0932\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u091a\u093f\u0924\u094d\u0930\u0915\u0942\u091f-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u091c\u093e\u0932\u094c\u0928-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u091c\u094c\u0928\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u091d\u093e\u0902\u0938\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0926\u0947\u0935\u0930\u093f\u092f\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092a\u0940\u0932\u0940\u092d\u0940\u0924-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092a\u094d\u0930\u0924\u093e\u092a\u0917\u0922\u093c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092a\u094d\u0930\u092f\u093e\u0917\u0930\u093e\u091c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092b\u0924\u0947\u0939\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092b\u093c\u0930\u094d\u0930\u0941\u0916\u093e\u092c\u093e\u0926-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092b\u093f\u0930\u094b\u091c\u093c\u093e\u092c\u093e\u0926-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u0926\u093e\u092f\u0942\u0902-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u0930\u0947\u0932\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u0932\u0930\u093e\u092e\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u0932\u093f\u092f\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u0938\u094d\u0924\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u0939\u0930\u093e\u0907\u091a-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u093e\u0902\u0926\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u093e\u0917\u092a\u0924-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u093e\u0930\u093e\u092c\u0902\u0915\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u093f\u091c\u0928\u094c\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092c\u0941\u0932\u0902\u0926\u0936\u0939\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092d\u0926\u094b\u0939\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u090a-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0925\u0941\u0930\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0939\u0930\u093e\u091c\u0917\u0902\u091c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0939\u094b\u092c\u093e-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0940\u0930\u091c\u093e\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0941\u091c\u093c\u092b\u094d\u092b\u0930\u0928\u0917\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0941\u0930\u093e\u0926\u093e\u092c\u093e\u0926-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0947\u0930\u0920-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u092e\u0948\u0928\u092a\u0941\u0930\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0930\u093e\u092e\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0930\u093e\u092f\u092c\u0930\u0947\u0932\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0932\u0916\u0928\u090a-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0932\u0916\u0940\u092e\u092a\u0941\u0930 \u0916\u0940\u0930\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0932\u0932\u093f\u0924\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0935\u093e\u0930\u093e\u0923\u0938\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0936\u093e\u092e\u0932\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0936\u093e\u0939\u091c\u0939\u093e\u0902\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0936\u094d\u0930\u093e\u0935\u0938\u094d\u0924\u0940-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0938\u0928\u094d\u0924 \u0915\u092c\u0940\u0930 \u0928\u0917\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0938\u092e\u094d\u092d\u0932-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0938\u0939\u093e\u0930\u0928\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0938\u093f\u0926\u094d\u0927\u093e\u0930\u094d\u0925 \u0928\u0917\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0938\u0940\u0924\u093e\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0938\u0941\u0932\u0924\u093e\u0928\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0938\u094b\u0928\u092d\u0926\u094d\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0939\u092e\u0940\u0930\u092a\u0941\u0930-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0939\u0930\u0926\u094b\u0908-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0939\u093e\u0925\u0930\u0938-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv",
+      "\u0939\u093e\u092a\u0941\u0921\u093c-\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937.csv"
+    ]
+  },
+  "pending_source_adapters": [],
+  "assignment_usable": false,
+  "new_paid_api_cost_usd": 0,
+  "offices": [
+    "gram_panchayat_head",
+    "gram_panchayat_member",
+    "municipal_corporation_mayor",
+    "municipal_corporation_ward_member",
+    "municipal_council_chair",
+    "municipal_council_ward_member",
+    "nagar_panchayat_chair",
+    "nagar_panchayat_ward_member",
+    "panchayat_samiti_head",
+    "panchayat_samiti_junior_deputy",
+    "panchayat_samiti_member",
+    "panchayat_samiti_senior_deputy",
+    "zilla_parishad_head",
+    "zilla_parishad_member"
+  ]
+}

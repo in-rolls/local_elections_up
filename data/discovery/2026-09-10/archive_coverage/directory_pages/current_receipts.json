@@ -1,0 +1,123 @@
+[
+  {
+    "url": "https://igod.gov.in/index.php/district/-Tg3tXQBW7DqAzx4Vrqs/blocks",
+    "retrieved_utc": "2026-09-10T09:31:32.749168+00:00",
+    "final_url": "https://igod.gov.in/index.php/district/-Tg3tXQBW7DqAzx4Vrqs/blocks",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/e75bf68ab019aab355e6_bde0334cfa4b.html",
+    "bytes": 35602,
+    "sha256": "bde0334cfa4b2516dde613ed230470f50e5ddff3b52e64925623c8d3ab0b54d5",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/25/5",
+    "retrieved_utc": "2026-09-10T09:31:12.208306+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/9a4874dad8305cb2ebb7_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/30/5",
+    "retrieved_utc": "2026-09-10T09:31:13.776241+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/874a281316b9062e5a15_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/35/5",
+    "retrieved_utc": "2026-09-10T09:31:15.974849+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/fdc52a75ad4416d0a2fa_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/40/5",
+    "retrieved_utc": "2026-09-10T09:31:18.072346+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/97fe18d79bccaf9e7609_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/45/5",
+    "retrieved_utc": "2026-09-10T09:31:20.165064+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/3b6e3344fd5706f2d2d4_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/50/5",
+    "retrieved_utc": "2026-09-10T09:31:22.261772+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/c4ace64bbed3e0121bac_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/55/5",
+    "retrieved_utc": "2026-09-10T09:31:24.361486+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/5f51d1a05941bdc66ad8_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/60/5",
+    "retrieved_utc": "2026-09-10T09:31:26.458528+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/8b479da4df6395fdc6a8_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/65/5",
+    "retrieved_utc": "2026-09-10T09:31:28.554788+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/a22700ab8436cabf66ae_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations_more/70/5",
+    "retrieved_utc": "2026-09-10T09:31:30.656570+00:00",
+    "final_url": "https://igod.gov.in/index.php",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/df57e0b6a8c8f0fe7f7b_36b89d7ac180.html",
+    "bytes": 32534,
+    "sha256": "36b89d7ac180d75bf33ccce396a15df2462a65f2431ddf4ec80a3aef73a874ab",
+    "status": "ok_html"
+  }
+]

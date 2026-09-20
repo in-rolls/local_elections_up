@@ -10,7 +10,10 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts/extract_sec_winner_table.py"
+SCRIPT = (
+    Path(__file__).resolve().parents[1]
+    / "src/local_elections_up/extract_sec_winner_table.py"
+)
 UNOPPOSED = "\u0928\u093f\u0930\u094d\u0935\u093f\u0930\u094b\u0927"
 
 

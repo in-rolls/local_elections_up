@@ -12,7 +12,7 @@ matching scripts, and the four immutable UP election-panel inputs.
 - `../../crosswalks/active/up_block_xwalk.csv`: the reviewed historical election
   block-to-LGD crosswalk, distinct from the existing 2021 block crosswalk.
 
-The historical bridge in `data/fin/up_gp_lgd_bridge.parquet` preserves the
+The historical bridge in `data/release/panels/gp_lgd_bridge.parquet` preserves the
 reference matching universe: **2005–2010 linked election records with known
 reservation in both waves**. This is an explicitly retained reference vintage,
 not a full-2010 geographic directory. Later-panel projections likewise retain

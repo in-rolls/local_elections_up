@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations",
+    "retrieved_utc": "2026-09-10T09:29:57.672021+00:00",
+    "final_url": "https://igod.gov.in/index.php/sg/UP/E042/organizations",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "raw/ed8cfb5f55a8f3312169_b7518f19bcf0.html",
+    "bytes": 67595,
+    "sha256": "b7518f19bcf0c54e4ac25e9f1cbe97afdc20accac14f526b283475c7dad843b6",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://sec.up.nic.in/site/electionresult.aspx",
+    "retrieved_utc": "2026-09-10T09:30:02.244950+00:00",
+    "final_url": "https://sec.up.nic.in/site/electionresult.aspx",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "raw/f74ee2b5077527b646cf_760d4ef2f12c.html",
+    "bytes": 26149,
+    "sha256": "760d4ef2f12c8b69d76cbc541c9514ff4f177baa8af400461729662576d939bc",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://sec.up.nic.in/site/rural_list.aspx",
+    "retrieved_utc": "2026-09-10T09:29:58.904460+00:00",
+    "final_url": "https://sec.up.nic.in/site/rural_list.aspx",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "raw/0c37efc0607124e16039_554f3cbdaed7.html",
+    "bytes": 57694,
+    "sha256": "554f3cbdaed76866f9d166cbf71588c3445aeffbef0a4aa6f0c91223b19ab1f4",
+    "status": "ok_html"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=sec.up.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true",
+    "retrieved_utc": "2026-09-10T09:30:03.443581+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=sec.up.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/6942fb48bec4f5e881b4_990d05df41bc.json",
+    "bytes": 683987,
+    "sha256": "990d05df41bcd6b00e82d155331c394655b5b3b1e604554035901d87c7b90678",
+    "status": "ok_json"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=sec.uttarpradesh.gov.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true",
+    "retrieved_utc": "2026-09-10T09:30:05.010647+00:00",
+    "final_url": "https://web.archive.org/cdx/search/cdx?url=sec.uttarpradesh.gov.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true",
+    "http_status": 200,
+    "content_type": "application/json",
+    "path": "raw/fad4a14069332f5dd127_db6885aee9a1.json",
+    "bytes": 170,
+    "sha256": "db6885aee9a185bb5baf1e7c44c8be22916582435a659bce8496337a642731e1",
+    "status": "ok_json"
+  }
+]

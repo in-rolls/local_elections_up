@@ -50,8 +50,8 @@ test_that("blocks and conflicting script identities prevent false exact links", 
 })
 
 test_that("four-wave histories consist of the published adjacent links", {
-  links <- read_parquet("data/fin/up_gp_adjacent_links.parquet")
-  history <- read_parquet("data/fin/up_gp_four_election_links.parquet")
+  links <- read_parquet("data/release/panels/gp_adjacent_links.parquet")
+  history <- read_parquet("data/release/panels/gp_four_election_links.parquet")
   expect_equal(anyDuplicated(links[c("year_from", "year_to", "left_id")]), 0L)
   expect_equal(anyDuplicated(links[c("year_from", "year_to", "right_id")]), 0L)
   for (years in list(c(2005L, 2010L), c(2010L, 2015L), c(2015L, 2021L))) {
@@ -60,7 +60,7 @@ test_that("four-wave histories consist of the published adjacent links", {
       select(all_of(paste0("election_id_", years))) |>
       setNames(c("left_id", "right_id"))
     expect_equal(nrow(anti_join(selected, pair, by = c("left_id", "right_id"))), 0L)
-    panel <- read_parquet(paste0("data/fin/up_gp_panel_", paste(years, collapse = "_"), ".parquet"))
+    panel <- read_parquet(paste0("data/release/panels/gp_panel_", paste(years, collapse = "_"), ".parquet"))
     expect_equal(nrow(panel), nrow(pair))
   }
 })
@@ -84,7 +84,7 @@ test_that("competing script identities are left for review", {
 })
 
 test_that("published decisions do not depend on the order of any source rows", {
-  source <- read_parquet("data/fin/up_gp_elections_standardized.parquet") |>
+  source <- read_parquet("data/release/gp/gp_head_election_records.parquet") |>
     mutate(
       district = normalize_link_name(district_name_eng),
       block_hindi = normalize_link_name(block_name_hindi),
@@ -94,7 +94,7 @@ test_that("published decisions do not depend on the order of any source rows", {
       digits_hindi = link_digits(gp_hindi), digits_english = link_digits(gp_english)
     ) |>
     slice(rev(seq_len(n())))
-  published <- read_parquet("data/fin/up_gp_link_candidates.parquet")
+  published <- read_parquet("data/release/panels/gp_link_candidates.parquet")
   for (years in list(c(2005L, 2010L), c(2010L, 2015L), c(2015L, 2021L))) {
     rebuilt <- link_adjacent_elections(
       filter(source, election_year == years[1]), filter(source, election_year == years[2]),

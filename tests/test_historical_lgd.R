@@ -63,7 +63,7 @@ test_that("projection masks ambiguous English names and keeps 2015 as the later-
 })
 
 test_that("the published reference bridge preserves four panel populations and linkage counts", {
-  bridge <- read_parquet("data/fin/up_gp_lgd_bridge.parquet")
+  bridge <- read_parquet("data/release/panels/gp_lgd_bridge.parquet")
   expect_equal(anyDuplicated(bridge[c("panel", "anchor_key")]), 0L)
   expected <- tibble(
     panel = c("2005_2010", "2010_2015", "2015_2021", "2005_2010_2015_2021"),
@@ -75,7 +75,7 @@ test_that("the published reference bridge preserves four panel populations and l
   expect_false(any(grepl("^(pc01|pc11|shrid|treat|female|caste|reservation)", names(bridge))))
   for (name in names(lgd_panel_years)) {
     years <- lgd_panel_years[[name]]
-    source <- read_parquet(paste0("data/fin/up_gp_panel_", name, ".parquet"))
+    source <- read_parquet(paste0("data/release/panels/gp_panel_", name, ".parquet"))
     expected_anchor <- lgd_anchor(source, years)
     actual <- bridge |> filter(panel == name)
     expect_equal(actual$anchor_key, expected_anchor$anchor_key)
@@ -85,7 +85,7 @@ test_that("the published reference bridge preserves four panel populations and l
 })
 
 test_that("reviewed mixed-script identities carry safe scores and explicit review provenance", {
-  bridge <- read_parquet("data/fin/up_gp_lgd_bridge.parquet")
+  bridge <- read_parquet("data/release/panels/gp_lgd_bridge.parquet")
   inherited <- bridge |> filter(!is.na(mapping_review_id))
   expect_equal(nrow(inherited), 5L)
   expect_setequal(inherited$mapping_anchor_key, c("up2010__row36093", "up2010__row2895"))

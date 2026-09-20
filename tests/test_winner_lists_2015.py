@@ -7,7 +7,10 @@ from pathlib import Path
 import pyarrow.parquet as pq
 import pytest
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts/convert_winner_lists_2015.py"
+SCRIPT = (
+    Path(__file__).resolve().parents[1]
+    / "src/local_elections_up/convert_winner_lists_2015.py"
+)
 SPEC = importlib.util.spec_from_file_location("winner_lists_2015", SCRIPT)
 converter = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(converter)

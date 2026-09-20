@@ -10,7 +10,7 @@ import pandas as pd
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "scripts" / "decode_legacy_labels.py"
+SCRIPT = ROOT / "src" / "local_elections_up" / "decode_legacy_labels.py"
 PROFILE = ROOT / "data" / "catalogs" / "etah_2010_font_profile_v1.json"
 
 

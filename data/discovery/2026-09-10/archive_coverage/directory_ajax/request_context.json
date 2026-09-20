@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "X-Requested-With": "XMLHttpRequest",
+    "Referer": "https://igod.gov.in/index.php/sg/UP/E042/organizations"
+  },
+  "reason": "Reproduce public directory pagination; ordinary requests redirect to homepage."
+}
