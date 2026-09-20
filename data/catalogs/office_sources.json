@@ -135,7 +135,8 @@
         "sha256": "ef99d979de5b385ce750a53db364ed8fab988af625b4130762e6d5c6fad0a931"
       },
       "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
-      "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a"
+      "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a",
+      "source_root": "data/2015"
     },
     {
       "adapter": "portal",

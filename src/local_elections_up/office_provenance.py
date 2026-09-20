@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import gzip
 import hashlib
-import json
 import tarfile
 from pathlib import Path
 
@@ -36,7 +35,7 @@ class SourceProvenance:
         if self.adapter == "csv":
             receipt_path = artifact.parent / "receipt.json"
             raw = receipt_path.read_bytes()
-            self.base = Path(json.loads(raw)["source_root"]).resolve()
+            self.base = (self.root / source["source_root"]).resolve()
             self.receipt = {
                 "path": receipt_path.relative_to(self.root).as_posix(),
                 "sha256": hashlib.sha256(raw).hexdigest(),

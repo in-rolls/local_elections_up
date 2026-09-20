@@ -58,6 +58,8 @@ Historical source receipts retain their original paths, including `data/recovery
 
 ## Reproduce and verify
 
+The data are distributed through GitHub releases. The Python package supplies checkout utilities; it is not a PyPI data package. Run the build commands from this repository.
+
 Python dependencies are locked in `uv.lock`; R dependencies are locked in `renv.lock`. Install R and uv, then run:
 
 ```sh

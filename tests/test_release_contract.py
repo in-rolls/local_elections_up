@@ -237,5 +237,27 @@ def test_release_rejects_invalid_declared_keys(release_copy, keys):
     )
     manifest_path.write_text(json.dumps(manifest))
     stamp(release_copy)
-    with pytest.raises(ValueError, match="[Kk]ey"):
+    with pytest.raises(ValueError, match=r"[Kk]ey"):
         release.verify(release_copy)
+
+
+def test_csv_evidence_root_is_portable_and_receipt_remains_original(tmp_path):
+    from local_elections_up.office_provenance import SourceProvenance
+
+    artifact = tmp_path / "data/interim/parsed/observations.parquet"
+    artifact.parent.mkdir(parents=True)
+    receipt = artifact.with_name("receipt.json")
+    original = '{"source_root":"/another/computer/old-checkout/data/2015"}'
+    receipt.write_text(original)
+    evidence = tmp_path / "data/2015/source.csv"
+    evidence.parent.mkdir(parents=True)
+    evidence.write_text("source bytes")
+    resolver = SourceProvenance(
+        tmp_path, {"adapter": "csv", "source_root": "data/2015"}, artifact
+    )
+    assert resolver.checked("source.csv", checksum(evidence)) == (
+        "data/2015/source.csv",
+        checksum(evidence),
+        "stored_bytes",
+    )
+    assert receipt.read_text() == original
