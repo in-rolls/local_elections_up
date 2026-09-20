@@ -1,6 +1,6 @@
 # Changes
 
-## v2.0 — release candidate
+## v2.0 — 2026-09-20
 
 - Move consumer data to `data/release/`, with a generated catalog and dictionary, explicit row units, and a unified manifest. Consumers must update their paths.
 - Preserve the expanded office observations from 23 registered source collections as provisional data. Do not interpret their counts as distinct seats or their presence as complete statewide coverage.
@@ -9,4 +9,4 @@
 - Remove phone numbers and unrecovered headers from analytical tables; preserve original evidence.
 - Pin release inputs, move Python code into an importable package, lock R dependencies, and add local/container release checks.
 
-Publication and independent final-candidate verification are pending.
+Validation includes 75 Python tests, four R checks, Linux Docker checks, independent review, and an offline rebuild reproducing all 54 table hashes.
