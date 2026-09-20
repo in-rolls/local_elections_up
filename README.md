@@ -1,132 +1,77 @@
-## UP Local Elections Repository
+# Uttar Pradesh local elections
 
-Data for 2005, 2010, 2015, and 2021 Sarpanch Elections and 2012 ULB.
+Election results, candidates, and seat-reservation observations for Uttar Pradesh's rural and urban local governments. The gram-panchayat head data cover 2005, 2010, 2015, and 2021. Additional office-specific observations cover selected years and districts; their coverage and unresolved source issues are recorded separately.
 
-## Published data: `data/fin/`
+## Find the data
 
-`data/fin/` is what other repositories consume. Everything else in `data/` is
-raw input or an intermediate. Four source files, one per election cycle, carry
-the transliterated English columns. A fifth file is the canonical cross-wave
-election table:
+Start with the **[data catalog](data/release/CATALOG.md)**. It lists every published table, its row count, election years, row unit, and validation status. The **[data dictionary](data/release/DICTIONARY.md)** lists columns and types; the **[interpretation guide](data/release/README.md)** explains identifiers, reservations, provenance, and linkage.
 
-| file | rows | distinct panchayats | grain |
-| --- | ---: | ---: | --- |
-| `up_gp_sarpanch_2005_fixed_with_transliteration.parquet` | 51,872 | 51,711 | one row per seat |
-| `up_gp_sarpanch_2010_fixed_with_transliteration.parquet` | 51,861 | 51,773 | one row per seat |
-| `up_gp_sarpanch_2015_fixed_with_transliteration.parquet` | 59,019 | 58,994 | one row per seat |
-| `up_gp_sarpanch_2021_fixed_with_transliteration.parquet` | 373,096 | 49,750 | one row per **candidate** |
-| `up_gp_elections_standardized.parquet` | 212,525 | — | one row per seat/winner across all four waves |
+| I need… | Use |
+| --- | --- |
+| GP-head results across four elections | [GP election records](data/release/gp/gp_head_election_records.parquet) |
+| Every 2021 GP-head candidate | [2021 candidates](data/release/gp/gp_head_candidates_2021.parquet) |
+| Results or reservations for another office | [Office catalog](data/release/CATALOG.md); check the office, record kind, year, and flags |
+| Adjacent-election or four-election links | [Shared panels](data/release/panels/) |
+| The two Weaver source preparations | [Weaver tables](data/release/weaver/) and [source documentation](data/external/weaver/README.md) |
+| Exact inputs and output hashes | [Release manifest](data/release/manifest.json) and [checksums](data/release/CHECKSUMS.sha256) |
 
-Panchayat counts are distinct `(district_name, block_name, gp_name)` — see the
-identifier warning below.
+Download a tagged [GitHub release](https://github.com/in-rolls/local_elections_up/releases), retaining its manifest and checksums. The central [local_elections](https://github.com/in-rolls/local_elections) repository harmonizes a pinned UP release with other states.
 
-**Three things that will bite you if you assume otherwise.**
+```python
+import pandas as pd
 
-*`gp_code` is not a panchayat identifier.* It is a serial within its block: 2005
-has 51,872 rows but only 247 distinct `gp_code` values. A panchayat is identified
-by district + block + name, and even that collides — in 2005, 97 such triples
-carry more than one row (161 rows in excess of the distinct count, up to 14 on a
-single triple). Join on it and you will silently fan out rows.
+records = pd.read_parquet("data/release/gp/gp_head_election_records.parquet")
+print(records.groupby("election_year").size())
+review = records.loc[records["winner_markers_conflict"]]
+```
 
-*`result` means different things in 2015 and 2021.* In 2015 it is
-`सविरोध` / `निर्विरोध` — contested or unopposed — and every row is a seat. In 2021
-it is `विजेता` / `उपविजेता` / blank — winner, runner-up, or neither — and rows are
-candidates. Filtering 2021 to `विजेता` gives 49,773 winners; applying the same
-filter to 2015 gives nothing.
+## Understand the row before counting it
 
-*2021 carries three columns whose headers were lost*, `Unnamed: 15`,
-`Unnamed: 16` and `Unnamed: 17`. They contain populated numeric and categorical
-values and therefore are not junk, but their meanings have not been recovered
-reliably enough to label or analyze. They remain unchanged in the source file
-and are excluded from the standardized release.
+The four-wave GP table preserves 212,525 winner-list or winner-marked source records. This is not a count of distinct seats. In 2021, 373,096 candidates belong to 49,772 source seat groups, and one group has two conflicting winner markers. Both source records and their actual candidate names survive; the winner remains unresolved.
 
-### Canonical election table
+`gp_code` is a block-local serial, not a geographic identifier. District/block/GP names also collide. Use the documented source-record keys and check join cardinality. Unknown reservation is missing information, not an unreserved seat. In 2015, `सविरोध` and `निर्विरोध` mean contested and unopposed; the collection is a winner list.
 
-`data/fin/up_gp_elections_standardized.parquet` standardizes identifiers,
-reservation status, and winner sex without dropping ambiguous rows. The active
-manual corrections and complete collision/missing-name queue live under
-`data/crosswalks/`. See [`data/fin/STANDARDIZED.md`](data/fin/STANDARDIZED.md) for
-the column contract.
+Office exports are **provisional source observations**. Their `assignment_usable=false` flag remains in force even where category labels are decoded. Alternate sources can describe the same seat. Candidate, winner, official, and reservation records must not be pooled into a seat count. Historical encoded names, uncertain readings, and source conflicts remain visible.
 
-```bash
-make data
+## Repository layout
+
+```text
+data/
+  raw/          Registered source bytes and source manifests
+  interim/      Saved extraction outputs and historical build snapshots
+  discovery/    Sources not admitted to production
+  catalogs/     Source registry, label dictionaries, and relocation ledger
+  crosswalks/   Reviewed geographic mappings and correction decisions
+  release/      Consumer tables, catalog, dictionary, and checksums
+    gp/         GP-head source records and standardized election records
+    offices/    Office-specific provisional observations
+    panels/     Geographic links and wide election panels
+    weaver/     Separate preparations of the two external vintages
+src/local_elections_up/  Python acquisition, parsing, and release code
+R/                      Shared R transformations
+scripts/                R build entry points
+notebooks/              Historical parsing and transliteration work
+tests/                 Parser, grain, recode, and provenance checks
+```
+
+Historical source receipts retain their original paths, including `data/recovery/`. Archive restoration preserves those locators. Discovery does not enter a release unless explicitly registered. [The relocation ledger](data/catalogs/relocations.json) records moved files without changing their source identities.
+
+## Reproduce and verify
+
+Python dependencies are locked in `uv.lock`; R dependencies are locked in `renv.lock`. Install R and uv, then run:
+
+```sh
+make sync
+make restore-r
 make check
 ```
 
-### How it is produced
+`make data` rebuilds from saved, registered inputs. Source restoration is required for a fresh checkout that has no extraction cache; follow the [source-evidence instructions](data/catalogs/SOURCES.md). Release assembly makes no network or paid-model calls. Historical notebooks are retained for provenance and are not part of the release command.
 
-```
-data/up_gp_sarpanch_{2005,2010}.csv          scripts/01a, 01b (parsed from data/2005/, data/2010/ PDFs)
-  -> data/up_gp_sarpanch_{2005,2010}_fixed.csv
-  -> data/transliteration/*_transliterate_out.csv    scripts/02, 03 (Gemini transliteration)
-  -> data/fin/*.parquet                              scripts/04
-```
+`make ci-docker` runs Python and R checks in standard containers. `make winner-lists-2015` rebuilds the five-office 2015 intermediate exports; `make verify-2015` compares every retained field with its source CSV.
 
-`scripts/05_standardize_elections.R` reads the four source files and publishes
-the canonical table, audit files, schema entry, and checksums.
+## Changes in this release
 
-### Verifying a copy
+The v2 layout replaces `data/fin/` with `data/release/`. Consumer filenames describe their contents and row unit. The 2015 office records now have winner-list semantics and decoded seat-reservation categories. The known 2021 conflicting winner names are retained correctly. Analytical exports omit phone numbers and the three 2021 columns whose headers were not recovered. Original source evidence is preserved separately.
 
-`data/fin/CHECKSUMS.sha256` pins the bytes and `data/fin/SCHEMA.json` records row
-counts and column names. From `data/fin/`:
-
-```bash
-shasum -a 256 -c CHECKSUMS.sha256
-```
-
-Consumers should pin a tag and check against these rather than copying the files
-and hoping they stay in step.
-
-## 🔗 Adjacent Repositories
-
-- [in-rolls/local_elections_kerala](https://github.com/in-rolls/local_elections_kerala) — Kerala Local Government Seat Reservation Data and Winner Attributes
-- [in-rolls/local_elections_uttarakhand](https://github.com/in-rolls/local_elections_uttarakhand) — Data on Local Elections from Uttarakhand
-- [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Candidate Info. + Valid Votes Won by Cands. in the 2016 Bihar Panchayat Elections
-- [in-rolls/parse_unsearchable_rolls](https://github.com/in-rolls/parse_unsearchable_rolls) — Parse Unsearchable Electoral Rolls
-- [in-rolls/mnrega_social](https://github.com/in-rolls/mnrega_social) — MNREGA Social Audit Data
-
-## Shared cross-election panels
-
-Run `make data-panels` to rebuild independent 2005–2010, 2010–2015 and
-2015–2021 links and their four-election intersection. `scripts/08_link_elections.R`
-uses the standardized source records, including records with unknown reservation.
-The study repositories apply outcome and treatment exclusions after linkage.
-
-Names use NFC, Latin accent folding, lowercase, Unicode punctuation replaced by
-spaces, and collapsed Unicode whitespace. Hindi vowel marks, digits and word
-boundaries survive normalization. Different numeric sequences are ineligible:
-GP 45 cannot match GP 44, including when numbers use Devanagari digits.
-Blocks must have a mutually unique exact Hindi or English name correspondence
-within a canonical district. Within each matched block, GPs must be uniquely
-nearest in both directions, with Jaro distance below 0.1 in Hindi or English.
-Ties and competing close Hindi/English identities are withheld. Reservation and
-winner information never determine links. These are geographic linkage rules,
-not proof of unchanged administrative boundaries.
-
-`up_gp_adjacent_links.parquet` contains accepted pairs and distances;
-`up_gp_four_election_links.parquet` joins those pairs through the same intermediate
-source IDs. `up_gp_link_candidates.parquet` records nearest candidates below the
-cutoff and their decisions; records without such a candidate are absent.
-The four `up_gp_panel_*.parquet` files attach the original source fields, suffixed
-by year. `key_YEAR` is the immutable source-election ID, also present as
-`election_gp_key_YEAR`; `source_row_number_YEAR` locates the original record.
-`women_reserved_YEAR` and `winner_woman_YEAR` are 0/1 with unknown values missing;
-`reservation_class_YEAR` is general, obc, sc, st or unknown. Original geographic
-labels are retained; the standardized table supplies the labels used for matching.
-
-Both `quota` and `quota_raj` consume these same panels by commit and SHA-256.
-Study variables, outcome joins and regressions remain in those repositories.
-`make test` checks Hindi distinctions, numeric conflicts, ties, full-source
-row-order invariance and consistency between adjacent and four-election links.
-
-## Weaver preparation
-
-Run `make data-weaver` for `weaver_20250302_wide.parquet` and
-`weaver_20250317_wide.parquet`, produced by `scripts/09_prepare_weaver.R`.
-The files preserve all source fields by wave and retain separate vintages.
-The first vintage's `gp_id` does not connect 2010 to later waves. The second has
-55,551 IDs observed in all three waves and supplies the panel used by `quota_raj`.
-The source's 2020 suffix denotes the 2021 election. Census administrative anchors
-use the earliest observed source wave, including its missing values; wave-specific
-codes and conflict flags remain available. See the existing
-[Weaver source documentation](data/external/weaver/README.md) for provenance and attribution.
+See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution](data/external/weaver/README.md) for external source terms.
