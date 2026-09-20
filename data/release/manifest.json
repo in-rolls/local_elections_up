@@ -1,8 +1,12 @@
 {
   "schema_version": 2,
   "release": "v2.0",
-  "code_revision": "d43a732c654399b539d2f61d8ee302d2ea7aa92d",
-  "source_registry_sha256": "dccadd4099d6de299e070bb34e185d818b35a94cbe086193a9a78a63780277d4",
+  "code_revision": "3ec403c5728a4a551a8d0c73964916127786dd96",
+  "source_registry_sha256": "579e1ba2d64a393be264d9f8de0788cba4fc6450c1d476f03f5b4dcae391814b",
+  "input_registries_sha256": {
+    "office_sources.json": "579e1ba2d64a393be264d9f8de0788cba4fc6450c1d476f03f5b4dcae391814b",
+    "gp_sources.json": "90d62ecb3c74aea54c34f09b0c74833e18b1346d8e76f5d858b4dadc90e43f5b"
+  },
   "code_sha256": {
     "src/local_elections_up/__init__.py": "0b0b2b57ae3889c5873a969e645dcd934afcf1a6bd4bdf9fde8c08d13b23acb6",
     "src/local_elections_up/apply_reservation_codebook.py": "4d40912bfc20d1c2c42748da5a11778a5d760220096397de9952f28fc4d59522",
@@ -24,7 +28,7 @@
     "src/local_elections_up/link_2021_lgd.py": "2aa49535c6a67f3e6ca3d82644c5cde40c75d7ea9928a3898dcda05c26d49bd1",
     "src/local_elections_up/ocr_scanned_pdf_oriented.py": "e0878eeb1a5ef94f2c6667164d52ab9124e8daa834a8d310d79e9614ea01ace7",
     "src/local_elections_up/office_ballia.py": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
-    "src/local_elections_up/office_provenance.py": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+    "src/local_elections_up/office_provenance.py": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
     "src/local_elections_up/parse_sec_candidate_csvs.py": "baa1db50849bc73a50e2c0f8079e2d85d4100bd3b8ae30d60baa39b7fc651370",
     "src/local_elections_up/parse_sec_panchayat_2000_percentages.py": "c63db2db7c4e21b4ae1f70d0fb90e4966d2b0d30e338feb3aa0e64735a1537bf",
     "src/local_elections_up/parse_sec_panchayat_2005_district_members.py": "6acc5fcee947455c4ca99518597a8f2558a3c95e10129a9d209e4943ec50e62a",
@@ -43,8 +47,8 @@
     "src/local_elections_up/parse_sec_urban_results_2006.py": "ae4712f2554a2b4d23f154397c4cbb5c8295fbe897304bbca7d4687eb3d73174",
     "src/local_elections_up/prepare_gp_sources.py": "3454236eefb89e408d505aa844b4f1c431419a299e068f5daffc80e1da9c90d5",
     "src/local_elections_up/reconcile_sec_urban_sources.py": "cf7686050ce2d207434593d6d8ab8e370e0ca2b112d8fee2ab815809dbdef3fe",
-    "src/local_elections_up/release.py": "2e7173b02d1f84a41fb42af01506d23403c6905b92e83d49f072914236abfcab",
-    "src/local_elections_up/standardize_offices.py": "cfb394e6e8611a625f2203fd8e92af5b71bffb6adee957a4a160bdde4d25cad9",
+    "src/local_elections_up/release.py": "af6ad42606ce56239d709b996a30483ad7ede65d130437ae38edfdd35aafb7f6",
+    "src/local_elections_up/standardize_offices.py": "daafdf09bc06f0117518898903de1a4c5fa635a015165513b2a3ff3bcf0f3b28",
     "src/local_elections_up/standardize_sec_samiti_2010.py": "dc0b78aaade763bf5c1b290e704f983694281f2da3e28b8fb7cdaf8a16dfd17d",
     "R/link_elections.R": "a2a4b01c75333726aaab246cef33636cf47d69f30d9c094ad1b156818d7c28ad",
     "R/link_historical_lgd.R": "751576a88a667662eec4d9c1f2e5554d4a218ba5b0212984d9418b4579607134",
@@ -56,7 +60,7 @@
     "scripts/10_link_historical_lgd.R": "205bda177563ebeb1e04524f60037566142c4bb7d92732f301bac854d4327adb"
   },
   "environment_sha256": {
-    "uv.lock": "eaa686d14bbcbe791ec0136beb859f839b8fafd509dea714ac15f3c6ad7c3bfa",
+    "uv.lock": "4457e617b84a33a4a3bcee5b56dd40fca2cc2ec3c376672de19963d2751a121e",
     "renv.lock": "118be1dada45f98ae1301e869c0bfd2c8edcfd29f20ecf5846b3d2989e1369a1"
   },
   "grain_policy": "Source records, candidates, linked records and unique seats are distinct units.",
@@ -483,9 +487,8 @@
       "assignment_usable": null,
       "office": "gram_panchayat_head",
       "grain": "one winner-list source record",
-      "key": [
-        "source_row_number (one-based physical row)"
-      ],
+      "key": [],
+      "row_locator": "one-based physical row within the hash-pinned file",
       "rows_by_year": {
         "2005": 51872
       }
@@ -625,9 +628,8 @@
       "assignment_usable": null,
       "office": "gram_panchayat_head",
       "grain": "one winner-list source record",
-      "key": [
-        "source_row_number (one-based physical row)"
-      ],
+      "key": [],
+      "row_locator": "one-based physical row within the hash-pinned file",
       "rows_by_year": {
         "2010": 51861
       }
@@ -739,9 +741,8 @@
       "assignment_usable": null,
       "office": "gram_panchayat_head",
       "grain": "one winner-list source record",
-      "key": [
-        "source_row_number (one-based physical row)"
-      ],
+      "key": [],
+      "row_locator": "one-based physical row within the hash-pinned file",
       "rows_by_year": {
         "2015": 59019
       }
@@ -749,7 +750,7 @@
     {
       "dataset_id": "offices/up_gram_panchayat_head_declared_winner",
       "path": "offices/up_gram_panchayat_head_declared_winner.parquet",
-      "sha256": "73cbbb118d0325484db0ba38a92096e92b6d438478ad1b69b38cf4c0269f0f7b",
+      "sha256": "bd402e5fd4c3d7b325d80814d52e70255a7c6228c7771ecec05e9f4f33d449ea",
       "rows": 212525,
       "columns": [
         {
@@ -21565,9 +21566,12 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linked source-record pair or history",
+      "grain": "one accepted adjacent-wave link",
       "key": [
-        "source-election IDs; see dictionary"
+        "year_from",
+        "year_to",
+        "left_id",
+        "right_id"
       ]
     },
     {
@@ -21595,9 +21599,12 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linked source-record pair or history",
+      "grain": "one linked four-election history",
       "key": [
-        "source-election IDs; see dictionary"
+        "election_id_2005",
+        "election_id_2010",
+        "election_id_2015",
+        "election_id_2021"
       ]
     },
     {
@@ -21709,9 +21716,10 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linked source-record pair or history",
+      "grain": "one historical panel row projected to the LGD vintage",
       "key": [
-        "source-election IDs; see dictionary"
+        "panel",
+        "source_panel_row"
       ]
     },
     {
@@ -21767,9 +21775,12 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linkage candidate",
+      "grain": "one assessed adjacent-wave linkage candidate",
       "key": [
-        "source-election IDs; see dictionary"
+        "year_from",
+        "year_to",
+        "left_id",
+        "right_id"
       ]
     },
     {
@@ -22045,9 +22056,10 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linked source-record pair or history",
+      "grain": "one linked source-record pair or four-election history",
       "key": [
-        "source-election IDs; see dictionary"
+        "key_2005",
+        "key_2010"
       ]
     },
     {
@@ -22571,9 +22583,12 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linked source-record pair or history",
+      "grain": "one linked source-record pair or four-election history",
       "key": [
-        "source-election IDs; see dictionary"
+        "key_2005",
+        "key_2010",
+        "key_2015",
+        "key_2021"
       ]
     },
     {
@@ -22853,9 +22868,10 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linked source-record pair or history",
+      "grain": "one linked source-record pair or four-election history",
       "key": [
-        "source-election IDs; see dictionary"
+        "key_2010",
+        "key_2015"
       ]
     },
     {
@@ -23115,9 +23131,10 @@
       ],
       "validation_tier": "geographic_linkage",
       "assignment_usable": null,
-      "grain": "one linked source-record pair or history",
+      "grain": "one linked source-record pair or four-election history",
       "key": [
-        "source-election IDs; see dictionary"
+        "key_2015",
+        "key_2021"
       ]
     },
     {

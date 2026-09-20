@@ -18,3 +18,10 @@ make check
 Run these commands from the matching tagged checkout. Extraction restores the original relative evidence paths. Do not extract a historical snapshot over newer work. The separate `up_legacy_inputs.tar` is preserved for audit and is not an active build input. The archived LGD source manifest predates the v2 relocation; the current tracked manifest records both historical and current input pins.
 
 A missing or changed registered input stops assembly. Acquisition and paid OCR are separate from this offline build. Category decoding, source-byte verification, and substantive assignment validation are distinct checks.
+
+Superseded office builds are archived separately in `up_superseded_snapshots.tar.zst.chunk-*`. They are not build inputs. The [snapshot inventory](superseded_snapshots.json) records every original member hash. To inspect them, install zstd and extract into an empty audit directory:
+
+```sh
+mkdir -p dist/snapshot-audit
+cat dist/source-evidence/up_superseded_snapshots.tar.zst.chunk-* | zstd -d --long=29 | tar -x -C dist/snapshot-audit
+```

@@ -305,12 +305,63 @@
       "asset": "up_recovery.tar.gz.chunk-049",
       "sha256": "732da42a5586833a57f3d89fa8d9418bbd9b639f3810fcf7ce77e0ac3ce754bc",
       "bytes": 41879160
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-000",
+      "sha256": "8b760977aa151b310e947352cc1591d80929fff56df7e9e5e9f79ea2b1111296",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-001",
+      "sha256": "b1ac4dceafdd126393b1c950e3467747750b92f4dd75e95480c4bee4f00d7e44",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-002",
+      "sha256": "dfde8a848214168991a0837146ab59f076027f66f923407d56bd901b03455e2a",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-003",
+      "sha256": "bff9bc38ee70d6aef89045cbd7db5fc4813d836a5bb900fed9e6f4096815d7a8",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-004",
+      "sha256": "97e925a17517f842250c8fe26db7dbd39f3de7a8a5a7c03d6d999d1ed9a59490",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-005",
+      "sha256": "3ca5d97216cd4cf2c021518d3291d4976b43a0fd0caec4b577fcd6e1a1f061bf",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-006",
+      "sha256": "499f6ca3c0c5ecf9c7445f2b6cb9f3d5e4bc15ba90c8aee3edab30c3702175b2",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-007",
+      "sha256": "2910cedb3442ded29b4bc9dd7f41009f303795d7bf00d5e4670b85d8bdf7862b",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-008",
+      "sha256": "157585f5318fbdbd96b1797a494f89f211e4c101786d9e5882fd6ebba71e6e15",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-009",
+      "sha256": "c59f334c10692e44ee2edea3bcbbb760e14516eb5a3d21cea0db77a0ed3a9201",
+      "bytes": 5209906
     }
   ],
   "counts": {
     "inputs": 1703,
     "recovery": 473103,
-    "legacy": 377
+    "legacy": 377,
+    "superseded_snapshots": 713
   },
   "historical_differences": [
     "data/external/lgd/SOURCES.json"

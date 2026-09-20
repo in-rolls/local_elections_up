@@ -1,8 +1,8 @@
 {
   "status": "standardized_source_observations_pending_validation",
-  "registry_sha256": "dccadd4099d6de299e070bb34e185d818b35a94cbe086193a9a78a63780277d4",
+  "registry_sha256": "579e1ba2d64a393be264d9f8de0788cba4fc6450c1d476f03f5b4dcae391814b",
   "label_schema_sha256": "beed338d3a09592d9eaa8bd8d0403a8ee5ae86ae09fc0ba0a584d067174d29b4",
-  "parser_sha256": "cfb394e6e8611a625f2203fd8e92af5b71bffb6adee957a4a160bdde4d25cad9",
+  "parser_sha256": "daafdf09bc06f0117518898903de1a4c5fa635a015165513b2a3ff3bcf0f3b28",
   "pri_2010_label_dictionary": {
     "path": "data/catalogs/pri_2010_category_labels.json",
     "sha256": "4a38745cd96f4607e35803b18f96b7f8b5a6f64b0287066a6eb9ef515301268c"
@@ -237,7 +237,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -259,7 +259,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -287,7 +287,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -311,7 +311,7 @@
         "source_base": "data/release/gp",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -331,6 +331,7 @@
       },
       "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
       "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a",
+      "source_root": "data/2015",
       "resolved_path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
       "input_rows": 206633,
       "source_provenance": {
@@ -345,7 +346,7 @@
           "sha256": "ef99d979de5b385ce750a53db364ed8fab988af625b4130762e6d5c6fad0a931",
           "member_prefix": "2015"
         },
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -369,7 +370,7 @@
         "source_base": "data/recovery/sec_reservation_portals",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -393,7 +394,7 @@
         "source_base": "data/recovery/sec_reservation_portals/pri2015_gp_wards",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -417,7 +418,7 @@
         "source_base": "data/recovery/sec_reservation_portals",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -438,7 +439,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -458,7 +459,7 @@
         "source_base": "data/recovery/sec_historical_results/ulb2012",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -479,7 +480,7 @@
         "source_base": "data/recovery/sec_wayback/20260911_rural_member_sources",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -500,7 +501,7 @@
         "source_base": "data/recovery/sec_wayback/20260911_rural_member_sources",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -522,7 +523,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -544,7 +545,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -565,7 +566,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -587,7 +588,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -610,7 +611,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -633,7 +634,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -656,7 +657,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": null,
@@ -724,7 +725,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": {
@@ -803,7 +804,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": {
@@ -860,7 +861,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": {
@@ -922,7 +923,7 @@
         "source_base": ".",
         "source_root_receipt": null,
         "source_archive": null,
-        "resolver_sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c",
+        "resolver_sha256": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
         "policy": "Resolve explicit source roots and verify file or gzip-payload hashes. Retain incoming paths and hashes in raw fields. Derived intermediates and local CSV exports do not establish original HTTP provenance."
       },
       "source_adapter_evidence": {
@@ -949,7 +950,7 @@
   "files": [
     {
       "path": "up_gram_panchayat_head_declared_winner.parquet",
-      "sha256": "73cbbb118d0325484db0ba38a92096e92b6d438478ad1b69b38cf4c0269f0f7b",
+      "sha256": "bd402e5fd4c3d7b325d80814d52e70255a7c6228c7771ecec05e9f4f33d449ea",
       "office": "gram_panchayat_head",
       "record_kind": "declared_winner",
       "rows": 212525,

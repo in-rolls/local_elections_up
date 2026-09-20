@@ -90,7 +90,7 @@ one winner-list or winner-marked record. Key: election_gp_key.
 
 ## gp/gp_head_winner_records_2005
 
-one winner-list source record. Key: source_row_number (one-based physical row).
+one winner-list source record. Key: one-based physical row within the hash-pinned file.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -120,7 +120,7 @@ one winner-list source record. Key: source_row_number (one-based physical row).
 
 ## gp/gp_head_winner_records_2010
 
-one winner-list source record. Key: source_row_number (one-based physical row).
+one winner-list source record. Key: one-based physical row within the hash-pinned file.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -158,7 +158,7 @@ one winner-list source record. Key: source_row_number (one-based physical row).
 
 ## gp/gp_head_winner_records_2015
 
-one winner-list source record. Key: source_row_number (one-based physical row).
+one winner-list source record. Key: one-based physical row within the hash-pinned file.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5376,7 +5376,7 @@ one source observation; sources may overlap. Key: record_id.
 
 ## panels/gp_adjacent_links
 
-one linked source-record pair or history. Key: source-election IDs; see dictionary.
+one accepted adjacent-wave link. Key: year_from, year_to, left_id, right_id.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5394,7 +5394,7 @@ one linked source-record pair or history. Key: source-election IDs; see dictiona
 
 ## panels/gp_four_election_links
 
-one linked source-record pair or history. Key: source-election IDs; see dictionary.
+one linked four-election history. Key: election_id_2005, election_id_2010, election_id_2015, election_id_2021.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5405,7 +5405,7 @@ one linked source-record pair or history. Key: source-election IDs; see dictiona
 
 ## panels/gp_lgd_bridge
 
-one linked source-record pair or history. Key: source-election IDs; see dictionary.
+one historical panel row projected to the LGD vintage. Key: panel, source_panel_row.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5437,7 +5437,7 @@ one linked source-record pair or history. Key: source-election IDs; see dictiona
 
 ## panels/gp_link_candidates
 
-one linkage candidate. Key: source-election IDs; see dictionary.
+one assessed adjacent-wave linkage candidate. Key: year_from, year_to, left_id, right_id.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5455,7 +5455,7 @@ one linkage candidate. Key: source-election IDs; see dictionary.
 
 ## panels/gp_panel_2005_2010
 
-one linked source-record pair or history. Key: source-election IDs; see dictionary.
+one linked source-record pair or four-election history. Key: key_2005, key_2010.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5528,7 +5528,7 @@ one linked source-record pair or history. Key: source-election IDs; see dictiona
 
 ## panels/gp_panel_2005_2010_2015_2021
 
-one linked source-record pair or history. Key: source-election IDs; see dictionary.
+one linked source-record pair or four-election history. Key: key_2005, key_2010, key_2015, key_2021.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5663,7 +5663,7 @@ one linked source-record pair or history. Key: source-election IDs; see dictiona
 
 ## panels/gp_panel_2010_2015
 
-one linked source-record pair or history. Key: source-election IDs; see dictionary.
+one linked source-record pair or four-election history. Key: key_2010, key_2015.
 
 | Column | Type | Meaning |
 | --- | --- | --- |
@@ -5737,7 +5737,7 @@ one linked source-record pair or history. Key: source-election IDs; see dictiona
 
 ## panels/gp_panel_2015_2021
 
-one linked source-record pair or history. Key: source-election IDs; see dictionary.
+one linked source-record pair or four-election history. Key: key_2015, key_2021.
 
 | Column | Type | Meaning |
 | --- | --- | --- |

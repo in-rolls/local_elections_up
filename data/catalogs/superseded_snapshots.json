@@ -1,6 +1,6 @@
 {
-  "archive": "up_superseded_snapshots.tar.gz",
-  "sha256": "173439d9048be81c37af090f7df3a560c5e888842dd13d626226ce3237cf0888",
+  "archive": "up_superseded_snapshots.tar.zst",
+  "sha256": "aee11acd1b7b13cffaaa8ede5c097819b5585a51c31757cc002d6327f7b35ecb",
   "members": [
     {
       "path": "data/interim/release_snapshots/gp_checksums_v1.sha256",
@@ -3570,159 +3570,55 @@
   ],
   "parts": [
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-000",
-      "bytes": 67108864,
-      "sha256": "ff0433ab2bf9434da06b6a85d33ee736b745ff2f31caa4ad3d7bdea77b0a14a7"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-000",
+      "sha256": "8b760977aa151b310e947352cc1591d80929fff56df7e9e5e9f79ea2b1111296",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-001",
-      "bytes": 67108864,
-      "sha256": "985c60511fa2f2a95cc5c125c096f47ae1e91ad12370b32154003ecd2d921e28"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-001",
+      "sha256": "b1ac4dceafdd126393b1c950e3467747750b92f4dd75e95480c4bee4f00d7e44",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-002",
-      "bytes": 67108864,
-      "sha256": "d5547ac1d12cdac671de8f682d457b1defa5cc3c76c0e91c4bb697e5e05dab9c"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-002",
+      "sha256": "dfde8a848214168991a0837146ab59f076027f66f923407d56bd901b03455e2a",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-003",
-      "bytes": 67108864,
-      "sha256": "49ebcf13b592bb65e740ba3052ee7a3f2137c4f22442071d0b06b7b3f4e844ee"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-003",
+      "sha256": "bff9bc38ee70d6aef89045cbd7db5fc4813d836a5bb900fed9e6f4096815d7a8",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-004",
-      "bytes": 67108864,
-      "sha256": "b3f4fa80585294dd6ecc432491e23057e9a0fd48f7a18b4a27b332b8a18cb3f8"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-004",
+      "sha256": "97e925a17517f842250c8fe26db7dbd39f3de7a8a5a7c03d6d999d1ed9a59490",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-005",
-      "bytes": 67108864,
-      "sha256": "a7e11f9d0fe18cf638b5321e71a840acb7d42f56f3a66ac49b08615ab71a736e"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-005",
+      "sha256": "3ca5d97216cd4cf2c021518d3291d4976b43a0fd0caec4b577fcd6e1a1f061bf",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-006",
-      "bytes": 67108864,
-      "sha256": "2a49be16d5e0f29e8cad9e5774197ac8a7d53c427d40a71502f453703519e300"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-006",
+      "sha256": "499f6ca3c0c5ecf9c7445f2b6cb9f3d5e4bc15ba90c8aee3edab30c3702175b2",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-007",
-      "bytes": 67108864,
-      "sha256": "85daf1343381d0ee7b54e19bea506ade6a03bfec5a07e132d992d416b65225e1"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-007",
+      "sha256": "2910cedb3442ded29b4bc9dd7f41009f303795d7bf00d5e4670b85d8bdf7862b",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-008",
-      "bytes": 67108864,
-      "sha256": "9177bec29959b7eef32a65c23575b24e26bc54057ea28f3fbb1ffcf96ffe4679"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-008",
+      "sha256": "157585f5318fbdbd96b1797a494f89f211e4c101786d9e5882fd6ebba71e6e15",
+      "bytes": 67108864
     },
     {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-009",
-      "bytes": 67108864,
-      "sha256": "1dde173fdb5c6bbc32821572a8f8532b5e472a6d872dbcf3998aa1841e8e403f"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-010",
-      "bytes": 67108864,
-      "sha256": "d440a9d53ec4087fba9ab5cd95d0641534cadd762d9e6d95d273d2624a11ebe9"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-011",
-      "bytes": 67108864,
-      "sha256": "a93a69b6d5c8de52696c3af9cfb1f3ffffda3c8081d890c9989c2a7b89f3eeb6"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-012",
-      "bytes": 67108864,
-      "sha256": "fffad2156e93c12c50f489f318a4b583c7b0ef68e66771d4ad121c9d64dc2029"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-013",
-      "bytes": 67108864,
-      "sha256": "b48fa07bbfbc34656869dc7cc75a87349bfe8405470b742c9b0fba8799f38ff8"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-014",
-      "bytes": 67108864,
-      "sha256": "7d2c13a4fecac07038116445d8d42237d181f09be55a0ed907124bd5de64d2f9"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-015",
-      "bytes": 67108864,
-      "sha256": "589fdbde280af56880c2d013b31831c6a892a10e039bad76f46284b9e879e574"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-016",
-      "bytes": 67108864,
-      "sha256": "d6f206808928dc8aa99026f8aa3eb8c3a6111026f8bac14a75cacbc726b379f9"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-017",
-      "bytes": 67108864,
-      "sha256": "5294fb88243936d6f122e5d4caf865b9f709edf5d7540c6e900c1cac631cc262"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-018",
-      "bytes": 67108864,
-      "sha256": "f6294793e730c060e11e849f976bef1b825801bf22dcd520c3de1138d6d8b7da"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-019",
-      "bytes": 67108864,
-      "sha256": "b65934796c3363c2d3e9d459e406fb20e6a9b13d915eddc2fecba4a1e3f1795d"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-020",
-      "bytes": 67108864,
-      "sha256": "373f3f6f5b8ffd04e8d459dab49317a3336d19ad7a24a21b2cb748e7550a06d3"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-021",
-      "bytes": 67108864,
-      "sha256": "78bdb7ed75854fcea0345c6753b144e92d1ea29950b8c94b491ac10d8598491b"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-022",
-      "bytes": 67108864,
-      "sha256": "925b9c612f08fa4ca5203b60a99fd7004420943ca4c5e626a66056f2cab699fe"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-023",
-      "bytes": 67108864,
-      "sha256": "5001523892cd89960889b74c44615ab916817cb0c0185655544e4971f80b1ead"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-024",
-      "bytes": 67108864,
-      "sha256": "6268cd5641a3309613430648d2f22e58e15679ca3b5987dcdc9d9a0be68b184b"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-025",
-      "bytes": 67108864,
-      "sha256": "b3acd5138f3ca099ac90c67a900bf74f92658c99f455787c5eb3c6ba495c7b88"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-026",
-      "bytes": 67108864,
-      "sha256": "626ee653acc5e2fede3cd1f4acff5c15a4bdd616a69f57dfefdbec29360370d8"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-027",
-      "bytes": 67108864,
-      "sha256": "b904e28db991b569043136c1f976e15bf1135effe8f5be8df4f496e4159c5ba8"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-028",
-      "bytes": 67108864,
-      "sha256": "e1884864a0daf0595592f4f6899d27227698db0f3a74d6a8e7a88104c654aeb3"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-029",
-      "bytes": 67108864,
-      "sha256": "65732d3ef7083eb27f4c7a161a27541e792042821de79ee71c30b9c1f1bb5973"
-    },
-    {
-      "asset": "up_superseded_snapshots.tar.gz.chunk-030",
-      "bytes": 64987451,
-      "sha256": "84906f3739739596bbdf8863989a803b52fc35065d82a7f7a91e91497fce6102"
+      "asset": "up_superseded_snapshots.tar.zst.chunk-009",
+      "sha256": "c59f334c10692e44ee2edea3bcbbb760e14516eb5a3d21cea0db77a0ed3a9201",
+      "bytes": 5209906
     }
-  ]
+  ],
+  "tar_payload_sha256": "6880213c67518f7f1ad8105ffb488d7a2ab9c481a3912618be68b1e026e388b0"
 }
