@@ -31,8 +31,11 @@ dev = [
     "pre-commit>=4",
 ]
 research = [
-    "local-reservations @ git+https://github.com/in-rolls/local_reservations.git@bf536affd015aba5820379ad99f0b6d24780e19b",
+    "local-reservations==0.5.1",
 ]
+
+[tool.uv.sources]
+local-reservations = { path = "vendor/local_reservations-0.5.1-py3-none-any.whl" }
 
 [tool.ruff]
 line-length = 88
@@ -53,4 +56,4 @@ build-backend = "hatchling.build"
 packages = ["src/local_elections_up"]
 
 [tool.hatch.build.targets.sdist]
-include = ["src/", "R/", "scripts/", "tests/", "README.md", "pyproject.toml", "uv.lock", "renv.lock"]
+include = ["vendor/", "src/", "R/", "scripts/", "tests/", "README.md", "pyproject.toml", "uv.lock", "renv.lock"]

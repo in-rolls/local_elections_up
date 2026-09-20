@@ -51,7 +51,8 @@ src/local_elections_up/  Python acquisition, parsing, and release code
 R/                      Shared R transformations
 scripts/                R build entry points
 notebooks/              Historical parsing and transliteration work
-tests/                 Parser, grain, recode, and provenance checks
+tests/                  Parser, grain, recode, and provenance checks
+vendor/                 Hash-pinned shared research-code wheel
 ```
 
 Historical source receipts retain their original paths, including `data/recovery/`. Archive restoration preserves those locators. Discovery does not enter a release unless explicitly registered. [The relocation ledger](data/catalogs/relocations.json) records moved files without changing their source identities.

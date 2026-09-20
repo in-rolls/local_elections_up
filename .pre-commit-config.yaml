@@ -22,4 +22,5 @@ repos:
       - id: check-yaml
       - id: check-toml
       - id: check-added-large-files
+        exclude: ^vendor/.*\.whl$
       - id: check-merge-conflict
