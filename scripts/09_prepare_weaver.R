@@ -73,8 +73,10 @@ write_weaver_products <- function(input_dir, output_dir) {
 }
 
 if (sys.nframe() == 0L) {
-  source("scripts/00_standardize_utils.R")
-  write_weaver_products(file.path("data", "external", "weaver"), file.path("data", "fin"))
+  source("R/standardize_utils.R")
+  write_weaver_products(
+    file.path("data", "external", "weaver"), file.path("data", "release", "weaver")
+  )
   products <- paste0("weaver_", c("20250302", "20250317"), "_wide.parquet")
-  write_release_metadata(file.path("data/fin", products))
+  write_release_metadata(file.path("data/release/weaver", products))
 }

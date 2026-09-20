@@ -160,3 +160,9 @@ cython_debug/
 #.idea/
 .DS_Store
 data/up_gram_panchayat_pradhan_2021.csv
+
+# Acquisition evidence for the historical recovery: 468,054 fetched pages plus
+# the page images and review files that go with them, 4.5 GB across 473,103
+# files. Too many objects for git; the parsed results and their checksums are
+# what this repository publishes.
+data/recovery/

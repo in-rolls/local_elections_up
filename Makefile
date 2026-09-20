@@ -1,12 +1,24 @@
-.PHONY: sync data data-gp data-panels data-weaver link-gp lint test check
+PY = .venv/bin/python
+
+.PHONY: sync restore-r data release-data data-gp data-offices data-panels data-weaver catalog lint test check verify winner-lists-2015 verify-2015 ci-docker
 
 sync:
-	uv sync --all-groups
+	uv sync --frozen --all-groups
 
-data: data-panels data-weaver
+restore-r:
+	Rscript -e 'if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv", repos="https://cloud.r-project.org"); renv::restore(prompt=FALSE)'
+
+release-data: data
+
+data: data-offices data-panels data-weaver
+	$(MAKE) catalog
 
 data-gp:
+	$(PY) -m local_elections_up.prepare_gp_sources
 	Rscript scripts/05_standardize_elections.R
+
+data-offices: data-gp
+	$(PY) -m local_elections_up.standardize_offices
 
 data-panels: data-gp
 	Rscript scripts/08_link_elections.R
@@ -14,12 +26,11 @@ data-panels: data-gp
 data-weaver:
 	Rscript scripts/09_prepare_weaver.R
 
-link-gp:
-	uv run python scripts/06_link_2021_lgd.py
-	Rscript scripts/05_standardize_elections.R
+catalog:
+	$(PY) -m local_elections_up.release build
 
 lint:
-	Rscript -e 'l <- lintr::lint_dir("scripts"); print(l); quit(status = as.integer(length(l) > 0L))'
+	Rscript -e 'l <- c(lintr::lint_dir("scripts"), lintr::lint_dir("R")); print(l); quit(status=as.integer(length(l)>0L))'
 	.venv/bin/ruff check .
 	.venv/bin/ruff format --check .
 
@@ -29,5 +40,17 @@ test:
 	Rscript tests/test_weaver_preparation.R
 	.venv/bin/pytest -q
 
-check: lint test
-	cd data/fin && shasum -a 256 -c CHECKSUMS.sha256
+verify:
+	$(PY) -m local_elections_up.release verify
+
+check: lint test verify
+
+winner-lists-2015:
+	$(PY) -m local_elections_up.convert_winner_lists_2015
+
+verify-2015:
+	$(PY) -m local_elections_up.convert_winner_lists_2015 --check
+
+ci-docker:
+	docker run --rm --mount type=bind,source="$(CURDIR)",target=/workspace --workdir /workspace --env UV_PROJECT_ENVIRONMENT=/tmp/up-venv ghcr.io/astral-sh/uv:python3.12-trixie sh -c 'uv sync --frozen --all-groups && uv run ruff check . && uv run ruff format --check . && uv run pytest -q && uv run python -m local_elections_up.release verify'
+	docker run --rm --mount type=bind,source="$(CURDIR)",target=/workspace --workdir /workspace --env RENV_PATHS_LIBRARY=/tmp/up-r-library --env NOT_CRAN=true rocker/r-ver:4.6.0 sh -c 'apt-get update && apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev && Rscript -e '\''install.packages("renv"); renv::restore(prompt=FALSE)'\'' && Rscript -e '\''renv::load(); source("tests/test_standardized_release.R"); source("tests/test_election_panels.R"); source("tests/test_weaver_preparation.R")'\'''

@@ -120,8 +120,8 @@ link_adjacent_elections <- function(left, right, threshold = 0.1, include_reject
 }
 
 if (sys.nframe() == 0L) {
-  source("scripts/00_standardize_utils.R")
-  elections <- read_parquet("data/fin/up_gp_elections_standardized.parquet") |>
+  source("R/standardize_utils.R")
+  elections <- read_parquet("data/release/gp/gp_head_election_records.parquet") |>
     mutate(
       district = normalize_link_name(district_name_eng),
       block_hindi = normalize_link_name(block_name_hindi),
@@ -145,13 +145,13 @@ if (sys.nframe() == 0L) {
     pairs[[name]] <- candidates[[name]] |> filter(decision == "accepted")
     print(candidates[[name]] |> count(match_method, decision))
   }
-  write_parquet(bind_rows(candidates), "data/fin/up_gp_link_candidates.parquet")
+  write_parquet(bind_rows(candidates), "data/release/panels/gp_link_candidates.parquet")
   links <- bind_rows(pairs)
   stopifnot(
     !anyDuplicated(links[c("year_from", "year_to", "left_id")]),
     !anyDuplicated(links[c("year_from", "year_to", "right_id")])
   )
-  write_parquet(links, "data/fin/up_gp_adjacent_links.parquet")
+  write_parquet(links, "data/release/panels/gp_adjacent_links.parquet")
   history <- pairs$`2005_2010` |>
     transmute(election_id_2005 = left_id, election_id_2010 = right_id) |>
     inner_join(
@@ -162,12 +162,12 @@ if (sys.nframe() == 0L) {
       pairs$`2015_2021` |> transmute(election_id_2015 = left_id, election_id_2021 = right_id),
       by = "election_id_2015", relationship = "one-to-one"
     )
-  write_parquet(history, "data/fin/up_gp_four_election_links.parquet")
+  write_parquet(history, "data/release/panels/gp_four_election_links.parquet")
   message("Four-election histories: ", nrow(history))
   # Publish the same source records for every consumer; study exclusions stay downstream.
   sources <- map(set_names(c(2005L, 2010L, 2015L, 2021L)), function(year) {
     rows <- elections |> filter(election_year == year)
-    source <- read_parquet(file.path("data/fin", unique(rows$source_file))) |>
+    source <- read_parquet(file.path("data/release/gp", unique(rows$source_file))) |>
       mutate(source_row_number = row_number()) |>
       inner_join(
         rows |> select(
@@ -197,12 +197,12 @@ if (sys.nframe() == 0L) {
         relationship = "one-to-one"
       )
     }
-    write_parquet(panel, file.path("data/fin", paste0("up_gp_panel_", name, ".parquet")))
+    write_parquet(panel, file.path("data/release/panels", paste0("gp_panel_", name, ".parquet")))
   }
   products <- c(
-    "up_gp_link_candidates.parquet", "up_gp_adjacent_links.parquet",
-    "up_gp_four_election_links.parquet",
-    paste0("up_gp_panel_", names(panel_ids), ".parquet")
+    "gp_link_candidates.parquet", "gp_adjacent_links.parquet",
+    "gp_four_election_links.parquet",
+    paste0("gp_panel_", names(panel_ids), ".parquet")
   )
-  write_release_metadata(file.path("data/fin", products))
+  write_release_metadata(file.path("data/release/panels", products))
 }

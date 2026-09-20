@@ -3,9 +3,9 @@ library(digest)
 library(dplyr)
 library(jsonlite)
 
-source(file.path("scripts", "00_standardize_utils.R"))
+source(file.path("R", "standardize_utils.R"))
 
-release_path <- file.path("data", "fin", "up_gp_elections_standardized.parquet")
+release_path <- file.path("data", "release", "gp", "gp_head_election_records.parquet")
 release <- read_parquet(release_path)
 
 expected_rows <- c(`2005` = 51872L, `2010` = 51861L, `2015` = 59019L, `2021` = 49773L)
@@ -43,7 +43,7 @@ stopifnot(
   unique(up_2021$lgd_block_code[up_2021$block_name_std_raw == "seekhad"]) == "1993"
 )
 
-schema <- read_json(file.path("data", "fin", "SCHEMA.json"), simplifyVector = TRUE)
+schema <- read_json(file.path("data", "release", "gp", "SCHEMA.json"), simplifyVector = TRUE)
 entry <- schema[[basename(release_path)]]
 stopifnot(
   entry$rows == nrow(release),

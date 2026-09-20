@@ -7,13 +7,13 @@ library(jsonlite)
 library(readr)
 library(stringi)
 
-source(file.path("scripts", "00_standardize_utils.R"))
+source(file.path("R", "standardize_utils.R"))
 
 source_files <- c(
-  `2005` = "up_gp_sarpanch_2005_fixed_with_transliteration.parquet",
-  `2010` = "up_gp_sarpanch_2010_fixed_with_transliteration.parquet",
-  `2015` = "up_gp_sarpanch_2015_fixed_with_transliteration.parquet",
-  `2021` = "up_gp_sarpanch_2021_fixed_with_transliteration.parquet"
+  `2005` = "gp_head_winner_records_2005.parquet",
+  `2010` = "gp_head_winner_records_2010.parquet",
+  `2015` = "gp_head_winner_records_2015.parquet",
+  `2021` = "gp_head_candidates_2021.parquet"
 )
 expected_rows <- c(`2005` = 51872L, `2010` = 51861L, `2015` = 59019L, `2021` = 49773L)
 
@@ -72,11 +72,15 @@ assert_unique(gp_xwalk, "lgd_gp_code", "Approved LGD GP targets")
 
 standardize_wave <- function(year) {
   filename <- unname(source_files[as.character(year)])
-  data <- read_parquet(file.path("data", "fin", filename)) |>
+  data <- read_parquet(file.path("data", "release", "gp", filename)) |>
     mutate(source_row_number = dplyr::row_number())
 
   if (year == 2021L) {
-    data <- data |> filter(.data$result == "विजेता")
+    data <- data |>
+      group_by(.data$district_name, .data$block_name, .data$gp) |>
+      mutate(winner_markers_conflict = sum(.data$result == "विजेता", na.rm = TRUE) > 1L) |>
+      ungroup() |>
+      filter(.data$result == "विजेता")
   }
   if (nrow(data) != expected_rows[as.character(year)]) {
     stop("Unexpected standardized grain for ", year, call. = FALSE)
@@ -89,6 +93,7 @@ standardize_wave <- function(year) {
         source_file = filename,
         source_row_number = .data$source_row_number,
         source_record_id = NA_character_,
+        winner_markers_conflict = FALSE,
         gp_number_raw = as.character(.data$gp_code),
         district_name_hindi = empty_to_na(.data$district_name),
         district_name_eng_raw = empty_to_na(.data$district_name_eng),
@@ -110,6 +115,7 @@ standardize_wave <- function(year) {
         source_file = filename,
         source_row_number = .data$source_row_number,
         source_record_id = if (year == 2021L) as.character(.data$id) else NA_character_,
+        winner_markers_conflict = if (year == 2021L) .data$winner_markers_conflict else FALSE,
         gp_number_raw = as.character(.data$gp_num),
         district_name_hindi = empty_to_na(.data$district_name),
         district_name_eng_raw = empty_to_na(.data$district_name_eng),
@@ -119,7 +125,8 @@ standardize_wave <- function(year) {
         gp_name_eng_raw = empty_to_na(.data$gp_name_eng),
         reservation_status_hindi = empty_to_na(.data$gp_reservation_status),
         reservation_status_eng = empty_to_na(.data$gp_reservation_status_eng),
-        pradhan_name_hindi = empty_to_na(.data$elected_sarpanch_name),
+        pradhan_name_hindi = if (year == 2021L) empty_to_na(.data$candidate) else
+          empty_to_na(.data$elected_sarpanch_name),
         pradhan_name_eng_raw = empty_to_na(.data$elected_sarpanch_name_eng),
         winner_sex_hindi = empty_to_na(.data$sex),
         result_status_hindi = empty_to_na(.data$result)
@@ -183,7 +190,13 @@ standardize_wave <- function(year) {
       gp_name_std = normalize_name(.data$gp_name_eng),
       reservation_class = standardize_reservation_class(.data$reservation_status_eng),
       women_reserved = standardize_women_reserved(.data$reservation_status_eng),
-      winner_woman = standardize_winner_woman(.data$winner_sex_hindi),
+      winner_woman = if_else(
+        .data$winner_markers_conflict, NA_integer_,
+        standardize_winner_woman(.data$winner_sex_hindi)
+      ),
+      pradhan_name_eng_raw = if_else(
+        .data$winner_markers_conflict, NA_character_, .data$pradhan_name_eng_raw
+      ),
       normalized_name_key = if_else(
         !is.na(.data$district_name_std) &
           !is.na(.data$block_name_std) &
@@ -222,7 +235,8 @@ elections <- elections |>
   ) |>
   select(
     "election_gp_key", "election_year", "source_file", "source_row_number",
-    "source_record_id", "gp_number_raw", "district_name_hindi", "district_name_eng_raw",
+    "source_record_id", "winner_markers_conflict", "gp_number_raw",
+    "district_name_hindi", "district_name_eng_raw",
     "district_name_eng", "district_name_std_raw", "district_name_alias_used",
     "block_name_hindi", "block_name_eng_raw", "block_name_eng", "block_name_std_raw",
     "block_xwalk_used", "block_name_alias_used", "lgd_block_code", "gp_name_hindi",
@@ -286,7 +300,7 @@ profile <- elections |>
   )
 
 dir.create(file.path("data", "crosswalks", "audit"), recursive = TRUE, showWarnings = FALSE)
-output <- file.path("data", "fin", "up_gp_elections_standardized.parquet")
+output <- file.path("data", "release", "gp", "gp_head_election_records.parquet")
 write_parquet(elections, output)
 write_csv(profile, file.path("data", "crosswalks", "audit", "up_gp_elections_profile.csv"))
 write_csv(

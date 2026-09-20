@@ -25,7 +25,7 @@ stopifnot(
 for (vintage in c("20250302", "20250317")) {
   source_name <- if (vintage == "20250302") "weaver_data.dta.gz" else "weaver_data_2.dta.gz"
   panel <- read_dta(file.path("data", "external", "weaver", source_name))
-  product <- read_parquet(file.path("data", "fin", paste0("weaver_", vintage, "_wide.parquet")))
+  product <- read_parquet(file.path("data", "release", "weaver", paste0("weaver_", vintage, "_wide.parquet")))
   stopifnot(
     nrow(product) == n_distinct(panel$gp_id),
     !anyDuplicated(product$gp_id),
