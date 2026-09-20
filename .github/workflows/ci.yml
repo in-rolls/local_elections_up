@@ -20,6 +20,6 @@ jobs:
           r-version: "4.6.0"
           use-public-rspm: true
       - run: uv sync --frozen --all-groups
-      - run: sudo apt-get update && sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev libuv1-dev cmake pkg-config
+      - run: sudo apt-get update && sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev libuv1-dev cmake pkg-config zlib1g-dev libicu-dev
       - run: make restore-r
       - run: make check
