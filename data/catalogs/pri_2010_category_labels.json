@@ -1,0 +1,253 @@
+{
+  "assignment_usable": false,
+  "category_labels": {
+    "\u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": {
+      "code": "W",
+      "label": "\u092e\u0939\u093f\u0932\u093e",
+      "reservation_class": "unknown",
+      "women_reserved": true
+    },
+    "\u00f2\u00ae\u00e2\u00e5\u00ba\u00e2\u00e7\u00f9\u00a5\u00e2\u00ab\u00e2 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2": {
+      "code": "SC",
+      "label": "\u0905\u0928\u0941\u0938\u0942\u091a\u093f\u0924 \u091c\u093e\u0924\u093f",
+      "reservation_class": "sc",
+      "women_reserved": false
+    },
+    "\u00f2\u00ae\u00e2\u00e5\u00ba\u00e2\u00e7\u00f9\u00a5\u00e2\u00ab\u00e2 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2 - \u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": {
+      "code": "SCW",
+      "label": "\u0905\u0928\u0941\u0938\u0942\u091a\u093f\u0924 \u091c\u093e\u0924\u093f - \u092e\u0939\u093f\u0932\u093e",
+      "reservation_class": "sc",
+      "women_reserved": true
+    },
+    "\u00f2\u00ae\u00e2\u00fb\u2122\u00f9\u00bd\u00e2\u00ab\u00e2": {
+      "code": "UR",
+      "label": "\u0905\u0928\u093e\u0930\u0915\u094d\u0937\u093f\u0924",
+      "reservation_class": "general",
+      "women_reserved": false
+    },
+    "\u00f9\u00af\u00e2\u2019\u00e6\u00e6\u00e6\u00e6\u2022\u00e3 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2": {
+      "code": "BC",
+      "label": "\u092a\u093f\u091b\u0921\u093c\u0940 \u091c\u093e\u0924\u093f",
+      "reservation_class": "obc",
+      "women_reserved": false
+    },
+    "\u00f9\u00af\u00e2\u2019\u00e6\u00e6\u00e6\u00e6\u2022\u00e3 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2 - \u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": {
+      "code": "BCW",
+      "label": "\u092a\u093f\u091b\u0921\u093c\u0940 \u091c\u093e\u0924\u093f - \u092e\u0939\u093f\u0932\u093e",
+      "reservation_class": "obc",
+      "women_reserved": true
+    }
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "path": "data/recovery/pri_category_labels_2010/20260912/samiti_head_page_001.png",
+      "render_scale_to": 3200,
+      "role": "label_definition",
+      "sha256": "f9789d3ac2e1620f60297b9b682bbe554c5368348eb785a72ecb9373305a9d09",
+      "source_path": "data/2010/KPP_result_2010.pdf"
+    },
+    {
+      "page": 1,
+      "path": "data/recovery/pri_category_labels_2010/20260912/zp_member_page_001.png",
+      "render_scale_to": 3200,
+      "role": "label_definition",
+      "sha256": "800dc772856556504d0431cfc231d2540a024b496ad4b8fa9db3b49ed61442fc",
+      "source_path": "data/2010/zpm_result_2010.pdf"
+    },
+    {
+      "page": 18,
+      "path": "data/recovery/pri_category_labels_2010/20260912/samiti_head_page_018.png",
+      "render_scale_to": 3000,
+      "role": "later_page_check",
+      "sha256": "16c40cdfc62c98fe9dbab50620192799eb80726502cdd159c2a0d26723e8b2c3",
+      "source_path": "data/2010/KPP_result_2010.pdf"
+    },
+    {
+      "page": 75,
+      "path": "data/recovery/pri_category_labels_2010/20260912/zp_member_page_075.png",
+      "render_scale_to": 3000,
+      "role": "later_page_check",
+      "sha256": "f827fabf0af524459b8320effd9c9caa84c039bc9ca8f1365f69527432c12469",
+      "source_path": "data/2010/zpm_result_2010.pdf"
+    }
+  ],
+  "format_version": 1,
+  "holdout_reviews": [
+    {
+      "candidate_codes": [
+        "UR",
+        "UR",
+        "BC",
+        "UR",
+        "UR",
+        "BC",
+        "SC",
+        "UR",
+        "SC",
+        "BC",
+        "UR",
+        "UR",
+        "BC",
+        "SCW",
+        "SCW",
+        "SC",
+        "BCW",
+        "UR",
+        "BCW",
+        "UR",
+        "BC",
+        "UR",
+        "UR",
+        "BC"
+      ],
+      "first_printed_serial": 383,
+      "office": "panchayat_samiti_head",
+      "seat_codes": [
+        "W",
+        "UR",
+        "BCW",
+        "UR",
+        "W",
+        "UR",
+        "SC",
+        "W",
+        "SC",
+        "BC",
+        "BCW",
+        "UR",
+        "UR",
+        "SC",
+        "SCW",
+        "SC",
+        "BC",
+        "W",
+        "BCW",
+        "UR",
+        "UR",
+        "UR",
+        "UR",
+        "BC"
+      ],
+      "sex_codes": [
+        "F",
+        "M",
+        "F",
+        "F",
+        "F",
+        "M",
+        "M",
+        "F",
+        "M",
+        "M",
+        "F",
+        "M",
+        "M",
+        "F",
+        "F",
+        "M",
+        "F",
+        "F",
+        "F",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M"
+      ],
+      "source_page": 18
+    },
+    {
+      "candidate_codes": [
+        "BC",
+        "UR",
+        "BC",
+        "SC",
+        "SC",
+        "SC",
+        "UR",
+        "SC",
+        "SC",
+        "SC",
+        "SC",
+        "SC",
+        "SC",
+        "UR",
+        "BC",
+        "UR",
+        "UR",
+        "UR",
+        "BC",
+        "UR",
+        "UR"
+      ],
+      "first_printed_serial": 1287,
+      "office": "zilla_parishad_member",
+      "seat_codes": [
+        "W",
+        "UR",
+        "BCW",
+        "SC",
+        "SC",
+        "SC",
+        "UR",
+        "SC",
+        "BC",
+        "SC",
+        "SC",
+        "SC",
+        "SCW",
+        "UR",
+        "BC",
+        "UR",
+        "W",
+        "UR",
+        "BC",
+        "UR",
+        "UR"
+      ],
+      "sex_codes": [
+        "F",
+        "M",
+        "F",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "M",
+        "F",
+        "F",
+        "M",
+        "M",
+        "F",
+        "M",
+        "M",
+        "F",
+        "M"
+      ],
+      "source_page": 75
+    }
+  ],
+  "new_paid_api_cost_usd": 0,
+  "policy": [
+    "Exact encoded-string matching only, scoped to the two checksum-pinned source PDFs.",
+    "Source seat categories, source candidate categories and source-reported sex remain separate.",
+    "The standalone women label has no explicit caste axis: women_reserved=true, reservation_class=unknown.",
+    "Candidate labels do not supply a seat category or establish personal caste or ethnicity.",
+    "Missing, nonstandard or mixed-cell labels are not repaired by substring or fuzzy matching.",
+    "Native encoded fields, source geometry, names, and source observations are preserved.",
+    "Dictionary review is not independent row-accuracy, winner, coverage or assignment certification."
+  ],
+  "sex_labels": {
+    "\u00af\u00e2\u00e5\u00d4\u00b9\u00e2": "\u092a\u0941\u0930\u0941\u0937",
+    "\u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": "\u092e\u0939\u093f\u0932\u093e"
+  },
+  "source_documents": {
+    "775fca2b859b843926ef7f07194c252699f0d2cbf19a60924e6c813a9235765f": "data/2010/zpm_result_2010.pdf",
+    "b5a0b80963bade7becc1c6d5e5a35b9e6927f038c950e58d67453d470704d8f2": "data/2010/KPP_result_2010.pdf"
+  }
+}

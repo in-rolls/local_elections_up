@@ -1,0 +1,80 @@
+[
+  {
+    "executed_date": "2026-09-10",
+    "query": "site:nic.in \"\u0906\u0930\u0915\u094d\u0937\u0923\" \"1995\" \"2000\" \"2021\" \u092a\u0902\u091a\u093e\u092f\u0924",
+    "route": "web search",
+    "result_note": "Broad official-domain search; substantial off-state noise; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "site:gov.in \"gram panchayat\" \"reservation\" \"1995\" \"2000\" Uttar Pradesh",
+    "route": "web search",
+    "result_note": "Broad official-domain search; no bounded new roster established; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "\"panchayat\" \"reservation\" \"1995\" \"2000\" site:nic.in -site:mpvidhansabha.nic.in -site:wbja.nic.in",
+    "route": "web search",
+    "result_note": "SEC election-analysis and historical-context leads; aggregate tables are not office assignments; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "\"panchayat\" \"reservation\" \"history\" site:nic.in Uttar Pradesh",
+    "route": "web search",
+    "result_note": "SEC context lead; no substantive early roster established; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "\"\u0906\u0930\u0915\u094d\u0937\u0923\" \"1995\" \"2000\" \"\u092a\u094d\u0930\u0927\u093e\u0928\" -site:mpvidhansabha.nic.in",
+    "route": "web search",
+    "result_note": "Previously held Gorakhpur mirror and contextual fragments; retained distinction from new acquisitions; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "site:basti.nic.in \"reservation\" \"2021\"",
+    "route": "web search",
+    "result_note": "No search-engine results; not evidence of absent documents; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "site:deoria.nic.in \"reservation\" \"2021\"",
+    "route": "web search",
+    "result_note": "No search-engine results; not evidence of absent documents; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "site:azamgarh.nic.in \"reservation\" \"2021\"",
+    "route": "web search",
+    "result_note": "No search-engine results; not evidence of absent documents; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "site:ballia.nic.in \"reservation\" \"2021\"",
+    "route": "web search",
+    "result_note": "No search-engine results; not evidence of absent documents; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "\u0926\u0947\u0935\u0930\u093f\u092f\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u091a\u0941\u0928\u093e\u0935 2021 \u0906\u0930\u0915\u094d\u0937\u0923 \u0938\u0942\u091a\u0940 site:nic.in",
+    "route": "web search",
+    "result_note": "SEC HTML-result leads surfaced in the batched Hindi search; source vintage remains unresolved; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "\u092c\u0938\u094d\u0924\u0940 \u092a\u0902\u091a\u093e\u092f\u0924 \u0906\u0930\u0915\u094d\u0937\u0923 \u0938\u0942\u091a\u0940 2021 site:nic.in",
+    "route": "web search",
+    "result_note": "Batched Hindi search; no Basti-specific collection established; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "\u0906\u091c\u092e\u0917\u0922\u093c \u092a\u094d\u0930\u0927\u093e\u0928 \u0906\u0930\u0915\u094d\u0937\u0923 \u0938\u0942\u091a\u0940 2021 site:nic.in",
+    "route": "web search",
+    "result_note": "Batched Hindi search; no Azamgarh-specific collection established; evidence: parallel_search_2026_09_10/README.md"
+  },
+  {
+    "executed_date": "2026-09-10",
+    "query": "\u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936 \u092a\u0902\u091a\u093e\u092f\u0924 \u0906\u0930\u0915\u094d\u0937\u0923 \"1995 \u0938\u0947 2015\" \u0938\u0942\u091a\u0940",
+    "route": "web search",
+    "result_note": "Ballia 50-page mixed-tier history PDF and Kanpur Dehat official 22-PDF index surfaced in batched results; evidence: parallel_search_2026_09_10/README.md"
+  }
+]

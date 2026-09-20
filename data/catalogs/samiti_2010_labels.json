@@ -1,0 +1,73 @@
+{
+  "format_version": 1,
+  "status": "single_source_image_review_pending_independent_validation",
+  "source": {
+    "path": "data/2010/area_panchayat_member/kpm_1204.pdf",
+    "sha256": "3d0a943c1deb2847f756df1904c739dfb062b0afc90bf808bb91945f36fb004a",
+    "page": 1,
+    "image": "data/recovery/sec_samiti_2010_source_review/lucknow_page_001.png",
+    "image_sha256": "d732a63671534ce7342b65f114998bc242f77d3de983bc405f26c7cbaae081d9"
+  },
+  "category_labels": {
+    "\u00f2\u00ae\u00e2\u00e5\u00ba\u00e2\u00e7\u00f9\u00a5\u00e2\u00ab\u00e2 \u00a7\u00e2\u00ae\u00e2 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2": {
+      "label": "\u0905\u0928\u0941\u0938\u0942\u091a\u093f\u0924 \u091c\u0928 \u091c\u093e\u0924\u093f",
+      "reservation_class": "st",
+      "women_reserved": false,
+      "source": {
+        "source_path": "data/2010/area_panchayat_member/kpm_0602.pdf",
+        "source_sha256": "e67f5acb7e9bf6466186d39fb519462640acaa93958c95c650d4c08f438bf81b",
+        "source_page": 28,
+        "source_row_on_page": 15
+      },
+      "review_status": "source_image_reviewed_independent_validation_pending"
+    },
+    "\u00f2\u00ae\u00e2\u00e5\u00ba\u00e2\u00e7\u00f9\u00a5\u00e2\u00ab\u00e2 \u00a7\u00e2\u00ae\u00e2 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2 - \u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": {
+      "label": "\u0905\u0928\u0941\u0938\u0942\u091a\u093f\u0924 \u091c\u0928 \u091c\u093e\u0924\u093f - \u092e\u0939\u093f\u0932\u093e",
+      "reservation_class": "st",
+      "women_reserved": true,
+      "source": {
+        "source_path": "data/2010/area_panchayat_member/kpm_0501.pdf",
+        "source_sha256": "d6a4eec86ae12f597b4e4690cab5b8420cc2be3b16df6df411ea4691467a75a6",
+        "source_page": 12,
+        "source_row_on_page": 17
+      },
+      "review_status": "source_image_reviewed_independent_validation_pending"
+    },
+    "\u00f2\u00ae\u00e2\u00fb\u2122\u00f9\u00bd\u00e2\u00ab\u00e2": {
+      "label": "\u0905\u0928\u093e\u0930\u0915\u094d\u0937\u093f\u0924",
+      "reservation_class": "general",
+      "women_reserved": false
+    },
+    "\u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": {
+      "label": "\u092e\u0939\u093f\u0932\u093e",
+      "reservation_class": "general",
+      "women_reserved": true
+    },
+    "\u00f2\u00ae\u00e2\u00e5\u00ba\u00e2\u00e7\u00f9\u00a5\u00e2\u00ab\u00e2 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2": {
+      "label": "\u0905\u0928\u0941\u0938\u0942\u091a\u093f\u0924 \u091c\u093e\u0924\u093f",
+      "reservation_class": "sc",
+      "women_reserved": false
+    },
+    "\u00f2\u00ae\u00e2\u00e5\u00ba\u00e2\u00e7\u00f9\u00a5\u00e2\u00ab\u00e2 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2 - \u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": {
+      "label": "\u0905\u0928\u0941\u0938\u0942\u091a\u093f\u0924 \u091c\u093e\u0924\u093f - \u092e\u0939\u093f\u0932\u093e",
+      "reservation_class": "sc",
+      "women_reserved": true
+    },
+    "\u00f9\u00af\u00e2\u2019\u00e6\u00e6\u00e6\u00e6\u2022\u00e3 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2": {
+      "label": "\u092a\u093f\u091b\u0921\u093c\u0940 \u091c\u093e\u0924\u093f",
+      "reservation_class": "obc",
+      "women_reserved": false
+    },
+    "\u00f9\u00af\u00e2\u2019\u00e6\u00e6\u00e6\u00e6\u2022\u00e3 \u00a7\u00e2\u00fb\u00f9\u00ab\u00e2 - \u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": {
+      "label": "\u092a\u093f\u091b\u0921\u093c\u0940 \u091c\u093e\u0924\u093f - \u092e\u0939\u093f\u0932\u093e",
+      "reservation_class": "obc",
+      "women_reserved": true
+    }
+  },
+  "sex_labels": {
+    "\u00af\u00e2\u00e5\u00d4\u00b9\u00e2": "male",
+    "\u00b3\u00e2\u00f9\u0161\u00b6\u00e2\u00fb": "female"
+  },
+  "scope": "Exact source-specific encoded-label matches after whitespace removal. Never infer a seat category from the elected person's category or sex. Unmatched labels remain unknown.",
+  "assignment_usable": false
+}

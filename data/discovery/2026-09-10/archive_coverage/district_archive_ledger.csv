@@ -1,0 +1,76 @@
+district,host,requests,failed_requests,urlkeys,pdf_candidates,continuation_required,inventory_status,historical_alias_status,source_review_status
+Agra,agra.nic.in,2,0,10347,7281,False,complete_query_with_entries,not_enumerated,not_reviewed
+Aligarh,aligarh.nic.in,2,0,14015,859,False,complete_query_with_entries,not_enumerated,not_reviewed
+Ambedkar Nagar,ambedkarnagar.nic.in,1,0,2324,584,False,complete_query_with_entries,not_enumerated,not_reviewed
+Amethi,amethi.nic.in,1,0,1810,318,False,complete_query_with_entries,not_enumerated,not_reviewed
+Amroha,amroha.nic.in,1,0,2218,121,False,complete_query_with_entries,not_enumerated,not_reviewed
+Auraiya,auraiya.nic.in,1,0,2154,233,False,complete_query_with_entries,not_enumerated,not_reviewed
+Ayodhya,ayodhya.nic.in,1,0,2093,0,False,complete_query_with_entries,not_enumerated,not_reviewed
+Azamgarh,azamgarh.nic.in,1,0,3320,945,False,complete_query_with_entries,not_enumerated,not_reviewed
+Baghpat,bagpat.nic.in,1,0,2811,294,False,complete_query_with_entries,not_enumerated,not_reviewed
+Bahraich,bahraich.nic.in,1,0,1757,0,False,complete_query_with_entries,not_enumerated,not_reviewed
+Ballia,ballia.nic.in,1,0,4315,982,False,complete_query_with_entries,not_enumerated,not_reviewed
+Balrampur,balrampur.nic.in,1,0,4503,323,False,complete_query_with_entries,not_enumerated,not_reviewed
+Banda,banda.nic.in,1,0,4898,1026,False,complete_query_with_entries,not_enumerated,not_reviewed
+Bara Banki,barabanki.nic.in,1,0,2981,712,False,complete_query_with_entries,not_enumerated,not_reviewed
+Bareilly,bareilly.nic.in,1,0,4134,991,False,complete_query_with_entries,not_enumerated,not_reviewed
+Basti,basti.nic.in,1,0,4037,402,False,complete_query_with_entries,not_enumerated,not_reviewed
+Bhadohi,bhadohi.nic.in,1,0,1754,116,False,complete_query_with_entries,not_enumerated,not_reviewed
+Bijnor,bijnor.nic.in,1,0,3621,1353,False,complete_query_with_entries,not_enumerated,not_reviewed
+Budaun,budaun.nic.in,1,0,2047,0,False,complete_query_with_entries,not_enumerated,not_reviewed
+Bulandshahr,bulandshahar.nic.in,1,0,4720,1643,False,complete_query_with_entries,not_enumerated,not_reviewed
+Chandauli,chandauli.nic.in,1,0,2268,466,False,complete_query_with_entries,not_enumerated,not_reviewed
+Chitrakoot,chitrakoot.nic.in,1,0,3056,785,False,complete_query_with_entries,not_enumerated,not_reviewed
+Deoria,deoria.nic.in,1,0,2692,740,False,complete_query_with_entries,not_enumerated,not_reviewed
+Etah,etah.nic.in,1,0,2966,776,False,complete_query_with_entries,not_enumerated,not_reviewed
+Etawah,etawah.nic.in,1,0,3983,651,False,complete_query_with_entries,not_enumerated,not_reviewed
+Farrukhabad,farrukhabad.nic.in,1,0,4981,2165,False,complete_query_with_entries,not_enumerated,not_reviewed
+Fatehpur,fatehpur.nic.in,1,0,2737,688,False,complete_query_with_entries,not_enumerated,not_reviewed
+Firozabad,firozabad.nic.in,1,0,2458,483,False,complete_query_with_entries,not_enumerated,not_reviewed
+Gautam Buddha Nagar,gbnagar.nic.in,1,0,3090,444,False,complete_query_with_entries,not_enumerated,not_reviewed
+Ghaziabad,ghaziabad.nic.in,2,0,5109,2118,False,complete_query_with_entries,not_enumerated,not_reviewed
+Ghazipur,ghazipur.nic.in,2,0,6914,809,False,complete_query_with_entries,not_enumerated,not_reviewed
+Gonda,gonda.nic.in,2,0,12181,475,False,complete_query_with_entries,not_enumerated,not_reviewed
+Gorakhpur,gorakhpur.nic.in,2,0,8126,3669,False,complete_query_with_entries,not_enumerated,not_reviewed
+Hamirpur,hamirpur.nic.in,1,0,4225,376,False,complete_query_with_entries,not_enumerated,not_reviewed
+Hapur,hapur.nic.in,1,0,2273,514,False,complete_query_with_entries,not_enumerated,not_reviewed
+Hardoi,hardoi.nic.in,2,0,7898,1178,False,complete_query_with_entries,not_enumerated,not_reviewed
+Hathras,hathras.nic.in,1,0,3067,673,False,complete_query_with_entries,not_enumerated,not_reviewed
+Jalaun,jalaun.nic.in,1,0,4105,567,False,complete_query_with_entries,not_enumerated,not_reviewed
+Jaunpur,jaunpur.nic.in,1,0,3707,668,False,complete_query_with_entries,not_enumerated,not_reviewed
+Jhansi,jhansi.nic.in,2,0,5940,1834,False,complete_query_with_entries,not_enumerated,not_reviewed
+Kannauj,kannauj.nic.in,2,0,5025,808,False,complete_query_with_entries,not_enumerated,not_reviewed
+Kanpur Dehat,kanpurdehat.nic.in,2,0,15761,2228,False,complete_query_with_entries,not_enumerated,not_reviewed
+Kanpur Nagar,kanpurnagar.nic.in,2,0,11442,6000,False,complete_query_with_entries,not_enumerated,not_reviewed
+Kasganj,kasganj.nic.in,1,0,1625,90,False,complete_query_with_entries,not_enumerated,not_reviewed
+Kaushambi,kaushambi.nic.in,1,0,1164,28,False,complete_query_with_entries,not_enumerated,not_reviewed
+Kheri,kheri.nic.in,2,0,9864,1092,False,complete_query_with_entries,not_enumerated,not_reviewed
+Kushinagar,kushinagar.nic.in,1,0,2745,653,False,complete_query_with_entries,not_enumerated,not_reviewed
+Lalitpur,lalitpur.nic.in,1,0,4588,547,False,complete_query_with_entries,not_enumerated,not_reviewed
+Lucknow,lucknow.nic.in,2,0,6607,1483,False,complete_query_with_entries,not_enumerated,not_reviewed
+Mahoba,mahoba.nic.in,1,0,2494,313,False,complete_query_with_entries,not_enumerated,not_reviewed
+Mahrajganj,maharajganj.nic.in,2,0,5751,462,False,complete_query_with_entries,not_enumerated,not_reviewed
+Mainpuri,mainpuri.nic.in,1,0,2915,464,False,complete_query_with_entries,not_enumerated,not_reviewed
+Mathura,mathura.nic.in,1,0,4510,1355,False,complete_query_with_entries,not_enumerated,not_reviewed
+Mau,mau.nic.in,1,0,3740,411,False,complete_query_with_entries,not_enumerated,not_reviewed
+Meerut,meerut.nic.in,2,0,18333,8807,False,complete_query_with_entries,not_enumerated,not_reviewed
+Mirzapur,mirzapur.nic.in,1,0,3092,125,False,complete_query_with_entries,not_enumerated,not_reviewed
+Moradabad,moradabad.nic.in,2,0,10858,1061,False,complete_query_with_entries,not_enumerated,not_reviewed
+Muzaffarnagar,muzaffarnagar.nic.in,2,0,12822,1719,False,complete_query_with_entries,not_enumerated,not_reviewed
+Pilibhit,pilibhit.nic.in,1,0,4255,468,False,complete_query_with_entries,not_enumerated,not_reviewed
+Pratapgarh,pratapgarh.nic.in,1,0,2671,755,False,complete_query_with_entries,not_enumerated,not_reviewed
+Prayagraj,prayagraj.nic.in,1,0,2716,1,False,complete_query_with_entries,not_enumerated,not_reviewed
+Rae Bareli,raebareli.nic.in,2,0,6860,350,False,complete_query_with_entries,not_enumerated,not_reviewed
+Rampur,rampur.nic.in,1,0,2716,573,False,complete_query_with_entries,not_enumerated,not_reviewed
+Saharanpur,saharanpur.nic.in,1,0,4343,1624,False,complete_query_with_entries,not_enumerated,not_reviewed
+Sambhal,sambhal.nic.in,1,0,1920,254,False,complete_query_with_entries,not_enumerated,not_reviewed
+Sant Kabir Nagar,sknagar.nic.in,1,0,2301,150,False,complete_query_with_entries,not_enumerated,not_reviewed
+Shahjahanpur,shahjahanpur.nic.in,2,0,5408,774,False,complete_query_with_entries,not_enumerated,not_reviewed
+Shamli,shamli.nic.in,1,0,1973,70,False,complete_query_with_entries,not_enumerated,not_reviewed
+Shrawasti,shravasti.nic.in,1,0,3228,366,False,complete_query_with_entries,not_enumerated,not_reviewed
+Siddharthnagar,siddharthnagar.nic.in,1,0,1676,0,False,complete_query_with_entries,not_enumerated,not_reviewed
+Sitapur,sitapur.nic.in,1,0,4628,1032,False,complete_query_with_entries,not_enumerated,not_reviewed
+Sonbhadra,sonbhadra.nic.in,1,0,3508,155,False,complete_query_with_entries,not_enumerated,not_reviewed
+Sultanpur,sultanpur.nic.in,2,0,8522,2903,False,complete_query_with_entries,not_enumerated,not_reviewed
+Unnao,unnao.nic.in,1,0,4802,1414,False,complete_query_with_entries,not_enumerated,not_reviewed
+Varanasi,varanasi.nic.in,1,0,4803,1133,False,complete_query_with_entries,not_enumerated,not_reviewed

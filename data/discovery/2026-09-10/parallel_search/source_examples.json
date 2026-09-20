@@ -1,0 +1,36 @@
+{
+  "basis": "Manual visual reading of original Ballia PDF page 1; diagnosis examples only; retain all raw symbols without normalization",
+  "source_sha256": "4769b16fc47ad32009ecb24129a3c34f73bd809121a6de9c48eeebccbbb7a7cf",
+  "source_path": "raw/e17ce24335a775b65365_4769b16fc47a.pdf",
+  "source_page": 1,
+  "office_raw": "\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0938\u0926\u0938\u094d\u092f",
+  "status_2021_raw": "\u0905\u0928\u0928\u094d\u0924\u093f\u092e \u092a\u094d\u0930\u0915\u093e\u0936\u0928",
+  "rows": [
+    {
+      "source_row_on_page": 1,
+      "ward_raw": "06",
+      "block_raw": "\u092c\u0948\u0930\u093f\u092f\u093e",
+      "reservation_raw_by_year": {
+        "1995": "UR",
+        "2000": "UR",
+        "2005": "L",
+        "2010": "BC",
+        "2015": "SC",
+        "2021": "RL"
+      }
+    },
+    {
+      "source_row_on_page": 2,
+      "ward_raw": "51",
+      "block_raw": "\u0939\u0928\u0941\u092e\u093e\u0928\u0917\u0902\u091c",
+      "reservation_raw_by_year": {
+        "1995": "0",
+        "2000": "0",
+        "2005": "0",
+        "2010": "0",
+        "2015": "STL",
+        "2021": "BCL"
+      }
+    }
+  ]
+}

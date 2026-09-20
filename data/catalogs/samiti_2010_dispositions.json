@@ -1,0 +1,84 @@
+{
+  "format_version": 1,
+  "status": "single_reviewer_source_labels_pending_independent_validation",
+  "input_sha256": "a1c1bec556fdddd7aa290cdbeccf33c4ce7eff588baf31af8d7593412d25f49b",
+  "receipt_sha256": "f954ef84f156ae3975e575af3e2242c94da093c04b3bd0a19580952409c52823",
+  "notes": [
+    "Exact source-specific status-label matching after whitespace removal; no fuzzy name matching.",
+    "A source report of vacancy or court restriction is not an independently verified legal status.",
+    "Every original row is retained. Notice rows are partitioned separately and have no normalized person attributes.",
+    "Nonpositive ward numbers are retained verbatim but not promoted to normalized ward identifiers.",
+    "Raw input and upstream review artifacts are immutable and remain separately available."
+  ],
+  "status_labels": [
+    {
+      "encoded_raw": "\u00b3\u00e2\u00fb0 \u00ae\u00b4\u00e2\u00fb\u00b4\u00e2\u00fb\u00b6\u00e2\u00b4\u00e2 \u00ba\u00e2\u00be \u00b1\u00e2\u00fb\u00f9\u201a\u00e2\u00ab\u00e2",
+      "notice_kind": "court_restriction",
+      "source_text": "\u092e\u093e\u0966 \u0928\u094d\u092f\u093e\u092f\u093e\u0932\u092f \u0938\u0947 \u092c\u093e\u0927\u093f\u0924",
+      "evidence_id": "rampur_19"
+    },
+    {
+      "encoded_raw": "\u00ae\u00b4\u00e2\u00fb\u00b4\u00e2\u00fb\u00b6\u00e2\u00b4\u00e2 \u00ba\u00e2\u00be \u00b1\u00e2\u00fb\u00f9\u201a\u00e2\u00ab\u00e2",
+      "notice_kind": "court_restriction",
+      "source_text": "\u0928\u094d\u092f\u093e\u092f\u093e\u0932\u092f \u0938\u0947 \u092c\u093e\u0927\u093f\u0924",
+      "evidence_id": "rampur_21"
+    },
+    {
+      "encoded_raw": "\u00fc\u2122\u00a1\u00ab\u00e2",
+      "notice_kind": "vacancy",
+      "source_text": "\u0930\u093f\u0915\u094d\u0924",
+      "evidence_id": "badaun_7"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "rampur_19",
+      "source_path": "data/2010/area_panchayat_member/kpm_0504.pdf",
+      "source_sha256": "88d8395ab0f630fcd62163a47170e71846e855592b982f7b53d610c65c6505f6",
+      "source_page": 19,
+      "source_rows": [
+        16
+      ],
+      "image_path": "data/recovery/sec_samiti_2010_source_review/rampur_page_019.png",
+      "image_sha256": "555ec53b02a21bb7423b3babd66a9811a209f3c6db14b883773ec3e661659d7b"
+    },
+    {
+      "id": "rampur_21",
+      "source_path": "data/2010/area_panchayat_member/kpm_0504.pdf",
+      "source_sha256": "88d8395ab0f630fcd62163a47170e71846e855592b982f7b53d610c65c6505f6",
+      "source_page": 21,
+      "source_rows": [
+        7
+      ],
+      "printed_serials": [
+        "482"
+      ],
+      "image_path": "data/recovery/sec_samiti_2010_source_review/rampur_page_021.png",
+      "image_sha256": "d3e7953d54f31b065b4445dd6191037e33468882cfec4d4f94d20a262036e106"
+    },
+    {
+      "id": "badaun_7",
+      "source_path": "data/2010/area_panchayat_member/kpm_0604.pdf",
+      "source_sha256": "a88087e6ffee1512121e866f1968dd212ee2ea1f736306eb2ba9234a3c12db40",
+      "source_page": 7,
+      "source_rows": [
+        6,
+        18
+      ],
+      "printed_serials": [
+        "147",
+        "159"
+      ],
+      "image_path": "data/recovery/sec_samiti_2010_source_review/badaun_page_007.png",
+      "image_sha256": "de7d0dcebe60e70d2fe7c0f70304522b885703d93863780df32a60ba1308462a"
+    }
+  ],
+  "row_holds": [
+    {
+      "source_sha256": "22acf9fe46ef1eaae570abbafff24be3608c8c4351deff7890f10a0b561b55f7",
+      "source_page": 37,
+      "source_row_on_page": 21,
+      "flag": "source_seat_category_blank"
+    }
+  ]
+}

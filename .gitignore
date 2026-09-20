@@ -166,3 +166,13 @@ data/up_gram_panchayat_pradhan_2021.csv
 # files. Too many objects for git; the parsed results and their checksums are
 # what this repository publishes.
 data/recovery/
+
+# Build intermediates: 2.1 GB of this is twenty dated snapshots of the release
+# that data/release holds the current copy of, and the rest is rebuilt from the
+# committed inputs by the pipeline.
+data/interim/
+
+# Evidence too large for git, deposited instead and listed in EVIDENCE.md with
+# its SHA-256: GitHub refuses a file over 100 MB.
+data/source_archives/up_discovery_2026-09-10.tar.gz
+data/discovery/**/raw/

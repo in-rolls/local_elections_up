@@ -1,0 +1,292 @@
+[
+  {
+    "old_path": "data/fin/up_gp_sarpanch_2005_fixed_with_transliteration.parquet",
+    "new_path": "data/release/gp/gp_head_winner_records_2005.parquet",
+    "sha256": "2d5826be50563a7b978cabd451f6fb0505909339b59429dbe6144b9e129f24d6"
+  },
+  {
+    "old_path": "data/fin/up_gp_sarpanch_2010_fixed_with_transliteration.parquet",
+    "new_path": "data/release/gp/gp_head_winner_records_2010.parquet",
+    "sha256": "81cbf6d0b25c369a9c9b905b37fe31bbf185538609c27c6c53f53a1ed2a34c74"
+  },
+  {
+    "old_path": "data/fin/up_gp_sarpanch_2015_fixed_with_transliteration.parquet",
+    "new_path": "data/release/gp/gp_head_winner_records_2015.parquet",
+    "sha256": "2e7cde2ad328d9a7f7d8ad078295e47ef274f48f22b0272a6aaf10ed00cf9b45"
+  },
+  {
+    "old_path": "data/fin/up_gp_sarpanch_2021_fixed_with_transliteration.parquet",
+    "new_path": "data/release/gp/gp_head_candidates_2021.parquet",
+    "sha256": "4b02015d5e4e827ff272d7f8201a87b28c7a8a7e184c086d89f3371834125d16"
+  },
+  {
+    "old_path": "data/fin/up_gp_elections_standardized.parquet",
+    "new_path": "data/release/gp/gp_head_election_records.parquet",
+    "sha256": "986893d620e3d1d0d46e3d306909cc7acf3ccbae383346e4f47b39de9f62fe76"
+  },
+  {
+    "old_path": "data/fin/up_gp_adjacent_links.parquet",
+    "new_path": "data/release/panels/gp_adjacent_links.parquet",
+    "sha256": "16e7f28ebd926b2db6b0cecd0f767ab7335b63429a95dcb0dac25526f54df5e9"
+  },
+  {
+    "old_path": "data/fin/up_gp_four_election_links.parquet",
+    "new_path": "data/release/panels/gp_four_election_links.parquet",
+    "sha256": "af379f5a584dffdcd8062d48c39c697c5dda4ab198632eb973f409b3623733b7"
+  },
+  {
+    "old_path": "data/fin/up_gp_link_candidates.parquet",
+    "new_path": "data/release/panels/gp_link_candidates.parquet",
+    "sha256": "29ef776adcb8ef99aeed1b4dd5428ff25d41ae32eda4f35bcb1b295fa9445355"
+  },
+  {
+    "old_path": "data/fin/up_gp_panel_2005_2010_2015_2021.parquet",
+    "new_path": "data/release/panels/gp_panel_2005_2010_2015_2021.parquet",
+    "sha256": "a056c15ae9d56d88e5f2ef5a26a8681cfd4df8cc7c981dd7e0e14e431d2acb97"
+  },
+  {
+    "old_path": "data/fin/up_gp_panel_2005_2010.parquet",
+    "new_path": "data/release/panels/gp_panel_2005_2010.parquet",
+    "sha256": "95b7578b6165206fdf3e8adfa1cdd201443ad424f5399fa907774521dbdf9af0"
+  },
+  {
+    "old_path": "data/fin/up_gp_panel_2010_2015.parquet",
+    "new_path": "data/release/panels/gp_panel_2010_2015.parquet",
+    "sha256": "ddf624786ead6f20480abe442be6fa52528f2e486648bb5bda151d91a9337a15"
+  },
+  {
+    "old_path": "data/fin/up_gp_panel_2015_2021.parquet",
+    "new_path": "data/release/panels/gp_panel_2015_2021.parquet",
+    "sha256": "da125f69f71a24993843b5400ffea4f8239fd418ac96e0b0bf8e382659c25444"
+  },
+  {
+    "old_path": "data/fin/weaver_20250302_wide.parquet",
+    "new_path": "data/release/weaver/weaver_20250302_wide.parquet",
+    "sha256": "e7a6411af5b2980255c670d80af1c171baaef431515157ab35f1addac90eb695"
+  },
+  {
+    "old_path": "data/fin/weaver_20250317_wide.parquet",
+    "new_path": "data/release/weaver/weaver_20250317_wide.parquet",
+    "sha256": "d2a3a0c5ee079850e83ef241d5ad9e5bb4198fa725c76ec9f0a4b520f7a46f85"
+  },
+  {
+    "old_path": "scripts/06_link_2021_lgd.py",
+    "new_path": "src/local_elections_up/link_2021_lgd.py",
+    "sha256": "6086d12cca748845afbc54fbdf8035edb15dfb35f729ba564df74b1eed0f64fb"
+  },
+  {
+    "old_path": "scripts/07_standardize_offices.py",
+    "new_path": "src/local_elections_up/standardize_offices.py",
+    "sha256": "08d77f58de02b2337944d5d3a8f9a6fa33e6d819f7868191b9a40b643bd206ef"
+  },
+  {
+    "old_path": "scripts/apply_reservation_codebook.py",
+    "new_path": "src/local_elections_up/apply_reservation_codebook.py",
+    "sha256": "4d40912bfc20d1c2c42748da5a11778a5d760220096397de9952f28fc4d59522"
+  },
+  {
+    "old_path": "scripts/combine_sec_urban_2017.py",
+    "new_path": "src/local_elections_up/combine_sec_urban_2017.py",
+    "sha256": "a7b5ece61024ab49b2a239723ae48df5b65e57f58d77752c6bdebb8f641045a7"
+  },
+  {
+    "old_path": "scripts/convert_winner_lists_2015.py",
+    "new_path": "src/local_elections_up/convert_winner_lists_2015.py",
+    "sha256": "f2fd486d6a47e5dfc1e61b0f76f6c28ec63206aea45ab2e73de6b595ce0a4484"
+  },
+  {
+    "old_path": "scripts/decode_legacy_labels.py",
+    "new_path": "src/local_elections_up/decode_legacy_labels.py",
+    "sha256": "e527afdb2a2c4b1877e718c8e5e27138d4d615b3be65c6b23668694f2674ebd0"
+  },
+  {
+    "old_path": "scripts/extract_ballia_reservations_2021.py",
+    "new_path": "src/local_elections_up/extract_ballia_reservations_2021.py",
+    "sha256": "0a592dd169f83421feace9f7763011609f0109c3d0c13e48163f65243f87b853"
+  },
+  {
+    "old_path": "scripts/extract_etah_reservations_2010.py",
+    "new_path": "src/local_elections_up/extract_etah_reservations_2010.py",
+    "sha256": "4d7398ed559d06927a5238a9fe64bea942548207a015f97a1807eb091e683678"
+  },
+  {
+    "old_path": "scripts/extract_ghaziabad_reservations_2021.py",
+    "new_path": "src/local_elections_up/extract_ghaziabad_reservations_2021.py",
+    "sha256": "4cd845929929a7ecb700b550841048e044096aee527c77134688c930e17ee5b8"
+  },
+  {
+    "old_path": "scripts/extract_kanpur_dehat_samiti_2021_grid.py",
+    "new_path": "src/local_elections_up/extract_kanpur_dehat_samiti_2021_grid.py",
+    "sha256": "2d3a98279e908c5bcb0bd8c518fb522892a59cf9e852ca45189b8d363f539ae2"
+  },
+  {
+    "old_path": "scripts/extract_sec_winner_table.py",
+    "new_path": "src/local_elections_up/extract_sec_winner_table.py",
+    "sha256": "e82cfddc12f84294e016341cc5a70d6dbf25e4d5b67014a07e4a0fd7f9154897"
+  },
+  {
+    "old_path": "scripts/extract_sitapur_reservations_2010.py",
+    "new_path": "src/local_elections_up/extract_sitapur_reservations_2010.py",
+    "sha256": "ed7a241b1d2205aa4764eb81a901bacae4274cab7bea8057aa35eb65ee58b982"
+  },
+  {
+    "old_path": "scripts/harvest_sec_historical_results.py",
+    "new_path": "src/local_elections_up/harvest_sec_historical_results.py",
+    "sha256": "2c9e320c96eb1cdfa3b9b160e37b197f013fdbcdf2b480f0d4117148955bcf10"
+  },
+  {
+    "old_path": "scripts/harvest_sec_pri_portal_2010.py",
+    "new_path": "src/local_elections_up/harvest_sec_pri_portal_2010.py",
+    "sha256": "e5c25a04a70144c6f8556ce1da799c52949c8a680987e81ee27476874f4a73a3"
+  },
+  {
+    "old_path": "scripts/harvest_sec_reservations.py",
+    "new_path": "src/local_elections_up/harvest_sec_reservations.py",
+    "sha256": "18b66a91dba3c9b0578c425cc7e4cddf6575ff2cd34824ac51407c3f4893989d"
+  },
+  {
+    "old_path": "scripts/harvest_sec_urban_winners.py",
+    "new_path": "src/local_elections_up/harvest_sec_urban_winners.py",
+    "sha256": "e223b227a27f4d26c669072c72cbb136ce99faddea5adbbec203713f3a19c561"
+  },
+  {
+    "old_path": "scripts/harvest_sec_wayback_pdfs.py",
+    "new_path": "src/local_elections_up/harvest_sec_wayback_pdfs.py",
+    "sha256": "d4024c3269a13b278d6b71b81f50def7b004cd4c8171f668a87947f1b2b2b7ae"
+  },
+  {
+    "old_path": "scripts/ocr_scanned_pdf_oriented.py",
+    "new_path": "src/local_elections_up/ocr_scanned_pdf_oriented.py",
+    "sha256": "e0878eeb1a5ef94f2c6667164d52ab9124e8daa834a8d310d79e9614ea01ace7"
+  },
+  {
+    "old_path": "scripts/office_ballia.py",
+    "new_path": "src/local_elections_up/office_ballia.py",
+    "sha256": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d"
+  },
+  {
+    "old_path": "scripts/office_provenance.py",
+    "new_path": "src/local_elections_up/office_provenance.py",
+    "sha256": "0bc97494f1eef8009f50f1fdfd4ebc926cc21f532c87edfb69de17e49537e23c"
+  },
+  {
+    "old_path": "scripts/parse_sec_candidate_csvs.py",
+    "new_path": "src/local_elections_up/parse_sec_candidate_csvs.py",
+    "sha256": "8519b9fcf69b7f93a45662f762dfe720eefdb9b3696da926ea93187ac8ad21a3"
+  },
+  {
+    "old_path": "scripts/parse_sec_panchayat_2000_percentages.py",
+    "new_path": "src/local_elections_up/parse_sec_panchayat_2000_percentages.py",
+    "sha256": "c63db2db7c4e21b4ae1f70d0fb90e4966d2b0d30e338feb3aa0e64735a1537bf"
+  },
+  {
+    "old_path": "scripts/parse_sec_panchayat_2005_district_members.py",
+    "new_path": "src/local_elections_up/parse_sec_panchayat_2005_district_members.py",
+    "sha256": "6acc5fcee947455c4ca99518597a8f2558a3c95e10129a9d209e4943ec50e62a"
+  },
+  {
+    "old_path": "scripts/parse_sec_panchayat_2006_block_officials.py",
+    "new_path": "src/local_elections_up/parse_sec_panchayat_2006_block_officials.py",
+    "sha256": "3853413beccd50e109d85179b695e871d658f93dcc58a57e45692ab71d12299a"
+  },
+  {
+    "old_path": "scripts/parse_sec_panchayat_age_1995.py",
+    "new_path": "src/local_elections_up/parse_sec_panchayat_age_1995.py",
+    "sha256": "4fdf8ce3f4ca57112aff7e74575f519474751d648cb651bc225747460ab6269b"
+  },
+  {
+    "old_path": "scripts/parse_sec_panchayat_education_1995.py",
+    "new_path": "src/local_elections_up/parse_sec_panchayat_education_1995.py",
+    "sha256": "b64ada9d66a8140dbd4b44fe71bdac8b2dae8d4eed5ef990dd7ac847e79f21ce"
+  },
+  {
+    "old_path": "scripts/parse_sec_panchayat_finance.py",
+    "new_path": "src/local_elections_up/parse_sec_panchayat_finance.py",
+    "sha256": "67aa3cebd531df7c1fd795cd2ba05a14aff947d3db22fb847d1481d6eb7fc97a"
+  },
+  {
+    "old_path": "scripts/parse_sec_pri_coverage.py",
+    "new_path": "src/local_elections_up/parse_sec_pri_coverage.py",
+    "sha256": "a3ae34c64d3a90e404a4851152751492192909a069898a07915084d2f0786379"
+  },
+  {
+    "old_path": "scripts/parse_sec_pri_portal_2010.py",
+    "new_path": "src/local_elections_up/parse_sec_pri_portal_2010.py",
+    "sha256": "1800a6449cbe1b247fc7a0f894a6e7fa81d1c48456ade8803146bfbf88f77840"
+  },
+  {
+    "old_path": "scripts/parse_sec_pri_results_2010.py",
+    "new_path": "src/local_elections_up/parse_sec_pri_results_2010.py",
+    "sha256": "dc586406c2f61d7271eb130f60a4351a5d965b1bcd86e8193e1ecb09a01674e4"
+  },
+  {
+    "old_path": "scripts/parse_sec_reservations.py",
+    "new_path": "src/local_elections_up/parse_sec_reservations.py",
+    "sha256": "9d727c1dc8e5ef6265914a0bafbe0eeaf4a72e830dd29d8e34e5cab09995c243"
+  },
+  {
+    "old_path": "scripts/parse_sec_samiti_members_2005.py",
+    "new_path": "src/local_elections_up/parse_sec_samiti_members_2005.py",
+    "sha256": "e556638d33e3e107574fcc04f9c87270f27f4cb71dba503b03a684cbf1f0aa99"
+  },
+  {
+    "old_path": "scripts/parse_sec_samiti_members_2010.py",
+    "new_path": "src/local_elections_up/parse_sec_samiti_members_2010.py",
+    "sha256": "3f42ea7a2df5e2d1f69483028ac341e4e73701664dd58eb492f3c2b80e245af6"
+  },
+  {
+    "old_path": "scripts/parse_sec_urban_coverage.py",
+    "new_path": "src/local_elections_up/parse_sec_urban_coverage.py",
+    "sha256": "1b9d63bd67ff05e53e250fba23e7cc4a205c96fa19eceda1eaac58f395a339e9"
+  },
+  {
+    "old_path": "scripts/parse_sec_urban_member_lists_2012.py",
+    "new_path": "src/local_elections_up/parse_sec_urban_member_lists_2012.py",
+    "sha256": "723d4c22842ab52ddecd8121b2f0d0691d5218868c7ef8f6b5cf44201b6d104e"
+  },
+  {
+    "old_path": "scripts/parse_sec_urban_results_2006.py",
+    "new_path": "src/local_elections_up/parse_sec_urban_results_2006.py",
+    "sha256": "4411d65e98844b75e6107f16f86ac66df6b45528598a6b5ac2d744506a886e5e"
+  },
+  {
+    "old_path": "scripts/reconcile_sec_urban_sources.py",
+    "new_path": "src/local_elections_up/reconcile_sec_urban_sources.py",
+    "sha256": "cf7686050ce2d207434593d6d8ab8e370e0ca2b112d8fee2ab815809dbdef3fe"
+  },
+  {
+    "old_path": "scripts/standardize_sec_samiti_2010.py",
+    "new_path": "src/local_elections_up/standardize_sec_samiti_2010.py",
+    "sha256": "dc0b78aaade763bf5c1b290e704f983694281f2da3e28b8fb7cdaf8a16dfd17d"
+  },
+  {
+    "old_path": "scripts/04_up_transliterate_integrate.ipynb",
+    "new_path": "notebooks/04_up_transliterate_integrate.ipynb",
+    "sha256": "932a231d951e46fefc7d79159affb45b3d2c9ac7fac54a74f415dbcf21873c1e"
+  },
+  {
+    "old_path": "scripts/02_up_transliterate_prep.ipynb",
+    "new_path": "notebooks/02_up_transliterate_prep.ipynb",
+    "sha256": "614072b76617bbd64aa3ecc7dee3fc9078193a292a71d58fe113622c8554109f"
+  },
+  {
+    "old_path": "scripts/01b_up_gp_sarpanch_2010.ipynb",
+    "new_path": "notebooks/01b_up_gp_sarpanch_2010.ipynb",
+    "sha256": "dfffd39840a1aec57b64ef159191ff51685b36de21f85673a96f5a8deb4527f8"
+  },
+  {
+    "old_path": "scripts/03_up_transliteration_goog_gemini_requests.ipynb",
+    "new_path": "notebooks/03_up_transliteration_goog_gemini_requests.ipynb",
+    "sha256": "0717bff7e4fefe88fdb72edfe38c91ee376ff5d39e50481dd7f4d6acec84eabe"
+  },
+  {
+    "old_path": "scripts/01a_up_gp_sarpanch_2005.ipynb",
+    "new_path": "notebooks/01a_up_gp_sarpanch_2005.ipynb",
+    "sha256": "28ec6f01449cc8cca9dfc4aa4375d787f2f68736d240aae5685462b6604e2747"
+  },
+  {
+    "old_path": "scripts/00_standardize_utils.R",
+    "new_path": "R/standardize_utils.R",
+    "sha256": "78868959309d88330e73611b5824c8b1e48f54cc19be8d3007b14860eb9870d7"
+  }
+]

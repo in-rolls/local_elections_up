@@ -1,0 +1,20 @@
+{
+  "candidate_collision_groups": 27,
+  "central_snapshot_modified": false,
+  "confirmed_half_consonant_errors": 2,
+  "decoder_correction_applied": false,
+  "full_consonant_controls": 2,
+  "image_archive": {
+    "bytes": 1442246,
+    "path": "data/reference/sec_samiti_members_2005_name_decode_review/20260913T122909656291Z/images.tar.gz",
+    "sha256": "78e7fb68500360b7f6f7d006df908f2026fce1578a82265a631d5c85a894e227"
+  },
+  "new_paid_api_cost_usd": 0,
+  "output": "/Users/soodoku/Documents/GitHub/local_elections_up/data/reference/sec_samiti_members_2005_name_decode_review/20260913T122909656291Z",
+  "review_bytes": 32904,
+  "review_path": "data/reference/sec_samiti_members_2005_name_decode_review/20260913T122909656291Z/review.json.gz",
+  "review_sha256": "81de47144f4e34eb03dfcf355a8293efd1fbc0786181abba025fdcb8a599751a",
+  "source_rows_reviewed": 4,
+  "status": "source_review_complete_decoder_correction_not_applied",
+  "ward_collision_groups": 3
+}

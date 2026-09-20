@@ -1,0 +1,38 @@
+{
+  "ccfa9cd01662df22773fffc808346570229c252b54f70b9f1ab48e63362aae12-p0003": {
+    "clockwise_rotation_degrees": 270,
+    "reviewer": "Codex visual source inspection",
+    "evidence": "Original PDF page rendered with pdftoppm at long edge 1800. Devanagari headings, serials, and category labels visibly rotated 90 degrees clockwise; rotate 270 degrees clockwise to read upright.",
+    "scope": "Orientation only; this does not certify the resulting OCR text."
+  },
+  "ccfa9cd01662df22773fffc808346570229c252b54f70b9f1ab48e63362aae12-p0005": {
+    "clockwise_rotation_degrees": 270,
+    "reviewer": "Codex visual source inspection",
+    "evidence": "Original PDF page rendered with pdftoppm at long edge 1800. Devanagari headings, serials, and category labels visibly rotated 90 degrees clockwise; rotate 270 degrees clockwise to read upright.",
+    "scope": "Orientation only; this does not certify the resulting OCR text."
+  },
+  "ccfa9cd01662df22773fffc808346570229c252b54f70b9f1ab48e63362aae12-p0007": {
+    "clockwise_rotation_degrees": 270,
+    "reviewer": "Codex visual source inspection",
+    "evidence": "Original PDF page rendered with pdftoppm at long edge 1800. Devanagari headings, serials, and category labels visibly rotated 90 degrees clockwise; rotate 270 degrees clockwise to read upright.",
+    "scope": "Orientation only; this does not certify the resulting OCR text."
+  },
+  "b0af3d503dca99984dbb5ff902e9b6656d4500c458d7d6c9ca2442b3e129aa54-p0006": {
+    "clockwise_rotation_degrees": 270,
+    "reviewer": "Codex visual source inspection",
+    "evidence": "Original PDF page rendered with pdftoppm at long edge 1800. Devanagari headings, serials, and category labels visibly rotated 90 degrees clockwise; rotate 270 degrees clockwise to read upright.",
+    "scope": "Orientation only; this does not certify the resulting OCR text."
+  },
+  "b93352f41330658c9be3f13a2d1f32b96ce94ebe87f62cd0902d3bdd1e68dd6f-p0006": {
+    "clockwise_rotation_degrees": 270,
+    "reviewer": "Codex visual source inspection",
+    "evidence": "Original PDF page rendered with pdftoppm at long edge 1800. Devanagari headings, serials, and category labels visibly rotated 90 degrees clockwise; rotate 270 degrees clockwise to read upright.",
+    "scope": "Orientation only; this does not certify the resulting OCR text."
+  },
+  "e99f3182ef067c8debe8d53ce357def5f8a985f87b061a80304c09aa2ccd3f17-p0003": {
+    "clockwise_rotation_degrees": 270,
+    "reviewer": "Codex visual source inspection",
+    "evidence": "Original PDF page rendered with pdftoppm at long edge 1800. Devanagari headings, serials, and category labels visibly rotated 90 degrees clockwise; rotate 270 degrees clockwise to read upright.",
+    "scope": "Orientation only; this does not certify the resulting OCR text."
+  }
+}
