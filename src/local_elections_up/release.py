@@ -77,7 +77,8 @@ def describe(path, office_files):
             year = path.stem.rsplit("_", 1)[-1]
             entry.update(
                 grain="one winner-list source record",
-                key=["source_row_number (one-based physical row)"],
+                key=[],
+                row_locator="one-based physical row within the hash-pinned file",
                 rows_by_year={year: entry["rows"]},
             )
     elif relative.startswith("weaver/"):
@@ -87,13 +88,23 @@ def describe(path, office_files):
             validation_tier="external_source_preparation",
         )
     else:
-        entry.update(
-            grain="one linkage candidate"
-            if "candidates" in path.name
-            else "one linked source-record pair or history",
-            key=["source-election IDs; see dictionary"],
-            validation_tier="geographic_linkage",
-        )
+        if path.stem == "gp_lgd_bridge":
+            grain = "one historical panel row projected to the LGD vintage"
+            keys = ["panel", "source_panel_row"]
+        elif path.stem in {"gp_adjacent_links", "gp_link_candidates"}:
+            grain = (
+                "one accepted adjacent-wave link"
+                if path.stem == "gp_adjacent_links"
+                else "one assessed adjacent-wave linkage candidate"
+            )
+            keys = ["year_from", "year_to", "left_id", "right_id"]
+        elif path.stem == "gp_four_election_links":
+            grain = "one linked four-election history"
+            keys = [f"election_id_{year}" for year in (2005, 2010, 2015, 2021)]
+        else:
+            grain = "one linked source-record pair or four-election history"
+            keys = [name for name in schema.names if name.startswith("key_")]
+        entry.update(grain=grain, key=keys, validation_tier="geographic_linkage")
     return entry
 
 
@@ -171,6 +182,10 @@ def build():
             text=True,
         ).strip(),
         "source_registry_sha256": digest(ROOT / "data/catalogs/office_sources.json"),
+        "input_registries_sha256": {
+            name: digest(ROOT / "data/catalogs" / name)
+            for name in ("office_sources.json", "gp_sources.json")
+        },
         "code_sha256": {
             p.relative_to(ROOT).as_posix(): digest(p)
             for directory in ("src", "R", "scripts")
@@ -229,7 +244,7 @@ def build():
             [
                 f"## {e['dataset_id']}",
                 "",
-                f"{e['grain']}. Key: {', '.join(e['key'])}.",
+                f"{e['grain']}. Key: {', '.join(e['key']) or e['row_locator']}.",
                 "",
                 "| Column | Type | Meaning |",
                 "| --- | --- | --- |",
@@ -269,6 +284,13 @@ def verify(directory=RELEASE):
         actual_columns = [{"name": f.name, "type": str(f.type)} for f in schema]
         if actual_columns != entry["columns"]:
             raise ValueError(f"Release schema differs: {entry['path']}")
+        keys = entry.get("key", [])
+        if keys and entry["validation_tier"] != "provisional_source_observations":
+            if not set(keys).issubset(schema.names):
+                raise ValueError(f"Declared key columns missing: {entry['path']}")
+            key_rows = pq.read_table(path, columns=keys).to_pandas()
+            if key_rows.isna().any().any() or key_rows.duplicated().any():
+                raise ValueError(f"Invalid declared key: {entry['path']}")
         for name in schema.names:
             if contact_field(name):
                 raise ValueError(f"Contact field in analytical export: {name}")

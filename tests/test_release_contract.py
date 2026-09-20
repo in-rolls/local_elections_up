@@ -218,3 +218,24 @@ def test_observation_without_a_source_locator_fails():
     )
     with pytest.raises(ValueError, match="stable source locator"):
         standardize_offices.ensure_observation_id(record, "source")
+
+
+@pytest.mark.parametrize("keys", [["missing"], ["value"]])
+def test_release_rejects_invalid_declared_keys(release_copy, keys):
+    path = release_copy / "offices/observations.parquet"
+    table = pa.table({"value": [1, 1]})
+    pq.write_table(table, path)
+    manifest_path = release_copy / "manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    entry = manifest["files"][0]
+    entry.update(
+        sha256=checksum(path),
+        rows=2,
+        key=keys,
+        validation_tier="geographic_linkage",
+        columns=[{"name": f.name, "type": str(f.type)} for f in table.schema],
+    )
+    manifest_path.write_text(json.dumps(manifest))
+    stamp(release_copy)
+    with pytest.raises(ValueError, match="[Kk]ey"):
+        release.verify(release_copy)
