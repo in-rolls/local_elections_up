@@ -75,3 +75,9 @@ make check
 The v2 layout replaces `data/fin/` with `data/release/`. Consumer filenames describe their contents and row unit. The 2015 office records now have winner-list semantics and decoded seat-reservation categories. The known 2021 conflicting winner names are retained correctly. Analytical exports omit phone numbers and the three 2021 columns whose headers were not recovered. Original source evidence is preserved separately.
 
 See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution](data/external/weaver/README.md) for external source terms.
+
+## Research and historical geography
+
+[Research evidence](RESEARCH.md) describes the Etah and Sitapur reservation bundles and the SEC 2015–16 block-head printings. These retain unresolved source and identity flags.
+
+The [historical LGD bridge](data/release/panels/gp_lgd_bridge.parquet) maps linked election records to the attributed LGD vintage. Read [its source and matching rules](data/external/lgd/README.md) before joining: multiple historical records can map to one later GP, and names do not prove unchanged boundaries. `make data-lgd` rebuilds it.

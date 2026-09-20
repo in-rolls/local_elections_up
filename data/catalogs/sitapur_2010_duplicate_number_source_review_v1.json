@@ -1,0 +1,26 @@
+{
+  "status": "source contradictions confirmed; identities unresolved",
+  "reviewer": "Codex source-cell visual inspection, 2026-09-10",
+  "independent_review": false,
+  "source_sha256": "ae79974344f059ac5a19580bcbb05daeefbdf2c329e923ad149c2d7cf607a03d",
+  "source_path": "data/discovery/2026-09-10/archived_reservations/raw/0df2ed118dc874203c5c_ae79974344f0.pdf",
+  "source_url": "http://sitapur.nic.in:80/Reservation_pradhan/Election%202010/BDC%20CHETRA%20PANCHAYAT.pdf",
+  "wayback_timestamp": "20100928113446",
+  "render_resolution_dpi": 180,
+  "evidence_directory": "data/interim/sitapur_2010_duplicate_number_review_v1",
+  "row_coordinates_and_observation_ids": "data/interim/sitapur_2010_duplicate_number_review_v1/review_queue.json",
+  "review_scope": "All 19 rows in the nine exact-source, raw-block, printed-number duplicate groups. This is a targeted diagnostic review, not an out-of-sample accuracy estimate or a review of all 2897 observations.",
+  "findings": [
+    {"source_page": 6, "source_rows": [28, 29], "printed_serial": "40", "same_printed_name": true, "categories_in_row_order": [["BC", false], ["SC", true]]},
+    {"source_page": 10, "source_rows": [20, 21], "printed_serial": "79", "same_printed_name": true, "categories_in_row_order": [["BC", false], ["SC", false]]},
+    {"source_page": 20, "source_rows": [10, 11], "printed_serial": "5", "same_printed_name": true, "categories_in_row_order": [["NONE", false], ["SC", false]]},
+    {"source_page": 20, "source_rows": [19, 20, 21], "printed_serial": "13", "same_printed_name": false, "same_name_category_conflict_rows": [19, 20], "categories_in_row_order": [["NONE", false], ["BC", true], ["SC", false]]},
+    {"source_page": 20, "source_rows": [22, 23], "printed_serial": "14", "same_printed_name": true, "categories_in_row_order": [["BC", false], ["SC", true]]},
+    {"source_page": 23, "source_rows": [4, 5], "printed_serial": "23", "same_printed_name": true, "categories_in_row_order": [["NONE", false], ["BC", false]]},
+    {"source_page": 30, "source_rows": [8, 9], "printed_serial": "10", "same_printed_name": true, "categories_in_row_order": [["NONE", true], ["SC", true]]},
+    {"source_page": 31, "source_rows": [28, 29], "printed_serial": "64", "same_printed_name": true, "categories_in_row_order": [["NONE", true], ["BC", true]]},
+    {"source_page": 35, "source_rows": [27, 28], "printed_serial": "35", "same_printed_name": false, "categories_in_row_order": [["NONE", false], ["NONE", false]]}
+  ],
+  "disposition": "Retain every source observation and diagnostic flag. Do not renumber, select a category, deduplicate, merge identities, or infer missing numbers. These source contradictions require independent administrative evidence to resolve.",
+  "additional_api_cost_usd": 0
+}

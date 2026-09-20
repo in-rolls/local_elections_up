@@ -1,0 +1,33 @@
+{
+  "status": "research-evidence upload downloaded and byte-verified",
+  "source_commit": "424ab91da91ede829d01af65eea18ac9bd8292ae",
+  "release_url": "https://github.com/in-rolls/local_elections_up/releases/tag/source-evidence-2026-09-10",
+  "archive_name": "sec-block-head-winners-2015-16-research-2026-09-10.tar.gz",
+  "archive_sha256": "dfccf9e062f006900aa13774798456b8e5b341f00bab45785fb5c197681cf27a",
+  "archive_bytes": 196803,
+  "assets_compared_byte_for_byte": [
+    "sec-block-head-winners-2015-16-research-2026-09-10.tar.gz",
+    "sec-block-head-winners-2015-16-research-2026-09-10.CHECKSUMS.sha256",
+    "sec_winner_table_2015_research_bundle.json"
+  ],
+  "local_checks": {
+    "full_worktree_command": "make check",
+    "full_worktree_python_tests_passed": 49,
+    "publication_python_command": ".venv/bin/pytest -q --ignore=tests/test_sec_results_2010.py",
+    "publication_python_tests_passed": 35,
+    "excluded_work": "The 14-test uncommitted SEC 2010 PDF parser is not part of this publication; its production geometry guard repair remains pending.",
+    "r_lint": "passed",
+    "python_lint": "passed",
+    "formatting": "passed",
+    "standardized_release_tests": "passed",
+    "final_dataset_checksums_passed": 5,
+    "independent_html_parser_cells_compared": 9792
+  },
+  "independent_model_review": false,
+  "original_winner_html_included": false,
+  "mobile_column_exported": false,
+  "final_data_changed": false,
+  "software_release_created": false,
+  "additional_api_cost_usd": 0,
+  "unresolved": "Exact poll dates and statewide completeness remain unverified. These are block heads, not samiti ward members."
+}

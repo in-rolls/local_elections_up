@@ -723,6 +723,34 @@ def copy_groups(path):
     return {sha: sorted(paths) for sha, paths in groups.items()}
 
 
+def ensure_observation_id(record, source_id):
+    if record["source_observation_id"] is None:
+        locator = {
+            key: record[key]
+            for key in (
+                "source_collection",
+                "source_document_sha256",
+                "source_page",
+                "source_row",
+                "source_csv_record",
+                "source_category_column",
+                "election_year",
+                "office",
+            )
+        }
+        if not locator["source_document_sha256"] or not any(
+            locator[k] is not None for k in ("source_row", "source_csv_record")
+        ):
+            raise ValueError("Observation has no stable source locator")
+        record["source_observation_id"] = (
+            "locator:"
+            + hashlib.sha256(json.dumps(locator, sort_keys=True).encode()).hexdigest()
+        )
+        record["record_id"] = hashlib.sha256(
+            (source_id + "\0" + record["source_observation_id"]).encode()
+        ).hexdigest()
+
+
 def main():
     from local_elections_up.office_ballia import BalliaHistoricalSource, BalliaSource
 
@@ -741,7 +769,6 @@ def main():
     output.mkdir(parents=True, exist_ok=False)
     manifest = {
         "status": "incomplete",
-        "created_utc": datetime.now(UTC).isoformat(),
         "registry_sha256": hashlib.sha256(registry_bytes).hexdigest(),
         "label_schema_sha256": hashlib.sha256(LABELS_BYTES).hexdigest(),
         "parser_sha256": file_hash(Path(__file__)),
@@ -840,6 +867,7 @@ def main():
                         else normalize(row, source, path, parent_sha, position, context)
                     )
                     provenance.apply(record)
+                    ensure_observation_id(record, source["id"])
                     key = (record["office"], record["record_kind"])
                     buffers[key].append(record)
                     counts[key] += 1

@@ -55,8 +55,8 @@ FIELDS = [
     "result_raw",
 ]
 RESERVATIONS = {
-    "अनारक्षित": ("UR", False),
-    "महिला": ("UR", True),
+    "अनारक्षित": ("NONE", False),
+    "महिला": ("NONE", True),
     "अन्य पिछड़ा वर्ग": ("BC", False),
     "अन्य पिछड़ा वर्ग महिला": ("BC", True),
     "अनुसूचित जाति": ("SC", False),
@@ -163,13 +163,15 @@ def main():
         help="Reviewed cycle attribution with hash-pinned supporting sources",
     )
     args = parser.parse_args()
+    if args.output.exists():
+        raise FileExistsError("Choose a new output directory; extraction is immutable")
     source = args.root / SOURCE_PATH
     raw = source.read_bytes()
     if hashlib.sha256(raw).hexdigest() != SOURCE_SHA256:
         raise ValueError("Source HTML changed")
     reader = WinnerTable()
     reader.feed(raw.decode("utf-8"))
-    if reader.matches != 1 or not reader.rows or reader.rows[0] != HEADERS:
+    if reader.matches != 1 or len(reader.rows) < 2 or reader.rows[0] != HEADERS:
         raise ValueError("Winner table or its header does not match the pinned source")
     if any(len(row) != len(HEADERS) for row in reader.rows):
         raise ValueError("Unexpected row width; do not shift cells")
@@ -283,7 +285,11 @@ def main():
             source_block_number=int(block[1]) if block else None,
             block_name_raw=block[2] if block else None,
             quality_flags=";".join(flags),
-            review_status="research staging; source-scope review pending",
+            review_status=(
+                "research staging; cycle scope reviewed; exact poll date unknown"
+                if scope
+                else "research staging; source-scope review pending"
+            ),
         )
         records.append(record)
     table = pd.DataFrame.from_records(records)
@@ -303,7 +309,7 @@ def main():
             filter(None, (value, "multiple_winner_printings_for_block"))
         )
     )
-    args.output.mkdir(parents=True, exist_ok=True)
+    args.output.mkdir(parents=True)
     output = args.output / "winner_printings.parquet"
     if output.exists():
         raise FileExistsError(
@@ -347,8 +353,8 @@ def main():
         excluded_columns=["mobile_number"],
         paid_inference_usd=0,
         status=(
-            "research staging; election-cycle year is not an exact poll date; not a"
-            " statewide completeness claim"
+            "research staging; election-cycle year is not an exact poll date; "
+            "not a statewide completeness claim"
         ),
     )
     (args.output / "extraction_manifest.json").write_text(

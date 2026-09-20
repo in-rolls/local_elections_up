@@ -77,3 +77,59 @@ row is published in
 Run `make data-gp` to rebuild this table and its audits. Run `make check` to lint,
 test the row-count and recode contracts, and verify every published Parquet
 checksum.
+
+## Historical LGD bridge
+
+`panels/gp_lgd_bridge.parquet` supplies the geographic projection formerly prepared
+by `quota_raj`, without SHRUG or Census outcomes. Its source vintage, input
+hashes and matching-method attribution are recorded in
+`data/external/lgd/SOURCES.json`. The base mapping uses 2005–2010 linked records
+with known reservation in both waves. Each projection retains the reference
+panel's known-reservation eligibility; these exclusions are explicit and do
+not change the underlying published election panels.
+
+Join on **`panel` and `anchor_key`**. `anchor_key` is the stable `key_2010` for
+panels containing 2010, and `key_2015` for `2015_2021`. The source `key_YEAR`
+columns and `source_panel_row` are also retained. `mapping_anchor_key` identifies
+the 2010 record supplying a matched LGD assignment. Geographic propagation
+follows the reference's English district/block/GP names; ambiguous names remain
+unmatched, and an unmatched GP carries missing block and GP match fields. The
+bridge is unique on `panel` and `anchor_key`, not on `lgd_gp_code`.
+
+| Panel | Rows | Matched to LGD |
+|---|---:|---:|
+| 2005–2010 | 41,890 | 32,612 |
+| 2010–2015 | 39,529 | 27,748 |
+| 2015–2021 | 46,514 | 18,018 |
+| 2005–2010–2015–2021 | 29,253 | 24,188 |
+
+The matcher restricts GP candidates to reviewed LGD blocks, excludes urban
+labels, and uses exact matches followed by unique Jaro matches at distance
+at most 0.20. It rejects tied best candidates and resolves destination collisions
+within each historical election district/block label. A `unique` value in
+`match_confidence` describes that candidate comparison; it does not assert that
+an LGD code appears once in the bridge. The retained reference map has ten LGD GP
+codes assigned to two 2005–2010 anchors each, all where the reviewed `Seekhar` and
+`Seeti` historical labels map to LGD block 1993 (`Shikhar`). Later panels can
+retain only one of those historical anchors. Numbers present on both sides must
+agree, including Devanagari digits; Hindi vowel marks remain intact. Missing
+numeral information retains the reference behavior and does not itself reject a
+match.
+
+`Rscript scripts/10_link_historical_lgd.R` verifies the pinned inputs and rebuilds
+the bridge, release metadata and sensitivity tables. `make data-lgd` also
+rebuilds the upstream election panels. Tests run with
+`Rscript tests/test_historical_lgd.R`.
+
+The full-linked-panel alternative changes 763 shared **panel-anchor rows**
+(752 distinct election anchor keys): 740 gain a match and 23 lose one. No
+previously matched destination is reassigned. Changes by panel are 8, 472, 278
+and 5 in the order above. These alternatives remain in the sensitivity audit;
+adopting broader coverage requires a linkage decision, rather than treating
+it as an unchanged data handoff.
+
+Two source-supported inherited identities have `mapping_review_id` populated;
+they project to five panel-anchor rows and use `gp_match_type = "reviewed"`.
+All reported distances use the current vowel-preserving comparison. The old
+scores are retained only as evidence in the review crosswalk. See
+`data/external/lgd/README.md`; source names remain unchanged.

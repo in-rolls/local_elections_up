@@ -84,11 +84,9 @@ def main():
             if isinstance(value, str)
         }
         decoded = [
-            (
-                mapping[(value, bool(selected))]
-                if isinstance(value, str)
-                else (value, False, False)
-            )
+            mapping[(value, bool(selected))]
+            if isinstance(value, str)
+            else (value, False, False)
             for value, selected in pairs
         ]
         frame[target] = [item[0] for item in decoded]
@@ -132,13 +130,14 @@ def main():
             "local_elections shared decoder, pinned by its source SHA-256"
         ),
         "csv_input_policy": (
-            "All CSV fields read as strings; blank strings and original label text"
-            " preserved."
+            "All CSV fields read as strings; blank strings and original "
+            "label text preserved."
         ),
         "roman_suffix_policy": (
-            "Preserve isolated trailing I/II/III labels. A source-specific profile may"
-            " decode trailing A glyphs as printed part-marker strokes without inferring"
-            " administrative identities."
+            "Preserve isolated trailing I/II/III labels. "
+            "A source-specific profile may decode trailing A glyphs as "
+            "printed part-marker strokes without inferring "
+            "administrative identities."
         ),
         "raw_columns_preserved": True,
         "rows_deduplicated": False,
@@ -146,8 +145,8 @@ def main():
         "category_codes_reinterpreted": False,
         "paid_inference_usd": 0,
         "quality_status": (
-            "Legacy-font decoding candidates, not verified place identities. Existing"
-            " review flags remain."
+            "Legacy-font decoding candidates, not verified place "
+            "identities. Existing review flags remain."
         ),
     }
     args.output.with_suffix(".manifest.json").write_text(

@@ -1,14 +1,13 @@
 {
   "status": "standardized_source_observations_pending_validation",
-  "created_utc": "2026-09-19T23:43:46.817794+00:00",
   "registry_sha256": "dccadd4099d6de299e070bb34e185d818b35a94cbe086193a9a78a63780277d4",
   "label_schema_sha256": "beed338d3a09592d9eaa8bd8d0403a8ee5ae86ae09fc0ba0a584d067174d29b4",
-  "parser_sha256": "824e14131f48970f25ee5e7bc8eea0810c7aa8956a7a25e9a5ae41ff99fb996f",
+  "parser_sha256": "cfb394e6e8611a625f2203fd8e92af5b71bffb6adee957a4a160bdde4d25cad9",
   "pri_2010_label_dictionary": {
     "path": "data/catalogs/pri_2010_category_labels.json",
     "sha256": "4a38745cd96f4607e35803b18f96b7f8b5a6f64b0287066a6eb9ef515301268c"
   },
-  "pyarrow_version": "25.0.1",
+  "pyarrow_version": "23.0.1",
   "schema": {
     "source_printed_page_raw": "string",
     "source_boundary_review_status_raw": "string",
@@ -950,7 +949,7 @@
   "files": [
     {
       "path": "up_gram_panchayat_head_declared_winner.parquet",
-      "sha256": "6bf60aee9b5ccb81882cbeb85033a5539ff9a9ad12de5c418f8e82ff837a5c6f",
+      "sha256": "73cbbb118d0325484db0ba38a92096e92b6d438478ad1b69b38cf4c0269f0f7b",
       "office": "gram_panchayat_head",
       "record_kind": "declared_winner",
       "rows": 212525,
@@ -972,7 +971,7 @@
     },
     {
       "path": "up_gram_panchayat_head_seat_reservation.parquet",
-      "sha256": "f84878ada6071de8fa2bc5e725ec0da874d8b1119484cf03fc7152edb19c172b",
+      "sha256": "94b677e435251efadffa405836cfbcd8206fa4fc0015011316b3ab571d61920e",
       "office": "gram_panchayat_head",
       "record_kind": "seat_reservation",
       "rows": 59426,
@@ -990,7 +989,7 @@
     },
     {
       "path": "up_gram_panchayat_member_seat_reservation.parquet",
-      "sha256": "c47c54c56369aa447416bf64fda10609a26720eb1ddab9aa4fcce2c89710ea79",
+      "sha256": "e5cbb7943540c23ee376cd560ce0f4fb1de6f7931af342924c10fda710dec743",
       "office": "gram_panchayat_member",
       "record_kind": "seat_reservation",
       "rows": 743685,
@@ -1005,7 +1004,7 @@
     },
     {
       "path": "up_municipal_corporation_mayor_candidate_record.parquet",
-      "sha256": "b61872277bccfee8aa1ef825051f0404c57893c815e767fbc91ba2f581938006",
+      "sha256": "f75c0d3ca323e6de29269561e4063576458aabdca2c4e7870473ff6802c17c18",
       "office": "municipal_corporation_mayor",
       "record_kind": "candidate_record",
       "rows": 145,
@@ -1021,7 +1020,7 @@
     },
     {
       "path": "up_municipal_corporation_mayor_declared_winner.parquet",
-      "sha256": "3d6776ca8d4bde4b38dcd9634d8c8455faca7a647cb5a26d813b69193ffc5400",
+      "sha256": "3b1bfdd4ad1e0d62c8a602fb7cb653ee18c300103308368d6f9b500158e260e3",
       "office": "municipal_corporation_mayor",
       "record_kind": "declared_winner",
       "rows": 28,
@@ -1038,7 +1037,7 @@
     },
     {
       "path": "up_municipal_corporation_mayor_seat_reservation.parquet",
-      "sha256": "9856cb2de69135f2007c311d1509e62176a416e94b0c39e8c5d898b0ce284d18",
+      "sha256": "05fbb128111c9282503ea22c29ca3e456acd4cc4e6ba97aee55b474bafc5ac87",
       "office": "municipal_corporation_mayor",
       "record_kind": "seat_reservation",
       "rows": 30,
@@ -1053,7 +1052,7 @@
     },
     {
       "path": "up_municipal_corporation_ward_member_candidate_record.parquet",
-      "sha256": "3f94128fd4efc917e217ce0c27ae9bbb648943768fdb827a17e6da090379eabb",
+      "sha256": "5eac19a219faf756a57ec32b4ec2656b752203f1544dd0ee478cc668e9c62c9e",
       "office": "municipal_corporation_ward_member",
       "record_kind": "candidate_record",
       "rows": 8010,
@@ -1072,7 +1071,7 @@
     },
     {
       "path": "up_municipal_corporation_ward_member_declared_winner.parquet",
-      "sha256": "b5b6b6366b8b0ba11e5f8103212b06e86843c9b8b75e8f741d4ef4bd7a6e0d98",
+      "sha256": "d397f98bcb712c08177fcd61afcb491eaf0f3120f0c40ffa5bc398d4f70c0fe0",
       "office": "municipal_corporation_ward_member",
       "record_kind": "declared_winner",
       "rows": 2280,
@@ -1093,7 +1092,7 @@
     },
     {
       "path": "up_municipal_corporation_ward_member_seat_reservation.parquet",
-      "sha256": "e4070ef0b986069508f455191b5e1ab982ec3f9e72ef396fc4fa742c9449bb8c",
+      "sha256": "f5e9a9fd0fd4a0db8c1e89db428275070695d9d109ed9599687ee7b49d22ab15",
       "office": "municipal_corporation_ward_member",
       "record_kind": "seat_reservation",
       "rows": 2460,
@@ -1108,7 +1107,7 @@
     },
     {
       "path": "up_municipal_council_chair_candidate_record.parquet",
-      "sha256": "f33f0b6d33bda588cddffde868e694f58e1f6ebde20f783586fe54d4040ae717",
+      "sha256": "48ce4fc4bf7b6c40d9b2150c584fdb96495d613dbfa7f0c85ea5a882ac4e6109",
       "office": "municipal_council_chair",
       "record_kind": "candidate_record",
       "rows": 1619,
@@ -1124,7 +1123,7 @@
     },
     {
       "path": "up_municipal_council_chair_declared_winner.parquet",
-      "sha256": "d38df7a7b7fe717741a9bbb7634f0d6824cb5776f4e66eade11805e298ff08b2",
+      "sha256": "9ef7ed710d0593b437a6867c525a70171ac39f43d80aad39f5b1a5d26dfde180",
       "office": "municipal_council_chair",
       "record_kind": "declared_winner",
       "rows": 392,
@@ -1141,7 +1140,7 @@
     },
     {
       "path": "up_municipal_council_chair_seat_reservation.parquet",
-      "sha256": "9056826a75f53e06953ecd853cba3eafaabbef19fe84ee97bd579996e73326c5",
+      "sha256": "4f91184410d3064d03f0d4822e3435347a2ab43a4630e86da15a24293c731788",
       "office": "municipal_council_chair",
       "record_kind": "seat_reservation",
       "rows": 394,
@@ -1156,7 +1155,7 @@
     },
     {
       "path": "up_municipal_council_ward_member_candidate_record.parquet",
-      "sha256": "355be68951421237ef175317474c28b23b6ed97dad40e895b5d1d4fcf0124e7b",
+      "sha256": "419e1e7739c7ecf513d6fa5ae42fd39459e3ff800fd09849885b83a519cb5e5a",
       "office": "municipal_council_ward_member",
       "record_kind": "candidate_record",
       "rows": 22952,
@@ -1175,7 +1174,7 @@
     },
     {
       "path": "up_municipal_council_ward_member_declared_winner.parquet",
-      "sha256": "4ea961961dde6306a641222007b516593d52d93a7c01c905b745bf06f589a509",
+      "sha256": "d4cfa91cdd2025270507aa0bc28bdb321db81525a1ff92862813b9420f69a91d",
       "office": "municipal_council_ward_member",
       "record_kind": "declared_winner",
       "rows": 10358,
@@ -1196,7 +1195,7 @@
     },
     {
       "path": "up_municipal_council_ward_member_seat_reservation.parquet",
-      "sha256": "71e578737d96f0fe09550f421cded08b37317748341132f42f71a20bb5df0e55",
+      "sha256": "49e5a9845a012999459a44b22ad978e09a1b4e721107bc36add38997271acaff",
       "office": "municipal_council_ward_member",
       "record_kind": "seat_reservation",
       "rows": 10131,
@@ -1211,7 +1210,7 @@
     },
     {
       "path": "up_nagar_panchayat_chair_candidate_record.parquet",
-      "sha256": "a4442a537b45f25fa5ac5e058741a2998db4c15021cb74a2a8f37bb5b0df2f22",
+      "sha256": "c63289d267796c1a50010db449c7001b69b8051ce0431c8f12497ad2fd080e9c",
       "office": "nagar_panchayat_chair",
       "record_kind": "candidate_record",
       "rows": 3099,
@@ -1230,7 +1229,7 @@
     },
     {
       "path": "up_nagar_panchayat_chair_declared_winner.parquet",
-      "sha256": "d07ea351dc4ea516f9b7326f430c3d4c2ab8438b7d99be70eabcf0a8b26f5c0f",
+      "sha256": "35530e56f765884c109f1a1f88a1852d6f53e49cbd8ad7bc8f2fec14f5ae672a",
       "office": "nagar_panchayat_chair",
       "record_kind": "declared_winner",
       "rows": 861,
@@ -1252,7 +1251,7 @@
     },
     {
       "path": "up_nagar_panchayat_chair_seat_reservation.parquet",
-      "sha256": "709b305d66bb410780c4d5408a23ef7d30c7dadf53e6c21ac0586e135ee07882",
+      "sha256": "d81c8fdacb58d86e6619012d04d01a4b01177fdf1ced2c57e3029e3c6d76f0b2",
       "office": "nagar_panchayat_chair",
       "record_kind": "seat_reservation",
       "rows": 967,
@@ -1267,7 +1266,7 @@
     },
     {
       "path": "up_nagar_panchayat_ward_member_candidate_record.parquet",
-      "sha256": "736f717bbe6a6e72f82f3b3ba69d7f219e1ef2749cf5c2e4ad3dd02268850cf4",
+      "sha256": "9ee2f1772da86430a090a19538dae4b108c92d13a142c23d6a443d08632f4137",
       "office": "nagar_panchayat_ward_member",
       "record_kind": "candidate_record",
       "rows": 17714,
@@ -1286,7 +1285,7 @@
     },
     {
       "path": "up_nagar_panchayat_ward_member_declared_winner.parquet",
-      "sha256": "779eed8c3823c9fbdabb07faa51504784988621136c23bd71f8245f5d61d487f",
+      "sha256": "01cab5faa1adf8b2f2d5af9dff7f20265e8c6b9ef2c81a201840e40c188f1b74",
       "office": "nagar_panchayat_ward_member",
       "record_kind": "declared_winner",
       "rows": 10592,
@@ -1307,7 +1306,7 @@
     },
     {
       "path": "up_nagar_panchayat_ward_member_seat_reservation.parquet",
-      "sha256": "2a02d81b8e33f10275ea664ba2a553cf4de5ad72ca68210f9fa426d53da4809f",
+      "sha256": "bc26608b54a0b6a096b99f91d00166ba8338fa24b7b44cb126b6812c640b40a8",
       "office": "nagar_panchayat_ward_member",
       "record_kind": "seat_reservation",
       "rows": 12135,
@@ -1322,7 +1321,7 @@
     },
     {
       "path": "up_panchayat_samiti_head_declared_winner.parquet",
-      "sha256": "6fb3d517561c84b10d1eed815da76fe549e509cbe7b223ae347f0e61134c3e75",
+      "sha256": "eb0aaf7ed8c0abe01828bf03273589f38005785c45411b6f6f5e2affd8ee8c95",
       "office": "panchayat_samiti_head",
       "record_kind": "declared_winner",
       "rows": 816,
@@ -1339,7 +1338,7 @@
     },
     {
       "path": "up_panchayat_samiti_head_elected_official.parquet",
-      "sha256": "fda4ba05f13554740767e13bcb45e9501c46e3136687d3bd9bb834aa517fc4c7",
+      "sha256": "7bf2d4d021707115df1969e93c2e957cd783f80543998c4b23f84a30883c4a8c",
       "office": "panchayat_samiti_head",
       "record_kind": "elected_official",
       "rows": 820,
@@ -1361,7 +1360,7 @@
     },
     {
       "path": "up_panchayat_samiti_head_reported_official.parquet",
-      "sha256": "58b8a2e683cdc6cb15a205a21369970ffae71c2061d435aab152cf59f54d23f2",
+      "sha256": "93db8624d89bc2cd7710d5f6052ba55e65b8e4a67047f1207243a7d7f416a958",
       "office": "panchayat_samiti_head",
       "record_kind": "reported_official",
       "rows": 821,
@@ -1382,7 +1381,7 @@
     },
     {
       "path": "up_panchayat_samiti_head_seat_reservation.parquet",
-      "sha256": "b6fe9ce48ba566cb78d2a3183e2d5f3318503179a25d80bb2da4b2efb5e83b5d",
+      "sha256": "9a267184931cc4b1c1e07a8fa8a7a53f2fcad8edabf302a45cff12c175e9ee2b",
       "office": "panchayat_samiti_head",
       "record_kind": "seat_reservation",
       "rows": 933,
@@ -1410,7 +1409,7 @@
     },
     {
       "path": "up_panchayat_samiti_junior_deputy_elected_official.parquet",
-      "sha256": "ccb1917462e793bc854f407467634b11639e549de3808b3f2d3609a5b068e1ba",
+      "sha256": "b2196264c85fe9d41a944731b1b3df122ed150d7d04fb4e1060521c79f22bb23",
       "office": "panchayat_samiti_junior_deputy",
       "record_kind": "elected_official",
       "rows": 819,
@@ -1431,7 +1430,7 @@
     },
     {
       "path": "up_panchayat_samiti_member_declared_winner.parquet",
-      "sha256": "62a02418beb51cb8f46e4eb668c5d316a8421aa9ac55856832c5d0c9b739ae98",
+      "sha256": "8923b25334d9f7951124bc0accc22ee65cc0829991817e939c484f15ecc2dac4",
       "office": "panchayat_samiti_member",
       "record_kind": "declared_winner",
       "rows": 77743,
@@ -1449,7 +1448,7 @@
     },
     {
       "path": "up_panchayat_samiti_member_reported_official.parquet",
-      "sha256": "33c63906952737cb54ca1c6dacac5b99bd82f1333d499d9a536b2a974fd36157",
+      "sha256": "48b07340022dbbd81749f57cfe20b9a85150550f3a424ff792be2420f5aaa981",
       "office": "panchayat_samiti_member",
       "record_kind": "reported_official",
       "rows": 127598,
@@ -1488,7 +1487,7 @@
     },
     {
       "path": "up_panchayat_samiti_member_seat_reservation.parquet",
-      "sha256": "9d87bf7c7f32aa040d2755003737dc4e27aed2fe887a7bf62dc2af46567293b4",
+      "sha256": "cba75476c9e852c8bab0d69aed292cca4a673e8594f708f79464e31ee6f5d407",
       "office": "panchayat_samiti_member",
       "record_kind": "seat_reservation",
       "rows": 80993,
@@ -1513,7 +1512,7 @@
     },
     {
       "path": "up_panchayat_samiti_member_source_status_notice.parquet",
-      "sha256": "793d858242036ab90a0342aa78e888fe76142fd448185188d965e7ad9b75183a",
+      "sha256": "0c4361ead38609805e0674792d52229c14f76f80bc4f7a542854307dd5076916",
       "office": "panchayat_samiti_member",
       "record_kind": "source_status_notice",
       "rows": 12,
@@ -1535,7 +1534,7 @@
     },
     {
       "path": "up_panchayat_samiti_senior_deputy_elected_official.parquet",
-      "sha256": "8f2fb7b91db2f167126226c49631a0c0d7a930ac079ae6e1c760af2345cac1ab",
+      "sha256": "3147e0daceaedd6f0ef7126362f79e01da4f7c1429dd31dcfece152301fca6bb",
       "office": "panchayat_samiti_senior_deputy",
       "record_kind": "elected_official",
       "rows": 820,
@@ -1556,7 +1555,7 @@
     },
     {
       "path": "up_zilla_parishad_head_declared_winner.parquet",
-      "sha256": "2fc49abb98a1c87e43b246bd8fd69ff395e4842d9100e644a492558dfdb51f50",
+      "sha256": "6aecbea6fd5b8f4a31bd90dad963e41ea014e80f5c5cc1ebecdafc61c7260d13",
       "office": "zilla_parishad_head",
       "record_kind": "declared_winner",
       "rows": 74,
@@ -1573,7 +1572,7 @@
     },
     {
       "path": "up_zilla_parishad_head_elected_official.parquet",
-      "sha256": "16bb2cf6dcba9edff455fb37c006d15e8795ea9c0ee1fa48372f78f5d42e6033",
+      "sha256": "4ec6b7a22a25a2c99f34f95532d96d2a649219e0018efe7cef340bc2b6a49a23",
       "office": "zilla_parishad_head",
       "record_kind": "elected_official",
       "rows": 70,
@@ -1591,7 +1590,7 @@
     },
     {
       "path": "up_zilla_parishad_head_reported_official.parquet",
-      "sha256": "bd0c9dce75a94f4baada16e60fe28bd007ec1caf01db9dfe64f8406f3302bb47",
+      "sha256": "7ed9427f5fe618d31ecf9e84258d89993eca159d773eb8d23d4915559fb720b5",
       "office": "zilla_parishad_head",
       "record_kind": "reported_official",
       "rows": 72,
@@ -1609,7 +1608,7 @@
     },
     {
       "path": "up_zilla_parishad_head_seat_reservation.parquet",
-      "sha256": "c97509635fd89e4caaed0ff23033b1a5ad93ac262da604716a15979a70184643",
+      "sha256": "3a75d8a049a50653c70664f9663b528e7e7309332b506cfc70bdcdbf9ff47219",
       "office": "zilla_parishad_head",
       "record_kind": "seat_reservation",
       "rows": 75,
@@ -1623,7 +1622,7 @@
     },
     {
       "path": "up_zilla_parishad_member_declared_winner.parquet",
-      "sha256": "a5c31ab3e3c38010c1cd3973540480da09e6666e5208b521a6d22519ab485abe",
+      "sha256": "a03bc9aa23f6ad2eb2dee17b62c2181afb58af6995da121e4c8f8ca28b224ac8",
       "office": "zilla_parishad_member",
       "record_kind": "declared_winner",
       "rows": 3121,
@@ -1641,7 +1640,7 @@
     },
     {
       "path": "up_zilla_parishad_member_elected_official.parquet",
-      "sha256": "4499f227bcff329dce1242ac3cbdb4792633ae61b63eaa88b43fdc3b971e777a",
+      "sha256": "5666f60aba35755741f8275e64e44ff3ea40965a89c43cfe36af2967025838d7",
       "office": "zilla_parishad_member",
       "record_kind": "elected_official",
       "rows": 2561,
@@ -1663,7 +1662,7 @@
     },
     {
       "path": "up_zilla_parishad_member_reported_official.parquet",
-      "sha256": "a6b7d370edd603e177b2dc5127f83cfbb223dc7f9966de889cc4906556442b61",
+      "sha256": "d3119f89a54bb28b0e380e6b7766e4f080772c548d9f7f88f54695d0372e564e",
       "office": "zilla_parishad_member",
       "record_kind": "reported_official",
       "rows": 2624,
@@ -1684,7 +1683,7 @@
     },
     {
       "path": "up_zilla_parishad_member_seat_reservation.parquet",
-      "sha256": "d566a740c1d1743cc2cea36cb0800720b98bb1bc73fa900ec5ddb88d761e005f",
+      "sha256": "527d2e112acce00931a2999308ea3fde2b02a793e74d8e531e972848afd99c64",
       "office": "zilla_parishad_member",
       "record_kind": "seat_reservation",
       "rows": 3503,

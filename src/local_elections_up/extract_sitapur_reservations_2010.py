@@ -289,6 +289,50 @@ def reconcile_totals(observations, pages):
     return controls, sequences
 
 
+def annotate_source_numbers(observations):
+    """Flag repeated samiti printed numbers without asserting ward identities."""
+    grouped = collections.defaultdict(list)
+    for row in observations:
+        if row["tier"] == "block_member" and row["block_raw"]:
+            key = (row["source_sha256"], row["block_raw"], row["printed_serial"])
+            grouped[key].append(row)
+    annotations = {}
+    for key, rows in grouped.items():
+        if len(rows) < 2:
+            continue
+        flags = ["source_printed_number_duplicate"]
+        categories = set()
+        named_categories = collections.defaultdict(set)
+        names = set()
+        for row in rows:
+            name = row["unit_name_raw"]
+            if name:
+                names.add(name)
+            if row["caste_reservation"] and row["woman_reserved"] != "":
+                category = (row["caste_reservation"], row["woman_reserved"])
+                categories.add(category)
+                if name:
+                    named_categories[name].add(category)
+        if len(names) > 1:
+            flags.append("source_printed_number_multiple_names")
+        if len(categories) > 1:
+            flags.append("source_printed_number_multiple_categories")
+        if any(len(values) > 1 for values in named_categories.values()):
+            flags.append("source_printed_number_same_name_category_conflict")
+        annotations[key] = flags
+    issues = []
+    for row in observations:
+        if row["tier"] != "block_member" or not row["block_raw"]:
+            continue
+        key = (row["source_sha256"], row["block_raw"], row["printed_serial"])
+        if key not in annotations:
+            continue
+        existing = [flag for flag in row["quality_flags"].split(";") if flag]
+        row["quality_flags"] = ";".join(dict.fromkeys(existing + annotations[key]))
+        issues.append(row)
+    return issues
+
+
 def write_csv(path, rows, fields):
     with path.open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
@@ -298,18 +342,19 @@ def write_csv(path, rows, fields):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument(
-        "--out",
-        type=Path,
-        default=ROOT / "data/interim/sitapur_reservations_2010_grid_v2",
-    )
+    ap.add_argument("--root", type=Path, default=ROOT)
+    ap.add_argument("--out", type=Path)
     args = ap.parse_args()
-    args.out.mkdir(parents=True, exist_ok=True)
+    args.root = args.root.resolve()
+    args.out = (
+        args.out or args.root / "data/interim/sitapur_reservations_2010_grid_v3"
+    ).resolve()
+    args.out.mkdir(parents=True)
     extraction_dir = args.out / "native_text"
     extraction_dir.mkdir(exist_ok=True)
     observations, pages, inputs = [], [], []
     for spec in SOURCES:
-        path = ROOT / BASE / spec["path"]
+        path = args.root / BASE / spec["path"]
         if sha256(path) != spec["sha256"]:
             raise ValueError(f"Source hash mismatch: {path}")
         extraction = extraction_dir / f"{spec['tier']}.xhtml.gz"
@@ -343,17 +388,23 @@ def main():
                     source_url=spec["url"],
                     wayback_timestamp=spec["capture"],
                     source_page=page_no,
-                    extraction_path=str(extraction.relative_to(ROOT)),
+                    extraction_path=str(
+                        extraction.relative_to(args.root)
+                        if extraction.is_relative_to(args.root)
+                        else extraction
+                    ),
                     extraction_sha256=extraction_hash,
                 )
                 observations.append(row)
-    write_csv(args.out / "reservation_observations.csv", observations, FIELDS)
     flagged = [
         r
         for r in observations
         if r["quality_flags"] != "place_names_font_encoded;visual_review_pending"
     ]
     write_csv(args.out / "extraction_issues.csv", flagged, FIELDS)
+    source_number_issues = annotate_source_numbers(observations)
+    write_csv(args.out / "reservation_observations.csv", observations, FIELDS)
+    write_csv(args.out / "source_number_issues.csv", source_number_issues, FIELDS)
     controls, sequences = reconcile_totals(observations, pages)
     write_csv(
         args.out / "printed_total_checks.csv",
@@ -382,6 +433,26 @@ def main():
         "paid_inference_usd": 0,
         "rows": len(observations),
         "rows_with_extraction_issues": len(flagged),
+        "source_number_issue_rows": len(source_number_issues),
+        "source_number_issue_counts": dict(
+            collections.Counter(
+                flag
+                for row in source_number_issues
+                for flag in row["quality_flags"].split(";")
+                if flag.startswith("source_printed_number_")
+            )
+        ),
+        "distinct_block_member_source_number_keys": len(
+            {
+                (row["source_sha256"], row["block_raw"], row["printed_serial"])
+                for row in observations
+                if row["tier"] == "block_member"
+            }
+        ),
+        "source_number_key_policy": (
+            "Exact source PDF, encoded block label, and printed-number token; "
+            "not a verified ward identifier. No deduplication or renumbering."
+        ),
         "rows_by_tier": dict(collections.Counter(r["tier"] for r in observations)),
         "page_statuses": dict(collections.Counter(p["status"] for p in pages)),
         "printed_total_checks": controls,
@@ -415,6 +486,9 @@ def main():
                     "status",
                     "rows",
                     "rows_with_extraction_issues",
+                    "source_number_issue_rows",
+                    "source_number_issue_counts",
+                    "distinct_block_member_source_number_keys",
                     "rows_by_tier",
                     "page_statuses",
                     "paid_inference_usd",

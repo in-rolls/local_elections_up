@@ -2,6 +2,8 @@
 name = "local-elections-up-linkage"
 version = "0.1.0"
 description = "Audited record linkage for the UP local-election data release"
+readme = "README.md"
+keywords = ["elections", "uttar-pradesh", "india", "data", "record-linkage"]
 requires-python = ">=3.12"
 dependencies = [
     "pandas>=2.0",
@@ -16,10 +18,19 @@ dependencies = [
     "pillow",
 ]
 
+[project.urls]
+Repository = "https://github.com/in-rolls/local_elections_up"
+Issues = "https://github.com/in-rolls/local_elections_up/issues"
+Documentation = "https://github.com/in-rolls/local_elections_up#readme"
+
 [dependency-groups]
 dev = [
     "pytest>=8",
     "ruff>=0.14",
+    "pre-commit>=4",
+]
+research = [
+    "local-reservations @ git+https://github.com/in-rolls/local_reservations.git@bf536affd015aba5820379ad99f0b6d24780e19b",
 ]
 
 [tool.ruff]

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "local_archive_verified_not_yet_uploaded",
+  "status": "archive_integrity_verified",
   "archive": "up_discovery_2026-09-10.tar.gz",
   "archive_sha256": "7bbf0c3987a6500f69084aeb50e895451210d21edb20beceb13b8964ed46da88",
   "archive_bytes": 119296382,
@@ -1570,5 +1570,7 @@
       "bytes": 903238,
       "sha256": "198c3d335f93b59c528520d856d2b3fffe180c34d13aa4fc6fad36ff0bcc3d90"
     }
-  ]
+  ],
+  "release_tag": "source-evidence-2026-09-10",
+  "repository": "in-rolls/local_elections_up"
 }
