@@ -364,9 +364,10 @@
     "superseded_snapshots": 713
   },
   "historical_differences": [
+    "data/catalogs/office_sources.json",
     "data/external/lgd/SOURCES.json"
   ],
-  "member_inventory_sha256": "278e97156df89ac44996bbe85054323cc9701709f65ad3729c6bc96082fce391",
+  "member_inventory_sha256": "f86888a1eb797040f8c02f7b07f6c1d8ecaf3c0d1caca6e1586608ee223310c5",
   "original_archives": [
     {
       "asset": "up_inputs.tar.gz",
