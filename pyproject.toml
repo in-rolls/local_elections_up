@@ -1,5 +1,5 @@
 [project]
-name = "local-elections-up-linkage"
+name = "local-elections-up"
 version = "0.1.0"
 description = "Audited record linkage for the UP local-election data release"
 readme = "README.md"
@@ -35,6 +35,8 @@ research = [
 ]
 
 [tool.uv.sources]
+# Vendored before the central package was renamed local-elections (v0.7.0);
+# it still provides `local_reservations`. Update on the next re-vendor.
 local-reservations = { path = "vendor/local_reservations-0.5.1-py3-none-any.whl" }
 
 [tool.ruff]
