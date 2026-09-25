@@ -1,10 +1,10 @@
 {
   "source_repository": "https://github.com/in-rolls/local_elections",
-  "source_commit": "bf536affd015aba5820379ad99f0b6d24780e19b",
+  "source_commit": "d48524744a0d39fc167355c6be066fa7ab2b7ce4",
   "build": "uv build --wheel from git archive of src, pyproject.toml, README.md and LICENSE",
-  "asset": "local_reservations-0.5.1-py3-none-any.whl",
-  "sha256": "fabf33f561f611e7e99e9adcf04f9e8ee6784e907f41301523eb329e249d9e7e",
-  "decoder_sha256": "f4be9e49b3838570db503fb0bc23ba4d17b3722e26bb69040d382760bee64509",
-  "bytes": 520658,
+  "asset": "local_elections-0.7.0-py3-none-any.whl",
+  "sha256": "460304b8d9fdece1a78be67e4f0079439f82a2348fee4c1ae4d9ff7310ad7044",
+  "decoder_sha256": "6dec8cc15317af6171dec21d4182d97bf1abb0c002d1abd499fa8d07959e529d",
+  "bytes": 568537,
   "reason": "Install shared code without checking out the multi-gigabyte data corpus."
 }

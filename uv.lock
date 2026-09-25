@@ -371,8 +371,36 @@ wheels = [
 ]
 
 [[package]]
+name = "local-elections"
+version = "0.7.0"
+source = { path = "vendor/local_elections-0.7.0-py3-none-any.whl" }
+dependencies = [
+    { name = "openpyxl" },
+    { name = "pandas" },
+    { name = "pdfplumber" },
+    { name = "pyarrow" },
+    { name = "requests" },
+    { name = "requests-ratelimiter" },
+    { name = "xlrd" },
+]
+wheels = [
+    { filename = "local_elections-0.7.0-py3-none-any.whl", hash = "sha256:460304b8d9fdece1a78be67e4f0079439f82a2348fee4c1ae4d9ff7310ad7044" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "openpyxl" },
+    { name = "pandas" },
+    { name = "pdfplumber" },
+    { name = "pyarrow", specifier = "==23.0.1" },
+    { name = "requests" },
+    { name = "requests-ratelimiter" },
+    { name = "xlrd", specifier = ">=2.0.1" },
+]
+
+[[package]]
 name = "local-elections-up"
-version = "0.1.0"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -394,7 +422,7 @@ dev = [
     { name = "ruff" },
 ]
 research = [
-    { name = "local-reservations" },
+    { name = "local-elections" },
 ]
 
 [package.metadata]
@@ -417,35 +445,7 @@ dev = [
     { name = "pytest", specifier = ">=8" },
     { name = "ruff", specifier = ">=0.14" },
 ]
-research = [{ name = "local-reservations", path = "vendor/local_reservations-0.5.1-py3-none-any.whl" }]
-
-[[package]]
-name = "local-reservations"
-version = "0.5.1"
-source = { path = "vendor/local_reservations-0.5.1-py3-none-any.whl" }
-dependencies = [
-    { name = "openpyxl" },
-    { name = "pandas" },
-    { name = "pdfplumber" },
-    { name = "pyarrow" },
-    { name = "requests" },
-    { name = "requests-ratelimiter" },
-    { name = "xlrd" },
-]
-wheels = [
-    { filename = "local_reservations-0.5.1-py3-none-any.whl", hash = "sha256:fabf33f561f611e7e99e9adcf04f9e8ee6784e907f41301523eb329e249d9e7e" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "openpyxl" },
-    { name = "pandas" },
-    { name = "pdfplumber" },
-    { name = "pyarrow", specifier = "==23.0.1" },
-    { name = "requests" },
-    { name = "requests-ratelimiter" },
-    { name = "xlrd", specifier = ">=2.0.1" },
-]
+research = [{ name = "local-elections", path = "vendor/local_elections-0.7.0-py3-none-any.whl" }]
 
 [[package]]
 name = "lxml"
