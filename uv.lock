@@ -371,7 +371,7 @@ wheels = [
 ]
 
 [[package]]
-name = "local-elections-up-linkage"
+name = "local-elections-up"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
