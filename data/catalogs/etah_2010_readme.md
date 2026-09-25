@@ -20,8 +20,8 @@ uv sync --all-groups
 uv run pytest -q tests/test_etah_source_profile.py
 ```
 
-The `research` dependency group pins the central `local-reservations` package
-to a Git revision. Its shared KrutiDev decoder is used as code only: no central
+The `research` dependency group pins the central `local-elections` package
+to a vendored wheel (see `vendor/README.md`). Its shared KrutiDev decoder is used as code only: no central
 corpus data is needed. Each generated manifest also records the decoder source
 hash, helper source hash, input hash, and source-profile hash.
 
