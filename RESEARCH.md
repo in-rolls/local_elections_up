@@ -1,6 +1,6 @@
 # Research evidence
 
-Research artifacts are separate from the standardized datasets in `data/release/`.
+Research artifacts are separate from the standardized datasets in `data/<election year>/` and `data/panels/`.
 They retain unresolved source, naming, geography, and interpretation flags.
 Availability here does not certify the records or establish statewide coverage.
 

@@ -1,4 +1,4 @@
-source(file.path("scripts", "09_prepare_weaver.R"))
+source(file.path("scripts", "prepare_weaver.R"))
 
 fixture <- tibble(
   gp_id = c(1, 1, 2, 2),
@@ -25,7 +25,7 @@ stopifnot(
 for (vintage in c("20250302", "20250317")) {
   source_name <- if (vintage == "20250302") "weaver_data.dta.gz" else "weaver_data_2.dta.gz"
   panel <- read_dta(file.path("data", "external", "weaver", source_name))
-  product <- read_parquet(file.path("data", "release", "weaver", paste0("weaver_", vintage, "_wide.parquet")))
+  product <- read_parquet(file.path("data", "panels", paste0("weaver_", vintage, "_wide.parquet")))
   stopifnot(
     nrow(product) == n_distinct(panel$gp_id),
     !anyDuplicated(product$gp_id),
@@ -51,8 +51,11 @@ for (vintage in c("20250302", "20250317")) {
     year <- c(`-1` = 2010L, `0` = 2015L, `1` = 2020L)[as.character(code)]
     rows <- match(wave$gp_id, product$gp_id)
     for (field in setdiff(names(panel), c("gp_id", "election"))) {
+      expected <- as.vector(wave[[field]])
+      # Preparation drops dangling bytes that are not valid UTF-8; nothing else.
+      if (is.character(expected)) expected <- iconv(expected, "UTF-8", "UTF-8", sub = "")
       stopifnot(isTRUE(all.equal(
-        as.vector(wave[[field]]),
+        expected,
         as.vector(product[[paste0(field, "_", year)]][rows]),
         check.attributes = FALSE
       )))

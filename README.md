@@ -4,23 +4,23 @@ Election results, candidates, and seat-reservation observations for Uttar Prades
 
 ## Find the data
 
-Start with the **[data catalog](data/release/CATALOG.md)**. It lists every published table, its row count, election years, row unit, and validation status. The **[data dictionary](data/release/DICTIONARY.md)** lists columns and types; the **[interpretation guide](data/release/README.md)** explains identifiers, reservations, provenance, and linkage.
+Each election has its own folder, `data/<year>/`; products built across elections are in `data/panels/`. Start with the **[data catalog](data/CATALOG.md)**. It lists every published table, its row count, election years, row unit, and validation status. The **[data dictionary](data/DICTIONARY.md)** lists columns and types; the **[data guide](data/README.md)** explains the layout, identifiers, reservations, provenance, and linkage.
 
 | I need… | Use |
 | --- | --- |
-| GP-head results across four elections | [GP election records](data/release/gp/gp_head_election_records.parquet) |
-| Every 2021 GP-head candidate | [2021 candidates](data/release/gp/gp_head_candidates_2021.parquet) |
-| Results or reservations for another office | [Office catalog](data/release/CATALOG.md); check the office, record kind, year, and flags |
-| Adjacent-election or four-election links | [Shared panels](data/release/panels/) |
-| The two Weaver source preparations | [Weaver tables](data/release/weaver/) and [source documentation](data/external/weaver/README.md) |
-| Exact inputs and output hashes | [Release manifest](data/release/manifest.json) and [checksums](data/release/CHECKSUMS.sha256) |
+| One election's GP-head winners | SEC winner lists for [2005](data/2005/gram_panchayat_head_winner_list.parquet), [2010](data/2010/gram_panchayat_head_winner_list.parquet), [2015](data/2015/gram_panchayat_head_winner_list.parquet); 2021 winners are marked among [2021 candidates](data/2021/gram_panchayat_head_candidate_record.parquet). Each year also has `gram_panchayat_head_declared_winner`, the office-build observation with source hashes and decoded reservation |
+| GP-head results harmonized across four elections | [GP election records](data/panels/gp_head_election_records.parquet) |
+| Results or reservations for another office | That election's folder, via the [catalog](data/CATALOG.md); check the office, record kind, and flags |
+| Adjacent-election or four-election links | [Panels](data/panels/) |
+| The two Weaver source preparations | [Panels](data/panels/) and [source documentation](data/external/weaver/README.md) |
+| Exact inputs and output hashes | [Manifest](data/manifest.json) and [checksums](data/CHECKSUMS.sha256) |
 
 Download a tagged [GitHub release](https://github.com/in-rolls/local_elections_up/releases), retaining its manifest and checksums. The central [local_elections](https://github.com/in-rolls/local_elections) repository harmonizes a pinned UP release with other states.
 
 ```python
 import pandas as pd
 
-records = pd.read_parquet("data/release/gp/gp_head_election_records.parquet")
+records = pd.read_parquet("data/panels/gp_head_election_records.parquet")
 print(records.groupby("election_year").size())
 review = records.loc[records["winner_markers_conflict"]]
 ```
@@ -37,20 +37,23 @@ Office exports are **provisional source observations**. Their `assignment_usable
 
 ```text
 data/
-  raw/          Registered source bytes and source manifests
-  interim/      Saved extraction outputs and historical build snapshots
+  1995/ … 2023/ One folder per election: that election's tables
+  panels/       Products derived across elections: harmonized GP-head records,
+                links, wide panels, LGD bridge, Weaver preparations
+  CATALOG.md, DICTIONARY.md, manifest.json, CHECKSUMS.sha256
+  raw/<year>/   Registered source bytes and source manifests
+  interim/      Saved extraction outputs; interim/release/ is the git-ignored build area
   discovery/    Sources not admitted to production
   catalogs/     Source registry, label dictionaries, and relocation ledger
   crosswalks/   Reviewed geographic mappings and correction decisions
-  release/      Consumer tables, catalog, dictionary, and checksums
-    gp/         GP-head source records and standardized election records
-    offices/    Office-specific provisional observations
-    panels/     Geographic links and wide election panels
-    weaver/     Separate preparations of the two external vintages
-src/local_elections_up/  Python acquisition, parsing, and release code
+  external/     Attributed outside sources (LGD, Weaver, reservation-with-Census)
+src/local_elections_up/
+  acquire/              Network fetches into data/raw and data/recovery (run once; not part of make data)
+  parse/                Saved source bytes → registered extractions
+  build/                Registered extractions → build area → published tables (release.py)
 R/                      Shared R transformations
-scripts/                R build entry points
-notebooks/              Historical parsing and transliteration work
+scripts/                R build entry points, run in Makefile order
+notebooks/              Historical 2005/2010 cleaning and transliteration; not part of the build
 tests/                  Parser, grain, recode, and provenance checks
 vendor/                 Hash-pinned shared research-code wheel
 ```
@@ -75,7 +78,7 @@ make check
 
 ## Changes in this release
 
-The v2 layout replaces `data/fin/` with `data/release/`. Consumer filenames describe their contents and row unit. The 2015 office records now have winner-list semantics and decoded seat-reservation categories. The known 2021 conflicting winner names are retained correctly. Analytical exports omit phone numbers and the three 2021 columns whose headers were not recovered. Original source evidence is preserved separately.
+v3 organizes the published tables by election: `data/<year>/` replaces `data/release/{gp,offices}/`, multi-year office tables are split by election, and cross-election products move to `data/panels/`. Every v2.0 table is preserved: copied byte for byte, or split by election and reassembling exactly. Raw source files move under `data/raw/<year>/`. Three Weaver panchayat names that ended or began with a stray byte (invalid UTF-8; six cells per preparation) now read cleanly. Consumers must update their paths; see [CHANGELOG.md](CHANGELOG.md).
 
 See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution](data/external/weaver/README.md) for external source terms.
 
@@ -83,14 +86,18 @@ See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution]
 
 [Research evidence](RESEARCH.md) describes the Etah and Sitapur reservation bundles and the SEC 2015–16 block-head printings. These retain unresolved source and identity flags.
 
-The [historical LGD bridge](data/release/panels/gp_lgd_bridge.parquet) maps linked election records to the attributed LGD vintage. Read [its source and matching rules](data/external/lgd/README.md) before joining: multiple historical records can map to one later GP, and names do not prove unchanged boundaries. `make data-lgd` rebuilds it.
+The [historical LGD bridge](data/panels/gp_lgd_bridge.parquet) maps linked election records to the attributed LGD vintage. Read [its source and matching rules](data/external/lgd/README.md) before joining: multiple historical records can map to one later GP, and names do not prove unchanged boundaries. `make data-lgd` rebuilds it.
+
+<!-- adjacent:start -->
 
 ## 🔗 Adjacent Repositories
 
 - [in-rolls/local_elections_uttarakhand](https://github.com/in-rolls/local_elections_uttarakhand) — Data on Local Elections from Uttarakhand
-- [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Bihar panchayat elections: 2016 candidates and votes for six offices; 2021 mukhiya candidates, results, winners and seat reservations
 - [in-rolls/local_elections_kerala](https://github.com/in-rolls/local_elections_kerala) — Kerala Local Government Seat Reservation Data and Winner Attributes
+- [in-rolls/local_elections_bihar](https://github.com/in-rolls/local_elections_bihar) — Bihar panchayat elections: 2016 candidates and votes for six offices; 2021 mukhiya candidates, results, winners and seat reservations
 - [in-rolls/local_elections_rajasthan](https://github.com/in-rolls/local_elections_rajasthan) — Rajasthan GP Election Reservation Status and Results for 2020--2022
 - [in-rolls/electoral_rolls_up_2023](https://github.com/in-rolls/electoral_rolls_up_2023) — Uttar Pradesh Electoral Rolls 2023
 
-✨ _Powered by [Adjacent](https://github.com/gojiplus/adjacent)_ 🚀
+_Powered by [Adjacent](https://github.com/gojiplus/adjacent)_
+
+<!-- adjacent:end -->

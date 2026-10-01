@@ -5,7 +5,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 import pytest
 
-from local_elections_up import prepare_gp_sources, release, standardize_offices
+from local_elections_up.build import prepare_gp_sources, release, standardize_offices
 
 
 def checksum(path):
@@ -23,7 +23,7 @@ def stamp(root):
 
 @pytest.fixture
 def release_copy(tmp_path):
-    folder = tmp_path / "offices"
+    folder = tmp_path / "2015"
     folder.mkdir()
     path = folder / "observations.parquet"
     table = pa.table({"record_id": ["one"], "assignment_usable": [False]})
@@ -31,7 +31,7 @@ def release_copy(tmp_path):
     manifest = {
         "files": [
             {
-                "path": "offices/observations.parquet",
+                "path": "2015/observations.parquet",
                 "sha256": checksum(path),
                 "rows": 1,
                 "columns": [
@@ -42,6 +42,8 @@ def release_copy(tmp_path):
         ]
     }
     (tmp_path / "manifest.json").write_text(json.dumps(manifest))
+    for name in ("CATALOG.md", "DICTIONARY.md"):
+        (tmp_path / name).write_text("# placeholder\n")
     stamp(tmp_path)
     return tmp_path
 
@@ -66,7 +68,7 @@ def test_release_rejects_bad_checksum_inventory(release_copy, mutation):
 
 
 def test_changed_release_bytes_fail(release_copy):
-    with (release_copy / "offices/observations.parquet").open("ab") as stream:
+    with (release_copy / "2015/observations.parquet").open("ab") as stream:
         stream.write(b"changed")
     with pytest.raises(ValueError, match="hash changed"):
         release.verify(release_copy)
@@ -102,7 +104,7 @@ def gp_inputs(tmp_path):
 def test_gp_preparation_excludes_contact_aliases(gp_inputs):
     root, _ = gp_inputs
     prepare_gp_sources.prepare(root)
-    output = root / "data/release/gp/source.parquet"
+    output = root / "data/interim/release/gp/source.parquet"
     assert pq.read_table(output).to_pylist() == [{"name": "A"}]
     first = checksum(output)
     prepare_gp_sources.prepare(root)
@@ -119,7 +121,7 @@ def test_gp_registry_rejects_uncontrolled_inputs(gp_inputs, mutation):
     elif mutation == "changed":
         source.write_bytes(b"changed")
     else:
-        output = root / "data/release/gp"
+        output = root / "data/interim/release/gp"
         output.mkdir(parents=True)
         (output / "stale.parquet").write_bytes(source.read_bytes())
     with pytest.raises(ValueError):
@@ -148,7 +150,7 @@ def test_release_rejects_duplicate_manifest_dataset(release_copy):
 
 
 def test_release_rejects_unlisted_nested_table(release_copy):
-    folder = release_copy / "offices/nested"
+    folder = release_copy / "2015/nested"
     folder.mkdir()
     pq.write_table(pa.table({"value": [1]}), folder / "extra.parquet")
     stamp(release_copy)
@@ -165,7 +167,7 @@ def test_release_rejects_unlisted_nested_table(release_copy):
     ],
 )
 def test_release_rejects_unsafe_observations(release_copy, column, values, error):
-    path = release_copy / "offices/observations.parquet"
+    path = release_copy / "2015/observations.parquet"
     columns = {"record_id": ["one"], "assignment_usable": [False], column: values}
     table = pa.table(columns)
     pq.write_table(table, path)
@@ -222,7 +224,7 @@ def test_observation_without_a_source_locator_fails():
 
 @pytest.mark.parametrize("keys", [["missing"], ["value"]])
 def test_release_rejects_invalid_declared_keys(release_copy, keys):
-    path = release_copy / "offices/observations.parquet"
+    path = release_copy / "2015/observations.parquet"
     table = pa.table({"value": [1, 1]})
     pq.write_table(table, path)
     manifest_path = release_copy / "manifest.json"
@@ -242,7 +244,7 @@ def test_release_rejects_invalid_declared_keys(release_copy, keys):
 
 
 def test_csv_evidence_root_is_portable_and_receipt_remains_original(tmp_path):
-    from local_elections_up.office_provenance import SourceProvenance
+    from local_elections_up.build.office_provenance import SourceProvenance
 
     artifact = tmp_path / "data/interim/parsed/observations.parquet"
     artifact.parent.mkdir(parents=True)

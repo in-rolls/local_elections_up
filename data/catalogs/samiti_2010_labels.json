@@ -2,7 +2,7 @@
   "format_version": 1,
   "status": "single_source_image_review_pending_independent_validation",
   "source": {
-    "path": "data/2010/area_panchayat_member/kpm_1204.pdf",
+    "path": "data/raw/2010/area_panchayat_member/kpm_1204.pdf",
     "sha256": "3d0a943c1deb2847f756df1904c739dfb062b0afc90bf808bb91945f36fb004a",
     "page": 1,
     "image": "data/recovery/sec_samiti_2010_source_review/lucknow_page_001.png",
@@ -14,7 +14,7 @@
       "reservation_class": "st",
       "women_reserved": false,
       "source": {
-        "source_path": "data/2010/area_panchayat_member/kpm_0602.pdf",
+        "source_path": "data/raw/2010/area_panchayat_member/kpm_0602.pdf",
         "source_sha256": "e67f5acb7e9bf6466186d39fb519462640acaa93958c95c650d4c08f438bf81b",
         "source_page": 28,
         "source_row_on_page": 15
@@ -26,7 +26,7 @@
       "reservation_class": "st",
       "women_reserved": true,
       "source": {
-        "source_path": "data/2010/area_panchayat_member/kpm_0501.pdf",
+        "source_path": "data/raw/2010/area_panchayat_member/kpm_0501.pdf",
         "source_sha256": "d6a4eec86ae12f597b4e4690cab5b8420cc2be3b16df6df411ea4691467a75a6",
         "source_page": 12,
         "source_row_on_page": 17

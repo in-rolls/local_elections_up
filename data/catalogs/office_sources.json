@@ -119,7 +119,7 @@
         2015
       ],
       "id": "gp_enriched",
-      "path": "data/release/gp/gp_head_election_records.parquet",
+      "path": "data/interim/release/gp/gp_head_election_records.parquet",
       "record_kind": "declared_winner",
       "scope": "GP-specific enriched winners; 2015 is supplied by the local CSV collection in the office exports.",
       "sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560"

@@ -3,7 +3,7 @@
   "election_gp_key": "Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs.",
   "source_record_id": "Publisher candidate ID in 2021; unavailable for earlier GP records.",
   "source_row_number": "One-based original source-table row before filtering winner markers.",
-  "source_file": "Source table filename; GP sources resolve within data/release/gp.",
+  "source_file": "Source table filename; GP sources resolve within the build area data/interim/release/gp.",
   "election_year": "Election-cycle year attributed by the registered source; not an exact polling date.",
   "office": "Standardized office label; rural heads, members, deputies and urban offices remain distinct.",
   "record_kind": "Source record unit: candidate, winner-marked/listed winner, official, reservation, or source-status notice.",
