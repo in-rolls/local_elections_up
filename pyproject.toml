@@ -28,7 +28,6 @@ Documentation = "https://github.com/in-rolls/local_elections_up#readme"
 dev = [
     "pytest>=8",
     "ruff>=0.14",
-    "pre-commit>=4",
 ]
 research = [
     "local-elections==0.7.0",
