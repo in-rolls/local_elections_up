@@ -16,6 +16,17 @@ STRINGS = [
     "source_path_resolution_status",
 ]
 
+# Raw sources moved under data/raw/<year>/; intermediates pinned before the move
+# still name the old locations, and the hash check still decides the match.
+MOVED = {f"data/{year}/": f"data/raw/{year}/" for year in (2005, 2006, 2007, 2010)}
+
+
+def relocated(raw_path):
+    for old, new in MOVED.items():
+        if raw_path.startswith(old):
+            return new + raw_path.removeprefix(old)
+    return raw_path
+
 
 def digest(path):
     with path.open("rb") as stream:
@@ -70,7 +81,7 @@ class SourceProvenance:
             return self.cache[key]
         candidates = []
         for base in (self.root, self.base):
-            path = (base / raw_path).resolve()
+            path = (base / relocated(raw_path)).resolve()
             if not path.is_relative_to(self.root):
                 raise ValueError("Source evidence path escapes the state repository")
             if path.is_file() and path not in candidates:

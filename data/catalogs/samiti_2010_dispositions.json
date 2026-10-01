@@ -33,7 +33,7 @@
   "evidence": [
     {
       "id": "rampur_19",
-      "source_path": "data/2010/area_panchayat_member/kpm_0504.pdf",
+      "source_path": "data/raw/2010/area_panchayat_member/kpm_0504.pdf",
       "source_sha256": "88d8395ab0f630fcd62163a47170e71846e855592b982f7b53d610c65c6505f6",
       "source_page": 19,
       "source_rows": [
@@ -44,7 +44,7 @@
     },
     {
       "id": "rampur_21",
-      "source_path": "data/2010/area_panchayat_member/kpm_0504.pdf",
+      "source_path": "data/raw/2010/area_panchayat_member/kpm_0504.pdf",
       "source_sha256": "88d8395ab0f630fcd62163a47170e71846e855592b982f7b53d610c65c6505f6",
       "source_page": 21,
       "source_rows": [
@@ -58,7 +58,7 @@
     },
     {
       "id": "badaun_7",
-      "source_path": "data/2010/area_panchayat_member/kpm_0604.pdf",
+      "source_path": "data/raw/2010/area_panchayat_member/kpm_0604.pdf",
       "source_sha256": "a88087e6ffee1512121e866f1968dd212ee2ea1f736306eb2ba9234a3c12db40",
       "source_page": 7,
       "source_rows": [

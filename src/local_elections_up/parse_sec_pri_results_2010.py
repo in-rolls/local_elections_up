@@ -325,7 +325,7 @@ def main():
     }
     write_json(output / "INCOMPLETE.json", receipt)
     for filename, spec in SOURCES.items():
-        relative = "data/2010/" + filename
+        relative = "data/raw/2010/" + filename
         path = ROOT / relative
         if digest(path.read_bytes()) != spec["sha256"]:
             raise ValueError(f"Source hash changed: {relative}")

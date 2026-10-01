@@ -295,7 +295,7 @@ def main():
     sources = (
         [ROOT / relative for relative in args.source]
         if args.source
-        else sorted((ROOT / "data/2010/area_panchayat_member").glob("*.pdf"))
+        else sorted((ROOT / "data/raw/2010/area_panchayat_member").glob("*.pdf"))
     )
     if not sources:
         raise ValueError("No samiti-member PDFs found")

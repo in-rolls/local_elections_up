@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "release": "v2.0",
-  "code_revision": "3ec403c5728a4a551a8d0c73964916127786dd96",
+  "code_revision": "08c41015152af9c7aca4345037116719d37f3976",
   "source_registry_sha256": "579e1ba2d64a393be264d9f8de0788cba4fc6450c1d476f03f5b4dcae391814b",
   "input_registries_sha256": {
     "office_sources.json": "579e1ba2d64a393be264d9f8de0788cba4fc6450c1d476f03f5b4dcae391814b",
@@ -12,10 +12,10 @@
     "src/local_elections_up/apply_reservation_codebook.py": "4d40912bfc20d1c2c42748da5a11778a5d760220096397de9952f28fc4d59522",
     "src/local_elections_up/combine_sec_urban_2017.py": "3de5af5b2b64335f56b8b55f6750c6a4bd36e5148eef04a87074e462bd5c5d26",
     "src/local_elections_up/convert_winner_lists_2015.py": "84a15894c6b5a7981b9549397aa20af0c0b20614d889b8ff8a88da4801e17e1b",
-    "src/local_elections_up/decode_legacy_labels.py": "331f1eacb4151c6bce11be1022ee53604dbe279ddda81547425ec2cebd3121b8",
+    "src/local_elections_up/decode_legacy_labels.py": "21a4a5b8882d605a3dc63463479a7917b9812266e12fbe6d96e2258ec1658d70",
     "src/local_elections_up/extract_ballia_reservations_2021.py": "0a592dd169f83421feace9f7763011609f0109c3d0c13e48163f65243f87b853",
     "src/local_elections_up/extract_etah_reservations_2010.py": "4bfbb8e300282953ee34da87012231114380d5996338e955fc945d6fa0008e8e",
-    "src/local_elections_up/extract_ghaziabad_reservations_2021.py": "4cd845929929a7ecb700b550841048e044096aee527c77134688c930e17ee5b8",
+    "src/local_elections_up/extract_ghaziabad_reservations_2021.py": "33f5c92543929905e6a0410017b61e279d01e492d45975260ce68972af1dc918",
     "src/local_elections_up/extract_kanpur_dehat_samiti_2021_grid.py": "2d3a98279e908c5bcb0bd8c518fb522892a59cf9e852ca45189b8d363f539ae2",
     "src/local_elections_up/extract_sec_winner_table.py": "111779d7c2b57f5090c0481e80b00e07cdd59a91cb26e99fb1ddce17a5701896",
     "src/local_elections_up/extract_sitapur_reservations_2010.py": "110c6ed11b08c0f32c95775f9cc98fc24b3264c5e9e2dd37ffaf0f7ec31187a8",
@@ -28,7 +28,7 @@
     "src/local_elections_up/link_2021_lgd.py": "2aa49535c6a67f3e6ca3d82644c5cde40c75d7ea9928a3898dcda05c26d49bd1",
     "src/local_elections_up/ocr_scanned_pdf_oriented.py": "e0878eeb1a5ef94f2c6667164d52ab9124e8daa834a8d310d79e9614ea01ace7",
     "src/local_elections_up/office_ballia.py": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
-    "src/local_elections_up/office_provenance.py": "5d146ecaf87747dfad9c0e248025ff582bff90b2a2f70a31295e73c6f441dc93",
+    "src/local_elections_up/office_provenance.py": "0f497c151a4b2f570874819d7e6ad24cbc8eb65b96c1144ded7bc7c99354b281",
     "src/local_elections_up/parse_sec_candidate_csvs.py": "baa1db50849bc73a50e2c0f8079e2d85d4100bd3b8ae30d60baa39b7fc651370",
     "src/local_elections_up/parse_sec_panchayat_2000_percentages.py": "c63db2db7c4e21b4ae1f70d0fb90e4966d2b0d30e338feb3aa0e64735a1537bf",
     "src/local_elections_up/parse_sec_panchayat_2005_district_members.py": "6acc5fcee947455c4ca99518597a8f2558a3c95e10129a9d209e4943ec50e62a",
@@ -38,10 +38,10 @@
     "src/local_elections_up/parse_sec_panchayat_finance.py": "67aa3cebd531df7c1fd795cd2ba05a14aff947d3db22fb847d1481d6eb7fc97a",
     "src/local_elections_up/parse_sec_pri_coverage.py": "a3ae34c64d3a90e404a4851152751492192909a069898a07915084d2f0786379",
     "src/local_elections_up/parse_sec_pri_portal_2010.py": "63350824dd2d93855f13198353d8ff8ca21ce142e2af6e4359962ed3e23c9dc8",
-    "src/local_elections_up/parse_sec_pri_results_2010.py": "1b406e3693707d02199f5860c2a13879915843337c3e28c5f04b138f8b2c7210",
+    "src/local_elections_up/parse_sec_pri_results_2010.py": "dbf7adc0059185a803b4642c7927e9ff63b707b1c0071e8113546ef4f725781d",
     "src/local_elections_up/parse_sec_reservations.py": "9d727c1dc8e5ef6265914a0bafbe0eeaf4a72e830dd29d8e34e5cab09995c243",
     "src/local_elections_up/parse_sec_samiti_members_2005.py": "82c7bbffa9eddd498925870f21c59e2b269cbc1ec54194e8b36b1594d49e04cd",
-    "src/local_elections_up/parse_sec_samiti_members_2010.py": "0ccd15efbc10b83f63bd3a2b27b6ac6289fb481df95a393e0298a0077618db11",
+    "src/local_elections_up/parse_sec_samiti_members_2010.py": "f8f95ea9a1e56cedb7574f82c509e67902a6c8f1a46a9638bde02f0f7571b8db",
     "src/local_elections_up/parse_sec_urban_coverage.py": "1b9d63bd67ff05e53e250fba23e7cc4a205c96fa19eceda1eaac58f395a339e9",
     "src/local_elections_up/parse_sec_urban_member_lists_2012.py": "723d4c22842ab52ddecd8121b2f0d0691d5218868c7ef8f6b5cf44201b6d104e",
     "src/local_elections_up/parse_sec_urban_results_2006.py": "ae4712f2554a2b4d23f154397c4cbb5c8295fbe897304bbca7d4687eb3d73174",
@@ -60,7 +60,7 @@
     "scripts/10_link_historical_lgd.R": "205bda177563ebeb1e04524f60037566142c4bb7d92732f301bac854d4327adb"
   },
   "environment_sha256": {
-    "uv.lock": "4457e617b84a33a4a3bcee5b56dd40fca2cc2ec3c376672de19963d2751a121e",
+    "uv.lock": "d8c8b071763afd106af4753179359068618423d8d5bfb2e5ee11ec911579dc9e",
     "renv.lock": "118be1dada45f98ae1301e869c0bfd2c8edcfd29f20ecf5846b3d2989e1369a1"
   },
   "grain_policy": "Source records, candidates, linked records and unique seats are distinct units.",
@@ -2344,7 +2344,7 @@
     {
       "dataset_id": "offices/up_municipal_corporation_mayor_candidate_record",
       "path": "offices/up_municipal_corporation_mayor_candidate_record.parquet",
-      "sha256": "f75c0d3ca323e6de29269561e4063576458aabdca2c4e7870473ff6802c17c18",
+      "sha256": "62333ea29eed86191b14db3d87773b4fb5029ad3639b82202e035df3ebf3ace2",
       "rows": 145,
       "columns": [
         {
@@ -3931,7 +3931,7 @@
     {
       "dataset_id": "offices/up_municipal_corporation_ward_member_candidate_record",
       "path": "offices/up_municipal_corporation_ward_member_candidate_record.parquet",
-      "sha256": "5eac19a219faf756a57ec32b4ec2656b752203f1544dd0ee478cc668e9c62c9e",
+      "sha256": "58376bbe6d9ba4e44c68dc765374d925f9451171c5ae07a827abddd0011b71e1",
       "rows": 8010,
       "columns": [
         {
@@ -5525,7 +5525,7 @@
     {
       "dataset_id": "offices/up_municipal_council_chair_candidate_record",
       "path": "offices/up_municipal_council_chair_candidate_record.parquet",
-      "sha256": "48ce4fc4bf7b6c40d9b2150c584fdb96495d613dbfa7f0c85ea5a882ac4e6109",
+      "sha256": "3ab471868a806bf4a4e4fcc3a411873b3d876561f17a489427694b9301e35347",
       "rows": 1619,
       "columns": [
         {
@@ -7112,7 +7112,7 @@
     {
       "dataset_id": "offices/up_municipal_council_ward_member_candidate_record",
       "path": "offices/up_municipal_council_ward_member_candidate_record.parquet",
-      "sha256": "419e1e7739c7ecf513d6fa5ae42fd39459e3ff800fd09849885b83a519cb5e5a",
+      "sha256": "43f765eaf43434d345532b8ddb4d957d9a94d2caebacceb88261ac7f23a6da54",
       "rows": 22952,
       "columns": [
         {
@@ -8706,7 +8706,7 @@
     {
       "dataset_id": "offices/up_nagar_panchayat_chair_candidate_record",
       "path": "offices/up_nagar_panchayat_chair_candidate_record.parquet",
-      "sha256": "c63289d267796c1a50010db449c7001b69b8051ce0431c8f12497ad2fd080e9c",
+      "sha256": "5aecc6c7bf98cf25be5f5d42039d58d87be0f481fd063becf134ff34e5999349",
       "rows": 3099,
       "columns": [
         {
@@ -10301,7 +10301,7 @@
     {
       "dataset_id": "offices/up_nagar_panchayat_ward_member_candidate_record",
       "path": "offices/up_nagar_panchayat_ward_member_candidate_record.parquet",
-      "sha256": "9ee2f1772da86430a090a19538dae4b108c92d13a142c23d6a443d08632f4137",
+      "sha256": "6690d8a56a954a4cf7e530655bb04e207795986340873e4712957e4e0c1f02db",
       "rows": 17714,
       "columns": [
         {
@@ -12960,7 +12960,7 @@
     {
       "dataset_id": "offices/up_panchayat_samiti_head_reported_official",
       "path": "offices/up_panchayat_samiti_head_reported_official.parquet",
-      "sha256": "93db8624d89bc2cd7710d5f6052ba55e65b8e4a67047f1207243a7d7f416a958",
+      "sha256": "f5b54de736b1770bd4f9c3e514d142fd852633ef492005beeaecfb107ec58fdf",
       "rows": 821,
       "columns": [
         {
@@ -15100,7 +15100,7 @@
     {
       "dataset_id": "offices/up_panchayat_samiti_member_reported_official",
       "path": "offices/up_panchayat_samiti_member_reported_official.parquet",
-      "sha256": "48b07340022dbbd81749f57cfe20b9a85150550f3a424ff792be2420f5aaa981",
+      "sha256": "326181c7e611276b95f810e921164cdcc24e770963fd9d4ef4ec5eef93ca8768",
       "rows": 127598,
       "columns": [
         {
@@ -16190,7 +16190,7 @@
     {
       "dataset_id": "offices/up_panchayat_samiti_member_source_status_notice",
       "path": "offices/up_panchayat_samiti_member_source_status_notice.parquet",
-      "sha256": "0c4361ead38609805e0674792d52229c14f76f80bc4f7a542854307dd5076916",
+      "sha256": "c2b248df3e7e2262670343a1b76267bda173fba52627ab9809b61731cd630c2b",
       "rows": 12,
       "columns": [
         {
@@ -18320,7 +18320,7 @@
     {
       "dataset_id": "offices/up_zilla_parishad_head_reported_official",
       "path": "offices/up_zilla_parishad_head_reported_official.parquet",
-      "sha256": "7ed9427f5fe618d31ecf9e84258d89993eca159d773eb8d23d4915559fb720b5",
+      "sha256": "7001979ca65b1d7ec5a2c84a54da9f81197041de628f78fe709cfcea23173a04",
       "rows": 72,
       "columns": [
         {
@@ -20444,7 +20444,7 @@
     {
       "dataset_id": "offices/up_zilla_parishad_member_reported_official",
       "path": "offices/up_zilla_parishad_member_reported_official.parquet",
-      "sha256": "d3119f89a54bb28b0e380e6b7766e4f080772c548d9f7f88f54695d0372e564e",
+      "sha256": "3bb40672ae4bfec31437fcfebb47453bd4bf6aa3a51bd4bd3679c41eafe38a69",
       "rows": 2624,
       "columns": [
         {
