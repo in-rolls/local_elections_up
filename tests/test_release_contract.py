@@ -5,7 +5,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 import pytest
 
-from local_elections_up import prepare_gp_sources, release, standardize_offices
+from local_elections_up.build import prepare_gp_sources, release, standardize_offices
 
 
 def checksum(path):
@@ -244,7 +244,7 @@ def test_release_rejects_invalid_declared_keys(release_copy, keys):
 
 
 def test_csv_evidence_root_is_portable_and_receipt_remains_original(tmp_path):
-    from local_elections_up.office_provenance import SourceProvenance
+    from local_elections_up.build.office_provenance import SourceProvenance
 
     artifact = tmp_path / "data/interim/parsed/observations.parquet"
     artifact.parent.mkdir(parents=True)

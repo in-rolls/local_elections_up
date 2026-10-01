@@ -17,9 +17,9 @@ from pathlib import Path
 
 from local_elections_up import harvest_sec_historical_results as history
 
-SCHEMA_FILE = (
-    Path(__file__).resolve().parents[2] / "data/catalogs/pri2010_portal_schema.json"
-)
+ROOT = Path(__file__).resolve().parents[3]
+
+SCHEMA_FILE = ROOT / "data/catalogs/pri2010_portal_schema.json"
 PAGER = re.compile(r"__doPostBack\(['\"]([^'\"]+)['\"],\s*['\"]Page\$(\d+)['\"]\)")
 
 

@@ -20,7 +20,7 @@ from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 NS = {"x": "http://www.w3.org/1999/xhtml"}
 SOURCES = {
     "KPP_result_2010.pdf": {

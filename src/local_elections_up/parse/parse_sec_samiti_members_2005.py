@@ -14,7 +14,8 @@ from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-from local_elections_up.parse_sec_samiti_members_2010 import (
+from local_elections_up import paths
+from local_elections_up.parse.parse_sec_samiti_members_2010 import (
     compact,
     digest,
     dump,
@@ -23,7 +24,7 @@ from local_elections_up.parse_sec_samiti_members_2010 import (
     text,
 )
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = paths.ROOT
 SOURCE_SHA = "3adc5b67a9f98c6529ba4bbb17dfd14ba6174527bdf0786df071fb563bfadfb8"
 BANDS = (
     ("ward_number_raw", 90, 123),

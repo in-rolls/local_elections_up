@@ -11,12 +11,14 @@ import shutil
 import subprocess
 from pathlib import Path
 
+from local_elections_up import paths
+
 import pyarrow as pa
 import pyarrow.parquet as pq
 
 from local_elections_up.fields import contact_field, contact_payload
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = paths.ROOT
 DATA = ROOT / "data"
 BUILD = DATA / "interim/release"
 METADATA = ("manifest.json", "CATALOG.md", "DICTIONARY.md")

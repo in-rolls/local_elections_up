@@ -1,5 +1,5 @@
 library(testthat)
-source("scripts/10_link_historical_lgd.R")
+source("scripts/link_historical_lgd.R")
 
 anchors <- function(names, keys = as.character(seq_along(names)), block = "B") {
   tibble(anchor_key = keys, district = "D", block, gp = names,

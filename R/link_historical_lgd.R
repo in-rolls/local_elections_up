@@ -4,7 +4,7 @@ library(dplyr)
 library(readr)
 library(stringi)
 source("R/standardize_utils.R")
-source("scripts/08_link_elections.R")
+source("scripts/link_gp_elections.R")
 
 lgd_fields <- c(
   "lgd_gp_code", "lgd_gp_name", "lgd_block_code", "lgd_block_name",

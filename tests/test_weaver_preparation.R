@@ -1,4 +1,4 @@
-source(file.path("scripts", "09_prepare_weaver.R"))
+source(file.path("scripts", "prepare_weaver.R"))
 
 fixture <- tibble(
   gp_id = c(1, 1, 2, 2),

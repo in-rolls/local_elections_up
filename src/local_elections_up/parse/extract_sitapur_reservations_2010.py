@@ -19,7 +19,9 @@ from pathlib import Path
 
 import pdfplumber
 
-ROOT = Path(__file__).resolve().parents[2]
+from local_elections_up import paths
+
+ROOT = paths.ROOT
 TOTAL_MARKER = re.compile(r";\s*k\s*s\s*x")
 BASE = Path("data/discovery/2026-09-10/archived_reservations")
 SOURCES = [

@@ -18,9 +18,9 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 from bs4 import BeautifulSoup
 
-CATALOG = (
-    Path(__file__).resolve().parents[2] / "data/catalogs/pri2010_portal_schema.json"
-)
+ROOT = Path(__file__).resolve().parents[3]
+
+CATALOG = ROOT / "data/catalogs/pri2010_portal_schema.json"
 RAW_FIELDS = (
     "source_serial_raw",
     "district_name_raw",

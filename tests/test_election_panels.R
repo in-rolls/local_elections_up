@@ -1,5 +1,5 @@
 library(testthat)
-source("scripts/08_link_elections.R")
+source("scripts/link_gp_elections.R")
 
 records <- function(ids, hindi, english = hindi, block = "block") {
   tibble(

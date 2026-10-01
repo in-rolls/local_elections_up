@@ -16,7 +16,7 @@ from pathlib import Path, PurePosixPath
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-REPO = Path(__file__).resolve().parents[2]
+REPO = Path(__file__).resolve().parents[3]
 HEAD_POSTS = {"7", "9", "11"}
 WARD_POSTS = {"8", "10", "12"}
 

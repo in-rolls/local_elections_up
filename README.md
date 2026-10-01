@@ -47,10 +47,13 @@ data/
   catalogs/     Source registry, label dictionaries, and relocation ledger
   crosswalks/   Reviewed geographic mappings and correction decisions
   external/     Attributed outside sources (LGD, Weaver, reservation-with-Census)
-src/local_elections_up/  Python acquisition, parsing, and release code
+src/local_elections_up/
+  acquire/              Network fetches into data/raw and data/recovery (run once; not part of make data)
+  parse/                Saved source bytes → registered extractions
+  build/                Registered extractions → build area → published tables (release.py)
 R/                      Shared R transformations
-scripts/                R build entry points
-notebooks/              Historical parsing and transliteration work
+scripts/                R build entry points, run in Makefile order
+notebooks/              Historical 2005/2010 cleaning and transliteration; not part of the build
 tests/                  Parser, grain, recode, and provenance checks
 vendor/                 Hash-pinned shared research-code wheel
 ```

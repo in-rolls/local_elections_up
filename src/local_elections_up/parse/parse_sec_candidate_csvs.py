@@ -21,9 +21,9 @@ from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-LABELS_BYTES = (
-    Path(__file__).resolve().parents[2] / "data/catalogs/office_labels.json"
-).read_bytes()
+ROOT = Path(__file__).resolve().parents[3]
+
+LABELS_BYTES = (ROOT / "data/catalogs/office_labels.json").read_bytes()
 LABELS = json.loads(LABELS_BYTES)
 OFFICES = LABELS["candidate_offices"]
 RAW_FIELDS = LABELS["candidate_columns"]

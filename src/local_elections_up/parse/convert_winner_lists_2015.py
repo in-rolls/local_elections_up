@@ -9,7 +9,9 @@ from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-ROOT = Path(__file__).resolve().parents[2]
+from local_elections_up import paths
+
+ROOT = paths.ROOT
 DATA = ROOT / "data/raw/2015/winner_lists"
 OUTPUT = ROOT / "data/interim/winner_lists_2015"
 CONTRACT = json.loads((DATA / "columns.json").read_text())

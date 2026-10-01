@@ -139,7 +139,7 @@ agree, including Devanagari digits; Hindi vowel marks remain intact. Missing
 numeral information retains the reference behavior and does not itself reject a
 match.
 
-`Rscript scripts/10_link_historical_lgd.R` verifies the pinned inputs and rebuilds
+`Rscript scripts/link_historical_lgd.R` verifies the pinned inputs and rebuilds
 the bridge, release metadata and sensitivity tables. `make data-lgd` also
 rebuilds the upstream election panels. Tests run with
 `Rscript tests/test_historical_lgd.R`.

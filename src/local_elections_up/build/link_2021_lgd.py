@@ -10,10 +10,12 @@ import re
 import unicodedata
 from pathlib import Path
 
+from local_elections_up import paths
+
 import pandas as pd
 from preclink import Pipeline, StringComparison
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = paths.ROOT
 RELEASE = PROJECT_ROOT / "data/interim/release/gp/gp_head_election_records.parquet"
 ACTIVE_DIR = PROJECT_ROOT / "data/crosswalks/active"
 AUDIT_DIR = PROJECT_ROOT / "data/crosswalks/audit"

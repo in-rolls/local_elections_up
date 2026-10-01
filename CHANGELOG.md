@@ -8,6 +8,7 @@
 - Drop the dangling byte from three Weaver panchayat names whose bytes were invalid UTF-8 (six cells per preparation), so every published table reads in strict readers.
 - Move raw sources from top-level `data/<year>/` and loose CSVs to `data/raw/<year>/`; office provenance resolves the old paths and still verifies bytes. Move the unreferenced Stata file to `data/external/gp_reservation_census/`.
 - Build into the git-ignored `data/interim/release/` and publish with `release.py publish`; the manifest, catalog, dictionary and checksums move to `data/`, and the manifest embeds the office build's source provenance. Sort `rows_by_year` so the manifest is reproducible.
+- Group the Python package by pipeline stage (`acquire/`, `parse/`, `build/`) and name the R entry points for what they do instead of by gappy numbers; module paths change (e.g. `python -m local_elections_up.build.release`). Standalone `uv run` scripts stay free of package imports. A rebuild publishes byte-identical tables.
 - Consumers must update their paths.
 
 ## v2.0 — 2026-09-20

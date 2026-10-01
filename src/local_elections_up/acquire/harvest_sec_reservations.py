@@ -44,6 +44,8 @@ from tenacity import (
     wait_random_exponential,
 )
 
+ROOT = Path(__file__).resolve().parents[3]
+
 PREFIX = "ctl00$ContentPlaceHolder1$"
 PORTALS = {
     "ulb2012": {
@@ -914,10 +916,7 @@ def main():
     parser.add_argument(
         "--source-root",
         type=Path,
-        default=Path(__file__).resolve().parents[2]
-        / "data"
-        / "recovery"
-        / "sec_reservation_portals",
+        default=ROOT / "data" / "recovery" / "sec_reservation_portals",
     )
     parser.add_argument("--frame", type=Path)
     parser.add_argument("--expected-units", type=int)

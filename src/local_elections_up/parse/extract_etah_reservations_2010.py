@@ -16,6 +16,8 @@ import pdfplumber
 import pyarrow as pa
 import pyarrow.parquet as pq
 
+from local_elections_up import paths
+
 SOURCE = (
     "data/discovery/2026-09-10/archived_reservations/raw/"
     "4ef7c2223a1030b9a888_53bfc78b35fb.pdf"
@@ -246,9 +248,7 @@ def extract_page(page, pdf_page, template=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--root", type=Path, default=Path(__file__).resolve().parents[2]
-    )
+    parser.add_argument("--root", type=Path, default=paths.ROOT)
     parser.add_argument(
         "--output",
         type=Path,

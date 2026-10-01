@@ -15,7 +15,9 @@ from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-ROOT = Path(__file__).resolve().parents[2]
+from local_elections_up import paths
+
+ROOT = paths.ROOT
 LABEL_PATH = ROOT / "data/catalogs/samiti_2010_labels.json"
 BANDS = (
     ("printed_serial_raw", 30, 66),
