@@ -1,20 +1,46 @@
-"""Build and verify the consumer catalog from the actual released tables."""
+"""Publish the built tables by election cycle, then catalog and verify them."""
 
 from __future__ import annotations
 
 import argparse
+import collections
 import hashlib
 import json
 import re
+import shutil
 import subprocess
 from pathlib import Path
 
+import pyarrow as pa
 import pyarrow.parquet as pq
 
 from local_elections_up.fields import contact_field, contact_payload
 
 ROOT = Path(__file__).resolve().parents[2]
-RELEASE = ROOT / "data/release"
+DATA = ROOT / "data"
+BUILD = DATA / "interim/release"
+METADATA = ("manifest.json", "CATALOG.md", "DICTIONARY.md")
+RURAL = ("gram_panchayat_", "panchayat_samiti_", "zilla_parishad_")
+# GP-head tables of record by year: the 2005 and 2010 winner lists carry the
+# winner's own category; 2015 comes from the SEC candidate CSVs in the office
+# build (category, education, votes); 2021 winners are marked among candidates.
+GP_TABLES = {
+    **{
+        f"gp_head_winner_records_{year}.parquet": (
+            f"{year}/gram_panchayat_head_declared_winner.parquet"
+        )
+        for year in (2005, 2010)
+    },
+    "gp_head_candidates_2021.parquet": (
+        "2021/gram_panchayat_head_candidate_record.parquet"
+    ),
+    "gp_head_election_records.parquet": "panels/gp_head_election_records.parquet",
+}
+# Office-build GP-head winners for these cycles are re-reads of the winner lists
+# or candidates published above (source_document_role derived_intermediate).
+NOT_PUBLISHED = {
+    ("gram_panchayat_head", "declared_winner", y) for y in (2005, 2010, 2021)
+}
 
 
 def digest(path):
@@ -26,8 +52,78 @@ def dump(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n")
 
 
-def describe(path, office_files):
-    relative = path.relative_to(RELEASE).as_posix()
+def cycle(office, year):
+    """The general election a record belongs to.
+
+    Samiti heads and deputies elected indirectly in 2006 follow the 2005 polls.
+    """
+    return 2005 if year == 2006 and office.startswith(RURAL) else year
+
+
+def published_dirs(directory):
+    return sorted(
+        p
+        for p in directory.iterdir()
+        if p.is_dir() and (re.fullmatch(r"\d{4}", p.name) or p.name == "panels")
+    )
+
+
+def office_build(build=BUILD):
+    return json.loads((build / "offices/manifest.json").read_text())
+
+
+def plan(build=BUILD):
+    """Every published table: (source, destination, cycle or None)."""
+    steps = [(build / "gp" / name, dest, None) for name, dest in GP_TABLES.items()]
+    for folder in ("panels", "weaver"):
+        steps += [
+            (path, f"panels/{path.name}", None)
+            for path in sorted((build / folder).glob("*.parquet"))
+        ]
+    for entry in office_build(build)["files"]:
+        name = f"{entry['office']}_{entry['record_kind']}.parquet"
+        cycles = {cycle(entry["office"], int(y)) for y in entry["rows_by_year"]}
+        steps += [
+            (build / "offices" / entry["path"], f"{year}/{name}", year)
+            for year in sorted(cycles)
+            if (entry["office"], entry["record_kind"], year) not in NOT_PUBLISHED
+        ]
+    return steps
+
+
+def publish(directory=DATA, build=BUILD):
+    steps = plan(build)
+    for folder in published_dirs(directory):
+        stray = [p for p in folder.rglob("*") if p.is_file() and p.suffix != ".parquet"]
+        if stray:
+            raise ValueError(f"Refusing to clear {folder}: holds {stray[0].name}")
+        shutil.rmtree(folder)
+    for source, destination, year in steps:
+        target = directory / destination
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if year is None:
+            shutil.copyfile(source, target)
+            continue
+        table = pq.read_table(source)
+        office = table.column("office")[0].as_py()
+        keep = pa.array(
+            [
+                cycle(office, y) == year
+                for y in table.column("election_year").to_pylist()
+            ]
+        )
+        pq.write_table(table.filter(keep), target, compression="zstd")
+    print(f"Published {len(steps)} tables")
+
+
+def rows_by_year(path, column="election_year"):
+    years = pq.read_table(path, columns=[column]).column(0).to_pylist()
+    return {str(y): n for y, n in sorted(collections.Counter(years).items())}
+
+
+def describe(path, directory, offices):
+    """`offices` maps each published office-build table to (office, kind)."""
+    relative = path.relative_to(directory).as_posix()
     schema = pq.read_schema(path)
     metadata = pq.read_metadata(path)
     entry = {
@@ -39,49 +135,45 @@ def describe(path, office_files):
         "validation_tier": "contract_checked",
         "assignment_usable": None,
     }
-    if relative.startswith("offices/"):
-        detail = office_files[path.name]
-        entry.update(
-            {
-                k: detail[k]
-                for k in ("office", "record_kind", "rows_by_year", "quality_flags")
-            }
+    folder = relative.split("/", 1)[0]
+    if relative in offices:
+        office, kind = offices[relative]
+        flags = collections.Counter(
+            flag
+            for row in pq.read_table(path, columns=["quality_flags"])
+            .column(0)
+            .to_pylist()
+            for flag in row or []
         )
         entry.update(
+            office=office,
+            record_kind=kind,
+            rows_by_year=rows_by_year(path),
+            quality_flags=dict(sorted(flags.items())),
             grain="one source observation; sources may overlap",
             key=["record_id"],
             validation_tier="provisional_source_observations",
             assignment_usable=False,
         )
-    elif relative.startswith("gp/"):
+    elif path.stem.startswith("gram_panchayat_head_"):
         entry["office"] = "gram_panchayat_head"
-        if "candidates" in path.name:
-            entry.update(
-                grain="one candidate", key=["id"], rows_by_year={"2021": entry["rows"]}
-            )
-        elif "election_records" in path.name:
-            table = pq.read_table(path, columns=["election_year"])
-            counts = (
-                table.group_by("election_year")
-                .aggregate([("election_year", "count")])
-                .to_pylist()
-            )
-            entry.update(
-                grain="one winner-list or winner-marked record",
-                key=["election_gp_key"],
-                rows_by_year={
-                    str(r["election_year"]): r["election_year_count"] for r in counts
-                },
-            )
+        if "candidate" in path.name:
+            entry.update(grain="one candidate", key=["id"])
         else:
-            year = path.stem.rsplit("_", 1)[-1]
             entry.update(
                 grain="one winner-list source record",
                 key=[],
                 row_locator="one-based physical row within the hash-pinned file",
-                rows_by_year={year: entry["rows"]},
             )
-    elif relative.startswith("weaver/"):
+        entry["rows_by_year"] = {folder: entry["rows"]}
+    elif path.stem == "gp_head_election_records":
+        entry.update(
+            office="gram_panchayat_head",
+            grain="one winner-list or winner-marked record",
+            key=["election_gp_key"],
+            rows_by_year=rows_by_year(path),
+        )
+    elif path.stem.startswith("weaver_"):
         entry.update(
             grain="one source GP identifier, wide across waves",
             key=["gp_id"],
@@ -131,39 +223,33 @@ def column_meaning(name, definitions):
     return "Source-specific field; interpret using its registered source."
 
 
-def build():
-    office = json.loads((RELEASE / "offices/manifest.json").read_text())
-    files = {x["path"]: x for x in office["files"]}
-    expected = {"offices/" + name for name in files}
-    expected.update(
-        "gp/" + name
-        for name in (
-            "gp_head_election_records.parquet",
-            "gp_head_candidates_2021.parquet",
-            *(f"gp_head_winner_records_{year}.parquet" for year in (2005, 2010, 2015)),
-        )
+def published(directory):
+    return sorted(
+        p.relative_to(directory).as_posix()
+        for folder in published_dirs(directory)
+        for p in folder.rglob("*.parquet")
     )
-    expected.update(
-        "panels/" + name + ".parquet"
-        for name in (
-            "gp_adjacent_links",
-            "gp_four_election_links",
-            "gp_link_candidates",
-            "gp_lgd_bridge",
-            "gp_panel_2005_2010",
-            "gp_panel_2010_2015",
-            "gp_panel_2015_2021",
-            "gp_panel_2005_2010_2015_2021",
-        )
-    )
-    expected.update(f"weaver/weaver_{v}_wide.parquet" for v in (20250302, 20250317))
-    actual = {p.relative_to(RELEASE).as_posix() for p in RELEASE.rglob("*.parquet")}
-    if actual != expected:
-        raise ValueError("Release tables differ from the declared product inventory")
-    entries = [describe(RELEASE / name, files) for name in sorted(expected)]
+
+
+def build(directory=DATA, build=BUILD):
+    office = office_build(build)
+    steps = plan(build)
+    expected = sorted(dest for _, dest, _ in steps)
+    if published(directory) != expected:
+        raise ValueError("Published tables differ from the declared product inventory")
+    kinds = {f["path"]: (f["office"], f["record_kind"]) for f in office["files"]}
+    offices = {
+        dest: kinds[source.name] for source, dest, year in steps if year is not None
+    }
+    entries = [describe(directory / name, directory, offices) for name in expected]
     manifest = {
-        "schema_version": 2,
-        "release": "v2.0",
+        "schema_version": 3,
+        "release": "v3.0",
+        "layout": (
+            "One folder per election cycle holds that election's source tables; "
+            "panels/ holds cross-election links and harmonized records derived "
+            "from them."
+        ),
         "code_revision": subprocess.check_output(
             [
                 "git",
@@ -186,10 +272,11 @@ def build():
             name: digest(ROOT / "data/catalogs" / name)
             for name in ("office_sources.json", "gp_sources.json")
         },
+        "office_build": {k: v for k, v in office.items() if k != "files"},
         "code_sha256": {
             p.relative_to(ROOT).as_posix(): digest(p)
-            for directory in ("src", "R", "scripts")
-            for p in sorted((ROOT / directory).rglob("*"))
+            for folder in ("src", "R", "scripts")
+            for p in sorted((ROOT / folder).rglob("*"))
             if p.is_file() and p.suffix in {".py", ".R"}
         },
         "environment_sha256": {
@@ -201,7 +288,7 @@ def build():
         ),
         "files": entries,
     }
-    dump(RELEASE / "manifest.json", manifest)
+    dump(directory / "manifest.json", manifest)
     lines = [
         "# Data catalog",
         "",
@@ -256,20 +343,19 @@ def build():
             for f in e["columns"]
         )
         dictionary.append("")
-    (RELEASE / "CATALOG.md").write_text("\n".join(lines) + "\n")
-    (RELEASE / "DICTIONARY.md").write_text("\n".join(dictionary) + "\n")
-    paths = sorted(
-        p
-        for p in RELEASE.rglob("*")
-        if p.is_file() and p != RELEASE / "CHECKSUMS.sha256"
-    )
-    (RELEASE / "CHECKSUMS.sha256").write_text(
-        "".join(f"{digest(p)}  {p.relative_to(RELEASE).as_posix()}\n" for p in paths)
+    (directory / "CATALOG.md").write_text("\n".join(lines) + "\n")
+    (directory / "DICTIONARY.md").write_text("\n".join(dictionary) + "\n")
+    paths = [directory / name for name in expected + list(METADATA)]
+    (directory / "CHECKSUMS.sha256").write_text(
+        "".join(
+            f"{digest(p)}  {p.relative_to(directory).as_posix()}\n"
+            for p in sorted(paths)
+        )
     )
     print(f"Cataloged {len(entries)} tables")
 
 
-def verify(directory=RELEASE):
+def verify(directory=DATA):
     directory = directory.resolve()
     manifest = json.loads((directory / "manifest.json").read_text())
     for entry in manifest["files"]:
@@ -315,14 +401,9 @@ def verify(directory=RELEASE):
     declared = {e["path"] for e in manifest["files"]}
     if len(declared) != len(manifest["files"]):
         raise ValueError("Duplicate dataset in manifest")
-    actual = {p.relative_to(directory).as_posix() for p in directory.rglob("*.parquet")}
-    if declared != actual:
+    if declared != set(published(directory)):
         raise ValueError("Release inventory differs from manifest")
-    expected_checksums = {
-        p.relative_to(directory).as_posix()
-        for p in directory.rglob("*")
-        if p.is_file() and p != directory / "CHECKSUMS.sha256"
-    }
+    expected_checksums = declared | set(METADATA)
     checked = set()
     for line in (directory / "CHECKSUMS.sha256").read_text().splitlines():
         match = re.fullmatch(r"([0-9a-f]{64})  (.+)", line)
@@ -342,11 +423,13 @@ def verify(directory=RELEASE):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["build", "verify"])
-    parser.add_argument("--directory", type=Path, default=RELEASE)
+    parser.add_argument("command", choices=["publish", "build", "verify"])
+    parser.add_argument("--directory", type=Path, default=DATA)
     args = parser.parse_args()
-    if args.command == "build":
-        build()
+    if args.command == "publish":
+        publish(args.directory)
+    elif args.command == "build":
+        build(args.directory)
     else:
         verify(args.directory)
 

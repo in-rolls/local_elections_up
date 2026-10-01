@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 def prepare(root=ROOT):
     sources = json.loads((root / "data/catalogs/gp_sources.json").read_text())["files"]
-    output = root / "data/release/gp"
+    output = root / "data/interim/release/gp"
     declared = {root / s["path"] for s in sources}
     found = set((root / "data/interim/gp_enriched").glob("*.parquet"))
     if found != declared:

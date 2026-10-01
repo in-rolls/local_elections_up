@@ -167,7 +167,7 @@ write_lgd_bridge <- function() {
     ))
   }
   panels <- lapply(names(lgd_panel_years), function(name) {
-    read_parquet(paste0("data/release/panels/gp_panel_", name, ".parquet"))
+    read_parquet(paste0("data/interim/release/panels/gp_panel_", name, ".parquet"))
   }) |> setNames(names(lgd_panel_years))
   blocks <- read_csv("data/crosswalks/active/up_block_xwalk.csv", show_col_types = FALSE)
   directory <- read_csv("data/external/lgd/lgd_up_block_gp.csv", show_col_types = FALSE)
@@ -179,7 +179,7 @@ write_lgd_bridge <- function() {
     reviews = reviews
   )
   assert_unique(vintage, c("panel", "anchor_key"), "Historical LGD bridge")
-  path <- "data/release/panels/gp_lgd_bridge.parquet"
+  path <- "data/interim/release/panels/gp_lgd_bridge.parquet"
   write_parquet(vintage, path)
   common <- vintage |> inner_join(full, by = c("panel", "anchor_key"),
     suffix = c("_vintage", "_full"), relationship = "one-to-one"

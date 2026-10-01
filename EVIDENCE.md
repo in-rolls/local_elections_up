@@ -1,6 +1,6 @@
 # Source evidence
 
-Consumer tables live under `data/release/`. Original source bytes and saved extraction outputs are separately preserved; they are needed to rebuild and audit the release.
+Consumer tables live in `data/<election year>/` and `data/panels/`. Original source bytes and saved extraction outputs are separately preserved; they are needed to rebuild and audit the release.
 
 See the [source archive inventory](data/catalogs/evidence_archives.json) for asset sizes and SHA-256 hashes, and the [restoration instructions](data/catalogs/SOURCES.md). The compressed member inventory records individual source hashes. The recovery archive is split into ordered parts because a complete archive exceeds the per-asset size limit.
 

@@ -1,6 +1,6 @@
 # Uttar Pradesh: status as of 2026-09-10
 
-This is a historical audit snapshot. For the current release, paths, and interpretation, use the [README](README.md) and [generated data catalog](data/release/CATALOG.md). Counts and outstanding tasks below describe the September 10 state, before the v2 migration and subsequent research releases.
+This is a historical audit snapshot. For the current release, paths, and interpretation, use the [README](README.md) and [generated data catalog](data/CATALOG.md). Counts and outstanding tasks below describe the September 10 state, before the v2 migration and subsequent research releases.
 
 ## Historical scope
 

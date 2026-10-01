@@ -14,7 +14,7 @@ import pandas as pd
 from preclink import Pipeline, StringComparison
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-RELEASE = PROJECT_ROOT / "data/release/gp/gp_head_election_records.parquet"
+RELEASE = PROJECT_ROOT / "data/interim/release/gp/gp_head_election_records.parquet"
 ACTIVE_DIR = PROJECT_ROOT / "data/crosswalks/active"
 AUDIT_DIR = PROJECT_ROOT / "data/crosswalks/audit"
 MIN_SCORE = 0.90

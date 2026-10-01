@@ -37,5 +37,3 @@ renv/staging/
 !/data/interim/winner_lists_2015/
 
 # Atomic release builders stage output before swapping it into place.
-/data/release/.offices-*/
-/data/release/.gp-*/

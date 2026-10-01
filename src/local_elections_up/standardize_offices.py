@@ -759,7 +759,7 @@ def main():
         "--registry", type=Path, default=ROOT / "data/catalogs/office_sources.json"
     )
     parser.add_argument(
-        "--output-root", type=Path, default=ROOT / "data/release/offices"
+        "--output-root", type=Path, default=ROOT / "data/interim/release/offices"
     )
     args = parser.parse_args()
     registry_bytes = args.registry.read_bytes()

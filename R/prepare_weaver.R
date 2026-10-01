@@ -14,6 +14,16 @@ prepare_weaver_wide <- function(panel, vintage) {
     all(as.numeric(panel$election) %in% c(-1, 0, 1))
   )
 
+  # A few names end or start with a lone 0xC2, the lead byte of a two-byte
+  # character whose second byte was cut off (e.g. a truncated no-break space).
+  # Parquet strings must be valid UTF-8, so drop only the dangling byte.
+  invalid <- vapply(panel, function(x) is.character(x) && !all(validUTF8(x)), logical(1))
+  for (name in names(panel)[invalid]) {
+    bad <- sum(!validUTF8(panel[[name]]))
+    message(vintage, " ", name, ": dropped invalid bytes in ", bad, " values")
+    panel[[name]] <- iconv(panel[[name]], "UTF-8", "UTF-8", sub = "")
+  }
+
   panel <- panel |>
     mutate(
       across(where(is.labelled), as.numeric),
@@ -76,8 +86,8 @@ write_weaver_products <- function(input_dir, output_dir) {
 build_weaver <- function() {
   source("R/standardize_utils.R")
   write_weaver_products(
-    file.path("data", "external", "weaver"), file.path("data", "release", "weaver")
+    file.path("data", "external", "weaver"), file.path("data", "interim", "release", "weaver")
   )
   products <- paste0("weaver_", c("20250302", "20250317"), "_wide.parquet")
-  write_release_metadata(file.path("data/release/weaver", products))
+  write_release_metadata(file.path("data/interim/release/weaver", products))
 }

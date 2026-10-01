@@ -288,5 +288,465 @@
     "old_path": "scripts/00_standardize_utils.R",
     "new_path": "R/standardize_utils.R",
     "sha256": "78868959309d88330e73611b5824c8b1e48f54cc19be8d3007b14860eb9870d7"
+  },
+  {
+    "old_path": "data/release/gp/gp_head_winner_records_2005.parquet",
+    "new_path": "data/2005/gram_panchayat_head_declared_winner.parquet",
+    "sha256": "f6b9087ab7c844b5eec6188e78ef1b29ca095db4c4c0530155e06b8a27a7fe2a"
+  },
+  {
+    "old_path": "data/release/gp/gp_head_winner_records_2010.parquet",
+    "new_path": "data/2010/gram_panchayat_head_declared_winner.parquet",
+    "sha256": "5c9e0de7b58b84cc8c4a046e37ca50d939e9252dbd9b364aadc188e5d9093631"
+  },
+  {
+    "old_path": "data/release/gp/gp_head_candidates_2021.parquet",
+    "new_path": "data/2021/gram_panchayat_head_candidate_record.parquet",
+    "sha256": "3f6e3e1cba08bd6cc012a445369f2f360b20a67bce1e7a022657d06d8263e0bd"
+  },
+  {
+    "old_path": "data/release/gp/gp_head_election_records.parquet",
+    "new_path": "data/panels/gp_head_election_records.parquet",
+    "sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560"
+  },
+  {
+    "old_path": "data/release/panels/gp_adjacent_links.parquet",
+    "new_path": "data/panels/gp_adjacent_links.parquet",
+    "sha256": "16e7f28ebd926b2db6b0cecd0f767ab7335b63429a95dcb0dac25526f54df5e9"
+  },
+  {
+    "old_path": "data/release/panels/gp_four_election_links.parquet",
+    "new_path": "data/panels/gp_four_election_links.parquet",
+    "sha256": "af379f5a584dffdcd8062d48c39c697c5dda4ab198632eb973f409b3623733b7"
+  },
+  {
+    "old_path": "data/release/panels/gp_lgd_bridge.parquet",
+    "new_path": "data/panels/gp_lgd_bridge.parquet",
+    "sha256": "e92f0e42bf23497691dbb96c5496ec06e4c061ae8affa699d24996cbbcf37eeb"
+  },
+  {
+    "old_path": "data/release/panels/gp_link_candidates.parquet",
+    "new_path": "data/panels/gp_link_candidates.parquet",
+    "sha256": "29ef776adcb8ef99aeed1b4dd5428ff25d41ae32eda4f35bcb1b295fa9445355"
+  },
+  {
+    "old_path": "data/release/panels/gp_panel_2005_2010.parquet",
+    "new_path": "data/panels/gp_panel_2005_2010.parquet",
+    "sha256": "95b7578b6165206fdf3e8adfa1cdd201443ad424f5399fa907774521dbdf9af0"
+  },
+  {
+    "old_path": "data/release/panels/gp_panel_2005_2010_2015_2021.parquet",
+    "new_path": "data/panels/gp_panel_2005_2010_2015_2021.parquet",
+    "sha256": "8b3999f2b7fd434142e3c33212e92de32e813b9a022e0a74b88525292d762e5a"
+  },
+  {
+    "old_path": "data/release/panels/gp_panel_2010_2015.parquet",
+    "new_path": "data/panels/gp_panel_2010_2015.parquet",
+    "sha256": "c0f4988fe080c78cbaabbb168b6729d52b40536c2612e162490b3b9e2a257d8b"
+  },
+  {
+    "old_path": "data/release/panels/gp_panel_2015_2021.parquet",
+    "new_path": "data/panels/gp_panel_2015_2021.parquet",
+    "sha256": "43eb83b00dc0c564584ecde3b2b2dec811f894f1f589cc28f6eda604a940c989"
+  },
+  {
+    "old_path": "data/release/weaver/weaver_20250302_wide.parquet",
+    "new_path": "data/panels/weaver_20250302_wide.parquet",
+    "sha256": "e33ede1342f3372a374e061e799b0c63292576426f5b0b14e0277437f925b536"
+  },
+  {
+    "old_path": "data/release/weaver/weaver_20250317_wide.parquet",
+    "new_path": "data/panels/weaver_20250317_wide.parquet",
+    "sha256": "9e65044535c281e3fce8705c8ee5100c4c99ca15c6d4784cd82f7751a0e5e140"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_head_seat_reservation.parquet",
+    "new_path": "data/2015/gram_panchayat_head_seat_reservation.parquet",
+    "sha256": "38025accc2077e5760aaddfa1e3fe68d0e936c5428c6ad3cd32d3060a822a41e",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_head_seat_reservation.parquet",
+    "new_path": "data/2021/gram_panchayat_head_seat_reservation.parquet",
+    "sha256": "814fba5c07cc5ea0dc583424b5fd95c81ef8ba2b13ff93b89e77a359ec342012",
+    "split_on": "election cycle 2021"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_member_seat_reservation.parquet",
+    "new_path": "data/2015/gram_panchayat_member_seat_reservation.parquet",
+    "sha256": "6c4039718ec021359f37e593d4900ea2f36f246727349a2549532276159bc141",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_mayor_candidate_record.parquet",
+    "new_path": "data/2006/municipal_corporation_mayor_candidate_record.parquet",
+    "sha256": "b1f31f6b7ee7eb6f7035fa15ededb1bc3dc9d6caa8fddfda5b1f041eb53b8852",
+    "split_on": "election cycle 2006"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_mayor_declared_winner.parquet",
+    "new_path": "data/2012/municipal_corporation_mayor_declared_winner.parquet",
+    "sha256": "f349c08f672fcb9009c182c8c6743593a8b8088e9e4067d00e38149179e69782",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_mayor_declared_winner.parquet",
+    "new_path": "data/2017/municipal_corporation_mayor_declared_winner.parquet",
+    "sha256": "7096d2298801f3293ffee4effbf36bd204c3563765e4180e34a66e993c2a3901",
+    "split_on": "election cycle 2017"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_mayor_seat_reservation.parquet",
+    "new_path": "data/2012/municipal_corporation_mayor_seat_reservation.parquet",
+    "sha256": "1ceda98cc71f981117ba460de175326437cf4e57f5b9ea4e32cd14b4730dbd4f",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_mayor_seat_reservation.parquet",
+    "new_path": "data/2023/municipal_corporation_mayor_seat_reservation.parquet",
+    "sha256": "05bfe294f3e02f3ad0175ba761a994b7981187013a530152685751925d1cbae4",
+    "split_on": "election cycle 2023"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_ward_member_candidate_record.parquet",
+    "new_path": "data/2006/municipal_corporation_ward_member_candidate_record.parquet",
+    "sha256": "9e60621e7eab3961636628f07c400260abe02537ff5ffb064fb61f72ebcd1f90",
+    "split_on": "election cycle 2006"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_ward_member_declared_winner.parquet",
+    "new_path": "data/2012/municipal_corporation_ward_member_declared_winner.parquet",
+    "sha256": "42360b18edf73ed9ac85e9c1660c76391b2e0cb025aa6d6d8f82acf202703b07",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_ward_member_declared_winner.parquet",
+    "new_path": "data/2017/municipal_corporation_ward_member_declared_winner.parquet",
+    "sha256": "15b7bcf4f1ed946f89d98bd2064d3c24837302607686b67a5d819bf22adbdc94",
+    "split_on": "election cycle 2017"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_ward_member_seat_reservation.parquet",
+    "new_path": "data/2012/municipal_corporation_ward_member_seat_reservation.parquet",
+    "sha256": "514ffee1dceb7872d6df18045767e6b437b8a208df989f1ce77bda5d5eac8ef6",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_corporation_ward_member_seat_reservation.parquet",
+    "new_path": "data/2023/municipal_corporation_ward_member_seat_reservation.parquet",
+    "sha256": "56ce5dfdd65bc820c514374fcf43f4c98e9d0c68d1db9237169adfaa9e023eea",
+    "split_on": "election cycle 2023"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_chair_candidate_record.parquet",
+    "new_path": "data/2006/municipal_council_chair_candidate_record.parquet",
+    "sha256": "72acc8a16dba930b14a47c19f65a7204c155c54dee94d18e8ca3352cdbcb16bf",
+    "split_on": "election cycle 2006"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_chair_declared_winner.parquet",
+    "new_path": "data/2012/municipal_council_chair_declared_winner.parquet",
+    "sha256": "969cd0d56e9b7498ca60539a30ae699aa603e04aa8d16b7fe8c3d2010faab171",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_chair_declared_winner.parquet",
+    "new_path": "data/2017/municipal_council_chair_declared_winner.parquet",
+    "sha256": "202e6b905cdfeb73a22215f2a07bad0ff655522f87105624440202d2ab18b971",
+    "split_on": "election cycle 2017"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_chair_seat_reservation.parquet",
+    "new_path": "data/2012/municipal_council_chair_seat_reservation.parquet",
+    "sha256": "1e84e2ba62c90c19ee5bced0164b8f28e82bc9ca4ae5fdc4a544cb57f3661eac",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_chair_seat_reservation.parquet",
+    "new_path": "data/2023/municipal_council_chair_seat_reservation.parquet",
+    "sha256": "3178f91336c847d67dcb34d7a12121377fd08e83b13d77a3efbe1726126da1ff",
+    "split_on": "election cycle 2023"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_ward_member_candidate_record.parquet",
+    "new_path": "data/2006/municipal_council_ward_member_candidate_record.parquet",
+    "sha256": "4a1be29c9c34c4fd09aecb4b5b62d8a62e6fa316fffc39b714d82368c0e41446",
+    "split_on": "election cycle 2006"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_ward_member_declared_winner.parquet",
+    "new_path": "data/2012/municipal_council_ward_member_declared_winner.parquet",
+    "sha256": "59409409083b487dea2a6ca44d98ca7d4207caa79c57c8a32ee8424157fbcdd8",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_ward_member_declared_winner.parquet",
+    "new_path": "data/2017/municipal_council_ward_member_declared_winner.parquet",
+    "sha256": "7a55f7690a6a95302810da7c3af29a1808eccab8e1d9a4f53dc8af43a2ce9368",
+    "split_on": "election cycle 2017"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_ward_member_seat_reservation.parquet",
+    "new_path": "data/2012/municipal_council_ward_member_seat_reservation.parquet",
+    "sha256": "1877b6d7f755fac6aaf69b2c22a01c4712ef11d87acf1bd7b5cd4560a8dac720",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_municipal_council_ward_member_seat_reservation.parquet",
+    "new_path": "data/2023/municipal_council_ward_member_seat_reservation.parquet",
+    "sha256": "7882f261d10699ebcba27604525b545cfa8e0d0640d7625afbc72208a47b040e",
+    "split_on": "election cycle 2023"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_chair_candidate_record.parquet",
+    "new_path": "data/2006/nagar_panchayat_chair_candidate_record.parquet",
+    "sha256": "708d6843e1636771be3bf0dd48162ebc05e5aac5929a9da2751c25f15d30614c",
+    "split_on": "election cycle 2006"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_chair_declared_winner.parquet",
+    "new_path": "data/2012/nagar_panchayat_chair_declared_winner.parquet",
+    "sha256": "be5576ebe366125056e0a4e8e7f05f0da5597fa757aeba3e42741121270efa1d",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_chair_declared_winner.parquet",
+    "new_path": "data/2017/nagar_panchayat_chair_declared_winner.parquet",
+    "sha256": "6372c395b24ae4a546b36346ee25fd9a2b1d5bb35ccc22fd5fff3c61dcbb8710",
+    "split_on": "election cycle 2017"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_chair_seat_reservation.parquet",
+    "new_path": "data/2012/nagar_panchayat_chair_seat_reservation.parquet",
+    "sha256": "3cb4ca4bb7cd88189a507c16b345d9eb79cee3fa29d9df7a4349ba3b32e7ffd5",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_chair_seat_reservation.parquet",
+    "new_path": "data/2023/nagar_panchayat_chair_seat_reservation.parquet",
+    "sha256": "1b04f5ac0fa5a31db2fe756d7e94ac1a0345a4c51658933afb0fb74c209b57fb",
+    "split_on": "election cycle 2023"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_ward_member_candidate_record.parquet",
+    "new_path": "data/2006/nagar_panchayat_ward_member_candidate_record.parquet",
+    "sha256": "bedf5ec648c3bf7db8f8ea3093df8c392a76623b94c22a8b063e6d4daab13412",
+    "split_on": "election cycle 2006"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_ward_member_declared_winner.parquet",
+    "new_path": "data/2012/nagar_panchayat_ward_member_declared_winner.parquet",
+    "sha256": "19f648baf94236c49ef023e28951571826a9971e9f61a21f291aff9e7f2604d9",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_ward_member_declared_winner.parquet",
+    "new_path": "data/2017/nagar_panchayat_ward_member_declared_winner.parquet",
+    "sha256": "e2d0c463fd73a9dd74b0f0416870b6de2cc5b43d54e3711ab8384456ce2005c1",
+    "split_on": "election cycle 2017"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+    "new_path": "data/2012/nagar_panchayat_ward_member_seat_reservation.parquet",
+    "sha256": "4fe63961b44d513d8fe8420790530d09ba6701d852a52414646ce0d700a3485d",
+    "split_on": "election cycle 2012"
+  },
+  {
+    "old_path": "data/release/offices/up_nagar_panchayat_ward_member_seat_reservation.parquet",
+    "new_path": "data/2023/nagar_panchayat_ward_member_seat_reservation.parquet",
+    "sha256": "cee80a512dc4a2dd4103f5ec3b09a8adcd032273c920fdb5366f1c28f0fccd2c",
+    "split_on": "election cycle 2023"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_declared_winner.parquet",
+    "new_path": "data/2015/panchayat_samiti_head_declared_winner.parquet",
+    "sha256": "5532103c00582e49a30ecb3e7bd77ddaa026a9079bf43f48f0136cd98d532be1",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_elected_official.parquet",
+    "new_path": "data/2005/panchayat_samiti_head_elected_official.parquet",
+    "sha256": "d93440c1e82b0f9105ba1091b564d3db2d5a94e5263ef3bec4d1a39567d13b4d",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_reported_official.parquet",
+    "new_path": "data/2010/panchayat_samiti_head_reported_official.parquet",
+    "sha256": "5cf098f8b565ebd83f7e00ec7ead64e8d4f63ce9a510a25bbcde8133fa956d08",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_seat_reservation.parquet",
+    "new_path": "data/1995/panchayat_samiti_head_seat_reservation.parquet",
+    "sha256": "a5ebade6c913e75405e5712ad5bf7992b44c29bbab983d61b3bb19e1daa68d5a",
+    "split_on": "election cycle 1995"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_seat_reservation.parquet",
+    "new_path": "data/2000/panchayat_samiti_head_seat_reservation.parquet",
+    "sha256": "beb72e0e2ee8d52f48c485f46b959607c2815a2d47bcb9b7d2b1941258ecc387",
+    "split_on": "election cycle 2000"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_seat_reservation.parquet",
+    "new_path": "data/2005/panchayat_samiti_head_seat_reservation.parquet",
+    "sha256": "b869a586a9235c3e78e5f343be7f23c7c2cdf9a5c77b5681800716f0a28f11e1",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_seat_reservation.parquet",
+    "new_path": "data/2010/panchayat_samiti_head_seat_reservation.parquet",
+    "sha256": "37acabf2150bef3b15d30f6aba2f788b1df2bbfb9a8898b2a3c1bef23c326871",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_seat_reservation.parquet",
+    "new_path": "data/2015/panchayat_samiti_head_seat_reservation.parquet",
+    "sha256": "969f8f0113293838c07c64a67808d8b515a3af99f7e0b9ec06b1aefd75c6b97f",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_head_seat_reservation.parquet",
+    "new_path": "data/2021/panchayat_samiti_head_seat_reservation.parquet",
+    "sha256": "00c323db0f670a41a6bde2453bd64cb99415c1f33cf7299b6bb97e01ad1ad3d3",
+    "split_on": "election cycle 2021"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_junior_deputy_elected_official.parquet",
+    "new_path": "data/2005/panchayat_samiti_junior_deputy_elected_official.parquet",
+    "sha256": "ae1b844c0e37fbad2164c9f17a7701f66fb6f13c3a2fcdcc1369a4a5eb136911",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_member_declared_winner.parquet",
+    "new_path": "data/2015/panchayat_samiti_member_declared_winner.parquet",
+    "sha256": "14feca4952011cbc971d27d77f99526010afff0a2b84f8a4ebacbf98128990d3",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_member_reported_official.parquet",
+    "new_path": "data/2005/panchayat_samiti_member_reported_official.parquet",
+    "sha256": "267fda1b3c598d6e697034cfd405fc61e00f2d8f3260f7dc17318bbdeaef3aed",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_member_reported_official.parquet",
+    "new_path": "data/2010/panchayat_samiti_member_reported_official.parquet",
+    "sha256": "425f4e7e20fb97a18d7865fcfc8f5f56cc5b056f69c4e03d1be2106ce808e318",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_member_seat_reservation.parquet",
+    "new_path": "data/2015/panchayat_samiti_member_seat_reservation.parquet",
+    "sha256": "764d9b587966982b31256622745d3fc14102de7805405da4b08bf13895ace401",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_member_seat_reservation.parquet",
+    "new_path": "data/2021/panchayat_samiti_member_seat_reservation.parquet",
+    "sha256": "88e66c4ef2a13c9d9613c01ef64f6a2633556c1546a3fd73e5fc4785bc4b8857",
+    "split_on": "election cycle 2021"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_member_source_status_notice.parquet",
+    "new_path": "data/2010/panchayat_samiti_member_source_status_notice.parquet",
+    "sha256": "45303944489bfe4db7f1c02f8a2705b9b386f7ecad6f5b39224ce39a78992d4e",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_panchayat_samiti_senior_deputy_elected_official.parquet",
+    "new_path": "data/2005/panchayat_samiti_senior_deputy_elected_official.parquet",
+    "sha256": "e97d108b3b1a911acc350209e5343f417612fca3b2ad59e764d77521b79213bc",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_head_declared_winner.parquet",
+    "new_path": "data/2015/zilla_parishad_head_declared_winner.parquet",
+    "sha256": "f779fbe89eb7ccd3adc4245e1b907006458a5ce75fdb5a16eae1cc4f2ecbee80",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_head_elected_official.parquet",
+    "new_path": "data/2005/zilla_parishad_head_elected_official.parquet",
+    "sha256": "bbff1161e213e4dcc0de0bef49f1354fb43a067877b4921df2f86258adf563b1",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_head_reported_official.parquet",
+    "new_path": "data/2010/zilla_parishad_head_reported_official.parquet",
+    "sha256": "deb7934ff76a5a5db7293f5a9e4a539b428465ed92a92281ea3bf1e071d11878",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_head_seat_reservation.parquet",
+    "new_path": "data/2015/zilla_parishad_head_seat_reservation.parquet",
+    "sha256": "3c40f4eb8be9697fcefbbb4877f1bde44428ac173392776896ef6ea560449cde",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_declared_winner.parquet",
+    "new_path": "data/2015/zilla_parishad_member_declared_winner.parquet",
+    "sha256": "3a732c0b1acb002598446f54f9cd0c6c2d0ce4ccd4ae5fe23a06eb6de1fccb80",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_elected_official.parquet",
+    "new_path": "data/2005/zilla_parishad_member_elected_official.parquet",
+    "sha256": "4d45b61fb7707d681fc95e5f437b6493ed9379ede261d8eba328113d69f43a8b",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_reported_official.parquet",
+    "new_path": "data/2010/zilla_parishad_member_reported_official.parquet",
+    "sha256": "6fe68f9f5bf5421f8db13952b64118e34797740958efbd79d7f068805ad017e1",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_seat_reservation.parquet",
+    "new_path": "data/1995/zilla_parishad_member_seat_reservation.parquet",
+    "sha256": "c5bb24450b1213372b40de957fcb7a13d4fd6ce3cd1d0bbd7c0a730172f6d39e",
+    "split_on": "election cycle 1995"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_seat_reservation.parquet",
+    "new_path": "data/2000/zilla_parishad_member_seat_reservation.parquet",
+    "sha256": "13b995ee5725924cfe64d15692908a51643a02a30eaf114a7da69a938ff234e3",
+    "split_on": "election cycle 2000"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_seat_reservation.parquet",
+    "new_path": "data/2005/zilla_parishad_member_seat_reservation.parquet",
+    "sha256": "378cf5bee51c80aa01a5e54707b58fc54364da239e12dced59e001a52dd95206",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_seat_reservation.parquet",
+    "new_path": "data/2010/zilla_parishad_member_seat_reservation.parquet",
+    "sha256": "835c4c42c4ce8d9ad3a598882c6e1dfd7049a63602d334630ca2a6e75390662a",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_seat_reservation.parquet",
+    "new_path": "data/2015/zilla_parishad_member_seat_reservation.parquet",
+    "sha256": "239706c70f893e3ee177f38245187053f4c50329c4d71fb4092ea7ea33ccc6c9",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_zilla_parishad_member_seat_reservation.parquet",
+    "new_path": "data/2021/zilla_parishad_member_seat_reservation.parquet",
+    "sha256": "1df9587f99035c0b6bdbc958926334b9cb506c5932721d2829f63e7e9761a48a",
+    "split_on": "election cycle 2021"
+  },
+  {
+    "old_path": "data/release/gp/gp_head_winner_records_2015.parquet",
+    "new_path": null,
+    "superseded_by": "data/2015/gram_panchayat_head_declared_winner.parquet",
+    "reason": "same seats and winners; the SEC 2015 candidate CSVs add category, education and votes"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_head_declared_winner.parquet",
+    "new_path": "data/2015/gram_panchayat_head_declared_winner.parquet",
+    "split_on": "election cycle 2015",
+    "reason": "2005, 2010 and 2021 rows re-read the winner lists and candidates published under data/2005, data/2010 and data/2021"
   }
 ]

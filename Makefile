@@ -30,6 +30,7 @@ data-weaver:
 	Rscript scripts/09_prepare_weaver.R
 
 catalog:
+	$(PY) -m local_elections_up.release publish
 	$(PY) -m local_elections_up.release build
 
 lint:

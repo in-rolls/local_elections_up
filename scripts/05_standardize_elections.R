@@ -72,7 +72,7 @@ assert_unique(gp_xwalk, "lgd_gp_code", "Approved LGD GP targets")
 
 standardize_wave <- function(year) {
   filename <- unname(source_files[as.character(year)])
-  data <- read_parquet(file.path("data", "release", "gp", filename)) |>
+  data <- read_parquet(file.path("data", "interim", "release", "gp", filename)) |>
     mutate(source_row_number = dplyr::row_number())
 
   if (year == 2021L) {
@@ -300,7 +300,7 @@ profile <- elections |>
   )
 
 dir.create(file.path("data", "crosswalks", "audit"), recursive = TRUE, showWarnings = FALSE)
-output <- file.path("data", "release", "gp", "gp_head_election_records.parquet")
+output <- file.path("data", "interim", "release", "gp", "gp_head_election_records.parquet")
 write_parquet(elections, output)
 write_csv(profile, file.path("data", "crosswalks", "audit", "up_gp_elections_profile.csv"))
 write_csv(
