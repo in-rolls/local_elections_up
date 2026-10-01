@@ -23,25 +23,21 @@ DATA = ROOT / "data"
 BUILD = DATA / "interim/release"
 METADATA = ("manifest.json", "CATALOG.md", "DICTIONARY.md")
 RURAL = ("gram_panchayat_", "panchayat_samiti_", "zilla_parishad_")
-# GP-head tables of record by year: the 2005 and 2010 winner lists carry the
-# winner's own category; 2015 comes from the SEC candidate CSVs in the office
-# build (category, education, votes); 2021 winners are marked among candidates.
+# The SEC GP-head winner lists and 2021 candidates, as received apart from
+# contact fields. The office build's GP-head observations are published too:
+# each representation holds values the other lacks (English labels here;
+# per-row source hashes and decoded reservations there).
 GP_TABLES = {
     **{
         f"gp_head_winner_records_{year}.parquet": (
-            f"{year}/gram_panchayat_head_declared_winner.parquet"
+            f"{year}/gram_panchayat_head_winner_list.parquet"
         )
-        for year in (2005, 2010)
+        for year in (2005, 2010, 2015)
     },
     "gp_head_candidates_2021.parquet": (
         "2021/gram_panchayat_head_candidate_record.parquet"
     ),
     "gp_head_election_records.parquet": "panels/gp_head_election_records.parquet",
-}
-# Office-build GP-head winners for these cycles are re-reads of the winner lists
-# or candidates published above (source_document_role derived_intermediate).
-NOT_PUBLISHED = {
-    ("gram_panchayat_head", "declared_winner", y) for y in (2005, 2010, 2021)
 }
 
 
@@ -88,7 +84,6 @@ def plan(build=BUILD):
         steps += [
             (build / "offices" / entry["path"], f"{year}/{name}", year)
             for year in sorted(cycles)
-            if (entry["office"], entry["record_kind"], year) not in NOT_PUBLISHED
         ]
     return steps
 

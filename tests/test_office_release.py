@@ -121,19 +121,21 @@ def test_conflicting_2021_markers_preserve_both_names():
     assert all(r["winner_markers_conflict"] for r in rows)
 
 
-def test_each_gp_head_cycle_is_published_once_from_its_best_source():
-    winners = {
+def test_gp_head_winner_lists_and_office_observations_are_both_published():
+    lists = {
         int(p.parent.name): pq.read_table(p)
-        for p in DATA.glob("*/gram_panchayat_head_declared_winner.parquet")
+        for p in DATA.glob("*/gram_panchayat_head_winner_list.parquet")
     }
-    assert sorted(winners) == [2005, 2010, 2015]
-    assert {y: t.num_rows for y, t in winners.items()} == {
+    assert {y: t.num_rows for y, t in lists.items()} == {
         2005: 51872,
         2010: 51861,
         2015: 59019,
     }
-    assert "candidate_res_status" in winners[2005].column_names
-    assert set(winners[2015]["source_collection"].to_pylist()) == {
-        "candidate_csvs_2015"
+    assert "candidate_res_status" in lists[2005].column_names
+    assert "husband_spouse_name_eng" in lists[2015].column_names
+    observed = {
+        int(p.parent.name): pq.read_metadata(p).num_rows
+        for p in DATA.glob("*/gram_panchayat_head_declared_winner.parquet")
     }
+    assert observed == {2005: 51872, 2010: 51861, 2015: 59019, 2021: 49773}
     assert (DATA / "2021/gram_panchayat_head_candidate_record.parquet").exists()

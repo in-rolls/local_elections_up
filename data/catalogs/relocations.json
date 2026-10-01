@@ -291,13 +291,18 @@
   },
   {
     "old_path": "data/release/gp/gp_head_winner_records_2005.parquet",
-    "new_path": "data/2005/gram_panchayat_head_declared_winner.parquet",
+    "new_path": "data/2005/gram_panchayat_head_winner_list.parquet",
     "sha256": "f6b9087ab7c844b5eec6188e78ef1b29ca095db4c4c0530155e06b8a27a7fe2a"
   },
   {
     "old_path": "data/release/gp/gp_head_winner_records_2010.parquet",
-    "new_path": "data/2010/gram_panchayat_head_declared_winner.parquet",
+    "new_path": "data/2010/gram_panchayat_head_winner_list.parquet",
     "sha256": "5c9e0de7b58b84cc8c4a046e37ca50d939e9252dbd9b364aadc188e5d9093631"
+  },
+  {
+    "old_path": "data/release/gp/gp_head_winner_records_2015.parquet",
+    "new_path": "data/2015/gram_panchayat_head_winner_list.parquet",
+    "sha256": "d1a064de88b5a80eef04a25bf77b6c26847c48ad7173565d25a29f41eecaabc2"
   },
   {
     "old_path": "data/release/gp/gp_head_candidates_2021.parquet",
@@ -358,6 +363,30 @@
     "old_path": "data/release/weaver/weaver_20250317_wide.parquet",
     "new_path": "data/panels/weaver_20250317_wide.parquet",
     "sha256": "9e65044535c281e3fce8705c8ee5100c4c99ca15c6d4784cd82f7751a0e5e140"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_head_declared_winner.parquet",
+    "new_path": "data/2005/gram_panchayat_head_declared_winner.parquet",
+    "sha256": "4be3a10dd45092ee0845d80efaddc6a79a6aa542cdb232b6faa3635260fa8689",
+    "split_on": "election cycle 2005"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_head_declared_winner.parquet",
+    "new_path": "data/2010/gram_panchayat_head_declared_winner.parquet",
+    "sha256": "a57e86c6b40cb2367d50ee29341ef762804ede3d5cc7b3622c53b2fcf4b77428",
+    "split_on": "election cycle 2010"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_head_declared_winner.parquet",
+    "new_path": "data/2015/gram_panchayat_head_declared_winner.parquet",
+    "sha256": "18eedacd6d280de347484ec46d559edbdce9f904e2f25e22f88e4f565c64f7e9",
+    "split_on": "election cycle 2015"
+  },
+  {
+    "old_path": "data/release/offices/up_gram_panchayat_head_declared_winner.parquet",
+    "new_path": "data/2021/gram_panchayat_head_declared_winner.parquet",
+    "sha256": "6f87465d7e3cb90727b8b39528f4cf5aafca212b81d61d166747747688b377e6",
+    "split_on": "election cycle 2021"
   },
   {
     "old_path": "data/release/offices/up_gram_panchayat_head_seat_reservation.parquet",
@@ -738,15 +767,33 @@
     "split_on": "election cycle 2021"
   },
   {
-    "old_path": "data/release/gp/gp_head_winner_records_2015.parquet",
-    "new_path": null,
-    "superseded_by": "data/2015/gram_panchayat_head_declared_winner.parquet",
-    "reason": "same seats and winners; the SEC 2015 candidate CSVs add category, education and votes"
+    "old_path": "data/interim/release/gp/gp_head_winner_records_2005.parquet",
+    "new_path": "data/2005/gram_panchayat_head_winner_list.parquet",
+    "sha256": "f6b9087ab7c844b5eec6188e78ef1b29ca095db4c4c0530155e06b8a27a7fe2a",
+    "note": "build-area path recorded in office-build provenance; the published file is byte-identical"
   },
   {
-    "old_path": "data/release/offices/up_gram_panchayat_head_declared_winner.parquet",
-    "new_path": "data/2015/gram_panchayat_head_declared_winner.parquet",
-    "split_on": "election cycle 2015",
-    "reason": "2005, 2010 and 2021 rows re-read the winner lists and candidates published under data/2005, data/2010 and data/2021"
+    "old_path": "data/interim/release/gp/gp_head_winner_records_2010.parquet",
+    "new_path": "data/2010/gram_panchayat_head_winner_list.parquet",
+    "sha256": "5c9e0de7b58b84cc8c4a046e37ca50d939e9252dbd9b364aadc188e5d9093631",
+    "note": "build-area path recorded in office-build provenance; the published file is byte-identical"
+  },
+  {
+    "old_path": "data/interim/release/gp/gp_head_winner_records_2015.parquet",
+    "new_path": "data/2015/gram_panchayat_head_winner_list.parquet",
+    "sha256": "d1a064de88b5a80eef04a25bf77b6c26847c48ad7173565d25a29f41eecaabc2",
+    "note": "build-area path recorded in office-build provenance; the published file is byte-identical"
+  },
+  {
+    "old_path": "data/interim/release/gp/gp_head_candidates_2021.parquet",
+    "new_path": "data/2021/gram_panchayat_head_candidate_record.parquet",
+    "sha256": "3f6e3e1cba08bd6cc012a445369f2f360b20a67bce1e7a022657d06d8263e0bd",
+    "note": "build-area path recorded in office-build provenance; the published file is byte-identical"
+  },
+  {
+    "old_path": "data/interim/release/gp/gp_head_election_records.parquet",
+    "new_path": "data/panels/gp_head_election_records.parquet",
+    "sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560",
+    "note": "build-area path recorded in office-build provenance; the published file is byte-identical"
   }
 ]

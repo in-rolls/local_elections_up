@@ -2,7 +2,7 @@
   "schema_version": 3,
   "release": "v3.0",
   "layout": "One folder per election cycle holds that election's source tables; panels/ holds cross-election links and harmonized records derived from them.",
-  "code_revision": "abaf0ea56469584406591489f6cc989baee226fc",
+  "code_revision": "4d693616bd8911519d6156b1a03ca89cc54555cc",
   "source_registry_sha256": "4c0935de68aab5ef1a08e9823ac93a27dcf91f468584974ea9afe13fb522e1a3",
   "input_registries_sha256": {
     "office_sources.json": "4c0935de68aab5ef1a08e9823ac93a27dcf91f468584974ea9afe13fb522e1a3",
@@ -1146,7 +1146,7 @@
     "src/local_elections_up/build/office_ballia.py": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
     "src/local_elections_up/build/office_provenance.py": "0f497c151a4b2f570874819d7e6ad24cbc8eb65b96c1144ded7bc7c99354b281",
     "src/local_elections_up/build/prepare_gp_sources.py": "1d3a8f130f81c1b62b1bdd47288f7432a6f94e5f4ee5cf71a52495855bf3c96a",
-    "src/local_elections_up/build/release.py": "df39a6ce8c1c43d4b7a3260c526e96ae9e1b176f050dbbdd4621956ce82ef893",
+    "src/local_elections_up/build/release.py": "ad6260c708034416d03929088014e86925d95c77ab9e23240b164405dad32cf5",
     "src/local_elections_up/build/standardize_offices.py": "5c9107da3fdf2d76fb078e3d3fa474ae8208b1e4d655378025558ea7fe12679b",
     "src/local_elections_up/fields.py": "8e572d4e55537b2e47e836cd1622d74fd773ae3744a0894bfd9b055574689754",
     "src/local_elections_up/parse/__init__.py": "ff049e1979755010aec63809c59ff453312b71783372e7fc07b10d56276eb19c",
@@ -3320,6 +3320,533 @@
     {
       "dataset_id": "2005/gram_panchayat_head_declared_winner",
       "path": "2005/gram_panchayat_head_declared_winner.parquet",
+      "sha256": "4be3a10dd45092ee0845d80efaddc6a79a6aa542cdb232b6faa3635260fa8689",
+      "rows": 51872,
+      "columns": [
+        {
+          "name": "source_printed_page_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "source_subject_temporality",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_value",
+          "type": "string"
+        },
+        {
+          "name": "source_block_name_value",
+          "type": "string"
+        },
+        {
+          "name": "source_ward_name_value",
+          "type": "string"
+        },
+        {
+          "name": "source_ward_number_value",
+          "type": "string"
+        },
+        {
+          "name": "source_family_counts_json",
+          "type": "string"
+        },
+        {
+          "name": "source_reservation_value",
+          "type": "string"
+        },
+        {
+          "name": "source_review_evidence_json",
+          "type": "string"
+        },
+        {
+          "name": "source_unresolved_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "source_parent_observation_id",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_status",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_candidate_text_role",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_duplicate_group_id",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_duplicate_kind",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_key_review_sha256",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_district_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_block_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_ward_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_candidate_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_seat_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_candidate_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_sex_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_label_dictionary_path",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_label_dictionary_sha256",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "district_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_number_raw",
+          "type": "string"
+        },
+        {
+          "name": "education_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_class",
+          "type": "string"
+        },
+        {
+          "name": "source_member_cell_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_notice_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_notice_kind",
+          "type": "string"
+        },
+        {
+          "name": "source_adjudication_path",
+          "type": "string"
+        },
+        {
+          "name": "source_adjudication_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_local_path_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_response_path_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_document_sha256_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_document_role",
+          "type": "string"
+        },
+        {
+          "name": "source_document_hash_basis",
+          "type": "string"
+        },
+        {
+          "name": "source_path_resolution_status",
+          "type": "string"
+        },
+        {
+          "name": "body_type_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "related_person_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_sex_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "party_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "symbol_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_age_raw",
+          "type": "string"
+        },
+        {
+          "name": "nomination_number_raw",
+          "type": "string"
+        },
+        {
+          "name": "record_id",
+          "type": "string"
+        },
+        {
+          "name": "office",
+          "type": "string"
+        },
+        {
+          "name": "record_kind",
+          "type": "string"
+        },
+        {
+          "name": "source_collection",
+          "type": "string"
+        },
+        {
+          "name": "source_observation_id",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_path",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_document_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_local_path",
+          "type": "string"
+        },
+        {
+          "name": "source_url",
+          "type": "string"
+        },
+        {
+          "name": "source_response_path",
+          "type": "string"
+        },
+        {
+          "name": "source_row_field",
+          "type": "string"
+        },
+        {
+          "name": "source_copy_group",
+          "type": "string"
+        },
+        {
+          "name": "district_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "membership_ward_label_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "related_person_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_sex_raw",
+          "type": "string"
+        },
+        {
+          "name": "party_raw",
+          "type": "string"
+        },
+        {
+          "name": "education_raw",
+          "type": "string"
+        },
+        {
+          "name": "seat_reservation_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_raw",
+          "type": "string"
+        },
+        {
+          "name": "reservation_class",
+          "type": "string"
+        },
+        {
+          "name": "result_raw",
+          "type": "string"
+        },
+        {
+          "name": "valid_votes_raw",
+          "type": "string"
+        },
+        {
+          "name": "vote_percentage_raw",
+          "type": "string"
+        },
+        {
+          "name": "poll_percentage_raw",
+          "type": "string"
+        },
+        {
+          "name": "text_encoding",
+          "type": "string"
+        },
+        {
+          "name": "district_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_and_related_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "seat_reservation_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "office_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_category_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_format",
+          "type": "string"
+        },
+        {
+          "name": "source_finality_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "name_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_image_path",
+          "type": "string"
+        },
+        {
+          "name": "source_image_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_printed_serial_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_cell_bboxes_json",
+          "type": "string"
+        },
+        {
+          "name": "candidate_age",
+          "type": "int64"
+        },
+        {
+          "name": "candidate_category_women_label",
+          "type": "bool"
+        },
+        {
+          "name": "block_context_source_page",
+          "type": "int64"
+        },
+        {
+          "name": "block_context_source_y",
+          "type": "double"
+        },
+        {
+          "name": "election_year",
+          "type": "int16"
+        },
+        {
+          "name": "source_artifact_row",
+          "type": "int64"
+        },
+        {
+          "name": "source_page",
+          "type": "int64"
+        },
+        {
+          "name": "source_row",
+          "type": "int64"
+        },
+        {
+          "name": "source_csv_record",
+          "type": "int64"
+        },
+        {
+          "name": "source_line_start",
+          "type": "int64"
+        },
+        {
+          "name": "source_line_end",
+          "type": "int64"
+        },
+        {
+          "name": "ward_number",
+          "type": "int64"
+        },
+        {
+          "name": "membership_ward_number",
+          "type": "int64"
+        },
+        {
+          "name": "valid_votes",
+          "type": "int64"
+        },
+        {
+          "name": "vote_percentage",
+          "type": "double"
+        },
+        {
+          "name": "poll_percentage",
+          "type": "double"
+        },
+        {
+          "name": "women_reserved",
+          "type": "bool"
+        },
+        {
+          "name": "is_winner",
+          "type": "bool"
+        },
+        {
+          "name": "assignment_usable",
+          "type": "bool"
+        },
+        {
+          "name": "quality_flags",
+          "type": "list<element: string>"
+        },
+        {
+          "name": "name_reading_uncertain",
+          "type": "bool"
+        },
+        {
+          "name": "source_category_column",
+          "type": "int64"
+        }
+      ],
+      "validation_tier": "provisional_source_observations",
+      "assignment_usable": false,
+      "office": "gram_panchayat_head",
+      "record_kind": "declared_winner",
+      "rows_by_year": {
+        "2005": 51872
+      },
+      "quality_flags": {
+        "independent_office_release_validation_pending": 51872,
+        "original_http_source_provenance_unresolved": 51872
+      },
+      "grain": "one source observation; sources may overlap",
+      "key": [
+        "record_id"
+      ]
+    },
+    {
+      "dataset_id": "2005/gram_panchayat_head_winner_list",
+      "path": "2005/gram_panchayat_head_winner_list.parquet",
       "sha256": "f6b9087ab7c844b5eec6188e78ef1b29ca095db4c4c0530155e06b8a27a7fe2a",
       "rows": 51872,
       "columns": [
@@ -10886,6 +11413,533 @@
     {
       "dataset_id": "2010/gram_panchayat_head_declared_winner",
       "path": "2010/gram_panchayat_head_declared_winner.parquet",
+      "sha256": "a57e86c6b40cb2367d50ee29341ef762804ede3d5cc7b3622c53b2fcf4b77428",
+      "rows": 51861,
+      "columns": [
+        {
+          "name": "source_printed_page_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "source_subject_temporality",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_value",
+          "type": "string"
+        },
+        {
+          "name": "source_block_name_value",
+          "type": "string"
+        },
+        {
+          "name": "source_ward_name_value",
+          "type": "string"
+        },
+        {
+          "name": "source_ward_number_value",
+          "type": "string"
+        },
+        {
+          "name": "source_family_counts_json",
+          "type": "string"
+        },
+        {
+          "name": "source_reservation_value",
+          "type": "string"
+        },
+        {
+          "name": "source_review_evidence_json",
+          "type": "string"
+        },
+        {
+          "name": "source_unresolved_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "source_parent_observation_id",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_status",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_candidate_text_role",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_duplicate_group_id",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_duplicate_kind",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_key_review_sha256",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_district_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_block_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_ward_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_candidate_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_seat_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_candidate_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_sex_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_label_dictionary_path",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_label_dictionary_sha256",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "district_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_number_raw",
+          "type": "string"
+        },
+        {
+          "name": "education_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_class",
+          "type": "string"
+        },
+        {
+          "name": "source_member_cell_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_notice_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_notice_kind",
+          "type": "string"
+        },
+        {
+          "name": "source_adjudication_path",
+          "type": "string"
+        },
+        {
+          "name": "source_adjudication_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_local_path_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_response_path_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_document_sha256_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_document_role",
+          "type": "string"
+        },
+        {
+          "name": "source_document_hash_basis",
+          "type": "string"
+        },
+        {
+          "name": "source_path_resolution_status",
+          "type": "string"
+        },
+        {
+          "name": "body_type_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "related_person_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_sex_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "party_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "symbol_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_age_raw",
+          "type": "string"
+        },
+        {
+          "name": "nomination_number_raw",
+          "type": "string"
+        },
+        {
+          "name": "record_id",
+          "type": "string"
+        },
+        {
+          "name": "office",
+          "type": "string"
+        },
+        {
+          "name": "record_kind",
+          "type": "string"
+        },
+        {
+          "name": "source_collection",
+          "type": "string"
+        },
+        {
+          "name": "source_observation_id",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_path",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_document_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_local_path",
+          "type": "string"
+        },
+        {
+          "name": "source_url",
+          "type": "string"
+        },
+        {
+          "name": "source_response_path",
+          "type": "string"
+        },
+        {
+          "name": "source_row_field",
+          "type": "string"
+        },
+        {
+          "name": "source_copy_group",
+          "type": "string"
+        },
+        {
+          "name": "district_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "membership_ward_label_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "related_person_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_sex_raw",
+          "type": "string"
+        },
+        {
+          "name": "party_raw",
+          "type": "string"
+        },
+        {
+          "name": "education_raw",
+          "type": "string"
+        },
+        {
+          "name": "seat_reservation_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_raw",
+          "type": "string"
+        },
+        {
+          "name": "reservation_class",
+          "type": "string"
+        },
+        {
+          "name": "result_raw",
+          "type": "string"
+        },
+        {
+          "name": "valid_votes_raw",
+          "type": "string"
+        },
+        {
+          "name": "vote_percentage_raw",
+          "type": "string"
+        },
+        {
+          "name": "poll_percentage_raw",
+          "type": "string"
+        },
+        {
+          "name": "text_encoding",
+          "type": "string"
+        },
+        {
+          "name": "district_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_and_related_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "seat_reservation_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "office_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_category_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_format",
+          "type": "string"
+        },
+        {
+          "name": "source_finality_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "name_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_image_path",
+          "type": "string"
+        },
+        {
+          "name": "source_image_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_printed_serial_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_cell_bboxes_json",
+          "type": "string"
+        },
+        {
+          "name": "candidate_age",
+          "type": "int64"
+        },
+        {
+          "name": "candidate_category_women_label",
+          "type": "bool"
+        },
+        {
+          "name": "block_context_source_page",
+          "type": "int64"
+        },
+        {
+          "name": "block_context_source_y",
+          "type": "double"
+        },
+        {
+          "name": "election_year",
+          "type": "int16"
+        },
+        {
+          "name": "source_artifact_row",
+          "type": "int64"
+        },
+        {
+          "name": "source_page",
+          "type": "int64"
+        },
+        {
+          "name": "source_row",
+          "type": "int64"
+        },
+        {
+          "name": "source_csv_record",
+          "type": "int64"
+        },
+        {
+          "name": "source_line_start",
+          "type": "int64"
+        },
+        {
+          "name": "source_line_end",
+          "type": "int64"
+        },
+        {
+          "name": "ward_number",
+          "type": "int64"
+        },
+        {
+          "name": "membership_ward_number",
+          "type": "int64"
+        },
+        {
+          "name": "valid_votes",
+          "type": "int64"
+        },
+        {
+          "name": "vote_percentage",
+          "type": "double"
+        },
+        {
+          "name": "poll_percentage",
+          "type": "double"
+        },
+        {
+          "name": "women_reserved",
+          "type": "bool"
+        },
+        {
+          "name": "is_winner",
+          "type": "bool"
+        },
+        {
+          "name": "assignment_usable",
+          "type": "bool"
+        },
+        {
+          "name": "quality_flags",
+          "type": "list<element: string>"
+        },
+        {
+          "name": "name_reading_uncertain",
+          "type": "bool"
+        },
+        {
+          "name": "source_category_column",
+          "type": "int64"
+        }
+      ],
+      "validation_tier": "provisional_source_observations",
+      "assignment_usable": false,
+      "office": "gram_panchayat_head",
+      "record_kind": "declared_winner",
+      "rows_by_year": {
+        "2010": 51861
+      },
+      "quality_flags": {
+        "independent_office_release_validation_pending": 51861,
+        "original_http_source_provenance_unresolved": 51861
+      },
+      "grain": "one source observation; sources may overlap",
+      "key": [
+        "record_id"
+      ]
+    },
+    {
+      "dataset_id": "2010/gram_panchayat_head_winner_list",
+      "path": "2010/gram_panchayat_head_winner_list.parquet",
       "sha256": "5c9e0de7b58b84cc8c4a046e37ca50d939e9252dbd9b364aadc188e5d9093631",
       "rows": 51861,
       "columns": [
@@ -22149,6 +23203,119 @@
       ]
     },
     {
+      "dataset_id": "2015/gram_panchayat_head_winner_list",
+      "path": "2015/gram_panchayat_head_winner_list.parquet",
+      "sha256": "d1a064de88b5a80eef04a25bf77b6c26847c48ad7173565d25a29f41eecaabc2",
+      "rows": 59019,
+      "columns": [
+        {
+          "name": "block",
+          "type": "string"
+        },
+        {
+          "name": "gp",
+          "type": "string"
+        },
+        {
+          "name": "gp_reservation_status",
+          "type": "string"
+        },
+        {
+          "name": "elected_sarpanch_name",
+          "type": "string"
+        },
+        {
+          "name": "father_husband",
+          "type": "string"
+        },
+        {
+          "name": "candidate_reservation_status",
+          "type": "string"
+        },
+        {
+          "name": "educational_qualification",
+          "type": "string"
+        },
+        {
+          "name": "sex",
+          "type": "string"
+        },
+        {
+          "name": "valid_votes_received",
+          "type": "string"
+        },
+        {
+          "name": "votes_received_percent",
+          "type": "string"
+        },
+        {
+          "name": "voting_percent",
+          "type": "string"
+        },
+        {
+          "name": "result",
+          "type": "string"
+        },
+        {
+          "name": "district_name",
+          "type": "string"
+        },
+        {
+          "name": "block_num",
+          "type": "string"
+        },
+        {
+          "name": "block_name",
+          "type": "string"
+        },
+        {
+          "name": "gp_num",
+          "type": "string"
+        },
+        {
+          "name": "gp_name",
+          "type": "string"
+        },
+        {
+          "name": "gp_reservation_status_eng",
+          "type": "string"
+        },
+        {
+          "name": "candidate_reservation_status_eng",
+          "type": "string"
+        },
+        {
+          "name": "gp_name_eng",
+          "type": "string"
+        },
+        {
+          "name": "district_name_eng",
+          "type": "string"
+        },
+        {
+          "name": "block_name_eng",
+          "type": "string"
+        },
+        {
+          "name": "elected_sarpanch_name_eng",
+          "type": "string"
+        },
+        {
+          "name": "husband_spouse_name_eng",
+          "type": "string"
+        }
+      ],
+      "validation_tier": "contract_checked",
+      "assignment_usable": null,
+      "office": "gram_panchayat_head",
+      "grain": "one winner-list source record",
+      "key": [],
+      "row_locator": "one-based physical row within the hash-pinned file",
+      "rows_by_year": {
+        "2015": 59019
+      }
+    },
+    {
       "dataset_id": "2015/gram_panchayat_member_seat_reservation",
       "path": "2015/gram_panchayat_member_seat_reservation.parquet",
       "sha256": "6c4039718ec021359f37e593d4900ea2f36f246727349a2549532276159bc141",
@@ -30233,6 +31400,534 @@
       "rows_by_year": {
         "2021": 373096
       }
+    },
+    {
+      "dataset_id": "2021/gram_panchayat_head_declared_winner",
+      "path": "2021/gram_panchayat_head_declared_winner.parquet",
+      "sha256": "6f87465d7e3cb90727b8b39528f4cf5aafca212b81d61d166747747688b377e6",
+      "rows": 49773,
+      "columns": [
+        {
+          "name": "source_printed_page_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "source_subject_temporality",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_boundary_value",
+          "type": "string"
+        },
+        {
+          "name": "source_block_name_value",
+          "type": "string"
+        },
+        {
+          "name": "source_ward_name_value",
+          "type": "string"
+        },
+        {
+          "name": "source_ward_number_value",
+          "type": "string"
+        },
+        {
+          "name": "source_family_counts_json",
+          "type": "string"
+        },
+        {
+          "name": "source_reservation_value",
+          "type": "string"
+        },
+        {
+          "name": "source_review_evidence_json",
+          "type": "string"
+        },
+        {
+          "name": "source_unresolved_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "source_parent_observation_id",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_status",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_candidate_text_role",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_duplicate_group_id",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_duplicate_kind",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_source_key_review_sha256",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_district_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_block_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_ward_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "samiti_2005_candidate_name_unicode_candidate",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_seat_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_candidate_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_sex_label_decode_status",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_label_dictionary_path",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_label_dictionary_sha256",
+          "type": "string"
+        },
+        {
+          "name": "pri_2010_source_fields_json",
+          "type": "string"
+        },
+        {
+          "name": "district_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_number_raw",
+          "type": "string"
+        },
+        {
+          "name": "education_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_class",
+          "type": "string"
+        },
+        {
+          "name": "source_member_cell_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_notice_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_notice_kind",
+          "type": "string"
+        },
+        {
+          "name": "source_adjudication_path",
+          "type": "string"
+        },
+        {
+          "name": "source_adjudication_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_local_path_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_response_path_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_document_sha256_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_document_role",
+          "type": "string"
+        },
+        {
+          "name": "source_document_hash_basis",
+          "type": "string"
+        },
+        {
+          "name": "source_path_resolution_status",
+          "type": "string"
+        },
+        {
+          "name": "body_type_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "related_person_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_sex_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "party_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "symbol_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_age_raw",
+          "type": "string"
+        },
+        {
+          "name": "nomination_number_raw",
+          "type": "string"
+        },
+        {
+          "name": "record_id",
+          "type": "string"
+        },
+        {
+          "name": "office",
+          "type": "string"
+        },
+        {
+          "name": "record_kind",
+          "type": "string"
+        },
+        {
+          "name": "source_collection",
+          "type": "string"
+        },
+        {
+          "name": "source_observation_id",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_path",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_document_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_local_path",
+          "type": "string"
+        },
+        {
+          "name": "source_url",
+          "type": "string"
+        },
+        {
+          "name": "source_response_path",
+          "type": "string"
+        },
+        {
+          "name": "source_row_field",
+          "type": "string"
+        },
+        {
+          "name": "source_copy_group",
+          "type": "string"
+        },
+        {
+          "name": "district_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_code_raw",
+          "type": "string"
+        },
+        {
+          "name": "membership_ward_label_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_name_raw",
+          "type": "string"
+        },
+        {
+          "name": "related_person_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_sex_raw",
+          "type": "string"
+        },
+        {
+          "name": "party_raw",
+          "type": "string"
+        },
+        {
+          "name": "education_raw",
+          "type": "string"
+        },
+        {
+          "name": "seat_reservation_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_raw",
+          "type": "string"
+        },
+        {
+          "name": "reservation_class",
+          "type": "string"
+        },
+        {
+          "name": "result_raw",
+          "type": "string"
+        },
+        {
+          "name": "valid_votes_raw",
+          "type": "string"
+        },
+        {
+          "name": "vote_percentage_raw",
+          "type": "string"
+        },
+        {
+          "name": "poll_percentage_raw",
+          "type": "string"
+        },
+        {
+          "name": "text_encoding",
+          "type": "string"
+        },
+        {
+          "name": "district_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "block_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "ward_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_and_related_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "seat_reservation_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "candidate_category_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "office_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "reported_category_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "body_name_encoded_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_artifact_format",
+          "type": "string"
+        },
+        {
+          "name": "source_finality_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "name_review_status_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_image_path",
+          "type": "string"
+        },
+        {
+          "name": "source_image_sha256",
+          "type": "string"
+        },
+        {
+          "name": "source_printed_serial_raw",
+          "type": "string"
+        },
+        {
+          "name": "source_cell_bboxes_json",
+          "type": "string"
+        },
+        {
+          "name": "candidate_age",
+          "type": "int64"
+        },
+        {
+          "name": "candidate_category_women_label",
+          "type": "bool"
+        },
+        {
+          "name": "block_context_source_page",
+          "type": "int64"
+        },
+        {
+          "name": "block_context_source_y",
+          "type": "double"
+        },
+        {
+          "name": "election_year",
+          "type": "int16"
+        },
+        {
+          "name": "source_artifact_row",
+          "type": "int64"
+        },
+        {
+          "name": "source_page",
+          "type": "int64"
+        },
+        {
+          "name": "source_row",
+          "type": "int64"
+        },
+        {
+          "name": "source_csv_record",
+          "type": "int64"
+        },
+        {
+          "name": "source_line_start",
+          "type": "int64"
+        },
+        {
+          "name": "source_line_end",
+          "type": "int64"
+        },
+        {
+          "name": "ward_number",
+          "type": "int64"
+        },
+        {
+          "name": "membership_ward_number",
+          "type": "int64"
+        },
+        {
+          "name": "valid_votes",
+          "type": "int64"
+        },
+        {
+          "name": "vote_percentage",
+          "type": "double"
+        },
+        {
+          "name": "poll_percentage",
+          "type": "double"
+        },
+        {
+          "name": "women_reserved",
+          "type": "bool"
+        },
+        {
+          "name": "is_winner",
+          "type": "bool"
+        },
+        {
+          "name": "assignment_usable",
+          "type": "bool"
+        },
+        {
+          "name": "quality_flags",
+          "type": "list<element: string>"
+        },
+        {
+          "name": "name_reading_uncertain",
+          "type": "bool"
+        },
+        {
+          "name": "source_category_column",
+          "type": "int64"
+        }
+      ],
+      "validation_tier": "provisional_source_observations",
+      "assignment_usable": false,
+      "office": "gram_panchayat_head",
+      "record_kind": "declared_winner",
+      "rows_by_year": {
+        "2021": 49773
+      },
+      "quality_flags": {
+        "independent_office_release_validation_pending": 49773,
+        "original_http_source_provenance_unresolved": 49773,
+        "winner_markers_conflict": 2
+      },
+      "grain": "one source observation; sources may overlap",
+      "key": [
+        "record_id"
+      ]
     },
     {
       "dataset_id": "2021/gram_panchayat_head_seat_reservation",

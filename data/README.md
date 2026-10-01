@@ -17,7 +17,9 @@ Each election has a folder holding that election's tables, named `<office>_<reco
 | `external/` | Attributed outside sources: LGD, Weaver, and a 2005/2010 reservation-with-Census file |
 | `discovery/`, `recovery/`, `source_archives/`, `archives/`, `reference/`, `transliteration/`, `integration/` | Leads, restored historical responses, research bundles and dated records; none enters the release unless registered |
 
-GP-head winners come from the best source for each year: the 2005 and 2010 winner lists (which carry the winner's own category), the 2015 SEC candidate CSVs (category, education, votes), and the 2021 candidate records, whose winner markers identify the 2021 winners.
+GP heads have two representations, and both are published because each holds values the other lacks. `gram_panchayat_head_winner_list` (2005, 2010, 2015) is the SEC winner list as received, apart from contact fields, with its English labels. `gram_panchayat_head_declared_winner` (2005–2021) is the office build's observation of the same winners, with record IDs, per-row source hashes, decoded reservation and quality flags. 2021 winners are also marked among `gram_panchayat_head_candidate_record`.
+
+Provenance columns that name `data/interim/release/…` point into the build area; the [relocation ledger](catalogs/relocations.json) gives each such file's published, byte-identical location.
 
 The build follows **source bytes → saved extraction → registered transformation → build area → published tables**. `make data` rebuilds the build area and publishes it. A candidate row, a reported winner, a reservation statement and a geographic link have different units; check the catalog before counting or joining them.
 

@@ -8,7 +8,8 @@ Counts describe records, not necessarily distinct seats. Contract checks do not 
 | [1995/zilla_parishad_member_seat_reservation](1995/zilla_parishad_member_seat_reservation.parquet) | 58 | 1995 | one source observation; sources may overlap | provisional_source_observations |
 | [2000/panchayat_samiti_head_seat_reservation](2000/panchayat_samiti_head_seat_reservation.parquet) | 17 | 2000 | one source observation; sources may overlap | provisional_source_observations |
 | [2000/zilla_parishad_member_seat_reservation](2000/zilla_parishad_member_seat_reservation.parquet) | 58 | 2000 | one source observation; sources may overlap | provisional_source_observations |
-| [2005/gram_panchayat_head_declared_winner](2005/gram_panchayat_head_declared_winner.parquet) | 51,872 | 2005 | one winner-list source record | contract_checked |
+| [2005/gram_panchayat_head_declared_winner](2005/gram_panchayat_head_declared_winner.parquet) | 51,872 | 2005 | one source observation; sources may overlap | provisional_source_observations |
+| [2005/gram_panchayat_head_winner_list](2005/gram_panchayat_head_winner_list.parquet) | 51,872 | 2005 | one winner-list source record | contract_checked |
 | [2005/panchayat_samiti_head_elected_official](2005/panchayat_samiti_head_elected_official.parquet) | 820 | 2006 | one source observation; sources may overlap | provisional_source_observations |
 | [2005/panchayat_samiti_head_seat_reservation](2005/panchayat_samiti_head_seat_reservation.parquet) | 17 | 2005 | one source observation; sources may overlap | provisional_source_observations |
 | [2005/panchayat_samiti_junior_deputy_elected_official](2005/panchayat_samiti_junior_deputy_elected_official.parquet) | 819 | 2006 | one source observation; sources may overlap | provisional_source_observations |
@@ -23,7 +24,8 @@ Counts describe records, not necessarily distinct seats. Contract checks do not 
 | [2006/municipal_council_ward_member_candidate_record](2006/municipal_council_ward_member_candidate_record.parquet) | 22,952 | 2006 | one source observation; sources may overlap | provisional_source_observations |
 | [2006/nagar_panchayat_chair_candidate_record](2006/nagar_panchayat_chair_candidate_record.parquet) | 3,099 | 2006 | one source observation; sources may overlap | provisional_source_observations |
 | [2006/nagar_panchayat_ward_member_candidate_record](2006/nagar_panchayat_ward_member_candidate_record.parquet) | 17,714 | 2006 | one source observation; sources may overlap | provisional_source_observations |
-| [2010/gram_panchayat_head_declared_winner](2010/gram_panchayat_head_declared_winner.parquet) | 51,861 | 2010 | one winner-list source record | contract_checked |
+| [2010/gram_panchayat_head_declared_winner](2010/gram_panchayat_head_declared_winner.parquet) | 51,861 | 2010 | one source observation; sources may overlap | provisional_source_observations |
+| [2010/gram_panchayat_head_winner_list](2010/gram_panchayat_head_winner_list.parquet) | 51,861 | 2010 | one winner-list source record | contract_checked |
 | [2010/panchayat_samiti_head_reported_official](2010/panchayat_samiti_head_reported_official.parquet) | 821 | 2010 | one source observation; sources may overlap | provisional_source_observations |
 | [2010/panchayat_samiti_head_seat_reservation](2010/panchayat_samiti_head_seat_reservation.parquet) | 17 | 2010 | one source observation; sources may overlap | provisional_source_observations |
 | [2010/panchayat_samiti_member_reported_official](2010/panchayat_samiti_member_reported_official.parquet) | 63,321 | 2010 | one source observation; sources may overlap | provisional_source_observations |
@@ -45,6 +47,7 @@ Counts describe records, not necessarily distinct seats. Contract checks do not 
 | [2012/nagar_panchayat_ward_member_seat_reservation](2012/nagar_panchayat_ward_member_seat_reservation.parquet) | 4,958 | 2012 | one source observation; sources may overlap | provisional_source_observations |
 | [2015/gram_panchayat_head_declared_winner](2015/gram_panchayat_head_declared_winner.parquet) | 59,019 | 2015 | one source observation; sources may overlap | provisional_source_observations |
 | [2015/gram_panchayat_head_seat_reservation](2015/gram_panchayat_head_seat_reservation.parquet) | 59,021 | 2015 | one source observation; sources may overlap | provisional_source_observations |
+| [2015/gram_panchayat_head_winner_list](2015/gram_panchayat_head_winner_list.parquet) | 59,019 | 2015 | one winner-list source record | contract_checked |
 | [2015/gram_panchayat_member_seat_reservation](2015/gram_panchayat_member_seat_reservation.parquet) | 743,685 | 2015 | one source observation; sources may overlap | provisional_source_observations |
 | [2015/panchayat_samiti_head_declared_winner](2015/panchayat_samiti_head_declared_winner.parquet) | 816 | 2015 | one source observation; sources may overlap | provisional_source_observations |
 | [2015/panchayat_samiti_head_seat_reservation](2015/panchayat_samiti_head_seat_reservation.parquet) | 838 | 2015 | one source observation; sources may overlap | provisional_source_observations |
@@ -61,6 +64,7 @@ Counts describe records, not necessarily distinct seats. Contract checks do not 
 | [2017/nagar_panchayat_chair_declared_winner](2017/nagar_panchayat_chair_declared_winner.parquet) | 438 | 2017 | one source observation; sources may overlap | provisional_source_observations |
 | [2017/nagar_panchayat_ward_member_declared_winner](2017/nagar_panchayat_ward_member_declared_winner.parquet) | 5,434 | 2017 | one source observation; sources may overlap | provisional_source_observations |
 | [2021/gram_panchayat_head_candidate_record](2021/gram_panchayat_head_candidate_record.parquet) | 373,096 | 2021 | one candidate | contract_checked |
+| [2021/gram_panchayat_head_declared_winner](2021/gram_panchayat_head_declared_winner.parquet) | 49,773 | 2021 | one source observation; sources may overlap | provisional_source_observations |
 | [2021/gram_panchayat_head_seat_reservation](2021/gram_panchayat_head_seat_reservation.parquet) | 405 | 2021 | one source observation; sources may overlap | provisional_source_observations |
 | [2021/panchayat_samiti_head_seat_reservation](2021/panchayat_samiti_head_seat_reservation.parquet) | 27 | 2021 | one source observation; sources may overlap | provisional_source_observations |
 | [2021/panchayat_samiti_member_seat_reservation](2021/panchayat_samiti_member_seat_reservation.parquet) | 1,764 | 2021 | one source observation; sources may overlap | provisional_source_observations |

@@ -8,7 +8,7 @@ Each election has its own folder, `data/<year>/`; products built across election
 
 | I need… | Use |
 | --- | --- |
-| One election's GP-head winners | [2005](data/2005/gram_panchayat_head_declared_winner.parquet), [2010](data/2010/gram_panchayat_head_declared_winner.parquet), [2015](data/2015/gram_panchayat_head_declared_winner.parquet); 2021 winners are marked among [2021 candidates](data/2021/gram_panchayat_head_candidate_record.parquet) |
+| One election's GP-head winners | SEC winner lists for [2005](data/2005/gram_panchayat_head_winner_list.parquet), [2010](data/2010/gram_panchayat_head_winner_list.parquet), [2015](data/2015/gram_panchayat_head_winner_list.parquet); 2021 winners are marked among [2021 candidates](data/2021/gram_panchayat_head_candidate_record.parquet). Each year also has `gram_panchayat_head_declared_winner`, the office-build observation with source hashes and decoded reservation |
 | GP-head results harmonized across four elections | [GP election records](data/panels/gp_head_election_records.parquet) |
 | Results or reservations for another office | That election's folder, via the [catalog](data/CATALOG.md); check the office, record kind, and flags |
 | Adjacent-election or four-election links | [Panels](data/panels/) |
@@ -78,7 +78,7 @@ make check
 
 ## Changes in this release
 
-v3 organizes the published tables by election: `data/<year>/` replaces `data/release/{gp,offices}/`, multi-year office tables are split by election, and cross-election products move to `data/panels/`. Each GP-head election is published once, from its best source. Raw source files move under `data/raw/<year>/`. Three Weaver panchayat names that ended or began with a stray byte (invalid UTF-8; six cells per preparation) now read cleanly. Consumers must update their paths; see [CHANGELOG.md](CHANGELOG.md).
+v3 organizes the published tables by election: `data/<year>/` replaces `data/release/{gp,offices}/`, multi-year office tables are split by election, and cross-election products move to `data/panels/`. Every v2.0 table is preserved: copied byte for byte, or split by election and reassembling exactly. Raw source files move under `data/raw/<year>/`. Three Weaver panchayat names that ended or began with a stray byte (invalid UTF-8; six cells per preparation) now read cleanly. Consumers must update their paths; see [CHANGELOG.md](CHANGELOG.md).
 
 See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution](data/external/weaver/README.md) for external source terms.
 
