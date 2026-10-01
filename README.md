@@ -74,7 +74,7 @@ make check
 
 `make data` rebuilds from saved, registered inputs. Source restoration is required for a fresh checkout that has no extraction cache; follow the [source-evidence instructions](data/catalogs/SOURCES.md). Release assembly makes no network or paid-model calls. Historical notebooks are retained for provenance and are not part of the release command.
 
-`make ci-docker` runs Python and R checks in standard containers. `make winner-lists-2015` rebuilds the five-office 2015 intermediate exports; `make verify-2015` compares every retained field with its source CSV.
+`make winner-lists-2015` rebuilds the five-office 2015 intermediate exports; `make verify-2015` compares every retained field with its source CSV.
 
 ## Changes in this release
 
@@ -101,3 +101,7 @@ The [historical LGD bridge](data/panels/gp_lgd_bridge.parquet) maps linked elect
 _Powered by [Adjacent](https://github.com/gojiplus/adjacent)_
 
 <!-- adjacent:end -->
+
+## Maintenance
+
+This is a point-in-time data collection; see the [shared maintenance policy](https://github.com/soodoku/data-repos#maintenance-policy). Run the affected parser tests when code changes and the relevant data validators when inputs or outputs change. Full-data checks and publication are explicit operations. Routine edits do not require hosted CI, Docker, a Python-version matrix, Preen or pre-commit.
