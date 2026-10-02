@@ -1,6 +1,6 @@
 # Restore the saved release inputs
 
-The source registry in `office_sources.json` selects an explicit saved artifact for each collection and pins its SHA-256. It does not select the newest extraction. The GP source preparations are saved under `data/interim/gp_enriched/`; their original parsing and transliteration notebooks are historical evidence.
+The source registry in `office_sources.json` selects an explicit saved artifact for each collection and pins its SHA-256. It does not select the newest extraction. The GP source preparations are saved under `data/interim/gp_enriched/`; `make enrich-gp` reconstructs them from the inputs in `gp_enrichment.json` and compares every value and row position. The original notebooks remain in Git at commit `42fb6190469688fd558596460aef44282e37f6d2`.
 
 The [evidence inventory](evidence_archives.json) lists the source-evidence release and checksummed assets. `evidence_members.jsonl.gz` records each archived file's hash and whether it matches the current path or is a historical snapshot. The archive preserves 473,103 recovery files and the legacy 2015 source bytes removed during consolidation.
 

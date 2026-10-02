@@ -82,7 +82,7 @@ make verify-2015
 For a separate output directory:
 
 ```bash
-uv run --all-groups python scripts/convert_winner_lists_2015.py --out /tmp/up-winner-lists
+uv run --all-groups python -m local_elections_up.parse.convert_winner_lists_2015 --out /tmp/up-winner-lists
 ```
 
 The converter rejects unknown headers, unknown contest-status labels, empty

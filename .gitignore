@@ -5,7 +5,7 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
-build/
+/build/
 dist/
 .pytest_cache/
 .ruff_cache/
@@ -13,18 +13,6 @@ dist/
 .coverage
 htmlcov/
 .ipynb_checkpoints/
-.Rhistory
-.RData
-.Ruserdata
-.Rproj.user/
-.renv/
-renv/library/
-renv/local/
-renv/cellar/
-renv/lock/
-renv/python/
-renv/sandbox/
-renv/staging/
 
 # Large evidence collections are preserved by the source-evidence release.
 /data/recovery/

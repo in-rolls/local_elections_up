@@ -15,7 +15,7 @@ import json
 import re
 from pathlib import Path
 
-from local_elections_up import harvest_sec_historical_results as history
+from local_elections_up.acquire import harvest_sec_historical_results as history
 
 ROOT = Path(__file__).resolve().parents[3]
 

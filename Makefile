@@ -1,54 +1,52 @@
 PY = .venv/bin/python
+RUFF = .venv/bin/ruff
 
-.PHONY: sync restore-r data release-data data-gp data-offices data-panels data-lgd data-weaver catalog lint test check verify winner-lists-2015 verify-2015
+.PHONY: sync data release-data enrich-gp data-gp data-offices data-panels data-lgd data-weaver catalog data-summary lint check verify winner-lists-2015 verify-2015
 
 sync:
 	uv sync --frozen --all-groups
-
-restore-r:
-	Rscript -e 'if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv", repos="https://cloud.r-project.org"); renv::restore(prompt=FALSE)'
 
 release-data: data
 
 data: data-offices data-lgd data-weaver
 	$(MAKE) catalog
+	$(MAKE) verify
+
+enrich-gp:
+	$(PY) -m local_elections_up.parse.enrich_gp
 
 data-gp:
 	$(PY) -m local_elections_up.build.prepare_gp_sources
-	Rscript scripts/standardize_gp_elections.R
+	$(PY) -m local_elections_up.build.standardize_gp
 
 data-offices: data-gp
 	$(PY) -m local_elections_up.build.standardize_offices
 
 data-panels: data-gp
-	Rscript scripts/link_gp_elections.R
+	$(PY) -m local_elections_up.build.link_elections
 
 data-lgd: data-panels
-	Rscript scripts/link_historical_lgd.R
+	$(PY) -m local_elections_up.build.link_historical_lgd
 
 data-weaver:
-	Rscript scripts/prepare_weaver.R
+	$(PY) -m local_elections_up.build.prepare_weaver
 
 catalog:
 	$(PY) -m local_elections_up.build.release publish
 	$(PY) -m local_elections_up.build.release build
+	$(MAKE) data-summary
+
+data-summary:
+	$(PY) -m local_elections_up.build.release summary
 
 lint:
-	Rscript -e 'l <- c(lintr::lint_dir("scripts"), lintr::lint_dir("R")); print(l); quit(status=as.integer(length(l)>0L))'
-	.venv/bin/ruff check .
-	.venv/bin/ruff format --check .
-
-test:
-	Rscript tests/test_standardized_release.R
-	Rscript tests/test_election_panels.R
-	Rscript tests/test_weaver_preparation.R
-	Rscript tests/test_historical_lgd.R
-	.venv/bin/pytest -q
+	$(RUFF) check .
+	$(RUFF) format --check .
 
 verify:
 	$(PY) -m local_elections_up.build.release verify
 
-check: lint test
+check: lint verify verify-2015
 
 winner-lists-2015:
 	$(PY) -m local_elections_up.parse.convert_winner_lists_2015

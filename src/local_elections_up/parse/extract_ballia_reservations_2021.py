@@ -1,7 +1,8 @@
 """Extract the pinned Ballia PDF into resumable, source-linked cell observations.
 
 Run with:
-uv run --with img2table==2.0.0 python scripts/extract_ballia_reservations_2021.py \
+uv run --with img2table==2.0.0 python -m \
+    local_elections_up.parse.extract_ballia_reservations_2021 \
     --source-root data/recovery/ballia_media_reservations_2021 --pages 2 37 74
 
 No API calls. Requires local Tesseract with eng and hin data. Outputs are
@@ -28,7 +29,6 @@ from pathlib import Path
 
 import cv2
 import pandas as pd
-from img2table.document import PDF, Image
 
 SOURCE_SHA = "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16"
 SOURCE_FILE = "acquisition/raw/a7cdcc048fb757b6c9e5_685743d6d929.pdf"
@@ -181,6 +181,8 @@ def recover_table(document, tables, column_count=11):
     if not ok:
         raise ValueError("Could not encode the source grid crop")
     payload = encoded.tobytes()
+    from img2table.document import Image
+
     recovered = Image(src=payload, detect_rotation=True)
     recovered_tables = find_tables(recovered)
     if not any(supported_table(table, column_count) for table in recovered_tables):
@@ -201,6 +203,8 @@ def recover_table(document, tables, column_count=11):
 
 
 def extract_page(source, page, out, signature, layouts, workers):
+    from img2table.document import PDF
+
     folder = out / f"page_{page:04d}"
     folder.mkdir(exist_ok=True)
     receipt_file = folder / "receipt.json"

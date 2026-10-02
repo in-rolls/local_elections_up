@@ -1,10 +1,14 @@
 {
   "source_repository": "https://github.com/in-rolls/local_elections",
   "source_commit": "d48524744a0d39fc167355c6be066fa7ab2b7ce4",
-  "build": "uv build --wheel from git archive of src, pyproject.toml, README.md and LICENSE",
-  "asset": "local_elections-0.7.0-py3-none-any.whl",
-  "sha256": "460304b8d9fdece1a78be67e4f0079439f82a2348fee4c1ae4d9ff7310ad7044",
   "decoder_sha256": "6dec8cc15317af6171dec21d4182d97bf1abb0c002d1abd499fa8d07959e529d",
-  "bytes": 568537,
-  "reason": "Install shared code without checking out the multi-gigabyte data corpus."
+  "reason": "Keep the attributed decoder as readable source without installing the central data package.",
+  "historical_wheel": {
+    "build": "uv build --wheel from git archive of src, pyproject.toml, README.md and LICENSE",
+    "asset": "local_elections-0.7.0-py3-none-any.whl",
+    "sha256": "460304b8d9fdece1a78be67e4f0079439f82a2348fee4c1ae4d9ff7310ad7044",
+    "bytes": 568537
+  },
+  "path": "src/local_elections_up/parse/krutidev.py",
+  "license_notice": "THIRD_PARTY_NOTICES"
 }

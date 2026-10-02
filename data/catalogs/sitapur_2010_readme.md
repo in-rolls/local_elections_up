@@ -46,9 +46,9 @@ are relative to that extraction directory. Pass that directory as `--root` below
 Use fresh output directories; the tools refuse to overwrite an existing output.
 
 ```sh
-.venv/bin/python scripts/extract_sitapur_reservations_2010.py \
+.venv/bin/python -m local_elections_up.parse.extract_sitapur_reservations_2010 \
   --root /tmp/sitapur-evidence --out /tmp/sitapur-grid
-.venv/bin/python scripts/decode_legacy_labels.py \
+.venv/bin/python -m local_elections_up.parse.decode_legacy_labels \
   --input /tmp/sitapur-grid/reservation_observations.csv \
   --output /tmp/sitapur-unicode/reservation_observations.parquet \
   --columns district_raw block_raw unit_name_raw \

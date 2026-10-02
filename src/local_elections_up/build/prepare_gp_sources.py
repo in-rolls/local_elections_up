@@ -7,10 +7,9 @@ import shutil
 import tempfile
 from pathlib import Path
 
-from local_elections_up import paths
-
 import pyarrow.parquet as pq
 
+from local_elections_up import paths
 from local_elections_up.fields import contact_field
 
 ROOT = paths.ROOT

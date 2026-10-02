@@ -3,11 +3,15 @@ name = "local-elections-up"
 version = "1.0.0"
 description = "Audited record linkage for the UP local-election data release"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES"]
 classifiers = ["Private :: Do Not Upload"]
 keywords = ["elections", "uttar-pradesh", "india", "data", "record-linkage"]
 requires-python = ">=3.12"
 dependencies = [
-    "pandas>=2.0",
+    "pandas>=3.0",
+    "numpy>=2.0",
+    "rapidfuzz>=3.14",
     "pyarrow>=15",
     "preclink==1.2.0",
     "pdfplumber>=0.11",
@@ -26,26 +30,17 @@ Documentation = "https://github.com/in-rolls/local_elections_up#readme"
 
 [dependency-groups]
 dev = [
-    "pytest>=8",
     "ruff>=0.14",
 ]
-research = [
-    "local-elections==0.7.0",
-]
-
-[tool.uv.sources]
-local-elections = { path = "vendor/local_elections-0.7.0-py3-none-any.whl" }
-
 [tool.ruff]
 line-length = 88
 target-version = "py312"
-extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/local_elections_up/parse/krutidev.py" = ["RUF001"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "RUF"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
 
 [build-system]
 requires = ["hatchling"]
@@ -55,4 +50,4 @@ build-backend = "hatchling.build"
 packages = ["src/local_elections_up"]
 
 [tool.hatch.build.targets.sdist]
-include = ["vendor/", "src/", "R/", "scripts/", "tests/", "README.md", "pyproject.toml", "uv.lock", "renv.lock"]
+include = ["src/", "README.md", "THIRD_PARTY_NOTICES", "LICENSE", "pyproject.toml", "uv.lock"]

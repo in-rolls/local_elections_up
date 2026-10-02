@@ -16,20 +16,26 @@ from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
-from local_elections_up import paths
-
 import pyarrow as pa
 import pyarrow.parquet as pq
 
 from local_elections_up.build.office_provenance import STRINGS as PROVENANCE_STRINGS
 from local_elections_up.build.office_provenance import SourceProvenance
-from local_elections_up.parse.parse_sec_candidate_csvs import LABELS, LABELS_BYTES, number
+from local_elections_up.parse.parse_sec_candidate_csvs import (
+    LABELS,
+    LABELS_BYTES,
+    number,
+)
 from local_elections_up.parse.standardize_sec_samiti_2010 import FIELDS as SAMITI_FIELDS
-from local_elections_up.parse.standardize_sec_samiti_2010 import STRINGS as SAMITI_STRINGS
+from local_elections_up.parse.standardize_sec_samiti_2010 import (
+    STRINGS as SAMITI_STRINGS,
+)
 from local_elections_up.parse.standardize_sec_samiti_2010 import (
     load_context as samiti_context,
 )
-from local_elections_up.parse.standardize_sec_samiti_2010 import normalize as normalize_samiti
+from local_elections_up.parse.standardize_sec_samiti_2010 import (
+    normalize as normalize_samiti,
+)
 
 ROOT = Path(__file__).resolve().parents[3]
 PRI_LABEL_PATH = ROOT / "data/catalogs/pri_2010_category_labels.json"
@@ -754,7 +760,10 @@ def ensure_observation_id(record, source_id):
 
 
 def main():
-    from local_elections_up.build.office_ballia import BalliaHistoricalSource, BalliaSource
+    from local_elections_up.build.office_ballia import (
+        BalliaHistoricalSource,
+        BalliaSource,
+    )
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(

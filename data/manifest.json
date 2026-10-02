@@ -2,17 +2,17 @@
   "schema_version": 3,
   "release": "v3.0",
   "layout": "One folder per election cycle holds that election's source tables; panels/ holds cross-election links and harmonized records derived from them.",
-  "code_revision": "4d693616bd8911519d6156b1a03ca89cc54555cc",
-  "source_registry_sha256": "4c0935de68aab5ef1a08e9823ac93a27dcf91f468584974ea9afe13fb522e1a3",
+  "code_revision": "2540703cd9288308509166d51e65a9b47b0eb1c7",
+  "source_registry_sha256": "efdc18ddd2da087793a985a47ba8b01948dfe86e085e26ded665d3dd1f9cfd6a",
   "input_registries_sha256": {
-    "office_sources.json": "4c0935de68aab5ef1a08e9823ac93a27dcf91f468584974ea9afe13fb522e1a3",
+    "office_sources.json": "efdc18ddd2da087793a985a47ba8b01948dfe86e085e26ded665d3dd1f9cfd6a",
     "gp_sources.json": "90d62ecb3c74aea54c34f09b0c74833e18b1346d8e76f5d858b4dadc90e43f5b"
   },
   "office_build": {
     "status": "standardized_source_observations_pending_validation",
-    "registry_sha256": "4c0935de68aab5ef1a08e9823ac93a27dcf91f468584974ea9afe13fb522e1a3",
+    "registry_sha256": "efdc18ddd2da087793a985a47ba8b01948dfe86e085e26ded665d3dd1f9cfd6a",
     "label_schema_sha256": "beed338d3a09592d9eaa8bd8d0403a8ee5ae86ae09fc0ba0a584d067174d29b4",
-    "parser_sha256": "5c9107da3fdf2d76fb078e3d3fa474ae8208b1e4d655378025558ea7fe12679b",
+    "parser_sha256": "f7c28e74e9c7452d5b1befe365811a38934e1409997cfc46486d7492dd16ed96",
     "pri_2010_label_dictionary": {
       "path": "data/catalogs/pri_2010_category_labels.json",
       "sha256": "d5423e5c0e1d4d9660431bc74a056e9c8f34a9794dc904ca6e3efeb817e564e7"
@@ -238,8 +238,8 @@
           }
         ],
         "scope": "All 64,277 observations from the 1,585-page 2005 elected samiti-member PDF. Raw cells, source codes, heading context and geometry are preserved in samiti_2005_source_fields_json. Decoded names are separately labelled unreviewed candidates, not canonical identities. Reviewed category mappings preserve the unknown caste axis of woman-only labels. Vacancy and unopposed notices are separate statuses. All 13 repeated seat-key groups remain, including three conflicting pairs; no automatic deduplication or winner inference.",
-        "source_document_sha256": "3adc5b67a9f98c6529ba4bbb17dfd14ba6174527bdf0786df071fb563bfadfb8",
         "sha256": "e740b43e37058c351e4baa3920b9d1921927ee87626f80d1ae121a6b3b3a1d16",
+        "source_document_sha256": "3adc5b67a9f98c6529ba4bbb17dfd14ba6174527bdf0786df071fb563bfadfb8",
         "resolved_path": "data/interim/sec_samiti_members_2005/20260913T121202024971Z/decoded_labels_half_consonants_20260913T131227Z/member_observations.parquet",
         "input_rows": 64277,
         "source_provenance": {
@@ -310,10 +310,12 @@
           2015
         ],
         "id": "gp_enriched",
+        "migration": "Python consolidation: every value, row position and logical type is unchanged; intermediate Parquet bytes changed.",
         "path": "data/interim/release/gp/gp_head_election_records.parquet",
+        "previous_serialization_sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560",
         "record_kind": "declared_winner",
         "scope": "GP-specific enriched winners; 2015 is supplied by the local CSV collection in the office exports.",
-        "sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560",
+        "sha256": "0c5108ea83ee0e38e0984e8b54d80c58e9ae655c3288cdd3a18ed7a678f263d8",
         "resolved_path": "data/interim/release/gp/gp_head_election_records.parquet",
         "input_rows": 212525,
         "source_provenance": {
@@ -332,15 +334,15 @@
       {
         "adapter": "csv",
         "id": "candidate_csvs_2015",
+        "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
         "record_kind": "declared_winner",
         "scope": "Local CSV observations; only byte-identical statewide head tables are consolidated.",
+        "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a",
         "source_archive": {
           "member_prefix": "2015",
           "path": "data/archives/up-historical-sources-2006-2015-20260911.tar.gz",
           "sha256": "ef99d979de5b385ce750a53db364ed8fab988af625b4130762e6d5c6fad0a931"
         },
-        "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
-        "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a",
         "source_root": "data/2015",
         "resolved_path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
         "input_rows": 206633,
@@ -524,8 +526,8 @@
         "path": "data/recovery/ghaziabad_media_reservations_2021/parsed_reservations_v2/reservation_rows.parquet",
         "record_kind": "seat_reservation",
         "scope": "Media-hosted copies; decoded names and category candidates retain independent-review and source-conflict holds.",
-        "source_base": "data/recovery/ghaziabad_media_reservations_2021",
         "sha256": "57581b7c10e30196640c2683b9ec8078c84bdbbef0137208967086da1f260715",
+        "source_base": "data/recovery/ghaziabad_media_reservations_2021",
         "resolved_path": "data/recovery/ghaziabad_media_reservations_2021/parsed_reservations_v2/reservation_rows.parquet",
         "input_rows": 502,
         "source_provenance": {
@@ -546,8 +548,8 @@
         "path": "data/recovery/baghpat_official_reservations_2021/gram_pradhan_visual_review/reservations.parquet",
         "record_kind": "seat_reservation",
         "scope": "Official final source; single-reviewer name and category readings remain explicitly provisional.",
-        "source_base": "data/recovery/baghpat_official_reservations_2021",
         "sha256": "a2138b0de439cf8756c5a94b6fdc37e127258720e54a6cbeb7eee1ed27536ac4",
+        "source_base": "data/recovery/baghpat_official_reservations_2021",
         "resolved_path": "data/recovery/baghpat_official_reservations_2021/gram_pradhan_visual_review/reservations.parquet",
         "input_rows": 244,
         "source_provenance": {
@@ -567,8 +569,8 @@
         "id": "baghpat_block_head_reservations_2021",
         "path": "data/recovery/baghpat_official_reservations_2021/block_head_reservations.csv",
         "record_kind": "seat_reservation",
-        "source_base": "data/recovery/baghpat_official_reservations_2021",
         "sha256": "6959a1b46873b2b22ce1abf13f9b91dc41a1935128567ea9ceb4bc324d6b09eb",
+        "source_base": "data/recovery/baghpat_official_reservations_2021",
         "resolved_path": "data/recovery/baghpat_official_reservations_2021/block_head_reservations.csv",
         "input_rows": 6,
         "source_provenance": {
@@ -589,8 +591,8 @@
         "path": "data/recovery/baghpat_official_reservations_2021/district_member_reservations.csv",
         "record_kind": "seat_reservation",
         "scope": "Member rows only; no ZP-chair assignment inferred from this source.",
-        "source_base": "data/recovery/baghpat_official_reservations_2021",
         "sha256": "2b3d47ceb452ec4fceeed161368217154f918f1f4118dc092fd2245628d342b9",
+        "source_base": "data/recovery/baghpat_official_reservations_2021",
         "resolved_path": "data/recovery/baghpat_official_reservations_2021/district_member_reservations.csv",
         "input_rows": 20,
         "source_provenance": {
@@ -723,11 +725,11 @@
           }
         ],
         "scope": "Source observations from a media-hosted provisional 2021 document, not certified allocations. Both year columns share source-row parent IDs. Raw/effective cells, source codes, family counts and review provenance are retained. All 1441 boundaries and 1440 names reviewed; one name and one code literal remain unresolved. No code-class or women-reservation mapping inferred. The archived independent 18-row review is not fully blinded and does not establish overall accuracy.",
+        "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
         "source_base": "data/recovery/ballia_media_reservations_2021",
         "source_document_path": "data/recovery/ballia_media_reservations_2021/acquisition/raw/a7cdcc048fb757b6c9e5_685743d6d929.pdf",
         "source_document_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
         "subject_temporality": "retrospective_2015_in_2021_source",
-        "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
         "resolved_path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/rows.parquet",
         "input_rows": 1459,
         "source_provenance": {
@@ -802,11 +804,11 @@
           }
         ],
         "scope": "Source observations from a media-hosted provisional 2021 document, not certified allocations. Both year columns share source-row parent IDs. Raw/effective cells, source codes, family counts and review provenance are retained. All 1441 boundaries and 1440 names reviewed; one name and one code literal remain unresolved. No code-class or women-reservation mapping inferred. The archived independent 18-row review is not fully blinded and does not establish overall accuracy.",
+        "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
         "source_base": "data/recovery/ballia_media_reservations_2021",
         "source_document_path": "data/recovery/ballia_media_reservations_2021/acquisition/raw/a7cdcc048fb757b6c9e5_685743d6d929.pdf",
         "source_document_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
         "subject_temporality": "provisional_2021",
-        "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
         "resolved_path": "data/recovery/ballia_media_reservations_2021/reconciled_cells/20260913T185519657570Z/rows.parquet",
         "input_rows": 1459,
         "source_provenance": {
@@ -853,6 +855,7 @@
         "receipt_sha256": "6e448357d30cb87b48283a85188e7bb86001d3558405fce24339abb0789afe24",
         "record_kind": "seat_reservation",
         "scope": "All 102 source-reported Ballia samiti-head reservation literals for six election years. One block-name reading remains explicitly held. Codes are preserved without category or women-reservation interpretation; rows are provisional source observations, not certified assignments.",
+        "sha256": "466a45d3b9ac20e09676d74e3e1e87840e0144d3d7dec4e87d590e11b7f50154",
         "source_document_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/acquisition/raw/e17ce24335a775b65365_4769b16fc47a.pdf",
         "source_document_sha256": "4769b16fc47ad32009ecb24129a3c34f73bd809121a6de9c48eeebccbbb7a7cf",
         "years": [
@@ -863,7 +866,6 @@
           2015,
           2021
         ],
-        "sha256": "466a45d3b9ac20e09676d74e3e1e87840e0144d3d7dec4e87d590e11b7f50154",
         "resolved_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/historical_reconciled/20260913T201439724976Z/samiti_head_year_observations.parquet",
         "input_rows": 102,
         "source_provenance": {
@@ -915,6 +917,7 @@
         "receipt_sha256": "95a4023bb99a127d6c0f3c851746730a68049ef70b8a1c9a109abae9a246346e",
         "record_kind": "seat_reservation",
         "scope": "All 348 source-reported Ballia zilla-parishad-member reservation literals for six election years. Three source-name cells remain explicit holds affecting 18 observations. Codes are preserved without category or women-reservation interpretation; rows are provisional source observations, not certified assignments.",
+        "sha256": "e03a83ff828aa3eb0ac65afd0b4ec62cd575020be1f1b288af7d2e398d19014c",
         "source_document_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/acquisition/raw/e17ce24335a775b65365_4769b16fc47a.pdf",
         "source_document_sha256": "4769b16fc47ad32009ecb24129a3c34f73bd809121a6de9c48eeebccbbb7a7cf",
         "years": [
@@ -925,7 +928,6 @@
           2015,
           2021
         ],
-        "sha256": "e03a83ff828aa3eb0ac65afd0b4ec62cd575020be1f1b288af7d2e398d19014c",
         "resolved_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/zp_staging/20260913T234323004881Z/year_observations.parquet",
         "input_rows": 348,
         "source_provenance": {
@@ -1137,29 +1139,37 @@
     "src/local_elections_up/__init__.py": "0b0b2b57ae3889c5873a969e645dcd934afcf1a6bd4bdf9fde8c08d13b23acb6",
     "src/local_elections_up/acquire/__init__.py": "f6813d8941a464517f5168c94c0c102f981968a03fd1ac3fcea54b8ce747a8e5",
     "src/local_elections_up/acquire/harvest_sec_historical_results.py": "2c9e320c96eb1cdfa3b9b160e37b197f013fdbcdf2b480f0d4117148955bcf10",
-    "src/local_elections_up/acquire/harvest_sec_pri_portal_2010.py": "81fecbed07880b8960573d80e35807e881208db62491011e18d23d51a5c21636",
+    "src/local_elections_up/acquire/harvest_sec_pri_portal_2010.py": "9d0a4aabafe668f214b906f838a0a775477d11d515ebafba8fbc7e6280716f3b",
     "src/local_elections_up/acquire/harvest_sec_reservations.py": "44fbfa4dac0981a31b48e444679c6151ae74dc30e07bb24fe1e767607069006b",
     "src/local_elections_up/acquire/harvest_sec_urban_winners.py": "e223b227a27f4d26c669072c72cbb136ce99faddea5adbbec203713f3a19c561",
     "src/local_elections_up/acquire/harvest_sec_wayback_pdfs.py": "d4024c3269a13b278d6b71b81f50def7b004cd4c8171f668a87947f1b2b2b7ae",
     "src/local_elections_up/build/__init__.py": "c84a9bfafd1b4345edafd166a50024c827c71bd54d5a0346ac1cbef142e2c40a",
-    "src/local_elections_up/build/link_2021_lgd.py": "b275aa3aecfe8a96610f87fbc4bd8aec7e9182fc5bddb383b6b897ddc196a1e9",
+    "src/local_elections_up/build/common.py": "dfc0f2fb5ed5071072c04ef2678ad2dda4374f099505a84b38bbceece0687a57",
+    "src/local_elections_up/build/link_2021_lgd.py": "a646a101a511331473f3bc18adbb1f2654899c34d8bfee1041535b1b5cf0bbcb",
+    "src/local_elections_up/build/link_elections.py": "2f1cc20df47052504a5d42f2046fedeb5cf2df90b2866c9549a092ee37b6b896",
+    "src/local_elections_up/build/link_historical_lgd.py": "de1bc2eefe180d9f2e64bf66fc33db8e0d025ad7bc35b51c6d19d2d38565fc62",
     "src/local_elections_up/build/office_ballia.py": "071e289631f3303d17b6e771ebc9b0492353cf52ae8e58de0604eb2ce1a6690d",
     "src/local_elections_up/build/office_provenance.py": "0f497c151a4b2f570874819d7e6ad24cbc8eb65b96c1144ded7bc7c99354b281",
-    "src/local_elections_up/build/prepare_gp_sources.py": "1d3a8f130f81c1b62b1bdd47288f7432a6f94e5f4ee5cf71a52495855bf3c96a",
-    "src/local_elections_up/build/release.py": "ad6260c708034416d03929088014e86925d95c77ab9e23240b164405dad32cf5",
-    "src/local_elections_up/build/standardize_offices.py": "5c9107da3fdf2d76fb078e3d3fa474ae8208b1e4d655378025558ea7fe12679b",
+    "src/local_elections_up/build/prepare_gp_sources.py": "62875b21aaf4a329dc11a96490b8c179d476cd8a4f825f3a99a5d7629c67e4ae",
+    "src/local_elections_up/build/prepare_weaver.py": "c2ccf1341d9d41238aa4f219cb4d5f09a481437c6ee61deba684fccb473f8549",
+    "src/local_elections_up/build/release.py": "227ee25cdefa583f7cf5dc69897fe39bf489fed6842dbae83c515939e05e3e76",
+    "src/local_elections_up/build/standardize_gp.py": "1e6c52c3969d0d82b9ebd6c6e1eb4143d38719da713341b6c83add03bfb934c5",
+    "src/local_elections_up/build/standardize_offices.py": "f7c28e74e9c7452d5b1befe365811a38934e1409997cfc46486d7492dd16ed96",
     "src/local_elections_up/fields.py": "8e572d4e55537b2e47e836cd1622d74fd773ae3744a0894bfd9b055574689754",
     "src/local_elections_up/parse/__init__.py": "ff049e1979755010aec63809c59ff453312b71783372e7fc07b10d56276eb19c",
     "src/local_elections_up/parse/apply_reservation_codebook.py": "4d40912bfc20d1c2c42748da5a11778a5d760220096397de9952f28fc4d59522",
+    "src/local_elections_up/parse/clean_historical_gp.py": "2f2a85792a0273c2445fdd934294e8481b9755cf97b60bb1bd7d60e9535997c3",
     "src/local_elections_up/parse/combine_sec_urban_2017.py": "b7b3dfe18f51305c1a727f74f14591e51279980d59486bb10421abfe1ad51ddf",
     "src/local_elections_up/parse/convert_winner_lists_2015.py": "0012d9dc011f7c5e7e8430d5b3d1d1168b13c774f4fcb592b82b9c18a3652150",
-    "src/local_elections_up/parse/decode_legacy_labels.py": "21a4a5b8882d605a3dc63463479a7917b9812266e12fbe6d96e2258ec1658d70",
-    "src/local_elections_up/parse/extract_ballia_reservations_2021.py": "0a592dd169f83421feace9f7763011609f0109c3d0c13e48163f65243f87b853",
+    "src/local_elections_up/parse/decode_legacy_labels.py": "66117f64bef50ba32d518bb0740c48b9738e4ae587e8d57c336cf31c7f69fdc2",
+    "src/local_elections_up/parse/enrich_gp.py": "8ab9a427ef74826cd8c4a4d113cb4d27907f697b20a3067e12290deaa7c313b8",
+    "src/local_elections_up/parse/extract_ballia_reservations_2021.py": "22b64dcfb8f199efc01567b6a1c1f0256669755080e8565a879de60fa2b6fc34",
     "src/local_elections_up/parse/extract_etah_reservations_2010.py": "bcf8b14f2df5542d6e77d4cb2a35a915ae805b7f737a54702725400cd9f71d31",
-    "src/local_elections_up/parse/extract_ghaziabad_reservations_2021.py": "33f5c92543929905e6a0410017b61e279d01e492d45975260ce68972af1dc918",
+    "src/local_elections_up/parse/extract_ghaziabad_reservations_2021.py": "d39f196ee5cef866549be303723c1a624e0dfbef9600a4e232cd50e2c7bd660b",
     "src/local_elections_up/parse/extract_kanpur_dehat_samiti_2021_grid.py": "2d3a98279e908c5bcb0bd8c518fb522892a59cf9e852ca45189b8d363f539ae2",
     "src/local_elections_up/parse/extract_sec_winner_table.py": "111779d7c2b57f5090c0481e80b00e07cdd59a91cb26e99fb1ddce17a5701896",
     "src/local_elections_up/parse/extract_sitapur_reservations_2010.py": "55c80f18f8c3da53090437a78f494145c89d80e1156e816f135d81106be49346",
+    "src/local_elections_up/parse/krutidev.py": "6dec8cc15317af6171dec21d4182d97bf1abb0c002d1abd499fa8d07959e529d",
     "src/local_elections_up/parse/ocr_scanned_pdf_oriented.py": "e0878eeb1a5ef94f2c6667164d52ab9124e8daa834a8d310d79e9614ea01ace7",
     "src/local_elections_up/parse/parse_sec_candidate_csvs.py": "6d29c313255ae7002d5cf4b3c4d15d1f42ddbd752eb58110c65bc94fe15a5ef4",
     "src/local_elections_up/parse/parse_sec_panchayat_2000_percentages.py": "c63db2db7c4e21b4ae1f70d0fb90e4966d2b0d30e338feb3aa0e64735a1537bf",
@@ -1179,19 +1189,10 @@
     "src/local_elections_up/parse/parse_sec_urban_results_2006.py": "2ede20f40ece45a7780b0fa583ed3eb129f8ca91ab2d24268c1f2f78a79e45d0",
     "src/local_elections_up/parse/reconcile_sec_urban_sources.py": "cf7686050ce2d207434593d6d8ab8e370e0ca2b112d8fee2ab815809dbdef3fe",
     "src/local_elections_up/parse/standardize_sec_samiti_2010.py": "dc0b78aaade763bf5c1b290e704f983694281f2da3e28b8fb7cdaf8a16dfd17d",
-    "src/local_elections_up/paths.py": "06bf1c8fe95a2ff640b3935bd6600da59d7d805daae7db988bea231258bf34ca",
-    "R/link_elections.R": "e0a51f13ce0e8baafca1de0d781dd5d60c83a3cad0205f6ae4679cf1c400b622",
-    "R/link_historical_lgd.R": "3e1ba5c71c2ad663f9a163c83a0ceda18898aa96f8896a202e558910e42e72dc",
-    "R/prepare_weaver.R": "4bd981b98a1cfe35f56023e2da4bd4c4cda8afa84951ca7b6eec662aa7fa9c4f",
-    "R/standardize_utils.R": "cd913f76471d0169014b74b07e5a681154298baf00e3090f12b3decfcfe97dc3",
-    "scripts/link_gp_elections.R": "3710f8872ea24ef53d4cf73fc6821ee7c16b35027911c9e9eb7ce4130cbfbc93",
-    "scripts/link_historical_lgd.R": "205bda177563ebeb1e04524f60037566142c4bb7d92732f301bac854d4327adb",
-    "scripts/prepare_weaver.R": "99bc54b0c7d55d8020a932335c0e66e028a8dfaf95e9e46e1385b405bf7a3dcb",
-    "scripts/standardize_gp_elections.R": "f48c2332d84a714670ec30bc1ce940cec1ab092bb0dfafd49ca657e56abc7e5c"
+    "src/local_elections_up/paths.py": "06bf1c8fe95a2ff640b3935bd6600da59d7d805daae7db988bea231258bf34ca"
   },
   "environment_sha256": {
-    "uv.lock": "d8c8b071763afd106af4753179359068618423d8d5bfb2e5ee11ec911579dc9e",
-    "renv.lock": "118be1dada45f98ae1301e869c0bfd2c8edcfd29f20ecf5846b3d2989e1369a1"
+    "uv.lock": "46745b11b4232661b84a3a420afe745b6b2fe13d7235922b8617bb72d66b7569"
   },
   "grain_policy": "Source records, candidates, linked records and unique seats are distinct units.",
   "files": [
@@ -3320,7 +3321,7 @@
     {
       "dataset_id": "2005/gram_panchayat_head_declared_winner",
       "path": "2005/gram_panchayat_head_declared_winner.parquet",
-      "sha256": "4be3a10dd45092ee0845d80efaddc6a79a6aa542cdb232b6faa3635260fa8689",
+      "sha256": "2d8c05b1f84508b5b13529129b050082b46a547a4282a7c8fc0d42364e87d6c4",
       "rows": 51872,
       "columns": [
         {
@@ -11413,7 +11414,7 @@
     {
       "dataset_id": "2010/gram_panchayat_head_declared_winner",
       "path": "2010/gram_panchayat_head_declared_winner.parquet",
-      "sha256": "a57e86c6b40cb2367d50ee29341ef762804ede3d5cc7b3622c53b2fcf4b77428",
+      "sha256": "77bff88e83c2a59df7102d4bf94acf769ad16b7c1b0405f0f9de22942f9d0b8d",
       "rows": 51861,
       "columns": [
         {
@@ -31404,7 +31405,7 @@
     {
       "dataset_id": "2021/gram_panchayat_head_declared_winner",
       "path": "2021/gram_panchayat_head_declared_winner.parquet",
-      "sha256": "6f87465d7e3cb90727b8b39528f4cf5aafca212b81d61d166747747688b377e6",
+      "sha256": "6dded85fd81c2867e263bdb912d018e8f5227ca43ca334b672df12e1f3553ca3",
       "rows": 49773,
       "columns": [
         {
@@ -37226,7 +37227,7 @@
     {
       "dataset_id": "panels/gp_adjacent_links",
       "path": "panels/gp_adjacent_links.parquet",
-      "sha256": "16e7f28ebd926b2db6b0cecd0f767ab7335b63429a95dcb0dac25526f54df5e9",
+      "sha256": "9f2cb8d34b08ac35c99fd0e5c7af2275de604f6b366037bde87849c03047a9c0",
       "rows": 128687,
       "columns": [
         {
@@ -37287,7 +37288,7 @@
     {
       "dataset_id": "panels/gp_four_election_links",
       "path": "panels/gp_four_election_links.parquet",
-      "sha256": "af379f5a584dffdcd8062d48c39c697c5dda4ab198632eb973f409b3623733b7",
+      "sha256": "18687e8f1144464a53bf4cf64b23f3e18f42170b1593f1f80d487627bab3ea84",
       "rows": 29734,
       "columns": [
         {
@@ -37320,7 +37321,7 @@
     {
       "dataset_id": "panels/gp_head_election_records",
       "path": "panels/gp_head_election_records.parquet",
-      "sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560",
+      "sha256": "0c5108ea83ee0e38e0984e8b54d80c58e9ae655c3288cdd3a18ed7a678f263d8",
       "rows": 212525,
       "columns": [
         {
@@ -37513,7 +37514,7 @@
     {
       "dataset_id": "panels/gp_lgd_bridge",
       "path": "panels/gp_lgd_bridge.parquet",
-      "sha256": "e92f0e42bf23497691dbb96c5496ec06e4c061ae8affa699d24996cbbcf37eeb",
+      "sha256": "13ebbc2dd8b98ea9f2f98129b10f9ea09c7f856a39582044d80ac08b4f81d3f2",
       "rows": 157186,
       "columns": [
         {
@@ -37628,7 +37629,7 @@
     {
       "dataset_id": "panels/gp_link_candidates",
       "path": "panels/gp_link_candidates.parquet",
-      "sha256": "29ef776adcb8ef99aeed1b4dd5428ff25d41ae32eda4f35bcb1b295fa9445355",
+      "sha256": "27b31f8987df29eac2f24daeb5942671706b4e379fa7680b3f6a19c95f9395be",
       "rows": 129752,
       "columns": [
         {
@@ -37689,7 +37690,7 @@
     {
       "dataset_id": "panels/gp_panel_2005_2010",
       "path": "panels/gp_panel_2005_2010.parquet",
-      "sha256": "95b7578b6165206fdf3e8adfa1cdd201443ad424f5399fa907774521dbdf9af0",
+      "sha256": "0d989a48940f53df93dc95f8ded7cbeff09d3dfdcd16ab549c0021b7bf1357bb",
       "rows": 42622,
       "columns": [
         {
@@ -37968,7 +37969,7 @@
     {
       "dataset_id": "panels/gp_panel_2005_2010_2015_2021",
       "path": "panels/gp_panel_2005_2010_2015_2021.parquet",
-      "sha256": "8b3999f2b7fd434142e3c33212e92de32e813b9a022e0a74b88525292d762e5a",
+      "sha256": "c7ab712abe4b77718c32997d746667e9ab5894d328237b0b4c9f8560b11fe683",
       "rows": 29734,
       "columns": [
         {
@@ -38497,7 +38498,7 @@
     {
       "dataset_id": "panels/gp_panel_2010_2015",
       "path": "panels/gp_panel_2010_2015.parquet",
-      "sha256": "c0f4988fe080c78cbaabbb168b6729d52b40536c2612e162490b3b9e2a257d8b",
+      "sha256": "6e11ae6cfd68cf4e061fb9b57dce4b6af4382fb2f1ea5ec4d35df9a6320eb171",
       "rows": 39551,
       "columns": [
         {
@@ -38780,7 +38781,7 @@
     {
       "dataset_id": "panels/gp_panel_2015_2021",
       "path": "panels/gp_panel_2015_2021.parquet",
-      "sha256": "43eb83b00dc0c564584ecde3b2b2dec811f894f1f589cc28f6eda604a940c989",
+      "sha256": "d4b258d9cce17bae6ddf39a26b3a5825f7e17cf1f8a448ebdbb23b94a3453476",
       "rows": 46514,
       "columns": [
         {
@@ -39043,7 +39044,7 @@
     {
       "dataset_id": "panels/weaver_20250302_wide",
       "path": "panels/weaver_20250302_wide.parquet",
-      "sha256": "e33ede1342f3372a374e061e799b0c63292576426f5b0b14e0277437f925b536",
+      "sha256": "d819d0641f2bbb633694c25bc87956dbbafb6978e4f323fc7562115c94811023",
       "rows": 105527,
       "columns": [
         {
@@ -40221,7 +40222,7 @@
     {
       "dataset_id": "panels/weaver_20250317_wide",
       "path": "panels/weaver_20250317_wide.parquet",
-      "sha256": "9e65044535c281e3fce8705c8ee5100c4c99ca15c6d4784cd82f7751a0e5e140",
+      "sha256": "5450407c8200ccd4ab501f4a6ae5865b06cefb8dc79ba11ecdd2333a12ec160a",
       "rows": 61338,
       "columns": [
         {

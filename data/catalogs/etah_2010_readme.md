@@ -17,11 +17,11 @@ blank cells, literal zero codes, and conflicting assignments are preserved.
 
 ```sh
 uv sync --all-groups
-uv run pytest -q tests/test_etah_source_profile.py
+make verify
 ```
 
 The `research` dependency group pins the central `local-elections` package
-to a vendored wheel (see `vendor/README.md`). Its shared KrutiDev decoder is used as code only: no central
+as attributed source (see `THIRD_PARTY_NOTICES` and `data/catalogs/shared_decoder.json`). The Kruti Dev decoder is used as code only: no central
 corpus data is needed. Each generated manifest also records the decoder source
 hash, helper source hash, input hash, and source-profile hash.
 
@@ -43,7 +43,7 @@ Run the decoder on each table in
 `data/interim/etah_reservations_2010_grid_v6/` with `--columns block_raw gp_name_raw`
 and `--profile data/catalogs/etah_2010_font_profile_v1.json`. Use a new output
 directory; existing outputs and manifests are immutable. Then run
-`scripts/apply_reservation_codebook.py` with
+`python -m local_elections_up.parse.apply_reservation_codebook` with
 `data/catalogs/etah_2010_reservation_codebook.json`. The observation table uses
 `--code-column reservation_raw`; the name-group table uses
 `--code-column reservation_raw_agreed`.

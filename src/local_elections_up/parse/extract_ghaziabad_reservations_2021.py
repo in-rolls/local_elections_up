@@ -15,7 +15,8 @@ import re
 from pathlib import Path
 
 import pandas as pd
-from local_elections.common import krutidev
+
+from local_elections_up.parse import krutidev
 
 PROFILES = {
     "81615589": ("Muradnagar", "kshetra_panchayat_member", 13),

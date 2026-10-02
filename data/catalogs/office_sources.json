@@ -93,8 +93,8 @@
         }
       ],
       "scope": "All 64,277 observations from the 1,585-page 2005 elected samiti-member PDF. Raw cells, source codes, heading context and geometry are preserved in samiti_2005_source_fields_json. Decoded names are separately labelled unreviewed candidates, not canonical identities. Reviewed category mappings preserve the unknown caste axis of woman-only labels. Vacancy and unopposed notices are separate statuses. All 13 repeated seat-key groups remain, including three conflicting pairs; no automatic deduplication or winner inference.",
-      "source_document_sha256": "3adc5b67a9f98c6529ba4bbb17dfd14ba6174527bdf0786df071fb563bfadfb8",
-      "sha256": "e740b43e37058c351e4baa3920b9d1921927ee87626f80d1ae121a6b3b3a1d16"
+      "sha256": "e740b43e37058c351e4baa3920b9d1921927ee87626f80d1ae121a6b3b3a1d16",
+      "source_document_sha256": "3adc5b67a9f98c6529ba4bbb17dfd14ba6174527bdf0786df071fb563bfadfb8"
     },
     {
       "adapter": "samiti_2010",
@@ -119,23 +119,25 @@
         2015
       ],
       "id": "gp_enriched",
+      "migration": "Python consolidation: every value, row position and logical type is unchanged; intermediate Parquet bytes changed.",
       "path": "data/interim/release/gp/gp_head_election_records.parquet",
+      "previous_serialization_sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560",
       "record_kind": "declared_winner",
       "scope": "GP-specific enriched winners; 2015 is supplied by the local CSV collection in the office exports.",
-      "sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560"
+      "sha256": "0c5108ea83ee0e38e0984e8b54d80c58e9ae655c3288cdd3a18ed7a678f263d8"
     },
     {
       "adapter": "csv",
       "id": "candidate_csvs_2015",
+      "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
       "record_kind": "declared_winner",
       "scope": "Local CSV observations; only byte-identical statewide head tables are consolidated.",
+      "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a",
       "source_archive": {
         "member_prefix": "2015",
         "path": "data/archives/up-historical-sources-2006-2015-20260911.tar.gz",
         "sha256": "ef99d979de5b385ce750a53db364ed8fab988af625b4130762e6d5c6fad0a931"
       },
-      "path": "data/interim/sec_candidate_csvs_2015/20260911T221535182839Z/candidate_observations.parquet",
-      "sha256": "765f8b1928839cb313f5cecda885f3304f1df1b026f236b58e7381f29dcc125a",
       "source_root": "data/2015"
     },
     {
@@ -206,8 +208,8 @@
       "path": "data/recovery/ghaziabad_media_reservations_2021/parsed_reservations_v2/reservation_rows.parquet",
       "record_kind": "seat_reservation",
       "scope": "Media-hosted copies; decoded names and category candidates retain independent-review and source-conflict holds.",
-      "source_base": "data/recovery/ghaziabad_media_reservations_2021",
-      "sha256": "57581b7c10e30196640c2683b9ec8078c84bdbbef0137208967086da1f260715"
+      "sha256": "57581b7c10e30196640c2683b9ec8078c84bdbbef0137208967086da1f260715",
+      "source_base": "data/recovery/ghaziabad_media_reservations_2021"
     },
     {
       "adapter": "regional",
@@ -215,16 +217,16 @@
       "path": "data/recovery/baghpat_official_reservations_2021/gram_pradhan_visual_review/reservations.parquet",
       "record_kind": "seat_reservation",
       "scope": "Official final source; single-reviewer name and category readings remain explicitly provisional.",
-      "source_base": "data/recovery/baghpat_official_reservations_2021",
-      "sha256": "a2138b0de439cf8756c5a94b6fdc37e127258720e54a6cbeb7eee1ed27536ac4"
+      "sha256": "a2138b0de439cf8756c5a94b6fdc37e127258720e54a6cbeb7eee1ed27536ac4",
+      "source_base": "data/recovery/baghpat_official_reservations_2021"
     },
     {
       "adapter": "regional",
       "id": "baghpat_block_head_reservations_2021",
       "path": "data/recovery/baghpat_official_reservations_2021/block_head_reservations.csv",
       "record_kind": "seat_reservation",
-      "source_base": "data/recovery/baghpat_official_reservations_2021",
-      "sha256": "6959a1b46873b2b22ce1abf13f9b91dc41a1935128567ea9ceb4bc324d6b09eb"
+      "sha256": "6959a1b46873b2b22ce1abf13f9b91dc41a1935128567ea9ceb4bc324d6b09eb",
+      "source_base": "data/recovery/baghpat_official_reservations_2021"
     },
     {
       "adapter": "regional",
@@ -232,8 +234,8 @@
       "path": "data/recovery/baghpat_official_reservations_2021/district_member_reservations.csv",
       "record_kind": "seat_reservation",
       "scope": "Member rows only; no ZP-chair assignment inferred from this source.",
-      "source_base": "data/recovery/baghpat_official_reservations_2021",
-      "sha256": "2b3d47ceb452ec4fceeed161368217154f918f1f4118dc092fd2245628d342b9"
+      "sha256": "2b3d47ceb452ec4fceeed161368217154f918f1f4118dc092fd2245628d342b9",
+      "source_base": "data/recovery/baghpat_official_reservations_2021"
     },
     {
       "adapter": "pri_2010",
@@ -314,11 +316,11 @@
         }
       ],
       "scope": "Source observations from a media-hosted provisional 2021 document, not certified allocations. Both year columns share source-row parent IDs. Raw/effective cells, source codes, family counts and review provenance are retained. All 1441 boundaries and 1440 names reviewed; one name and one code literal remain unresolved. No code-class or women-reservation mapping inferred. The archived independent 18-row review is not fully blinded and does not establish overall accuracy.",
+      "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
       "source_base": "data/recovery/ballia_media_reservations_2021",
       "source_document_path": "data/recovery/ballia_media_reservations_2021/acquisition/raw/a7cdcc048fb757b6c9e5_685743d6d929.pdf",
       "source_document_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
-      "subject_temporality": "retrospective_2015_in_2021_source",
-      "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8"
+      "subject_temporality": "retrospective_2015_in_2021_source"
     },
     {
       "adapter": "ballia",
@@ -369,11 +371,11 @@
         }
       ],
       "scope": "Source observations from a media-hosted provisional 2021 document, not certified allocations. Both year columns share source-row parent IDs. Raw/effective cells, source codes, family counts and review provenance are retained. All 1441 boundaries and 1440 names reviewed; one name and one code literal remain unresolved. No code-class or women-reservation mapping inferred. The archived independent 18-row review is not fully blinded and does not establish overall accuracy.",
+      "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8",
       "source_base": "data/recovery/ballia_media_reservations_2021",
       "source_document_path": "data/recovery/ballia_media_reservations_2021/acquisition/raw/a7cdcc048fb757b6c9e5_685743d6d929.pdf",
       "source_document_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
-      "subject_temporality": "provisional_2021",
-      "sha256": "cea39257e07e2c46b06601a5e5ad2d8dc9db8594fbbf682d58e42642fb9571f8"
+      "subject_temporality": "provisional_2021"
     },
     {
       "adapter": "ballia_historical",
@@ -396,6 +398,7 @@
       "receipt_sha256": "6e448357d30cb87b48283a85188e7bb86001d3558405fce24339abb0789afe24",
       "record_kind": "seat_reservation",
       "scope": "All 102 source-reported Ballia samiti-head reservation literals for six election years. One block-name reading remains explicitly held. Codes are preserved without category or women-reservation interpretation; rows are provisional source observations, not certified assignments.",
+      "sha256": "466a45d3b9ac20e09676d74e3e1e87840e0144d3d7dec4e87d590e11b7f50154",
       "source_document_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/acquisition/raw/e17ce24335a775b65365_4769b16fc47a.pdf",
       "source_document_sha256": "4769b16fc47ad32009ecb24129a3c34f73bd809121a6de9c48eeebccbbb7a7cf",
       "years": [
@@ -405,8 +408,7 @@
         2010,
         2015,
         2021
-      ],
-      "sha256": "466a45d3b9ac20e09676d74e3e1e87840e0144d3d7dec4e87d590e11b7f50154"
+      ]
     },
     {
       "adapter": "ballia_historical",
@@ -429,6 +431,7 @@
       "receipt_sha256": "95a4023bb99a127d6c0f3c851746730a68049ef70b8a1c9a109abae9a246346e",
       "record_kind": "seat_reservation",
       "scope": "All 348 source-reported Ballia zilla-parishad-member reservation literals for six election years. Three source-name cells remain explicit holds affecting 18 observations. Codes are preserved without category or women-reservation interpretation; rows are provisional source observations, not certified assignments.",
+      "sha256": "e03a83ff828aa3eb0ac65afd0b4ec62cd575020be1f1b288af7d2e398d19014c",
       "source_document_path": "data/recovery/ballia_media_reservations_2021/source_followup_20260913T191037Z/acquisition/raw/e17ce24335a775b65365_4769b16fc47a.pdf",
       "source_document_sha256": "4769b16fc47ad32009ecb24129a3c34f73bd809121a6de9c48eeebccbbb7a7cf",
       "years": [
@@ -438,8 +441,7 @@
         2010,
         2015,
         2021
-      ],
-      "sha256": "e03a83ff828aa3eb0ac65afd0b4ec62cd575020be1f1b288af7d2e398d19014c"
+      ]
     }
   ]
 }

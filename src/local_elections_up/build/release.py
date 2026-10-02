@@ -11,11 +11,11 @@ import shutil
 import subprocess
 from pathlib import Path
 
-from local_elections_up import paths
-
+import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
 
+from local_elections_up import paths
 from local_elections_up.fields import contact_field, contact_payload
 
 ROOT = paths.ROOT
@@ -255,11 +255,8 @@ def build(directory=DATA, build=BUILD):
                 "--format=%H",
                 "--",
                 "src",
-                "R",
-                "scripts",
                 "pyproject.toml",
                 "uv.lock",
-                "renv.lock",
             ],
             cwd=ROOT,
             text=True,
@@ -272,13 +269,11 @@ def build(directory=DATA, build=BUILD):
         "office_build": {k: v for k, v in office.items() if k != "files"},
         "code_sha256": {
             p.relative_to(ROOT).as_posix(): digest(p)
-            for folder in ("src", "R", "scripts")
+            for folder in ("src",)
             for p in sorted((ROOT / folder).rglob("*"))
-            if p.is_file() and p.suffix in {".py", ".R"}
+            if p.is_file() and p.suffix == ".py"
         },
-        "environment_sha256": {
-            name: digest(ROOT / name) for name in ("uv.lock", "renv.lock")
-        },
+        "environment_sha256": {name: digest(ROOT / name) for name in ("uv.lock",)},
         "grain_policy": (
             "Source records, candidates, linked records and unique seats "
             "are distinct units."
@@ -415,18 +410,158 @@ def verify(directory=DATA):
             raise ValueError(f"Checksum mismatch: {relative}")
     if checked != expected_checksums:
         raise ValueError("Checksum inventory is incomplete or contains extra entries")
-    print(f"Verified {len(declared)} tables and release metadata")
+    verify_relationships(directory)
+    print(f"Verified {len(declared)} tables, release metadata, and GP relationships")
+
+
+def verify_relationships(directory):
+    """Check relationships between released source records, links, and panels."""
+    from local_elections_up.build.common import assert_unique, require
+    from local_elections_up.build.link_elections import PAIRS
+    from local_elections_up.build.link_historical_lgd import PANEL_YEARS, lgd_anchor
+
+    panels = directory / "panels"
+    records = pd.read_parquet(panels / "gp_head_election_records.parquet")
+    sources = {
+        2005: "2005/gram_panchayat_head_winner_list.parquet",
+        2010: "2010/gram_panchayat_head_winner_list.parquet",
+        2015: "2015/gram_panchayat_head_winner_list.parquet",
+        2021: "2021/gram_panchayat_head_candidate_record.parquet",
+    }
+    for year, name in sources.items():
+        source = pd.read_parquet(directory / name)
+        source["source_row_number"] = range(1, len(source) + 1)
+        rows = records.loc[records.election_year.eq(year)]
+        if year == 2021:
+            source = source.loc[source.result.eq("विजेता")]
+            require(
+                source.id.astype(str).tolist() == rows.source_record_id.tolist(),
+                "Winner records do not preserve source candidate IDs",
+            )
+            expected_names = (
+                source.candidate.astype("string").str.strip().replace("", pd.NA)
+            )
+        else:
+            expected_names = (
+                source.elected_sarpanch_name.astype("string")
+                .str.strip()
+                .replace("", pd.NA)
+            )
+        require(
+            source.source_row_number.tolist() == rows.source_row_number.tolist(),
+            f"Source rows lost or reordered for {year}",
+        )
+        require(
+            expected_names.reset_index(drop=True).equals(
+                rows.pradhan_name_hindi.astype("string").reset_index(drop=True)
+            ),
+            f"Winner names differ from their own source records for {year}",
+        )
+    conflict = records.loc[records.winner_markers_conflict]
+    require(
+        conflict.winner_woman.isna().all()
+        and conflict.pradhan_name_eng_raw.isna().all(),
+        "Conflicting winner markers resolved without review",
+    )
+    candidates = pd.read_parquet(panels / "gp_link_candidates.parquet")
+    links = pd.read_parquet(panels / "gp_adjacent_links.parquet")
+    require(
+        candidates.loc[candidates.decision.eq("accepted")]
+        .reset_index(drop=True)
+        .equals(links.reset_index(drop=True)),
+        "Accepted links differ from assessed candidates",
+    )
+    ids = {}
+    for first, second in PAIRS:
+        pair = links.loc[links.year_from.eq(first) & links.year_to.eq(second)]
+        for side, year in (("left_id", first), ("right_id", second)):
+            assert_unique(pair, [side], "Adjacent link endpoints")
+            require(
+                pair[side]
+                .isin(records.loc[records.election_year.eq(year), "election_gp_key"])
+                .all(),
+                "Link endpoint absent from its source election",
+            )
+        name = f"{first}_{second}"
+        ids[name] = (
+            pair[["left_id", "right_id"]]
+            .rename(columns={"left_id": f"key_{first}", "right_id": f"key_{second}"})
+            .reset_index(drop=True)
+        )
+    history = (
+        ids["2005_2010"]
+        .merge(ids["2010_2015"], on="key_2010", validate="one_to_one")
+        .merge(ids["2015_2021"], on="key_2015", validate="one_to_one")
+    )
+    published_history = pd.read_parquet(
+        panels / "gp_four_election_links.parquet"
+    ).rename(columns=lambda c: c.replace("election_id_", "key_"))
+    require(
+        history.equals(published_history),
+        "Four-election histories differ from adjacent links",
+    )
+    ids["2005_2010_2015_2021"] = history
+    bridge = pd.read_parquet(panels / "gp_lgd_bridge.parquet")
+    for name, keys in ids.items():
+        panel = pd.read_parquet(panels / f"gp_panel_{name}.parquet")
+        require(panel[keys.columns].equals(keys), f"Panel endpoints differ: {name}")
+        for year in PANEL_YEARS[name]:
+            source = records.set_index("election_gp_key")
+            aligned = source.reindex(panel[f"key_{year}"])
+            for column in ("women_reserved", "winner_woman", "reservation_class"):
+                left = panel[f"{column}_{year}"].reset_index(drop=True)
+                right = aligned[column].reset_index(drop=True)
+                require(
+                    (left.eq(right) | (left.isna() & right.isna())).fillna(False).all(),
+                    f"Panel field differs from GP records: {name}/{column}",
+                )
+        expected = lgd_anchor(panel, PANEL_YEARS[name])
+        actual = bridge.loc[bridge.panel.eq(name)].reset_index(drop=True)
+        for column in ("anchor_key", "source_panel_row", "english_key_ambiguous"):
+            require(
+                actual[column].tolist() == expected[column].tolist(),
+                f"LGD anchor differs: {name}/{column}",
+            )
+        require(
+            actual.loc[actual.english_key_ambiguous, "lgd_gp_code"].isna().all(),
+            "Ambiguous English identity assigned an LGD code",
+        )
+
+
+def data_summary(directory=DATA):
+    """Refresh the README inventory from the verified published manifest."""
+    manifest = json.loads((directory / "manifest.json").read_text())
+    lines = [
+        "<!-- datasets:start -->",
+        "",
+        "| File | Rows | Each row represents |",
+        "| --- | ---: | --- |",
+    ]
+    for entry in sorted(manifest["files"], key=lambda e: e["path"]):
+        path = entry["path"]
+        lines.append(
+            f"| [{path}](data/{path}) | {entry['rows']:,} | {entry['grain']} |"
+        )
+    lines.extend(["", "<!-- datasets:end -->"])
+    readme = ROOT / "README.md"
+    text = readme.read_text()
+    pattern = r"<!-- datasets:start -->.*?<!-- datasets:end -->"
+    if len(re.findall(pattern, text, flags=re.S)) != 1:
+        raise ValueError("README must contain one dataset inventory block")
+    readme.write_text(re.sub(pattern, lambda _: "\n".join(lines), text, flags=re.S))
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["publish", "build", "verify"])
+    parser.add_argument("command", choices=["publish", "build", "verify", "summary"])
     parser.add_argument("--directory", type=Path, default=DATA)
     args = parser.parse_args()
     if args.command == "publish":
         publish(args.directory)
     elif args.command == "build":
         build(args.directory)
+    elif args.command == "summary":
+        data_summary(args.directory)
     else:
         verify(args.directory)
 

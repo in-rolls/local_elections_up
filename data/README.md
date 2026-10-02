@@ -25,7 +25,7 @@ The build follows **source bytes → saved extraction → registered transformat
 
 ## Interpreting the tables
 
-The [catalog](CATALOG.md) is generated from the actual tables. The [dictionary](DICTIONARY.md) lists their columns and types. Office tables in the year folders (every table except the GP-head winner lists and 2021 candidates) are provisional source observations; `assignment_usable=false` means they are not certified reservation assignments. A passed checksum or parser test does not change that status.
+The [catalog](CATALOG.md) is generated from the actual tables. The [dictionary](DICTIONARY.md) lists their columns and types. Office tables in the year folders (every table except the GP-head winner lists and 2021 candidates) are provisional source observations; `assignment_usable=false` means they are not certified reservation assignments. A passed checksum or parser check does not change that status.
 
 Office tables separate candidates, winner-list records, reported/elected officials, and seat reservations. Alternative sources are retained rather than counted as additional seats. The manifest records source collection, year, input and output counts, quality flags, and source-copy consolidation. Exactly duplicated statewide head lists are exported once, with all original filenames retained.
 
@@ -100,7 +100,7 @@ row is published in
 | `result_status_hindi` | Contested/unopposed in 2015 and winner in 2021; unavailable in 2005 and 2010. |
 
 Run `make data-gp` to rebuild this table and its audits. Run `make check` to lint,
-test the row-count and recode contracts, and verify every published Parquet
+check row counts and source-record relationships, and verify every published Parquet
 checksum.
 
 ## Historical LGD bridge
@@ -141,10 +141,10 @@ agree, including Devanagari digits; Hindi vowel marks remain intact. Missing
 numeral information retains the reference behavior and does not itself reject a
 match.
 
-`Rscript scripts/link_historical_lgd.R` verifies the pinned inputs and rebuilds
+`make data-lgd` verifies the pinned inputs and rebuilds
 the bridge, release metadata and sensitivity tables. `make data-lgd` also
 rebuilds the upstream election panels. Tests run with
-`Rscript tests/test_historical_lgd.R`.
+`make verify`.
 
 The full-linked-panel alternative changes 763 shared **panel-anchor rows**
 (752 distinct election anchor keys): 740 gain a match and 23 lose one. No

@@ -8,7 +8,8 @@ import unicodedata
 from pathlib import Path
 
 import pandas as pd
-from local_elections.common import krutidev
+
+from local_elections_up.parse import krutidev
 
 ROMAN_SUFFIX = re.compile(r"(\s+(?:I\s*){1,3})$")
 
@@ -121,13 +122,14 @@ def main():
         "output_sha256": digest(args.output),
         "rows": len(frame),
         "columns_decoded": metrics,
-        "decoder_module": "local_elections.common.krutidev",
+        "decoder_module": "local_elections_up.parse.krutidev",
         "decoder_source_sha256": decoder_sha,
         "enricher_source_sha256": digest(Path(__file__)),
         "source_profile": profile,
         "source_profile_sha256": digest(args.profile) if args.profile else None,
         "build_dependency": (
-            "local_elections shared decoder, pinned by its source SHA-256"
+            "Attributed local decoder; upstream origin recorded in "
+            "data/catalogs/shared_decoder.json"
         ),
         "csv_input_policy": (
             "All CSV fields read as strings; blank strings and original "

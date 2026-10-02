@@ -49,7 +49,7 @@ the pinned winner HTML and the two scope artifacts at the paths in the scope
 catalog. Use a fresh output directory:
 
 ```sh
-.venv/bin/python scripts/extract_sec_winner_table.py \
+.venv/bin/python -m local_elections_up.parse.extract_sec_winner_table \
   --root /path/to/source-root \
   --scope data/catalogs/sec_winner_table_scope.json \
   --output /tmp/sec-winners-2015-rebuild
