@@ -202,9 +202,9 @@ def build(root=paths.ROOT):
                 [
                     "source_row_number",
                     "election_gp_key",
-                    "women_reserved",
+                    "reserved_woman",
                     "winner_woman",
-                    "reservation_class",
+                    "reserved_caste",
                 ]
             ],
             on="source_row_number",
@@ -221,9 +221,9 @@ def build(root=paths.ROOT):
         } | {
             "source_row_number": pa.int32(),
             "election_gp_key": pa.string(),
-            "women_reserved": pa.int32(),
-            "winner_woman": pa.int32(),
-            "reservation_class": pa.string(),
+            "reserved_woman": pa.int8(),
+            "winner_woman": pa.int8(),
+            "reserved_caste": pa.string(),
             "key": pa.string(),
         }
         schemas[year] = {f"{c}_{year}": types[c] for c in source}

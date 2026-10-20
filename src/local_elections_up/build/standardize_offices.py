@@ -183,6 +183,38 @@ SCHEMA = pa.schema(
     ]
 )
 
+# Built under the names the parsers use; published under NAMING.md's.
+PUBLISHED_NAMES = {
+    "seat_reservation_raw": "reserved_raw",
+    "seat_reservation_encoded_raw": "reserved_encoded_raw",
+    "reservation_class": "reserved_caste",
+    "women_reserved": "reserved_woman",
+    "source_reservation_value": "reserved_source_value",
+    "candidate_category_raw": "candidate_caste_raw",
+    "candidate_category_encoded_raw": "candidate_caste_encoded_raw",
+    "reported_category_encoded_raw": "candidate_caste_reported_encoded_raw",
+    "candidate_category_class": "candidate_caste",
+    "candidate_category_women_label": "candidate_caste_woman_label",
+    "reported_sex_raw": "candidate_woman_raw",
+    "reported_sex_encoded_raw": "candidate_woman_encoded_raw",
+    "pri_2010_sex_label_decode_status": "pri_2010_woman_label_decode_status",
+    "source_category_column": "source_caste_column",
+}
+PUBLISHED_SCHEMA = pa.schema(
+    [
+        pa.field(
+            PUBLISHED_NAMES.get(f.name, f.name),
+            pa.int8() if f.name == "women_reserved" else f.type,
+        )
+        for f in SCHEMA
+    ]
+)
+
+
+def published(records):
+    table = pa.Table.from_pylist(records, schema=SCHEMA)
+    return table.rename_columns(PUBLISHED_SCHEMA.names).cast(PUBLISHED_SCHEMA)
+
 
 def file_hash(path):
     with path.open("rb") as stream:
@@ -398,18 +430,19 @@ def normalize(row, source, path, parent_sha, position, context=None):
         ),
         related_person_raw=pick(row, "related_person_raw", "relation_name_raw"),
         reported_sex_raw=pick(
-            row, "sex_raw", "gender_raw", "winner_sex_hindi", "reported_sex"
+            row, "sex_raw", "gender_raw", "winner_woman_raw", "reported_sex"
         ),
         party_raw=pick(row, "party_name_raw", "party_raw"),
         education_raw=row.get("education_raw"),
         seat_reservation_raw=pick(
-            row, "seat_reservation_raw", "reservation_raw", "reservation_status_hindi"
+            row, "seat_reservation_raw", "reservation_raw", "reserved_raw"
         ),
         candidate_category_raw=row.get("candidate_category_raw"),
         reservation_class=reservation_class(
             pick(
                 row,
                 "reservation_class",
+                "reserved_caste",
                 "reservation_category",
                 "caste_reservation",
                 "printed_post_caste",
@@ -420,6 +453,7 @@ def normalize(row, source, path, parent_sha, position, context=None):
             "reserved_for_women",
             "woman_reserved",
             "women_reserved",
+            "reserved_woman",
             "printed_post_woman",
         ),
         result_raw=pick(row, "result_raw", "result_status_raw", "result_status_hindi"),
@@ -788,7 +822,7 @@ def main():
             "sha256": PRI_LABEL_SHA,
         },
         "pyarrow_version": pa.__version__,
-        "schema": {field.name: str(field.type) for field in SCHEMA},
+        "schema": {field.name: str(field.type) for field in PUBLISHED_SCHEMA},
         "sources": [],
         "files": [],
         "identical_head_source_copies": {},
@@ -807,9 +841,9 @@ def main():
         if key not in writers:
             filename = "up_" + "_".join(key) + ".parquet"
             writers[key] = pq.ParquetWriter(
-                output / filename, SCHEMA, compression="zstd"
+                output / filename, PUBLISHED_SCHEMA, compression="zstd"
             )
-        writers[key].write_table(pa.Table.from_pylist(records, schema=SCHEMA))
+        writers[key].write_table(published(records))
         records.clear()
 
     try:

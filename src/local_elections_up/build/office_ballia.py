@@ -135,7 +135,7 @@ class BalliaSource:
             "not_canonical_allocations",
             "raw_quality_flags_preserved_in_source_fields",
         ]
-        unresolved = ["reservation_class", "women_reserved"]
+        unresolved = ["reserved_caste", "reserved_woman"]
         if not name_reviewed:
             quality.append("name_source_reading_unresolved")
             unresolved.append("ward_name")
@@ -385,10 +385,10 @@ class BalliaHistoricalSource:
             unresolved.append("geographic_name")
             quality.append("name_source_reading_unresolved")
         if code_unresolved:
-            unresolved.extend(["reservation_class", "women_reserved"])
+            unresolved.extend(["reserved_caste", "reserved_woman"])
             quality.append("reservation_code_source_reading_unresolved")
         else:
-            unresolved.extend(["reservation_class", "women_reserved"])
+            unresolved.extend(["reserved_caste", "reserved_woman"])
 
         ward_raw = row.get("printed_ward_literal")
         ward_number = (

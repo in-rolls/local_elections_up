@@ -15,6 +15,29 @@ from local_elections_up.fields import contact_field
 ROOT = paths.ROOT
 
 
+# The legacy preparations' seat and sex columns, to NAMING.md's names. The input
+# files keep their headers (their hashes are pinned); the published copies and
+# everything built on them use these.
+SOURCE_NAMES = {
+    "gp_reservation_status": "reserved_raw",
+    "gp_reservation_status_eng": "reserved_raw_english",
+    "gp_res_status_fin": "reserved_raw_cleaned",
+    "gp_res_status_fin_eng": "reserved_raw_cleaned_english",
+    "candidate_reservation_status": "candidate_caste_raw",
+    "candidate_res_status": "candidate_caste_raw",
+    "candidate_res_status_fin": "candidate_caste_raw_cleaned",
+    "candidate_reservation_status_eng": "candidate_caste_raw_english",
+    "cand_sex_fin": "winner_woman_raw_cleaned",
+}
+
+
+def published_names(columns, output):
+    # the 2021 file lists every candidate; the others list winners only
+    person = "candidate" if "candidates" in output else "winner"
+    names = SOURCE_NAMES | {"sex": f"{person}_woman_raw"}
+    return [names.get(c, c) for c in columns]
+
+
 def prepare(root=ROOT):
     sources = json.loads((root / "data/catalogs/gp_sources.json").read_text())["files"]
     output = root / "data/interim/release/gp"
@@ -46,9 +69,11 @@ def prepare(root=ROOT):
                 for n in table.column_names
                 if contact_field(n) or n.startswith("Unnamed:")
             ]
-            pq.write_table(
-                table.drop(excluded), staging / spec["output"], compression="zstd"
+            table = table.drop(excluded)
+            table = table.rename_columns(
+                published_names(table.column_names, spec["output"])
             )
+            pq.write_table(table, staging / spec["output"], compression="zstd")
         for name in preserved:
             if (output / name).is_file():
                 shutil.copy2(output / name, staging / name)

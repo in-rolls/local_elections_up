@@ -508,7 +508,7 @@ def verify_relationships(directory):
         for year in PANEL_YEARS[name]:
             source = records.set_index("election_gp_key")
             aligned = source.reindex(panel[f"key_{year}"])
-            for column in ("women_reserved", "winner_woman", "reservation_class"):
+            for column in ("reserved_woman", "winner_woman", "reserved_caste"):
                 left = panel[f"{column}_{year}"].reset_index(drop=True)
                 right = aligned[column].reset_index(drop=True)
                 require(

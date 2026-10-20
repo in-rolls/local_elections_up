@@ -20,7 +20,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -36,7 +36,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -44,7 +44,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -58,7 +58,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -85,12 +85,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -101,10 +101,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -115,7 +115,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -130,12 +130,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 1995/zilla_parishad_member_seat_reservation
 
@@ -153,7 +153,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -169,7 +169,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -177,7 +177,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -191,7 +191,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -218,12 +218,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -234,10 +234,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -248,7 +248,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -263,12 +263,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2000/panchayat_samiti_head_seat_reservation
 
@@ -286,7 +286,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -302,7 +302,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -310,7 +310,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -324,7 +324,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -351,12 +351,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -367,10 +367,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -381,7 +381,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -396,12 +396,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2000/zilla_parishad_member_seat_reservation
 
@@ -419,7 +419,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -435,7 +435,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -443,7 +443,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -457,7 +457,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -484,12 +484,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -500,10 +500,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -514,7 +514,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -529,12 +529,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/gram_panchayat_head_declared_winner
 
@@ -552,7 +552,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -568,7 +568,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -576,7 +576,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -590,7 +590,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -617,12 +617,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -633,10 +633,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -647,7 +647,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -662,12 +662,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/gram_panchayat_head_winner_list
 
@@ -680,20 +680,20 @@ one winner-list source record. Key: one-based physical row within the hash-pinne
 | `sr_no` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_code` | `string` | Source-local GP serial; never use alone as a cross-block identifier. |
 | `gp_name` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
-| `sex` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_res_status` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `district_code` | `int64` | Source-specific field; interpret using its registered source. |
 | `district_name` | `string` | Source-specific field; interpret using its registered source. |
 | `block_code` | `double` | Source-specific field; interpret using its registered source. |
 | `block_name` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_fin` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_eng` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_res_status_fin` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_english` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_cleaned` | `string` | Source-specific field; interpret using its registered source. |
 | `age_t2` | `double` | Source-specific field; interpret using its registered source. |
-| `cand_sex_fin` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_cleaned` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_eng` | `string` | English transliteration or reviewed label; source text is retained. |
 | `district_name_eng` | `string` | English transliteration or reviewed label; source text is retained. |
 | `block_name_eng` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -715,7 +715,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -731,7 +731,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -739,7 +739,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -753,7 +753,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -780,12 +780,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -796,10 +796,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -810,7 +810,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -825,12 +825,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/panchayat_samiti_head_seat_reservation
 
@@ -848,7 +848,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -864,7 +864,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -872,7 +872,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -886,7 +886,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -913,12 +913,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -929,10 +929,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -943,7 +943,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -958,12 +958,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/panchayat_samiti_junior_deputy_elected_official
 
@@ -981,7 +981,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -997,7 +997,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1005,7 +1005,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1019,7 +1019,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1046,12 +1046,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1062,10 +1062,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1076,7 +1076,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -1091,12 +1091,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/panchayat_samiti_member_reported_official
 
@@ -1114,7 +1114,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -1130,7 +1130,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1138,7 +1138,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1152,7 +1152,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1179,12 +1179,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1195,10 +1195,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1209,7 +1209,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -1224,12 +1224,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/panchayat_samiti_senior_deputy_elected_official
 
@@ -1247,7 +1247,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -1263,7 +1263,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1271,7 +1271,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1285,7 +1285,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1312,12 +1312,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1328,10 +1328,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1342,7 +1342,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -1357,12 +1357,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/zilla_parishad_head_elected_official
 
@@ -1380,7 +1380,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -1396,7 +1396,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1404,7 +1404,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1418,7 +1418,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1445,12 +1445,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1461,10 +1461,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1475,7 +1475,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -1490,12 +1490,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/zilla_parishad_member_elected_official
 
@@ -1513,7 +1513,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -1529,7 +1529,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1537,7 +1537,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1551,7 +1551,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1578,12 +1578,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1594,10 +1594,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1608,7 +1608,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -1623,12 +1623,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2005/zilla_parishad_member_seat_reservation
 
@@ -1646,7 +1646,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -1662,7 +1662,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1670,7 +1670,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1684,7 +1684,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1711,12 +1711,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1727,10 +1727,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1741,7 +1741,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -1756,12 +1756,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2006/municipal_corporation_mayor_candidate_record
 
@@ -1779,7 +1779,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -1795,7 +1795,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1803,7 +1803,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1817,7 +1817,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1844,12 +1844,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1860,10 +1860,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1874,7 +1874,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -1889,12 +1889,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2006/municipal_corporation_ward_member_candidate_record
 
@@ -1912,7 +1912,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -1928,7 +1928,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -1936,7 +1936,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -1950,7 +1950,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1977,12 +1977,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -1993,10 +1993,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2007,7 +2007,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2022,12 +2022,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2006/municipal_council_chair_candidate_record
 
@@ -2045,7 +2045,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -2061,7 +2061,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -2069,7 +2069,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -2083,7 +2083,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2110,12 +2110,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2126,10 +2126,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2140,7 +2140,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2155,12 +2155,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2006/municipal_council_ward_member_candidate_record
 
@@ -2178,7 +2178,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -2194,7 +2194,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -2202,7 +2202,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -2216,7 +2216,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2243,12 +2243,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2259,10 +2259,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2273,7 +2273,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2288,12 +2288,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2006/nagar_panchayat_chair_candidate_record
 
@@ -2311,7 +2311,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -2327,7 +2327,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -2335,7 +2335,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -2349,7 +2349,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2376,12 +2376,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2392,10 +2392,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2406,7 +2406,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2421,12 +2421,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2006/nagar_panchayat_ward_member_candidate_record
 
@@ -2444,7 +2444,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -2460,7 +2460,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -2468,7 +2468,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -2482,7 +2482,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2509,12 +2509,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2525,10 +2525,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2539,7 +2539,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2554,12 +2554,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/gram_panchayat_head_declared_winner
 
@@ -2577,7 +2577,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -2593,7 +2593,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -2601,7 +2601,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -2615,7 +2615,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2642,12 +2642,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2658,10 +2658,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2672,7 +2672,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2687,12 +2687,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/gram_panchayat_head_winner_list
 
@@ -2710,19 +2710,19 @@ one winner-list source record. Key: one-based physical row within the hash-pinne
 | `block_name` | `string` | Source-specific field; interpret using its registered source. |
 | `sr_gp_combo` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `husband_spouse_name` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_res_status` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `age` | `string` | Source-specific field; interpret using its registered source. |
-| `sex` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `education` | `string` | Source-specific field; interpret using its registered source. |
 | `address` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_fin` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_eng` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_res_status_fin` | `string` | Source-specific field; interpret using its registered source. |
-| `cand_sex_fin` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_english` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_cleaned` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_cleaned` | `string` | Source-specific field; interpret using its registered source. |
 | `age_fin` | `double` | Source-specific field; interpret using its registered source. |
 | `educ_fin` | `string` | Source-specific field; interpret using its registered source. |
 | `educ_fin_eng` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -2748,7 +2748,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -2764,7 +2764,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -2772,7 +2772,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -2786,7 +2786,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2813,12 +2813,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2829,10 +2829,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2843,7 +2843,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2858,12 +2858,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/panchayat_samiti_head_seat_reservation
 
@@ -2881,7 +2881,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -2897,7 +2897,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -2905,7 +2905,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -2919,7 +2919,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2946,12 +2946,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2962,10 +2962,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -2976,7 +2976,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -2991,12 +2991,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/panchayat_samiti_member_reported_official
 
@@ -3014,7 +3014,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3030,7 +3030,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3038,7 +3038,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3052,7 +3052,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3079,12 +3079,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3095,10 +3095,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3109,7 +3109,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -3124,12 +3124,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/panchayat_samiti_member_source_status_notice
 
@@ -3147,7 +3147,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3163,7 +3163,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3171,7 +3171,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3185,7 +3185,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3212,12 +3212,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3228,10 +3228,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3242,7 +3242,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -3257,12 +3257,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/zilla_parishad_head_reported_official
 
@@ -3280,7 +3280,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3296,7 +3296,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3304,7 +3304,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3318,7 +3318,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3345,12 +3345,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3361,10 +3361,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3375,7 +3375,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -3390,12 +3390,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/zilla_parishad_member_reported_official
 
@@ -3413,7 +3413,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3429,7 +3429,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3437,7 +3437,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3451,7 +3451,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3478,12 +3478,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3494,10 +3494,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3508,7 +3508,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -3523,12 +3523,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2010/zilla_parishad_member_seat_reservation
 
@@ -3546,7 +3546,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3562,7 +3562,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3570,7 +3570,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3584,7 +3584,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3611,12 +3611,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3627,10 +3627,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3641,7 +3641,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -3656,12 +3656,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_corporation_mayor_declared_winner
 
@@ -3679,7 +3679,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3695,7 +3695,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3703,7 +3703,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3717,7 +3717,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3744,12 +3744,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3760,10 +3760,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3774,7 +3774,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -3789,12 +3789,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_corporation_mayor_seat_reservation
 
@@ -3812,7 +3812,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3828,7 +3828,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3836,7 +3836,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3850,7 +3850,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3877,12 +3877,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3893,10 +3893,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -3907,7 +3907,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -3922,12 +3922,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_corporation_ward_member_declared_winner
 
@@ -3945,7 +3945,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -3961,7 +3961,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -3969,7 +3969,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -3983,7 +3983,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4010,12 +4010,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4026,10 +4026,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4040,7 +4040,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4055,12 +4055,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_corporation_ward_member_seat_reservation
 
@@ -4078,7 +4078,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -4094,7 +4094,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -4102,7 +4102,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -4116,7 +4116,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4143,12 +4143,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4159,10 +4159,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4173,7 +4173,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4188,12 +4188,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_council_chair_declared_winner
 
@@ -4211,7 +4211,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -4227,7 +4227,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -4235,7 +4235,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -4249,7 +4249,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4276,12 +4276,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4292,10 +4292,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4306,7 +4306,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4321,12 +4321,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_council_chair_seat_reservation
 
@@ -4344,7 +4344,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -4360,7 +4360,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -4368,7 +4368,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -4382,7 +4382,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4409,12 +4409,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4425,10 +4425,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4439,7 +4439,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4454,12 +4454,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_council_ward_member_declared_winner
 
@@ -4477,7 +4477,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -4493,7 +4493,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -4501,7 +4501,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -4515,7 +4515,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4542,12 +4542,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4558,10 +4558,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4572,7 +4572,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4587,12 +4587,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/municipal_council_ward_member_seat_reservation
 
@@ -4610,7 +4610,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -4626,7 +4626,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -4634,7 +4634,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -4648,7 +4648,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4675,12 +4675,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4691,10 +4691,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4705,7 +4705,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4720,12 +4720,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/nagar_panchayat_chair_declared_winner
 
@@ -4743,7 +4743,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -4759,7 +4759,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -4767,7 +4767,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -4781,7 +4781,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4808,12 +4808,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4824,10 +4824,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4838,7 +4838,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4853,12 +4853,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/nagar_panchayat_chair_seat_reservation
 
@@ -4876,7 +4876,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -4892,7 +4892,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -4900,7 +4900,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -4914,7 +4914,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4941,12 +4941,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4957,10 +4957,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -4971,7 +4971,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -4986,12 +4986,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/nagar_panchayat_ward_member_declared_winner
 
@@ -5009,7 +5009,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5025,7 +5025,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5033,7 +5033,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -5047,7 +5047,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5074,12 +5074,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5090,10 +5090,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5104,7 +5104,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -5119,12 +5119,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2012/nagar_panchayat_ward_member_seat_reservation
 
@@ -5142,7 +5142,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5158,7 +5158,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5166,7 +5166,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -5180,7 +5180,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5207,12 +5207,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5223,10 +5223,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5237,7 +5237,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -5252,12 +5252,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/gram_panchayat_head_declared_winner
 
@@ -5275,7 +5275,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5291,7 +5291,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5299,7 +5299,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -5313,7 +5313,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5340,12 +5340,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5356,10 +5356,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5370,7 +5370,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -5385,12 +5385,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/gram_panchayat_head_seat_reservation
 
@@ -5408,7 +5408,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5424,7 +5424,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5432,7 +5432,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -5446,7 +5446,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5473,12 +5473,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5489,10 +5489,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5503,7 +5503,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -5518,12 +5518,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/gram_panchayat_head_winner_list
 
@@ -5533,12 +5533,12 @@ one winner-list source record. Key: one-based physical row within the hash-pinne
 | --- | --- | --- |
 | `block` | `string` | Source-specific field; interpret using its registered source. |
 | `gp` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `father_husband` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_reservation_status` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `educational_qualification` | `string` | Source-specific field; interpret using its registered source. |
-| `sex` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `valid_votes_received` | `string` | Source-specific field; interpret using its registered source. |
 | `votes_received_percent` | `string` | Source-specific field; interpret using its registered source. |
 | `voting_percent` | `string` | Source-specific field; interpret using its registered source. |
@@ -5548,8 +5548,8 @@ one winner-list source record. Key: one-based physical row within the hash-pinne
 | `block_name` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_num` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_eng` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_reservation_status_eng` | `string` | English transliteration or reviewed label; source text is retained. |
+| `reserved_raw_english` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_english` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_eng` | `string` | English transliteration or reviewed label; source text is retained. |
 | `district_name_eng` | `string` | English transliteration or reviewed label; source text is retained. |
 | `block_name_eng` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -5572,7 +5572,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5588,7 +5588,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5596,7 +5596,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -5610,7 +5610,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5637,12 +5637,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5653,10 +5653,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5667,7 +5667,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -5682,12 +5682,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/panchayat_samiti_head_declared_winner
 
@@ -5705,7 +5705,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5721,7 +5721,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5729,7 +5729,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -5743,7 +5743,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5770,12 +5770,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5786,10 +5786,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5800,7 +5800,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -5815,12 +5815,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/panchayat_samiti_head_seat_reservation
 
@@ -5838,7 +5838,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5854,7 +5854,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5862,7 +5862,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -5876,7 +5876,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5903,12 +5903,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5919,10 +5919,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -5933,7 +5933,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -5948,12 +5948,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/panchayat_samiti_member_declared_winner
 
@@ -5971,7 +5971,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -5987,7 +5987,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -5995,7 +5995,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6009,7 +6009,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6036,12 +6036,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6052,10 +6052,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6066,7 +6066,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -6081,12 +6081,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/panchayat_samiti_member_seat_reservation
 
@@ -6104,7 +6104,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -6120,7 +6120,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -6128,7 +6128,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6142,7 +6142,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6169,12 +6169,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6185,10 +6185,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6199,7 +6199,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -6214,12 +6214,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/zilla_parishad_head_declared_winner
 
@@ -6237,7 +6237,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -6253,7 +6253,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -6261,7 +6261,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6275,7 +6275,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6302,12 +6302,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6318,10 +6318,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6332,7 +6332,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -6347,12 +6347,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/zilla_parishad_head_seat_reservation
 
@@ -6370,7 +6370,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -6386,7 +6386,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -6394,7 +6394,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6408,7 +6408,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6435,12 +6435,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6451,10 +6451,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6465,7 +6465,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -6480,12 +6480,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/zilla_parishad_member_declared_winner
 
@@ -6503,7 +6503,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -6519,7 +6519,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -6527,7 +6527,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6541,7 +6541,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6568,12 +6568,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6584,10 +6584,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6598,7 +6598,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -6613,12 +6613,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2015/zilla_parishad_member_seat_reservation
 
@@ -6636,7 +6636,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -6652,7 +6652,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -6660,7 +6660,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6674,7 +6674,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6701,12 +6701,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6717,10 +6717,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6731,7 +6731,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -6746,12 +6746,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2017/municipal_corporation_mayor_declared_winner
 
@@ -6769,7 +6769,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -6785,7 +6785,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -6793,7 +6793,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6807,7 +6807,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6834,12 +6834,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6850,10 +6850,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6864,7 +6864,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -6879,12 +6879,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2017/municipal_corporation_ward_member_declared_winner
 
@@ -6902,7 +6902,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -6918,7 +6918,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -6926,7 +6926,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -6940,7 +6940,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6967,12 +6967,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6983,10 +6983,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -6997,7 +6997,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7012,12 +7012,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2017/municipal_council_chair_declared_winner
 
@@ -7035,7 +7035,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -7051,7 +7051,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -7059,7 +7059,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -7073,7 +7073,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7100,12 +7100,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7116,10 +7116,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7130,7 +7130,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7145,12 +7145,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2017/municipal_council_ward_member_declared_winner
 
@@ -7168,7 +7168,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -7184,7 +7184,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -7192,7 +7192,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -7206,7 +7206,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7233,12 +7233,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7249,10 +7249,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7263,7 +7263,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7278,12 +7278,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2017/nagar_panchayat_chair_declared_winner
 
@@ -7301,7 +7301,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -7317,7 +7317,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -7325,7 +7325,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -7339,7 +7339,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7366,12 +7366,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7382,10 +7382,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7396,7 +7396,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7411,12 +7411,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2017/nagar_panchayat_ward_member_declared_winner
 
@@ -7434,7 +7434,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -7450,7 +7450,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -7458,7 +7458,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -7472,7 +7472,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7499,12 +7499,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7515,10 +7515,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7529,7 +7529,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7544,12 +7544,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2021/gram_panchayat_head_candidate_record
 
@@ -7560,21 +7560,21 @@ one candidate. Key: id.
 | `district_name` | `string` | Source-specific field; interpret using its registered source. |
 | `block_name` | `string` | Source-specific field; interpret using its registered source. |
 | `gp` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
 | `id` | `int64` | Publisher candidate identifier in the 2021 candidate table. |
 | `candidate` | `string` | Publisher's actual candidate name, distinct from the denormalized elected_sarpanch_name field. |
 | `father_husband` | `string` | Source-specific field; interpret using its registered source. |
-| `sex` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `age` | `int64` | Source-specific field; interpret using its registered source. |
 | `education` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_reservation_status` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `movable_property` | `int64` | Source-specific field; interpret using its registered source. |
 | `immovable_property` | `int64` | Source-specific field; interpret using its registered source. |
 | `criminal_history_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `result` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_eng` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_reservation_status_eng` | `string` | English transliteration or reviewed label; source text is retained. |
+| `reserved_raw_english` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_english` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_num` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name` | `string` | Source-specific field; interpret using its registered source. |
 | `key` | `string` | Source-specific field; interpret using its registered source. |
@@ -7601,7 +7601,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -7617,7 +7617,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -7625,7 +7625,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -7639,7 +7639,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7666,12 +7666,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7682,10 +7682,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7696,7 +7696,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7711,12 +7711,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2021/gram_panchayat_head_seat_reservation
 
@@ -7734,7 +7734,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -7750,7 +7750,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -7758,7 +7758,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -7772,7 +7772,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7799,12 +7799,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7815,10 +7815,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7829,7 +7829,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7844,12 +7844,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2021/panchayat_samiti_head_seat_reservation
 
@@ -7867,7 +7867,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -7883,7 +7883,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -7891,7 +7891,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -7905,7 +7905,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7932,12 +7932,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7948,10 +7948,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -7962,7 +7962,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -7977,12 +7977,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2021/panchayat_samiti_member_seat_reservation
 
@@ -8000,7 +8000,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8016,7 +8016,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8024,7 +8024,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8038,7 +8038,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8065,12 +8065,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8081,10 +8081,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8095,7 +8095,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -8110,12 +8110,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2021/zilla_parishad_member_seat_reservation
 
@@ -8133,7 +8133,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8149,7 +8149,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8157,7 +8157,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8171,7 +8171,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8198,12 +8198,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8214,10 +8214,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8228,7 +8228,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -8243,12 +8243,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2023/municipal_corporation_mayor_seat_reservation
 
@@ -8266,7 +8266,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8282,7 +8282,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8290,7 +8290,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8304,7 +8304,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8331,12 +8331,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8347,10 +8347,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8361,7 +8361,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -8376,12 +8376,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2023/municipal_corporation_ward_member_seat_reservation
 
@@ -8399,7 +8399,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8415,7 +8415,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8423,7 +8423,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8437,7 +8437,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8464,12 +8464,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8480,10 +8480,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8494,7 +8494,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -8509,12 +8509,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2023/municipal_council_chair_seat_reservation
 
@@ -8532,7 +8532,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8548,7 +8548,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8556,7 +8556,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8570,7 +8570,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8597,12 +8597,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8613,10 +8613,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8627,7 +8627,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -8642,12 +8642,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2023/municipal_council_ward_member_seat_reservation
 
@@ -8665,7 +8665,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8681,7 +8681,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8689,7 +8689,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8703,7 +8703,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8730,12 +8730,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8746,10 +8746,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8760,7 +8760,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -8775,12 +8775,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2023/nagar_panchayat_chair_seat_reservation
 
@@ -8798,7 +8798,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8814,7 +8814,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8822,7 +8822,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8836,7 +8836,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8863,12 +8863,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8879,10 +8879,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8893,7 +8893,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -8908,12 +8908,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## 2023/nagar_panchayat_ward_member_seat_reservation
 
@@ -8931,7 +8931,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_ward_name_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_ward_number_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_family_counts_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
-| `source_reservation_value` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_source_value` | `string` | Source-specific field; interpret using its registered source. |
 | `source_review_evidence_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_unresolved_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `source_parent_observation_id` | `string` | Source-specific field; interpret using its registered source. |
@@ -8947,7 +8947,7 @@ one source observation; sources may overlap. Key: record_id.
 | `samiti_2005_candidate_name_unicode_candidate` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_seat_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_candidate_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
-| `pri_2010_sex_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
+| `pri_2010_woman_label_decode_status` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_path` | `string` | Source-specific field; interpret using its registered source. |
 | `pri_2010_label_dictionary_sha256` | `string` | SHA-256 pin for the named source or review artifact. |
 | `pri_2010_source_fields_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
@@ -8955,7 +8955,7 @@ one source observation; sources may overlap. Key: record_id.
 | `block_code_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `ward_number_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_class` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
+| `candidate_caste` | `string` | Decoded candidate/person category; never substituted for the seat reservation. |
 | `source_member_cell_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_notice_kind` | `string` | Source-specific field; interpret using its registered source. |
@@ -8969,7 +8969,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_path_resolution_status` | `string` | hash_verified means the source locator resolved to matching bytes, not that its claims were validated. |
 | `body_type_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `related_person_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_sex_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_woman_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `party_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `symbol_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_age_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -8996,12 +8996,12 @@ one source observation; sources may overlap. Key: record_id.
 | `membership_ward_label_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `candidate_name_raw` | `string` | Original candidate or official name attached to this source observation. |
 | `related_person_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `reported_sex_raw` | `string` | Original source value, retained without certifying its interpretation. |
+| `candidate_woman_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `party_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `education_raw` | `string` | Original source value, retained without certifying its interpretation. |
-| `seat_reservation_raw` | `string` | Original source seat-reservation label before normalization. |
-| `candidate_category_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `candidate_caste_raw` | `string` | Source candidate/person category, separate from the reservation of the seat. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `result_raw` | `string` | Source result label; for 2015 winner lists it means contested or unopposed. |
 | `valid_votes_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `vote_percentage_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -9012,10 +9012,10 @@ one source observation; sources may overlap. Key: record_id.
 | `ward_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `candidate_and_related_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `seat_reservation_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `candidate_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `reserved_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `office_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
-| `reported_category_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
+| `candidate_caste_reported_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `body_name_encoded_raw` | `string` | Original legacy-font reading; decoding and identity remain unresolved. |
 | `source_artifact_format` | `string` | Storage format of the parent artifact, such as csv or parquet. |
 | `source_finality_raw` | `string` | Original source value, retained without certifying its interpretation. |
@@ -9026,7 +9026,7 @@ one source observation; sources may overlap. Key: record_id.
 | `source_printed_serial_raw` | `string` | Original source value, retained without certifying its interpretation. |
 | `source_cell_bboxes_json` | `string` | Structured source/review metadata as JSON; retain its source schema. |
 | `candidate_age` | `int64` | Source-reported age parsed as an integer where available. |
-| `candidate_category_women_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
+| `candidate_caste_woman_label` | `bool` | Whether the candidate-category label itself includes a women designation. |
 | `block_context_source_page` | `int64` | Source-specific field; interpret using its registered source. |
 | `block_context_source_y` | `double` | Source-specific field; interpret using its registered source. |
 | `election_year` | `int16` | Election-cycle year attributed by the registered source; not an exact polling date. |
@@ -9041,12 +9041,12 @@ one source observation; sources may overlap. Key: record_id.
 | `valid_votes` | `int64` | Parsed count of valid votes where explicitly stated; invalid source tokens remain null and flagged. |
 | `vote_percentage` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `poll_percentage` | `double` | Source-stated turnout percentage; values outside 0–100 remain unresolved. |
-| `women_reserved` | `bool` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `is_winner` | `bool` | True for an asserted listed/elected winner; null for unresolved conflicts or sources that do not assert a winner. |
 | `assignment_usable` | `bool` | False for all provisional office observations. Mechanical validation does not certify an assignment. |
 | `quality_flags` | `list<element: string>` | Unresolved source, parsing, provenance, or interpretation conditions; multiple flags can apply. |
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
-| `source_category_column` | `int64` | Source-specific field; interpret using its registered source. |
+| `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
 ## panels/gp_adjacent_links
 
@@ -9117,14 +9117,14 @@ one winner-list or winner-marked record. Key: election_gp_key.
 | `normalized_name_key` | `string` | Election-year district/block/GP normalized-name combination; may collide. |
 | `normalized_name_key_n` | `int32` | Number of records with this normalized-name key in the election year. |
 | `link_eligible` | `bool` | True only where normalized district/block/GP components exist and their combined key is unique. |
-| `reservation_status_hindi` | `string` | Source Hindi reading; see the related normalization and review flags. |
-| `reservation_status_eng` | `string` | English transliteration or reviewed label; source text is retained. |
-| `reservation_class` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
-| `women_reserved` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
+| `reserved_raw` | `string` | Original source seat-reservation label before normalization. |
+| `reserved_raw_english` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_caste` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
 | `pradhan_name_hindi` | `string` | Source person name. In 2021 uses the actual candidate field, preserving both conflicting names. |
 | `pradhan_name_eng_raw` | `string` | Saved English transliteration; null when the denormalized name cannot identify a conflicting winner. |
-| `winner_sex_hindi` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
-| `winner_woman` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `winner_woman_raw` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
+| `winner_woman` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
 | `result_status_hindi` | `string` | Contested/unopposed for 2015, publisher winner marker for 2021, missing in older GP sources. |
 
 ## panels/gp_lgd_bridge
@@ -9190,29 +9190,29 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010.
 | `sr_no_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_code_2005` | `string` | Source-local GP serial; never use alone as a cross-block identifier. |
 | `gp_name_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2005` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2005` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
-| `sex_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_res_status_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2005` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
+| `candidate_caste_raw_2005` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `district_code_2005` | `int32` | Source-specific field; interpret using its registered source. |
 | `district_name_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `block_code_2005` | `double` | Source-specific field; interpret using its registered source. |
 | `block_name_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_res_status_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_english_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_cleaned_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `age_t2_2005` | `double` | Source-specific field; interpret using its registered source. |
-| `cand_sex_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_cleaned_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `district_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `block_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `elected_sarpanch_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2005` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2005` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2005` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2005` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2005` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2005` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2005` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2005` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `original_filename_2010` | `string` | Original parsed document filename, retained for document/page provenance. |
 | `page_2010` | `int32` | Recorded page locator in the original parsed document. |
 | `order_2010` | `int32` | Source-specific field; interpret using its registered source. |
@@ -9223,19 +9223,19 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010.
 | `block_name_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `sr_gp_combo_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2010` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2010` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `husband_spouse_name_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_res_status_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2010` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `age_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2010` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `education_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `address_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_res_status_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `cand_sex_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_english_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `age_fin_2010` | `double` | Source-specific field; interpret using its registered source. |
 | `educ_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `educ_fin_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -9246,9 +9246,9 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010.
 | `husband_spouse_name_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2010` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2010` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2010` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2010` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2010` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2010` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2010` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2010` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
 ## panels/gp_panel_2005_2010_2015_2021
 
@@ -9265,29 +9265,29 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010,
 | `sr_no_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_code_2005` | `string` | Source-local GP serial; never use alone as a cross-block identifier. |
 | `gp_name_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2005` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2005` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
-| `sex_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_res_status_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2005` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
+| `candidate_caste_raw_2005` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `district_code_2005` | `int32` | Source-specific field; interpret using its registered source. |
 | `district_name_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `block_code_2005` | `double` | Source-specific field; interpret using its registered source. |
 | `block_name_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_res_status_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_english_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_cleaned_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `age_t2_2005` | `double` | Source-specific field; interpret using its registered source. |
-| `cand_sex_fin_2005` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_cleaned_2005` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `district_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `block_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `elected_sarpanch_name_eng_2005` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2005` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2005` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2005` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2005` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2005` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2005` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2005` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2005` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `original_filename_2010` | `string` | Original parsed document filename, retained for document/page provenance. |
 | `page_2010` | `int32` | Recorded page locator in the original parsed document. |
 | `order_2010` | `int32` | Source-specific field; interpret using its registered source. |
@@ -9298,19 +9298,19 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010,
 | `block_name_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `sr_gp_combo_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2010` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2010` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `husband_spouse_name_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_res_status_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2010` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `age_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2010` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `education_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `address_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_res_status_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `cand_sex_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_english_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `age_fin_2010` | `double` | Source-specific field; interpret using its registered source. |
 | `educ_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `educ_fin_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -9321,17 +9321,17 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010,
 | `husband_spouse_name_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2010` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2010` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2010` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2010` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2010` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2010` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2010` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2010` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `block_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2015` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2015` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `father_husband_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_reservation_status_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2015` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `educational_qualification_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2015` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `valid_votes_received_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `votes_received_percent_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `voting_percent_2015` | `string` | Source-specific field; interpret using its registered source. |
@@ -9341,8 +9341,8 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010,
 | `block_name_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_num_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_reservation_status_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
+| `reserved_raw_english_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_english_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `district_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `block_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -9350,27 +9350,27 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010,
 | `husband_spouse_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2015` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2015` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2015` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2015` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2015` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2015` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2015` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2015` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `district_name_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `block_name_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2021` | `string` | Original source seat-reservation label before normalization. |
 | `id_2021` | `int32` | Publisher candidate identifier in the 2021 candidate table. |
 | `candidate_2021` | `string` | Publisher's actual candidate name, distinct from the denormalized elected_sarpanch_name field. |
 | `father_husband_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_woman_raw_2021` | `string` | Original source value, retained without certifying its interpretation. |
 | `age_2021` | `int32` | Source-specific field; interpret using its registered source. |
 | `education_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_reservation_status_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2021` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `movable_property_2021` | `int32` | Source-specific field; interpret using its registered source. |
 | `immovable_property_2021` | `int32` | Source-specific field; interpret using its registered source. |
 | `criminal_history_2021_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `vote_percentage_2021` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `result_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_eng_2021` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_reservation_status_eng_2021` | `string` | English transliteration or reviewed label; source text is retained. |
+| `reserved_raw_english_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_english_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_num_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `elected_sarpanch_name_2021` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
@@ -9381,9 +9381,9 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010,
 | `husband_spouse_name_eng_2021` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2021` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2021` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2021` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2021` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2021` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2021` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2021` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2021` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
 ## panels/gp_panel_2010_2015
 
@@ -9403,19 +9403,19 @@ one linked source-record pair or four-election history. Key: key_2010, key_2015.
 | `block_name_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `sr_gp_combo_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2010` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2010` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `husband_spouse_name_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_res_status_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2010` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `age_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2010` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `education_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `address_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_res_status_fin_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_res_status_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
-| `cand_sex_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_cleaned_english_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_cleaned_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `age_fin_2010` | `double` | Source-specific field; interpret using its registered source. |
 | `educ_fin_2010` | `string` | Source-specific field; interpret using its registered source. |
 | `educ_fin_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -9426,17 +9426,17 @@ one linked source-record pair or four-election history. Key: key_2010, key_2015.
 | `husband_spouse_name_eng_2010` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2010` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2010` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2010` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2010` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2010` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2010` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2010` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2010` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `block_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2015` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2015` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `father_husband_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_reservation_status_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2015` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `educational_qualification_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2015` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `valid_votes_received_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `votes_received_percent_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `voting_percent_2015` | `string` | Source-specific field; interpret using its registered source. |
@@ -9446,8 +9446,8 @@ one linked source-record pair or four-election history. Key: key_2010, key_2015.
 | `block_name_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_num_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_reservation_status_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
+| `reserved_raw_english_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_english_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `district_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `block_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -9455,9 +9455,9 @@ one linked source-record pair or four-election history. Key: key_2010, key_2015.
 | `husband_spouse_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2015` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2015` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2015` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2015` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2015` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2015` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2015` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2015` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
 ## panels/gp_panel_2015_2021
 
@@ -9469,12 +9469,12 @@ one linked source-record pair or four-election history. Key: key_2015, key_2021.
 | `key_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `block_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2015` | `string` | Original source seat-reservation label before normalization. |
 | `elected_sarpanch_name_2015` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
 | `father_husband_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_reservation_status_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2015` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `educational_qualification_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `winner_woman_raw_2015` | `string` | Original reported sex of the winner-marked/listed source person; does not resolve conflicting winner claims. |
 | `valid_votes_received_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `votes_received_percent_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `voting_percent_2015` | `string` | Source-specific field; interpret using its registered source. |
@@ -9484,8 +9484,8 @@ one linked source-record pair or four-election history. Key: key_2015, key_2021.
 | `block_name_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_num_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2015` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_reservation_status_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
+| `reserved_raw_english_2015` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_english_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `district_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `block_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
@@ -9493,27 +9493,27 @@ one linked source-record pair or four-election history. Key: key_2015, key_2021.
 | `husband_spouse_name_eng_2015` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2015` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2015` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2015` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2015` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2015` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2015` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2015` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2015` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 | `district_name_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `block_name_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `reserved_raw_2021` | `string` | Original source seat-reservation label before normalization. |
 | `id_2021` | `int32` | Publisher candidate identifier in the 2021 candidate table. |
 | `candidate_2021` | `string` | Publisher's actual candidate name, distinct from the denormalized elected_sarpanch_name field. |
 | `father_husband_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `sex_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_woman_raw_2021` | `string` | Original source value, retained without certifying its interpretation. |
 | `age_2021` | `int32` | Source-specific field; interpret using its registered source. |
 | `education_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `candidate_reservation_status_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_2021` | `string` | Source candidate/person category, separate from the reservation of the seat. |
 | `movable_property_2021` | `int32` | Source-specific field; interpret using its registered source. |
 | `immovable_property_2021` | `int32` | Source-specific field; interpret using its registered source. |
 | `criminal_history_2021_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `vote_percentage_2021` | `double` | Source-stated vote share in percentage points, not a vote count. |
 | `result_2021` | `string` | Source-specific field; interpret using its registered source. |
-| `gp_reservation_status_eng_2021` | `string` | English transliteration or reviewed label; source text is retained. |
-| `candidate_reservation_status_eng_2021` | `string` | English transliteration or reviewed label; source text is retained. |
+| `reserved_raw_english_2021` | `string` | Source-specific field; interpret using its registered source. |
+| `candidate_caste_raw_english_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_num_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `gp_name_2021` | `string` | Source-specific field; interpret using its registered source. |
 | `elected_sarpanch_name_2021` | `string` | Saved source winner-name field; 2021 values are denormalized and must not resolve conflicting candidate markers. |
@@ -9524,9 +9524,9 @@ one linked source-record pair or four-election history. Key: key_2015, key_2021.
 | `husband_spouse_name_eng_2021` | `string` | English transliteration or reviewed label; source text is retained. |
 | `source_row_number_2021` | `int32` | One-based original source-table row before filtering winner markers. |
 | `election_gp_key_2021` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
-| `women_reserved_2021` | `int32` | True/1 for a women-reserved seat, false/0 for a known non-women-reserved seat, null if unknown. |
-| `winner_woman_2021` | `int32` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
-| `reservation_class_2021` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
+| `reserved_woman_2021` | `int8` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, null if unknown. |
+| `winner_woman_2021` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
+| `reserved_caste_2021` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
 ## panels/weaver_20250302_wide
 

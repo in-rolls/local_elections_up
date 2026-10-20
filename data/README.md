@@ -91,11 +91,11 @@ row is published in
 
 | Column | Meaning |
 | --- | --- |
-| `reservation_status_hindi`, `reservation_status_eng` | Source seat-reservation labels. |
-| `reservation_class` | `general`, `obc`, `sc`, `st`, or `unknown`. |
-| `women_reserved` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, and missing for unknown source labels. |
+| `reserved_raw`, `reserved_raw_english` | Source seat-reservation labels. |
+| `reserved_caste` | `general`, `obc`, `sc`, `st`, or `unknown`. |
+| `reserved_woman` | 1 for a women-reserved seat, 0 for a known non-women-reserved seat, and missing for unknown source labels. |
 | `pradhan_name_hindi`, `pradhan_name_eng_raw` | Elected pradhan's name. |
-| `winner_sex_hindi` | Cleaned source sex label. |
+| `winner_woman_raw` | Cleaned source sex label. |
 | `winner_woman` | 1 for `महिला`, 0 for `पुरुष`, and missing for every other value. |
 | `result_status_hindi` | Contested/unopposed in 2015 and winner in 2021; unavailable in 2005 and 2010. |
 

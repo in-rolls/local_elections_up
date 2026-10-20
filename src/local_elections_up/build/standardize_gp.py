@@ -54,19 +54,19 @@ COLUMNS = [
     "normalized_name_key",
     "normalized_name_key_n",
     "link_eligible",
-    "reservation_status_hindi",
-    "reservation_status_eng",
-    "reservation_class",
-    "women_reserved",
+    "reserved_raw",
+    "reserved_raw_english",
+    "reserved_caste",
+    "reserved_woman",
     "pradhan_name_hindi",
     "pradhan_name_eng_raw",
-    "winner_sex_hindi",
+    "winner_woman_raw",
     "winner_woman",
     "result_status_hindi",
 ]
 
 
-def reservation_class(value):
+def reserved_caste(value):
     if pd.isna(value):
         return "unknown"
     for label, code in [
@@ -79,7 +79,7 @@ def reservation_class(value):
     return "general" if value in ("Female", "Unreserved") else "unknown"
 
 
-def women_reserved(value):
+def reserved_woman(value):
     return pd.NA if pd.isna(value) or value == "Unknown" else int("Female" in value)
 
 
@@ -108,15 +108,17 @@ def standardize_wave(year, directory, overrides, aliases, blocks):
         "block_name_eng_raw": "block_name_eng",
         "gp_name_hindi": "gp_name_fin" if old else "gp_name",
         "gp_name_eng_raw": "gp_name_eng",
-        "reservation_status_hindi": "gp_res_status_fin"
+        "reserved_raw": "reserved_raw_cleaned" if old else "reserved_raw",
+        "reserved_raw_english": "reserved_raw_cleaned_english"
         if old
-        else "gp_reservation_status",
-        "reservation_status_eng": "gp_res_status_fin_eng"
-        if old
-        else "gp_reservation_status_eng",
+        else "reserved_raw_english",
         "pradhan_name_hindi": "candidate" if year == 2021 else "elected_sarpanch_name",
         "pradhan_name_eng_raw": "elected_sarpanch_name_eng",
-        "winner_sex_hindi": "cand_sex_fin" if old else "sex",
+        "winner_woman_raw": "winner_woman_raw_cleaned"
+        if old
+        else "candidate_woman_raw"
+        if year == 2021
+        else "winner_woman_raw",
     }
     result = pd.DataFrame({out: empty_to_na(data[src]) for out, src in mapping.items()})
     result["gp_number_raw"] = data[mapping["gp_number_raw"]].map(
@@ -197,12 +199,12 @@ def standardize_wave(year, directory, overrides, aliases, blocks):
         result[f"{kind}_name_std"] = (
             result[f"{kind}_name_eng"].map(normalize_name).astype("string")
         )
-    result["reservation_class"] = result.reservation_status_eng.map(reservation_class)
-    result["women_reserved"] = result.reservation_status_eng.map(women_reserved).astype(
-        "Int32"
+    result["reserved_caste"] = result.reserved_raw_english.map(reserved_caste)
+    result["reserved_woman"] = result.reserved_raw_english.map(reserved_woman).astype(
+        "Int8"
     )
-    result["winner_woman"] = result.winner_sex_hindi.map({"महिला": 1, "पुरुष": 0}).astype(
-        "Int32"
+    result["winner_woman"] = result.winner_woman_raw.map({"महिला": 1, "पुरुष": 0}).astype(
+        "Int8"
     )
     result.loc[
         result.winner_markers_conflict, ["winner_woman", "pradhan_name_eng_raw"]
@@ -310,8 +312,8 @@ def build(root=paths.ROOT):
                         ["district_name_eng_raw", "block_name_eng_raw"]
                     ].drop_duplicates()
                 ),
-                women_reserved=group.women_reserved.sum(),
-                unknown_reservation=group.reservation_class.eq("unknown").sum(),
+                reserved_woman=group.reserved_woman.sum(),
+                unknown_reservation=group.reserved_caste.eq("unknown").sum(),
                 unknown_winner_sex=group.winner_woman.isna().sum(),
                 manual_name_overrides=group.name_override_used.sum(),
                 district_alias_rows=group.district_name_alias_used.sum(),

@@ -47,7 +47,7 @@ def lgd_anchor(panel, years, known_reservation=True):
     panel["source_panel_row"] = np.arange(1, len(panel) + 1, dtype=np.int32)
     if known_reservation:
         panel = panel.loc[
-            panel[[f"women_reserved_{y}" for y in years]].notna().all(axis=1)
+            panel[[f"reserved_woman_{y}" for y in years]].notna().all(axis=1)
         ]
     year = 2010 if 2010 in years else 2015
     anchor = panel[

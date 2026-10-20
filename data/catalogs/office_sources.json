@@ -119,12 +119,12 @@
         2015
       ],
       "id": "gp_enriched",
-      "migration": "Python consolidation: every value, row position and logical type is unchanged; intermediate Parquet bytes changed.",
+      "migration": "NAMING.md rename: reservation_status_hindi/eng, reservation_class, women_reserved and winner_sex_hindi became reserved_raw/reserved_raw_english, reserved_caste, reserved_woman and winner_woman_raw; values and row positions unchanged.",
       "path": "data/interim/release/gp/gp_head_election_records.parquet",
-      "previous_serialization_sha256": "742c3cb9efda2c84c6bb7f4ce6e2be0dafe5aaab1c1a66b0d02b5a641ff17560",
+      "previous_serialization_sha256": "0c5108ea83ee0e38e0984e8b54d80c58e9ae655c3288cdd3a18ed7a678f263d8",
       "record_kind": "declared_winner",
       "scope": "GP-specific enriched winners; 2015 is supplied by the local CSV collection in the office exports.",
-      "sha256": "0c5108ea83ee0e38e0984e8b54d80c58e9ae655c3288cdd3a18ed7a678f263d8"
+      "sha256": "4d8652a1947a5d5b687ef10acaf8a45ce371f22e59a92f62bb8ef7f93bf3c195"
     },
     {
       "adapter": "csv",
