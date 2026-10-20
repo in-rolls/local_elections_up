@@ -1,0 +1,44 @@
+{
+  "review_id": "etah_2010_source_reviews_v1",
+  "source_sha256": "53bfc78b35fb351dcf8f6fed54c3f07c0e51b51ea244266ed174e9ef3295fe29",
+  "source_url": "http://etah.nic.in:80/ZP-reservation2010/PRADHAN-RESERVATION-2010.pdf",
+  "archive_capture": "20101207092710",
+  "reviewer": "Codex visual source inspection",
+  "reviews": [
+    {
+      "name_group_id": "f6dfc6f13677c43e21ecf52a",
+      "block_raw": "'khryiqj",
+      "gp_name_raw": "/kqgkbZ",
+      "gp_number_raw": "28",
+      "year": 2010,
+      "source_cells": [
+        {"source_page": 11, "printed_serial": "57", "reservation_raw": "L"},
+        {"source_page": 14, "printed_serial": "28", "reservation_raw": "UR"}
+      ],
+      "finding": "Both differing values are printed in the source for Sheetalpur GP 28 with the same name and population values. This is not a parser column shift.",
+      "action": "Preserve both observations; no agreed assignment. An authoritative correction or independent notification is required."
+    },
+    {
+      "name_group_id": "7af563ae1d4af3015212fe51",
+      "block_raw": "tyslj",
+      "gp_name_raw": "glux<+",
+      "gp_number_raw": "48",
+      "year": 2010,
+      "source_cells": [
+        {"source_page": 59, "printed_serial": "22", "reservation_raw": "SCL"},
+        {"source_page": 69, "printed_serial": "48", "reservation_raw": "UR"}
+      ],
+      "finding": "Both differing values are printed in the source for Jalesar GP 48 with the same name and population values. This is not a parser column shift.",
+      "action": "Preserve both observations; no agreed assignment. An authoritative correction or independent notification is required."
+    },
+    {
+      "block_raw": "vyhxat",
+      "gp_name_raw": "tgkaxhjiqj",
+      "gp_number_raw": "32",
+      "year": 1995,
+      "source_cells": [{"source_page": 82, "printed_serial": "2", "reservation_raw": "0"}],
+      "finding": "The source literally prints digit 0 in the 1995 reservation column. Its meaning is not given on the inspected page.",
+      "action": "Retain raw 0 and keep normalized reservation missing. Do not infer unreserved or no election."
+    }
+  ]
+}

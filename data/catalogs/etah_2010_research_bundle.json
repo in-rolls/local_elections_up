@@ -1,0 +1,33 @@
+{
+  "bundle_id": "etah-2010-research-2026-09-10",
+  "status": "research evidence; no assignments promoted to published final data",
+  "source_code_commit": "236d81f3c4e828e046138c791dae1a79736ccde9",
+  "source_sha256": "53bfc78b35fb351dcf8f6fed54c3f07c0e51b51ea244266ed174e9ef3295fe29",
+  "archive": "data/source_archives/etah-2010-research-2026-09-10.tar.gz",
+  "archive_sha256": "ff7723ce08bd66b37dbf3d627ffcfcc1db3a90d0ab1e2ef54336d2a19de883b2",
+  "archive_bytes": 1794908,
+  "checksums": "data/source_archives/etah-2010-research-2026-09-10.CHECKSUMS.sha256",
+  "checksums_sha256": "9f7c09575f7b5bddbb774bbd81dd631ada31b59f8fc374a93ae20603f187d988",
+  "payload_files": 27,
+  "archive_members": 28,
+  "payload_bytes": 2543179,
+  "archive_membership_verified": true,
+  "extracted_payload_hashes_verified": 27,
+  "source_pages": 121,
+  "observation_year_rows": 8168,
+  "raw_name_group_year_rows": 2044,
+  "raw_name_groups_not_verified_identities": 511,
+  "year_semantics": {
+    "1995": "retrospective",
+    "2000": "retrospective",
+    "2005": "retrospective",
+    "2010": "prospective allocation"
+  },
+  "raw_stage": "data/interim/etah_reservations_2010_grid_v6",
+  "unicode_stage": "data/interim/etah_reservations_2010_unicode_v5",
+  "normalized_stage": "data/interim/etah_reservations_2010_normalized_v5",
+  "local_validation": "data/catalogs/etah_2010_rebuild_validation.json",
+  "publication_channel": "UP source-evidence prerelease; not data/fin",
+  "assignments_promoted": false,
+  "additional_api_cost_usd": 0
+}

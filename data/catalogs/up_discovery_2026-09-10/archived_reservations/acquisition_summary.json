@@ -1,0 +1,11 @@
+{
+  "requested_sources": 21,
+  "acquisition_statuses": {
+    "ok_html": 15,
+    "ok_pdf": 6
+  },
+  "pdf_pages": 225,
+  "linked_pdf_candidates": 224,
+  "content_validated": 0,
+  "metered_inference_usd": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://igod.gov.in/index.php/sg/UP/E042/organizations",
+    "retrieved_utc": "2026-09-10T09:28:35.387846+00:00",
+    "status": "unanswered",
+    "error": "[Errno 2] No such file or directory: 'data/source_search/national/uttar_pradesh/archive_coverage_2026_09_10/raw/ed8cfb5f55a8f3312169_b7518f19bcf0.html'"
+  },
+  {
+    "url": "https://sec.up.nic.in/site/rural_list.aspx",
+    "retrieved_utc": "2026-09-10T09:28:36.899065+00:00",
+    "status": "unanswered",
+    "error": "[Errno 2] No such file or directory: 'data/source_search/national/uttar_pradesh/archive_coverage_2026_09_10/raw/0c37efc0607124e16039_8990dea79a2c.html'"
+  },
+  {
+    "url": "https://sec.up.nic.in/site/electionresult.aspx",
+    "retrieved_utc": "2026-09-10T09:28:39.001959+00:00",
+    "status": "unanswered",
+    "error": "[Errno 2] No such file or directory: 'data/source_search/national/uttar_pradesh/archive_coverage_2026_09_10/raw/f74ee2b5077527b646cf_574d76685efa.html'"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=sec.up.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true",
+    "retrieved_utc": "2026-09-10T09:28:39.402802+00:00",
+    "status": "unanswered",
+    "error": "[Errno 2] No such file or directory: 'data/source_search/national/uttar_pradesh/archive_coverage_2026_09_10/raw/6942fb48bec4f5e881b4_990d05df41bc.json'"
+  },
+  {
+    "url": "https://web.archive.org/cdx/search/cdx?url=sec.uttarpradesh.gov.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true",
+    "retrieved_utc": "2026-09-10T09:28:43.762093+00:00",
+    "status": "unanswered",
+    "error": "[Errno 2] No such file or directory: 'data/source_search/national/uttar_pradesh/archive_coverage_2026_09_10/raw/fad4a14069332f5dd127_db6885aee9a1.json'"
+  }
+]

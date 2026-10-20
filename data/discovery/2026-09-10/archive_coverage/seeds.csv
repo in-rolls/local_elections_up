@@ -1,0 +1,6 @@
+url,label
+https://igod.gov.in/index.php/sg/UP/E042/organizations,Official UP district website directory
+https://sec.up.nic.in/site/rural_list.aspx,Official SEC district and rural body frame
+https://sec.up.nic.in/site/electionresult.aspx,Official dated election result index
+https://web.archive.org/cdx/search/cdx?url=sec.up.nic.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true,CDX inventory sec.up.nic.in
+https://web.archive.org/cdx/search/cdx?url=sec.uttarpradesh.gov.in&matchType=domain&output=json&fl=original%2Ctimestamp%2Cmimetype%2Cstatuscode%2Cdigest&collapse=urlkey&limit=5000&showResumeKey=true,CDX inventory sec.uttarpradesh.gov.in

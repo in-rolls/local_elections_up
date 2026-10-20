@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://sec.up.nic.in/site/fonts/KPP_result_2010.pdf",
+    "source_path": "data/discovery/2026-09-10/sec_results/raw/32169aabac77f1ba03b9_b5a0b80963ba.pdf",
+    "source_sha256": "b5a0b80963bade7becc1c6d5e5a35b9e6927f038c950e58d67453d470704d8f2",
+    "pages": 36,
+    "first_page_native_characters": 3380,
+    "text_path": "data/discovery/2026-09-10/sec_results/text/32169aabac77f1ba03b9_b5a0b80963ba.txt",
+    "extraction_method": "pdftotext -layout",
+    "text_sha256": "948e3a3310fd2772f37ec2fafc7fd41d2c4c0e8a053adf3a9e2f6122f9613357",
+    "source_review_status": "first_page_inspected_not_parsed"
+  },
+  {
+    "url": "https://sec.up.nic.in/site/fonts/zpm_result_2010.pdf",
+    "source_path": "data/discovery/2026-09-10/sec_results/raw/52ffb4422eeaf01ba385_775fca2b859b.pdf",
+    "source_sha256": "775fca2b859b843926ef7f07194c252699f0d2cbf19a60924e6c813a9235765f",
+    "pages": 150,
+    "first_page_native_characters": 3632,
+    "text_path": "data/discovery/2026-09-10/sec_results/text/52ffb4422eeaf01ba385_775fca2b859b.txt",
+    "extraction_method": "pdftotext -layout",
+    "text_sha256": "198c3d335f93b59c528520d856d2b3fffe180c34d13aa4fc6fad36ff0bcc3d90",
+    "source_review_status": "first_page_inspected_not_parsed"
+  }
+]

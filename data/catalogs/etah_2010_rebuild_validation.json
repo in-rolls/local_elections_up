@@ -1,0 +1,50 @@
+{
+  "status": "reproducible research artifacts; not certified reservation assignments",
+  "source_sha256": "53bfc78b35fb351dcf8f6fed54c3f07c0e51b51ea244266ed174e9ef3295fe29",
+  "source_pages": 121,
+  "raw_tables_sha256": {
+    "source_grid_rows.parquet": "3d96543b2e5ddee4e286fab4a222772264e506cf9cd68d40255fcdfc677e3856",
+    "reservation_observations.parquet": "67274663d1c16b0f4c2c67055bec13d39a34a99685268c76f9b43259151c10f2",
+    "reservation_name_groups.parquet": "413113c480a165a005d34c3574bf8e03a75340ee1cbecd446b6a31b9c1da7162"
+  },
+  "raw_replay_comparison": {
+    "prior_writer": "parquet-cpp-arrow version 25.0.1",
+    "current_writer": "parquet-cpp-arrow version 23.0.1",
+    "tables_compared": 3,
+    "all_values_and_dtypes_identical": true,
+    "byte_identical": false,
+    "method": "pandas.testing.assert_frame_equal on all columns of each prior and replayed table"
+  },
+  "native_text_decompressed_sha256": "d6459e111f6aa9d3f8de8965d0730420ccb1144acf99c5cddcdf206f640192fa",
+  "reviewed_derived_tables_byte_identical": {
+    "etah_reservations_2010_unicode_v5/reservation_observations.parquet": "45716417092fe94e4a92c51ce53d52100ca262593ca37e7d9830419ae963acdb",
+    "etah_reservations_2010_unicode_v5/reservation_name_groups.parquet": "107f64653d06f6b34c97315d585ed69298936709da097a9e3f3d754385e449e1",
+    "etah_reservations_2010_normalized_v5/reservation_observations.parquet": "a3f928bee84590c6fbc955af17fce94fff030d2afa7656694183b1a742830f14",
+    "etah_reservations_2010_normalized_v5/reservation_name_groups.parquet": "c2048f5523fabf42b71184e5e27576ef87b5502ea8a0b38d99196850ae1abd7e"
+  },
+  "extractor_snapshot_sha256": "931923392a6bd16ada74eb181e5bff93a2a3231d907c7d08860fd517d3a3c1d0",
+  "enricher_sha256": "331f1eacb4151c6bce11be1022ee53604dbe279ddda81547425ec2cebd3121b8",
+  "normalizer_sha256": "4d40912bfc20d1c2c42748da5a11778a5d760220096397de9952f28fc4d59522",
+  "shared_decoder_sha256": "f4be9e49b3838570db503fb0bc23ba4d17b3722e26bb69040d382760bee64509",
+  "shared_package_git_revision": "bf536affd015aba5820379ad99f0b6d24780e19b",
+  "uv_lock_sha256": "2688ddcdde3cf050ef3dd99d0e577c11038a0123b818441d27248d9d371311a4",
+  "python": "3.13.2",
+  "pdftotext": "pdftotext version 26.03.0",
+  "packages": {
+    "pandas": "3.0.5",
+    "pyarrow": "23.0.1",
+    "local-reservations": "0.5.1"
+  },
+  "local_checks": {
+    "command": "make check",
+    "r_lint": "passed",
+    "python_lint": "passed",
+    "python_format": "passed",
+    "standardized_release_tests": "passed",
+    "python_tests_passed": 6,
+    "published_data_checksums_verified": 5
+  },
+  "new_api_calls": 0,
+  "additional_api_cost_usd": 0,
+  "assignments_promoted": false
+}

@@ -1,0 +1,10 @@
+metric,value
+eligible_election_rows,49717
+exact_links,16150
+fuzzy_proposals,27682
+approved_fuzzy_links,22247
+active_links,38397
+unlinked_election_rows,11320
+reused_lgd_targets,0
+accepted_threshold_validation_rows,75
+accepted_threshold_validation_matches,75

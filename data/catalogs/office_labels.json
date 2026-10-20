@@ -1,0 +1,70 @@
+{
+  "candidate_offices": {
+    "\u0917\u094d\u0930\u093e\u092e \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u0927\u093e\u0928": {
+      "office": "gram_panchayat_head",
+      "block": "\u092c\u094d\u0932\u0949\u0915",
+      "body": "\u0917\u094d\u0930\u093e\u092e \u092a\u0902\u091a\u093e\u092f\u0924",
+      "ward": null
+    },
+    "\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u0938\u0926\u0938\u094d\u092f": {
+      "office": "panchayat_samiti_member",
+      "block": "\u092c\u094d\u0932\u0949\u0915",
+      "body": null,
+      "ward": "\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u0935\u093e\u0930\u094d\u0921"
+    },
+    "\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u092a\u094d\u0930\u092e\u0941\u0916": {
+      "office": "panchayat_samiti_head",
+      "block": "\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092a\u0902\u091a\u093e\u092f\u0924",
+      "body": null,
+      "ward": null
+    },
+    "\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0938\u0926\u0938\u094d\u092f": {
+      "office": "zilla_parishad_member",
+      "block": null,
+      "body": null,
+      "ward": "\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0935\u093e\u0930\u094d\u0921"
+    },
+    "\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937": {
+      "office": "zilla_parishad_head",
+      "block": null,
+      "body": "\u091c\u093f\u0932\u093e \u092a\u0902\u091a\u093e\u092f\u0924",
+      "ward": null
+    }
+  },
+  "candidate_columns": {
+    "district_field_raw": "\u091c\u093f\u0932\u093e",
+    "seat_reservation_raw": "\u092a\u0926 \u0915\u093e \u0906\u0930\u0915\u094d\u0937\u0923",
+    "candidate_name_raw": "\u0909\u092e\u094d\u092e\u0940\u0926\u0935\u093e\u0930",
+    "related_person_raw": "\u092a\u093f\u0924\u093e/\u092a\u0924\u093f",
+    "candidate_category_raw": "\u092a\u094d\u0930\u0924\u094d\u092f\u093e\u0936\u0940 \u0915\u093e \u0906\u0930\u0915\u094d\u0937\u0923",
+    "education_raw": "\u0936\u0948\u0915\u094d\u0937\u093f\u0915 \u092f\u094b\u0917\u094d\u092f\u0924\u093e",
+    "sex_raw": "\u0932\u093f\u0902\u0917",
+    "valid_votes_raw": "\u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0935\u0948\u0927 \u092e\u0924",
+    "vote_percentage_raw": "\u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u092e\u0924 %",
+    "poll_percentage_raw": "\u092e\u0924\u0926\u093e\u0928 %",
+    "result_raw": "\u092a\u0930\u093f\u0923\u093e\u092e"
+  },
+  "phone_column": "\u092e\u094b\u092c\u093e\u0907\u0932 \u0928\u0902\u0966",
+  "urban_post_labels": {
+    "\u0928\u0917\u0930 \u0928\u093f\u0917\u092e \u092e\u0939\u093e\u092a\u094c\u0930": "municipal_corporation_mayor",
+    "\u0928\u0917\u0930 \u0928\u093f\u0917\u092e \u092a\u093e\u0930\u094d\u0937\u0926": "municipal_corporation_ward_member",
+    "\u0928\u0917\u0930 \u092a\u093e\u0932\u093f\u0915\u093e \u092a\u0930\u093f\u0937\u0926 \u0905\u0927\u094d\u092f\u0915\u094d\u0937": "municipal_council_chair",
+    "\u0928\u0917\u0930 \u092a\u093e\u0932\u093f\u0915\u093e \u092a\u0930\u093f\u0937\u0926 \u0938\u0926\u0938\u094d\u092f": "municipal_council_ward_member",
+    "\u0928\u0917\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u0905\u0927\u094d\u092f\u0915\u094d\u0937": "nagar_panchayat_chair",
+    "\u0928\u0917\u0930 \u092a\u0902\u091a\u093e\u092f\u0924 \u0938\u0926\u0938\u094d\u092f": "nagar_panchayat_ward_member"
+  },
+  "urban_body_tiers": {
+    "\u0928\u0917\u0930 \u0928\u093f\u0917\u092e": {
+      "ulb_head": "municipal_corporation_mayor",
+      "ulb_ward": "municipal_corporation_ward_member"
+    },
+    "\u0928\u0917\u0930 \u092a\u093e\u0932\u093f\u0915\u093e \u092a\u0930\u093f\u0937\u0926": {
+      "ulb_head": "municipal_council_chair",
+      "ulb_ward": "municipal_council_ward_member"
+    },
+    "\u0928\u0917\u0930 \u092a\u0902\u091a\u093e\u092f\u0924": {
+      "ulb_head": "nagar_panchayat_chair",
+      "ulb_ward": "nagar_panchayat_ward_member"
+    }
+  }
+}

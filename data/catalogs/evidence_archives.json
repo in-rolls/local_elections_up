@@ -1,0 +1,393 @@
+{
+  "release": "source-evidence-2026-09-19",
+  "archives": [
+    {
+      "asset": "up_legacy_inputs.tar",
+      "sha256": "7234b9a0a712e3e646840575a925f0b3eb44e9b94791a841d3a473dffeaa8828",
+      "bytes": 69785600
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-000",
+      "sha256": "8618f4ea66c8d83618afaac358b4a50179bd2d9dce154192008b5d47f1318c15",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-001",
+      "sha256": "9f99db03cdef8bba1a5f2e161dcf50c10325310207b9d9b0e5934d4f1d7a643c",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-002",
+      "sha256": "54f5cf693965e151b14e75919693ddf8e0931dd4aba092786f4515023665cf00",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-003",
+      "sha256": "01be23e57a5bc9d3617408813f2b9bc85fe23e57ae704ce3b48e88a4c2e74134",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-004",
+      "sha256": "d41998381415138c8a20dcc52c2905700b0d51583c1eb58d8530ba77912949f5",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-005",
+      "sha256": "437e3828f76e7ff8510dd62796992583a256d64d1e8abc10ad27fc931d09caea",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-006",
+      "sha256": "c4f6dc1043711568c6c3896172922768b05536fa723b3b7cdc174d67bf7287fa",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-007",
+      "sha256": "cc6724024ae73068f3451b3f348f338eca71eea9e543f600997de404aa8e337a",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-008",
+      "sha256": "50070725658749b9dfba0b018a5151774b7c5b9aab47f81e0c41388074bc1ef4",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_inputs.tar.gz.chunk-009",
+      "sha256": "1d3bdac142e6fa621afd2b120181038a5fd5dcf915de072435b3c2fd9b344687",
+      "bytes": 37667468
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-000",
+      "sha256": "5fa087b23d7eb4e96f46f13c0e32c03d0405307792c5bc2adf0406d53ac14fbc",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-001",
+      "sha256": "c19e1b25884e56d770725508e24291ecf29cf6032929e9a025b722ef7dedb5a4",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-002",
+      "sha256": "b7b9e1e0640a5ce5d0f3148671bac96a51b58c7b2beab60d7fea621cb947bd6a",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-003",
+      "sha256": "bdc61c5344e64602e60df22c55e7e8783fd8e60c33710ffa54e70ca92a71a355",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-004",
+      "sha256": "63a40e97c663a3a80da8a9b8ac8efeb2a4a58775f4295e0da1e3a85b05cbd79b",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-005",
+      "sha256": "5df50d69210b962af0ddb565b12fe5fcc2b52734dc337c2fae59f6041cfa22d1",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-006",
+      "sha256": "9bf2df56cbf9a2c06fa167a93f4f3bb45d2c949e559ecc5c9dddcc95095a9689",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-007",
+      "sha256": "04119cbb777056248ac9a70c52416d1879658da4f767b4f6bbc0bc000c61f0ee",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-008",
+      "sha256": "72fc7356b451c8a49968007c5ca24d87a51bacef7bf02a455a4469e4b72d9543",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-009",
+      "sha256": "3193bc80a3c7380a04f57478b7645e75f817ad4f428687d5001f23333e4939dd",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-010",
+      "sha256": "1326d945fb305d371752b7ed4267b8e4246d4ffb497c3e94ab7cb52aea55990e",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-011",
+      "sha256": "5a6e22539cf6d7bbcfaf2db15b5988035d3180afb1fa24359c2cb818292c6aad",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-012",
+      "sha256": "d0f5f29e571ed73fe79200d40d1ad12bb1e24668970fb55686f62965fcbda707",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-013",
+      "sha256": "1e849ef879de7012ce031b0eab8145472ecd57c94ab469640b79ca598631e02d",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-014",
+      "sha256": "4f697e662fe7b06fe0ae3152186de041734ae9762033182789bac812f4026e16",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-015",
+      "sha256": "a36b94b5d26df1030f617bd5cf0c92c2eab78b0979f37511e98f9f26030bb5a5",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-016",
+      "sha256": "77b89c4f6510ab073d74db926b2cb3262052830698302d58f0d430c805659970",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-017",
+      "sha256": "2b2a888c06d9d1f06f543519db624092fea702d72555d4a4eb19f92f4227fc25",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-018",
+      "sha256": "45a5e78314122b97217b8a8bcff0c01ae47cb0cb2d16893d83cc359771dd226b",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-019",
+      "sha256": "0209c3aa4d38c6c28107522b454465b1993f0a0d8a3bd5c83a18c7763f449cc7",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-020",
+      "sha256": "5ad75b86c8d60dcfc446582d82be7cf97f0d70bdaa1980bf867f20c39c4dab1e",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-021",
+      "sha256": "4963932249e267116755a76a943c4f6025d3c94a4ee76027b990802a42699703",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-022",
+      "sha256": "10a166728951334de59f2803d2aba68e9aea53fa2f6d9e2b481165a625ad7aed",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-023",
+      "sha256": "ede21865a7f0978f9eb3abe014a2a54a132e3ebe7a0632efbceacf2a8403662f",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-024",
+      "sha256": "f09cc273922e6a1b901d184d34303fc3ecb603c37b330544a95d38836fbba735",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-025",
+      "sha256": "414ee80286bb750fd2905472e8ba39a3c416f81b9ff50fa2280e3f4af7ce03ac",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-026",
+      "sha256": "b4695ae6596818db3b53b0b0c4f62b21db3aaf96bbc52c97b162fe342b12f56c",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-027",
+      "sha256": "2e2b1031bb1184e51e06b1d27034eea891e2f1a77466f2ca435bca3ff7e0dce7",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-028",
+      "sha256": "ef27b62818169024b832490ba87765506ff2b7bd1843092be9f2760f47049f7c",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-029",
+      "sha256": "1d4e953d7fa2f807458e0a13df958c5acf34b03f8f4676391d1a377598e4e9dd",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-030",
+      "sha256": "6cdbc92680b0f025b56fc6c7cad51b2d936d9ebccd39bbd87b17ac6dcb1ba7b5",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-031",
+      "sha256": "0d00010173dd495861773966ca82a44f503cdf9763a7a0be19de892d51b87be6",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-032",
+      "sha256": "d77e12540bbdc1afaf7c1166805c55856a5073dfa6a5c720aeed0eee69e5cf13",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-033",
+      "sha256": "1fcebec5c2616eab75060a410ca92094c39d103d6cdbdb1b2c53b6ba61d4c85b",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-034",
+      "sha256": "35bb979719f36b5f60757bcae693ec5fa45cd80cd6cda156ee8ef10127a82ed4",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-035",
+      "sha256": "19e7233d1cc9322f2e7ce1589e475be23f78f437ef8777dd9a5ee6e07a656bb9",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-036",
+      "sha256": "2a7412598b5140411ed3506013891416ac9434104caeea5eef2bf9f5500fba55",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-037",
+      "sha256": "a61365352b873368aa7583e840d50111ad9bb3d3ad45fdda797d0d1746b22f18",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-038",
+      "sha256": "b75488bcfed525a591997b55e642b97e3d2b31970a8293a4a658aa1c5a973cf8",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-039",
+      "sha256": "40367195d64ae1276e79c0fafda966ec319dfd13ebe369238f66caab480a5009",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-040",
+      "sha256": "0377d71af5092ea4d37828b8c5e4cf5b51ee59f637bc1c261d69fcb72d0a21bc",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-041",
+      "sha256": "ce95eba62dbd100eac75671b37c3391d3da96e67971cf7c8b56f04da002ad42b",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-042",
+      "sha256": "21b04d2f46ebe554f8241ce94f8ec40eb49a4848c298e66849d8657067e86a96",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-043",
+      "sha256": "a75ef05a90b7331542e09fee3b17a28a95fe8edc5367500d49471ec7fa0da9d6",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-044",
+      "sha256": "65682e9335fa88425ae994b65b291e41d5173cec2cdaaa1a77100abd070d45ac",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-045",
+      "sha256": "65574eec782892fb039c543a581b513549746592f506cf7568bf2f0a3a882b5a",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-046",
+      "sha256": "9f5f8288c00df89a9deedb90043f0fe47fd7f95e0c56780a943caf8d79527881",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-047",
+      "sha256": "b883ff758f8a0c5a58a5d757dd653e50b5791735ec701a16d58a7f5b5b20b33d",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-048",
+      "sha256": "4108e36d9e5dbe6fc7bbf3e229b9574b16a77167f569b9d1ee3e106df8868cc2",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_recovery.tar.gz.chunk-049",
+      "sha256": "732da42a5586833a57f3d89fa8d9418bbd9b639f3810fcf7ce77e0ac3ce754bc",
+      "bytes": 41879160
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-000",
+      "sha256": "8b760977aa151b310e947352cc1591d80929fff56df7e9e5e9f79ea2b1111296",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-001",
+      "sha256": "b1ac4dceafdd126393b1c950e3467747750b92f4dd75e95480c4bee4f00d7e44",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-002",
+      "sha256": "dfde8a848214168991a0837146ab59f076027f66f923407d56bd901b03455e2a",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-003",
+      "sha256": "bff9bc38ee70d6aef89045cbd7db5fc4813d836a5bb900fed9e6f4096815d7a8",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-004",
+      "sha256": "97e925a17517f842250c8fe26db7dbd39f3de7a8a5a7c03d6d999d1ed9a59490",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-005",
+      "sha256": "3ca5d97216cd4cf2c021518d3291d4976b43a0fd0caec4b577fcd6e1a1f061bf",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-006",
+      "sha256": "499f6ca3c0c5ecf9c7445f2b6cb9f3d5e4bc15ba90c8aee3edab30c3702175b2",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-007",
+      "sha256": "2910cedb3442ded29b4bc9dd7f41009f303795d7bf00d5e4670b85d8bdf7862b",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-008",
+      "sha256": "157585f5318fbdbd96b1797a494f89f211e4c101786d9e5882fd6ebba71e6e15",
+      "bytes": 67108864
+    },
+    {
+      "asset": "up_superseded_snapshots.tar.zst.chunk-009",
+      "sha256": "c59f334c10692e44ee2edea3bcbbb760e14516eb5a3d21cea0db77a0ed3a9201",
+      "bytes": 5209906
+    }
+  ],
+  "counts": {
+    "inputs": 1703,
+    "recovery": 473103,
+    "legacy": 377,
+    "superseded_snapshots": 713
+  },
+  "historical_differences": [
+    "data/catalogs/office_sources.json",
+    "data/external/lgd/SOURCES.json"
+  ],
+  "member_inventory_sha256": "f86888a1eb797040f8c02f7b07f6c1d8ecaf3c0d1caca6e1586608ee223310c5",
+  "original_archives": [
+    {
+      "asset": "up_inputs.tar.gz",
+      "sha256": "86109bab35bfcd41e578157eba0bfadad15f2a483a870dbe97fae9c45c95062a",
+      "bytes": 641647244
+    },
+    {
+      "asset": "up_legacy_inputs.tar",
+      "sha256": "7234b9a0a712e3e646840575a925f0b3eb44e9b94791a841d3a473dffeaa8828",
+      "bytes": 69785600
+    },
+    {
+      "asset": "up_recovery.tar.gz.part-aa",
+      "sha256": "20cb506cc5fe2181ed74a0a924c50074980306ae0a49fecd0174890364edfb99",
+      "bytes": 1992294400
+    },
+    {
+      "asset": "up_recovery.tar.gz.part-ab",
+      "sha256": "5493e429f16b23cadfecabfdc4038b4ffeb58d7c86f24fb502196e953dc91bc0",
+      "bytes": 1337919096
+    }
+  ]
+}

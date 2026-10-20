@@ -1,0 +1,11 @@
+{
+  "panchayat_or_unconfirmed_reservation_candidates": 5016,
+  "url_triage_categories": {
+    "panchayat_and_reservation_in_url": 21,
+    "panchayat_in_url": 4874,
+    "reservation_scope_unconfirmed": 121
+  },
+  "non_election_url_candidates_separated": 540,
+  "content_reviewed": 0,
+  "metered_inference_usd": 0
+}

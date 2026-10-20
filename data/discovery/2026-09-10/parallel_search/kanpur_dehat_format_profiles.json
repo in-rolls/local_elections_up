@@ -1,0 +1,178 @@
+[
+  {
+    "path": "kanpur_dehat/raw/a74cde9aa668e26a482c_06c3eb9ff868.pdf",
+    "sha256": "06c3eb9ff86805d742e2c87ccf696e319ce0858bc8a88e72277ce47a37c9f12b",
+    "label": "Pradhan Rjp Knp D 25-Mar-2021 19-16-17(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/956f48819515f0bd060a_aa5a65d13c42.pdf",
+    "sha256": "aa5a65d13c42b1b773d0b7daf9e3f9b605d6dd73ac2d7c0205f854047cd47abc",
+    "label": "BDC SNDLP KNP D 25-Mar-2021 19-44-43(1) (3 MB)",
+    "pages": 5,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/04b2f7beaa7055eee8ee_ed734a2223e8.pdf",
+    "sha256": "ed734a2223e85d6df78a5528a531cc98eedb0f887f8c4660895cde8054b6e337",
+    "label": "BDC MTH KNP D 25-Mar-2021 19-41-17(1) (4 MB)",
+    "pages": 7,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/8ced4a1d3a332793dd0a_2c532f7857d9.pdf",
+    "sha256": "2c532f7857d944de962e99b92f7380bb91bca2627968425dc156bb3ab8be240c",
+    "label": "\u092a\u094d\u0930\u092e\u0941\u0916 25-Mar-2021 18-35-53 (479 KB)",
+    "pages": 1,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/39fd10b0a13161c7055c_0a54ca951667.pdf",
+    "sha256": "0a54ca95166785ce7752c96d6f6c282b8939172da0c53aa7bc1bd434ab5fd7a6",
+    "label": "\u0926\u0947\u0916\u0947\u0902 (998 KB)",
+    "pages": 2,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/3aeb2614f8da25cf8052_ccfa9cd01662.pdf",
+    "sha256": "ccfa9cd01662df22773fffc808346570229c252b54f70b9f1ab48e63362aae12",
+    "label": "BDC SRK Knp D 25-Mar-2021 19-29-52(1) (4 MB)",
+    "pages": 7,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/d24b54d3a25dd9241d67_b0af3d503dca.pdf",
+    "sha256": "b0af3d503dca99984dbb5ff902e9b6656d4500c458d7d6c9ca2442b3e129aa54",
+    "label": "BDC AKB KNP D 25-Mar-2021 19-35-12(1) (4 MB)",
+    "pages": 7,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/0b4a9dd009f0fff881a5_ef00c393e749.pdf",
+    "sha256": "ef00c393e7490ab336a4ba11a6a9870dd306e2c577012d4d20b83588ee8fe0d9",
+    "label": "PRADHAN MTH KNP D 25-Mar-2021 19-48-10(1) (2 MB)",
+    "pages": 4,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/f1bb104b4b7cdc815367_1590e8065167.pdf",
+    "sha256": "1590e80651676fadadb7a973f4b568aed4df887a9a82bb4beb93d2e6f6d72895",
+    "label": "BDC DRP KNP D 25-Mar-2021 19-43-28(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/e64134467c1d874ebd64_b93352f41330.pdf",
+    "sha256": "b93352f41330658c9be3f13a2d1f32b96ce94ebe87f62cd0902d3bdd1e68dd6f",
+    "label": "BDC RJP KNP D 25-Mar-2021 19-33-00(1) (4 MB)",
+    "pages": 6,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/45e8b6c121fcba9e2b2b_78bedb3bd3f2.pdf",
+    "sha256": "78bedb3bd3f2de11befaf11b59bf523f1a288612b41230d21ff58b45efa35925",
+    "label": "BDC AMR Knp D 25-Mar-2021 19-27-47(1) (3 MB)",
+    "pages": 4,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/4ee5cd1fb059aae41365_a562759da001.pdf",
+    "sha256": "a562759da001bcfbaabfb40841270ba3dccd56d11a5091e4b4d85534262f3f7d",
+    "label": "Pradhan JHK Knp d 25-Mar-2021 19-21-44(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/ba566e80d1201f2eface_c2b373887fe4.pdf",
+    "sha256": "c2b373887fe417a54e19fb19c352a5ea1df5f876c5bad82b1aabfa7f26e30a7c",
+    "label": "Pradhan AMR Knp D 25-Mar-2021 19-17-44(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/364d7bbd1342af2ebb8a_e94f5257f8a8.pdf",
+    "sha256": "e94f5257f8a83c8ea731672304e198170f071ab1f3c141bcfbb768082b7f8417",
+    "label": "Pradhan Sndlp Knp D 25-Mar-2021 19-20-40(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/1a4f01b75681d0e0db67_fbc8c2e82e3d.pdf",
+    "sha256": "fbc8c2e82e3d43e286494178963f09602d6756390d8f52cc9cc3162eec1eafa8",
+    "label": "Pradhan Akb Knp d 25-Mar-2021 19-15-08(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/fdacc50f4dabf2fa9e9a_db1671812ab6.pdf",
+    "sha256": "db1671812ab6a276e45b8d5922e1f4484decc6bfe562ba222b8020e023235fc4",
+    "label": "Pradhan RSL Knp D 25-Mar-2021 19-23-29(1) (3 MB)",
+    "pages": 5,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/3dedd215a02710a7a602_e99f3182ef06.pdf",
+    "sha256": "e99f3182ef067c8debe8d53ce357def5f8a985f87b061a80304c09aa2ccd3f17",
+    "label": "BDC RSL KNP D 25-Mar-2021 19-37-28(1) (5 MB)",
+    "pages": 8,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/029d2c274c305e601bdb_c3f5cfbd921e.pdf",
+    "sha256": "c3f5cfbd921eb354281f425284b83e3965096b6be23738302a6066888c648a1b",
+    "label": "Pradhan SRK Knp D 25-Mar-2021 19-25-22(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/a7aeaebbc3582d04751f_647fea96a978.pdf",
+    "sha256": "647fea96a9789b33c0851261ebc73ab431d7ff059077a44b184a9d4e29cb6289",
+    "label": "BDC MLS KNP D 25-Mar-2021 19-46-26(1) (3 MB)",
+    "pages": 5,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/6e3c3d595dd5f6d8f83c_0c2fb8b23238.pdf",
+    "sha256": "0c2fb8b23238524090685e2ebcdd16dfdadc5f0377e34536fd8353d9c918142c",
+    "label": "Pradhan DRP Knp D 25-Mar-2021 19-18-50(1) (2 MB)",
+    "pages": 3,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/56216c4e810ba8d11462_4ddc1733b688.pdf",
+    "sha256": "4ddc1733b688d650e77e501f7718b2148ea0cf81f26aa92cecaf16723f9fe2f3",
+    "label": "BDC JHK KNP D 25-Mar-2021 19-39-45(1) (3 MB)",
+    "pages": 4,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  },
+  {
+    "path": "kanpur_dehat/raw/323ffc7123f547b8fc6c_ecd1c25c90ac.pdf",
+    "sha256": "ecd1c25c90ac3b7c6e4845870b937856c11ef43c185570eca1375d2693feac48",
+    "label": "Pradhan MLS Knp D 25-Mar-2021 19-13-16(1) (2 MB)",
+    "pages": 4,
+    "first_page_native_text_chars": 0,
+    "first_page_text_excerpt": ""
+  }
+]

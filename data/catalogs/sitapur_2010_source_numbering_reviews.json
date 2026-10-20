@@ -1,0 +1,21 @@
+{
+  "review_version": 1,
+  "source_sha256": "ae79974344f059ac5a19580bcbb05daeefbdf2c329e923ad149c2d7cf607a03d",
+  "source_path": "data/discovery/2026-09-10/archived_reservations/raw/0df2ed118dc874203c5c_ae79974344f0.pdf",
+  "source_url": "http://sitapur.nic.in:80/Reservation_pradhan/Election%202010/BDC%20CHETRA%20PANCHAYAT.pdf",
+  "archive_capture": "20100928113446",
+  "source_page": 6,
+  "printed_page_label": "Page 6 of 47",
+  "year": 2010,
+  "tier": "block_member",
+  "block": "Behta",
+  "reviewer": "Codex visual source inspection; single reviewer",
+  "render_recipe": "pdftoppm -f 6 -l 6 -singlefile -scale-to 2000 -png SOURCE OUTPUT",
+  "finding": "The original printed table repeats number 40 and the name Patti Daheli on consecutive rows, but assigns different reservation categories. This is present in the source, not introduced by the native-text parser.",
+  "rows": [
+    {"data_row_ordinal_excluding_headers": 28, "printed_number": 40, "name_raw": "पट्टी दहेली", "category_raw": "पिछड़ी जाति"},
+    {"data_row_ordinal_excluding_headers": 29, "printed_number": 40, "name_raw": "पट्टी दहेली", "category_raw": "अनुसूचित जाति महिला"}
+  ],
+  "disposition": "Retain both source observations with separate provenance. Do not deduplicate or assign either row a conjectural ward number.",
+  "unresolved": "This review does not identify an intended replacement number, settle which category governs number 40, or resolve the separate missing-number-47 diagnostic."
+}

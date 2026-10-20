@@ -1,0 +1,11 @@
+{
+  "districts_enumerated": 75,
+  "directory_reported_districts": 75,
+  "difference_from_directory_total": 0,
+  "cdx_queries_prepared": 75,
+  "block_directory_queries_prepared": 74,
+  "agra_block_directory_previously_acquired": true,
+  "historical_coverage_complete": false,
+  "metered_inference_usd": 0,
+  "receipt_format_handling": "list_or_mapping"
+}

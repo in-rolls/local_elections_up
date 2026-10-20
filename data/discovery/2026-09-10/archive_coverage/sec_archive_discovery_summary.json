@@ -1,0 +1,20 @@
+{
+  "archived_urlkeys": 4544,
+  "http_statuses": {
+    "200": 3607,
+    "404": 385,
+    "302": 490,
+    "301": 13,
+    "500": 4,
+    "-": 41,
+    "401": 1,
+    "503": 1,
+    "400": 2
+  },
+  "pdf_url_or_mime_candidates": 1652,
+  "pdf_candidates_status_200": 1481,
+  "election_url_candidates": 484,
+  "resume_key_present": false,
+  "content_reviewed": 0,
+  "metered_inference_usd": 0
+}

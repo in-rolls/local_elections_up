@@ -1,0 +1,18 @@
+{
+  "status": "draft_asset_uploaded_digest_verified",
+  "repository": "in-rolls/local_elections_up",
+  "release_id": 386191744,
+  "release_tag": "source-evidence-2026-09-10",
+  "draft_url": "https://github.com/in-rolls/local_elections_up/releases/tag/untagged-9e03cf452a2b74573eaf",
+  "target_commit": "ca67066763af3918a091c2654dc7b95783de83bb",
+  "asset_name": "up_discovery_2026-09-10.tar.gz",
+  "sha256": "7bbf0c3987a6500f69084aeb50e895451210d21edb20beceb13b8964ed46da88",
+  "local_bytes": 119296382,
+  "remote_bytes": 119296382,
+  "original_bytes": 296922147,
+  "original_files": 312,
+  "all_archive_members_hash_verified": true,
+  "remote_digest_matches_local": true,
+  "working_originals_retained": true,
+  "publication_pending": "Catalog CSV line-ending preservation and corresponding hash correction"
+}

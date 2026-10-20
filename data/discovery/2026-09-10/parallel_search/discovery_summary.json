@@ -1,0 +1,19 @@
+{
+  "sources_requested": 27,
+  "statuses": {
+    "ok_pdf": 23,
+    "ok_html": 3,
+    "http_error": 1
+  },
+  "pdf_files": 23,
+  "pdf_pages": 143,
+  "kanpur_dehat_pdf_files": 22,
+  "kanpur_dehat_pages": 93,
+  "kanpur_first_pages_with_native_text": 0,
+  "saved_bytes": 89589966,
+  "metered_inference_calls": 0,
+  "state": "Uttar Pradesh",
+  "status": "Acquired source leads; not standardized or source-validated assignments",
+  "ballia_scope": "Mixed tiers: first page confirms district-member retrospective 1995-2015 columns and provisional 2021; GP-head sections reported in search source; full document not yet reviewed",
+  "sec_results_scope": "HTML retained; result year and precise office remain unvalidated; navigation year is not row evidence"
+}

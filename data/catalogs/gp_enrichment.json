@@ -1,0 +1,385 @@
+{
+  "historical_code_revision": "42fb6190469688fd558596460aef44282e37f6d2",
+  "order_basis": "2015 file order recovered from consecutive district groups in the pinned enriched preparation; retains source-row identifiers.",
+  "gp_2015_files": [
+    "data/raw/2015/winner_lists/हाथरस-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/अयोध्या-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/जौनपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/मथुरा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/वाराणसी-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/प्रतापगढ़-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/हापुड़-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/गोरखपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/लखीमपुर खीरी-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बहराइच-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/जालौन-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बागपत-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/गाज़ीपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/फ़र्रुखाबाद-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/गोंडा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बलिया-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/चन्दौली-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/कानपुर देहात-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/हमीरपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/गाजियाबाद-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/भदोही-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बाराबंकी-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/सन्त कबीर नगर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बरेली-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/प्रयागराज-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/महोबा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/उन्नाव-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/फिरोज़ाबाद-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/महराजगंज-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/कासगंज-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/अलीगढ़-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/मेरठ-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/अमरोहा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/पीलीभीत-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बस्ती-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/औरैया-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/लखनऊ-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/सीतापुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/मुरादाबाद-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/कानपुर नगर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/चित्रकूट-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/मऊ-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/एटा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/आगरा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बदायूं-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/इटावा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/कौशाम्बी-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/शामली-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/देवरिया-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बिजनौर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/मैनपुरी-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बलरामपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/श्रावस्ती-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/सुलतानपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/अम्बेडकर नगर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/आजमगढ़-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/गौतमबुद्ध नगर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/झांसी-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/मुज़फ्फरनगर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/कन्नौज-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/सहारनपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बुलंदशहर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/रामपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/सम्भल-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/मीरजापुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/अमेठी-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/हरदोई-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/फतेहपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/बांदा-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/शाहजहांपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/सिद्धार्थ नगर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/ललितपुर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/कुशीनगर-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/सोनभद्र-ग्राम पंचायत प्रधान.csv",
+    "data/raw/2015/winner_lists/रायबरेली-ग्राम पंचायत प्रधान.csv"
+  ],
+  "transliteration_precedence": [
+    "up_gp_sarpanch_2005_transliterate_out.csv",
+    "up_gp_sarpanch_2010_transliterate_out.csv",
+    "up_2015_2021_remaining_transliterate_out.csv",
+    "up_local_transliterated.csv",
+    "district_official_hindi_english.csv",
+    "block_name_transliteration.csv",
+    "remaining_transliterate_out.csv"
+  ],
+  "files": {
+    "data/raw/2005/up_gp_sarpanch_2005.csv": {
+      "sha256": "e634be41ce0bd24c2e80b5cbe6de80cd4207dcd4c3bd7ae004c40c36e0c4cfc5"
+    },
+    "data/raw/2010/up_gp_sarpanch_2010.csv": {
+      "sha256": "ebce65c4bc25ceb752af8c128942076e24b479b6d04f6122d5b211dc41beffd7"
+    },
+    "data/raw/2021/gram_panchayat_pradhan_candidates.csv.gz": {
+      "sha256": "8a7075bee6b59ebd0fc26c0630de2aadad1aec9edfdea34390661c754967c179"
+    },
+    "data/transliteration/up_gp_sarpanch_2005_transliterate_out.csv": {
+      "sha256": "a1fde976de67f5d09d9deb61b668091a402b1bef6864a17d13f7337dc46c8e20"
+    },
+    "data/transliteration/up_gp_sarpanch_2010_transliterate_out.csv": {
+      "sha256": "c3b9d1f2222c885ae2a1a75a0316a2e95854f389c3f3e9ff619cfce94da79f11"
+    },
+    "data/transliteration/up_2015_2021_remaining_transliterate_out.csv": {
+      "sha256": "529a02a383795543c93909d51c371b1cc628d9bffa1a46ecfb2788e87dc83400"
+    },
+    "data/transliteration/up_local_transliterated.csv": {
+      "sha256": "962f0a7a3239222861e2eae14a42bfa0c606823182179a2c863811278241304b"
+    },
+    "data/transliteration/district_official_hindi_english.csv": {
+      "sha256": "551fe1448181d69af7202fd3ba3a22fdfece0e33e8434717c0af778c76842f98"
+    },
+    "data/transliteration/block_name_transliteration.csv": {
+      "sha256": "8c1480d9c2dc5db91b12cd9a61325dc2ccecf3af6f6aa649920d2fddc7a8e0e1"
+    },
+    "data/transliteration/remaining_transliterate_out.csv": {
+      "sha256": "f6ae3f2905a131e287092596edd512dd93517270c9d67221178209dab5a52f42"
+    },
+    "data/raw/2015/winner_lists/हाथरस-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "96fb24581fa69abf04919060ca22ac42ee217e8475b05361460be097a3d8bc2c"
+    },
+    "data/raw/2015/winner_lists/अयोध्या-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "bfc5f7d6e5ea2d7ccb192a6d2229c3878fa67861240ff2c339b2fd47dfd5c6b2"
+    },
+    "data/raw/2015/winner_lists/जौनपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "f09c36c94a6359e5f0478bd7ff1ec87fe57e6ee5045c14b6dad0b8489d00e6aa"
+    },
+    "data/raw/2015/winner_lists/मथुरा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "a881dc2ad4e125d85d51b9523841f2cb28c74da1d1c8a985a970be70e5988bef"
+    },
+    "data/raw/2015/winner_lists/वाराणसी-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "cd13581d98721233e3af3ffcf4404b54227c861ac8a997e7b83da64774432fcf"
+    },
+    "data/raw/2015/winner_lists/प्रतापगढ़-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "bf77ce4bb5c2a4417d602edd36abc179c927c90a833ece8ab0f174724ca27167"
+    },
+    "data/raw/2015/winner_lists/हापुड़-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "c31b103ffe25a6500141abf93f92dab7113c20822a5beb3d6442c264b45d4e37"
+    },
+    "data/raw/2015/winner_lists/गोरखपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "2cb3434f3fd0d82f202ec2683b0c7f109c9a39611da107a59c12530c24266957"
+    },
+    "data/raw/2015/winner_lists/लखीमपुर खीरी-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "8f0cac5c3696040e95cd45e11f177c51a999056325f6e76113ab1d51a4f1a95b"
+    },
+    "data/raw/2015/winner_lists/बहराइच-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "e7aa1db9380bfc7cf1805737c47b11f01caed8b6c0e87c13ebb3a9b4fd7f9068"
+    },
+    "data/raw/2015/winner_lists/जालौन-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "135e04d197d97591e61c9f245bc18d8e17935cbdca02e2ed4a2f7e9780bb926b"
+    },
+    "data/raw/2015/winner_lists/बागपत-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "d2fff28c78bb64a6e2d3218efde0a98925d7b383940b40e3d827d4f2c6641656"
+    },
+    "data/raw/2015/winner_lists/गाज़ीपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "9f35bbd34f31f96fba5d819ed7a33903f525bc74d1a787066e951eece93f4137"
+    },
+    "data/raw/2015/winner_lists/फ़र्रुखाबाद-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "575b9184737327a5ae77a72897c0a49f3d049d4a8f560820ce315df31dcb700b"
+    },
+    "data/raw/2015/winner_lists/गोंडा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "0af9d9caa42e5f0c3e10a6149c5826c976d83ac489948d843ee3cfc6796cf6f2"
+    },
+    "data/raw/2015/winner_lists/बलिया-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "cb46d2ee403724954f24fb7642fb750fa3f3a7f52a6af855f39be65ad3b4c335"
+    },
+    "data/raw/2015/winner_lists/चन्दौली-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "7a576274135d28088f4cfd0215a9c4c383787f8b915c782dbde681600d9e2473"
+    },
+    "data/raw/2015/winner_lists/कानपुर देहात-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "69b220b388c0329dfa24c47456ac49655baa5706ee11d733834909860ee30431"
+    },
+    "data/raw/2015/winner_lists/हमीरपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "6885e465d710c8a4e2c3092294d27b90c29d9936d3406bf8cb6c4945d9f3d315"
+    },
+    "data/raw/2015/winner_lists/गाजियाबाद-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "ca317acc537f60171ce1bde28bf58b0b17ec076bbf17782fb6ba486587926c83"
+    },
+    "data/raw/2015/winner_lists/भदोही-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "9c6e042249fcd248481b6d4c88f1281e325b3dd810d2cd512bd8d422f6d929dc"
+    },
+    "data/raw/2015/winner_lists/बाराबंकी-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "a0b4ef9cb7572fd79362c669525a0eebd9415e926ea3d6d2ce105fa9bcc3c711"
+    },
+    "data/raw/2015/winner_lists/सन्त कबीर नगर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "033424b3b0a093b56810cbffd53b59d03cec76430d741351dca33b8304d57e1d"
+    },
+    "data/raw/2015/winner_lists/बरेली-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "eaa12f2703f56225c9c75d4aa1f7fd2dc9d281c7a1b7d2243b4aadb9d1a8ec8b"
+    },
+    "data/raw/2015/winner_lists/प्रयागराज-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "b35c8bc82c4b657a9a7cb50281c8def81e6087ed2e9b808c0fb585918ca62dc3"
+    },
+    "data/raw/2015/winner_lists/महोबा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "7e958d68485f6895f66b22c831fb3a84c566699e1d1dfd33c72b6b0a4058b993"
+    },
+    "data/raw/2015/winner_lists/उन्नाव-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "df6b9f5d9eb9dc5f5b67ca7d4bb7ef148398e95059e8a3e2192884e14057399f"
+    },
+    "data/raw/2015/winner_lists/फिरोज़ाबाद-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "dcfa0b7cc6678d66a6463a5e2bea106329ca507ac467da58762ecaf9fb59fd14"
+    },
+    "data/raw/2015/winner_lists/महराजगंज-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "e327ec35e77f81fa03d08d6ed54322c8827cd2eb65fb3b7314d402ba4e307c4e"
+    },
+    "data/raw/2015/winner_lists/कासगंज-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "7ae9be0b74775bfba735d4b48362c52c5ef560717ac2988c3e24de1f1f7a01b7"
+    },
+    "data/raw/2015/winner_lists/अलीगढ़-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "3e9c4fca9086e269a991996e17f5ac2c9ab58fbe83652e508f8db53ef2de4882"
+    },
+    "data/raw/2015/winner_lists/मेरठ-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "a2d6b5f7c7bf63945f6fe6258ca51005b8257414f23e7c8dd5175ea3e7b07783"
+    },
+    "data/raw/2015/winner_lists/अमरोहा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "68ed3b86cbcb34bd826dbd016ca570134b26d59f0e4f8278b7ee965951cf1c05"
+    },
+    "data/raw/2015/winner_lists/पीलीभीत-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "338f37038f96e54361ff846bb60eef7081666e8cec55757224c6730dd4b71c4f"
+    },
+    "data/raw/2015/winner_lists/बस्ती-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "01777897c39eaa3f7a23df3623103e14d6b9e7509044d07dde79ce3b799a6011"
+    },
+    "data/raw/2015/winner_lists/औरैया-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "8dc3af27ce7f1475346a51987fa9697f768d456683f97c528ea2e487d98e7f55"
+    },
+    "data/raw/2015/winner_lists/लखनऊ-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "5c2b3c71bdaf0774899fc952dac0795186dd7af07bf7e876e083c403423850f9"
+    },
+    "data/raw/2015/winner_lists/सीतापुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "4a1e24b4a0a77a23a93f3a80e9653a9dc92c994163929eb00d699cbf8524fa12"
+    },
+    "data/raw/2015/winner_lists/मुरादाबाद-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "1ba8fa390c9b34d63971e8798b2f8a6cca3909792be6b9ee0b7bce0e9d0d0fa1"
+    },
+    "data/raw/2015/winner_lists/कानपुर नगर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "1dbdbc1bc04a8e61a3c59a5e079debe2fddb3058143342f0e5dc444971f4e930"
+    },
+    "data/raw/2015/winner_lists/चित्रकूट-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "c1466b3292093c9a4728317c2d253538915cafd34513b00293efa9193c01486a"
+    },
+    "data/raw/2015/winner_lists/मऊ-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "442bc3432d3dc36ad14b9a9a1109b3e7ae0b6ebb2929faf83a9857eb2cfab12b"
+    },
+    "data/raw/2015/winner_lists/एटा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "c1bc203388286929aa4ad730608093c03e5c6502bc3e4a940f8060876567acb1"
+    },
+    "data/raw/2015/winner_lists/आगरा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "5ecf525a2766494c853b0abc931537256d45c3bcfa068754df7acb436240b7da"
+    },
+    "data/raw/2015/winner_lists/बदायूं-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "bcdc23bed5aaa289d9c87502e48cf4b4f822b1b21a17847bfe1c4354991b5b0c"
+    },
+    "data/raw/2015/winner_lists/इटावा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "cfbbd7beef4b11b0220784816f01857ba41586d41a7c63be60a20ee5cff292e6"
+    },
+    "data/raw/2015/winner_lists/कौशाम्बी-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "a4a45bf238274d5060815b4fd1f81be3005d3431427a04c44100ffcac48bce22"
+    },
+    "data/raw/2015/winner_lists/शामली-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "e993e415f0b63b12f203fa191c3e9a53626449a03709e76fe1e1d5743e2e5a2e"
+    },
+    "data/raw/2015/winner_lists/देवरिया-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "9e41cdba448f0516b1c44d78e2bce6da625911fef743cd6259b8fb854fc7539c"
+    },
+    "data/raw/2015/winner_lists/बिजनौर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "41f7634a05e59ae44490c55747a41134e99ed5fe31493092fae48cce0c9e22f3"
+    },
+    "data/raw/2015/winner_lists/मैनपुरी-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "0c507f7de6d56282ad22374e38232c0b979340ab42f4b25668463d6aa91fe869"
+    },
+    "data/raw/2015/winner_lists/बलरामपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "081f11975787fc821d36798989d684737751ee09c79e53756ccb6031c0a28427"
+    },
+    "data/raw/2015/winner_lists/श्रावस्ती-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "b230ff96e8176fd1528cb1825e775ba4c6a9364d0b79d662cdf546f331197be6"
+    },
+    "data/raw/2015/winner_lists/सुलतानपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "939ac2b4c6eedc64740975d2abcb333bbdd64319ad3c1477295a1756b3e47457"
+    },
+    "data/raw/2015/winner_lists/अम्बेडकर नगर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "1635c4152fca2eea2d1b31fa92eca277fae4d88b240c5af5359553d2d1a45ddd"
+    },
+    "data/raw/2015/winner_lists/आजमगढ़-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "933e29e3e20bb3b06385909a8aa7c45f8cee9c97c8878f29f3ee93e2218d40c7"
+    },
+    "data/raw/2015/winner_lists/गौतमबुद्ध नगर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "bed7a3d1f509929e3d688414bb771c44ee4bd8e0326cc92e6273ea6633a9c4d4"
+    },
+    "data/raw/2015/winner_lists/झांसी-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "9bbc740a73628b59528ab6d9e71ed6bf3f25af88f36636f49c5d34d7ae2d9bc8"
+    },
+    "data/raw/2015/winner_lists/मुज़फ्फरनगर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "92c96047891ee64ddfd4e28cc825d41007ed6b91dc7c86ddfb167088e65aa1e8"
+    },
+    "data/raw/2015/winner_lists/कन्नौज-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "efc1864066d9591215fe70b83d2087b40f62b77db6662c1b0e66aa6b997024eb"
+    },
+    "data/raw/2015/winner_lists/सहारनपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "b07414b56e89a676c2cc7dcee11774565bf23896daaadbccd4c6e931b1c50a6d"
+    },
+    "data/raw/2015/winner_lists/बुलंदशहर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "c694021de75ef770db75f200ad5c14f7d979ec7be293acc2e164318f31cab328"
+    },
+    "data/raw/2015/winner_lists/रामपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "936df46dde488105b6aa1d4ab1f1f38bbefe6f2494a74af472a3dba9d070dd73"
+    },
+    "data/raw/2015/winner_lists/सम्भल-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "762e2782e48ce68bbfe5c0de3f53c8e506e55b7af634e768739126d9c5a227c0"
+    },
+    "data/raw/2015/winner_lists/मीरजापुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "c9433bc6de8cee4f1918dad54e09b8932badbb07a8791dae03273cbac7c0080a"
+    },
+    "data/raw/2015/winner_lists/अमेठी-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "c3c536e31b79bdc32406ab230039d156b4f555889d355913276897df4811031a"
+    },
+    "data/raw/2015/winner_lists/हरदोई-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "955803f4b8f221d74d05e0584e14b1e031e8b9a11801ec0f4d1b3a10eaac3c99"
+    },
+    "data/raw/2015/winner_lists/फतेहपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "d53f680cdc2fe4dcab213f0acde1bbe45013f8701ca159444c19af6ab5fee2ab"
+    },
+    "data/raw/2015/winner_lists/बांदा-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "660028f9d746c506296e7be9c2083faf27630fd7e440b7d670cd3ea862097d45"
+    },
+    "data/raw/2015/winner_lists/शाहजहांपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "6661ff9f52c42bcda3b8c72130a46ad39ebdea072212fc3168af493ccb2c8ea0"
+    },
+    "data/raw/2015/winner_lists/सिद्धार्थ नगर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "c7876f0c26293142a7e368ef307a859ba6255dd17e251ff72d6676428f9b71dc"
+    },
+    "data/raw/2015/winner_lists/ललितपुर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "01aaf439455dae739ca61ec44f99a01da69281fa150e3b69927fc4e90136911b"
+    },
+    "data/raw/2015/winner_lists/कुशीनगर-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "cc639c10e87789299a449b35e0c2f5dc76f40ecb23fd08457e8ef131d97d3fe5"
+    },
+    "data/raw/2015/winner_lists/सोनभद्र-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "ef1861be00e9d62bf29252638211b19ae31326f903918eec058c93df0afbc17e"
+    },
+    "data/raw/2015/winner_lists/रायबरेली-ग्राम पंचायत प्रधान.csv": {
+      "sha256": "7c05bbc85979642596a6c555441323316222a1d1cbb2380adb1d916bcca97d48"
+    }
+  },
+  "gp_2021_order_exceptions": [
+    {
+      "first": "आजमगढ़_पल्हनी_77 - करतालपुर,",
+      "last": "आजमगढ़_पल्हनी_77 - करतालपुर,",
+      "before": "आजमगढ़_पल्हनी_1 - ककरहटा"
+    },
+    {
+      "first": "इटावा_भरथना_22 - अकबरपुर,दौलतपुर",
+      "last": "इटावा_भरथना_22 - अकबरपुर,दौलतपुर",
+      "before": "इटावा_भरथना_1 - असफपुर"
+    },
+    {
+      "first": "उन्नाव_सि0 सिरोसी_1 - पूरा निस्फ पंसारी",
+      "last": "उन्नाव_सि0 सिरोसी_9 - कन्जौरा",
+      "before": "उन्नाव_सुमेरपुर_1 - खिझौली"
+    },
+    {
+      "first": "प्रतापगढ़_बाबागंज_1 - महेबा मलकिया",
+      "last": "प्रतापगढ़_बाबागंज_9 - जगापुर",
+      "before": "प्रतापगढ़_बाबा बेलखरनाथ धाम_1 - जयसिहगढ"
+    },
+    {
+      "first": "बलिया_रसडा_43 - बसवान,",
+      "last": "बलिया_रसडा_43 - बसवान,",
+      "before": "बलिया_रसडा_1 - जाम"
+    },
+    {
+      "first": "बांदा_बæडोखर खुर्द_1 - जौरही",
+      "last": "बांदा_बæडोखर खुर्द_9 - बरगहनी",
+      "before": "बांदा_महुआ_1 - बिलगांव"
+    },
+    {
+      "first": "सीतापुर_सिधौली_21 - अहमदपुर जट,",
+      "last": "सीतापुर_सिधौली_21 - अहमदपुर जट,",
+      "before": "सीतापुर_सिधौली_1 - दकखिन गाव"
+    }
+  ],
+  "gp_2021_order_basis": "Seven non-lexical runs in the pinned preparation, retained explicitly to preserve physical source-row identifiers; all reconstructed values match by candidate id."
+}

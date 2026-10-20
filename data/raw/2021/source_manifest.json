@@ -1,0 +1,15 @@
+{
+  "path": "data/raw/2021/gram_panchayat_pradhan_candidates.csv.gz",
+  "sha256": "8a7075bee6b59ebd0fc26c0630de2aadad1aec9edfdea34390661c754967c179",
+  "bytes": 14290190,
+  "uncompressed_sha256": "d7d0990f2aa64e2b886924483f5bef8acebb30d734b39961a6b0f6b5252f4547",
+  "uncompressed_bytes": 115938310,
+  "records": 373096,
+  "election_year": 2021,
+  "source_local_path": "data/up_gram_panchayat_pradhan_2021.csv",
+  "source_url": null,
+  "retrieved_at": null,
+  "provenance_limit": "The legacy scrape did not record its acquisition URL or time. This record pins the original held bytes; it does not reconstruct missing provenance.",
+  "compression": "gzip level 6; empty filename; mtime 0",
+  "decoded_bytes_verified": true
+}
