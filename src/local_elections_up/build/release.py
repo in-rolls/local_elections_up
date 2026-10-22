@@ -21,6 +21,7 @@ from local_elections_up.fields import contact_field, contact_payload
 ROOT = paths.ROOT
 DATA = ROOT / "data"
 BUILD = DATA / "interim/release"
+RELEASE = DATA / "release"
 METADATA = ("manifest.json", "CATALOG.md", "DICTIONARY.md")
 RURAL = ("gram_panchayat_", "panchayat_samiti_", "zilla_parishad_")
 # The SEC GP-head winner lists and 2021 candidates, as received apart from
@@ -88,7 +89,7 @@ def plan(build=BUILD):
     return steps
 
 
-def publish(directory=DATA, build=BUILD):
+def publish(directory=RELEASE, build=BUILD):
     steps = plan(build)
     for folder in published_dirs(directory):
         stray = [p for p in folder.rglob("*") if p.is_file() and p.suffix != ".parquet"]
@@ -228,7 +229,7 @@ def published(directory):
     )
 
 
-def build(directory=DATA, build=BUILD):
+def build(directory=RELEASE, build=BUILD):
     office = office_build(build)
     steps = plan(build)
     expected = sorted(dest for _, dest, _ in steps)
@@ -241,7 +242,7 @@ def build(directory=DATA, build=BUILD):
     entries = [describe(directory / name, directory, offices) for name in expected]
     manifest = {
         "schema_version": 3,
-        "release": "v3.0",
+        "release": "v3.1",
         "layout": (
             "One folder per election cycle holds that election's source tables; "
             "panels/ holds cross-election links and harmonized records derived "
@@ -347,7 +348,7 @@ def build(directory=DATA, build=BUILD):
     print(f"Cataloged {len(entries)} tables")
 
 
-def verify(directory=DATA):
+def verify(directory=RELEASE):
     directory = directory.resolve()
     manifest = json.loads((directory / "manifest.json").read_text())
     for entry in manifest["files"]:
@@ -528,7 +529,7 @@ def verify_relationships(directory):
         )
 
 
-def data_summary(directory=DATA):
+def data_summary(directory=RELEASE):
     """Refresh the README inventory from the verified published manifest."""
     manifest = json.loads((directory / "manifest.json").read_text())
     lines = [
@@ -540,7 +541,7 @@ def data_summary(directory=DATA):
     for entry in sorted(manifest["files"], key=lambda e: e["path"]):
         path = entry["path"]
         lines.append(
-            f"| [{path}](data/{path}) | {entry['rows']:,} | {entry['grain']} |"
+            f"| [{path}](data/release/{path}) | {entry['rows']:,} | {entry['grain']} |"
         )
     lines.extend(["", "<!-- datasets:end -->"])
     readme = ROOT / "README.md"
@@ -554,7 +555,7 @@ def data_summary(directory=DATA):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["publish", "build", "verify", "summary"])
-    parser.add_argument("--directory", type=Path, default=DATA)
+    parser.add_argument("--directory", type=Path, default=RELEASE)
     args = parser.parse_args()
     if args.command == "publish":
         publish(args.directory)

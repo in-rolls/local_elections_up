@@ -1,5 +1,11 @@
 # Changes
 
+## v3.1 — 2026-10-22
+
+- Move published tables, the manifest, catalog, dictionary and checksums under `data/release/`. Every table is byte-identical to v3.0. Consumers must update their paths.
+- Make `make data` work from a clean clone. The 806 parsed inputs and cited source documents it reads, previously only in local working copies, are committed at their registered paths; `.gitattributes` keeps their bytes exact. About 62,000 SEC portal captures that the office provenance re-hashes stay in the `source-evidence-2026-09-19` release; their resolutions are recorded in `data/catalogs/archived_source_resolutions.jsonl.gz`, and `make fetch-sources` restores the bytes.
+- Remove 39 files nothing reads or cites (discovery-phase crawl inventories, publication receipts, superseded font profiles, unused transliteration lists), the 70 Stata files duplicated inside `data/raw/2007/Transliterated.zip`, and `STATUS.md`. Research and evidence notes move to `docs/`.
+
 ## v3.0 — 2026-10-01
 
 - Organize published tables by election: `data/<year>/<office>_<record kind>.parquet` replaces `data/release/gp/` and `data/release/offices/`. Multi-year office tables are split on `election_year`; every split table reassembles exactly to its v2.0 predecessor. Samiti heads and deputies elected in 2006 sit with the 2005 election; Ballia's 1995–2021 reservation history is split across its cycles.

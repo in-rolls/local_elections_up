@@ -4,7 +4,7 @@ Election results, candidates, and seat-reservation observations for Uttar Prades
 
 ## Find the data
 
-Each election has its own folder, `data/<year>/`; products built across elections are in `data/panels/`. Start with the **[data catalog](data/CATALOG.md)**. It lists every published table, its row count, election years, row unit, and validation status. The **[data dictionary](data/DICTIONARY.md)** lists columns and types; the **[data guide](data/README.md)** explains the layout, identifiers, reservations, provenance, and linkage.
+Published tables are in `data/release/`: each election has its own folder, `data/release/<year>/`, and products built across elections are in `data/release/panels/`. Start with the **[data catalog](data/release/CATALOG.md)**. It lists every published table, its row count, election years, row unit, and validation status. The **[data dictionary](data/release/DICTIONARY.md)** lists columns and types; the **[data guide](data/README.md)** explains the layout, identifiers, reservations, provenance, and linkage.
 
 Read these Parquet files directly. The inventory is generated from the release
 manifest by `make data-summary`. Counts describe source records, not necessarily
@@ -14,88 +14,88 @@ unique seats; provisional office observations can overlap.
 
 | File | Rows | Each row represents |
 | --- | ---: | --- |
-| [1995/panchayat_samiti_head_seat_reservation.parquet](data/1995/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
-| [1995/zilla_parishad_member_seat_reservation.parquet](data/1995/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
-| [2000/panchayat_samiti_head_seat_reservation.parquet](data/2000/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
-| [2000/zilla_parishad_member_seat_reservation.parquet](data/2000/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
-| [2005/gram_panchayat_head_declared_winner.parquet](data/2005/gram_panchayat_head_declared_winner.parquet) | 51,872 | one source observation; sources may overlap |
-| [2005/gram_panchayat_head_winner_list.parquet](data/2005/gram_panchayat_head_winner_list.parquet) | 51,872 | one winner-list source record |
-| [2005/panchayat_samiti_head_elected_official.parquet](data/2005/panchayat_samiti_head_elected_official.parquet) | 820 | one source observation; sources may overlap |
-| [2005/panchayat_samiti_head_seat_reservation.parquet](data/2005/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
-| [2005/panchayat_samiti_junior_deputy_elected_official.parquet](data/2005/panchayat_samiti_junior_deputy_elected_official.parquet) | 819 | one source observation; sources may overlap |
-| [2005/panchayat_samiti_member_reported_official.parquet](data/2005/panchayat_samiti_member_reported_official.parquet) | 64,277 | one source observation; sources may overlap |
-| [2005/panchayat_samiti_senior_deputy_elected_official.parquet](data/2005/panchayat_samiti_senior_deputy_elected_official.parquet) | 820 | one source observation; sources may overlap |
-| [2005/zilla_parishad_head_elected_official.parquet](data/2005/zilla_parishad_head_elected_official.parquet) | 70 | one source observation; sources may overlap |
-| [2005/zilla_parishad_member_elected_official.parquet](data/2005/zilla_parishad_member_elected_official.parquet) | 2,561 | one source observation; sources may overlap |
-| [2005/zilla_parishad_member_seat_reservation.parquet](data/2005/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
-| [2006/municipal_corporation_mayor_candidate_record.parquet](data/2006/municipal_corporation_mayor_candidate_record.parquet) | 145 | one source observation; sources may overlap |
-| [2006/municipal_corporation_ward_member_candidate_record.parquet](data/2006/municipal_corporation_ward_member_candidate_record.parquet) | 8,010 | one source observation; sources may overlap |
-| [2006/municipal_council_chair_candidate_record.parquet](data/2006/municipal_council_chair_candidate_record.parquet) | 1,619 | one source observation; sources may overlap |
-| [2006/municipal_council_ward_member_candidate_record.parquet](data/2006/municipal_council_ward_member_candidate_record.parquet) | 22,952 | one source observation; sources may overlap |
-| [2006/nagar_panchayat_chair_candidate_record.parquet](data/2006/nagar_panchayat_chair_candidate_record.parquet) | 3,099 | one source observation; sources may overlap |
-| [2006/nagar_panchayat_ward_member_candidate_record.parquet](data/2006/nagar_panchayat_ward_member_candidate_record.parquet) | 17,714 | one source observation; sources may overlap |
-| [2010/gram_panchayat_head_declared_winner.parquet](data/2010/gram_panchayat_head_declared_winner.parquet) | 51,861 | one source observation; sources may overlap |
-| [2010/gram_panchayat_head_winner_list.parquet](data/2010/gram_panchayat_head_winner_list.parquet) | 51,861 | one winner-list source record |
-| [2010/panchayat_samiti_head_reported_official.parquet](data/2010/panchayat_samiti_head_reported_official.parquet) | 821 | one source observation; sources may overlap |
-| [2010/panchayat_samiti_head_seat_reservation.parquet](data/2010/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
-| [2010/panchayat_samiti_member_reported_official.parquet](data/2010/panchayat_samiti_member_reported_official.parquet) | 63,321 | one source observation; sources may overlap |
-| [2010/panchayat_samiti_member_source_status_notice.parquet](data/2010/panchayat_samiti_member_source_status_notice.parquet) | 12 | one source observation; sources may overlap |
-| [2010/zilla_parishad_head_reported_official.parquet](data/2010/zilla_parishad_head_reported_official.parquet) | 72 | one source observation; sources may overlap |
-| [2010/zilla_parishad_member_reported_official.parquet](data/2010/zilla_parishad_member_reported_official.parquet) | 2,624 | one source observation; sources may overlap |
-| [2010/zilla_parishad_member_seat_reservation.parquet](data/2010/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
-| [2012/municipal_corporation_mayor_declared_winner.parquet](data/2012/municipal_corporation_mayor_declared_winner.parquet) | 12 | one source observation; sources may overlap |
-| [2012/municipal_corporation_mayor_seat_reservation.parquet](data/2012/municipal_corporation_mayor_seat_reservation.parquet) | 13 | one source observation; sources may overlap |
-| [2012/municipal_corporation_ward_member_declared_winner.parquet](data/2012/municipal_corporation_ward_member_declared_winner.parquet) | 980 | one source observation; sources may overlap |
-| [2012/municipal_corporation_ward_member_seat_reservation.parquet](data/2012/municipal_corporation_ward_member_seat_reservation.parquet) | 1,040 | one source observation; sources may overlap |
-| [2012/municipal_council_chair_declared_winner.parquet](data/2012/municipal_council_chair_declared_winner.parquet) | 194 | one source observation; sources may overlap |
-| [2012/municipal_council_chair_seat_reservation.parquet](data/2012/municipal_council_chair_seat_reservation.parquet) | 194 | one source observation; sources may overlap |
-| [2012/municipal_council_ward_member_declared_winner.parquet](data/2012/municipal_council_ward_member_declared_winner.parquet) | 5,097 | one source observation; sources may overlap |
-| [2012/municipal_council_ward_member_seat_reservation.parquet](data/2012/municipal_council_ward_member_seat_reservation.parquet) | 4,779 | one source observation; sources may overlap |
-| [2012/nagar_panchayat_chair_declared_winner.parquet](data/2012/nagar_panchayat_chair_declared_winner.parquet) | 423 | one source observation; sources may overlap |
-| [2012/nagar_panchayat_chair_seat_reservation.parquet](data/2012/nagar_panchayat_chair_seat_reservation.parquet) | 423 | one source observation; sources may overlap |
-| [2012/nagar_panchayat_ward_member_declared_winner.parquet](data/2012/nagar_panchayat_ward_member_declared_winner.parquet) | 5,158 | one source observation; sources may overlap |
-| [2012/nagar_panchayat_ward_member_seat_reservation.parquet](data/2012/nagar_panchayat_ward_member_seat_reservation.parquet) | 4,958 | one source observation; sources may overlap |
-| [2015/gram_panchayat_head_declared_winner.parquet](data/2015/gram_panchayat_head_declared_winner.parquet) | 59,019 | one source observation; sources may overlap |
-| [2015/gram_panchayat_head_seat_reservation.parquet](data/2015/gram_panchayat_head_seat_reservation.parquet) | 59,021 | one source observation; sources may overlap |
-| [2015/gram_panchayat_head_winner_list.parquet](data/2015/gram_panchayat_head_winner_list.parquet) | 59,019 | one winner-list source record |
-| [2015/gram_panchayat_member_seat_reservation.parquet](data/2015/gram_panchayat_member_seat_reservation.parquet) | 743,685 | one source observation; sources may overlap |
-| [2015/panchayat_samiti_head_declared_winner.parquet](data/2015/panchayat_samiti_head_declared_winner.parquet) | 816 | one source observation; sources may overlap |
-| [2015/panchayat_samiti_head_seat_reservation.parquet](data/2015/panchayat_samiti_head_seat_reservation.parquet) | 838 | one source observation; sources may overlap |
-| [2015/panchayat_samiti_member_declared_winner.parquet](data/2015/panchayat_samiti_member_declared_winner.parquet) | 77,743 | one source observation; sources may overlap |
-| [2015/panchayat_samiti_member_seat_reservation.parquet](data/2015/panchayat_samiti_member_seat_reservation.parquet) | 79,229 | one source observation; sources may overlap |
-| [2015/zilla_parishad_head_declared_winner.parquet](data/2015/zilla_parishad_head_declared_winner.parquet) | 74 | one source observation; sources may overlap |
-| [2015/zilla_parishad_head_seat_reservation.parquet](data/2015/zilla_parishad_head_seat_reservation.parquet) | 75 | one source observation; sources may overlap |
-| [2015/zilla_parishad_member_declared_winner.parquet](data/2015/zilla_parishad_member_declared_winner.parquet) | 3,121 | one source observation; sources may overlap |
-| [2015/zilla_parishad_member_seat_reservation.parquet](data/2015/zilla_parishad_member_seat_reservation.parquet) | 3,179 | one source observation; sources may overlap |
-| [2017/municipal_corporation_mayor_declared_winner.parquet](data/2017/municipal_corporation_mayor_declared_winner.parquet) | 16 | one source observation; sources may overlap |
-| [2017/municipal_corporation_ward_member_declared_winner.parquet](data/2017/municipal_corporation_ward_member_declared_winner.parquet) | 1,300 | one source observation; sources may overlap |
-| [2017/municipal_council_chair_declared_winner.parquet](data/2017/municipal_council_chair_declared_winner.parquet) | 198 | one source observation; sources may overlap |
-| [2017/municipal_council_ward_member_declared_winner.parquet](data/2017/municipal_council_ward_member_declared_winner.parquet) | 5,261 | one source observation; sources may overlap |
-| [2017/nagar_panchayat_chair_declared_winner.parquet](data/2017/nagar_panchayat_chair_declared_winner.parquet) | 438 | one source observation; sources may overlap |
-| [2017/nagar_panchayat_ward_member_declared_winner.parquet](data/2017/nagar_panchayat_ward_member_declared_winner.parquet) | 5,434 | one source observation; sources may overlap |
-| [2021/gram_panchayat_head_candidate_record.parquet](data/2021/gram_panchayat_head_candidate_record.parquet) | 373,096 | one candidate |
-| [2021/gram_panchayat_head_declared_winner.parquet](data/2021/gram_panchayat_head_declared_winner.parquet) | 49,773 | one source observation; sources may overlap |
-| [2021/gram_panchayat_head_seat_reservation.parquet](data/2021/gram_panchayat_head_seat_reservation.parquet) | 405 | one source observation; sources may overlap |
-| [2021/panchayat_samiti_head_seat_reservation.parquet](data/2021/panchayat_samiti_head_seat_reservation.parquet) | 27 | one source observation; sources may overlap |
-| [2021/panchayat_samiti_member_seat_reservation.parquet](data/2021/panchayat_samiti_member_seat_reservation.parquet) | 1,764 | one source observation; sources may overlap |
-| [2021/zilla_parishad_member_seat_reservation.parquet](data/2021/zilla_parishad_member_seat_reservation.parquet) | 92 | one source observation; sources may overlap |
-| [2023/municipal_corporation_mayor_seat_reservation.parquet](data/2023/municipal_corporation_mayor_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
-| [2023/municipal_corporation_ward_member_seat_reservation.parquet](data/2023/municipal_corporation_ward_member_seat_reservation.parquet) | 1,420 | one source observation; sources may overlap |
-| [2023/municipal_council_chair_seat_reservation.parquet](data/2023/municipal_council_chair_seat_reservation.parquet) | 200 | one source observation; sources may overlap |
-| [2023/municipal_council_ward_member_seat_reservation.parquet](data/2023/municipal_council_ward_member_seat_reservation.parquet) | 5,352 | one source observation; sources may overlap |
-| [2023/nagar_panchayat_chair_seat_reservation.parquet](data/2023/nagar_panchayat_chair_seat_reservation.parquet) | 544 | one source observation; sources may overlap |
-| [2023/nagar_panchayat_ward_member_seat_reservation.parquet](data/2023/nagar_panchayat_ward_member_seat_reservation.parquet) | 7,177 | one source observation; sources may overlap |
-| [panels/gp_adjacent_links.parquet](data/panels/gp_adjacent_links.parquet) | 128,687 | one accepted adjacent-wave link |
-| [panels/gp_four_election_links.parquet](data/panels/gp_four_election_links.parquet) | 29,734 | one linked four-election history |
-| [panels/gp_head_election_records.parquet](data/panels/gp_head_election_records.parquet) | 212,525 | one winner-list or winner-marked record |
-| [panels/gp_lgd_bridge.parquet](data/panels/gp_lgd_bridge.parquet) | 157,186 | one historical panel row projected to the LGD vintage |
-| [panels/gp_link_candidates.parquet](data/panels/gp_link_candidates.parquet) | 129,752 | one assessed adjacent-wave linkage candidate |
-| [panels/gp_panel_2005_2010.parquet](data/panels/gp_panel_2005_2010.parquet) | 42,622 | one linked source-record pair or four-election history |
-| [panels/gp_panel_2005_2010_2015_2021.parquet](data/panels/gp_panel_2005_2010_2015_2021.parquet) | 29,734 | one linked source-record pair or four-election history |
-| [panels/gp_panel_2010_2015.parquet](data/panels/gp_panel_2010_2015.parquet) | 39,551 | one linked source-record pair or four-election history |
-| [panels/gp_panel_2015_2021.parquet](data/panels/gp_panel_2015_2021.parquet) | 46,514 | one linked source-record pair or four-election history |
-| [panels/weaver_20250302_wide.parquet](data/panels/weaver_20250302_wide.parquet) | 105,527 | one source GP identifier, wide across waves |
-| [panels/weaver_20250317_wide.parquet](data/panels/weaver_20250317_wide.parquet) | 61,338 | one source GP identifier, wide across waves |
+| [1995/panchayat_samiti_head_seat_reservation.parquet](data/release/1995/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
+| [1995/zilla_parishad_member_seat_reservation.parquet](data/release/1995/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
+| [2000/panchayat_samiti_head_seat_reservation.parquet](data/release/2000/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
+| [2000/zilla_parishad_member_seat_reservation.parquet](data/release/2000/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
+| [2005/gram_panchayat_head_declared_winner.parquet](data/release/2005/gram_panchayat_head_declared_winner.parquet) | 51,872 | one source observation; sources may overlap |
+| [2005/gram_panchayat_head_winner_list.parquet](data/release/2005/gram_panchayat_head_winner_list.parquet) | 51,872 | one winner-list source record |
+| [2005/panchayat_samiti_head_elected_official.parquet](data/release/2005/panchayat_samiti_head_elected_official.parquet) | 820 | one source observation; sources may overlap |
+| [2005/panchayat_samiti_head_seat_reservation.parquet](data/release/2005/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
+| [2005/panchayat_samiti_junior_deputy_elected_official.parquet](data/release/2005/panchayat_samiti_junior_deputy_elected_official.parquet) | 819 | one source observation; sources may overlap |
+| [2005/panchayat_samiti_member_reported_official.parquet](data/release/2005/panchayat_samiti_member_reported_official.parquet) | 64,277 | one source observation; sources may overlap |
+| [2005/panchayat_samiti_senior_deputy_elected_official.parquet](data/release/2005/panchayat_samiti_senior_deputy_elected_official.parquet) | 820 | one source observation; sources may overlap |
+| [2005/zilla_parishad_head_elected_official.parquet](data/release/2005/zilla_parishad_head_elected_official.parquet) | 70 | one source observation; sources may overlap |
+| [2005/zilla_parishad_member_elected_official.parquet](data/release/2005/zilla_parishad_member_elected_official.parquet) | 2,561 | one source observation; sources may overlap |
+| [2005/zilla_parishad_member_seat_reservation.parquet](data/release/2005/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
+| [2006/municipal_corporation_mayor_candidate_record.parquet](data/release/2006/municipal_corporation_mayor_candidate_record.parquet) | 145 | one source observation; sources may overlap |
+| [2006/municipal_corporation_ward_member_candidate_record.parquet](data/release/2006/municipal_corporation_ward_member_candidate_record.parquet) | 8,010 | one source observation; sources may overlap |
+| [2006/municipal_council_chair_candidate_record.parquet](data/release/2006/municipal_council_chair_candidate_record.parquet) | 1,619 | one source observation; sources may overlap |
+| [2006/municipal_council_ward_member_candidate_record.parquet](data/release/2006/municipal_council_ward_member_candidate_record.parquet) | 22,952 | one source observation; sources may overlap |
+| [2006/nagar_panchayat_chair_candidate_record.parquet](data/release/2006/nagar_panchayat_chair_candidate_record.parquet) | 3,099 | one source observation; sources may overlap |
+| [2006/nagar_panchayat_ward_member_candidate_record.parquet](data/release/2006/nagar_panchayat_ward_member_candidate_record.parquet) | 17,714 | one source observation; sources may overlap |
+| [2010/gram_panchayat_head_declared_winner.parquet](data/release/2010/gram_panchayat_head_declared_winner.parquet) | 51,861 | one source observation; sources may overlap |
+| [2010/gram_panchayat_head_winner_list.parquet](data/release/2010/gram_panchayat_head_winner_list.parquet) | 51,861 | one winner-list source record |
+| [2010/panchayat_samiti_head_reported_official.parquet](data/release/2010/panchayat_samiti_head_reported_official.parquet) | 821 | one source observation; sources may overlap |
+| [2010/panchayat_samiti_head_seat_reservation.parquet](data/release/2010/panchayat_samiti_head_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
+| [2010/panchayat_samiti_member_reported_official.parquet](data/release/2010/panchayat_samiti_member_reported_official.parquet) | 63,321 | one source observation; sources may overlap |
+| [2010/panchayat_samiti_member_source_status_notice.parquet](data/release/2010/panchayat_samiti_member_source_status_notice.parquet) | 12 | one source observation; sources may overlap |
+| [2010/zilla_parishad_head_reported_official.parquet](data/release/2010/zilla_parishad_head_reported_official.parquet) | 72 | one source observation; sources may overlap |
+| [2010/zilla_parishad_member_reported_official.parquet](data/release/2010/zilla_parishad_member_reported_official.parquet) | 2,624 | one source observation; sources may overlap |
+| [2010/zilla_parishad_member_seat_reservation.parquet](data/release/2010/zilla_parishad_member_seat_reservation.parquet) | 58 | one source observation; sources may overlap |
+| [2012/municipal_corporation_mayor_declared_winner.parquet](data/release/2012/municipal_corporation_mayor_declared_winner.parquet) | 12 | one source observation; sources may overlap |
+| [2012/municipal_corporation_mayor_seat_reservation.parquet](data/release/2012/municipal_corporation_mayor_seat_reservation.parquet) | 13 | one source observation; sources may overlap |
+| [2012/municipal_corporation_ward_member_declared_winner.parquet](data/release/2012/municipal_corporation_ward_member_declared_winner.parquet) | 980 | one source observation; sources may overlap |
+| [2012/municipal_corporation_ward_member_seat_reservation.parquet](data/release/2012/municipal_corporation_ward_member_seat_reservation.parquet) | 1,040 | one source observation; sources may overlap |
+| [2012/municipal_council_chair_declared_winner.parquet](data/release/2012/municipal_council_chair_declared_winner.parquet) | 194 | one source observation; sources may overlap |
+| [2012/municipal_council_chair_seat_reservation.parquet](data/release/2012/municipal_council_chair_seat_reservation.parquet) | 194 | one source observation; sources may overlap |
+| [2012/municipal_council_ward_member_declared_winner.parquet](data/release/2012/municipal_council_ward_member_declared_winner.parquet) | 5,097 | one source observation; sources may overlap |
+| [2012/municipal_council_ward_member_seat_reservation.parquet](data/release/2012/municipal_council_ward_member_seat_reservation.parquet) | 4,779 | one source observation; sources may overlap |
+| [2012/nagar_panchayat_chair_declared_winner.parquet](data/release/2012/nagar_panchayat_chair_declared_winner.parquet) | 423 | one source observation; sources may overlap |
+| [2012/nagar_panchayat_chair_seat_reservation.parquet](data/release/2012/nagar_panchayat_chair_seat_reservation.parquet) | 423 | one source observation; sources may overlap |
+| [2012/nagar_panchayat_ward_member_declared_winner.parquet](data/release/2012/nagar_panchayat_ward_member_declared_winner.parquet) | 5,158 | one source observation; sources may overlap |
+| [2012/nagar_panchayat_ward_member_seat_reservation.parquet](data/release/2012/nagar_panchayat_ward_member_seat_reservation.parquet) | 4,958 | one source observation; sources may overlap |
+| [2015/gram_panchayat_head_declared_winner.parquet](data/release/2015/gram_panchayat_head_declared_winner.parquet) | 59,019 | one source observation; sources may overlap |
+| [2015/gram_panchayat_head_seat_reservation.parquet](data/release/2015/gram_panchayat_head_seat_reservation.parquet) | 59,021 | one source observation; sources may overlap |
+| [2015/gram_panchayat_head_winner_list.parquet](data/release/2015/gram_panchayat_head_winner_list.parquet) | 59,019 | one winner-list source record |
+| [2015/gram_panchayat_member_seat_reservation.parquet](data/release/2015/gram_panchayat_member_seat_reservation.parquet) | 743,685 | one source observation; sources may overlap |
+| [2015/panchayat_samiti_head_declared_winner.parquet](data/release/2015/panchayat_samiti_head_declared_winner.parquet) | 816 | one source observation; sources may overlap |
+| [2015/panchayat_samiti_head_seat_reservation.parquet](data/release/2015/panchayat_samiti_head_seat_reservation.parquet) | 838 | one source observation; sources may overlap |
+| [2015/panchayat_samiti_member_declared_winner.parquet](data/release/2015/panchayat_samiti_member_declared_winner.parquet) | 77,743 | one source observation; sources may overlap |
+| [2015/panchayat_samiti_member_seat_reservation.parquet](data/release/2015/panchayat_samiti_member_seat_reservation.parquet) | 79,229 | one source observation; sources may overlap |
+| [2015/zilla_parishad_head_declared_winner.parquet](data/release/2015/zilla_parishad_head_declared_winner.parquet) | 74 | one source observation; sources may overlap |
+| [2015/zilla_parishad_head_seat_reservation.parquet](data/release/2015/zilla_parishad_head_seat_reservation.parquet) | 75 | one source observation; sources may overlap |
+| [2015/zilla_parishad_member_declared_winner.parquet](data/release/2015/zilla_parishad_member_declared_winner.parquet) | 3,121 | one source observation; sources may overlap |
+| [2015/zilla_parishad_member_seat_reservation.parquet](data/release/2015/zilla_parishad_member_seat_reservation.parquet) | 3,179 | one source observation; sources may overlap |
+| [2017/municipal_corporation_mayor_declared_winner.parquet](data/release/2017/municipal_corporation_mayor_declared_winner.parquet) | 16 | one source observation; sources may overlap |
+| [2017/municipal_corporation_ward_member_declared_winner.parquet](data/release/2017/municipal_corporation_ward_member_declared_winner.parquet) | 1,300 | one source observation; sources may overlap |
+| [2017/municipal_council_chair_declared_winner.parquet](data/release/2017/municipal_council_chair_declared_winner.parquet) | 198 | one source observation; sources may overlap |
+| [2017/municipal_council_ward_member_declared_winner.parquet](data/release/2017/municipal_council_ward_member_declared_winner.parquet) | 5,261 | one source observation; sources may overlap |
+| [2017/nagar_panchayat_chair_declared_winner.parquet](data/release/2017/nagar_panchayat_chair_declared_winner.parquet) | 438 | one source observation; sources may overlap |
+| [2017/nagar_panchayat_ward_member_declared_winner.parquet](data/release/2017/nagar_panchayat_ward_member_declared_winner.parquet) | 5,434 | one source observation; sources may overlap |
+| [2021/gram_panchayat_head_candidate_record.parquet](data/release/2021/gram_panchayat_head_candidate_record.parquet) | 373,096 | one candidate |
+| [2021/gram_panchayat_head_declared_winner.parquet](data/release/2021/gram_panchayat_head_declared_winner.parquet) | 49,773 | one source observation; sources may overlap |
+| [2021/gram_panchayat_head_seat_reservation.parquet](data/release/2021/gram_panchayat_head_seat_reservation.parquet) | 405 | one source observation; sources may overlap |
+| [2021/panchayat_samiti_head_seat_reservation.parquet](data/release/2021/panchayat_samiti_head_seat_reservation.parquet) | 27 | one source observation; sources may overlap |
+| [2021/panchayat_samiti_member_seat_reservation.parquet](data/release/2021/panchayat_samiti_member_seat_reservation.parquet) | 1,764 | one source observation; sources may overlap |
+| [2021/zilla_parishad_member_seat_reservation.parquet](data/release/2021/zilla_parishad_member_seat_reservation.parquet) | 92 | one source observation; sources may overlap |
+| [2023/municipal_corporation_mayor_seat_reservation.parquet](data/release/2023/municipal_corporation_mayor_seat_reservation.parquet) | 17 | one source observation; sources may overlap |
+| [2023/municipal_corporation_ward_member_seat_reservation.parquet](data/release/2023/municipal_corporation_ward_member_seat_reservation.parquet) | 1,420 | one source observation; sources may overlap |
+| [2023/municipal_council_chair_seat_reservation.parquet](data/release/2023/municipal_council_chair_seat_reservation.parquet) | 200 | one source observation; sources may overlap |
+| [2023/municipal_council_ward_member_seat_reservation.parquet](data/release/2023/municipal_council_ward_member_seat_reservation.parquet) | 5,352 | one source observation; sources may overlap |
+| [2023/nagar_panchayat_chair_seat_reservation.parquet](data/release/2023/nagar_panchayat_chair_seat_reservation.parquet) | 544 | one source observation; sources may overlap |
+| [2023/nagar_panchayat_ward_member_seat_reservation.parquet](data/release/2023/nagar_panchayat_ward_member_seat_reservation.parquet) | 7,177 | one source observation; sources may overlap |
+| [panels/gp_adjacent_links.parquet](data/release/panels/gp_adjacent_links.parquet) | 128,687 | one accepted adjacent-wave link |
+| [panels/gp_four_election_links.parquet](data/release/panels/gp_four_election_links.parquet) | 29,734 | one linked four-election history |
+| [panels/gp_head_election_records.parquet](data/release/panels/gp_head_election_records.parquet) | 212,525 | one winner-list or winner-marked record |
+| [panels/gp_lgd_bridge.parquet](data/release/panels/gp_lgd_bridge.parquet) | 157,186 | one historical panel row projected to the LGD vintage |
+| [panels/gp_link_candidates.parquet](data/release/panels/gp_link_candidates.parquet) | 129,752 | one assessed adjacent-wave linkage candidate |
+| [panels/gp_panel_2005_2010.parquet](data/release/panels/gp_panel_2005_2010.parquet) | 42,622 | one linked source-record pair or four-election history |
+| [panels/gp_panel_2005_2010_2015_2021.parquet](data/release/panels/gp_panel_2005_2010_2015_2021.parquet) | 29,734 | one linked source-record pair or four-election history |
+| [panels/gp_panel_2010_2015.parquet](data/release/panels/gp_panel_2010_2015.parquet) | 39,551 | one linked source-record pair or four-election history |
+| [panels/gp_panel_2015_2021.parquet](data/release/panels/gp_panel_2015_2021.parquet) | 46,514 | one linked source-record pair or four-election history |
+| [panels/weaver_20250302_wide.parquet](data/release/panels/weaver_20250302_wide.parquet) | 105,527 | one source GP identifier, wide across waves |
+| [panels/weaver_20250317_wide.parquet](data/release/panels/weaver_20250317_wide.parquet) | 61,338 | one source GP identifier, wide across waves |
 
 <!-- datasets:end -->
 
@@ -104,7 +104,7 @@ Download a tagged [GitHub release](https://github.com/in-rolls/local_elections_u
 ```python
 import pandas as pd
 
-records = pd.read_parquet("data/panels/gp_head_election_records.parquet")
+records = pd.read_parquet("data/release/panels/gp_head_election_records.parquet")
 print(records.groupby("election_year").size())
 review = records.loc[records["winner_markers_conflict"]]
 ```
@@ -152,7 +152,7 @@ make check
 
 `make data` rebuilds from saved, registered inputs. Source restoration is required for a fresh checkout that has no extraction cache; follow the [source-evidence instructions](data/catalogs/SOURCES.md). Release assembly makes no network or paid-model calls. The former notebooks and R code remain available at [the pre-migration commit](https://github.com/in-rolls/local_elections_up/tree/42fb6190469688fd558596460aef44282e37f6d2).
 
-`make check` lints the code and verifies published data, including source-record and panel relationships. `make winner-lists-2015` rebuilds the five-office 2015 intermediate exports; `make verify-2015` compares every retained field with its source CSV.
+`make data` rebuilds every published table from the committed inputs, and `make check` lints the code and verifies published data, including source-record and panel relationships. A clean clone needs nothing else. The office provenance re-hashes about 62,000 saved SEC portal captures when they are present; without them it uses the hashes recorded in `data/catalogs/archived_source_resolutions.jsonl.gz`. `make fetch-sources` restores the captures (about 3 GB) from the source-evidence release. `make winner-lists-2015` rebuilds the five-office 2015 intermediate exports; `make verify-2015` compares every retained field with its source CSV.
 
 `make enrich-gp` reconstructs all four enriched preparations from pinned CSVs and saved transliterations into `data/interim/gp_rebuilt/`. It compares every value and row position with the registered preparations, and writes an unresolved-transliteration list. It makes no API calls and does not replace registered inputs. The [enrichment registry](data/catalogs/gp_enrichment.json) records source hashes, transliteration precedence, and historical ordering exceptions.
 
@@ -161,15 +161,15 @@ The Kruti Dev decoder is included as readable Python source with [attribution](T
 
 ## Changes in this release
 
-v3 organizes the published tables by election: `data/<year>/` replaces `data/release/{gp,offices}/`, multi-year office tables are split by election, and cross-election products move to `data/panels/`. Every v2.0 table is preserved: copied byte for byte, or split by election and reassembling exactly. Raw source files move under `data/raw/<year>/`. Three Weaver panchayat names that ended or began with a stray byte (invalid UTF-8; six cells per preparation) now read cleanly. Consumers must update their paths; see [CHANGELOG.md](CHANGELOG.md).
+v3.1 moves the published tables under `data/release/` (`data/release/<year>/`, `data/release/panels/`) and makes the build reproducible from a clean clone: the parsed inputs it reads are now committed, and the SEC portal captures behind the office provenance are pinned by recorded hash, with their bytes in the `source-evidence-2026-09-19` release (`make fetch-sources`). Every table is byte-identical to v3.0. Consumers must update their paths; see [CHANGELOG.md](CHANGELOG.md).
 
 See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution](data/external/weaver/README.md) for external source terms.
 
 ## Research and historical geography
 
-[Research evidence](RESEARCH.md) describes the Etah and Sitapur reservation bundles and the SEC 2015–16 block-head printings. These retain unresolved source and identity flags.
+[Research evidence](docs/research.md) describes the Etah and Sitapur reservation bundles and the SEC 2015–16 block-head printings. These retain unresolved source and identity flags.
 
-The [historical LGD bridge](data/panels/gp_lgd_bridge.parquet) maps linked election records to the attributed LGD vintage. Read [its source and matching rules](data/external/lgd/README.md) before joining: multiple historical records can map to one later GP, and names do not prove unchanged boundaries. `make data-lgd` rebuilds it.
+The [historical LGD bridge](data/release/panels/gp_lgd_bridge.parquet) maps linked election records to the attributed LGD vintage. Read [its source and matching rules](data/external/lgd/README.md) before joining: multiple historical records can map to one later GP, and names do not prove unchanged boundaries. `make data-lgd` rebuilds it.
 
 <!-- adjacent:start -->
 
