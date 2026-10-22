@@ -1,0 +1,5342 @@
+{
+  "source_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
+  "input_sha256": "b10d78fac5dd6516f7208008a2a4a051c523a21f3b59bf8a97e4384482b9022f",
+  "reviewed_columns": [
+    3,
+    4
+  ],
+  "column_semantics": {
+    "3": "constituency name as printed",
+    "4": "description of constituent area as printed"
+  },
+  "image_archive": "images.tar.gz",
+  "image_archive_sha256": "7c255ac40b1182b546709971b3ef895b71ab7f4cd74bd1904f9ca7a2e445c75e",
+  "images": {
+    "ballia-names-batch5-1.png": "22c967de740d7ec14c8fc5c926f49165f25cdfb754a5375301d2a571877d98df",
+    "ballia-names-batch5-2.png": "4e53ff6bb87f394cf1c2475d779bfeb02d8c0473fba23901ebe7fbc6e5c13cb9",
+    "ballia-names-batch5-3.png": "4d1f8c08f919dd537efd34db2c748b2b28f49803666e3272f3ecbd9b26521815",
+    "ballia-names-batch5-4.png": "448857d451aba643389cb9d97b4daf9eaf93b659e3812e7bc4d39458b2623e0f",
+    "ballia-names-batch5-5.png": "ec7d1b6ff4b86ef395328cfe1b2dee4ed3b44c546d8e5f2f1606d7ee61701ec4",
+    "ballia-names-batch5-6.png": "bd8b28eea8e1302e7994e8b1981cddfbb32af92bc008e870d1ee68720f51438a",
+    "ballia-names-batch5-7.png": "82c58d95d445549320e592daf25bc9a97a559470ee08aaececd55cd205ebb3ab",
+    "ballia-names-batch5-8.png": "1ac946df4c03da707e702cae12e960f613caf7e335ad27ca8a4311dcbdad8cf6",
+    "ballia-names-batch5-9.png": "f6cbfdd7b17f56af76f4ff939bad0fadefe09debb4a5c709ffdd3d0286d307d9",
+    "ballia-names-batch5-10.png": "07e8e2f6e1b9183373981d28286e7a2a4da9a491320bd8b4dd3cb31b3632d9c6",
+    "ballia-names-batch5-11.png": "afc62dc10e7cd92e8ccb4cf251c797b9c57720ff11e39e226c7f70a973929e67",
+    "ballia-names-batch5-12.png": "b98d128fa7d5322c29ff61ebcc5e6828f35ce99a8012b382c4e2f436be9ccfb1",
+    "ballia-names-batch5-13.png": "302d5a5e4369b06caaace8606854a2428866347e16fe3e0ba02339565b268d5f",
+    "ballia-names-batch5-hires-1.png": "c22abf1156fdbd44062b4809bde114409b940629470b4c8bbcdec9513cc09502",
+    "ballia-names-batch5-hires-2.png": "f41a6ad7e4d5ad1e9ff18f1cb9cef2f7f7086872b7c57e5fabdf7ec55652ce97",
+    "ballia-names-batch5-hires-3.png": "84a53763636aa933660d8a74eede18dbf82a495d47f65ffa409b0dbdaa71fed0",
+    "ballia-names-batch5-hires-4.png": "2f7ed25849c1c7dd124f4d70ee49038fd6213ad8e6ccd0114776d852ae616014"
+  },
+  "rows": [
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "| पूर",
+        "column_04_value": "| वार्ड Wo- 08 से 08 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 08 से 08 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "| पूर",
+        "column_04_value": "| वार्ड Wo- 05 से 05 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 05 से 05 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "| पूर ह",
+        "column_04_value": "| वार्ड सं०-- 04 से 04 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 04 से 04 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "| जोगेसरा + सलेमपुर",
+        "column_04_value": ""
+      },
+      "observed": {
+        "column_03_value": "जोगेसरा + सलेमपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक + 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं0-- 07 से 099 तक"
+      },
+      "observed": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं0- 07 से 09 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "का",
+        "column_04_value": "वार्ड सं०-- 06 से 06 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 06 से 06 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "चड़वाँ बरवाँ",
+        "column_04_value": "वार्ड to- 6 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "चड़वाँ बरवाँ",
+        "column_04_value": "वार्ड सं0- 6 से 10 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड Wo- 4 से 03 तक"
+      },
+      "observed": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं0- 1 से 03 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड Wo- 07 से 07 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 07 से 07 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं)- 04 से 06 तक"
+      },
+      "observed": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं0- 04 से 06 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 03 से 03 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 03 से 03 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "गढ़मलपुर",
+        "column_04_value": "वार्ड सं0- 09 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "गढ़मलपुर",
+        "column_04_value": "वार्ड सं0- 09 से 15 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "wee |",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "भुड़ाडीह",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "Uae",
+        "column_04_value": "वार्ड सं)- 4 से 06 तक"
+      },
+      "observed": {
+        "column_03_value": "पन्दह",
+        "column_04_value": "वार्ड सं0- 1 से 06 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-hires-3.png",
+      "source_crop_bbox": [
+        348,
+        2492,
+        1806,
+        2616
+      ],
+      "expected": {
+        "column_03_value": "मेउलीकनासपुर",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "source_row_ordinal": 15,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          3,
+          363,
+          1621,
+          2067
+        ],
+        "source_crop_png_sha256": "c3ecb53ba3b468c9b9d66ff73759a0507ceb546d0c06387ae8bb4bd456fe1eee",
+        "source_raster_gray_pixels_sha256": "915a78ee3b5903d048b964aba439041ac73a359c4205fe27e9977c52612153e0",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "मेउलीकनासपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं0- 07 से 099 तक"
+      },
+      "observed": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं0- 07 से 9 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं)- 4 से 03 तक"
+      },
+      "observed": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं0- 1 से 03 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं0- 40 से 42 तक"
+      },
+      "observed": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं0- 10 से 12 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "मासूमपुर",
+        "column_04_value": "वार्ड सं)- 4 से 7 तक"
+      },
+      "observed": {
+        "column_03_value": "मासूमपुर",
+        "column_04_value": "वार्ड सं0- 1 से 7 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "खड़सरा",
+        "column_04_value": "वार्ड Wo- 05 से 07 तक"
+      },
+      "observed": {
+        "column_03_value": "खड़सरा",
+        "column_04_value": "वार्ड सं0- 05 से 07 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड Wo- 40 से 42 तक"
+      },
+      "observed": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं0- 10 से 12 तक"
+      }
+    },
+    {
+      "source_page": 25,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-1.png",
+      "source_crop_bbox": [
+        245,
+        454,
+        902,
+        1683
+      ],
+      "expected": {
+        "column_03_value": "खड़सरा |",
+        "column_04_value": "वार्ड सं0- 08 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "खड़सरा",
+        "column_04_value": "वार्ड सं0- 08 से 11 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "| चड़वाँ बरवाँ",
+        "column_04_value": "| वार्ड सं0- 4 से 05 तक"
+      },
+      "observed": {
+        "column_03_value": "चड़वाँ बरवाँ",
+        "column_04_value": "वार्ड सं0- 1 से 05 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "| चड़वाँ aedt बरवाँ",
+        "column_04_value": "| वार्ड सं०- 44 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "चड़वाँ बरवाँ",
+        "column_04_value": "वार्ड सं0- 11 से 15 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "| सहुलाई _ 7",
+        "column_04_value": "वार्ड सं0- 42 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "सहुलाई",
+        "column_04_value": "वार्ड सं0- 12 से 15 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "| eRe",
+        "column_04_value": "वार्ड Go- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "हरिपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "CARRE",
+        "column_04_value": "वार्ड सं0- 8 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "मासूमपुर",
+        "column_04_value": "वार्ड सं0- 8 से 15 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "| एकईल",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "एकईल",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "खड़सरा ___",
+        "column_04_value": "वार्ड Wo- 42 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "खड़सरा",
+        "column_04_value": "वार्ड सं0- 12 से 15 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-hires-3.png",
+      "source_crop_bbox": [
+        350,
+        1660,
+        1808,
+        1782
+      ],
+      "expected": {
+        "column_03_value": "टड़वाँ",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "source_row_ordinal": 8,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          3,
+          362,
+          1621,
+          2063
+        ],
+        "source_crop_png_sha256": "bf91ca2a1b09028fe7f56425f62bc0a70f093479aa75149d99ec01fceeb2bd6c",
+        "source_raster_gray_pixels_sha256": "711e36dec530ce8756c7aedcfc4be06f76a4401a32c399ea69b11a01b2ad155d",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "टड़वाँ",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं०- 43 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं0- 13 से 15 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड Wo- 04 से 04 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 01 से 01 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "सरयाँ",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "सरयाँ",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "ननहुल",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "ननहुल",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड to- 40 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 10 से 10 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-hires-1.png",
+      "source_crop_bbox": [
+        350,
+        2306,
+        1808,
+        2430
+      ],
+      "expected": {
+        "column_03_value": "किकोढ़ा",
+        "column_04_value": "वार्ड Wo- 4 8 07 तक"
+      },
+      "source_row_ordinal": 14,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          3,
+          362,
+          1621,
+          2063
+        ],
+        "source_crop_png_sha256": "bf91ca2a1b09028fe7f56425f62bc0a70f093479aa75149d99ec01fceeb2bd6c",
+        "source_raster_gray_pixels_sha256": "711e36dec530ce8756c7aedcfc4be06f76a4401a32c399ea69b11a01b2ad155d",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "किकोढ़ा",
+        "column_04_value": "वार्ड सं0- 1 से 07 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "पूर .",
+        "column_04_value": "वार्ड सं0- 02 से 02 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 02 से 02 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-hires-1.png",
+      "source_crop_bbox": [
+        350,
+        2522,
+        1808,
+        2644
+      ],
+      "expected": {
+        "column_03_value": "wrist",
+        "column_04_value": "वार्ड सं)- 4 से 44 तक"
+      },
+      "source_row_ordinal": 16,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          3,
+          362,
+          1621,
+          2063
+        ],
+        "source_crop_png_sha256": "bf91ca2a1b09028fe7f56425f62bc0a70f093479aa75149d99ec01fceeb2bd6c",
+        "source_raster_gray_pixels_sha256": "711e36dec530ce8756c7aedcfc4be06f76a4401a32c399ea69b11a01b2ad155d",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "रक्साडैनिया",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "बनकटा कला",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "बनकटा कलाँ",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड Wo- 44 से 42 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 11 से 12 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "गौरामदनपुरा |",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "गौरामदनपुरा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "जेठवार |",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "जेठवार",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "पकड़ी |",
+        "column_04_value": "वार्ड Wo- 04 से 06 तक"
+      },
+      "observed": {
+        "column_03_value": "पकड़ी",
+        "column_04_value": "वार्ड सं0- 04 से 06 तक"
+      }
+    },
+    {
+      "source_page": 26,
+      "table_index": 0,
+      "geometry_row_index": 25,
+      "source_image": "ballia-names-batch5-2.png",
+      "source_crop_bbox": [
+        245,
+        452,
+        903,
+        1680
+      ],
+      "expected": {
+        "column_03_value": "गौरी + प्रसादपुर |",
+        "column_04_value": ""
+      },
+      "observed": {
+        "column_03_value": "गौरी + प्रसादपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक + 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "| सहुलाई",
+        "column_04_value": "| वार्ड Wo- 08 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "सहुलाई",
+        "column_04_value": "वार्ड सं0- 08 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "| बड़सरी",
+        "column_04_value": "| वार्ड Ho 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "बड़सरी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "| eat",
+        "column_04_value": ". वार्ड सं०- 43 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "खेजुरी",
+        "column_04_value": "वार्ड सं0- 13 से 15 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "_ लखनापार",
+        "column_04_value": "वार्ड सं)- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "लखनापार",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "wo",
+        "column_04_value": "वार्ड सं)- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "मुड़ेरा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "जनुआन",
+        "column_04_value": "वार्ड सं)- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "जनुआन",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "चकबहाउद्दीन",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "चकबहाउद्दीन",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-hires-1.png",
+      "source_crop_bbox": [
+        346,
+        1766,
+        1806,
+        1892
+      ],
+      "expected": {
+        "column_03_value": "किकोढ़ा",
+        "column_04_value": "वार्ड Wo- 08 से 45 तक"
+      },
+      "source_row_ordinal": 9,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          2,
+          364,
+          1619,
+          2052
+        ],
+        "source_crop_png_sha256": "df89c2e116a678751013e50c39fa417cc308ad171f5775b770b51fb7bb776e6e",
+        "source_raster_gray_pixels_sha256": "1dc9e9ccaffd2b8bd5d17d04ad4d893ce9a0f3deab99886319bae6ea04f9fcdf",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "किकोढ़ा",
+        "column_04_value": "वार्ड सं0- 08 से 15 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "मुजहीं",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "मुजही",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "पहराजपुर",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "पहराजपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "अखैनी",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "अखैनी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "उकछी + मिश्रौली",
+        "column_04_value": ""
+      },
+      "observed": {
+        "column_03_value": "उकछी + मिश्रौली",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक + 01 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-hires-4.png",
+      "source_crop_bbox": [
+        346,
+        2386,
+        1806,
+        2510
+      ],
+      "expected": {
+        "column_03_value": "बाछापार",
+        "column_04_value": "वार्ड सं0- 9 से 45 तक"
+      },
+      "source_row_ordinal": 14,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          2,
+          364,
+          1619,
+          2052
+        ],
+        "source_crop_png_sha256": "df89c2e116a678751013e50c39fa417cc308ad171f5775b770b51fb7bb776e6e",
+        "source_raster_gray_pixels_sha256": "1dc9e9ccaffd2b8bd5d17d04ad4d893ce9a0f3deab99886319bae6ea04f9fcdf",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "बाछापार",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "बाछापार",
+        "column_04_value": "वार्ड सं)- 4 से 08 तक"
+      },
+      "observed": {
+        "column_03_value": "बाछापार",
+        "column_04_value": "वार्ड सं0- 1 से 08 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "सहुलाई",
+        "column_04_value": "वार्ड सं0- 04 से 07 तक"
+      },
+      "observed": {
+        "column_03_value": "सहुलाई",
+        "column_04_value": "वार्ड सं0- 04 से 07 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "विषहर + कल्यानडेहरा",
+        "column_04_value": ""
+      },
+      "observed": {
+        "column_03_value": "विषहर + कल्यानडेहरा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक + 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "सहुलाई",
+        "column_04_value": "वार्ड सं0- 4 से 03 तक"
+      },
+      "observed": {
+        "column_03_value": "सहुलाई",
+        "column_04_value": "वार्ड सं0- 1 से 03 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "खड़सरा",
+        "column_04_value": "वार्ड सं0- 4 से 04 तक"
+      },
+      "observed": {
+        "column_03_value": "खड़सरा",
+        "column_04_value": "वार्ड सं0- 1 से 04 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-hires-2.png",
+      "source_crop_bbox": [
+        346,
+        3108,
+        1806,
+        3230
+      ],
+      "expected": {
+        "column_03_value": "मगुआपार उर्फ डकीनगंज",
+        "column_04_value": "वार्ड Wo 4 से 44 तक"
+      },
+      "source_row_ordinal": 20,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          2,
+          364,
+          1619,
+          2052
+        ],
+        "source_crop_png_sha256": "df89c2e116a678751013e50c39fa417cc308ad171f5775b770b51fb7bb776e6e",
+        "source_raster_gray_pixels_sha256": "1dc9e9ccaffd2b8bd5d17d04ad4d893ce9a0f3deab99886319bae6ea04f9fcdf",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "मगुआपार उर्फ डकीनगंज",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-3.png",
+      "source_crop_bbox": [
+        245,
+        453,
+        902,
+        1668
+      ],
+      "expected": {
+        "column_03_value": "गढ़मलपुर",
+        "column_04_value": "वार्ड सं0- 4 से 08 तक"
+      },
+      "observed": {
+        "column_03_value": "गढ़मलपुर",
+        "column_04_value": "वार्ड सं0- 1 से 08 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "Oras",
+        "column_04_value": "वार्ड Wo- 07 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "पन्दह",
+        "column_04_value": "वार्ड सं0- 07 से 11 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "कड़सर",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "कड़सर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "_®",
+        "column_04_value": "वार्ड Wo- 09 से 09 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 09 से 09 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "सोनाडीह",
+        "column_04_value": "वार्ड सं)- 4 80 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनाडीह",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "Uae",
+        "column_04_value": "वार्ड सं0- 42 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "पन्दह",
+        "column_04_value": "वार्ड सं0- 12 से 15 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 43 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "पूर",
+        "column_04_value": "वार्ड सं0- 13 से 15 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "फिरोजपुर",
+        "column_04_value": "वार्ड सं)- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "फिरोजपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "बहेरी",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "बहेरी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 28,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-4.png",
+      "source_crop_bbox": [
+        245,
+        451,
+        902,
+        943
+      ],
+      "expected": {
+        "column_03_value": "चकउसरैला",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "चकउसरेला",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "बहुआरा",
+        "column_04_value": "वार्ड Wo- 42 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "बहुआरा",
+        "column_04_value": "वार्ड सं0- 12 से 15 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "बहुआरा",
+        "column_04_value": "वार्ड. सं0- 8 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "बहुआरा",
+        "column_04_value": "वार्ड सं0- 8 से 11 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "कोड़हरा नौबरार",
+        "column_04_value": "वार्ड संट- 4 से 4 तक"
+      },
+      "observed": {
+        "column_03_value": "कोड़हरा नौबरार",
+        "column_04_value": "वार्ड सं0- 1 से 4 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं०- 3 से 4 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 3 से 4 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "कोड़हरा नौबरार",
+        "column_04_value": "वार्ड to-5 से 7 तक"
+      },
+      "observed": {
+        "column_03_value": "कोड़हरा नौबरार",
+        "column_04_value": "वार्ड सं0- 5 से 7 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "कोड़हरा उपरवार",
+        "column_04_value": "वार्ड सं०- 6 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "कोड़हरा उपरवार",
+        "column_04_value": "वार्ड सं0- 6 से 10 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं०- 5 से 6 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं0- 5 से 6 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "सोनकीभाँट",
+        "column_04_value": "वार्ड सं०- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनकीभाँट",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं०- 43 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं0- 13 से 14 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "शिवपुर उर्फ कर्णछपरा",
+        "column_04_value": "वार्ड सं०- 8 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "शिवपुर उर्फ कर्णछपरा",
+        "column_04_value": "वार्ड सं0- 8 से 15 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं०- 9 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं0- 9 से 10 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड Wo- 4 से 2 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 1 से 2 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 5 से 6 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 5 से 6 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "| कोड़हरा उपरवार",
+        "column_04_value": "वार्ड Wo- 44 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "कोड़हरा उपरवार",
+        "column_04_value": "वार्ड सं0- 11 से 15 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "बहुआरा",
+        "column_04_value": "वार्ड सं०- 4 से 7 तक"
+      },
+      "observed": {
+        "column_03_value": "बहुआरा",
+        "column_04_value": "वार्ड सं0- 4 से 7 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "मुरारपट्‌टी",
+        "column_04_value": "वार्ड to 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "मुरारपट्टी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "चाँददीयर",
+        "column_04_value": "वार्ड Wo- 44 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "चाँददीयर",
+        "column_04_value": "वार्ड सं0- 11 से 13 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड to- 3 से 4 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं0- 3 से 4 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "दलनछपरा",
+        "column_04_value": "वार्ड सं०- 40 से 42 तक"
+      },
+      "observed": {
+        "column_03_value": "दलनछपरा",
+        "column_04_value": "वार्ड सं0- 10 से 12 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद नौबरार",
+        "column_04_value": "वार्ड Wo- 4 से 6 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद नौबरार",
+        "column_04_value": "वार्ड सं0- 1 से 6 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "मुरलीछपरा ,",
+        "column_04_value": "वार्ड सं०- 5 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "मुरलीछपरा",
+        "column_04_value": "वार्ड सं0- 5 से 8 तक"
+      }
+    },
+    {
+      "source_page": 29,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-5.png",
+      "source_crop_bbox": [
+        255,
+        458,
+        912,
+        1647
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड to- 7 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 7 से 8 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "| दलनछपरा",
+        "column_04_value": "वार्ड Wo- 7 से 9 तक"
+      },
+      "observed": {
+        "column_03_value": "दलनछपरा",
+        "column_04_value": "वार्ड सं0- 7 से 9 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "| इब्राहिमाबाद नौबरार",
+        "column_04_value": "वार्ड सं०- 7 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद नौबरार",
+        "column_04_value": "वार्ड सं0- 7 से 11 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "| चौंददीयर",
+        "column_04_value": "वार्ड सं०- 44 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "चाँददीयर",
+        "column_04_value": "वार्ड सं0- 14 से 15 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "| कोड़हरा नौबरार",
+        "column_04_value": "वार्ड सं०- 8 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "कोड़हरा नौबरार",
+        "column_04_value": "वार्ड सं0- 8 से 10 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "_ सूर्यभानपुर",
+        "column_04_value": "वार्ड Wo- 8 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "सूर्यभानपुर",
+        "column_04_value": "वार्ड सं0- 8 से 15 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "_ श्रीपतिपुर .",
+        "column_04_value": "वार्ड संट- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "श्रीपतिपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "_ चौंददीयर",
+        "column_04_value": "वार्ड to- 6 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "चाँददीयर",
+        "column_04_value": "वार्ड सं0- 6 से 8 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "कोड़हरा उपरवार",
+        "column_04_value": "वार्ड Wo- 4 से 5 तक"
+      },
+      "observed": {
+        "column_03_value": "कोड़हरा उपरवार",
+        "column_04_value": "वार्ड सं0- 1 से 5 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड Wo- 45 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 15 से 15 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "शिवपुरकपुर दीयर",
+        "column_04_value": "वार्ड सं)- 4 से 5 तक"
+      },
+      "observed": {
+        "column_03_value": "शिवपुरकपुर दीयर",
+        "column_04_value": "वार्ड सं0- 1 से 5 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "_ शिवपुरकपुर दीयर",
+        "column_04_value": "वार्ड सं०-- 6 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "शिवपुरकपुर दीयर",
+        "column_04_value": "वार्ड सं0- 6 से 10 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "दलकी नम्बर-॥",
+        "column_04_value": "वार्ड सं०- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "दलकी नम्बर-1",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "दलनछपरा |",
+        "column_04_value": "वार्ड Wo- 4 से 6 तक"
+      },
+      "observed": {
+        "column_03_value": "दलनछपरा",
+        "column_04_value": "वार्ड सं0- 4 से 6 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "हृदयपुर |",
+        "column_04_value": "वार्ड Wo- 8 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "हृदयपुर",
+        "column_04_value": "वार्ड सं0- 8 से 15 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा |",
+        "column_04_value": "वार्ड Wo- 44 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 14 से 14 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद oR |",
+        "column_04_value": "वार्ड Go- 7 से 7 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं0- 7 से 7 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "रामपुर |",
+        "column_04_value": "वार्ड to- से 43 तक |"
+      },
+      "observed": {
+        "column_03_value": "रामपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद नौबरार |",
+        "column_04_value": "वार्ड Wo- 42 से 45 तक |"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद नौबरार",
+        "column_04_value": "वार्ड सं0- 12 से 15 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "सुकरौली |",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक |"
+      },
+      "observed": {
+        "column_03_value": "सुकरौली",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद उपरवार |",
+        "column_04_value": "वार्ड to- 45 से 45 तक |"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं0- 15 से 15 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा |",
+        "column_04_value": "वार्ड wo- 44 से 44 तक |"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 11 से 11 तक"
+      }
+    },
+    {
+      "source_page": 31,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-6.png",
+      "source_crop_bbox": [
+        247,
+        454,
+        904,
+        1645
+      ],
+      "expected": {
+        "column_03_value": "लक्ष्मीपुर |",
+        "column_04_value": "वार्ड सं0- 4 से 4 तक |"
+      },
+      "observed": {
+        "column_03_value": "लक्ष्मीपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 32,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-7.png",
+      "source_crop_bbox": [
+        250,
+        461,
+        907,
+        844
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं०- 43 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 13 से 13 तक"
+      }
+    },
+    {
+      "source_page": 32,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-7.png",
+      "source_crop_bbox": [
+        250,
+        461,
+        907,
+        844
+      ],
+      "expected": {
+        "column_03_value": "मुरलीछपरा",
+        "column_04_value": "वार्ड Wo- 43 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "मुरलीछपरा",
+        "column_04_value": "वार्ड सं0- 13 से 15 तक"
+      }
+    },
+    {
+      "source_page": 32,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-7.png",
+      "source_crop_bbox": [
+        250,
+        461,
+        907,
+        844
+      ],
+      "expected": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड Wo- 42 से 42 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनबरसा",
+        "column_04_value": "वार्ड सं0- 12 से 12 तक"
+      }
+    },
+    {
+      "source_page": 32,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-7.png",
+      "source_crop_bbox": [
+        250,
+        461,
+        907,
+        844
+      ],
+      "expected": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड to- 8 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "इब्राहिमाबाद उपरवार",
+        "column_04_value": "वार्ड सं0- 8 से 8 तक"
+      }
+    },
+    {
+      "source_page": 32,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-7.png",
+      "source_crop_bbox": [
+        250,
+        461,
+        907,
+        844
+      ],
+      "expected": {
+        "column_03_value": "दलकी नम्बर-4",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "दलकी नम्बर-1",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 32,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-7.png",
+      "source_crop_bbox": [
+        250,
+        461,
+        907,
+        844
+      ],
+      "expected": {
+        "column_03_value": "रामपुर कोड़हरा",
+        "column_04_value": "वार्ड सं०- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "रामपुर कोड़हरा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 32,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-7.png",
+      "source_crop_bbox": [
+        250,
+        461,
+        907,
+        844
+      ],
+      "expected": {
+        "column_03_value": "खवासपुर",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "खवासपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "नरहीं",
+        "column_04_value": "वार्ड सं0-- 6 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "नरहीं",
+        "column_04_value": "वार्ड सं0- 6 से 10 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "डिहवाँ",
+        "column_04_value": "वार्ड सं0- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "डिहवाँ",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "लहसनी",
+        "column_04_value": "वार्ड सं0-- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "लहसनी",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "सिसवार weit",
+        "column_04_value": "वार्ड सं0-- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "सिसवार कलाँ",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "निकासी",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "निकासी",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-hires-2.png",
+      "source_crop_bbox": [
+        342,
+        1434,
+        1800,
+        1556
+      ],
+      "expected": {
+        "column_03_value": "रेकुआँनसीरपुर",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "source_row_ordinal": 6,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          6,
+          368,
+          1618,
+          2029
+        ],
+        "source_crop_png_sha256": "cdcc6e33f9e4069fb98426f9113199986254406f1cee158797e8c93314d43700",
+        "source_raster_gray_pixels_sha256": "6b73f74a708bb20c50a822619b9290e930c7c76113855b8d4a1a034531097804",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "रेकुआँनसीरपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "पड़सराजूड़न",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "पड़सराजूड़न",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड Wo- 8 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड सं0- 8 से 11 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड to- 4 से 3 तक"
+      },
+      "observed": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड सं0- 1 से 3 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "दिलमनमघुकीपुर",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "दिलमनमधुकीपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "सोनापाली",
+        "column_04_value": "वार्ड संट- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "सोनापाली",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "छितौना",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "छितौना",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "निकासी",
+        "column_04_value": "वार्ड to- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "निकासी",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड to- 4 से 7 तक"
+      },
+      "observed": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड सं0- 4 से 7 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "ताड़ीबड़गाँव",
+        "column_04_value": "वार्ड Wo- 8 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "ताड़ीबड़ागाँव",
+        "column_04_value": "वार्ड सं0- 8 से 10 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "ताड़ीबड़गाँव",
+        "column_04_value": "वार्ड सं०- 4 से 7 तक"
+      },
+      "observed": {
+        "column_03_value": "ताड़ीबड़ागाँव",
+        "column_04_value": "वार्ड सं0- 4 से 7 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "खनन्‍्दवा",
+        "column_04_value": "वार्ड सं0- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "खन्दवा",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "आरीपुर सरयाँ",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "आरीपुर सरयाँ",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "देवढ़िया",
+        "column_04_value": "वार्ड सं0- 8 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "देवढ़िया",
+        "column_04_value": "वार्ड सं0- 8 से 15 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "परसियारूपपुर",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "परसियारूपपुर",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "विसरूफ",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "विसरूफ",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 33,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-8.png",
+      "source_crop_bbox": [
+        242,
+        448,
+        899,
+        1639
+      ],
+      "expected": {
+        "column_03_value": "खनवरनवादा",
+        "column_04_value": "वार्ड सं)- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "खनवरनवादा",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "रूपवारभगवानपुर",
+        "column_04_value": "वार्ड सं०- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "रूपवारभगवानपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "भीमपुरा नं0-2",
+        "column_04_value": "वार्ड Wo- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "भीमपुरा नं0-2",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "WIR",
+        "column_04_value": "as सं०- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "जूड़नपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "नरहीं",
+        "column_04_value": "वार्ड संट- 4 से 5 तक"
+      },
+      "observed": {
+        "column_03_value": "नरहीं",
+        "column_04_value": "वार्ड सं0- 1 से 5 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "खरूआँव",
+        "column_04_value": "वार्ड to 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "खरूआँव",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "कमरौली प्रथम",
+        "column_04_value": "वार्ड संट- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "कमरौली प्रथम",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "अवराई खूर्द",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "अवराई खुर्द",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "बरौली",
+        "column_04_value": "वार्ड Wo 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "बरौली",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "तियराहैदरपुर",
+        "column_04_value": "वार्ड to- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "तियरा हैदरपुर",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "करीमपुर",
+        "column_04_value": "वार्ड सं0- 4 से WH"
+      },
+      "observed": {
+        "column_03_value": "करीमपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "विशुनपुरा -",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "विषुनपुरा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "पड़री",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "पड़री",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "करनी",
+        "column_04_value": "वार्ड Wo- 4 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "करनी",
+        "column_04_value": "वार्ड सं0- 1 से 15 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "अतरौली करमौता",
+        "column_04_value": "वार्ड Go- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "अतरौली करमौता",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-hires-2.png",
+      "source_crop_bbox": [
+        344,
+        2410,
+        1806,
+        2534
+      ],
+      "expected": {
+        "column_03_value": "बरवॉरत्तीपट्टी",
+        "column_04_value": "वार्ड Wo- 4 से 8 तक"
+      },
+      "source_row_ordinal": 15,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          5,
+          367,
+          1620,
+          2028
+        ],
+        "source_crop_png_sha256": "ab787d20e90c459493860dfe1fd97a0f8f3bc78b9bd8b77378b18440348c577a",
+        "source_raster_gray_pixels_sha256": "7b37f1d982e5d13c70d095108dcd2e2e7f00897e7a0170bb0a524bc33eb7a803",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "बरवाँरतीपट्टी",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड Wo- 42 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "मलपहरसेनपुर",
+        "column_04_value": "वार्ड सं0- 12 से 15 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "परशुरामपुर",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "परशुरामपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "उरैनी",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "उरैनी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "पालचन्द्रहाँ",
+        "column_04_value": "वार्ड सं0-- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "पालचन्द्रहाँ",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "अवराई weit",
+        "column_04_value": "वार्ड to- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "अवराई कलाँ",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "पकड़ीहरखबसन्त",
+        "column_04_value": "वार्ड सं)- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "पकड़ीहरखबसन्त",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 34,
+      "table_index": 0,
+      "geometry_row_index": 25,
+      "source_image": "ballia-names-batch5-9.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "भीमपुरा नं0-॥",
+        "column_04_value": "वार्ड Wo- 4 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "भीमपुरा नं0-1",
+        "column_04_value": "वार्ड सं0- 1 से 15 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "हि Pega *",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "भिटकुना",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "अब्दुलपुरमदारी",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "अब्दुलपुरमदारी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "बराईच",
+        "column_04_value": "वार्ड सं०- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "बराईच",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "चाड़ीसराय सम्भल",
+        "column_04_value": "वार्ड सं०- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "चाड़ीसराय सम्भल",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "गौवापार",
+        "column_04_value": "वार्ड Wo- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "गौवापार",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "fsedt",
+        "column_04_value": "वार्ड to- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "डिहवाँ",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "अतरौली करमौता",
+        "column_04_value": "वार्ड सं)- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "अतरौली करमौता",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "जमुआँवखामपुर",
+        "column_04_value": "वार्ड सं0- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "जमुआँवखामपुर",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "सिसवार weit",
+        "column_04_value": "वार्ड to- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "सिसवार कलाँ",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "ककरी",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "ककरी",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "ताड़ीबड़गाँव",
+        "column_04_value": "वार्ड to- 4 से 3 तक"
+      },
+      "observed": {
+        "column_03_value": "ताड़ीबड़ागाँव",
+        "column_04_value": "वार्ड सं0- 1 से 3 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "कसौण्डर",
+        "column_04_value": "वार्ड संट- 6 से 40 तक"
+      },
+      "observed": {
+        "column_03_value": "कसौण्डर",
+        "column_04_value": "वार्ड सं0- 6 से 10 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "देवढ़िया",
+        "column_04_value": "वार्ड संट- 4 से 7 तक"
+      },
+      "observed": {
+        "column_03_value": "देवढ़िया",
+        "column_04_value": "वार्ड सं0- 1 से 7 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "कमरौली द्वितीय",
+        "column_04_value": "वार्ड सं०- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "कमरौली द्वितीय",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "सरयाँ गुलाबराय",
+        "column_04_value": "वार्ड Wo- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "सरयाँ गुलाबराय",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "कसौण्डर",
+        "column_04_value": "वार्ड सं०- 4 से 5 तक"
+      },
+      "observed": {
+        "column_03_value": "कसौण्डर",
+        "column_04_value": "वार्ड सं0- 1 से 5 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "सिकरिया",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "सिकरिया",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "खैरानिस्फी",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "खैरानिस्फी",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "खनवरनवादा",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "खनवरनवादा",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "wat",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "बरेवाँ",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "निगहुआँ",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "निगहुआँ",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 35,
+      "table_index": 0,
+      "geometry_row_index": 25,
+      "source_image": "ballia-names-batch5-10.png",
+      "source_crop_bbox": [
+        245,
+        450,
+        902,
+        1641
+      ],
+      "expected": {
+        "column_03_value": "मंसुरिया",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "मंसुरिया",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "| बराहिमपुर _ हे",
+        "column_04_value": "| वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "बराहिमपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "| खारी",
+        "column_04_value": "| वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "खारी",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "| कैथीखतीबपुरं",
+        "column_04_value": "| वार्ड to 4 04 तक"
+      },
+      "observed": {
+        "column_03_value": "कैथीखतीबपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "| तिरनईमौलाराय",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "तिरनईमौलाराय",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "ननौरा ः",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "ननौरा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "इन्दासो",
+        "column_04_value": "वार्ड. संट- 4 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "इन्दासो",
+        "column_04_value": "वार्ड सं0- 1 से 15 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "_ सिकरहटा",
+        "column_04_value": "वार्ड to- 4 से 9 तक"
+      },
+      "observed": {
+        "column_03_value": "सिकरहटा",
+        "column_04_value": "वार्ड सं0- 1 से 9 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "_ परसियारूपपुर",
+        "column_04_value": "वार्ड सं0- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "परसियारूपपुर",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "_ ढेकवारी",
+        "column_04_value": "वार्ड Wo- 4 से ae"
+      },
+      "observed": {
+        "column_03_value": "ढेकवारी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "महराजपुर 7",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "महराजपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "देवलबीर",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "देवलबीर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "इनामीपुर",
+        "column_04_value": "वार्ड संट- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "इनामीपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "पालचन्द्रहाँल्‍_",
+        "column_04_value": "वार्ड सं0- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "पालचन्द्रहाँ",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "woe",
+        "column_04_value": "वार्ड संट- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "रामपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "चकराकोल्‍्हुआ",
+        "column_04_value": "वार्ड सं०- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "चकराकोल्हुआ",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "जेठवारयाकूबपुर",
+        "column_04_value": "वार्ड सं०-- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "जेठवारयाकूबपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "सरयाँ गुलाबराय |",
+        "column_04_value": "वार्ड सं)- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "सरयाँ गुलाबराय",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "सवापार |",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "सवापार",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "देवरिया . |",
+        "column_04_value": "वार्ड संः- 4 84 तक |"
+      },
+      "observed": {
+        "column_03_value": "देवरिया",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "गौरा |",
+        "column_04_value": "वार्ड सं0- 4 से 44 तक |"
+      },
+      "observed": {
+        "column_03_value": "गौरा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "बड़सरा सलेमपुर |",
+        "column_04_value": "वार्ड सं)- से 3 तक |"
+      },
+      "observed": {
+        "column_03_value": "बड़सरा सलेमपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 36,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-11.png",
+      "source_crop_bbox": [
+        246,
+        453,
+        903,
+        1644
+      ],
+      "expected": {
+        "column_03_value": "उस्करगजियापुर |",
+        "column_04_value": "वार्ड to- । से 43 तक |"
+      },
+      "observed": {
+        "column_03_value": "उस्करगजियापुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "भीमपुरा नं0-2",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "भीमपुरा नं0-2",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "गोठवाँ",
+        "column_04_value": "वार्ड सं०- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "गोठवाँ",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "गजिया ता0 हरपुर",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "गजिया ता0 हरपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "बिहराहरपुर -",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "बिहराहरपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "इन्दौली मल्कौली",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "इन्दौली मल्कौली",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "बरौली",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "बरौली",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "तियराहैदरपुर",
+        "column_04_value": "वार्ड to- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "तियराहैदरपुर",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "गोठवाँ",
+        "column_04_value": "वार्ड सं)- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "गोठवाँ",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-hires-2.png",
+      "source_crop_bbox": [
+        362,
+        1780,
+        1822,
+        1902
+      ],
+      "expected": {
+        "column_03_value": "बरवॉरत्तीपट्टी",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "source_row_ordinal": 9,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          0,
+          361,
+          1622,
+          2027
+        ],
+        "source_crop_png_sha256": "f2e26e9519e9ce4c0447a61246e81a0dc16e6604dee3f4f8f2074d1d73773e8f",
+        "source_raster_gray_pixels_sha256": "4e34001173a9a423dd6cd6f9bf437dbf4d27e99e238e62fc3ed897b3df739172",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "बरवाँरतीपट्टी",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "गौवापार",
+        "column_04_value": "वार्ड सं०- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "गौवापार",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "अवराई Heil",
+        "column_04_value": "वार्ड Wo- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "अवराई कलाँ",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "रघुनाथपुर",
+        "column_04_value": "वार्ड संट- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "रघुनाथपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "कोदई",
+        "column_04_value": "वार्ड do 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "कोदई",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "तुर्कीदौलतपुर",
+        "column_04_value": "वार्ड सं)- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "तुर्कीदौलतपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "डण्डारी लखुसराय",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "डण्डारी लखुसराय",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "खनन्‍्दवा",
+        "column_04_value": "वार्ड सं०- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "खन्दवा",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 19,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "रामापट्टीतासपुर",
+        "column_04_value": "वार्ड सं०- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "रामापट्टीतासपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 20,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "बभनौली",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "बभनौली",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 21,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "लहसनी",
+        "column_04_value": "वार्ड सं०- 4 से 8 तक"
+      },
+      "observed": {
+        "column_03_value": "लहसनी",
+        "column_04_value": "वार्ड सं0- 1 से 8 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 22,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "ताड़ीबड़गाँव",
+        "column_04_value": "वार्ड Wo- 44 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "ताड़ीबड़ागाँव",
+        "column_04_value": "वार्ड सं0- 11 से 13 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 23,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "कोठियाँ",
+        "column_04_value": "वार्ड सं०- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "कोठियाँ",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 37,
+      "table_index": 0,
+      "geometry_row_index": 24,
+      "source_image": "ballia-names-batch5-12.png",
+      "source_crop_bbox": [
+        253,
+        458,
+        910,
+        1649
+      ],
+      "expected": {
+        "column_03_value": "महरी",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "महरी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 3,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "बाराडीह लवाईपटूटी",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "बाराडीह लवाईपट्टी",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 4,
+      "source_image": "ballia-names-batch5-hires-3.png",
+      "source_crop_bbox": [
+        344,
+        1008,
+        1804,
+        1134
+      ],
+      "expected": {
+        "column_03_value": "कोढ़ागालिबपट्टी उर्फ",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "source_row_ordinal": 2,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          8,
+          364,
+          1622,
+          1757
+        ],
+        "source_crop_png_sha256": "b5ae905e1ecc45cbe33a775035ae531cbcdbbe08656784ea760d3860e0ea975a",
+        "source_raster_gray_pixels_sha256": "7ad92ac0d672740b36612e0bc27c433b5b0d9bc992ee586c781346aa6907cedf",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "कोढ़ागालिबपट्टी उर्फ",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 5,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "कसौण्डर",
+        "column_04_value": "वार्ड सं0- 44 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "कसौण्डर",
+        "column_04_value": "वार्ड सं0- 11 से 15 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 6,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "त्रिलोकमन्दा",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "त्रिलोकमन्दा",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 7,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "खरूआँव",
+        "column_04_value": "वार्ड सं0-- 9 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "खरूआँव",
+        "column_04_value": "वार्ड सं0- 9 से 15 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 8,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "सुल्तानपुर",
+        "column_04_value": "वार्ड सं0- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "सुल्तानपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "जमुआँवखामपुर",
+        "column_04_value": "वार्ड Wo- 4 से 09 तक"
+      },
+      "observed": {
+        "column_03_value": "जमुआँवखामपुर",
+        "column_04_value": "वार्ड सं0- 1 से 08 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 10,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "सिकन्दरापुर",
+        "column_04_value": "वार्ड Wo- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "सिकन्दरापुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 11,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "सुपापाली",
+        "column_04_value": "वार्ड सं0- 4 G0 तक"
+      },
+      "observed": {
+        "column_03_value": "सुपापाली",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 12,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "गोपालपुर mo कसैली",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "गोपालपुर ता0 कसौली",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 13,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "खेमपुर",
+        "column_04_value": "वार्ड सं)- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "खेमपुर",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 14,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "मालीपुर",
+        "column_04_value": "वार्ड सं- 4 से 43 तक"
+      },
+      "observed": {
+        "column_03_value": "मालीपुर",
+        "column_04_value": "वार्ड सं0- 1 से 13 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 15,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "ताड़ीबड़गाँव",
+        "column_04_value": "वार्ड Wo- 44 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "ताड़ीबड़ागाँव",
+        "column_04_value": "वार्ड सं0- 14 से 15 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 16,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "करौंदी",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "observed": {
+        "column_03_value": "करौंदी",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 17,
+      "source_image": "ballia-names-batch5-hires-3.png",
+      "source_crop_bbox": [
+        344,
+        2410,
+        1804,
+        2534
+      ],
+      "expected": {
+        "column_03_value": "असढ़िया",
+        "column_04_value": "वार्ड Wo- 4 से 44 तक"
+      },
+      "source_row_ordinal": 15,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          8,
+          364,
+          1622,
+          1757
+        ],
+        "source_crop_png_sha256": "b5ae905e1ecc45cbe33a775035ae531cbcdbbe08656784ea760d3860e0ea975a",
+        "source_raster_gray_pixels_sha256": "7ad92ac0d672740b36612e0bc27c433b5b0d9bc992ee586c781346aa6907cedf",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed": {
+        "column_03_value": "असढ़िया",
+        "column_04_value": "वार्ड सं0- 1 से 11 तक"
+      }
+    },
+    {
+      "source_page": 38,
+      "table_index": 0,
+      "geometry_row_index": 18,
+      "source_image": "ballia-names-batch5-13.png",
+      "source_crop_bbox": [
+        244,
+        452,
+        901,
+        1318
+      ],
+      "expected": {
+        "column_03_value": "नरहीं",
+        "column_04_value": "वार्ड Wo- 44 से 45 तक"
+      },
+      "observed": {
+        "column_03_value": "नरहीं",
+        "column_04_value": "वार्ड सं0- 11 से 15 तक"
+      }
+    }
+  ],
+  "held_name_boundary_rows": [
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "ballia-names-batch5-hires-1.png",
+      "source_crop_bbox": [
+        346,
+        1550,
+        1806,
+        1674
+      ],
+      "expected": {
+        "column_03_value": "रतसीमेंहमॉँपुर",
+        "column_04_value": "वार्ड सं०- 4 से 43 तक"
+      },
+      "source_row_ordinal": 7,
+      "source_raster_dpi": 400,
+      "geometry_recovery": {
+        "coordinate_frame": "saved_rotation_corrected_crop_raster_pixels",
+        "coordinate_warning": "Cell boxes refer to geometry_raster.png, not directly to the PDF or unrotated source raster. Crop coordinates are recorded separately.",
+        "method": "table_crop_then_rotation",
+        "raster_file": "geometry_raster.png",
+        "source_crop_bbox": [
+          2,
+          364,
+          1619,
+          2052
+        ],
+        "source_crop_png_sha256": "df89c2e116a678751013e50c39fa417cc308ad171f5775b770b51fb7bb776e6e",
+        "source_raster_gray_pixels_sha256": "1dc9e9ccaffd2b8bd5d17d04ad4d893ce9a0f3deab99886319bae6ea04f9fcdf",
+        "source_raster_shape": [
+          2338,
+          1654
+        ]
+      },
+      "observed_boundary": "वार्ड सं0- 1 से 13 तक",
+      "candidate_names": [
+        "रतसीमेहमाँपुर",
+        "रतसीमेंहमाँपुर"
+      ],
+      "reason": "Nasal mark over the middle syllable remains ambiguous in the 400-DPI source; name/boundary pair not applied.",
+      "assignment_usable": false
+    }
+  ],
+  "parent_reconciliation_receipt": "reconciled_cells/20260913T182102057007Z/reconciliation_receipt.json",
+  "parent_reconciliation_receipt_sha256": "64a2aed5a8f2c209cf653b87e3c6ad41fe061b38bdca7bc2921633b81ffd06aa",
+  "prior_source_anomalies_review": "source_reviews/names_boundaries_20260913T181228772589Z/review.json",
+  "source_anomalies": [
+    {
+      "source_page": 38,
+      "source_row_ordinal": 2,
+      "constituency_number": 3,
+      "source_name": "कोढ़ागालिबपट्टी उर्फ",
+      "issue": "Source name ends in the alias marker उर्फ without an accompanying alias in the cell; preserved literally. No inferred alias."
+    },
+    {
+      "source_page": 31,
+      "issue": "शिवपुरकपुर दीयर is retained as printed, without forcing agreement with the spelling on physical page 30."
+    }
+  ],
+  "method": "Direct visual reading of source name/boundary columns on physical pages 25-29 and 31-38, with 400-DPI source crops for 13 targeted name readings. One name remains held.",
+  "name_normalization": "No canonical geographic name mapping; source variants retained",
+  "boundary_normalization": "Whitespace and dash only; compound descriptions and leading zeros retained",
+  "independent_review_pending": true,
+  "assignment_usable": false,
+  "new_paid_api_cost_usd": 0
+}

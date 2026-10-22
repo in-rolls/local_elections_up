@@ -1,0 +1,27 @@
+{
+  "additional_targeted_finding": {
+    "column": 4,
+    "geometry_row_index": 9,
+    "name_still_uncertain": true,
+    "observed_boundary": "\u0935\u093e\u0930\u094d\u0921 \u0938\u09020- 1 \u0938\u0947 13 \u0924\u0915",
+    "source_page": 27,
+    "stored_boundary_description": "4 to 43",
+    "table_index": 0
+  },
+  "archive_path": "review_artifacts.tar.gz",
+  "archive_sha256": "9b689e6d8566169330f8f4f3b011f7d90e049bd4bb64b1a3a2cf6bc2aaa94ccb",
+  "blinding_limit": "Reviewer saw receipt changes before sample selection; not a fully blinded review.",
+  "code_legend_observed": false,
+  "input_path": "reconciled_cells/20260913T183933791289Z/rows.parquet",
+  "input_sha256": "61efb868626f6c8c96690f2f400aaa13c30e227cac0709a6efe311c195c4ec3e",
+  "new_paid_api_cost_usd": 0,
+  "review_archive_member": "review/review.json",
+  "review_sha256": "5bbe2486db00b8c26999bde0b4d782c2b52a7eca382ce9775fe84c2f0d4913ac",
+  "reviewer_agent": "01a09c13-b0b6-7230-a6e2-d7c466332c53",
+  "sample_cells": 198,
+  "sample_effective_field_discrepancies_under_review_conventions": 0,
+  "sample_rows": 18,
+  "scope": "Independent source review evidence; no claim of complete validation or canonical assignments. Central exports unchanged.",
+  "source_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
+  "status": "independent_source_review_received_correction_pending"
+}

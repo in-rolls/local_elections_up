@@ -1,6 +1,6 @@
 # Data
 
-Start with the [catalog](CATALOG.md): every published table with its rows, election years, row unit and validation status. The [dictionary](DICTIONARY.md) lists columns and types; [manifest.json](manifest.json) and [CHECKSUMS.sha256](CHECKSUMS.sha256) pin every table's bytes and the code and inputs that built it.
+Published tables are in [`release/`](release/). Start with the [catalog](release/CATALOG.md): every published table with its rows, election years, row unit and validation status. The [dictionary](release/DICTIONARY.md) lists columns and types; [manifest.json](release/manifest.json) and [CHECKSUMS.sha256](release/CHECKSUMS.sha256) pin every table's bytes and the code and inputs that built it.
 
 ## Layout
 
@@ -8,14 +8,16 @@ Each election has a folder holding that election's tables, named `<office>_<reco
 
 | Folder | Contents |
 | --- | --- |
-| `<year>/` | Winner lists, candidate records, elected or reported officials, and seat reservations for that election |
-| `panels/` | Products derived across elections: harmonized GP-head records, adjacent and four-election links, wide panels, the historical LGD bridge, and the two Weaver preparations |
+| `release/<year>/` | Winner lists, candidate records, elected or reported officials, and seat reservations for that election |
+| `release/panels/` | Products derived across elections: harmonized GP-head records, adjacent and four-election links, wide panels, the historical LGD bridge, and the two Weaver preparations |
 | `raw/<year>/` | Source PDFs, zips and the notebook-era CSVs, by the year they describe |
 | `catalogs/` | Source registry, label dictionaries, column definitions and the relocation ledger |
-| `interim/` | Saved extraction outputs, and the git-ignored build area `interim/release/` that the release is published from |
+| `interim/` | Saved extraction outputs the build reads (committed at their registered paths), and the git-ignored build area `interim/release/` that the release is published from |
 | `crosswalks/` | Reviewed geographic matches and corrections |
 | `external/` | Attributed outside sources: LGD, Weaver, and a 2005/2010 reservation-with-Census file |
-| `discovery/`, `recovery/`, `source_archives/`, `archives/`, `reference/`, `transliteration/`, `integration/` | Leads, restored historical responses, research bundles and dated records; none enters the release unless registered |
+| `recovery/` | Harvested SEC, district and media captures. The parsed tables and source documents the build reads are committed; the remaining captures (about 4.3 GB) are in the `source-evidence-2026-09-19` release, restored by `make fetch-sources` |
+| `transliteration/` | Name transliterations `make enrich-gp` reads |
+| `discovery/`, `source_archives/`, `archives/`, `reference/`, `integration/` | Research leads, bundles and dated records; none enters the release unless registered |
 
 GP heads have two representations, and both are published because each holds values the other lacks. `gram_panchayat_head_winner_list` (2005, 2010, 2015) is the SEC winner list as received, apart from contact fields, with its English labels. `gram_panchayat_head_declared_winner` (2005–2021) is the office build's observation of the same winners, with record IDs, per-row source hashes, decoded reservation and quality flags. 2021 winners are also marked among `gram_panchayat_head_candidate_record`.
 

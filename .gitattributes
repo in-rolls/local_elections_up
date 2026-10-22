@@ -1,3 +1,6 @@
 data/catalogs/up_discovery_2026-09-10/**/*.csv -text whitespace=cr-at-eol
 data/raw/2021/*.csv.gz -text
 data/external/lgd/*.csv -text whitespace=cr-at-eol
+# Pinned build inputs: their SHA-256 is checked, so git must not touch the bytes.
+data/recovery/** -text
+data/interim/** -text

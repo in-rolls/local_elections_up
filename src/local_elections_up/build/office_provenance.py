@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import gzip
 import hashlib
+import json
 import tarfile
 from pathlib import Path
 
@@ -33,11 +34,36 @@ def digest(path):
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
+# Source captures not kept in the repository (about 62,000 SEC portal
+# responses) are preserved byte-for-byte in the source-evidence-2026-09-19
+# release. Their resolutions were recorded with the bytes on disk; a checkout
+# without the captures uses the record, and `make fetch-sources` restores them
+# so the hashes are checked again.
+RESOLUTIONS = "data/catalogs/archived_source_resolutions.jsonl.gz"
+
+
+def archived_resolutions(root):
+    path = root / RESOLUTIONS
+    if not path.is_file():
+        return {}
+    with gzip.open(path, "rt", encoding="utf-8") as stream:
+        rows = (json.loads(line) for line in stream)
+        return {
+            (r["base"], r["raw_path"], r["expected"]): (
+                r["path"],
+                r["sha256"],
+                r["basis"],
+            )
+            for r in rows
+        }
+
+
 class SourceProvenance:
     def __init__(self, root, source, artifact):
         self.root = root.resolve()
         self.adapter = source["adapter"]
         self.cache = {}
+        self.archived = None
         self.receipt = None
         self.archive = None
         self.archive_path = None
@@ -113,6 +139,13 @@ class SourceProvenance:
                     matches.append(
                         (f"{archive_path}#{member_name}", stored, "tar_member")
                     )
+        if not candidates and not matches:
+            if self.archived is None:
+                self.archived = archived_resolutions(self.root)
+            base = self.base.relative_to(self.root).as_posix()
+            recorded = self.archived.get((base, raw_path, expected))
+            if recorded is not None:
+                matches.append(recorded)
         if len(matches) != 1:
             raise ValueError(
                 f"Expected one hash-matched source for {raw_path}; found {len(matches)}"

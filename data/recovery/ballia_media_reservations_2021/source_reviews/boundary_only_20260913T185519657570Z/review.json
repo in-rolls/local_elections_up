@@ -1,0 +1,37 @@
+{
+  "source_sha256": "685743d6d929e860720ae655909f4659f12f5c67b356946a62e072ee79de4b16",
+  "input_sha256": "61efb868626f6c8c96690f2f400aaa13c30e227cac0709a6efe311c195c4ec3e",
+  "reviewed_columns": [
+    4
+  ],
+  "column_semantics": {
+    "4": "description of constituent area as printed"
+  },
+  "image_archive": "../independent_20260913T185024767959Z/review_artifacts.tar.gz",
+  "image_archive_sha256": "9b689e6d8566169330f8f4f3b011f7d90e049bd4bb64b1a3a2cf6bc2aaa94ccb",
+  "images": {
+    "review/images/p0027_ordinal7_fullrow_pdf.png": "046c2061b7a14734029cd59f88c4782c5e0feb536494e26b0bbf6c65508f1389"
+  },
+  "rows": [
+    {
+      "source_page": 27,
+      "table_index": 0,
+      "geometry_row_index": 9,
+      "source_image": "review/images/p0027_ordinal7_fullrow_pdf.png",
+      "expected": {
+        "column_04_value": "\u0935\u093e\u0930\u094d\u0921 \u0938\u0902\u0966- 4 \u0938\u0947 43 \u0924\u0915"
+      },
+      "observed": {
+        "column_04_value": "\u0935\u093e\u0930\u094d\u0921 \u0938\u09020- 1 \u0938\u0947 13 \u0924\u0915"
+      }
+    }
+  ],
+  "independent_review_receipt": "source_reviews/independent_20260913T185024767959Z/receipt.json",
+  "independent_review_receipt_sha256": "cab833e59fba40273bb74db0e9814f2a5b06c4b9e8604af8e8dc0308cf74d727",
+  "prior_source_anomalies_review": "source_reviews/names_boundaries_20260913T183933791289Z/review.json",
+  "held_name_review": "source_reviews/names_boundaries_20260913T182647347625Z/review.json",
+  "method": "Apply the independent review's unambiguous boundary only. Do not modify or certify the ambiguous name.",
+  "independent_review_limit": "The reviewer saw receipt changes before sampling; this was not fully blinded. The 18-row sample is not an overall accuracy estimate.",
+  "assignment_usable": false,
+  "new_paid_api_cost_usd": 0
+}

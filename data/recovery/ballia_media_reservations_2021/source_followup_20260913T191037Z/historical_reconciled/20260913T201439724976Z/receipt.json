@@ -1,0 +1,38 @@
+{
+  "status": "head_source_review_complete_one_name_held",
+  "source_rows": 17,
+  "year_observations": 102,
+  "resolved_source_data_row": 16,
+  "resolved_name": "गड़वार",
+  "remaining_held_source_data_rows": [
+    15
+  ],
+  "year_observations_with_held_name": 6,
+  "adjudication_path": "independent_block_head_review/20260913T200705915621Z_row16_adjudication/adjudication.json",
+  "adjudication_sha256": "bd1ae9be9b1b82624cd622afee8af1a838941e2a200f58de10d5124c2eedb601",
+  "parent_artifact_pins": {
+    "source_rows.parquet": "75a5d35c2210e23644d4a0721f69732892e65815dd9509b143df9a61df7c8b62",
+    "samiti_head_year_observations.parquet": "d49618deb24a52ea6b6dd6f2afe9952a273cb5352dd232da0e56dd9d6e9533ee"
+  },
+  "artifacts": {
+    "source_rows.parquet": {
+      "rows": 17,
+      "sha256": "3e4752f6addedea298af1132858e21c6538fefe7d010591489c3217134570fe8",
+      "bytes": 47727
+    },
+    "samiti_head_year_observations.parquet": {
+      "rows": 102,
+      "sha256": "466a45d3b9ac20e09676d74e3e1e87840e0144d3d7dec4e87d590e11b7f50154",
+      "bytes": 66960
+    }
+  },
+  "raw_ocr_preserved": true,
+  "prior_readings_preserved": true,
+  "central_integration_performed": false,
+  "assignment_usable": false,
+  "new_paid_api_cost_usd": 0,
+  "limits": [
+    "Adjudication used disclosed prior candidates; it was not a blind review.",
+    "Row15 remains unresolved between short and long u; no geographic normalization applied."
+  ]
+}
