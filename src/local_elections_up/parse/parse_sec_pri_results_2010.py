@@ -299,7 +299,7 @@ def extract_pages(xml, spec, source_path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--output-root", type=Path, default=ROOT / "data/interim/sec_pri_results_2010"
+        "--output-root", type=Path, default=ROOT / "data/extracted/sec_pri_results_2010"
     )
     args = parser.parse_args()
     output = args.output_root / datetime.now(UTC).strftime("%Y%m%dT%H%M%S%fZ")

@@ -85,7 +85,7 @@ def build(root=paths.ROOT):
     products = []
     for vintage, source in SOURCES.items():
         frame = prepare_wide(
-            read_source(root / "data/external/weaver" / source), vintage
+            read_source(root / "data/reference/weaver" / source), vintage
         )
         types = []
         for c in frame:
@@ -99,7 +99,7 @@ def build(root=paths.ROOT):
                 else pa.string()
             )
             types.append((c, dtype))
-        path = root / "data/interim/release/weaver" / f"weaver_{vintage}_wide.parquet"
+        path = root / "data/build/release/weaver" / f"weaver_{vintage}_wide.parquet"
         write_table(frame, path, pa.schema(types))
         products.append(path)
         print(f"{path.name}: {len(frame)} GP identifiers, {len(frame.columns)} columns")

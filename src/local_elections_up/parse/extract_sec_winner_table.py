@@ -13,7 +13,7 @@ import pandas as pd
 
 SOURCE_SHA256 = "7557fcb33f3175d919a3e7bdbb5591bc62f894c1f12a27d6cad2af1ae5cd82af"
 SOURCE_PATH = (
-    "data/discovery/2026-09-10/parallel_search/raw/"
+    "data/search_log/2026-09-10/parallel_search/raw/"
     "33e19ce47707f31c1728_7557fcb33f31.html"
 )
 TABLE_ID = "ContentPlaceHolder1_winnerdetail"

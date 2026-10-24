@@ -13,7 +13,7 @@ from local_elections_up import paths
 
 ROOT = paths.ROOT
 DATA = ROOT / "data/raw/2015/winner_lists"
-OUTPUT = ROOT / "data/interim/winner_lists_2015"
+OUTPUT = ROOT / "data/extracted/winner_lists_2015"
 CONTRACT = json.loads((DATA / "columns.json").read_text())
 OMITTED_COLUMNS = {"mobile_raw"}
 STATUS = {"सविरोध": False, "निर्विरोध": True}

@@ -1,0 +1,552 @@
+path,url,sha256,bytes,fetched_at_utc,method,copied_from,record
+data/raw/2005/g_pradhan.pdf,,55bb84870b13b9a1cad479683c45c5b7a4236836f15c3fdab4ea5a7c7316830c,8085658,,unknown,,
+data/raw/2005/mem_kp.pdf,,3adc5b67a9f98c6529ba4bbb17dfd14ba6174527bdf0786df071fb563bfadfb8,8046692,,unknown,,
+data/raw/2005/up_2005_json_page_1_164.zip,,ed1d849b3f5126287af28b54733f9330174226dbe589f3cedf377a2910736bfa,2537527,,unknown,,
+data/raw/2005/up_gp_sarpanch_2005.csv,,e634be41ce0bd24c2e80b5cbe6de80cd4207dcd4c3bd7ae004c40c36e0c4cfc5,10780744,,unknown,,
+data/raw/2005/up_gp_sarpanch_2005_fixed.csv,,bb313b7ef074c550d40c89818351c7aeda47daceadcd3d9fd3048a667b426e90,17097208,,unknown,,
+data/raw/2006/pramukh_kp.pdf,,f574b4abb00c92a5cfc208b39ddc57a28be2ff58fa4118c8077d22979be445d2,613907,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0301.pdf,,925aa5b03c558c148bf91b9e46bc79400d6b3d715ab68bc06b83b0b0cc0d9dbf,58961,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0303.pdf,,26dc7effa8de076b22c5d85f136fb1fcb158b1096a7a949d794c2721a530d9c9,110340,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0401.pdf,,957789ee3cfe7e77979eaf9ac1d620e0e0e9dd5bed7cd89c02c0c0e3dd62da99,82765,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0402.pdf,,7821fd5825152b0be2497cc05a9a3d68f2e21e3d653bee2a50cf2f3e8ee11a63,70059,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0403.pdf,,83a62f6540ca2d94d56b3d2355fb45b99e82a4c73a532d1f1d5b40551055b1a2,85917,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0404.pdf,,2ee04dfb2180c4e5d65c148a14ebe36dc6cffdfeebcec8a221dd705e7e0440df,63323,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0405.pdf,,d3ba702f27d64ad548981de1273751dc0969c519954b711d4b72b335fb4713d7,96695,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0501.pdf,,2acb080514239699a6ed81275eddeb1da830a6f4fdd0fe4515439394a7096558,105561,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0502.pdf,,f1c4ed21648c642c4bcb07486602a508744e7293fc4afb1f4bcd0c2534d9f471,74193,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0503.pdf,,cb9f7bb153a7c919f61c832291e4c459f17bbf4eace6fa983500a42a696a9489,84430,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0504.pdf,,d467048a0a99da2395b2db7bab39fca73adce070cbe09d72f290423d94bbeb3f,70744,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0601.pdf,,4435e1b94e69a52e8e249bddd9480e0396810accf990c8a787439f08b9d8082e,112208,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0602.pdf,,0b9b1024ed8350a52e6b4737ee1d60c62348734f30129678bfcc28e67b0c41f5,73668,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0603.pdf,,b2763fc8d48fcf11c91b2ffdc32a4cb87db02156480dd165b5fc7bd9b9f6494b,76817,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0604.pdf,,a2d864a7494378a8a1b00e8533b05cfbbf17029180406c9af49b453620c0e8f9,110611,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0701.pdf,,0bfea451bbe789fb7189daabf1963d2776708a909f1331552a1c84d7256c7bdc,76194,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0702.pdf,,14ea791425fdf8e9e938f95a60eb4b1dd0487d3cf1841d33d3871c7cc9634012,73990,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0703.pdf,,301c817851ab5f99bc3497b71b4c6e17d68f14aff28b1135c20781cf079fc2e3,94932,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0704.pdf,,d0b9198a7a04c75bbd888963d8f24fbb51af14e5a34d2063449bfc791ac448c5,80609,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0705.pdf,,b26b1f9e34beeda3acc4a7e40024c2e3f02c0cee07d444175cfede58984939e7,67022,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0706.pdf,,e9dee8f3f2974d2841976e718d450f8122373f1d6a8ca23581cab532fb7e7463,74473,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0707.pdf,,5760659c8ff56f63275b5a1c8a69c0d7742b0f5a7485396e5a7ad1a693b603c4,105936,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0801.pdf,,0df414d036ca984f8eaf42e7d8ced31e2a874b9f208ba6e592fdf4a6c8ff47c0,67580,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0802.pdf,,7327976b071f8c8af6ab211be3c1e56b36ebdedbacaf7af3267829c8c4c27ba1,70738,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0803.pdf,,6980f0b13736083839e42da868de33a2314cbe0f77543fe1d167d765d50a21ec,60054,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0804.pdf,,28166d6c3cf7e742f959f315778fdd85cdab61e19aab3b0b1e9f0d4c91157cf6,66308,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0805.pdf,,3b621f477b27c8149710db297288681d0910eb8924816e1f9d4710a4881aca4f,65338,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0806.pdf,,951738496123e536188dbb4dae7040f8f8f66726e91a2816131337f9986a4284,75895,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0901.pdf,,63c85df315b0a0486278f1bf5a6b7c92843f5a53897536697a67ae43cb492842,72448,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0902.pdf,,028ba6aa843d5beda87c52deccb8a8a5a7d551c79f7de224feb5482ea950fa6d,56092,,unknown,,
+data/raw/2006/ulb_chairperson/LB_0903.pdf,,a14a3c6edb35d8b2b0c9f0880313623ad88e54dbeea60c33e4d32e355a7c6a5a,81510,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1001.pdf,,f4d3f88a9affda9cc3eb02919c3ab794d6dab2f736a00224dacec7f2056aceea,61540,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1002.pdf,,51e99c4366da270343cacaef0bf103d25bfb568a22c4672272fc447248c959b9,70977,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1003.pdf,,bc95455166fe331e3ddb11f1d6fd5f89efea43959030ad1a9909379a32f22782,72109,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1004.pdf,,c44042f056c8016489adbd8ff3fc108b02fc85785b9e7ab363b05d9a884f7821,52101,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1101.pdf,,8cf7d86704443ec8dd1635aa04b0aabc54c18b41dba369f73cf3623d2f9c96c3,69814,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1102.pdf,,d2b22014cf79d26a1f89569123693ed31c811bc160d5744e02d8482fce6191a4,67102,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1103.pdf,,ca0df4aba506ae561392f6f16f14ee9600ce3511d02704b8c933ef421791072a,81250,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1104.pdf,,f3a0a74cc1e734135e280106f30c00578bfc6d34652f8dc5756f1ee20208f1b3,64978,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1201.pdf,,e9ddf7e97bad2d8a794a5a3a968839b1bda0f6d7c24b6a7da216d79d0a08cac0,71236,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1202.pdf,,061fe31080ef97a801d2d52f757ebf02f4a946becac93127ae8e2d695263881f,92877,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1203.pdf,,6ca6ac7edbabbb9783b808a3f2d270cf3ad686e1ea583d2df4134432439c658f,82228,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1204.pdf,,b1a67b3747a5ae2039806bbce993a6b81f7b5278503c2aeee1beb7f71d98551f,69019,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1205.pdf,,951969dec7d435c42873318943c508b9aba6886648c469a920b53e3c771e01fc,77021,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1206.pdf,,0afcff82493330b691334e825982420de52ad123b081b545d9d7d6bfca56e77f,79240,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1301.pdf,,77b4d898b54f1183a8e0ed4d71aeba3f897ed30bd2b52d334e87e297286f303f,56312,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1302.pdf,,662ecb667ddcacc74db7c2398d2306f1fbb672d56ffbcd5c2135f7679ca43bbc,49870,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1303.pdf,,da8f1b2e1604e1a31e5fdb233a1336a948e49f3ca22d23aa262d34238ca62acc,57410,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1304.pdf,,d424e2b1b57119d99bd025589b7a570148628310685548ca48a4344aef115e7b,62258,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1401.pdf,,0f906187416e5a6288b406fce7ff78f17fc0d3ca5562f200e7c44f31046a9207,79327,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1402.pdf,,d454236345b882caf92afdd01deea65237071fb989d13314d2a17fb538c7d7be,63873,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1403.pdf,,5412804918d7207321d42f0423cc7a7d5fec7344f924a7853c3a83bce2cf2f6d,60950,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1404.pdf,,ed109268b83e7cdb648f213d49ed4d729100510ac49d7a9fa1509ea7d01da2f7,59867,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1501.pdf,,6f0842b51ef2c7ef774d6e85bfb651e120bbc00a61dbbbf4c0f920908a422425,55620,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1502.pdf,,354e1e84cbccc387b4005dc68d2026a747ba2096c6adc2ab44613195dd22c5e7,57558,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1503.pdf,,f35159e4ddf8448f6f7426e5cb0c375f637544337d25398dfe2d98c8eb40a5a7,58143,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1601.pdf,,84dbce0eda732c4de3983048bdfa305066c42fea0271d600c986dde455cf2e51,74762,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1602.pdf,,144427e9a4064cd3f0efa1818689a613db8d4013225cc45b95b25cc44209a96b,64395,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1603.pdf,,51a40560faae0547148a21d7af8dc3f3ac89bde4bea29304114dd0ca703f71fd,66665,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1604.pdf,,fad41f81dfafc8ae496c43f3684ee0cbae62488843ea4773574431c8d26f2b3c,82209,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1701.pdf,,86dad9ad115ce664857f4c6acf32d93c2acb8eb5b7d537549000aa65a7db1a34,81556,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1702.pdf,,573c980445383f193aedf0b22587881a46da52ed616610d06bbef8e377f84b1f,69138,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1703.pdf,,0bbc5e953fde58afdba96472024735219a2fa91f4ce809d0d041c394b9b0b25b,81903,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1801.pdf,,03545c00074715e67cbaeab3498f7ea54db40fa64b4507937b5a682c006c03fa,67787,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1802.pdf,,24d27de072bbc2d59136aa532def2c45f76236f2d8b5e3cc3e1a6b1408507f2a,58653,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1803.pdf,,ffe3795be6e6c7611e113e0b246d0abbb387ec089894b6605e32af65c09acec4,54043,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1804.pdf,,eec655cdc9e910441fbeaba599c57504ba7a0485ea1b7af1c87051cd9978dd94,68341,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1901.pdf,,3f2c128706ffa826b6256ae78c58d1f2ee8d8f5a325dc572e4893f1cda22822d,67363,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1902.pdf,,2c0f6e16ab38e34c4de473dfdd15f3b035ccc1ffed927e68c79f849d33c08999,56867,,unknown,,
+data/raw/2006/ulb_chairperson/LB_1903.pdf,,6da464d5a15ce52924293912bfb3c341c97a6924a7cd9512f805fe9aa9fd2006,69277,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0301.pdf,,3d23b7c7c13e8f4e2cde4817ff3bec752ef22bed3b3fe6a8181ccba6ea55a7e7,648968,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0303.pdf,,3d05b98f83394113bf9535f7ef2d43847b5ff57b6c31237111383266f3db1e04,955052,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0401.pdf,,0ac4adc96b1c0409b702e046d3224c673d8226bd103b9b64346fe7523fdc4e2f,736816,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0402.pdf,,9900440ea4610d993a6a2ae19e7ca045d6c1aa764195d9f69ad14ab5f6fcf614,368607,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0403.pdf,,6cf190c57ae6f823ee1b515590c96548f6716269eb2baf2eddb7f64756a3bfe1,949825,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0404.pdf,,0e35afa21a0fd252e82f503d71c55890857a9392649ff773abf0e7c9ad24b133,247919,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0405.pdf,,db593282a48737617d93e92db0e19e6a1756a77e3cd71c6a8bda22b5a0ae9c51,856885,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0501.pdf,,48745abea649be2671fb62c2f81d4b9841431e8233d769da149802fb691b260d,1032250,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0502.pdf,,75da28fd55e85ed29b71869558ad63f8c7fdf86a9f810f5f5ad6df654979202b,482032,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0503.pdf,,75b5d73b38eed5ea1c789e099515551cd4541cc58dfbbedd0b7686ef9e46d976,804160,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0504.pdf,,45d4c9c5718d4353008131182dd5b6b155f1652c76d7bc57c59c28c9fdeb7a3c,537299,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0601.pdf,,15adafb1cf476d742790bbf8f6de295c7dfb626a9702bfcd679c69e686026bac,1002805,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0602.pdf,,183a91031f4b2d1956ff7efdafc369d6c2deef72b7cf3eef29bc4659be1837f8,428336,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0603.pdf,,a1f0d0dbde572b15170cb062dfdd84e08d272f7debb2f55154258e17a2dc870e,537280,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0604.pdf,,6c8c4ee4fdc55ddb3a98ea498c97fe22dea2f109a788687c4d8fdd2f3d20e29b,920787,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0701.pdf,,8c882e4121673f688b05603cd915650e2578947257fc49acbc06fa4ffaa28cbe,598183,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0702.pdf,,a178d4884ced43cfddc5311ce51d7c8d1486e2fe0a75a9cc9adc26f6f421c7d6,387488,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0703.pdf,,5a99e8ae6449aa3871d9a4130e027d95b9ee84bcb968a3056b6e6b0dbbd6c458,645548,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0704.pdf,,a551dfe95a94483c0faf02809bf248a103eaf6370f4d7de8332bd98fe43e607a,787893,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0705.pdf,,e8a7aae4d8719dde11b6a516e3646babe2a0d0f669e18e1eeb5f66ff28633d2a,411255,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0706.pdf,,5f06c13f4c7b74bc55a6e8e2f62a865893dbb8d0b3c5605fa77ef674cd168886,359600,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0707.pdf,,bb4dcf6b7363c5e780bbaf3c1d78cdd856dc69b81eeb05ebd27664a85a553e5f,802817,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0801.pdf,,fac568673cd3a3d179273c56f66906f60b3a581127530cbcc1709278f5dedc3f,346267,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0802.pdf,,8cfe43b4628419370dbeda379e0cd551b0545194c0d80ba6de5d1bc78f03b767,392682,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0803.pdf,,88157996895184cb9922b1829499dc3a95d0e3a9ede064a5c89c4be43d34456b,331736,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0804.pdf,,08528f8a486d97bd93fc739d9a44aba311768bb44cd4f5685f734b6aa7ae479b,306372,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0805.pdf,,5fd012afe778674b16767f543c87edaee2b8b245c38e3999bffef874a58b6ab6,590445,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0806.pdf,,91513112e13ea9710819921b832f4ecf604c836770bf9462bc7257e6de1c8f05,590445,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0901.pdf,,904b897503502b94549187aa6e87b5d448c7a74fafe21eb197026f1e3f06f623,474426,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0902.pdf,,aeebe6d0353be9b028c3448a6085d7608bc28427e368e50d69f7cac3b014e383,212501,,unknown,,
+data/raw/2006/ulb_member/LBMEM_0903.pdf,,6b2092fc8341e5c5eec5032151264e874e8bd15313467c94693156683626448a,732959,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1001.pdf,,27d6857301d1029e34f3563d90e0d00cf542b0b451e3ae139f73ae10c762134f,285226,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1002.pdf,,f65ce38f9c28ff90bd98349513fcb5a0fac11282fb9ab7094e669046fa570ee0,353195,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1003.pdf,,35803132e4b3cd99e7b7b4b015fec65d56c71e5d3d2150e10d4c8d9c42251c61,357203,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1004.pdf,,19d5a488a5a0072c73c8b77ab14cfd3489ea1008bbbdf1b44bbfbd4e2e666891,172394,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1101.pdf,,15009b82b20f4a7e4fe34990b9640b9e9595590c4917bce0fe0c743a4e8fe733,372544,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1102.pdf,,b632ae2d0242f4f32387e4d8910fe612c99305efa71ecfb7aaf83048412f3623,251442,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1103.pdf,,74e0ef38e3a92591581d8119c9e1bb160049b9c110beac533cdfc81601d0da66,601579,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1104.pdf,,b548aeecf8477e032dc54892afabe6ce4dbbe0cf563d894ef11b0cd2ef2a8ee5,285388,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1201.pdf,,ae123806cfecc5bd9d3996cda0d12ba6509f4bd04b5b7fc470acfd1b58c71dc0,391294,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1202.pdf,,955b4f867838e97c8a9f42626451754b6ac1fb5ef9a198e89fef90fc902f88e1,600402,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1203.pdf,,8c89c016a82de476473f814380e26b5c3b06a46d01f9a0dfd076523fe1a4dd7b,653957,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1204.pdf,,87a572378293fd6f5ff923fa201be3ff9bdc4dc6801a044f745b36221bf75dcd,615402,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1205.pdf,,b3162cf4458aa748af81a21b550d2f2fdf8f61519751484def93164e9edab218,607605,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1206.pdf,,943d08e9b4da3ee8cfb1db867608869a1064beb43a29151dc503f71d59bada5b,526693,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1301.pdf,,e0b193804d94eacedf345e8a166ded729f7844363f795799bfe4095e72cbb502,268565,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1302.pdf,,36a948dbc8d6260e055cb6c8c935bf48b24a3e347888302c057aee48ad50e462,119637,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1303.pdf,,85c7698a9f3d388b17c569504608de1b2034a8a9a52e51f050de968782d3f651,254356,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1304.pdf,,f915ce13e43e5d48226d56168c2fc06efd9f5ba1b81a5d9a55b844400f539f29,328433,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1401.pdf,,fc5165c555d08be9ef5599c13d0421956227325376d6b0e81072e5b02b92d4e6,498060,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1402.pdf,,68faf862f14c79edd145aee7d6e72f77d3514fec362ac2d2e9d02f3a8f38c331,255879,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1403.pdf,,691a40deb65fbaf65ebf2f0f6129507c66bbb6d02a2a95987d77f604ab97500a,305655,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1404.pdf,,639daa729bfcd47b50bf0d0d63e49227b3110f79804be7c97c952a837c30bc93,290838,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1501.pdf,,c1b0d3a1d9e1d88f87f38af511a184540903637c94ccb19a224e402bd669c5f4,192181,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1502.pdf,,84ea535a2ecaf3e36d99254ee638faa9954db67139258591703482d2223e7798,240602,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1503.pdf,,a2b43d5aad85b0019df8c8f5167e54bd9c9dedc37603272964c0a51fc1f72a50,221656,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1601.pdf,,06b373fa1e33cbccddc06d61f4b2295e25942092ce5f93a6e1be6a6d53179e6c,534196,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1602.pdf,,37593432868630948c98ed7c35f321b1ca885000749e916b6dc9839f27b7b9b9,317759,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1603.pdf,,70edfb36182f93b428b83ec4a48cbd45730540a2d2b20e10dbddf8e132ec24ad,320453,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1604.pdf,,f3c9be8a0dceb743afc00f06ceb426eb079300a1d5061875b105d9b412df4c1b,469736,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1701.pdf,,a2a9c7e0317d1bed9708e89f5408d78f33eea9eea4b4d72547fc1e2f23cafd2a,447458,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1702.pdf,,409d693b11225dcc00873e3299c63c0b763294ca46a4e58ca093cfa24c934161,378105,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1703.pdf,,c47a23bb0dbc90ff7437d5e74e0e488429dd20a0f64d5bdf6098a3375eb2bfe0,469178,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1801.pdf,,4643c37cb82de1ce96a76c57f9d9b91b56bce7f990ae2dcacf734b053c913630,400428,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1802.pdf,,8c6d905cf2c7caed3438ca73b0c2abb43d51e03b987027dbc7082cc7766481cb,225085,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1803.pdf,,1242b0bb48da4d33a3ed8e7a1aa33768b051c3275e9604f32fbe85362e92c127,392476,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1804.pdf,,58ac12f3d25b7a7bd76ce3581b5926d0070572339037d61288356c4b1f776135,421429,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1901.pdf,,9294d0b46caaafdb0f9444ea90a70659dffa0a8cd0f4613ed60eb44cfdd4129a,346050,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1902.pdf,,07211e5b5df04ceea85f32456c30966af4d6f617025bf9b9068c4f7114f16052,309317,,unknown,,
+data/raw/2006/ulb_member/LBMEM_1903.pdf,,9dbe9c49c85046b415c81db2211f5eab83e40e5ddf3cc925c56b45bb4c1c51e8,316337,,unknown,,
+data/raw/2007/Transliterated.zip,,d0f882af8d3f628654740020e8814e0c217447471f82eb849e6b961818b413be,1389469,,unknown,,
+data/raw/2007/pdf files.zip,,c9dec162a4a2014fd55a0d58b1fea527cb6c4b83ae080ec5cc9f6d0a282870c1,32886253,,unknown,,
+data/raw/2010/KPP_result_2010.pdf,https://sec.up.nic.in/site/fonts/KPP_result_2010.pdf,b5a0b80963bade7becc1c6d5e5a35b9e6927f038c950e58d67453d470704d8f2,337850,,live,,data/manual/catalogs/up_discovery_2026-09-10/sec_results/format_profiles.json
+data/raw/2010/ZPA_FINALLIST_NEW.pdf,,3db351f3898464dd495221ae9a4698d2cf8a95e84582ba4663f3928a18a9d666,38568,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0301.pdf,,69484b2780475e19e2d75e885def666a36671daa1d4b38b4918030296428d115,358680,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0303.pdf,,bc6858ebf48e8a0e12f96e504aeeb2fff22c3d158acf4e4c5d2b58e48942742a,437798,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0401.pdf,,a078f323e34d2c66aa4dde9b15d66ed5d9701d96652b2e23e20761297bdb65a4,269729,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0402.pdf,,6d46bf4597618c2acb1b8754d16590057d143ebcf0b0d04c9053815561f7f5a0,168447,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0403.pdf,,0b1c61384ad3808980b08ffc4216bbef4c20a9afdfbdde5cfea5de61e4b5371e,237916,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0404.pdf,,09ac2ef33c131e4266921acd11aaafa8e42e849a5fe42d421c524a62b6e39412,144439,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0405.pdf,,c01e356cc0b8abe1430131860bdbbcf26a57ecf6b439a09368b0693c87452285,401309,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0501.pdf,,d6a4eec86ae12f597b4e4690cab5b8420cc2be3b16df6df411ea4691467a75a6,407987,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0502.pdf,,c1145146bdc922692e356a8a8b9f3c6d7850e1e66d2aa954dca82898e135ff42,206798,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0503.pdf,,22acf9fe46ef1eaae570abbafff24be3608c8c4351deff7890f10a0b561b55f7,442892,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0504.pdf,,88d8395ab0f630fcd62163a47170e71846e855592b982f7b53d610c65c6505f6,251756,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0601.pdf,,bc339c1e542327d54c9686a7512ff62a837b0d57e4a93b673ed30cfb44a4d0ca,421161,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0602.pdf,,e67f5acb7e9bf6466186d39fb519462640acaa93958c95c650d4c08f438bf81b,256006,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0603.pdf,,d0f52000b7d63352f5928166503eadd1a567e81c18b663855ea0fbe3d98757e3,342305,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0604.pdf,,a88087e6ffee1512121e866f1968dd212ee2ea1f736306eb2ba9234a3c12db40,404246,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0701.pdf,,71c6a8047aabdf52c9724090fd462d46ab424e45d5e1c34d9fec9665c49ec8d8,357840,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0702.pdf,,afa8efea4ceefa992a076f469873f9a89d023889d74f23c454a2b37560aaeb37,196159,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0703.pdf,,3c0c776b9c8fc8dcbd64f70fa128e984b7ca293ed5afff5c9516b09d1a25e7c6,269098,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0704.pdf,,64fa4d80eb672b4f0a419ab51314a07fcd31be91f5125d89d0763ebb0e33ed52,354174,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0705.pdf,,b1a53319553d83cbdd5d8df7ad6a8633b4ce11641f2db833d555b8b28a9af99d,258013,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0706.pdf,,e794ec782c5aa94f3c520f235b6ae21bf5a88a00ee79f3977beccda54cb433b2,247708,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0707.pdf,,95c587a9ee8e07ce885257509f2aa72a5f8cd4279488eea139b246f4592e177b,234685,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0708.pdf,,05edfa0a3336acd7a9a52513227d15dd36e8fbe1256df1658352fe7d5d16ecec,188255,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0801.pdf,,d1f250eddebd6da78d334b17318a9c5da8b82138d2093c92c119c20029145b0a,214486,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0802.pdf,,ca31c0ebf2601a7cfd9db984970b09d99426a6ddc2aef29c49a68115ed1518d6,210257,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0803.pdf,,7a4a6ae186fffd9c0cd161f85942e9136a4605bb2b4b74435a26710096a5c4e2,186793,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0804.pdf,,f25ed3f456e87ef4c86435f4ba29d63d6f713fceea5ec4ed3df51b057ce6a012,192363,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0805.pdf,,0182137aed110f37f5b0305e0014329ca6d8e9366e2a794e6d3f08dc18e719de,253101,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0806.pdf,,6b6c7720e5a614efe60394ab4ce6fe080d4351a9f2027cc56977d5901c8e7b7b,252703,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0901.pdf,,e3e6078cdbfe046040f4d7a390dec807d50168a58b93fe0a24dca3463054c6d2,202951,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0902.pdf,,246642bad54ed5bb805a82b012888c9b23ad43ddf769403e9c40ae7146834ae6,155601,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_0903.pdf,,afbb1099341dfe5de2db3e48305dc262f8d9dbaacb9fa93f2995842214c579e0,189385,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1001.pdf,,5328280fe5126e185eb7c9ba0ec3186e2358e142f29acb7a6236b9561779268f,123460,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1002.pdf,,0102cc9b0319165a5f3f9212c4528433b7dc3880521c6f2f28af27ef108e68e7,159583,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1003.pdf,,ad47b91ea68089b5b32f1afa599e21c6047ba821cd3e858a9a20a592eafec081,225640,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1004.pdf,,f4e7ab23f107fadba40c94122c8c2383a9eb911a5ea0622e4383f0b2543edfd5,146103,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1101.pdf,,6b74cb32e33d6726ae3095429eb3badff3b5a92f3b34507ed7477ffb492e9eb5,366367,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1102.pdf,,c2c6b1f27436681d064da7c01b6ccbfcfc0c85443f6c22aca85c24f3ef64c6a5,219264,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1103.pdf,,3a7155aa1cc54f50dad244b0b29e372858629b4ea0fad67c6190e94e1cd805c5,632061,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1104.pdf,,750a0a903e3d7ba6cc8392a1ea90f89b11d23c80f0f0509352d79984f355dd7d,452899,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1201.pdf,,9fc1514a92628682dcf1dbf155471ca491463aec5715f9ddff6c3afd5996ef7d,332274,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1202.pdf,,372cb6055052a0a4a36eaecb4e4c525c802e1e536126f67b09e7d8b931163b5c,402176,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1203.pdf,,dd925535ab05e354e7fbb1bfdf99e3a563c18cfb1d2795150628bf30d79d4596,515049,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1204.pdf,,3d0a943c1deb2847f756df1904c739dfb062b0afc90bf808bb91945f36fb004a,232928,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1206.pdf,,f30119ac8df3c145a6ee2e4990b11be2d518cd23d215935bc54cd2153910a7ca,470296,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1207.pdf,,8f24e2c3049a7eae36670e37e661ee5f9272c9561ac43d31cf47fc5a455b2b38,335515,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1301.pdf,,2259b92a145539db156e84c0b92704cde6665730fd7c69fb07c23851c25b5db6,423727,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1302.pdf,,0cff794bb42bae841c47e83f361e3090fc1f3742bda6ddd50be75f6b31a254f2,164221,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1303.pdf,,d0173eb8e58213c1dd111f541987ce1218e366c663d06efbaeb79eb91106d26f,281165,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1304.pdf,,72e6d60c9bf62cbf9bef556406d69291420889095264724683ab78c6faa07b84,436799,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1401.pdf,,a9100a2c36ef741890e1f449e541dc71d06f227235057effcf030df2a61463b7,432911,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1402.pdf,,9d6e79974fc433c30db7f3a46314ab4e73e6acfc7f94afa1044e6aa086bea278,327792,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1403.pdf,,10dcb9748e398901821b1c3caa4dcf97573dbd541c32f0a4a9a04de6fc884eb4,320549,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1404.pdf,,fb7560bd5dbdafa8ef2c544fda79609816f5e069d4bcd60f27e6120c0b93d2b8,315346,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1501.pdf,,3b5bd1b7489f5029e39adc93036856bcca900c46fb7e034c1b1a88b554884656,350815,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1502.pdf,,d31a261d9a619a70cc73c5f8fe6a950718dd360c6c0da2d54c01befb2e4075bf,346330,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1503.pdf,,ed20c27fd3201cbcfe54ce98eab2695bd4e3bfd3da2c0aa8c80d36bf04d467ca,244076,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1601.pdf,,74fc74831eec0a5f22c76d71489ad6618c458ddfaa84316ec9a42475b0c61f6d,506729,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1602.pdf,,a6963766e54a3f8975257d094f36bfbfd623521ef2659a409ac8ec05a08640e6,342714,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1603.pdf,,c7b18b83d7a3cd6c9df521572cad35556e9b7b0a08694e29f5562269bb2c627e,472220,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1604.pdf,,e5aed77d5311c05b7bd4435370d220857d32f8f47ed349d7552963f80c589667,425431,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1701.pdf,,342565dd54eee6115b06e9e504061aa6b33b41bb4dcf17d37ae28accdcf65c7b,628939,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1702.pdf,,c8302e6f84f3cbc82d82686baf1758c3cb765feb2cd0cb48d2d9d0f60d979ac7,262157,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1703.pdf,,9aa701ccc91384a6b3d374290049ff112b9aa834f0f8be6dd88e499230c9ceda,428394,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1801.pdf,,bd301204261c84c1656032db7a997b05251d39be3ceb34e0dbbf3525d5f93a7b,497789,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1802.pdf,,14136f1a1aaa5b530ec5be96f8e641fa43da9db315939ddc052602b900b55c11,261505,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1803.pdf,,1e9f4b737cbd8946b00954b8d9640fbfcdae77593a15564989c2e7ac903ae282,314514,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1804.pdf,,40307159953104629229f265d6a4b379c6e76d0e7301a5517d351d8274fd2de4,613161,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1901.pdf,,5af636e3823a760b377cbb7d2eb16216da9b3a910c833831b0b94968f5f80158,206132,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1902.pdf,,f35d092600e4f8e0e452706f3954791dad5cd41bc230a6dc3369b011e6556dff,315744,,unknown,,
+data/raw/2010/area_panchayat_member/kpm_1903.pdf,,6be89daae0ed52fa08e16b51be730c880b6a83ad69643865c6ba177b7558d102,242741,,unknown,,
+data/raw/2010/pradhan/gpp_0301.pdf,,f75f67dd6b84431f0cf2629e38b3222e45d090481185685f5d762f570333c0c9,288501,,unknown,,
+data/raw/2010/pradhan/gpp_0303.pdf,,e4e37254b33ec6c49db4176cbda1cb90e4dedbd39dac14c6e7596ca8d40b75c3,261415,,unknown,,
+data/raw/2010/pradhan/gpp_0401.pdf,,9cc32c46c2868526b74d082de33dd0df329d2b4821236739dc6dc1b369fda970,184498,,unknown,,
+data/raw/2010/pradhan/gpp_0402.pdf,,80ecde9cb77ac8f8c9ba2b3839090fd4b6e4513bb35dcf9d2ca99553d85bf432,107754,,unknown,,
+data/raw/2010/pradhan/gpp_0403.pdf,,50e28af1162cd4c5b954a9dc55969fea86d59e9952ef0e5161394736d3130530,165506,,unknown,,
+data/raw/2010/pradhan/gpp_0404.pdf,,eab72d0c9de8d2319bec96c6dd89c85da626d13ad61ede940441a76addf07a7f,110823,,unknown,,
+data/raw/2010/pradhan/gpp_0405.pdf,,36ca46a20a7b3b62be7924ba0daac9ff543259b083cf36bef46f42d23bb15782,327481,,unknown,,
+data/raw/2010/pradhan/gpp_0501.pdf,,bdf3ec5e36ec838ddaadb73e8551be83a531096afc6e54a6a02b268f4c9446c5,347214,,unknown,,
+data/raw/2010/pradhan/gpp_0502.pdf,,de38507412cde13d890390418edecb00248b7e55ebdd3c7288a24fdf5cb99b97,191183,,unknown,,
+data/raw/2010/pradhan/gpp_0503.pdf,,73c1cea74f88463f2910683a5a27e057ea5f66cce8da188b4dad3c7d4c4b18f4,350406,,unknown,,
+data/raw/2010/pradhan/gpp_0504.pdf,,25938afb805fcb858168586411e78c077f6928fef73de69776d4fa5fa1de950b,221524,,unknown,,
+data/raw/2010/pradhan/gpp_0601.pdf,,a120f84729503b8fdb8618c00f182f28d2779a94200402609dee6d25f22a3777,373237,,unknown,,
+data/raw/2010/pradhan/gpp_0602.pdf,,39331dc2239789ff1c45aedc2a568785d06d0a7b258ce898dc1182fd4feefa39,233737,,unknown,,
+data/raw/2010/pradhan/gpp_0603.pdf,,d65bbf83b82e5deee9edd00bbc3ebd61b5ddba47985159f634a53a15fccb32bc,343221,,unknown,,
+data/raw/2010/pradhan/gpp_0604.pdf,,f858832ff1ae07c77e11b3d9e610d7c5387ecc0acaa27733f5b6127ae7adaa90,386788,,unknown,,
+data/raw/2010/pradhan/gpp_0701.pdf,,a93819e2453628bd430179bb27408213d10e337452b77dde56d75fe7dcb2b69f,316362,,unknown,,
+data/raw/2010/pradhan/gpp_0702.pdf,,b2e39cf5b3b804b7b91a5c13fc3ec3b7cce64e0aa3948c4356c381bad5fb2318,174776,,unknown,,
+data/raw/2010/pradhan/gpp_0703.pdf,,10d2c3079b0f8b831296b8d2a99f44ee06d7635dc6a512508b2db8ed6240f5db,187181,,unknown,,
+data/raw/2010/pradhan/gpp_0704.pdf,,25e117cdf50a976e24ab863851812778aac6eeff309146f53d9ddff396760761,239220,,unknown,,
+data/raw/2010/pradhan/gpp_0705.pdf,,defa1678efe650fc9610006ab42fe3258ec587ce4f765937514da375fa826993,202609,,unknown,,
+data/raw/2010/pradhan/gpp_0706.pdf,,51eaaabdd6e02e8a1771e42aeede404bae3eda047b12e0da556f6ec8e2230f06,198823,,unknown,,
+data/raw/2010/pradhan/gpp_0707.pdf,,cd581afc806c1ccbda4031e7cf503a88b9ef80f2cbcec377374221f8c6b74a3a,195219,,unknown,,
+data/raw/2010/pradhan/gpp_0708.pdf,,349c3b1eb04906c48e5c10572503b3f0d0fb2fc10ea076d5c6e3d2f9249e856b,162150,,unknown,,
+data/raw/2010/pradhan/gpp_0801.pdf,,ff945f008f3c4594283c7ef665e60d18c7ca05e1a1b3cceabc1029dc3bef78f8,201114,,unknown,,
+data/raw/2010/pradhan/gpp_0802.pdf,,a62eda609dcf9790ed9bf20e7907c9b97d8734742cb1abad84eda4f0cff137f4,176533,,unknown,,
+data/raw/2010/pradhan/gpp_0803.pdf,,72128ae4c1d41754f89f8a9f7bf1a2c702076eb9b7fe3f675ddc261900ae424a,170446,,unknown,,
+data/raw/2010/pradhan/gpp_0804.pdf,,976306033aba82d22b8a9ac8ee153ef023bbb0f556f6bc67f50d06caa7452066,175647,,unknown,,
+data/raw/2010/pradhan/gpp_0805.pdf,,bc575d0290334742de3b2f01f511ac8f4fa5cd377ba04fd458e1adb0093dc844,214646,,unknown,,
+data/raw/2010/pradhan/gpp_0806.pdf,,340474c224bfb0d3d5827e6d383fc4c060b4d5e66716c2a745a900374c0c4bfb,236566,,unknown,,
+data/raw/2010/pradhan/gpp_0901.pdf,,7c1bcdd8d0e1124ddd77f6a910b26b12bfcccb5bf7a8558f65421c0c25749b2b,212221,,unknown,,
+data/raw/2010/pradhan/gpp_0902.pdf,,c9b9754479816afc9ddd5cf6c55fd40d5aba5a1351c2d474fb0bf8c7e62e01f4,139729,,unknown,,
+data/raw/2010/pradhan/gpp_0903.pdf,,067ce67ac55453a0a7c690b75d2f00727ebc3613a2a86a909967b8eed27b99fc,170220,,unknown,,
+data/raw/2010/pradhan/gpp_1001.pdf,,bdf7d17968b9515d35bf7234617006a9a662e5ad6ee979a4cd7a64b18bdeeb9a,109671,,unknown,,
+data/raw/2010/pradhan/gpp_1002.pdf,,3eb41bb9aab3cab92c601862e7d4ca4c5e1d77003749a34ced4558a7a4440c78,132421,,unknown,,
+data/raw/2010/pradhan/gpp_1003.pdf,,ac46b645d2ef351fe8683f25d42d951d50175fb36fc3c617ef19eec17866c07c,170872,,unknown,,
+data/raw/2010/pradhan/gpp_1004.pdf,,35afbbc0f812d1f3f79e995a0020add3fb5474050dae1a7519665fd86d9cb5f3,136250,,unknown,,
+data/raw/2010/pradhan/gpp_1101.pdf,,68c7e6e916db9ae7764431995260d7aef17fc0398c01575a93305476c0eccc41,301377,,unknown,,
+data/raw/2010/pradhan/gpp_1102.pdf,,482868593d89af3c2fe71cb087a550cf03302aa25628aeb1c9c96f99bd96122f,177800,,unknown,,
+data/raw/2010/pradhan/gpp_1103.pdf,,e1db8f4fd8ce32215876a4f09395bd194fc9b974f775d99c9f20cfe397e69e6b,522899,,unknown,,
+data/raw/2010/pradhan/gpp_1104.pdf,,e2a8ad8fed739c1bddf40e791aa428c9ac8d5e50e30411c14b99f66f85f09098,406349,,unknown,,
+data/raw/2010/pradhan/gpp_1201.pdf,,55db6fa25dd252c4da6ce0c00603a360f21c9e582e0d964733d7ae787f5ab4a9,268313,,unknown,,
+data/raw/2010/pradhan/gpp_1202.pdf,,256392bf699ea07fe8a92a2642cc20bd05031f71d8c371411b956af462222e59,348893,,unknown,,
+data/raw/2010/pradhan/gpp_1203.pdf,,a765d2a9a8f7654f31740b66f5ffd266b7aff0a05d9a0c1eab169df5d91421e0,403313,,unknown,,
+data/raw/2010/pradhan/gpp_1204.pdf,,156cf25fb58f55f9847b71a6df926e8b24f052f1dd2dcc69473fbe27fcab3b23,202622,,unknown,,
+data/raw/2010/pradhan/gpp_1205.pdf,,534656582f5a8f2a1e5ce777cfccfb1ee7bdf820aa870a6f01391e10b5d02ae5,489657,,unknown,,
+data/raw/2010/pradhan/gpp_1206.pdf,,0b2cab2a5dd781b14d5bdef199a42ff3f5736ea605bbcbe56aa059f5bb4ffcdd,365248,,unknown,,
+data/raw/2010/pradhan/gpp_1207.pdf,,69e0147288566a636c3a380d081340e869604023c1e715ceb206190e6bfb1708,278751,,unknown,,
+data/raw/2010/pradhan/gpp_1301.pdf,,eaa400490d4e3f2e597e02d4cb75f67305704665fa37f02e5aabf06ca28d5a88,336029,,unknown,,
+data/raw/2010/pradhan/gpp_1302.pdf,,c404c594359f3a1daa92a48ea4424997b22d4a81ef09785d6b1d83ff5518a645,145916,,unknown,,
+data/raw/2010/pradhan/gpp_1303.pdf,,2dfae71a59a292fb75c010539f2989b656c83bbbb2c16b448cccc4b7e1cf6cb1,257305,,unknown,,
+data/raw/2010/pradhan/gpp_1304.pdf,,35822301b3f24b71be0eceed975ef8e847a51e66e76e09fb6c17952dbe06000f,380632,,unknown,,
+data/raw/2010/pradhan/gpp_1401.pdf,,736b32c63710b65fa97d9cb86e97e0ec4d7ba5e1a21aebc110b401bb7d92c2cb,370385,,unknown,,
+data/raw/2010/pradhan/gpp_1402.pdf,,17af757bc3cad5b65265d6e64b6a0b0beef3138da116058b1539e2cd00e68b36,296094,,unknown,,
+data/raw/2010/pradhan/gpp_1403.pdf,,76234a4db32e1735ae2b78bbc9fad1f6ca43094aa092613b9b58d005123e33d1,297833,,unknown,,
+data/raw/2010/pradhan/gpp_1404.pdf,,70cbde9f6c7f61fa6cd8894822a4a18e9a43843c42120f9730632f9d1b53e128,271833,,unknown,,
+data/raw/2010/pradhan/gpp_1501.pdf,,9e2ccec2d186f79cb097bb0316cc0f077b1e9ad33a4660970f240f07a193fa58,383112,,unknown,,
+data/raw/2010/pradhan/gpp_1502.pdf,,bf0cb709f2f3e8e54d93e8392a1ee3c7c294e53937a0b7583fcb1d6a30af67e7,368153,,unknown,,
+data/raw/2010/pradhan/gpp_1503.pdf,,ff3915fa49b673f6b4b8b47a8ec34ace1bbd7207eb957e288ba61eee9fac8bb5,259015,,unknown,,
+data/raw/2010/pradhan/gpp_1601.pdf,,1c063d6a898c1f2475e8a117c52f3b43c8337a1c66173c0c8cccb3019e994e6a,446613,,unknown,,
+data/raw/2010/pradhan/gpp_1602.pdf,,af7fae61127835ab297f805ab3f6fbb2c8df390291b31484d59acece24395a5d,292493,,unknown,,
+data/raw/2010/pradhan/gpp_1603.pdf,,9928651fe8b735acb7582d1406f44aab3e5b3bd888e0cd9ee28a0d1fdc9e24e4,349717,,unknown,,
+data/raw/2010/pradhan/gpp_1604.pdf,,d3ca10f4a8a70103b507cb857d75d30f29e4f43819817396f360becf691eb7c2,375927,,unknown,,
+data/raw/2010/pradhan/gpp_1701.pdf,,a57f106de110fba477198870f72c50d3e027ac2dfbe8f6c8bc0040dd6949df3a,583677,,unknown,,
+data/raw/2010/pradhan/gpp_1702.pdf,,b813cd002a5098402f50649d7d6609ba4f25ce64756276f81ba5caf4e6231641,229351,,unknown,,
+data/raw/2010/pradhan/gpp_1703.pdf,,c4ea827a9978cd053987b1987724e7f912866a3f7edff9af8071823adefeaf70,311036,,unknown,,
+data/raw/2010/pradhan/gpp_1801.pdf,,64035bdde2a76fbab1bc4592cba282a9a4d3f455cdcfa20eb98eb81399f576ab,378587,,unknown,,
+data/raw/2010/pradhan/gpp_1802.pdf,,9eedaecbad221ff657c97b199933e3be69dd8fe0715e380ee5c346cb9b5e160a,232572,,unknown,,
+data/raw/2010/pradhan/gpp_1803.pdf,,f40c89916024484b0f61b06be32e3ff736020915eade1968179a4ff0c4bb0d9c,255360,,unknown,,
+data/raw/2010/pradhan/gpp_1804.pdf,,f1fc32fc11797fa788c36c57923f97333e868b23a0f1a5c1a7749da8ac4cf75d,547065,,unknown,,
+data/raw/2010/pradhan/gpp_1901.pdf,,59504d66011b8a27286044c04a9c1c1bb5e3e46b9833caf44144b006c6a5387b,190990,,unknown,,
+data/raw/2010/pradhan/gpp_1902.pdf,,19dba9215bde95ef8e95b920bf94772e065e2a331c1b63019735fc3c4678feca,290949,,unknown,,
+data/raw/2010/pradhan/gpp_1903.pdf,,a43ae34a9fa75341fc3c58a138038173d5b448cf701fb998eb030a181bf95574,198762,,unknown,,
+data/raw/2010/up_gp_sarpanch_2010.csv,,ebce65c4bc25ceb752af8c128942076e24b479b6d04f6122d5b211dc41beffd7,18131420,,unknown,,
+data/raw/2010/up_gp_sarpanch_2010_fixed.csv,,7b98b1a5106cb055c43c4fcee7e7dbba41408a9cfa5a6c08abacfa8524e77b7d,26531304,,unknown,,
+data/raw/2010/zpm_result_2010.pdf,https://sec.up.nic.in/site/fonts/zpm_result_2010.pdf,775fca2b859b843926ef7f07194c252699f0d2cbf19a60924e6c813a9235765f,980917,,live,,data/manual/catalogs/up_discovery_2026-09-10/sec_results/format_profiles.json
+data/raw/2012/up_urban_local_2012.csv,,2a84a87aad37908df341eb8f94b53754f1078bd7804fbc039d554311e01eda1f,4949745,,unknown,,
+data/raw/2015/winner_lists/CITATION.cff,,aa1b7fe5d91ee6a62297fbba6046ae62f48d099d8ea3d024862f5855b598f6b5,555,,unknown,,
+data/raw/2015/winner_lists/CODE_LICENSE,,5f29628fa17b18c19298cad315bccb2782ec0a766e5650e594bedfb695e28efd,1089,,unknown,,
+data/raw/2015/winner_lists/README.md,,d9950f696055ce38453a28a78fab6bafe956560a9c927199cf73b9bba3071895,7735,,unknown,,
+data/raw/2015/winner_lists/SOURCE_MANIFEST.json,,103b199d1bd1c2d30e7d43675b10211ea3d70859f584a75e566d2eace2d39b9b,81624,,unknown,,
+data/raw/2015/winner_lists/columns.json,,eec02c8c88bcd0c4e0970cdc4ae34be337b501c644e102c6ffd9eb3d03973e4d,48934,,unknown,,
+data/raw/2015/winner_lists/अमरोहा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a11add8b3256c878a6135c1ce93441bb08d6621904134395cf351caf7d204daf,187700,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अमरोहा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,68ed3b86cbcb34bd826dbd016ca570134b26d59f0e4f8278b7ee965951cf1c05,155771,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अमरोहा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6a99f7a1b5a4ac0d572f8cb76e15080ddd002a746af0272011d5d10870253832,7674,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अमेठी-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a741e7e1e4e8e3fd348900608720479b6855075940729e59b28db2e77cc5fba1,251027,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अमेठी-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c3c536e31b79bdc32406ab230039d156b4f555889d355913276897df4811031a,177445,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अमेठी-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c9c26fdb2599e15f4cb6a6edb5f2e3303f3d28f3221bb53ef4dc80bd0766557d,10170,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अम्बेडकर नगर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7b4fc7ad9b1a5bec7041b0a1ea7912599df2af00f635d1c3e8fa1b48bd32a17e,290069,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अम्बेडकर नगर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,1635c4152fca2eea2d1b31fa92eca277fae4d88b240c5af5359553d2d1a45ddd,245113,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अम्बेडकर नगर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,f8636b2e933a1e365343ce9a702673c8080974ca902f591bc35a74481f1dc57b,11693,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अयोध्या-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,46aa5ce20995f2710da4d9f77cfe359e84a596c130f668d00f5f5a3fdc8b60ab,294608,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अयोध्या-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,bfc5f7d6e5ea2d7ccb192a6d2229c3878fa67861240ff2c339b2fd47dfd5c6b2,220285,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अयोध्या-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,f923f27bf8815664366691d625f3297562dca185a24087e51d75f0771e436a5c,11696,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अलीगढ़-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6a85d9238f8167f18f5594f09965a9cb031923557d5248e6e98312bd70f17522,366204,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अलीगढ़-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,3e9c4fca9086e269a991996e17f5ac2c9ab58fbe83652e508f8db53ef2de4882,234059,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/अलीगढ़-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b34b8e96b1a21a6aa3197032bfc5aeea32c67c170b7f8939e763d25172b54798,13850,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/आगरा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6a0e386536b01ae5d4ceccec74b7ec7a3bcdcd92d5b4f8a7e973af88770182b9,373069,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/आगरा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,5ecf525a2766494c853b0abc931537256d45c3bcfa068754df7acb436240b7da,182561,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/आगरा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6497b333226496bf625aa10d3a23d163fcc71521ca1262c8f99edea27a813c69,13567,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/आजमगढ़-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9b12e09d39902b78aa4a91216e285155dc2d7e130975cc5e5c11cea90dfeb356,571025,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/आजमगढ़-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,933e29e3e20bb3b06385909a8aa7c45f8cee9c97c8878f29f3ee93e2218d40c7,482876,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/आजमगढ़-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,1566a1ab580622ed7c35b54fb8c8f02f9bd1278a7d9a3b2b176f38dbbf79480e,21466,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/इटावा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,73238d580b8732786511005cd6014e9a061906db42a751277c5a875f61a10290,166176,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/इटावा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,cfbbd7beef4b11b0220784816f01857ba41586d41a7c63be60a20ee5cff292e6,124850,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/इटावा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,936267af57f0c0100fcf5e7ff44b7235a58e5aa03aaff55a2e43ae524697c44f,6707,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/उन्नाव-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,5a295bd8d8b10d11765ed2ffe63264e45ddef9aa79dce1f25703813846ea0aa3,360901,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/उन्नाव-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,df6b9f5d9eb9dc5f5b67ca7d4bb7ef148398e95059e8a3e2192884e14057399f,282580,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/उन्नाव-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,1a9dc983276f31baa586d3c7d05e5c7ff0f54cde96ef415af6dfb99dc14e2f7a,14449,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/एटा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,30a72b3a12bdeeae47a58e7ce3273ec3c8a48afe4450c765a4990a184c877507,214146,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/एटा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c1bc203388286929aa4ad730608093c03e5c6502bc3e4a940f8060876567acb1,156231,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/एटा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,67eec4123c66bcad35bc34a7f0544e087ccca1b393da996f0410a52babf73a62,8467,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/औरैया-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ef1163c354014568c007a5174ad2c0ce571ecc906c42833b007fd06269782d8b,166039,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/औरैया-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,8dc3af27ce7f1475346a51987fa9697f768d456683f97c528ea2e487d98e7f55,129752,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/औरैया-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ef68a9a5f8b3d34521ec9076c677d8b0dd6e2a5baf4fc4c9d392907135bdee7b,6544,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कन्नौज-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,0a6ccba5c31f673e80be962ecd2f46141f4b55888c1fc2d7bff0f7ec8be7c481,190715,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कन्नौज-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,efc1864066d9591215fe70b83d2087b40f62b77db6662c1b0e66aa6b997024eb,134185,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कन्नौज-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,0435f5edb78b88b76c9ef9dc67d832cef5d50137c7c5ba41b28e1d56713b554c,7791,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कानपुर देहात-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b4b9f17b90e0b6ce1b07eda8668daf05c5bb03d558e95125058d9eeb23a4de48,225111,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कानपुर देहात-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,69b220b388c0329dfa24c47456ac49655baa5706ee11d733834909860ee30431,171327,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कानपुर देहात-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,771b0876626c7bafae880f10ca520206aea92aca1097c166ffcfd3d70dda69cf,8666,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कानपुर नगर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a38e3d8aa9f3855ce564d220e5cab39501b3e083f13dd69f8e5fe65eec1a140e,214826,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कानपुर नगर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,1dbdbc1bc04a8e61a3c59a5e079debe2fddb3058143342f0e5dc444971f4e930,159770,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कानपुर नगर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4c95e4b27a73dbba2bf2e4a71535f001df735edd51114d5e7e8d93ab0d259f78,8126,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कासगंज-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b715dc265ccc17ff1cfea2929eb64dda52510d836196a810cdb1120fde2f7ff4,162782,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कासगंज-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7ae9be0b74775bfba735d4b48362c52c5ef560717ac2988c3e24de1f1f7a01b7,112382,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कासगंज-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e4ac3d770a809883ee74cb430e3506be30a6498824dc8f308e3b2f39d6939260,6149,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कुशीनगर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4de810beb75e7a46d639362c0d645da79e53c4ef56ad060513f09276d6102056,453752,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कुशीनगर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,cc639c10e87789299a449b35e0c2f5dc76f40ecb23fd08457e8ef131d97d3fe5,281801,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कुशीनगर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a023a253314da94677c8ca38f999f2600d608dc46d375cd124421b08a8284f88,17139,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कौशाम्बी-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4af00a3dc28348c68f8b6c8cc27f446ca933ccb6718b93792ea7513bc691b86d,213530,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कौशाम्बी-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a4a45bf238274d5060815b4fd1f81be3005d3431427a04c44100ffcac48bce22,131611,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/कौशाम्बी-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,d37be709ab709005ec3dbb50250df68037b775b41fd5974d46f5a662c7aa6801,8283,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/क्षेत्र पंचायत प्रमुख.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,62b3e671f29d98749e1f9cdc22beb4e2489d99c18db741bb07880499afaa7aa8,212476,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गाजियाबाद-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,45af53a3ff93e328628a1e52176e21246e07f194a12cc7a5a01cb68bf49aae9d,95448,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गाजियाबाद-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ca317acc537f60171ce1bde28bf58b0b17ec076bbf17782fb6ba486587926c83,42701,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गाजियाबाद-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,5ec3b6708ffca812b3f22dc0d72969284fd194dea8d90f1a6ea048cc72e3fc6f,4778,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गाज़ीपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,425b4b0b7a865e6ab3970c9c1a439e719ac00656937dea0cd77b1978c4e7b8cc,446498,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गाज़ीपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9f35bbd34f31f96fba5d819ed7a33903f525bc74d1a787066e951eece93f4137,316956,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गाज़ीपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,aa1c69af0661449e765b894f77154b51070a3e084af482252b9bf813673a616d,17449,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गोंडा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4985313494419eb43cf14814aa42871ad114e982607d1cfab89c8c208e3c9754,333606,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गोंडा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,0af9d9caa42e5f0c3e10a6149c5826c976d83ac489948d843ee3cfc6796cf6f2,267730,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गोंडा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,59b0aba960391666a5d7b81e71f080e6c1e15ff204a1c628a3ed4634ccb212a5,12938,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गोरखपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e8218be20b33eceb134ae4361eb0b63694e5fbb6c9d79e1d4b99e03b03c239ec,612435,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गोरखपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2cb3434f3fd0d82f202ec2683b0c7f109c9a39611da107a59c12530c24266957,345405,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गोरखपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,df57476165881598e9ee58a90daf8f6dee86c85e2f057fb8b6a053f3cef1b7ba,19184,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गौतमबुद्ध नगर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7b16e108627b438245f5394b7ff71ea99ca19d315491e0692a19b97fd7dc12cd,52952,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गौतमबुद्ध नगर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,bed7a3d1f509929e3d688414bb771c44ee4bd8e0326cc92e6273ea6633a9c4d4,37842,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/गौतमबुद्ध नगर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,8c3ada20d0e39b76876135863f08f8c2a3fa0e4cbbf3cded104cd5fc8368ff13,2502,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/चन्दौली-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4047b589dc44430401edd916873ec40d72c6dfc0ee01a7bb84a1503a01f96e2d,227387,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/चन्दौली-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7a576274135d28088f4cfd0215a9c4c383787f8b915c782dbde681600d9e2473,181057,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/चन्दौली-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,813fba639f035357f088d7fdf774e7410c073a912b406b88715ac2c8a38acbe9,9209,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/चित्रकूट-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,877b51866fc166aee1612a9ed1c849d5ff0b062889c1f46a03af2221da84ee8f,124935,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/चित्रकूट-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c1466b3292093c9a4728317c2d253538915cafd34513b00293efa9193c01486a,88759,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/चित्रकूट-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a0a8887aef0ff2dfa78e6fa3213a5a2f5d71bc005160020bbc118c13a0f22f4f,4695,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/जालौन-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,82ef1beeb2aff59c5315c8733e6837a1b8d5864bcbf596d3f74e6c97ef9ceaf1,176893,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/जालौन-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,135e04d197d97591e61c9f245bc18d8e17935cbdca02e2ed4a2f7e9780bb926b,151816,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/जालौन-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,83621124e59ad7e84543336cf6399096c382956abb29c7d7113ed0389ec47b2d,6259,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/जिला पंचायत अध्यक्ष.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,55212c31750799b684b9de0c8dffdfb3bc16fb0b6607479286efacb2307971d8,18336,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/जौनपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,41c0e26d96e5ea77d8fd84b3b40912b661e910710c294770f962204c31843a43,577489,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/जौनपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,f09c36c94a6359e5f0478bd7ff1ec87fe57e6ee5045c14b6dad0b8489d00e6aa,457632,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/जौनपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b4b2c3a397740b724740f11d7965b78bb0e3b744efdc466bb2e9dce91bf0edbd,21988,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/झांसी-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ca7510253c90d2b81436e48a209fc0458f23f34d9e1d219015371cac8c40e6db,166265,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/झांसी-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9bbc740a73628b59528ab6d9e71ed6bf3f25af88f36636f49c5d34d7ae2d9bc8,126892,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/झांसी-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2d26e4a37114a1ee15a45a42c5c7b64f1ba34dad89c4d071e7a570973e4e33b8,6300,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/देवरिया-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2d2159f8e33972b988cc4c2125013818a6fd9c47567012a0efa05d0d9f41a274,393751,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/देवरिया-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9e41cdba448f0516b1c44d78e2bce6da625911fef743cd6259b8fb854fc7539c,315558,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/देवरिया-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2aa0c9831deba8841f3ef87643b3fdeda4646842f64e93b837c7167ddfa715e6,15554,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/पीलीभीत-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,769392fb178ad19b2e943082b54f5a754ddb619ac7b0f7be5483ac3585afbdf4,242152,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/पीलीभीत-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,338f37038f96e54361ff846bb60eef7081666e8cec55757224c6730dd4b71c4f,195308,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/पीलीभीत-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,653952b12376a43da70a8aa1c6fd4ffbd89a4218be730ca750ea011678942063,9189,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/प्रतापगढ़-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7e30d898c9e61e825cda82d74425e9489eb6970f98f729330e3fe28a81a43e76,432102,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/प्रतापगढ़-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,bf77ce4bb5c2a4417d602edd36abc179c927c90a833ece8ab0f174724ca27167,327328,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/प्रतापगढ़-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,bfa6b003431eecf9281e7607d62bb7d9aa782bcf5178e51d4f78a5be71999a5e,16092,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/प्रयागराज-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e3fc6acfaadaf44877a32595ba4bb6e633e83ff6510b2725e57d1431901fea21,617565,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/प्रयागराज-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b35c8bc82c4b657a9a7cb50281c8def81e6087ed2e9b808c0fb585918ca62dc3,431514,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/प्रयागराज-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6527e61d07c5d95c46d0b8ca87daef9ee82a8ffb126518fead109cfdf0ca6436,26936,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फतेहपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,525badb25b0fc3e7513c948b5bb632b4425abe4cad56666365677e461e8c49b0,308453,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फतेहपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,d53f680cdc2fe4dcab213f0acde1bbe45013f8701ca159444c19af6ab5fee2ab,217442,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फतेहपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,60f2da3bb7233d1c92014e67653c71b8366bb496d1d608d7fe04eb049ea14745,11838,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फ़र्रुखाबाद-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4d5740c3bb5a33cb6908ca633d1e4baa350799f3e6232de533e50257385be295,207956,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फ़र्रुखाबाद-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,575b9184737327a5ae77a72897c0a49f3d049d4a8f560820ce315df31dcb700b,162564,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फ़र्रुखाबाद-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,43356d71440937d234123af9fd48316288b120a8b7e79213b9a8527e4a94f385,8232,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फिरोज़ाबाद-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,56e79d129edb7fa23bc8e1243794f233eff7a0ae2a6c8297a14019338315d36e,239943,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फिरोज़ाबाद-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,dcfa0b7cc6678d66a6463a5e2bea106329ca507ac467da58762ecaf9fb59fd14,153246,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/फिरोज़ाबाद-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,d491a40f38aee931726620ebefa2fdb7c183eda5bbc737528ae70ea1e3c8938b,9105,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बदायूं-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2246ed7a1324ad496c8193b9986dc77f2d13f12f9208dcaff0d1b991617c0bf1,347399,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बदायूं-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,bcdc23bed5aaa289d9c87502e48cf4b4f822b1b21a17847bfe1c4354991b5b0c,274387,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बदायूं-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b35e616640f55ecebc2e4477d0ce0ba72eabed73f6f96c62080a8d7fbf20f9a8,13267,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बरेली-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,d9d9d54ef19ef5087bab9a0efbe9c47a6e5f4e55c15b0853fbfd3e2174fdcda8,399887,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बरेली-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,eaa12f2703f56225c9c75d4aa1f7fd2dc9d281c7a1b7d2243b4aadb9d1a8ec8b,315723,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बरेली-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c883f988a2feb5a0b963faa055ac4f680640b4f73fdcc36cf731447134422578,16955,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बलरामपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,1fd5bd5b3f86831edfc1fb1ef6c01252bbcb630a1cdc329edca3ea08092ebbb8,286665,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बलरामपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,081f11975787fc821d36798989d684737751ee09c79e53756ccb6031c0a28427,208111,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बलरामपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4f66ce66ea3e771263724af8ce57155310ae59abc696bd2d951cfaed19de74f7,10301,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बलिया-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,8ac08412c35af83fcaebd13017234a1936c29e2a5341c030ec22c0b06355d347,384294,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बलिया-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,cb46d2ee403724954f24fb7642fb750fa3f3a7f52a6af855f39be65ad3b4c335,241025,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बलिया-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e545268735e75d0d02932332b6e6cab9b38cc683439b2cf15dd6742a224b6ffc,14807,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बस्ती-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9e0223833db0c6f9fbeb6174560bc14a395ece20ec193c95de1be788cf644f4b,310176,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बस्ती-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,01777897c39eaa3f7a23df3623103e14d6b9e7509044d07dde79ce3b799a6011,327630,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बस्ती-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7acf90400689e4d2fb2840110b0cb739699e77be4b3f12e6788d0067dc541b58,11937,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बहराइच-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,197701d6927b57a544169a89256f86141c3f68fd6aa9a652af0ea6226d215350,448821,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बहराइच-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e7aa1db9380bfc7cf1805737c47b11f01caed8b6c0e87c13ebb3a9b4fd7f9068,273176,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बहराइच-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6f1d988d86ca30719062adff91df7b5df5e602b9bbdc3ec78d694709ada531ba,17479,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बांदा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b004e9a94888ddfc22f990b31f65203a0becbc85f95fa9d4ae70e50da7dc3ab0,206664,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बांदा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,660028f9d746c506296e7be9c2083faf27630fd7e440b7d670cd3ea862097d45,121189,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बांदा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,5f6b0448a9fbfe844defd1019e929653ca981ca85c8ee97ec490f7456107bb33,8142,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बागपत-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e136b2e0b8db2bd642e4225d911a73c77c44590154dce133afcc7eb9990aab40,139286,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बागपत-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,d2fff28c78bb64a6e2d3218efde0a98925d7b383940b40e3d827d4f2c6641656,61629,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बागपत-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,648fc3fda4081ab84a001a5605d54398deaaa70715584aa87205e64d9540b875,5823,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बाराबंकी-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6e3d3e4529eb858799f1963b80f680ba47b0662255a7bca0c646dce9eeae6400,408258,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बाराबंकी-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a0b4ef9cb7572fd79362c669525a0eebd9415e926ea3d6d2ce105fa9bcc3c711,312418,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बाराबंकी-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a0a1f873f5dbf605a2fbff3bc135c775bad5ddf002d37dcea8539ea32256a0f8,16107,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बिजनौर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4664854614999ebb55f71954912fbc5c4c3d1af5c9f1b1f07d8744524e3951f0,409036,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बिजनौर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,41f7634a05e59ae44490c55747a41134e99ed5fe31493092fae48cce0c9e22f3,306002,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बिजनौर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,18df049e8b5604f08c4aed6bf46a7144c7c050b022de6a31358a2787e3c3f5f3,15312,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बुलंदशहर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,45a0896e0269ea9008816c8ea5c511066f4297b28d977003fe075d9659c4def5,380794,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बुलंदशहर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c694021de75ef770db75f200ad5c14f7d979ec7be293acc2e164318f31cab328,251162,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/बुलंदशहर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,3479576d52d27d2edb7557a80b242b7808e9ef85250f98aff8b87502ff095450,14301,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/भदोही-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,797b80c5b9d1b9eb85177069f1a37598a36eb019672d6a8280d829c88bed37d5,204869,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/भदोही-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9c6e042249fcd248481b6d4c88f1281e325b3dd810d2cd512bd8d422f6d929dc,143250,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/भदोही-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,72b11654b36fcf664e77ecbb0947a46e7daebc59cb8e7e079a1785d99cf335f3,7326,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मऊ-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,93076d577c55e4fd8623ba1227afd29bbbbd34b6b9d6c2b9513914b0792be48a,241062,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मऊ-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,442bc3432d3dc36ad14b9a9a1109b3e7ae0b6ebb2929faf83a9857eb2cfab12b,180411,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मऊ-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2d7d00eebaa4f9418e8e3d7a337aa0c82b6d3fa5d9c4e106891bbdbf41a9707e,8277,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मथुरा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2a4ed8d04c7f16f4ef11d1277471372df443489735935a5d7ea65f945bff093e,258496,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मथुरा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a881dc2ad4e125d85d51b9523841f2cb28c74da1d1c8a985a970be70e5988bef,135188,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मथुरा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,d1030b7ba0123e48e8a152fed7046c68de9133eb7db2b7c1cb47d0c09d748daa,9698,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/महराजगंज-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a3b7b0862cec6d3cc80cdefba8ff04b61ef89fc49b033c8c3c4962fd3cfefa64,294446,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/महराजगंज-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e327ec35e77f81fa03d08d6ed54322c8827cd2eb65fb3b7314d402ba4e307c4e,238003,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/महराजगंज-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a1f95c8e3a300ae9882ce8fbb9d6e9c8fa363ddba979b04b4837daa9e9758108,12784,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/महोबा-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2130215bdeaf17ab0088752de1ea45ea64fac368282717e71968744fd1215ead,94192,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/महोबा-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7e958d68485f6895f66b22c831fb3a84c566699e1d1dfd33c72b6b0a4058b993,71790,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/महोबा-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7a6bde1a233d8e31ae479a9fac898bff579fcd2b90d0f7ef801c8053ef7a8a87,4137,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मीरजापुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,f2d5c5a0a10f956866773dc0bbc78f06c4c3cf0d01c21c74c1a1baa7b3113dba,312296,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मीरजापुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c9433bc6de8cee4f1918dad54e09b8932badbb07a8791dae03273cbac7c0080a,212129,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मीरजापुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,90e32b94d98a4642fb67d7798ba35b07f01fa216db0cc4813ec1094d9062c1be,11452,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मुज़फ्फरनगर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b7c544ba637248d21258ae3fcc9b4599bce74d929d48a720e0bd7b6bc7e44b24,280640,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मुज़फ्फरनगर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,92c96047891ee64ddfd4e28cc825d41007ed6b91dc7c86ddfb167088e65aa1e8,126847,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मुज़फ्फरनगर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,1f86cff275a97d09759cc38da6527e30c281396ad763fa6e4d88f7a5492f4ab3,11425,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मुरादाबाद-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,91741f2ca42eb62c28c7d15a087a6ea53444b59ef7a38614f286c1767787949e,231054,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मुरादाबाद-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,1ba8fa390c9b34d63971e8798b2f8a6cca3909792be6b9ee0b7bce0e9d0d0fa1,160848,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मुरादाबाद-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9453779a95850c1a6a46ff15125d119e7363d693472bb46d48dd99afd867a101,9224,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मेरठ-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,f18ba0dad42fe279589119aefcaa99fdd6b3ca84836bcee02a36be57f7596246,225464,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मेरठ-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a2d6b5f7c7bf63945f6fe6258ca51005b8257414f23e7c8dd5175ea3e7b07783,123617,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मेरठ-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,66fa120e1ed7623c92899a96520b2dcc527b5cf7d08207a5ec95e3714863af98,8759,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मैनपुरी-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c6ade9b13d97cb4eb625d553c5b58cc38c8cf26ccc6e4065d5a8acde82b0530c,225322,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मैनपुरी-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,0c507f7de6d56282ad22374e38232c0b979340ab42f4b25668463d6aa91fe869,146906,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/मैनपुरी-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4139f628af66d157f8da495fef502c3ead7406a36c6c40307a34114cbdb4a9eb,8383,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/रामपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,8abdf9facbdb1686f950938248f52eb64a7cee7cf4a05a60be9ecc7d55d550bb,252708,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/रामपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,936df46dde488105b6aa1d4ab1f1f38bbefe6f2494a74af472a3dba9d070dd73,175534,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/रामपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b3c7d07e3949ac603ff0776232aee6208504fff9d77c260b3bd289296d4ce9b3,9379,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/रायबरेली-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,3f2b7cc29fc0a6be033d72cdf38ca6b34e88a3f7ffbf93c8d6331f1aefc20127,364231,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/रायबरेली-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,7c05bbc85979642596a6c555441323316222a1d1cbb2380adb1d916bcca97d48,258054,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/रायबरेली-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,726e1e05a0822641e96e5dd600c57a4e11e1283e185869d0826c5ba3feef9762,14176,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/लखनऊ-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,36d7689e907fff756867fbd72c5ffe6424e206e30c5f9e4f15b579531d95dccf,224446,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/लखनऊ-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,5c2b3c71bdaf0774899fc952dac0795186dd7af07bf7e876e083c403423850f9,156779,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/लखनऊ-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,f0a46b7d19be2bb744b90400bc8f0246f4d0b9b806075f542575d0d99b622f6a,8728,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/लखीमपुर खीरी-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c3b0617d493dda25e7f63affeb8f4aa2e27f19de9143409db4fde0d96bfcf1c4,523842,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/लखीमपुर खीरी-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,8f0cac5c3696040e95cd45e11f177c51a999056325f6e76113ab1d51a4f1a95b,310604,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/लखीमपुर खीरी-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,488e5b21ec0e70d0b685d8c69c25ade0f9bf9c55276d64bc6db784ec4cd83001,19332,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/ललितपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,8876fcc251b604b461d7c882fa7993599fdb03f67fffe11f18f43166333b3723,139079,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/ललितपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,01aaf439455dae739ca61ec44f99a01da69281fa150e3b69927fc4e90136911b,105255,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/ललितपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2f8c8a8b63416aea03154fe8b5803873f5ad9946bbad533fa1ff2d6649f1ec83,5564,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/वाराणसी-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,62e12b3d3eafe41f94a56f2402d930f683d91bd1535eb52e53eaf33e57455764,334072,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/वाराणसी-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,cd13581d98721233e3af3ffcf4404b54227c861ac8a997e7b83da64774432fcf,198155,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/वाराणसी-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a821f532aa6db185d651be536037938c8d6348a0ddd834c02a0f06f8d5f084e3,13334,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/शामली-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,dbe6bff52a9453566336e708955a749548fec52918c3e9a8f258c4d5f3b01bfc,123504,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/शामली-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,e993e415f0b63b12f203fa191c3e9a53626449a03709e76fe1e1d5743e2e5a2e,57550,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/शामली-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ac1ceb43dc3bd038db5c1bb1ca56b7735ae001c687b60e99ddf0c09b5ee1c0e9,5191,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/शाहजहांपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,580bcca7ab856d0ff366a7271ddc4b449cd4b156904a341dcf7f9f19fbdcde6f,330982,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/शाहजहांपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6661ff9f52c42bcda3b8c72130a46ad39ebdea072212fc3168af493ccb2c8ea0,285510,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/शाहजहांपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a2e21204f5be93c08690d855f6f8ec94e9587368e02e7f43634a61d5c403e0fd,13257,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/श्रावस्ती-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4f6c50903c35423633de2bd88ddb7318ed40ae41ffdb0fb9d6f104dc8f80e45b,150391,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/श्रावस्ती-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b230ff96e8176fd1528cb1825e775ba4c6a9364d0b79d662cdf546f331197be6,105119,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/श्रावस्ती-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,3da0af71671242fca4383471f7de2087b356b16f13b2b114cc6b4b5cc35af2f5,6228,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सन्त कबीर नगर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ed0aa23fd5dc8a1394ba4a6f61fc282ca62acb60f450bc466f1bc3287cf49e4b,217064,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सन्त कबीर नगर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,033424b3b0a093b56810cbffd53b59d03cec76430d741351dca33b8304d57e1d,204042,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सन्त कबीर नगर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ed777d042551252ce6e571a4624ad589cf3967ceeef3de02fc6a6a450c9b9938,8645,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सम्भल-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,2a7a185623357d30843df983f924b269b7137b9779a8bac5d80e3d5956c54f33,178838,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सम्भल-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,762e2782e48ce68bbfe5c0de3f53c8e506e55b7af634e768739126d9c5a227c0,147139,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सम्भल-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,a498331921b40923ca2d3c4c134b9eae6d53c8eaccf0e07625597dbfd05ed052,7421,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सहारनपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6a5f55c65564732665a46d52c14b77bda814f965e3bafd53750222e52723544d,316506,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सहारनपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,b07414b56e89a676c2cc7dcee11774565bf23896daaadbccd4c6e931b1c50a6d,225131,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सहारनपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,36619eee0433a7cb685350f141dfe276b97e8fff94185a854d28eb33eac354b3,13180,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सिद्धार्थ नगर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,14779ea23ca8fe7bf4af7475368dfe05fefa9ec8cd04b4c9fde7423eb908bdb4,342468,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सिद्धार्थ नगर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c7876f0c26293142a7e368ef307a859ba6255dd17e251ff72d6676428f9b71dc,302568,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सिद्धार्थ नगर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6e67474b088fd67378fec3ef7021d8ba5c497786348ad920f2613f4e85564ce7,12740,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सीतापुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9fc03214f234e67efaee0a668513ffd17273ac85891a0012f52c51cbe52cc56c,563098,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सीतापुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4a1e24b4a0a77a23a93f3a80e9653a9dc92c994163929eb00d699cbf8524fa12,423960,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सीतापुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,dfff6c973114d4b794a1ad632ce1b7249b6abe7006dd707766adbd72a3ae3d09,21634,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सुलतानपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,f1eb1b569368540a656aaa73d16842c80eccb165b25c4bec0a9b5155bcba4107,331626,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सुलतानपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,939ac2b4c6eedc64740975d2abcb333bbdd64319ad3c1477295a1756b3e47457,261190,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सुलतानपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,57682e95e49940dcf5f4dca2fcb49bf97559761801064c711a6367759b3082bd,12517,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सोनभद्र-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,9115872703def214ee9964aecdf72991830b1b323c940af120acda91d47f456f,231049,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सोनभद्र-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,ef1861be00e9d62bf29252638211b19ae31326f903918eec058c93df0afbc17e,162718,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/सोनभद्र-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,3f6d443a5b41849bc9922bc6dea29922f61099ae72733e36f99241b25256f1aa,8641,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हमीरपुर-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,d418a0c5f0ef0ca43e36be247905a2a5b3fa63637751eb4726e32d98eb07bc6b,126241,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हमीरपुर-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,6885e465d710c8a4e2c3092294d27b90c29d9936d3406bf8cb6c4945d9f3d315,87286,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हमीरपुर-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,de551fedb8ba2fe9aaeed0558f11ea95cd31c0e3ea8daf8a322ab3cd8be11cac,4746,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हरदोई-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c2a8fd2ad6265f61d438f978626fbe2a385dbba193a41bb584e98fa7ebef44ce,500255,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हरदोई-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,955803f4b8f221d74d05e0584e14b1e031e8b9a11801ec0f4d1b3a10eaac3c99,345684,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हरदोई-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,fc16242592c2d963d927873e7b0330674530588d713172a12e5f1ecdb3f618f5,19239,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हाथरस-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,051a58c05ef7fe22283ddc9c7d8806addf9689bdc69bfeff724b85424b787929,190739,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हाथरस-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,96fb24581fa69abf04919060ca22ac42ee217e8475b05361460be097a3d8bc2c,126445,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हाथरस-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,3a564fec2ac1a1d188a5cd7d56b0540f2b724743d03859bf5979b0258a24a42c,6982,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हापुड़-क्षेत्र पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,4be18eb1e2f54c405d94cb30632fe2b23664fb9a4b2a422358fbc02133441a0d,138916,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हापुड़-ग्राम पंचायत प्रधान.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,c31b103ffe25a6500141abf93f92dab7113c20822a5beb3d6442c264b45d4e37,72419,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2015/winner_lists/हापुड़-जिला पंचायत सदस्य.csv,http://sec.up.nic.in/ElecLive/WinnerList.aspx,bc184d7fe7412ac0f9cfedd8988c0a7423089575a1007be64a3a0023da3d5692,5211,,live,,data/raw/2015/winner_lists/SOURCE_MANIFEST.json
+data/raw/2021/README.md,,d0d6e787a233d3e36eed04c85226371f30affcd1f3512c928ee956a5dcf91a67,582,,unknown,,
+data/raw/2021/gram_panchayat_pradhan_candidates.csv,,d7d0990f2aa64e2b886924483f5bef8acebb30d734b39961a6b0f6b5252f4547,115938310,,unknown,,
+data/raw/2021/mau_reservation_history/README.md,,583a71c0dc56f08fcb3164c0c3e21882263c42161b997248a5d8a942792ce55a,981,,unknown,,
+data/raw/2021/mau_reservation_history/badraon.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030535.pdf,5e6a68b319c54110cc22ea7db7e979fa14c16d0f05babe4d9730fc3241189d8d,4005949,2026-09-08T04:58:24.092324+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_badraon_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/dohrighat.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030560.pdf,abb16c16b0092cf30fa297016f74115ab7722c9f18e4306d03c9c2dc75828290,2807266,2026-09-08T04:58:47.158407+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_dohrighat_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/fatehpur_mandraon.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030550.pdf,bd2233702407439b5ec4c0927a77b64e97580d355ded4fcd3e5c696199d2cf16,4917111,2026-09-08T04:58:51.489608+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_fatehpur_mandraon_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/fetch_log.csv,,3cb6077c4cd09d8ae8a2525826b7e0bdfa1f8002f69d4858172ac01f01035972,5407,,unknown,,
+data/raw/2021/mau_reservation_history/ghosi.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030570.pdf,dcfb1c2a6f5723f7a6752065ac2a0a4582d186c2f0a07e8bebcf2c8065dd77ba,3646778,2026-09-08T04:58:31.671204+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_ghosi_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/index.html,https://mau.nic.in/en/panchayat-election-2021-1995-2015-reservations-details/,0aa0c73ae7caa2bf9f16caab75273332a3b88181ab3737edfbb85655cbdf26a2,136070,2026-09-08T04:55:48.320767+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_index.html,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/kopaganj.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030558.pdf,f14597f6d8d7df90ab6386858edb7ad91a7440c992a8ca44ddeafb713c718dce,3829719,2026-09-08T04:59:13.482311+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_kopaganj_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/muhammadabad.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030575.pdf,c054da6cddf7c220740327e99f00e5c03ae1acbd8069c3e1d234687f53063930,4282204,2026-09-08T04:59:20.428741+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_muhammadabad_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/pardaha.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030564.pdf,131c7bdfe687c87d8a651a66f9631f7c039b0f69d2dbf553b047bc88892d7fd7,2733156,2026-09-08T04:59:26.277367+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_pardaha_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/ranipur.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030571.pdf,3e328ff523e956bc47adea17858330b8d78498b8dd231de9923f2197d5112896,5253686,2026-09-08T04:59:02.366352+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_ranipur_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/mau_reservation_history/ratanpura.pdf,https://cdn.s3waas.gov.in/s3ec8956637a99787bd197eacd77acce5e/uploads/2021/03/2021030541.pdf,4dfb9e1be53846676360449660be1054d83f67e5dfb0b1da2a22fdb2dda743cb,4388066,2026-09-08T04:58:39.427030+00:00,copy,in-rolls/local_elections@5963713f:data/source_search/early_heads/raw/up_mau_ratanpura_head_history.pdf,data/raw/2021/mau_reservation_history/fetch_log.csv
+data/raw/2021/source_manifest.json,,09da6a714288676efbf3df6275b6609706f01a6a2a554768ef5e22e701935c03,723,,unknown,,
+data/raw/research_bundles/README.md,,699b289d1649fb9a5e3e17a82162100dafd883a708b9af86c5e35a24d5e70fc3,1579,,unknown,,
+data/raw/research_bundles/etah-2010-research-2026-09-10.CHECKSUMS.sha256,,9f7c09575f7b5bddbb774bbd81dd631ada31b59f8fc374a93ae20603f187d988,3475,,unknown,,
+data/raw/research_bundles/sec-block-head-winners-2015-16-research-2026-09-10.CHECKSUMS.sha256,,cac312cd37493ca9db99a58ab27d70a497317e235c3ac81429ae391a537cb49d,1618,,unknown,,
+data/raw/research_bundles/sitapur-2010-research-2026-09-10.CHECKSUMS.sha256,,d3d4d177bee349a5adb01f8020320d4186155f7934834fbf5657115168c0887c,4174,,unknown,,
+data/raw/research_bundles/up-historical-sources-2006-2015-20260911.tar.gz.sha256,,f1d6a7a143efbfb8f8fecb4606ca58ccf5729d8fc404df4fe9dc7d85460779e4,114,,unknown,,
+data/raw/research_bundles/up-historical-sources-2006-2015-20260911.tar.gz.verification.json,,68eed43b5e95e16dcebaea72e11192067494960f0db8c95cad366b737730900e,955,,unknown,,
+data/raw/research_bundles/up_discovery_2026-09-10_manifest.json,,d58d38114d09afe7b8d7713222a26c8c5373d8685cab2beb1f81bbb8891ca2a7,71757,,unknown,,

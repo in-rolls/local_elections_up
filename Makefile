@@ -10,6 +10,7 @@ release-data: data
 
 data: data-offices data-lgd data-weaver
 	$(MAKE) catalog
+	$(PY) -m local_elections_up.build.fetch_log
 	$(MAKE) verify
 
 enrich-gp:
@@ -45,11 +46,12 @@ lint:
 
 verify:
 	$(PY) -m local_elections_up.build.release verify
+	$(PY) -m local_elections_up.build.fetch_log --check
 
 check: lint verify verify-2015
 
 # The ~62,000 SEC portal captures behind the office provenance are not in the
-# repository; data/catalogs/archived_source_resolutions.jsonl.gz records their
+# repository; data/manual/catalogs/archived_source_resolutions.jsonl.gz records their
 # hashes. This restores the bytes from the source-evidence release so `make data`
 # hashes them again (about 3 GB downloaded, 4.3 GB extracted).
 EVIDENCE_RELEASE = source-evidence-2026-09-19

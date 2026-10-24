@@ -894,7 +894,9 @@ def main():
     parser.add_argument(
         "--source-root",
         type=Path,
-        default=Path("data/recovery/sec_historical_results/ulb2017/district_queries"),
+        default=Path(
+            "data/collections/sec_historical_results/ulb2017/district_queries"
+        ),
     )
     parser.add_argument(
         "--posts", nargs="+", choices=list(POSTS), default=["8", "10", "12"]

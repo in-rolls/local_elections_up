@@ -3,7 +3,7 @@
 ## v3.1 — 2026-10-22
 
 - Move published tables, the manifest, catalog, dictionary and checksums under `data/release/`. Every table is byte-identical to v3.0. Consumers must update their paths.
-- Make `make data` work from a clean clone. The 806 parsed inputs and cited source documents it reads, previously only in local working copies, are committed at their registered paths; `.gitattributes` keeps their bytes exact. About 62,000 SEC portal captures that the office provenance re-hashes stay in the `source-evidence-2026-09-19` release; their resolutions are recorded in `data/catalogs/archived_source_resolutions.jsonl.gz`, and `make fetch-sources` restores the bytes.
+- Make `make data` work from a clean clone. The 806 parsed inputs and cited source documents it reads, previously only in local working copies, are committed at their registered paths; `.gitattributes` keeps their bytes exact. About 62,000 SEC portal captures that the office provenance re-hashes stay in the `source-evidence-2026-09-19` release; their resolutions are recorded in `data/manual/catalogs/archived_source_resolutions.jsonl.gz`, and `make fetch-sources` restores the bytes.
 - Remove 39 files nothing reads or cites (discovery-phase crawl inventories, publication receipts, superseded font profiles, unused transliteration lists), the 70 Stata files duplicated inside `data/raw/2007/Transliterated.zip`, and `STATUS.md`. Research and evidence notes move to `docs/`.
 
 ## v3.0 — 2026-10-01
@@ -12,8 +12,8 @@
 - Move cross-election products (harmonized GP-head records, links, panels, LGD bridge, Weaver preparations) to `data/panels/`; they are byte-identical to v2.0 except Weaver (below).
 - Publish both GP-head representations for every election: the SEC winner lists as `gram_panchayat_head_winner_list` (2005, 2010, 2015) and the office-build observations as `gram_panchayat_head_declared_winner` (2005–2021). Each holds values the other lacks, so neither is dropped; every v2.0 table is accounted for.
 - Drop the dangling byte from three Weaver panchayat names whose bytes were invalid UTF-8 (six cells per preparation), so every published table reads in strict readers.
-- Move raw sources from top-level `data/<year>/` and loose CSVs to `data/raw/<year>/`; office provenance resolves the old paths and still verifies bytes. Move the unreferenced Stata file to `data/external/gp_reservation_census/`.
-- Build into the git-ignored `data/interim/release/` and publish with `release.py publish`; the manifest, catalog, dictionary and checksums move to `data/`, and the manifest embeds the office build's source provenance. Sort `rows_by_year` so the manifest is reproducible.
+- Move raw sources from top-level `data/<year>/` and loose CSVs to `data/raw/<year>/`; office provenance resolves the old paths and still verifies bytes. Move the unreferenced Stata file to `data/reference/gp_reservation_census/`.
+- Build into the git-ignored `data/build/release/` and publish with `release.py publish`; the manifest, catalog, dictionary and checksums move to `data/`, and the manifest embeds the office build's source provenance. Sort `rows_by_year` so the manifest is reproducible.
 - Group the Python package by pipeline stage (`acquire/`, `parse/`, `build/`) and name the R entry points for what they do instead of by gappy numbers; module paths change (e.g. `python -m local_elections_up.build.release`). Standalone `uv run` scripts stay free of package imports. A rebuild publishes byte-identical tables.
 - Consumers must update their paths.
 

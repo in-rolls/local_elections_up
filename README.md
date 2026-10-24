@@ -4,7 +4,7 @@ Election results, candidates, and seat-reservation observations for Uttar Prades
 
 ## Find the data
 
-Published tables are in `data/release/`: each election has its own folder, `data/release/<year>/`, and products built across elections are in `data/release/panels/`. Start with the **[data catalog](data/release/CATALOG.md)**. It lists every published table, its row count, election years, row unit, and validation status. The **[data dictionary](data/release/DICTIONARY.md)** lists columns and types; the **[data guide](data/README.md)** explains the layout, identifiers, reservations, provenance, and linkage.
+Published tables are in `data/release/`: each election has its own folder, `data/release/<year>/`, and products built across elections are in `data/release/linkage/`. Start with the **[data catalog](data/release/CATALOG.md)**. It lists every published table, its row count, election years, row unit, and validation status. The **[data dictionary](data/release/DICTIONARY.md)** lists columns and types; the **[data guide](data/README.md)** explains the layout, identifiers, reservations, provenance, and linkage.
 
 Read these Parquet files directly. The inventory is generated from the release
 manifest by `make data-summary`. Counts describe source records, not necessarily
@@ -85,17 +85,17 @@ unique seats; provisional office observations can overlap.
 | [2023/municipal_council_ward_member_seat_reservation.parquet](data/release/2023/municipal_council_ward_member_seat_reservation.parquet) | 5,352 | one source observation; sources may overlap |
 | [2023/nagar_panchayat_chair_seat_reservation.parquet](data/release/2023/nagar_panchayat_chair_seat_reservation.parquet) | 544 | one source observation; sources may overlap |
 | [2023/nagar_panchayat_ward_member_seat_reservation.parquet](data/release/2023/nagar_panchayat_ward_member_seat_reservation.parquet) | 7,177 | one source observation; sources may overlap |
-| [panels/gp_adjacent_links.parquet](data/release/panels/gp_adjacent_links.parquet) | 128,687 | one accepted adjacent-wave link |
-| [panels/gp_four_election_links.parquet](data/release/panels/gp_four_election_links.parquet) | 29,734 | one linked four-election history |
-| [panels/gp_head_election_records.parquet](data/release/panels/gp_head_election_records.parquet) | 212,525 | one winner-list or winner-marked record |
-| [panels/gp_lgd_bridge.parquet](data/release/panels/gp_lgd_bridge.parquet) | 157,186 | one historical panel row projected to the LGD vintage |
-| [panels/gp_link_candidates.parquet](data/release/panels/gp_link_candidates.parquet) | 129,752 | one assessed adjacent-wave linkage candidate |
-| [panels/gp_panel_2005_2010.parquet](data/release/panels/gp_panel_2005_2010.parquet) | 42,622 | one linked source-record pair or four-election history |
-| [panels/gp_panel_2005_2010_2015_2021.parquet](data/release/panels/gp_panel_2005_2010_2015_2021.parquet) | 29,734 | one linked source-record pair or four-election history |
-| [panels/gp_panel_2010_2015.parquet](data/release/panels/gp_panel_2010_2015.parquet) | 39,551 | one linked source-record pair or four-election history |
-| [panels/gp_panel_2015_2021.parquet](data/release/panels/gp_panel_2015_2021.parquet) | 46,514 | one linked source-record pair or four-election history |
-| [panels/weaver_20250302_wide.parquet](data/release/panels/weaver_20250302_wide.parquet) | 105,527 | one source GP identifier, wide across waves |
-| [panels/weaver_20250317_wide.parquet](data/release/panels/weaver_20250317_wide.parquet) | 61,338 | one source GP identifier, wide across waves |
+| [linkage/gp_adjacent_links.parquet](data/release/linkage/gp_adjacent_links.parquet) | 128,687 | one accepted adjacent-wave link |
+| [linkage/gp_four_election_links.parquet](data/release/linkage/gp_four_election_links.parquet) | 29,734 | one linked four-election history |
+| [linkage/gp_head_election_records.parquet](data/release/linkage/gp_head_election_records.parquet) | 212,525 | one winner-list or winner-marked record |
+| [linkage/gp_lgd_bridge.parquet](data/release/linkage/gp_lgd_bridge.parquet) | 157,186 | one historical panel row projected to the LGD vintage |
+| [linkage/gp_link_candidates.parquet](data/release/linkage/gp_link_candidates.parquet) | 129,752 | one assessed adjacent-wave linkage candidate |
+| [linkage/gp_panel_2005_2010.parquet](data/release/linkage/gp_panel_2005_2010.parquet) | 42,622 | one linked source-record pair or four-election history |
+| [linkage/gp_panel_2005_2010_2015_2021.parquet](data/release/linkage/gp_panel_2005_2010_2015_2021.parquet) | 29,734 | one linked source-record pair or four-election history |
+| [linkage/gp_panel_2010_2015.parquet](data/release/linkage/gp_panel_2010_2015.parquet) | 39,551 | one linked source-record pair or four-election history |
+| [linkage/gp_panel_2015_2021.parquet](data/release/linkage/gp_panel_2015_2021.parquet) | 46,514 | one linked source-record pair or four-election history |
+| [linkage/weaver_20250302_wide.parquet](data/release/linkage/weaver_20250302_wide.parquet) | 105,527 | one source GP identifier, wide across waves |
+| [linkage/weaver_20250317_wide.parquet](data/release/linkage/weaver_20250317_wide.parquet) | 61,338 | one source GP identifier, wide across waves |
 
 <!-- datasets:end -->
 
@@ -104,7 +104,7 @@ Download a tagged [GitHub release](https://github.com/in-rolls/local_elections_u
 ```python
 import pandas as pd
 
-records = pd.read_parquet("data/release/panels/gp_head_election_records.parquet")
+records = pd.read_parquet("data/release/linkage/gp_head_election_records.parquet")
 print(records.groupby("election_year").size())
 review = records.loc[records["winner_markers_conflict"]]
 ```
@@ -121,23 +121,26 @@ Office exports are **provisional source observations**. Their `assignment_usable
 
 ```text
 data/
-  1995/ … 2023/ One folder per election: that election's tables
-  panels/       Products derived across elections: harmonized GP-head records,
-                links, wide panels, LGD bridge, Weaver preparations
-  CATALOG.md, DICTIONARY.md, manifest.json, CHECKSUMS.sha256
-  raw/<year>/   Registered source bytes and source manifests
-  interim/      Saved extraction outputs; interim/release/ is the git-ignored build area
-  discovery/    Sources not admitted to production
-  catalogs/     Source registry, label dictionaries, and relocation ledger
-  crosswalks/   Reviewed geographic mappings and correction decisions
-  external/     Attributed outside sources (LGD, Weaver, reservation-with-Census)
+  release/      The published tables
+    1995/ … 2023/  One folder per election: that election's tables
+    linkage/        Products derived across elections: harmonized GP-head records,
+                   links, wide panels, LGD bridge, Weaver preparations
+    CATALOG.md, DICTIONARY.md, MANIFEST.json, CHECKSUMS.sha256
+  raw/<year>/   Registered source bytes and source manifests; raw/fetch_log.csv
+  collections/  Harvested SEC, district and media captures, one folder each
+  extracted/    Saved extraction outputs
+  build/        Enriched preparations, transliterations; build/release/ is the git-ignored build area
+  manual/       Source registry, label dictionaries, reviewed crosswalks
+  reference/    Attributed outside sources (LGD, Weaver, reservation-with-Census)
+  search_log/   Sources not admitted to production
+  checks/       Reconciliation records
 src/local_elections_up/
-  acquire/              Network fetches into data/raw and data/recovery (run once; not part of make data)
+  acquire/              Network fetches into data/raw and data/collections (run once; not part of make data)
   parse/                Saved source bytes → registered extractions
   build/                Registered extractions → build area → published tables (release.py)
 ```
 
-Historical source receipts retain their original paths, including `data/recovery/`. Archive restoration preserves those locators. Discovery does not enter a release unless explicitly registered. [The relocation ledger](data/catalogs/relocations.json) records moved files without changing their source identities.
+Discovery does not enter a release unless explicitly registered. [The relocation ledger](data/manual/catalogs/relocations.json) records moved files without changing their source identities.
 
 ## Reproduce and verify
 
@@ -150,26 +153,26 @@ make sync
 make check
 ```
 
-`make data` rebuilds from saved, registered inputs. Source restoration is required for a fresh checkout that has no extraction cache; follow the [source-evidence instructions](data/catalogs/SOURCES.md). Release assembly makes no network or paid-model calls. The former notebooks and R code remain available at [the pre-migration commit](https://github.com/in-rolls/local_elections_up/tree/42fb6190469688fd558596460aef44282e37f6d2).
+`make data` rebuilds from saved, registered inputs. Source restoration is required for a fresh checkout that has no extraction cache; follow the [source-evidence instructions](data/manual/catalogs/SOURCES.md). Release assembly makes no network or paid-model calls. The former notebooks and R code remain available at [the pre-migration commit](https://github.com/in-rolls/local_elections_up/tree/42fb6190469688fd558596460aef44282e37f6d2).
 
-`make data` rebuilds every published table from the committed inputs, and `make check` lints the code and verifies published data, including source-record and panel relationships. A clean clone needs nothing else. The office provenance re-hashes about 62,000 saved SEC portal captures when they are present; without them it uses the hashes recorded in `data/catalogs/archived_source_resolutions.jsonl.gz`. `make fetch-sources` restores the captures (about 3 GB) from the source-evidence release. `make winner-lists-2015` rebuilds the five-office 2015 intermediate exports; `make verify-2015` compares every retained field with its source CSV.
+`make data` rebuilds every published table from the committed inputs, and `make check` lints the code and verifies published data, including source-record and panel relationships. A clean clone needs nothing else. The office provenance re-hashes about 62,000 saved SEC portal captures when they are present; without them it uses the hashes recorded in `data/manual/catalogs/archived_source_resolutions.jsonl.gz`. `make fetch-sources` restores the captures (about 3 GB) from the source-evidence release. `make winner-lists-2015` rebuilds the five-office 2015 intermediate exports; `make verify-2015` compares every retained field with its source CSV.
 
-`make enrich-gp` reconstructs all four enriched preparations from pinned CSVs and saved transliterations into `data/interim/gp_rebuilt/`. It compares every value and row position with the registered preparations, and writes an unresolved-transliteration list. It makes no API calls and does not replace registered inputs. The [enrichment registry](data/catalogs/gp_enrichment.json) records source hashes, transliteration precedence, and historical ordering exceptions.
+`make enrich-gp` reconstructs all four enriched preparations from pinned CSVs and saved transliterations into `data/extracted/gp_rebuilt/`. It compares every value and row position with the registered preparations, and writes an unresolved-transliteration list. It makes no API calls and does not replace registered inputs. The [enrichment registry](data/manual/catalogs/gp_enrichment.json) records source hashes, transliteration precedence, and historical ordering exceptions.
 
-The Kruti Dev decoder is included as readable Python source with [attribution](THIRD_PARTY_NOTICES) and a [provenance receipt](data/catalogs/shared_decoder.json).
+The Kruti Dev decoder is included as readable Python source with [attribution](THIRD_PARTY_NOTICES) and a [provenance receipt](data/manual/catalogs/shared_decoder.json).
 
 
 ## Changes in this release
 
-v3.1 moves the published tables under `data/release/` (`data/release/<year>/`, `data/release/panels/`) and makes the build reproducible from a clean clone: the parsed inputs it reads are now committed, and the SEC portal captures behind the office provenance are pinned by recorded hash, with their bytes in the `source-evidence-2026-09-19` release (`make fetch-sources`). Every table is byte-identical to v3.0. Consumers must update their paths; see [CHANGELOG.md](CHANGELOG.md).
+v3.1 moves the published tables under `data/release/` (`data/release/<year>/`, `data/release/linkage/`) and makes the build reproducible from a clean clone: the parsed inputs it reads are now committed, and the SEC portal captures behind the office provenance are pinned by recorded hash, with their bytes in the `source-evidence-2026-09-19` release (`make fetch-sources`). Every table is byte-identical to v3.0. Consumers must update their paths; see [CHANGELOG.md](CHANGELOG.md).
 
-See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution](data/external/weaver/README.md) for external source terms.
+See [CHANGELOG.md](CHANGELOG.md) for the release record and [Weaver attribution](data/reference/weaver/README.md) for external source terms.
 
 ## Research and historical geography
 
 [Research evidence](docs/research.md) describes the Etah and Sitapur reservation bundles and the SEC 2015–16 block-head printings. These retain unresolved source and identity flags.
 
-The [historical LGD bridge](data/release/panels/gp_lgd_bridge.parquet) maps linked election records to the attributed LGD vintage. Read [its source and matching rules](data/external/lgd/README.md) before joining: multiple historical records can map to one later GP, and names do not prove unchanged boundaries. `make data-lgd` rebuilds it.
+The [historical LGD bridge](data/release/linkage/gp_lgd_bridge.parquet) maps linked election records to the attributed LGD vintage. Read [its source and matching rules](data/reference/lgd/README.md) before joining: multiple historical records can map to one later GP, and names do not prove unchanged boundaries. `make data-lgd` rebuilds it.
 
 <!-- adjacent:start -->
 

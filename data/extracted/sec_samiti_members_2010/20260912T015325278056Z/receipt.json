@@ -1,0 +1,698 @@
+{
+  "status": "parsed_pending_validation",
+  "assignment_usable": false,
+  "parser_sha256": "3f42ea7a2df5e2d1f69483028ac341e4e73701664dd58eb492f3c2b80e245af6",
+  "labels_path": "data/manual/catalogs/samiti_2010_labels.json",
+  "labels_sha256": "8c452a91af076ec0868ae96b80fd9eb3ec789d8fb37d28e98988ede6cad75f42",
+  "sources": [
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0301.pdf",
+      "source_sha256": "69484b2780475e19e2d75e885def666a36671daa1d4b38b4918030296428d115",
+      "pages": 44,
+      "rows": 1043,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0303.pdf",
+      "source_sha256": "bc6858ebf48e8a0e12f96e504aeeb2fff22c3d158acf4e4c5d2b58e48942742a",
+      "pages": 56,
+      "rows": 1325,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0401.pdf",
+      "source_sha256": "a078f323e34d2c66aa4dde9b15d66ed5d9701d96652b2e23e20761297bdb65a4",
+      "pages": 33,
+      "rows": 762,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0402.pdf",
+      "source_sha256": "6d46bf4597618c2acb1b8754d16590057d143ebcf0b0d04c9053815561f7f5a0",
+      "pages": 20,
+      "rows": 466,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0403.pdf",
+      "source_sha256": "0b1c61384ad3808980b08ffc4216bbef4c20a9afdfbdde5cfea5de61e4b5371e",
+      "pages": 29,
+      "rows": 681,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0404.pdf",
+      "source_sha256": "09ac2ef33c131e4266921acd11aaafa8e42e849a5fe42d421c524a62b6e39412",
+      "pages": 16,
+      "rows": 377,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0405.pdf",
+      "source_sha256": "c01e356cc0b8abe1430131860bdbbcf26a57ecf6b439a09368b0693c87452285",
+      "pages": 49,
+      "rows": 1158,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0501.pdf",
+      "source_sha256": "d6a4eec86ae12f597b4e4690cab5b8420cc2be3b16df6df411ea4691467a75a6",
+      "pages": 51,
+      "rows": 1198,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0502.pdf",
+      "source_sha256": "c1145146bdc922692e356a8a8b9f3c6d7850e1e66d2aa954dca82898e135ff42",
+      "pages": 24,
+      "rows": 556,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0503.pdf",
+      "source_sha256": "22acf9fe46ef1eaae570abbafff24be3608c8c4351deff7890f10a0b561b55f7",
+      "pages": 55,
+      "rows": 1297,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0504.pdf",
+      "source_sha256": "88d8395ab0f630fcd62163a47170e71846e855592b982f7b53d610c65c6505f6",
+      "pages": 30,
+      "rows": 692,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0601.pdf",
+      "source_sha256": "bc339c1e542327d54c9686a7512ff62a837b0d57e4a93b673ed30cfb44a4d0ca",
+      "pages": 52,
+      "rows": 1216,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0602.pdf",
+      "source_sha256": "e67f5acb7e9bf6466186d39fb519462640acaa93958c95c650d4c08f438bf81b",
+      "pages": 30,
+      "rows": 711,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0603.pdf",
+      "source_sha256": "d0f52000b7d63352f5928166503eadd1a567e81c18b663855ea0fbe3d98757e3",
+      "pages": 41,
+      "rows": 968,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0604.pdf",
+      "source_sha256": "a88087e6ffee1512121e866f1968dd212ee2ea1f736306eb2ba9234a3c12db40",
+      "pages": 50,
+      "rows": 1169,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0701.pdf",
+      "source_sha256": "71c6a8047aabdf52c9724090fd462d46ab424e45d5e1c34d9fec9665c49ec8d8",
+      "pages": 44,
+      "rows": 1020,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0702.pdf",
+      "source_sha256": "afa8efea4ceefa992a076f469873f9a89d023889d74f23c454a2b37560aaeb37",
+      "pages": 23,
+      "rows": 529,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0703.pdf",
+      "source_sha256": "3c0c776b9c8fc8dcbd64f70fa128e984b7ca293ed5afff5c9516b09d1a25e7c6",
+      "pages": 32,
+      "rows": 754,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0704.pdf",
+      "source_sha256": "64fa4d80eb672b4f0a419ab51314a07fcd31be91f5125d89d0763ebb0e33ed52",
+      "pages": 45,
+      "rows": 1046,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0705.pdf",
+      "source_sha256": "b1a53319553d83cbdd5d8df7ad6a8633b4ce11641f2db833d555b8b28a9af99d",
+      "pages": 30,
+      "rows": 694,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0706.pdf",
+      "source_sha256": "e794ec782c5aa94f3c520f235b6ae21bf5a88a00ee79f3977beccda54cb433b2",
+      "pages": 29,
+      "rows": 681,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0707.pdf",
+      "source_sha256": "95c587a9ee8e07ce885257509f2aa72a5f8cd4279488eea139b246f4592e177b",
+      "pages": 28,
+      "rows": 652,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0708.pdf",
+      "source_sha256": "05edfa0a3336acd7a9a52513227d15dd36e8fbe1256df1658352fe7d5d16ecec",
+      "pages": 21,
+      "rows": 488,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0801.pdf",
+      "source_sha256": "d1f250eddebd6da78d334b17318a9c5da8b82138d2093c92c119c20029145b0a",
+      "pages": 25,
+      "rows": 571,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0802.pdf",
+      "source_sha256": "ca31c0ebf2601a7cfd9db984970b09d99426a6ddc2aef29c49a68115ed1518d6",
+      "pages": 24,
+      "rows": 556,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0803.pdf",
+      "source_sha256": "7a4a6ae186fffd9c0cd161f85942e9136a4605bb2b4b74435a26710096a5c4e2",
+      "pages": 21,
+      "rows": 489,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0804.pdf",
+      "source_sha256": "f25ed3f456e87ef4c86435f4ba29d63d6f713fceea5ec4ed3df51b057ce6a012",
+      "pages": 22,
+      "rows": 505,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0805.pdf",
+      "source_sha256": "0182137aed110f37f5b0305e0014329ca6d8e9366e2a794e6d3f08dc18e719de",
+      "pages": 30,
+      "rows": 688,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0806.pdf",
+      "source_sha256": "6b6c7720e5a614efe60394ab4ce6fe080d4351a9f2027cc56977d5901c8e7b7b",
+      "pages": 29,
+      "rows": 671,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0901.pdf",
+      "source_sha256": "e3e6078cdbfe046040f4d7a390dec807d50168a58b93fe0a24dca3463054c6d2",
+      "pages": 24,
+      "rows": 546,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0902.pdf",
+      "source_sha256": "246642bad54ed5bb805a82b012888c9b23ad43ddf769403e9c40ae7146834ae6",
+      "pages": 18,
+      "rows": 405,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_0903.pdf",
+      "source_sha256": "afbb1099341dfe5de2db3e48305dc262f8d9dbaacb9fa93f2995842214c579e0",
+      "pages": 22,
+      "rows": 499,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1001.pdf",
+      "source_sha256": "5328280fe5126e185eb7c9ba0ec3186e2358e142f29acb7a6236b9561779268f",
+      "pages": 13,
+      "rows": 302,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1002.pdf",
+      "source_sha256": "0102cc9b0319165a5f3f9212c4528433b7dc3880521c6f2f28af27ef108e68e7",
+      "pages": 18,
+      "rows": 405,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1003.pdf",
+      "source_sha256": "ad47b91ea68089b5b32f1afa599e21c6047ba821cd3e858a9a20a592eafec081",
+      "pages": 27,
+      "rows": 629,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1004.pdf",
+      "source_sha256": "f4e7ab23f107fadba40c94122c8c2383a9eb911a5ea0622e4383f0b2543edfd5",
+      "pages": 16,
+      "rows": 361,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1101.pdf",
+      "source_sha256": "6b74cb32e33d6726ae3095429eb3badff3b5a92f3b34507ed7477ffb492e9eb5",
+      "pages": 44,
+      "rows": 1022,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1102.pdf",
+      "source_sha256": "c2c6b1f27436681d064da7c01b6ccbfcfc0c85443f6c22aca85c24f3ef64c6a5",
+      "pages": 26,
+      "rows": 603,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1103.pdf",
+      "source_sha256": "3a7155aa1cc54f50dad244b0b29e372858629b4ea0fad67c6190e94e1cd805c5",
+      "pages": 79,
+      "rows": 1865,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1104.pdf",
+      "source_sha256": "750a0a903e3d7ba6cc8392a1ea90f89b11d23c80f0f0509352d79984f355dd7d",
+      "pages": 55,
+      "rows": 1294,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1201.pdf",
+      "source_sha256": "9fc1514a92628682dcf1dbf155471ca491463aec5715f9ddff6c3afd5996ef7d",
+      "pages": 39,
+      "rows": 919,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1202.pdf",
+      "source_sha256": "372cb6055052a0a4a36eaecb4e4c525c802e1e536126f67b09e7d8b931163b5c",
+      "pages": 49,
+      "rows": 1150,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1203.pdf",
+      "source_sha256": "dd925535ab05e354e7fbb1bfdf99e3a563c18cfb1d2795150628bf30d79d4596",
+      "pages": 64,
+      "rows": 1500,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1204.pdf",
+      "source_sha256": "3d0a943c1deb2847f756df1904c739dfb062b0afc90bf808bb91945f36fb004a",
+      "pages": 27,
+      "rows": 631,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1206.pdf",
+      "source_sha256": "f30119ac8df3c145a6ee2e4990b11be2d518cd23d215935bc54cd2153910a7ca",
+      "pages": 57,
+      "rows": 1342,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1207.pdf",
+      "source_sha256": "8f24e2c3049a7eae36670e37e661ee5f9272c9561ac43d31cf47fc5a455b2b38",
+      "pages": 39,
+      "rows": 899,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1301.pdf",
+      "source_sha256": "2259b92a145539db156e84c0b92704cde6665730fd7c69fb07c23851c25b5db6",
+      "pages": 52,
+      "rows": 1228,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1302.pdf",
+      "source_sha256": "0cff794bb42bae841c47e83f361e3090fc1f3742bda6ddd50be75f6b31a254f2",
+      "pages": 18,
+      "rows": 410,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1303.pdf",
+      "source_sha256": "d0173eb8e58213c1dd111f541987ce1218e366c663d06efbaeb79eb91106d26f",
+      "pages": 33,
+      "rows": 777,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1304.pdf",
+      "source_sha256": "72e6d60c9bf62cbf9bef556406d69291420889095264724683ab78c6faa07b84",
+      "pages": 55,
+      "rows": 1281,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1401.pdf",
+      "source_sha256": "a9100a2c36ef741890e1f449e541dc71d06f227235057effcf030df2a61463b7",
+      "pages": 52,
+      "rows": 1213,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1402.pdf",
+      "source_sha256": "9d6e79974fc433c30db7f3a46314ab4e73e6acfc7f94afa1044e6aa086bea278",
+      "pages": 39,
+      "rows": 909,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1403.pdf",
+      "source_sha256": "10dcb9748e398901821b1c3caa4dcf97573dbd541c32f0a4a9a04de6fc884eb4",
+      "pages": 38,
+      "rows": 882,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1404.pdf",
+      "source_sha256": "fb7560bd5dbdafa8ef2c544fda79609816f5e069d4bcd60f27e6120c0b93d2b8",
+      "pages": 38,
+      "rows": 882,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1501.pdf",
+      "source_sha256": "3b5bd1b7489f5029e39adc93036856bcca900c46fb7e034c1b1a88b554884656",
+      "pages": 42,
+      "rows": 973,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1502.pdf",
+      "source_sha256": "d31a261d9a619a70cc73c5f8fe6a950718dd360c6c0da2d54c01befb2e4075bf",
+      "pages": 41,
+      "rows": 959,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1503.pdf",
+      "source_sha256": "ed20c27fd3201cbcfe54ce98eab2695bd4e3bfd3da2c0aa8c80d36bf04d467ca",
+      "pages": 28,
+      "rows": 663,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1601.pdf",
+      "source_sha256": "74fc74831eec0a5f22c76d71489ad6618c458ddfaa84316ec9a42475b0c61f6d",
+      "pages": 63,
+      "rows": 1489,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1602.pdf",
+      "source_sha256": "a6963766e54a3f8975257d094f36bfbfd623521ef2659a409ac8ec05a08640e6",
+      "pages": 41,
+      "rows": 967,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1603.pdf",
+      "source_sha256": "c7b18b83d7a3cd6c9df521572cad35556e9b7b0a08694e29f5562269bb2c627e",
+      "pages": 58,
+      "rows": 1377,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1604.pdf",
+      "source_sha256": "e5aed77d5311c05b7bd4435370d220857d32f8f47ed349d7552963f80c589667",
+      "pages": 52,
+      "rows": 1220,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1701.pdf",
+      "source_sha256": "342565dd54eee6115b06e9e504061aa6b33b41bb4dcf17d37ae28accdcf65c7b",
+      "pages": 78,
+      "rows": 1837,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1702.pdf",
+      "source_sha256": "c8302e6f84f3cbc82d82686baf1758c3cb765feb2cd0cb48d2d9d0f60d979ac7",
+      "pages": 32,
+      "rows": 736,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1703.pdf",
+      "source_sha256": "9aa701ccc91384a6b3d374290049ff112b9aa834f0f8be6dd88e499230c9ceda",
+      "pages": 53,
+      "rows": 1247,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1801.pdf",
+      "source_sha256": "bd301204261c84c1656032db7a997b05251d39be3ceb34e0dbbf3525d5f93a7b",
+      "pages": 60,
+      "rows": 1375,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1802.pdf",
+      "source_sha256": "14136f1a1aaa5b530ec5be96f8e641fa43da9db315939ddc052602b900b55c11",
+      "pages": 31,
+      "rows": 733,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1803.pdf",
+      "source_sha256": "1e9f4b737cbd8946b00954b8d9640fbfcdae77593a15564989c2e7ac903ae282",
+      "pages": 40,
+      "rows": 941,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1804.pdf",
+      "source_sha256": "40307159953104629229f265d6a4b379c6e76d0e7301a5517d351d8274fd2de4",
+      "pages": 76,
+      "rows": 1793,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1901.pdf",
+      "source_sha256": "5af636e3823a760b377cbb7d2eb16216da9b3a910c833831b0b94968f5f80158",
+      "pages": 24,
+      "rows": 552,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1902.pdf",
+      "source_sha256": "f35d092600e4f8e0e452706f3954791dad5cd41bc230a6dc3369b011e6556dff",
+      "pages": 38,
+      "rows": 898,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    },
+    {
+      "source_path": "data/2010/area_panchayat_member/kpm_1903.pdf",
+      "source_sha256": "6be89daae0ed52fa08e16b51be730c880b6a83ad69643865c6ba177b7558d102",
+      "pages": 28,
+      "rows": 656,
+      "page_issues": {},
+      "status": "parsed_pending_validation"
+    }
+  ],
+  "new_paid_api_cost_usd": 0,
+  "schema": {
+    "observation_id": "string",
+    "state": "string",
+    "office": "string",
+    "record_kind": "string",
+    "result_raw": "string",
+    "source_path": "string",
+    "source_sha256": "string",
+    "source_url": "string",
+    "district_code_raw": "string",
+    "district_name_encoded_raw": "string",
+    "block_code_raw": "string",
+    "block_name_encoded_raw": "string",
+    "reservation_class": "string",
+    "candidate_category_class": "string",
+    "reported_sex": "string",
+    "text_encoding": "string",
+    "cell_bboxes_json": "string",
+    "printed_serial_raw": "string",
+    "ward_number_raw": "string",
+    "seat_reservation_encoded_raw": "string",
+    "candidate_name_encoded_raw": "string",
+    "related_person_encoded_raw": "string",
+    "candidate_category_encoded_raw": "string",
+    "candidate_age_raw": "string",
+    "reported_sex_encoded_raw": "string",
+    "education_encoded_raw": "string",
+    "election_year": "int16",
+    "source_page": "int32",
+    "source_row_on_page": "int32",
+    "ward_number": "int32",
+    "candidate_age": "int32",
+    "block_context_source_page": "int32",
+    "block_context_source_y": "double",
+    "women_reserved": "bool",
+    "candidate_category_women_label": "bool",
+    "is_winner": "bool",
+    "assignment_usable": "bool",
+    "quality_flags": "list<item: string>"
+  },
+  "notes": [
+    "The printed list describes elected samiti members.",
+    "Reported-official observations are not independently certified winners.",
+    "Seat and candidate categories are kept on separate axes.",
+    "Addresses are excluded from the typed table and its cell geometry.",
+    "Original PDFs and compressed extraction evidence retain source context.",
+    "Block context never crosses a document or unrecognized page."
+  ],
+  "rows": 63333,
+  "reservation_classes": {
+    "sc": 14764,
+    "general": 31144,
+    "obc": 17379,
+    "st": 31,
+    "unknown": 15
+  },
+  "quality_flags": {
+    "legacy_name_decode_pending": 63333,
+    "independent_source_review_pending": 63333,
+    "block_context_carried_from_source_heading_page": 53367,
+    "candidate_category_encoded_raw_unmapped": 40,
+    "related_person_encoded_raw_crosses_column_boundary": 7,
+    "seat_reservation_encoded_raw_unmapped": 15,
+    "candidate_name_encoded_raw_crosses_column_boundary": 2,
+    "candidate_name_missing": 2,
+    "reported_sex_unmapped": 1
+  },
+  "source_failures": 0,
+  "key_collisions": [
+    {
+      "district_code_raw": "0301",
+      "block_code_raw": "4",
+      "ward_number": 39,
+      "observations": 2
+    },
+    {
+      "district_code_raw": "0504",
+      "block_code_raw": "5",
+      "ward_number": 43,
+      "observations": 2
+    },
+    {
+      "district_code_raw": "0707",
+      "block_code_raw": "5",
+      "ward_number": 46,
+      "observations": 2
+    },
+    {
+      "district_code_raw": "1602",
+      "block_code_raw": "7",
+      "ward_number": 87,
+      "observations": 2
+    },
+    {
+      "district_code_raw": "1701",
+      "block_code_raw": "6",
+      "ward_number": 59,
+      "observations": 2
+    },
+    {
+      "district_code_raw": "1701",
+      "block_code_raw": "15",
+      "ward_number": 17,
+      "observations": 2
+    },
+    {
+      "district_code_raw": "1803",
+      "block_code_raw": "2",
+      "ward_number": 0,
+      "observations": 2
+    },
+    {
+      "district_code_raw": "1803",
+      "block_code_raw": "4",
+      "ward_number": 35,
+      "observations": 2
+    }
+  ],
+  "parquet_sha256": "a1c1bec556fdddd7aa290cdbeccf33c4ce7eff588baf31af8d7593412d25f49b",
+  "page_evidence_sha256": "4d10b8b90c453c4f259772ea29c854a89d9b65c4634cae15d633327b190e4521"
+}

@@ -220,8 +220,8 @@ def standardize_wave(year, directory, overrides, aliases, blocks):
 
 
 def build(root=paths.ROOT):
-    active = root / "data/crosswalks/active"
-    output = root / "data/interim/release/gp"
+    active = root / "data/manual/crosswalks/active"
+    output = root / "data/build/release/gp"
 
     def approved(name):
         frame = pd.read_csv(active / name, dtype="string", keep_default_na=False)
@@ -289,7 +289,7 @@ def build(root=paths.ROOT):
     require(
         latest.lgd_gp_linked.sum() == len(gps), "GP crosswalk not applied exactly once"
     )
-    audit = root / "data/crosswalks/audit"
+    audit = root / "data/manual/crosswalks/audit"
     audit.mkdir(parents=True, exist_ok=True)
     exceptions = records.loc[~records.link_eligible].copy()
     exceptions["exception_reason"] = exceptions.normalized_name_key.map(

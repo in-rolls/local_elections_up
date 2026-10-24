@@ -135,8 +135,8 @@ def normalized_elections(frame):
 
 
 def build(root=paths.ROOT):
-    directory = root / "data/interim/release"
-    output = directory / "panels"
+    directory = root / "data/build/release"
+    output = directory / "linkage"
     elections = normalized_elections(
         pd.read_parquet(directory / "gp/gp_head_election_records.parquet")
     )

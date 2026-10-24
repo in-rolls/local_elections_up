@@ -23,7 +23,7 @@ from local_elections_up import paths
 
 ROOT = paths.ROOT
 TOTAL_MARKER = re.compile(r";\s*k\s*s\s*x")
-BASE = Path("data/discovery/2026-09-10/archived_reservations")
+BASE = Path("data/search_log/2026-09-10/archived_reservations")
 SOURCES = [
     {
         "tier": "gp_head",
@@ -349,7 +349,7 @@ def main():
     args = ap.parse_args()
     args.root = args.root.resolve()
     args.out = (
-        args.out or args.root / "data/interim/sitapur_reservations_2010_grid_v3"
+        args.out or args.root / "data/extracted/sitapur_reservations_2010_grid_v3"
     ).resolve()
     args.out.mkdir(parents=True)
     extraction_dir = args.out / "native_text"

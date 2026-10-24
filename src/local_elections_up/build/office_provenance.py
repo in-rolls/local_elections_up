@@ -39,7 +39,7 @@ def digest(path):
 # release. Their resolutions were recorded with the bytes on disk; a checkout
 # without the captures uses the record, and `make fetch-sources` restores them
 # so the hashes are checked again.
-RESOLUTIONS = "data/catalogs/archived_source_resolutions.jsonl.gz"
+RESOLUTIONS = "data/manual/catalogs/archived_source_resolutions.jsonl.gz"
 
 
 def archived_resolutions(root):

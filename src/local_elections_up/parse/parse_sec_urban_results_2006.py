@@ -292,7 +292,9 @@ def parse_page(page, source, source_sha, number, scope):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--output-root", type=Path, default=ROOT / "data/interim/sec_urban_results_2006"
+        "--output-root",
+        type=Path,
+        default=ROOT / "data/extracted/sec_urban_results_2006",
     )
     parser.add_argument(
         "--source", action="append", help="Repo-relative PDF; repeatable"

@@ -19,7 +19,7 @@ from local_elections_up.acquire import harvest_sec_historical_results as history
 
 ROOT = Path(__file__).resolve().parents[3]
 
-SCHEMA_FILE = ROOT / "data/catalogs/pri2010_portal_schema.json"
+SCHEMA_FILE = ROOT / "data/manual/catalogs/pri2010_portal_schema.json"
 PAGER = re.compile(r"__doPostBack\(['\"]([^'\"]+)['\"],\s*['\"]Page\$(\d+)['\"]\)")
 
 

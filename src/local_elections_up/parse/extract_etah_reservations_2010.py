@@ -19,7 +19,7 @@ import pyarrow.parquet as pq
 from local_elections_up import paths
 
 SOURCE = (
-    "data/discovery/2026-09-10/archived_reservations/raw/"
+    "data/search_log/2026-09-10/archived_reservations/raw/"
     "4ef7c2223a1030b9a888_53bfc78b35fb.pdf"
 )
 SHA256 = "53bfc78b35fb351dcf8f6fed54c3f07c0e51b51ea244266ed174e9ef3295fe29"
@@ -252,7 +252,7 @@ def main():
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("data/interim/etah_reservations_2010_grid_v5"),
+        default=Path("data/extracted/etah_reservations_2010_grid_v5"),
     )
     args = parser.parse_args()
     source = args.root / SOURCE

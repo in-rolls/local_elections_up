@@ -38,7 +38,7 @@ from local_elections_up.parse.standardize_sec_samiti_2010 import (
 )
 
 ROOT = Path(__file__).resolve().parents[3]
-PRI_LABEL_PATH = ROOT / "data/catalogs/pri_2010_category_labels.json"
+PRI_LABEL_PATH = ROOT / "data/manual/catalogs/pri_2010_category_labels.json"
 PRI_LABEL_BYTES = PRI_LABEL_PATH.read_bytes()
 PRI_LABELS = json.loads(PRI_LABEL_BYTES)
 PRI_LABEL_SHA = hashlib.sha256(PRI_LABEL_BYTES).hexdigest()
@@ -801,10 +801,12 @@ def main():
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--registry", type=Path, default=ROOT / "data/catalogs/office_sources.json"
+        "--registry",
+        type=Path,
+        default=ROOT / "data/manual/catalogs/office_sources.json",
     )
     parser.add_argument(
-        "--output-root", type=Path, default=ROOT / "data/interim/release/offices"
+        "--output-root", type=Path, default=ROOT / "data/build/release/offices"
     )
     args = parser.parse_args()
     registry_bytes = args.registry.read_bytes()

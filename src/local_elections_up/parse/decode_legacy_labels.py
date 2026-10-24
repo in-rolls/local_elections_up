@@ -129,7 +129,7 @@ def main():
         "source_profile_sha256": digest(args.profile) if args.profile else None,
         "build_dependency": (
             "Attributed local decoder; upstream origin recorded in "
-            "data/catalogs/shared_decoder.json"
+            "data/manual/catalogs/shared_decoder.json"
         ),
         "csv_input_policy": (
             "All CSV fields read as strings; blank strings and original "

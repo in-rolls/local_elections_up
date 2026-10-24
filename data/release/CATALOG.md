@@ -75,14 +75,14 @@ Counts describe records, not necessarily distinct seats. Contract checks do not 
 | [2023/municipal_council_ward_member_seat_reservation](2023/municipal_council_ward_member_seat_reservation.parquet) | 5,352 | 2023 | one source observation; sources may overlap | provisional_source_observations |
 | [2023/nagar_panchayat_chair_seat_reservation](2023/nagar_panchayat_chair_seat_reservation.parquet) | 544 | 2023 | one source observation; sources may overlap | provisional_source_observations |
 | [2023/nagar_panchayat_ward_member_seat_reservation](2023/nagar_panchayat_ward_member_seat_reservation.parquet) | 7,177 | 2023 | one source observation; sources may overlap | provisional_source_observations |
-| [panels/gp_adjacent_links](panels/gp_adjacent_links.parquet) | 128,687 | see source documentation | one accepted adjacent-wave link | geographic_linkage |
-| [panels/gp_four_election_links](panels/gp_four_election_links.parquet) | 29,734 | see source documentation | one linked four-election history | geographic_linkage |
-| [panels/gp_head_election_records](panels/gp_head_election_records.parquet) | 212,525 | 2005, 2010, 2015, 2021 | one winner-list or winner-marked record | contract_checked |
-| [panels/gp_lgd_bridge](panels/gp_lgd_bridge.parquet) | 157,186 | see source documentation | one historical panel row projected to the LGD vintage | geographic_linkage |
-| [panels/gp_link_candidates](panels/gp_link_candidates.parquet) | 129,752 | see source documentation | one assessed adjacent-wave linkage candidate | geographic_linkage |
-| [panels/gp_panel_2005_2010](panels/gp_panel_2005_2010.parquet) | 42,622 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
-| [panels/gp_panel_2005_2010_2015_2021](panels/gp_panel_2005_2010_2015_2021.parquet) | 29,734 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
-| [panels/gp_panel_2010_2015](panels/gp_panel_2010_2015.parquet) | 39,551 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
-| [panels/gp_panel_2015_2021](panels/gp_panel_2015_2021.parquet) | 46,514 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
-| [panels/weaver_20250302_wide](panels/weaver_20250302_wide.parquet) | 105,527 | see source documentation | one source GP identifier, wide across waves | external_source_preparation |
-| [panels/weaver_20250317_wide](panels/weaver_20250317_wide.parquet) | 61,338 | see source documentation | one source GP identifier, wide across waves | external_source_preparation |
+| [linkage/gp_adjacent_links](linkage/gp_adjacent_links.parquet) | 128,687 | see source documentation | one accepted adjacent-wave link | geographic_linkage |
+| [linkage/gp_four_election_links](linkage/gp_four_election_links.parquet) | 29,734 | see source documentation | one linked four-election history | geographic_linkage |
+| [linkage/gp_head_election_records](linkage/gp_head_election_records.parquet) | 212,525 | 2005, 2010, 2015, 2021 | one winner-list or winner-marked record | contract_checked |
+| [linkage/gp_lgd_bridge](linkage/gp_lgd_bridge.parquet) | 157,186 | see source documentation | one historical panel row projected to the LGD vintage | geographic_linkage |
+| [linkage/gp_link_candidates](linkage/gp_link_candidates.parquet) | 129,752 | see source documentation | one assessed adjacent-wave linkage candidate | geographic_linkage |
+| [linkage/gp_panel_2005_2010](linkage/gp_panel_2005_2010.parquet) | 42,622 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
+| [linkage/gp_panel_2005_2010_2015_2021](linkage/gp_panel_2005_2010_2015_2021.parquet) | 29,734 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
+| [linkage/gp_panel_2010_2015](linkage/gp_panel_2010_2015.parquet) | 39,551 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
+| [linkage/gp_panel_2015_2021](linkage/gp_panel_2015_2021.parquet) | 46,514 | see source documentation | one linked source-record pair or four-election history | geographic_linkage |
+| [linkage/weaver_20250302_wide](linkage/weaver_20250302_wide.parquet) | 105,527 | see source documentation | one source GP identifier, wide across waves | external_source_preparation |
+| [linkage/weaver_20250317_wide](linkage/weaver_20250317_wide.parquet) | 61,338 | see source documentation | one source GP identifier, wide across waves | external_source_preparation |

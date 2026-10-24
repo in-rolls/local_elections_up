@@ -20,9 +20,9 @@ from local_elections_up.fields import contact_field, contact_payload
 
 ROOT = paths.ROOT
 DATA = ROOT / "data"
-BUILD = DATA / "interim/release"
+BUILD = DATA / "build/release"
 RELEASE = DATA / "release"
-METADATA = ("manifest.json", "CATALOG.md", "DICTIONARY.md")
+METADATA = ("MANIFEST.json", "CATALOG.md", "DICTIONARY.md")
 RURAL = ("gram_panchayat_", "panchayat_samiti_", "zilla_parishad_")
 # The SEC GP-head winner lists and 2021 candidates, as received apart from
 # contact fields. The office build's GP-head observations are published too:
@@ -38,7 +38,7 @@ GP_TABLES = {
     "gp_head_candidates_2021.parquet": (
         "2021/gram_panchayat_head_candidate_record.parquet"
     ),
-    "gp_head_election_records.parquet": "panels/gp_head_election_records.parquet",
+    "gp_head_election_records.parquet": "linkage/gp_head_election_records.parquet",
 }
 
 
@@ -63,7 +63,7 @@ def published_dirs(directory):
     return sorted(
         p
         for p in directory.iterdir()
-        if p.is_dir() and (re.fullmatch(r"\d{4}", p.name) or p.name == "panels")
+        if p.is_dir() and (re.fullmatch(r"\d{4}", p.name) or p.name == "linkage")
     )
 
 
@@ -74,9 +74,9 @@ def office_build(build=BUILD):
 def plan(build=BUILD):
     """Every published table: (source, destination, cycle or None)."""
     steps = [(build / "gp" / name, dest, None) for name, dest in GP_TABLES.items()]
-    for folder in ("panels", "weaver"):
+    for folder in ("linkage", "weaver"):
         steps += [
-            (path, f"panels/{path.name}", None)
+            (path, f"linkage/{path.name}", None)
             for path in sorted((build / folder).glob("*.parquet"))
         ]
     for entry in office_build(build)["files"]:
@@ -245,7 +245,7 @@ def build(directory=RELEASE, build=BUILD):
         "release": "v3.1",
         "layout": (
             "One folder per election cycle holds that election's source tables; "
-            "panels/ holds cross-election links and harmonized records derived "
+            "linkage/ holds cross-election links and harmonized records derived "
             "from them."
         ),
         "code_revision": subprocess.check_output(
@@ -262,9 +262,11 @@ def build(directory=RELEASE, build=BUILD):
             cwd=ROOT,
             text=True,
         ).strip(),
-        "source_registry_sha256": digest(ROOT / "data/catalogs/office_sources.json"),
+        "source_registry_sha256": digest(
+            ROOT / "data/manual/catalogs/office_sources.json"
+        ),
         "input_registries_sha256": {
-            name: digest(ROOT / "data/catalogs" / name)
+            name: digest(ROOT / "data/manual/catalogs" / name)
             for name in ("office_sources.json", "gp_sources.json")
         },
         "office_build": {k: v for k, v in office.items() if k != "files"},
@@ -281,7 +283,7 @@ def build(directory=RELEASE, build=BUILD):
         ),
         "files": entries,
     }
-    dump(directory / "manifest.json", manifest)
+    dump(directory / "MANIFEST.json", manifest)
     lines = [
         "# Data catalog",
         "",
@@ -294,7 +296,7 @@ def build(directory=RELEASE, build=BUILD):
         "| --- | ---: | --- | --- | --- |",
     ]
     definitions = json.loads(
-        (ROOT / "data/catalogs/column_definitions.json").read_text()
+        (ROOT / "data/manual/catalogs/column_definitions.json").read_text()
     )
     dictionary = [
         "# Data dictionary",
@@ -350,7 +352,7 @@ def build(directory=RELEASE, build=BUILD):
 
 def verify(directory=RELEASE):
     directory = directory.resolve()
-    manifest = json.loads((directory / "manifest.json").read_text())
+    manifest = json.loads((directory / "MANIFEST.json").read_text())
     for entry in manifest["files"]:
         path = (directory / entry["path"]).resolve()
         if not path.is_relative_to(directory):
@@ -421,7 +423,7 @@ def verify_relationships(directory):
     from local_elections_up.build.link_elections import PAIRS
     from local_elections_up.build.link_historical_lgd import PANEL_YEARS, lgd_anchor
 
-    panels = directory / "panels"
+    panels = directory / "linkage"
     records = pd.read_parquet(panels / "gp_head_election_records.parquet")
     sources = {
         2005: "2005/gram_panchayat_head_winner_list.parquet",
@@ -531,7 +533,7 @@ def verify_relationships(directory):
 
 def data_summary(directory=RELEASE):
     """Refresh the README inventory from the verified published manifest."""
-    manifest = json.loads((directory / "manifest.json").read_text())
+    manifest = json.loads((directory / "MANIFEST.json").read_text())
     lines = [
         "<!-- datasets:start -->",
         "",

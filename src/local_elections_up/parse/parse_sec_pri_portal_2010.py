@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[3]
 
-CATALOG = ROOT / "data/catalogs/pri2010_portal_schema.json"
+CATALOG = ROOT / "data/manual/catalogs/pri2010_portal_schema.json"
 RAW_FIELDS = (
     "source_serial_raw",
     "district_name_raw",

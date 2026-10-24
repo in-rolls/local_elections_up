@@ -23,7 +23,7 @@ import pyarrow.parquet as pq
 
 ROOT = Path(__file__).resolve().parents[3]
 
-LABELS_BYTES = (ROOT / "data/catalogs/office_labels.json").read_bytes()
+LABELS_BYTES = (ROOT / "data/manual/catalogs/office_labels.json").read_bytes()
 LABELS = json.loads(LABELS_BYTES)
 OFFICES = LABELS["candidate_offices"]
 RAW_FIELDS = LABELS["candidate_columns"]
@@ -230,7 +230,9 @@ def main():
         "--source-root", type=Path, default=Path("data/raw/2015/winner_lists")
     )
     parser.add_argument(
-        "--output-root", type=Path, default=Path("data/interim/sec_candidate_csvs_2015")
+        "--output-root",
+        type=Path,
+        default=Path("data/extracted/sec_candidate_csvs_2015"),
     )
     args = parser.parse_args()
     source_root = args.source_root.resolve()

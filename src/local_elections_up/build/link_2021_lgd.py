@@ -16,9 +16,9 @@ from preclink import Pipeline, StringComparison
 from local_elections_up import paths
 
 PROJECT_ROOT = paths.ROOT
-RELEASE = PROJECT_ROOT / "data/interim/release/gp/gp_head_election_records.parquet"
-ACTIVE_DIR = PROJECT_ROOT / "data/crosswalks/active"
-AUDIT_DIR = PROJECT_ROOT / "data/crosswalks/audit"
+RELEASE = PROJECT_ROOT / "data/build/release/gp/gp_head_election_records.parquet"
+ACTIVE_DIR = PROJECT_ROOT / "data/manual/crosswalks/active"
+AUDIT_DIR = PROJECT_ROOT / "data/manual/crosswalks/audit"
 MIN_SCORE = 0.90
 MIN_MARGIN = 0.05
 
@@ -44,8 +44,10 @@ def sha256(path: Path) -> str:
 
 def resolve_lgd_file() -> Path:
     """Resolve and verify the pinned LGD GP hierarchy."""
-    relative = "data/external/lgd/lgd_up_block_gp.csv"
-    manifest = json.loads((PROJECT_ROOT / "data/external/lgd/SOURCES.json").read_text())
+    relative = "data/reference/lgd/lgd_up_block_gp.csv"
+    manifest = json.loads(
+        (PROJECT_ROOT / "data/reference/lgd/SOURCES.json").read_text()
+    )
     explicit = os.environ.get("UP_LGD_GP_FILE")
     path = Path(explicit).expanduser() if explicit else PROJECT_ROOT / relative
     path = path.resolve()

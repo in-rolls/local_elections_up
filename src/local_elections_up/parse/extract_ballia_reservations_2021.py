@@ -3,7 +3,7 @@
 Run with:
 uv run --with img2table==2.0.0 python -m \
     local_elections_up.parse.extract_ballia_reservations_2021 \
-    --source-root data/recovery/ballia_media_reservations_2021 --pages 2 37 74
+    --source-root data/collections/ballia_media_reservations_2021 --pages 2 37 74
 
 No API calls. Requires local Tesseract with eng and hin data. Outputs are
 research staging, not canonical allocations. Numeric slots remain positional

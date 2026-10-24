@@ -225,19 +225,19 @@ def build_bridge(panels, blocks, directory, known_reservation=True, reviews=None
 
 
 def build(root=paths.ROOT):
-    origin = json.loads((root / "data/external/lgd/SOURCES.json").read_text())
+    origin = json.loads((root / "data/reference/lgd/SOURCES.json").read_text())
     for group in ("files", "election_files", "review_files"):
         for name, spec in origin[group].items():
             require(digest(root / name) == spec["sha256"], f"LGD input changed: {name}")
-    directory = root / "data/interim/release/panels"
+    directory = root / "data/build/release/linkage"
     panels = {
         name: pd.read_parquet(directory / f"gp_panel_{name}.parquet")
         for name in PANEL_YEARS
     }
-    blocks = pd.read_csv(root / "data/crosswalks/active/up_block_xwalk.csv")
-    lgd = pd.read_csv(root / "data/external/lgd/lgd_up_block_gp.csv")
+    blocks = pd.read_csv(root / "data/manual/crosswalks/active/up_block_xwalk.csv")
+    lgd = pd.read_csv(root / "data/reference/lgd/lgd_up_block_gp.csv")
     reviews = pd.read_csv(
-        root / "data/crosswalks/active/up_historical_lgd_reviewed.csv"
+        root / "data/manual/crosswalks/active/up_historical_lgd_reviewed.csv"
     )
     vintage = build_bridge(panels, blocks, lgd, reviews=reviews)
     full = build_bridge(panels, blocks, lgd, known_reservation=False, reviews=reviews)
@@ -259,7 +259,7 @@ def build(root=paths.ROOT):
         )
         differences.append(diff)
     differences = pd.concat(differences, ignore_index=True)
-    audit = root / "data/crosswalks/audit"
+    audit = root / "data/manual/crosswalks/audit"
     differences.to_csv(audit / "up_lgd_full_linked_panel_sensitivity.csv", index=False)
     combined = pd.concat(
         [vintage.assign(universe="qraj_v1"), full.assign(universe="full_linked_panels")]

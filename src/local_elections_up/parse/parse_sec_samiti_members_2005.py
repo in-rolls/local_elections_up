@@ -44,9 +44,9 @@ CATEGORY_LABELS = {
     "vuqlwfprtutkfr&efgyk": ("st", True),
 }
 LABEL_REVIEW_PATH = ROOT / "data/reference/sec_samiti_members_2005_label_review.json.gz"
-LABEL_REVIEW_SHA = "a1df09f394ef08f9238cef1d025c1a694c516a4d9c21f3767adfa9c4c68ebfae"
+LABEL_REVIEW_SHA = "15b453adda44d6a27e6628a7ab8be4be9b3a0b0ffc385d1986b09d2031439e81"
 KEY_REVIEW_PATH = ROOT / "data/reference/sec_samiti_members_2005_key_review.json.gz"
-KEY_REVIEW_SHA = "7009c86d594944668eb0ccecddd9dcfde3ef14059eddc1a3f37de374bea1c03c"
+KEY_REVIEW_SHA = "901af587a49caa6a878bfe97892515098fecb3ecabce92a3c6a6300bf46887cc"
 SOURCE_STATUS_LABELS = {"fufoZjks/k": "unopposed", "fjDr": "vacant"}
 SEX_LABELS = {'iq#"k': "male", "efgyk": "female"}
 STRINGS = (
@@ -306,7 +306,7 @@ def main():
     parser.add_argument(
         "--output-root",
         type=Path,
-        default=ROOT / "data/interim/sec_samiti_members_2005",
+        default=ROOT / "data/extracted/sec_samiti_members_2005",
     )
     args = parser.parse_args()
     extraction_receipt = args.extraction_root / "extraction_receipt.json"

@@ -39,10 +39,12 @@ def published_names(columns, output):
 
 
 def prepare(root=ROOT):
-    sources = json.loads((root / "data/catalogs/gp_sources.json").read_text())["files"]
-    output = root / "data/interim/release/gp"
+    sources = json.loads((root / "data/manual/catalogs/gp_sources.json").read_text())[
+        "files"
+    ]
+    output = root / "data/build/release/gp"
     declared = {root / s["path"] for s in sources}
-    found = set((root / "data/interim/gp_enriched").glob("*.parquet"))
+    found = set((root / "data/build/gp_enriched").glob("*.parquet"))
     if found != declared:
         raise ValueError("GP input inventory differs from the pinned registry")
     output.mkdir(parents=True, exist_ok=True)

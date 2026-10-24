@@ -66,7 +66,9 @@ def clean_lines(values):
 def transliterations(root, names):
     mapping = {}
     for name in names:
-        frame = pd.read_csv(root / "data/transliteration" / name, low_memory=False)
+        frame = pd.read_csv(
+            root / "data/build/transliteration" / name, low_memory=False
+        )
         key, value = (
             ("hindi", "eng") if "hindi" in frame else ("Name", "Transliterated")
         )
@@ -142,8 +144,10 @@ def prepare_sources(root, registry):
 
 
 def build(root=paths.ROOT, output=None):
-    output = output or root / "data/interim/gp_rebuilt"
-    registry = json.loads((root / "data/catalogs/gp_enrichment.json").read_text())
+    output = output or root / "data/extracted/gp_rebuilt"
+    registry = json.loads(
+        (root / "data/manual/catalogs/gp_enrichment.json").read_text()
+    )
     for name, spec in registry["files"].items():
         require(
             digest(root / name) == spec["sha256"],
@@ -155,9 +159,9 @@ def build(root=paths.ROOT, output=None):
     output.mkdir(parents=True, exist_ok=True)
     pinned = {
         x["output"]: x
-        for x in json.loads((root / "data/catalogs/gp_sources.json").read_text())[
-            "files"
-        ]
+        for x in json.loads(
+            (root / "data/manual/catalogs/gp_sources.json").read_text()
+        )["files"]
     }
     for year, frame in frames.items():
         gp = "gp_name_fin" if year <= 2010 else "gp_name"

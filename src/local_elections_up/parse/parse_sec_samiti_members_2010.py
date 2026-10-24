@@ -18,7 +18,7 @@ import pyarrow.parquet as pq
 from local_elections_up import paths
 
 ROOT = paths.ROOT
-LABEL_PATH = ROOT / "data/catalogs/samiti_2010_labels.json"
+LABEL_PATH = ROOT / "data/manual/catalogs/samiti_2010_labels.json"
 BANDS = (
     ("printed_serial_raw", 30, 66),
     ("ward_number_raw", 66, 118),
@@ -285,7 +285,7 @@ def main():
     parser.add_argument(
         "--output-root",
         type=Path,
-        default=ROOT / "data/interim/sec_samiti_members_2010",
+        default=ROOT / "data/extracted/sec_samiti_members_2010",
     )
     args = parser.parse_args()
     label_bytes = LABEL_PATH.read_bytes()

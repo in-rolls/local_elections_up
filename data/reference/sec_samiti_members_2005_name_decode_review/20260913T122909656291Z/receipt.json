@@ -13,7 +13,7 @@
   "output": "/Users/soodoku/Documents/GitHub/local_elections_up/data/reference/sec_samiti_members_2005_name_decode_review/20260913T122909656291Z",
   "review_bytes": 32904,
   "review_path": "data/reference/sec_samiti_members_2005_name_decode_review/20260913T122909656291Z/review.json.gz",
-  "review_sha256": "81de47144f4e34eb03dfcf355a8293efd1fbc0786181abba025fdcb8a599751a",
+  "review_sha256": "2cc77f682bd71b88000605cc55976f11c90dc1e601c5e1bb212d90bf7e97069a",
   "source_rows_reviewed": 4,
   "status": "source_review_complete_decoder_correction_not_applied",
   "ward_collision_groups": 3

@@ -9048,7 +9048,7 @@ one source observation; sources may overlap. Key: record_id.
 | `name_reading_uncertain` | `bool` | Whether the source-name reading remains uncertain; null does not certify identity. |
 | `source_caste_column` | `int64` | Source-specific field; interpret using its registered source. |
 
-## panels/gp_adjacent_links
+## linkage/gp_adjacent_links
 
 one accepted adjacent-wave link. Key: year_from, year_to, left_id, right_id.
 
@@ -9066,7 +9066,7 @@ one accepted adjacent-wave link. Key: year_from, year_to, left_id, right_id.
 | `year_from` | `int32` | Source-specific field; interpret using its registered source. |
 | `year_to` | `int32` | Source-specific field; interpret using its registered source. |
 
-## panels/gp_four_election_links
+## linkage/gp_four_election_links
 
 one linked four-election history. Key: election_id_2005, election_id_2010, election_id_2015, election_id_2021.
 
@@ -9077,7 +9077,7 @@ one linked four-election history. Key: election_id_2005, election_id_2010, elect
 | `election_id_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `election_id_2021` | `string` | Source-specific field; interpret using its registered source. |
 
-## panels/gp_head_election_records
+## linkage/gp_head_election_records
 
 one winner-list or winner-marked record. Key: election_gp_key.
 
@@ -9085,7 +9085,7 @@ one winner-list or winner-marked record. Key: election_gp_key.
 | --- | --- | --- |
 | `election_gp_key` | `string` | Immutable source-election record key. Historical keys use source row ordinals; 2021 uses publisher candidate IDs. |
 | `election_year` | `int32` | Election-cycle year attributed by the registered source; not an exact polling date. |
-| `source_file` | `string` | Source table filename; GP sources resolve within the build area data/interim/release/gp. |
+| `source_file` | `string` | Source table filename; GP sources resolve within the build area data/build/release/gp. |
 | `source_row_number` | `int32` | One-based original source-table row before filtering winner markers. |
 | `source_record_id` | `string` | Publisher candidate ID in 2021; unavailable for earlier GP records. |
 | `winner_markers_conflict` | `bool` | More than one candidate carries a winner marker under the same 2021 source seat key. |
@@ -9127,7 +9127,7 @@ one winner-list or winner-marked record. Key: election_gp_key.
 | `winner_woman` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
 | `result_status_hindi` | `string` | Contested/unopposed for 2015, publisher winner marker for 2021, missing in older GP sources. |
 
-## panels/gp_lgd_bridge
+## linkage/gp_lgd_bridge
 
 one historical panel row projected to the LGD vintage. Key: panel, source_panel_row.
 
@@ -9159,7 +9159,7 @@ one historical panel row projected to the LGD vintage. Key: panel, source_panel_
 | `key_2015` | `string` | Source-specific field; interpret using its registered source. |
 | `key_2021` | `string` | Source-specific field; interpret using its registered source. |
 
-## panels/gp_link_candidates
+## linkage/gp_link_candidates
 
 one assessed adjacent-wave linkage candidate. Key: year_from, year_to, left_id, right_id.
 
@@ -9177,7 +9177,7 @@ one assessed adjacent-wave linkage candidate. Key: year_from, year_to, left_id, 
 | `year_from` | `int32` | Source-specific field; interpret using its registered source. |
 | `year_to` | `int32` | Source-specific field; interpret using its registered source. |
 
-## panels/gp_panel_2005_2010
+## linkage/gp_panel_2005_2010
 
 one linked source-record pair or four-election history. Key: key_2005, key_2010.
 
@@ -9250,7 +9250,7 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010.
 | `winner_woman_2010` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
 | `reserved_caste_2010` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
-## panels/gp_panel_2005_2010_2015_2021
+## linkage/gp_panel_2005_2010_2015_2021
 
 one linked source-record pair or four-election history. Key: key_2005, key_2010, key_2015, key_2021.
 
@@ -9385,7 +9385,7 @@ one linked source-record pair or four-election history. Key: key_2005, key_2010,
 | `winner_woman_2021` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
 | `reserved_caste_2021` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
-## panels/gp_panel_2010_2015
+## linkage/gp_panel_2010_2015
 
 one linked source-record pair or four-election history. Key: key_2010, key_2015.
 
@@ -9459,7 +9459,7 @@ one linked source-record pair or four-election history. Key: key_2010, key_2015.
 | `winner_woman_2015` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
 | `reserved_caste_2015` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
-## panels/gp_panel_2015_2021
+## linkage/gp_panel_2015_2021
 
 one linked source-record pair or four-election history. Key: key_2015, key_2021.
 
@@ -9528,7 +9528,7 @@ one linked source-record pair or four-election history. Key: key_2015, key_2021.
 | `winner_woman_2021` | `int8` | 1 for a source-reported female winner, 0 for male, null for missing sex or a conflicting winner claim. |
 | `reserved_caste_2021` | `string` | general, obc, sc, st, or unknown seat reservation. Unknown is not general/unreserved. |
 
-## panels/weaver_20250302_wide
+## linkage/weaver_20250302_wide
 
 one source GP identifier, wide across waves. Key: gp_id.
 
@@ -9826,7 +9826,7 @@ one source GP identifier, wide across waves. Key: gp_id.
 | `source_anchor_year` | `int32` | Source-specific field; interpret using its registered source. |
 | `source_vintage` | `string` | Source-specific field; interpret using its registered source. |
 
-## panels/weaver_20250317_wide
+## linkage/weaver_20250317_wide
 
 one source GP identifier, wide across waves. Key: gp_id.
 

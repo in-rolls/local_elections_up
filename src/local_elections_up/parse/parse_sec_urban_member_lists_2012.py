@@ -256,7 +256,7 @@ def main():
     parser.add_argument(
         "--output-root",
         type=Path,
-        default=Path("data/interim/sec_urban_member_lists_2012"),
+        default=Path("data/extracted/sec_urban_member_lists_2012"),
     )
     args = parser.parse_args()
     receipt_path = args.extraction_root / "extraction_receipt.json"

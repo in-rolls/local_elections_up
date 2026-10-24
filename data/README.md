@@ -1,6 +1,6 @@
 # Data
 
-Published tables are in [`release/`](release/). Start with the [catalog](release/CATALOG.md): every published table with its rows, election years, row unit and validation status. The [dictionary](release/DICTIONARY.md) lists columns and types; [manifest.json](release/manifest.json) and [CHECKSUMS.sha256](release/CHECKSUMS.sha256) pin every table's bytes and the code and inputs that built it.
+Published tables are in [`release/`](release/). Start with the [catalog](release/CATALOG.md): every published table with its rows, election years, row unit and validation status. The [dictionary](release/DICTIONARY.md) lists columns and types; [MANIFEST.json](release/MANIFEST.json) and [CHECKSUMS.sha256](release/CHECKSUMS.sha256) pin every table's bytes and the code and inputs that built it.
 
 ## Layout
 
@@ -9,19 +9,21 @@ Each election has a folder holding that election's tables, named `<office>_<reco
 | Folder | Contents |
 | --- | --- |
 | `release/<year>/` | Winner lists, candidate records, elected or reported officials, and seat reservations for that election |
-| `release/panels/` | Products derived across elections: harmonized GP-head records, adjacent and four-election links, wide panels, the historical LGD bridge, and the two Weaver preparations |
+| `release/linkage/` | Products derived across elections: harmonized GP-head records, adjacent and four-election links, wide panels, the historical LGD bridge, and the two Weaver preparations |
 | `raw/<year>/` | Source PDFs, zips and the notebook-era CSVs, by the year they describe |
-| `catalogs/` | Source registry, label dictionaries, column definitions and the relocation ledger |
-| `interim/` | Saved extraction outputs the build reads (committed at their registered paths), and the git-ignored build area `interim/release/` that the release is published from |
-| `crosswalks/` | Reviewed geographic matches and corrections |
-| `external/` | Attributed outside sources: LGD, Weaver, and a 2005/2010 reservation-with-Census file |
-| `recovery/` | Harvested SEC, district and media captures. The parsed tables and source documents the build reads are committed; the remaining captures (about 4.3 GB) are in the `source-evidence-2026-09-19` release, restored by `make fetch-sources` |
-| `transliteration/` | Name transliterations `make enrich-gp` reads |
-| `discovery/`, `source_archives/`, `archives/`, `reference/`, `integration/` | Research leads, bundles and dated records; none enters the release unless registered |
+| `manual/catalogs/` | Source registry, label dictionaries and column definitions |
+| `manual/crosswalks/` | Reviewed geographic matches and corrections |
+| `reference/` | Attributed outside sources (LGD, Weaver, a 2005/2010 reservation-with-Census file) and review images |
+| `extracted/` | Saved extraction outputs the build reads |
+| `build/` | Enriched GP preparations, transliterations, and the git-ignored build area `build/release/` that the release is published from |
+| `collections/` | Harvested SEC, district and media captures, one folder per collection. The parsed tables and source documents the build reads are committed; the remaining captures (about 4.3 GB) are in the `source-evidence-2026-09-19` release, restored by `make fetch-sources` |
+| `raw/research_bundles/` | Research bundles of source documents |
+| `search_log/` | Research leads; none enters the release unless registered |
+| `checks/` | Reconciliation of the office build against the pooled repository |
 
 GP heads have two representations, and both are published because each holds values the other lacks. `gram_panchayat_head_winner_list` (2005, 2010, 2015) is the SEC winner list as received, apart from contact fields, with its English labels. `gram_panchayat_head_declared_winner` (2005–2021) is the office build's observation of the same winners, with record IDs, per-row source hashes, decoded reservation and quality flags. 2021 winners are also marked among `gram_panchayat_head_candidate_record`.
 
-Provenance columns that name `data/interim/release/…` point into the build area; the [relocation ledger](catalogs/relocations.json) gives each such file's published, byte-identical location.
+Provenance columns that name `data/build/release/…` point into the build area; the [relocation ledger](manual/catalogs/relocations.json) gives each such file's published location.
 
 The build follows **source bytes → saved extraction → registered transformation → build area → published tables**. `make data` rebuilds the build area and publishes it. A candidate row, a reported winner, a reservation statement and a geographic link have different units; check the catalog before counting or joining them.
 
@@ -40,7 +42,7 @@ Phone numbers and unknown-header columns are excluded from analytical releases. 
 ## Harmonized GP-head records
 
 
-`panels/gp_head_election_records.parquet` is the standardized source-record table, derived from the per-year GP-head tables.
+`linkage/gp_head_election_records.parquet` is the standardized source-record table, derived from the per-year GP-head tables.
 It has one row per elected gram panchayat seat in 2005, 2010, and 2015 and one
 row per declared winner in 2021. It preserves 212,525 source rows; it does not
 silently select one row when normalized place names collide.
@@ -60,7 +62,7 @@ silently select one row when normalized place names collide.
 
 The `*_hindi` and `*_eng_raw` columns preserve source values. The canonical
 `district_name_eng`, `block_name_eng`, and `gp_name_eng` fields apply only the
-reviewed crosswalks under `data/crosswalks/active/`. The `*_std_raw` fields
+reviewed crosswalks under `data/manual/crosswalks/active/`. The `*_std_raw` fields
 normalize source names; the `*_std` fields normalize canonical names. Both use
 ASCII lowercase text with punctuation removed and whitespace collapsed.
 
@@ -87,7 +89,7 @@ election year. `normalized_name_key_n` reports its multiplicity.
 `link_eligible` is true only when all three components exist and the key occurs
 once. A false value is a review flag, not a dropped observation. Every flagged
 row is published in
-`../crosswalks/audit/up_gp_elections_link_exceptions.csv`.
+`manual/crosswalks/audit/up_gp_elections_link_exceptions.csv`.
 
 ## Election variables
 
@@ -107,10 +109,10 @@ checksum.
 
 ## Historical LGD bridge
 
-`panels/gp_lgd_bridge.parquet` supplies the geographic projection formerly prepared
+`linkage/gp_lgd_bridge.parquet` supplies the geographic projection formerly prepared
 by `quota_raj`, without SHRUG or Census outcomes. Its source vintage, input
 hashes and matching-method attribution are recorded in
-`data/external/lgd/SOURCES.json`. The base mapping uses 2005–2010 linked records
+`data/reference/lgd/SOURCES.json`. The base mapping uses 2005–2010 linked records
 with known reservation in both waves. Each projection retains the reference
 panel's known-reservation eligibility; these exclusions are explicit and do
 not change the underlying published election panels.
@@ -159,4 +161,4 @@ Two source-supported inherited identities have `mapping_review_id` populated;
 they project to five panel-anchor rows and use `gp_match_type = "reviewed"`.
 All reported distances use the current vowel-preserving comparison. The old
 scores are retained only as evidence in the review crosswalk. See
-`data/external/lgd/README.md`; source names remain unchanged.
+`data/reference/lgd/README.md`; source names remain unchanged.

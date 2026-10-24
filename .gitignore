@@ -15,13 +15,14 @@ htmlcov/
 .ipynb_checkpoints/
 
 # Large evidence collections are preserved by the source-evidence release.
-/data/recovery/
-/data/discovery/
-/data/source_archives/*.tar.gz
+/data/collections/
+/data/search_log/
+/data/raw/research_bundles/*.tar.gz
 /data/raw/2021/up_gram_panchayat_pradhan_2021.csv
 
-# Retain the reviewed 2015 intermediates; other intermediates are restored inputs.
-/data/interim/*
-!/data/interim/winner_lists_2015/
+# Retain the reviewed 2015 extractions; the others are restored inputs.
+/data/extracted/*
+!/data/extracted/winner_lists_2015/
+/data/build/release/
 
 # Atomic release builders stage output before swapping it into place.
