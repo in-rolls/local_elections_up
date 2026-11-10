@@ -1,0 +1,23 @@
+column,definition
+year,Election year; all rows in this supplement are 2023.
+city,Municipality label; SEC printed body name or Lucknow PDF identity.
+ward_number,"Printed ward number, integer; valid within the election and city only."
+ward_name_raw,Source ward label; SEC Unicode includes number; Lucknow retains Kruti Dev encoding.
+winner_name_raw,Printed winner name; Lucknow preserves content-stream font encoding.
+winner_name,Unicode winner name; Lucknow decoded with the existing Kruti Dev converter.
+party_raw,Printed party; Lucknow retains Kruti Dev encoding.
+winner_sex_raw,Explicit printed sex (महिला or पुरुष); missing for Lucknow.
+winner_woman,"True for printed महिला, false for printed पुरुष; missing when sex is not recorded."
+age,Printed age in years; missing for Lucknow.
+education_raw,Printed education category without an ordinal score; missing for Lucknow.
+reservation_raw,Printed ward reservation; missing for Lucknow.
+woman_reserved,True if printed reservation contains महिला; false otherwise; missing if unrecorded.
+votes,Printed winning candidate vote count; missing for Lucknow.
+source_path,Repository-relative retained source file path.
+source_sha256,SHA-256 of original PDF or decompressed HTML payload.
+source_page,One-based PDF page; archived result-table page is 1.
+source_row,"One-based result row, or PDF table row including header rows."
+source_capture,Internet Archive capture timestamp in UTC; missing for directly retrieved PDF.
+name_encoding,unicode or krutidev_content_order; identifies handling of raw textual fields.
+is_complete_city,True for all 60 Ayodhya and all 110 Lucknow wards; false for partial Aligarh.
+geography_validated,Whether cross-election geographic continuity is validated; false for every row.

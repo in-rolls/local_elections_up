@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20230515153257id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20230515153257",
+    "retrieved_at": "2026-11-09T07:08:35.415532+00:00",
+    "path": "data/reference/urban_council_sources/raw/df8666ac39bdb6833c729864ea34d89bebb01a7ab6bc1e6eaab5c7aec2df48ab.html.gz",
+    "sha256": "df8666ac39bdb6833c729864ea34d89bebb01a7ab6bc1e6eaab5c7aec2df48ab",
+    "bytes": 149468,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20260712172252id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20260712172252",
+    "retrieved_at": "2026-11-09T07:08:42.644255+00:00",
+    "path": "data/reference/urban_council_sources/raw/8a81d143980c396f497a17b75bc11d1ae6e8348a8d8611bed1474a210cfac57e.html.gz",
+    "sha256": "8a81d143980c396f497a17b75bc11d1ae6e8348a8d8611bed1474a210cfac57e",
+    "bytes": 146842,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20260704195303id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20260704195303",
+    "retrieved_at": "2026-11-09T07:08:47.732224+00:00",
+    "path": "data/reference/urban_council_sources/raw/9b969000dade0c29294e05814e23bacb15320f64ae3c4668cf39d7e239953fb8.html.gz",
+    "sha256": "9b969000dade0c29294e05814e23bacb15320f64ae3c4668cf39d7e239953fb8",
+    "bytes": 149720,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20260519001229id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20260519001229",
+    "retrieved_at": "2026-11-09T07:08:52.813098+00:00",
+    "path": "data/reference/urban_council_sources/raw/48ed51e2851385780abc0813ea59e4b0340c1bea5ac9fe45559e3675e829b504.html.gz",
+    "sha256": "48ed51e2851385780abc0813ea59e4b0340c1bea5ac9fe45559e3675e829b504",
+    "bytes": 149663,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20260416035939id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20260416035939",
+    "retrieved_at": "2026-11-09T07:08:59.113284+00:00",
+    "path": "data/reference/urban_council_sources/raw/b46920172225e61214ae3387c4cf70bc7427be30317eb6f53d69841f02c0e4d9.html.gz",
+    "sha256": "b46920172225e61214ae3387c4cf70bc7427be30317eb6f53d69841f02c0e4d9",
+    "bytes": 146793,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20251215162425id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20251215162425",
+    "retrieved_at": "2026-11-09T07:09:04.054773+00:00",
+    "path": "data/reference/urban_council_sources/raw/2f670e6f9bfb0fa04b8b8fc40903d17dcc7abc95582673051ac702a82661ed0a.html.gz",
+    "sha256": "2f670e6f9bfb0fa04b8b8fc40903d17dcc7abc95582673051ac702a82661ed0a",
+    "bytes": 146793,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20251209143818id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20251209143818",
+    "retrieved_at": "2026-11-09T07:09:09.270855+00:00",
+    "path": "data/reference/urban_council_sources/raw/f2582b34e0734276a0fb4ad736fe2a8794f08db06c18c050f1817295d5ee0e61.html.gz",
+    "sha256": "f2582b34e0734276a0fb4ad736fe2a8794f08db06c18c050f1817295d5ee0e61",
+    "bytes": 149671,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20250816061200id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20250816061200",
+    "retrieved_at": "2026-11-09T07:09:15.120088+00:00",
+    "path": "data/reference/urban_council_sources/raw/16960dee4a6def2925739d864df84b46d1b6012b89b76529c43e1b01beeb7cf4.html.gz",
+    "sha256": "16960dee4a6def2925739d864df84b46d1b6012b89b76529c43e1b01beeb7cf4",
+    "bytes": 149671,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  },
+  {
+    "url": "https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "replay_url": "https://web.archive.org/web/20250804022114id_/https://sec.up.nic.in/site/NewWinnerList2023.aspx",
+    "capture_timestamp": "20250804022114",
+    "retrieved_at": "2026-11-09T07:09:21.349788+00:00",
+    "path": "data/reference/urban_council_sources/raw/8b306f64ad224e46c27daa19b467d6ab01bcf233ee84c666547fc2f8ce2c04d5.html.gz",
+    "sha256": "8b306f64ad224e46c27daa19b467d6ab01bcf233ee84c666547fc2f8ce2c04d5",
+    "bytes": 146793,
+    "compression": "gzip",
+    "hash_scope": "decompressed HTTP payload",
+    "status": 200
+  }
+]

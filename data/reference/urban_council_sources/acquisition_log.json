@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://www.lmc.up.nic.in/pdf/NotificationEng01052017.pdf",
+    "retrieved_at": "2026-11-09T07:03:25.950557+00:00",
+    "intended_file": "lucknow_delimitation_2017_english.pdf",
+    "status": 200,
+    "final_url": "https://www.lmc.up.nic.in/pdf/NotificationEng01052017.pdf",
+    "path": "data/reference/urban_council_sources/raw/lucknow_delimitation_2017_english.pdf",
+    "bytes": 430654,
+    "sha256": "b78da4b0268e029d05b018b9a4d8b7060f4a27cafaf5408c2145f67b4a525408"
+  },
+  {
+    "url": "https://www.lmc.up.nic.in/pdf/DelimiationfinalNotification31_10_2022HINDI.pdf",
+    "retrieved_at": "2026-11-09T07:03:25.950806+00:00",
+    "intended_file": "lucknow_delimitation_2022.pdf",
+    "status": 200,
+    "final_url": "https://www.lmc.up.nic.in/pdf/DelimiationfinalNotification31_10_2022HINDI.pdf",
+    "path": "data/reference/urban_council_sources/raw/lucknow_delimitation_2022.pdf",
+    "bytes": 30368600,
+    "sha256": "91daae822f0244cb92f98d39edbdbf72e16f1ecd3da62ba52979a2d540022d7c"
+  },
+  {
+    "url": "https://urbandevelopment.up.nic.in/data/Govt_Orders/NV-1-625%5B26-04-22%5D-GO.pdf",
+    "retrieved_at": "2026-11-09T07:03:25.950959+00:00",
+    "intended_file": "urban_delimitation_order.pdf",
+    "status": 200,
+    "final_url": "https://urbandevelopment.up.nic.in/data/Govt_Orders/NV-1-625%5B26-04-22%5D-GO.pdf",
+    "path": "data/reference/urban_council_sources/raw/urban_delimitation_order.pdf",
+    "bytes": 9941620,
+    "sha256": "72093da1ab87b019bcf77770d3fc6627a46a43bbc51acb45f20ba09f53a3f72e"
+  },
+  {
+    "url": "https://lmc.up.nic.in/pdf/Notification06092017.pdf",
+    "retrieved_at": "2026-11-09T07:05:53.811937+00:00",
+    "intended_file": "lucknow_delimitation_2017_september.pdf",
+    "status": 200,
+    "final_url": "https://lmc.up.nic.in/pdf/Notification06092017.pdf",
+    "path": "data/reference/urban_council_sources/raw/lucknow_delimitation_2017_september.pdf",
+    "bytes": 12711170,
+    "sha256": "8ba8c2be78be508ce62cf44f652b5dcf10b0f6b12e9a108ffff49935e4417981"
+  },
+  {
+    "url": "https://lmc.up.nic.in/pdf/Corporator_2023_2027_sapath_date_26_05_2023_Main_List.pdf",
+    "retrieved_at": "2026-11-09T07:05:53.812157+00:00",
+    "intended_file": "lucknow_councilors_2023.pdf",
+    "status": 200,
+    "final_url": "https://lmc.up.nic.in/pdf/Corporator_2023_2027_sapath_date_26_05_2023_Main_List.pdf",
+    "path": "data/reference/urban_council_sources/raw/lucknow_councilors_2023.pdf",
+    "bytes": 274711,
+    "sha256": "2dc2d43310eb9d27fbf59f19a285a3a49fb34b0a397acab0b8a35c6f9ce7a715"
+  }
+]
