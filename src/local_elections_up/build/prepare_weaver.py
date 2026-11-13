@@ -37,7 +37,7 @@ def read_source(path):
     unexpected = [w for w in observed if not issubclass(w.category, UnicodeWarning)]
     require(not unexpected, f"Unexpected Stata reader warning: {unexpected}")
     print(f"{path.name}: repaired six known dangling-byte values")
-    # haven reads Stata numeric variables as doubles, including labeled values.
+    # haven reads Stata numeric variables as doubles, including labelled values.
     for column in frame.select_dtypes(include="number"):
         frame[column] = frame[column].astype("float64")
     return frame
